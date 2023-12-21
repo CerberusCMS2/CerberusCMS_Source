@@ -1,0 +1,242 @@
+<?php
+/*
+ ============================================================================================================
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ + Cerberus Content Management System
+ + ----------------------------------------------------------------------------------------------------------
+ + - Author			 : Gary Christopher Johnson of Oildale and SouthGate In Southern California
+ + - Company			 : Tinke Software, Free and Open Source Software
+ + - Company Address		 : Oildale In Southern California, United States of America
+ + - Electronic Mail Address	 : CerberusCMS@Protonmail.com, TinkeSoftware@Protonmail.com
+ + - Document Notes		 : View this file in a non-formatting text editor without word-wrap for the
+ +				 : correct display of this programming code and its indentation.
+ + ----------------------------------------------------------------------------------------------------------
+ +    ()  ()  ()
+ +  ()  ()  ()
+ +  ------------------------------
+ +  Application Module
+ + ----------------------------------------------------------------------------------------------------------
+ + - This File, Location	 : Root Directory => Applications => Member => Travel
+ + - This File, Version		 : 0.7.1
+ + - This File, Programming Code : Pure Pre-Hyper-Text-Post-Processor
+ + - Programming Code Model	 : Procedural, Functional, Object Oriented :: Pre-Order Algebraic
+ + -				 :					   :: Pre-Order Logical
+ + - Compatibility		 : Pre-Hyper-Text-Post-Processor 	   :: Version Numbers: 5, 7, 8
+ + -				 : Zend Engine				   :: Version Numbers: 3, 4
+ + - Official Release Date	 : Wednesday, November 1st of 2023
+ + ----------------------------------------------------------------------------------------------------------
+ + -------------------------------------------------------------------------------	 - Nyx -
+ + --[][]--[][][]--[][][]--[][][]---[][][]--[][][]--[]--[]------[][][]------------   []++++||=======>
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    |'-._/\_.-'|
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    |    []    |
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    |___-[]-___|
+ + -[]-----[][][]--[][][]--[][][]---[][][]--[][][]--[]--[]------[]----------------    |__((**))__|
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    \   -[]-   /
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]------------/-\-     \   []   /
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]---VERSION--|4|-	\  []  /
+ + --[][]--[][][]--[]--[]--[][][]---[][][]--[]--[]--[][][]--[][][]------------\-/-	 '.[].'
+ + -------------------------------------------------------------------------------
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Build Number: 0.8 - Final
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Edit Number : 4,325
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ ^ ] Application Module :: Member :: Travel
+ +
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Application Module Header
+ ============================================================================================================
+*/
+
+											echo ($_Application_Module_Member_Mesage_Travel_Header);
+											
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Options
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Display"] == "Options") {
+
+echo ("
+Backpacking :: Tutorial :: Expert
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;Tutorial&amp;Type&#61;Backpacking&amp;Level&#61;Expert\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Tutorial :: Expert ::\">Backpacking :: Tutorial :: Expert</A><BR><BR>
+
+Backpacking :: Gear :: All-In-One
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Type&#61;General&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Gear :: Lightweight :: General ::\">Backpacking :: Gear :: Lightweight :: General</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Type&#61;Desert&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Gear :: Lightweight :: General ::\">Backpacking :: Gear :: Lightweight :: Desert</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Type&#61;Coastal&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Gear :: Lightweight :: Coastal ::\">Backpacking :: Gear :: Lightweight :: Coastal</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Type&#61;Mountain&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Gear :: Lightweight :: Mountain ::\">Backpacking :: Gear :: Lightweight :: Mountain</A><BR>
+");
+
+} // [ + ] IF: Internal Application: Display :: Is: Options
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Tutorial
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Display"] == "Tutorial") {
+
+/*
+ ============================================================================================================
+ + [ @ ] IF: Internal Application: Display :: Tutorial :: Type :: Backpacking
+ ============================================================================================================
+*/
+
+if ($_GET["Type"] == "Backpacking") {
+
+/*
+ ============================================================================================================
+ + [ @ ] IF: Internal Application: Display :: Tutorial :: Type :: Backpacking :: Level :: Expert
+ ============================================================================================================
+*/
+
+if ($_GET["Level"] == "Expert") {
+
+echo ("
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\"></CENTER>
+<CENTER>Tutorial :: Backpacking :: Expert</CENTER>
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\">
+<CENTER><OBJECT HEIGHT=\"300\" WIDTH=\"80%\" DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Backpacking_Document_Expert.txt\"></OBJECT></CENTER><BR><BR>
+
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\"></CENTER>
+<CENTER>Applications :: KDE Plasma Mobile</CENTER>
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\">
+<CENTER><OBJECT HEIGHT=\"300\" WIDTH=\"80%\" DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Backpacking_Applications_AOSP.txt\"></OBJECT></CENTER><BR><BR>
+
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\"></CENTER>
+<CENTER>Applications :: Lineage Operating System</CENTER>
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\">
+<CENTER><OBJECT HEIGHT=\"300\" WIDTH=\"80%\" DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Backpacking_Applications_AOSP.txt\"></OBJECT></CENTER><BR><BR>
+
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\"></CENTER>
+<CENTER>Applications :: Google &reg; &copy; Android Open Source Software Project / Android</CENTER>
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\">
+<CENTER><OBJECT HEIGHT=\"300\" WIDTH=\"80%\" DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Backpacking_Applications_AOSP.txt\"></OBJECT></CENTER><BR><BR>
+
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\"></CENTER>
+<CENTER>Applications :: Apple &reg; &copy; iOS</CENTER>
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\">
+<CENTER><OBJECT HEIGHT=\"300\" WIDTH=\"80%\" DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Backpacking_Applications_AOSP.txt\"></OBJECT></CENTER><BR><BR>
+
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\"></CENTER>
+<CENTER>Applications :: Nokia &reg; &copy; KaiOS</CENTER>
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\">
+<CENTER><OBJECT HEIGHT=\"300\" WIDTH=\"80%\" DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Backpacking_Applications_AOSP.txt\"></OBJECT></CENTER><BR><BR>
+");
+
+} // [ + ] IF: Internal Application: Display :: Tutorial :: Type :: Backpacking :: Level :: Expert :: Is: Activated
+
+} // [ + ] IF: Internal Application: Display :: Tutorial :: Type :: Backpacking :: Is: Activated
+
+} // [ + ] IF: Internal Application: Display :: Tutorial :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Backpacking Gear
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Display"] == "BackpackingGear") {
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Backpacking Gear :: Type :: General
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Type"] == "General") {
+
+echo ("
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\"></CENTER>
+<CENTER>Backpacking :: Go Bag :: Gear :: Lightweight :: General</CENTER>
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\">
+<CENTER><OBJECT HEIGHT=\"300\" WIDTH=\"80%\" DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Recommendations_Personal_Gear_Travel_Backpacking_General.txt\"></OBJECT></CENTER>
+");
+
+} // [ + ] IF: Internal Application: Display :: Backpacking Gear :: Type :: General
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Backpacking Gear :: Type :: Desert
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Type"] == "Desert") {
+
+echo ("
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\"></CENTER>
+<CENTER>Backpacking :: Go Bag :: Gear :: Lightweight :: General</CENTER>
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\">
+<CENTER><OBJECT HEIGHT=\"300\" WIDTH=\"80%\" DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Recommendations_Personal_Gear_Travel_Backpacking_Desert.txt\"></OBJECT></CENTER>
+");
+
+} // [ + ] IF: Internal Application: Display :: Backpacking Gear :: Type :: Desert
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Backpacking Gear :: Type :: Coastal
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Type"] == "Coastal") {
+
+echo ("
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\"></CENTER>
+<CENTER>Backpacking :: Go Bag :: Gear :: Lightweight :: Coastal</CENTER>
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\">
+<CENTER><OBJECT HEIGHT=\"300\" WIDTH=\"80%\" DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Recommendations_Personal_Gear_Travel_Backpacking_Coastal.txt\"></OBJECT></CENTER>
+");
+
+} // [ + ] IF: Internal Application: Display :: Backpacking Gear :: Type :: Coast
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Backpacking Gear :: Type :: Mountain
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Type"] == "Mountain") {
+
+echo ("
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\"></CENTER>
+<CENTER>Backpacking :: Go Bag :: Gear :: Lightweight :: Mountain</CENTER>
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\">
+<CENTER><OBJECT HEIGHT=\"300\" WIDTH=\"80%\" DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Recommendations_Personal_Gear_Travel_Backpacking_Mountain.txt\"></OBJECT></CENTER>
+");
+
+} // [ + ] IF: Internal Application: Display :: Backpacking Gear :: Type :: Mountain
+
+} // [ + ] IF: Internal Application: Display :: Backpacking Gear
+?>
