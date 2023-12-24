@@ -522,7 +522,7 @@ $_PROJECT_VERSION_EDIT_NUMBER_MANUAL					= "236";
 */
 
 $_PROJECT_STRING_LEGAL_COPYRIGHT					= "&copy; Tinke Software, G.C. Johnson Works 2000 - Present-Day";
-$_PROJECT_STRING_LEGAL_ELECTRONIC_MAIL_ADDRESS				= "GCJohnsonChevalier@Proton.me";
+$_PROJECT_STRING_LEGAL_ELECTRONIC_MAIL_ADDRESS				= "CerberusCMS2@Proton.me";
 $_PROJECT_STRING_LEGAL_NAME_AUTHOR					= "G.C. Johnson";
 $_PROJECT_STRING_NAME_EXTENDED						= "Cerberus Content Management System";
 $_PROJECT_STRING_NAME_SHORT						= "Cerberus";
@@ -575,9 +575,9 @@ $_PROJECT_DEVELOPER_STRING_NAME_EXTENDED				= "Tinke Software";
  ============================================================================================================
 */
 
-$_PROJECT_SERVER_URL_CLEARTEXT						= "http://www.TinkeSoftware.com";
-$_PROJECT_SERVER_URL_SECURE						= "https://www.TinkeSoftware.com";
-$_PROJECT_SERVER_URL_PARTIAL						= "TinkeSoftware";
+$_PROJECT_SERVER_URL_CLEARTEXT						= "http://www.CerberusCMS.com";
+$_PROJECT_SERVER_URL_SECURE						= "https://www.CerberusCMS.com";
+$_PROJECT_SERVER_URL_PARTIAL						= "CerberusCMS";
 
 /*
  ============================================================================================================
@@ -591,8 +591,8 @@ $_PROJECT_SERVER_URL_PARTIAL						= "TinkeSoftware";
  ======================
 */
 
-$_PROJECT_SERVER_URL_BITBUCKET_CLEARTEXT				= "http://www.BITBucket.com/TinkeSoftware";
-$_PROJECT_SERVER_URL_BITBUCKET_SECURE					= "https://www.BITBucket.com/TinkeSoftware";
+$_PROJECT_SERVER_URL_BITBUCKET_CLEARTEXT				= "http://www.BITBucket.com/CerberusCMS2";
+$_PROJECT_SERVER_URL_BITBUCKET_SECURE					= "https://www.BITBucket.com/CerberusCMS2";
 
 /*
  ======================
