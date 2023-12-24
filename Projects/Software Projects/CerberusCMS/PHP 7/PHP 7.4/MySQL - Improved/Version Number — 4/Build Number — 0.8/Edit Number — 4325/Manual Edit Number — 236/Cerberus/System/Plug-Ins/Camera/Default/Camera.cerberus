@@ -67,44 +67,103 @@
 $_Application_Module_PlugIn_Camera_DEVICE_TEST			= "
 <SCRIPT>
 async function main () {
+
 	const buttonStart	= document.querySelector('#buttonStart')
 	const buttonStop	= document.querySelector('#buttonStop')
 	const videoLive		= document.querySelector('#videoLive')
 	const videoRecorded	= document.querySelector('#videoRecorded')
 
-	const stream = await navigator.mediaDevices.getUserMedia({
+	const stream		= await navigator.mediaDevices.getUserMedia({
 	video: true,
 	audio: true,
+
 })
 
 	videoLive.srcObject = stream
 
 if (!MediaRecorder.isTypeSupported('video/webm')) {
-	console.warn('video/webm is not supported')
+
+	console.warn('WEBM Video Is Not Supported By This Web Browser')
+
 }
 
-	const mediaRecorder = new MediaRecorder(stream, {
+	const mediaRecorder	= new MediaRecorder(stream, {
+
 	mimeType: 'video/webm',
+
 })
 
 	buttonStart.addEventListener('click', () => {
+
 	mediaRecorder.start()
 	buttonStart.setAttribute('disabled', '')
 	buttonStop.removeAttribute('disabled')
+
 })
 
 	buttonStop.addEventListener('click', () => {
+
 	mediaRecorder.stop()
 	buttonStart.removeAttribute('disabled')
 	buttonStop.setAttribute('disabled', '')
+
 })
 
 	mediaRecorder.addEventListener('dataavailable', event => {
-	videoRecorded.src = URL.createObjectURL(event.data)
+
+	videoRecorded.src	= URL.createObjectURL(event.data)
+
 })
 }
 
 main()
+</SCRIPT>
+";
+
+$_Application_Module_PlugIn_Camera_DEVICE_TEST_2		= "
+<SCRIPT>
+var video		= document.querySelector('video');
+video.autoplay		= true;
+
+navigator.getUserMedia({video: true}, 
+
+function(stream) {
+
+	video.src = window.URL.createObjectURL(stream);
+
+}, function(e) {
+
+	console.error(e);
+
+});
+
+var canvas		= document.querySelector('canvas');
+ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+var rafId;
+var frames		= [];
+var CANVAS_WIDTH	= canvas.width;
+var CANVAS_HEIGHT	= canvas.height;
+
+function drawVideoFrame(time) {
+
+	rafId = requestAnimationFrame(drawVideoFrame);
+	ctx.drawImage(video, 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+	frames.push(canvas.toDataURL('image/webp', 1));
+
+};
+
+rafId			= requestAnimationFrame(drawVideoFrame);
+
+function stop() {
+	cancelAnimationFrame(rafId);
+
+var webmBlob		= Whammy.fromImageArray(frames, 1000 / 60);
+var video		= document.createElement('video');
+video.src		= window.URL.createObjectURL(webmBlob);
+
+	document.body.appendChild(video);
+}
 </SCRIPT>
 ";
 ?>
