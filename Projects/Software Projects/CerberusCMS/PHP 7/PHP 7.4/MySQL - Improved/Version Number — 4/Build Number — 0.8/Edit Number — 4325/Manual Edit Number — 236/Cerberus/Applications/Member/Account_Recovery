@@ -106,7 +106,7 @@ $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME				= $_
  ============================================================================================================
 */
 
-$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER		$_POST['AMM_Account_Recovery_Recovery_SMS_Mobile_Device_Phone_Number'];
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER		= $_POST['AMM_Account_Recovery_Recovery_SMS_Mobile_Device_Phone_Number'];
 
 /*
  ============================================================================================================

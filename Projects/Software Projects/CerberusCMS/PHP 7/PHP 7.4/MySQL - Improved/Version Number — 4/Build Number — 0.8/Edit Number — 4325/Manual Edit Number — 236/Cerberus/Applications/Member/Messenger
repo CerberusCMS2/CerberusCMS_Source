@@ -738,7 +738,8 @@ echo ("
 													<OPTION VALUE=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;Generate&#61;VisibleTextFileMessenger\">--------------------------------------------------</OPTION>
 												</SELECT><BR>
 													<INPUT TYPE=\"submit\" VALUE=\"Generate\">
-												</FORM><BR><BR>
+												</FORM><BR>
+													Options Note: <I>Generate Different Kinds of Instant Messenger Rooms With These Options</I><BR><BR>
 
 											<B>Messenger Room Selection Options</B><HR>
 												<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;Display&#61;VisibleTextFileMessenger&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
@@ -762,7 +763,8 @@ echo ("
 													<OPTION VALUE=\"\">--------------------------------------------------</OPTION>
 												</SELECT><BR>
 													<INPUT TYPE=\"submit\" VALUE=\"Select\">
-												</FORM><BR><BR>
+												</FORM><BR>
+													Options Note: <I>Find Generated Instant Messenger Rooms With These Options</I><BR><BR>
 
 											<B>Option :: Messenger :: Invisible Messenger Room</B><HR>
 												<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;Find&#61;InvisibleMessengerRoom&amp;Name&#61;$_Application_Module_Member_Messenger_POST_FIND_CLEAR_TEXT_FILE_INVISIBLE_MESSENGER_ROOM_NAME&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"POST\">
@@ -770,7 +772,8 @@ echo ("
 													[ Maximum Length: 100 Alpha-Numeric Characters ]<BR>
 														<INPUT TYPE=\"text\" NAME=\"AMM_Messenger_Clear_Text_File_Invisible_Messenger_Room_Name\" VALUE=\"Write Invisible Messenger Room Name Here...\" MAXLENGTH=\"50\"><BR>
 													<INPUT TYPE=\"submit\" VALUE=\"Find\">
-												</FORM><BR><BR>
+												</FORM><BR>
+													Options Note: <I>Find Generated Invisible and Non-Listed Instant Messenger Rooms With These Options</I><BR><BR>
 
 											<B>Options :: Messenger :: Mobile Device :: Messaging Service</B><HR>
 
@@ -779,12 +782,14 @@ echo ("
 														<INPUT TYPE=\"text\" NAME=\"AMM_Messenger_Find_Messenger_SMS_Recipient_Name\" VALUE=\"Write Member Account UserName Here...\" MAXLENGTH=\"25\"><BR>
 													<INPUT TYPE=\"submit\" VALUE=\"Find\">
 												</FORM><BR>
+													Options Note: <I>Send Short-Message-Service ( SMS ) Messages To Mobile Phone Numbers Belonging To Existing Registered Members</I><BR><BR>
 
 												<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;Option&#61;MMS&amp;MMSID&#61;$_Application_Module_Member_Messenger_POST_FIND_MMS_RECIPIENT_NAME&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"POST\">
 													* <I><B>Send Multimedia Messaging Service Message :: Find :: Member Account UserName</B></I>:<BR>
 														<INPUT TYPE=\"text\" NAME=\"AMM_Messenger_Find_Messenger_MMS_Recipient_Name\" VALUE=\"Write Member Account UserName Here...\" MAXLENGTH=\"25\"><BR>
 													<INPUT TYPE=\"submit\" VALUE=\"Find\">
-												</FORM>
+												</FORM><BR>
+													Options Note: <I>Send Multimedia-Message-Service ( MMS ) Messages To Mobile Phone Numbers Belonging To Existing Registered Members</I><BR><BR>
 ");
 
 } // [ + ] IF: Internal Application: Display :: Is: Messenger Options

@@ -108,7 +108,7 @@ echo ("
 
 echo ($_Application_Module_PlugIn_Camera_DEVICE_TEST);
 
-} // [ + ] IF: Internal Application: Device Test :: Camera and Microphone
+} // [ + ] IF: Internal Application: Device Test :: Camera and Microphone :: Is: Activated
 
 /*
  ============================================================================================================
@@ -117,6 +117,25 @@ echo ($_Application_Module_PlugIn_Camera_DEVICE_TEST);
  +
  ============================================================================================================
 */
+
+if ($_GET["DeviceTest"] == "Camera") {
+
+echo ("
+    <div>
+      <button type=\"button\" id=\"buttonStart\">Start</button>
+      <button type=\"button\" id=\"buttonStop\" disabled>Stop</button>
+    </div>
+    <div>
+      <video autoplay muted playsinline id=\"videoLive\"></video>
+    </div>
+    <div>
+      <video controls playsinline id=\"videoRecorded\"></video>
+    </div>
+");
+
+echo ($_Application_Module_PlugIn_Camera_DEVICE_TEST_2);
+
+} // [ + ] IF: Internal Application: Device Test :: Camera :: Is: Activated
 
 /*
  ============================================================================================================

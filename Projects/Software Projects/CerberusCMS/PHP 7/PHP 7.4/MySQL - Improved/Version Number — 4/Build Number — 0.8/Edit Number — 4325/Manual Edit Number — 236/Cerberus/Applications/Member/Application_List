@@ -301,7 +301,7 @@ echo ("
 
 														<B>Timestamp :: Installation</B><BR>
 														* Timestamp :: Application Module :: Background :: Database Entry :: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_TIMESTAMP_INSTALLATION<BR>
-														<A HREF=\"./Applications/Background/$_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Source Code :: For The Application Module :: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_NAME ::\">Source Code</A><HR><BR>
+														<A HREF=\"./Applications/Background/$_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Source Code :: For The Application Module :: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_NAME ::\">Display Source Code</A><HR><BR>
 ");
 
 } // [ + ] WHILE: Retrieving :: All Background-Level Application Module Entries From Database Management System Server Database
@@ -381,7 +381,7 @@ echo ("
 
 														<B>Timestamps :: Installation</B><BR>
 														* Timestamp :: Application Module :: Administration :: Root :: Services :: Database Entry :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_TIMESTAMP_INSTALLATION<BR>
-														<A HREF=\"./Applications/Services/$_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Source Code :: For The Application Module :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_NAME ::\">Source Code</A><HR><BR>
+														<A HREF=\"./Applications/Services/$_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Source Code :: For The Application Module :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_NAME ::\">Display Source Code</A><HR><BR>
 ");
 
 } // [ + ] WHILE: Retrieving :: All Services Root Administration-Level Application Module Entries From Database Management System Server Database
@@ -462,7 +462,7 @@ echo ("
 
 														<B>Timestamps :: Installation</B><BR>
 														* Timestamp :: Application Module :: Administration :: Root :: Database Entry :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_TIMESTAMP_INSTALLATION<BR>
-														<A HREF=\"./Applications/Root/$_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Source Code :: For The Application Module :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_NAME ::\">Source Code</A><HR><BR>
+														<A HREF=\"./Applications/Root/$_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Source Code :: For The Application Module :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_NAME ::\">Display Source Code</A><HR><BR>
 ");
 
 } // [ + ] WHILE: Retrieving :: All Root Administration-Level Application Module Entries From Database Management System Server Database
@@ -542,7 +542,7 @@ echo ("
 
 														<B>Timestamps :: Installation</B><BR>
 														* Timestamp :: Application Module :: Administration :: Database Entry :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_TIMESTAMP_INSTALLATION<BR>
-														<A HREF=\"./Applications/Administration/$_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Source Code :: For The Application Module :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_NAME ::\">Source Code</A><HR><BR>
+														<A HREF=\"./Applications/Administration/$_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Source Code :: For The Application Module :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_NAME ::\">Display Source Code</A><HR><BR>
 ");
 
 } // [ + ] WHILE: Retrieving :: All Administration-Level Application Module Entries From Database Management System Server Database
@@ -628,7 +628,7 @@ echo ("
 
 														<B>Timestamps :: Installation</B><BR>
 														* Timestamp :: Application Module :: Member :: Database Entry :: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_TIMESTAMP_INSTALLATION<BR>
-														<A HREF=\"./Applications/Member/$_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Source Code :: For The Application Module :: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_NAME ::\">Source Code</A><HR><BR>
+														<A HREF=\"./Applications/Member/$_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Source Code :: For The Application Module :: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_NAME ::\">Display Source Code</A><HR><BR>
 ");
 
 } // [ + ] WHILE: Retrieving :: All Application Module Entries From Database Management System Server Database
@@ -706,7 +706,7 @@ echo ("
 
 														<B>Timestamps :: Installation</B><BR>
 														* Timestamp :: Application Module :: Panel :: Database Entry :: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_TIMESTAMP_INSTALLATION<BR>
-														<A HREF=\"./Applications/Panel/$_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_NAME.panel?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Source Code :: For The Application Module :: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_NAME ::\">Source Code</A><HR><BR>
+														<A HREF=\"./Applications/Panel/$_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_NAME.panel?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Source Code :: For The Application Module :: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_NAME ::\">Display Source Code</A><HR><BR>
 ");
 
 } // [ + ] WHILE: Retrieving :: All Panel-Level Application Module Entries From Database Management System Server Database

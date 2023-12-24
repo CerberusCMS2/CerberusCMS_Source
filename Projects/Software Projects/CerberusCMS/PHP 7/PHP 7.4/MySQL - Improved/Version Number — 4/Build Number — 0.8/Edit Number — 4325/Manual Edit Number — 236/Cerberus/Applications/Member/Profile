@@ -3630,10 +3630,17 @@ if ($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_ALB
 **/
 } else {
 
+$_FILE_MTIME_TEST			= date("Y-m-d", fileatime("$_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_VIDEO_ALBUM/$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_ALBUM"));
+
 echo ("
-<VIDEO WIDTH=\"150\" HEIGHT=\"125\" TITLE=\":: $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_ALBUM ::\" CONTROLS>
+<VIDEO CLASS=\"PanelProjectBadge\" WIDTH=\"150\" HEIGHT=\"125\" TITLE=\":: $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_ALBUM ::\" CONTROLS>
 <SOURCE SRC=\"$_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_VIDEO_ALBUM/$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_ALBUM?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_VIDEO_RANDOM_STRING_GENERATION\" TYPE=\"VIDEO/MP4\">
-</VIDEO>&nbsp;&nbsp;&nbsp;
+</VIDEO><BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+<B>File :: Video :: File Created: $_FILE_MTIME_TEST</B><BR>
+<B>File :: Video :: File Name: $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_ALBUM</B><BR>
+<A HREF=\"\" TITLE=\":: Open & Display :: The Internal Application :: Delete :: File :: Video :: $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_ALBUM ::\">Delete This Video</A>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\"><BR>
 ");
 
 } // [ + ] IF: STOP: Remote-File-Inclusion AND Local-File-Inclusion
