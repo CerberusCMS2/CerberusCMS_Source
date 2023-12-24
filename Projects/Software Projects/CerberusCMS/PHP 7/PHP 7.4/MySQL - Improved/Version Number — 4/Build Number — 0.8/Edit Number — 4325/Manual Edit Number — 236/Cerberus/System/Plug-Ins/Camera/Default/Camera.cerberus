@@ -211,12 +211,12 @@ startBtn.addEventListener('click', function (e) {
 
 	const blobContainer		= [];
 
-recorder.ondataavailable = function (e) {
+recorder.ondataavailable		= function (e) {
             
 	blobContainer.push(e.data)
 }
 
-recorder.onerror = function (e) {
+recorder.onerror			= function (e) {
 
 	return console.log(e.error || new Error(e.name));
 }
@@ -224,16 +224,16 @@ recorder.onerror = function (e) {
 recorder.onstop = function (e) {
 	console.log(window.URL.createObjectURL(new Blob(blobContainer)));
 
-	var newVideoEl = document.createElement('video')
-	newVideoEl.height = '320'
-	newVideoEl.width = '640'
-	newVideoEl.autoplay = true
-	newVideoEl.controls = true
-	newVideoEl.innerHTML = `<source src=\"\${window.URL.createObjectURL(new Blob(blobContainer))}\"type=\"video/mp4\">`
+	var newVideoEl			= document.createElement('video')
+	newVideoEl.height		= '320'
+	newVideoEl.width		= '640'
+	newVideoEl.autoplay		= true
+	newVideoEl.controls		= true
+	newVideoEl.innerHTML		= `<source src=\"\${window.URL.createObjectURL(new Blob(blobContainer))}\"type=\"video/mp4\">`
 	document.body.removeChild(videoElem)
 	document.body.insertBefore(newVideoEl, startBtn);
 
-	var formdata = new FormData();
+	var formdata			= new FormData();
 	formdata.append('blobFile', new Blob(blobContainer));
 
 fetch('System/Plug-Ins/Camera/Default/Processor.php', {
@@ -242,7 +242,7 @@ fetch('System/Plug-Ins/Camera/Default/Processor.php', {
 
 }).then(()=>{
 
-	alert('streamed video file uploaded')
+	alert('Streams Message: Live Video Was Written To Video Directory')
 
 })
 
