@@ -4191,7 +4191,7 @@ if ($_Application_Module_Member_Profile_Streams_READ_DIRECTORY_STREAMS_SEARCH ==
 
 if ($_GET["Display"] == "Streams") {
 
-echo ("<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME&amp;Display&#61;Streams&amp;Write&#61;NewStream&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: New Stream :: Application ::\">Write New Stream</A> - <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME&amp;Display&#61;Streams&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Live Video Stream :: Application ::\">Live Video Stream</A> - <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME&amp;Search&#61;ArchivedStream&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Search & Display :: Streams :: Archived Streams ::\">Search Archived Streams</A><BR><BR>");
+echo ("<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME&amp;Display&#61;Streams&amp;Write&#61;NewStream&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: New Stream :: Application ::\">Write New Stream</A> - <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME&amp;Display&#61;Streams&amp;Live&#61;VideoStream&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Live Video Stream :: Application ::\">Live Video Stream</A> - <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME&amp;Search&#61;ArchivedStream&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Search & Display :: Streams :: Archived Streams ::\">Search Archived Streams</A><BR><BR>");
 
 /*
  ============================================================================================================
@@ -4884,11 +4884,36 @@ echo ("Message: You are not Logged-In. Please Authenticate into your Registered 
 
 } // [ + ] IF: Streams Directory AND Files ARE NOT Streams Directory AND Files
 
-} // [ + ] IF: Internal Application: Display :: Profile :: Name IS Registered Member Account Name Is Activated
+} // [ + ] IF: Internal Application: Display :: Profile :: Name IS Registered Member Account Name :: Is: Activated
 
 } // [ + ] WHILE: Reading Directory: Registered Member Account :: Streams :: Delete Stream
 
-} // [ + ] IF: Internal Application: Display :: Profile :: Name :: Streams :: Delete :: Stream Is Activated
+} // [ + ] IF: Internal Application: Display :: Profile :: Name :: Streams :: Delete :: Stream :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] Internal Application :: Display :: Profile :: Name :: Streams :: Live :: Video Stream
+ +
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Live"] == "VideoStream") {
+
+echo ("
+			<VIDEO AUTOPLAY=\"\" ID=\"stream-elem\" CONTROLS WIDTH=\"640\" HEIGHT=\"320\">
+				<SOURCE SRC=\"\" TYPE=\"\">
+			</VIDEO><BR>
+
+			<BUTTON ID=\"start-stream\">Record</BUTTON>
+			<BUTTON ID=\"stop-media\">Stop</BUTTON>
+");
+
+echo ("$_Application_Module_PlugIn_Camera_VIDEO_LIVE_RECORD");
+
+} // [ + ] IF: Internal Application: Display :: Profile :: Name :: Streams :: Live :: VideoStream :: Is: Activated
 
 } // [ + ] IF: Internal Application: Display :: Profile :: Name :: Streams Is Activated
 
