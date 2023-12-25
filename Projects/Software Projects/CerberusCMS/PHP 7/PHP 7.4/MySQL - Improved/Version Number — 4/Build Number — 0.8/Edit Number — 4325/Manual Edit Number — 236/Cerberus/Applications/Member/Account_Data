@@ -1469,16 +1469,14 @@ imagedestroy($_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALL
  ============================================================================================================
 */
 
-$_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_DIRECTORY								= $_POST['AMM_Account_Data_Upload_Gallery_Image_Selection_Directory'];
-
 /*
  ============================================================================================================
  + Find and Open :: Directory :: Temporary :: Upload
  ============================================================================================================
 */
 
-$_Application_Module_Member_Account_Data_UPLOAD_GALLERY_IMAGE_SELECTION_FIND_DIRECTORY_TEMPORARY_UPLOAD				= "./Temporary/Upload/Image";
-$_Application_Module_Member_Account_Data_UPLOAD_GALLERY_IMAGE_SELECTION_DATA 										= $_Application_Module_Member_Account_Data_UPLOAD_GALLERY_IMAGE_SELECTION_FIND_DIRECTORY_TEMPORARY_UPLOAD . basename($_FILES['AMM_Account_Data_Upload_File_Gallery_Image_Selection_Multiple']['name']);
+$_Application_Module_Member_Account_Data_UPLOAD_GALLERY_IMAGE_SELECTION_FIND_DIRECTORY_TEMPORARY_UPLOAD				= "./Temporary/Upload/";
+$_Application_Module_Member_Account_Data_UPLOAD_GALLERY_IMAGE_SELECTION_DATA										= $_Application_Module_Member_Account_Data_UPLOAD_GALLERY_IMAGE_SELECTION_FIND_DIRECTORY_TEMPORARY_UPLOAD . basename($_FILES['AMM_Account_Data_Upload_File_Gallery_Image_Selection_Multiple']['name']);
 
 /*
  ============================================================================================================
@@ -1486,9 +1484,10 @@ $_Application_Module_Member_Account_Data_UPLOAD_GALLERY_IMAGE_SELECTION_DATA 			
  ============================================================================================================
 */
 
-$_Application_Module_Member_Account_Data_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_EXTENSIONS_ALLOWED						= "jpg gif png bmp jpeg";
-$_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_DIRECTORY_TEMPORARY					= $_POST['AMM_Account_Data_Upload_Gallery_Image_Selection_Directory_Temporary'];
-
+$_Application_Module_Member_Account_Data_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_EXTENSIONS_ALLOWED					    = "jpg gif png bmp jpeg";
+$_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_DIRECTORY_TEMPORARY				    = $_POST['AMM_Account_Data_Upload_File_Gallery_Image_Selection_Directory_Temporary'];
+$_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_DIRECTORY          				    = $_POST['AMM_Account_Data_Upload_File_Gallery_Image_Selection_Directory'];
+$_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_MULTIPLE                               = $_POST['AMM_Account_Data_Upload_File_Gallery_Image_Selection_Multiple'];
 
 /*
  ============================================================================================================
@@ -1504,13 +1503,12 @@ echo ("
 												[ Maximum Image File Upload Size: $_Application_Module_Member_Account_Data_MAXIMUM_UPLOAD_SIZE_FILE_IMAGE KB ]</B><BR>
 												Allowed File Extensions :: Image :: BMP, GIF, JPG, JPEG, PNG<BR>
 													<INPUT TYPE=\"file\" NAME=\"AMM_Account_Data_Upload_File_Gallery_Image_Selection_Multiple[]\" MAXLENGTH=\"150\" MULTIPLE><BR>
-													<INPUT TYPE=\"hidden\" NAME=\"AMM_Account_Data_Upload_Gallery_Image_Selection_Directory_Temporary\" VALUE=\"1\">
-													<SELECT NAME=\"AMM_Account_Data_Upload_Gallery_Image_Selection_Directory\">
+													<SELECT NAME=\"AMM_Account_Data_Upload_File_Gallery_Image_Selection_Directory\">
 ");
 
 /*
  ============================================================================================================
- + WHILE :: Reading :: Directory :: Registered Member Account :: Gallery :: Images
+ + WHILE :: Reading :: Directory :: Registered Member Account :: Gallery :: Image :: Selection
  ============================================================================================================
 */
 
@@ -1530,9 +1528,9 @@ if ($_Application_Module_Member_Account_Data_UPLOAD_READ_DIRECTORY_MEMBER_GALLER
 
 														echo ("<OPTION VALUE=\"$_Application_Module_Member_Account_Data_UPLOAD_READ_DIRECTORY_MEMBER_GALLERY_IMAGE\">$_Application_Module_Member_Account_Data_UPLOAD_READ_DIRECTORY_MEMBER_GALLERY_IMAGE</OPTION>");
 
-} // [ + ] IF: Specified :: Directory :: Registered Member Account :: Directory :: Image Directory Selection AND Files ARE NOT Specified Registered Member Account :: Directory :: Image Directory Selection AND Files
+} // [ + ] IF: Specified :: Directory :: Registered Member Account Image Directory AND Files ARE NOT Specified Registered Member Account Image Directory AND Files
 
-} // [ + ] WHILE: Reading Specified Registered Member Account :: Directory :: Image Directory Selection
+} // [ + ] WHILE: Reading Specified Member Account Image Directory
 
 /*
  ============================================================================================================
@@ -1540,10 +1538,10 @@ if ($_Application_Module_Member_Account_Data_UPLOAD_READ_DIRECTORY_MEMBER_GALLER
  ============================================================================================================
 */
 
-closedir($_Application_Module_Member_Account_Data_UPLOAD_OPEN_MEMBER_DIRECTORY_GALLERY_IMAGE_SELECTION);
+closedir($_Application_Module_Member_Account_Data_DELETE_OPEN_DIRECTORY_MEMBER_GALLERY_IMAGE);
 
 echo ("
-													</SELECT><BR>
+                                                <INPUT TYPE=\"hidden\" NAME=\"AMM_Account_Data_Upload_File_Gallery_Image_Selection_Directory_Temporary\" VALUE=\"1\"><BR>
 												<INPUT TYPE=\"submit\" VALUE=\"Upload File\">
 											</FORM><BR>
 ");
@@ -1558,12 +1556,12 @@ echo ("
 
 /*
  ============================================================================================================
- + ELSE: Galery :: Image :: Selection :: Upload File :: Variable Is Executed
+ + ELSE: Gallery :: Image :: Selection :: Upload File :: Variable Is Executed
  ============================================================================================================
 */
 
-$_Application_Module_Member_Account_Data_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_COUNT_FILES					= count($_FILES['AMM_Account_Data_Upload_File_Gallery_Image_Selection_Multiple']['name']);
-$_Application_Module_Member_Account_Data_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_TOTAL_FILES_UPLOADED			= 0;
+$_Application_Module_Member_Account_Data_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_COUNT_FILES						= count($_FILES['AMM_Account_Data_Upload_File_Gallery_Image_Selection_Multiple']['name']);
+$_Application_Module_Member_Account_Data_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_TOTAL_FILES_UPLOADED				= 0;
 
 /*
  ============================================================================================================
@@ -1574,7 +1572,7 @@ $_Application_Module_Member_Account_Data_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_TOT
 for ($i=0; $i < $_Application_Module_Member_Account_Data_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_COUNT_FILES; $i++) {
 
 $_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_NAME						= $_FILES['AMM_Account_Data_Upload_File_Gallery_Image_Selection_Multiple']['name'][$i];
-$_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_LOCATION					= "./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Image/Gallery/Backup/$_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_SELECTION/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL - $_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_NAME";
+$_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_LOCATION					= "./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Image/Gallery/Backup/$_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_DIRECTORY/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL - $_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_NAME";
 $_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_EXTENSION					= pathinfo($_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_LOCATION,PATHINFO_EXTENSION);
 $_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_EXTENSION					= strtolower($_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_EXTENSION);
 $_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_EXTENSION_VALID			= array("bmp","gif","jpg","jpeg","png");
@@ -1582,7 +1580,7 @@ $_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_FIL
 
 /*
  ============================================================================================================
- + IF: Files Uploaded :: In Array :: Allowed File Extensions :: Gallery :: Image :: Selection
+ + IF: Files Uploaded :: In Array :: Allowed File Extensions :: Gallery :: Image :: Gallery
  ============================================================================================================
 */
 
@@ -1590,22 +1588,44 @@ if (in_array(strtolower($_Application_Module_Member_Account_Data_POST_UPLOAD_GAL
 
 /*
  ============================================================================================================
- + IF: Move Uploaded File: From Temporary Upload Directory :: To :: Registered Member Account :: Image :: Selection Directory
+ + IF: Move Uploaded File: From Temporary Upload Directory :: To :: Registered Member Account :: Image :: Gallery
  ============================================================================================================
 */
 
-if (move_uploaded_file($_FILES['AMM_Account_Data_Upload_File_Gallery_Image_Selection_Multiple']['name'][$i],"$_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_LOCATION")) {
+if (move_uploaded_file($_FILES['AMM_Account_Data_Upload_File_Gallery_Image_Selection_Multiple']['tmp_name'][$i],"$_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_LOCATION")) {
 
                         $_Application_Module_Member_Account_Data_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_TOTAL_FILES_UPLOADED++;
-						
-copy("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Image/Gallery/Backup/$_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_SELECTION/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL - $_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_NAME","./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Image/Gallery/$_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_SELECTION/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL - $_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_NAME");
+
+copy("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Image/Gallery/Backup/$_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_DIRECTORY/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL - $_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_NAME","./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Image/Gallery/$_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_DIRECTORY/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL - $_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_NAME");
+
+/*
+ ============================================================================================================
+ + Watermark
+ ============================================================================================================
+*/
+
+/*
+$_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_STAMP				= imagecreatefrompng("./Theme/2023_Cerberus_Blue/Image/Watermark/Watermark.png");
+$_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_IM					= imagecreatefromjpeg("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Image/Profile/Backup/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL - $_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_FILE_NAME");
+
+$_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_MARGIN_RIGHT		= 10;
+$_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_MARGIN_BOTTOM		= 10;
+$_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_SX					= imagesx($_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_STAMP);
+$_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_SY					= imagesy($_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_STAMP);
+
+imagecopy($_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_IM, $_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_STAMP, imagesx($_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_IM) - $_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_SX - $_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_MARGIN_RIGHT, imagesy($_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_IM) - $_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_SY - $_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_MARGIN_BOTTOM, 0, 0, imagesx($_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_STAMP), imagesy($_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_STAMP));
+
+header('Content-type: image/png');
+imagepng($_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_IM);
+imagedestroy($_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_IM);
+*/
 
 											header("Location: ?$_INTERNAL_APPLICATION_MODULE_MEMBER=Account_Data&Display=Gallery&Type=Image&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
 											exit();
-											
+
 /*
  ============================================================================================================
- + ELSE: Uploaded File Error: From Temporary Upload Directory :: To :: Registered Member Account :: Image :: Selection Directory
+ + ELSE: Uploaded File Error: From Temporary Upload Directory :: To :: Registered Member Account :: Image :: Selection
  ============================================================================================================
 */
 
@@ -1613,7 +1633,7 @@ copy("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Image/Gallery/Backup/$_Appl
 
 											echo ("Kernel Message: Error: The Uploaded Files Cannot Be Moved.");
 
-} // [ + ] IF: Move Uploaded File :: Gallery Type :: Image :: Selection :: From: Temporary Upload Directory :: To: Registered Member Account :: Gallery :: Image :: Selection Directory
+} // [ + ] IF: Move Uploaded File :: Gallery Type :: Image :: Selection :: From: Temporary Upload Directory :: To: Registered Member Account :: Gallery :: Image :: Selected Image Gallery Directory
 
 } // [ + ] IF: In Array: String TO LowerCase Characters: Gallery Type :: Image :: Selection :: Uploaded File AND Check: For Valid File Extension
 

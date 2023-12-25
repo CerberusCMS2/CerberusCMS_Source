@@ -3546,7 +3546,7 @@ echo ("
 <BR><B>Options :: Gallery :: Video</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
 * Gallery :: Video :: Created<BR>
 * Gallery :: Video :: <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME&amp;Display&#61;MediaGalleries&amp;Type&#61;VideoProfileImage&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Media Gallery :: Video :: Video Profile Image :: For The Registered Member Account :: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_FIRST :: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_LAST ::\">Video Profile Images</A><BR>
-* Gallery :: Video :: Live<BR>
+* Gallery :: Video :: <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME&amp;Display&#61;MediaGalleries&amp;Type&#61;LiveVideos&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Media Gallery :: Video :: Video Profile Image :: For The Registered Member Account :: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_FIRST :: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_LAST ::\">Live Videos</A><BR>
 * Gallery :: Video :: Movies<BR>
 * Gallery :: Video :: Streams<BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Account_Data&amp;Display&#61;Gallery&amp;Type&#61;Video&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TARGET=\"_NEW\" TITLE=\":: Open & Display :: The Private Files :: Application :: Upload Video ::\">Upload Video</A><BR><BR>
@@ -4074,7 +4074,7 @@ if ($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_PRO
 
 echo ("
 <VIDEO WIDTH=\"320\" HEIGHT=\"270\" CONTROLS>
-<SOURCE SRC=\"./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Video/Profile/$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TYPE=\"VIDEO/MP4\">
+<SOURCE SRC=\"./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Video/Profile/$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_VIDEO_RANDOM_STRING_GENERATION\" TYPE=\"VIDEO/MP4\">
 </VIDEO>&nbsp;&nbsp;&nbsp;
 ");
 
@@ -4101,6 +4101,98 @@ echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_ONLYME);
 } // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Video Profile Image :: Is: Public
 
 } // [ + ] IF: Internal Application: Display :: Media Galleries :: Gallery :: Type :: Video Profile Image :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] Internal Application :: Display :: Profile :: Name :: Gallery :: Video :: Live Videos
+ +
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Type"] == "LiveVideos") {
+
+echo ("<BR><B>Gallery :: Album :: Video :: Live Videos</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\">");
+
+/*
+ ============================================================================================================
+ + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Gallery :: Video :: Is: Public
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_GALLERY_VIDEO == "0") {
+
+/*
+ ============================================================================================================
+ + Retrieve and List :: Gallery :: Video :: Live
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_VIDEO_LIVE			= "./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Video/Live";
+$_Application_Module_Member_Profile_Gallery_OPEN_DIRECTORY_GALLERY_VIDEO_LIVE			= opendir($_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_VIDEO_LIVE);
+
+/*
+ ============================================================================================================
+ + While :: Reading Directory :: Registered Member Account :: Gallery :: Video Profile Image :: Video Profile Image
+ ============================================================================================================
+*/
+
+while (($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_LIVE = readdir($_Application_Module_Member_Profile_Gallery_OPEN_DIRECTORY_GALLERY_VIDEO_LIVE))) {
+
+/*
+ ============================================================================================================
+ + IF: STOP :: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_LIVE == "." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_LIVE == ".." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_LIVE == "Backup" || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_LIVE == "index.php") {
+/**
+ * Do Nothing
+**/
+} else {
+
+$_FILE_MTIME_TEST			= date("Y-m-d", fileatime("./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Video/Live/$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_LIVE"));
+
+echo ("
+<VIDEO CONTROLS WIDTH=\"150\" HEIGHT=\"125\" TITLE=\":: $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_LIVE ::\">
+<SOURCE SRC=\"./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Video/Live/$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_LIVE?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_VIDEO_RANDOM_STRING_GENERATION\" TYPE=\"VIDEO/MP4\">
+</VIDEO><BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+<B>File :: Video :: File Created: $_FILE_MTIME_TEST</B><BR>
+<B>File :: Video :: File Name: $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_LIVE</B><BR>
+<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME&amp;Display&#61;MediaGalleries&amp;Type&#61;LiveVideos&amp;Delete&#61;$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_LIVE&amp;?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Application :: Delete :: File :: Video :: Live Video :: $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_LIVE ::\">Delete This Live Video</A>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\"><BR>
+");
+
+if ($_GET["Delete"] == "$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_LIVE") {
+
+/*
+ ============================================================================================================
+ + IF: Registered Member Account :: Credentials :: Exist AND ARE Valid, Delete Video File
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) {
+
+unlink("./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Video/Live/$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_LIVE");
+
+} else { // [ + ] ELSE: Registered Member Account :: Credentials :: ARE NOT Valid, Do Not Delete Video File
+
+echo ("Streams Message: Authentication Is Required In Order To Delete Live Video Files.<BR><BR>");
+
+} // [ + ] IF: Registered MEmber Account :: Credentials :: Exist AND ARE Valid
+
+} // [ + ] IF: Internal Application: Display :: Media Galleries :: Gallery :: Type :: Video :: Live :: Delete :: Video File :: Is: Activated
+
+} // [ + ] IF: STOP: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
+
+} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Video :: Is: Public
+
+} // [ + ] WHILE: Reading Directory: Registered Member Account :: Gallery :: Video :: Live
+
+} // [ + ] IF: Internal Application: Display :: Media Galleries :: Gallery :: Type :: Video :: Live :: Is: Activated
 
 } // [ + ] IF: Internal Application: Display :: Media Galleries
 
@@ -4902,16 +4994,18 @@ echo ("Message: You are not Logged-In. Please Authenticate into your Registered 
 
 if ($_GET["Live"] == "VideoStream") {
 
-echo ("
-			<VIDEO AUTOPLAY=\"\" ID=\"stream-elem\" CONTROLS WIDTH=\"640\" HEIGHT=\"320\">
-				<SOURCE SRC=\"\" TYPE=\"\">
-			</VIDEO><BR>
+if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) {
 
-			<BUTTON ID=\"start-stream\">Record</BUTTON>
-			<BUTTON ID=\"stop-media\">Stop</BUTTON>
+echo ("
+			Live Video Stream<HR>
+			<OBJECT DATA=\"./System/Plug-Ins/Camera/Default/Box/Camera.php\" WIDTH=\"75%\" HEIGHT=\"250\></OBJECT>
 ");
 
-echo ("$_Application_Module_PlugIn_Camera_VIDEO_LIVE_RECORD");
+} else {
+
+echo ("Streams Message: Authentication Is Required In Order To Broadcast a Live Video Stream.<BR>");
+
+} // [ + ] IF: Registered Member Account :: Credentials :: Exist AND ARE Valid
 
 } // [ + ] IF: Internal Application: Display :: Profile :: Name :: Streams :: Live :: VideoStream :: Is: Activated
 
