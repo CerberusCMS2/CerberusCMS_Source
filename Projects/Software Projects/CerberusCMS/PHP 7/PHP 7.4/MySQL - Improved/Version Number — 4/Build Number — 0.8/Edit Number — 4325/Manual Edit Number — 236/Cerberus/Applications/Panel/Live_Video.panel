@@ -17,7 +17,7 @@
  +  ------------------------------
  +  Panel Application Module
  + ----------------------------------------------------------------------------------------------------------
- + - This File, Location	 : Root Directory => Applications => Panel => Location.panel
+ + - This File, Location	 : Root Directory => Applications => Panel => Live_Video.panel
  + - This File, Version		 : 0.7.1
  + - This File, Programming Code : Pure Pre-Hyper-Text-Post-Processor
  + - Programming Code Model	 : Procedural, Functional, Object Oriented :: Pre-Order Algebraic
@@ -48,7 +48,7 @@
  +
  +
  +
- + [ ^ ] Application Module :: Panel :: Location
+ + [ ^ ] Application Module :: Panel :: Live Video
  +
  +
  +
@@ -59,26 +59,11 @@
  ============================================================================================================
  +
  +
- + [ @ ] Display :: Panel :: Location
+ + [ @ ] Display :: Panel :: Live Video
  +
  +
  ============================================================================================================
 */
 
-echo ("
-<B>Connected Device :: Coordinates</B><BR>
-* Latitude: <A ID=\"getLocationOutputLatitude\" TITLE=\":: Global-Positioning-System :: Coordinates :: Latitude ::\"></A><BR>
-* Longitude: <A ID=\"getLocationOutputLongitude\" TITLE=\":: Global-Positioning-System :: Coordinates ::: Longitude ::\"></A><BR>
-* Altitude Above Sea-Level: <A ID=\"getLocationOutputAltitude\" TITLE=\":: Global-Positioning-System :: Coordinates :: Altitude ::\"></A><BR>
-* Maps Interface: <SPAN ID=\"OutputLocation\"></SPAN><BR><BR>
-
-<B>Connected Device :: Motion</B><BR>
-* Acceleration:<BR>
-* Linear-Acceleration:<BR>
-* Direction:<BR>
-* Gravity:<BR>
-<HR>
-$_GLOBAL_SYSTEM_PLUGIN_LOCATION_GPS_COORDINATES_XYZ_HTML5_APPLICATION_PANEL
-$_GLOBAL_SYSTEM_PLUGIN_LOCATION_GPS_COORDINATES_XY_HTML5_HTR_APPLICATION_PANEL
-");
+include_once "./System/Plug-Ins/Camera/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA/Camera.html";
 ?>
