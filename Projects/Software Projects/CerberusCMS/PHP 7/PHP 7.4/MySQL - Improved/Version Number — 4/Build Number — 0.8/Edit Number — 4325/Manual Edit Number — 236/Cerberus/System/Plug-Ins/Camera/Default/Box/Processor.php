@@ -17,7 +17,7 @@
  +  ------
  + Plug-In Application Module
  + ----------------------------------------------------------------------------------------------------------
- + - This File, Location	 : Root Directory => System => Plug-Ins => Camera => Default
+ + - This File, Location	 : Root Directory => System => Plug-Ins => Camera => Default => Box
  +				 : => Processor
  + - This File, Version		 : 0.7.1
  + - This File, Programming Code : Pure Pre-Hyper-Text-Post-Processor
@@ -59,14 +59,49 @@
 /*
  ============================================================================================================
  +
- + [ @ ] Plug-In :: Camera :: Video :: Live :: Processor :: Extract Video Feed and Move File To Directory
+ + [ @ ] Plug-In :: Camera :: Video :: Live :: Processor :: Variables
  +
  ============================================================================================================
 */
 
-$_GLOBAL_LOCAL_SERVER_DATE_STANDARD		= date("l, F j, Y g:i:s A");
+/*
+ ============================================================================================================
+ + Plug-In :: Camera :: Video :: Live :: Processor :: Variables :: Date
+ ============================================================================================================
+*/
+
+$_GLOBAL_LOCAL_SERVER_DATE_STANDARD		= date("l-F-j-Y-g-i-s-A");
+
+/*
+ ============================================================================================================
+ + Plug-In :: Camera :: Video :: Live :: Processor :: Variables :: Cookies
+ ============================================================================================================
+*/
+
+$_GLOBAL_COOKIE_MEMBER_USERNAME			= $_COOKIE['kernel_member_username'];
+$_GLOBAL_COOKIE_MEMBER_PASSWORD			= $_COOKIE['kernel_member_password'];
+
+/*
+ ============================================================================================================
+ + Plug-In :: Camera :: Video :: Live :: Processor :: Constantly Extract Video Feed
+ ============================================================================================================
+*/
 
 var_dump($_FILES);
 
-move_uploaded_file($_FILES["blobFile"]["tmp_name"], "./video.mp4");
+/*
+ ============================================================================================================
+ + Plug-In :: Camera :: Video :: Live :: Processor :: Move Finished Video File To Backup Directory
+ ============================================================================================================
+*/
+
+move_uploaded_file($_FILES['blobFile']['tmp_name'], "../../../../../Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Video/Live/Backup/$_GLOBAL_LOCAL_SERVER_DATE_STANDARD.mp4");
+
+/*
+ ============================================================================================================
+ + Plug-In :: Camera :: Video :: Live :: Processor :: Copy Finished Video File From Backup Directory To Live Directory
+ ============================================================================================================
+*/
+
+copy("../../../../../Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Video/Live/Backup/$_GLOBAL_LOCAL_SERVER_DATE_STANDARD.mp4","../../../../../Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Video/Live/$_GLOBAL_LOCAL_SERVER_DATE_STANDARD.mp4");
 ?>
