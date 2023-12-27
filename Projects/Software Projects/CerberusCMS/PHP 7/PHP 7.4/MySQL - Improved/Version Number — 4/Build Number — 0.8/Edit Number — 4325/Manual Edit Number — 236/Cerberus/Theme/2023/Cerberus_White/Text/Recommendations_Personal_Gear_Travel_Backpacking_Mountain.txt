@@ -1,5 +1,7 @@
 Total Carry Weight: 40 Pounds OR 18 Kilograms
 
+~ Mountains
+
 [+] Clothing / Jewelry / Sandals - Shoes - Boots / Accessories / Backpacks / Electronics
 [*] HeadWear
 [+] Hats
@@ -100,18 +102,7 @@ number/men/jeans/501/c/levi_jeans_by_fit_number_men_jeans_501
 [*] Shoes / Boots / Sandals
 [+] Boots
 [-] Dr. Martens
-* https://www.DrMartens.com/us/en/p/16607001
-* https://www.DrMartens.com/us/en/originals-boots-and-shoes/boots/1460-lace-up-
-boots/c/06015600
-[-] GripFast
-* https://www.GripFastBoots.com/products/gripfast-10-eyelet-steel-toe-boot-in-black
-[-] SoloVair
-* https://us.nps-Solovair.com/collections/all/products/s11-981-bk-g?variant=36508662235208
-[+] Sandals
-[-] Olukai Malanai Sandals
-* https://www.Olukai.com/products/ohana-womens-beach-sandals-petal-pink-black
-[-] QuickSilver Sandals
-* https://www.quiksilver.com/mens-flip-flops-sale/
+* https://www.DrMartens.com/us/en/tarik-utility-boots-black/p/27017001
 [*] Shoes / Boots Accessories
 [+] Memory Foam Inserts
 [-] AirPlus Memory Foam Inserts

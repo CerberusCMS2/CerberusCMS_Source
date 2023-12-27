@@ -8,7 +8,7 @@ echo ("
 <B>This Free and Open Source Software Project is Protected by Local and International Copyright Laws</B><HR>
 This $_PROJECT_STRING_NAME_UNIX Theme was created by $_PROJECT_STRING_LEGAL_NAME_AUTHOR<BR><BR>
 
-<IMG SRC=\"./Theme/2022_TinkeSoftware_Grey/Image/Legal/Author_G.C._Johnson.jpg\" CLASS=\"LegalImageAuthor\" WIDTH=\"300\" HEIGHT=\"400\"></IMG><BR><BR>
+<IMG SRC=\"./Theme/2023_Cerberus_White/Image/Legal/Author_G.C._Johnson.jpg\" CLASS=\"LegalImageAuthor\" WIDTH=\"300\" HEIGHT=\"400\"></IMG><BR><BR>
 
 Credit :: Graphical-User-Interface Theme<BR>
 <TEXTAREA ROWS=\"7\" COLS=\"50\">
