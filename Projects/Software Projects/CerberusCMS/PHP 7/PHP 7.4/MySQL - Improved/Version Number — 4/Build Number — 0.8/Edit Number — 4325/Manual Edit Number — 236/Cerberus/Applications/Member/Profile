@@ -4176,13 +4176,21 @@ if ($_GET["Delete"] == "$_Application_Module_Member_Profile_Gallery_READ_DIRECTO
 
 if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) {
 
+if ($_GLOBAL_COOKIE_MEMBER_USERNAME == "$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME") {
+
 unlink("./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Video/Live/$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_LIVE");
+
+} else { // [ + ] ELSE: Registered Member Account :: UserName :: DOES NOT Match :: This Registered Member Account Profile UserName
+
+echo ("Streams Message: This Live Video Cannot Be Deleted Because You Are Not This Registered Member Account Profile Owner.<BR><BR>");
+
+} // [ + ] IF: Registered Member Account :: UserName :: Matches OR DOES NOT Match :: This Registered Member Account Profile UserName
 
 } else { // [ + ] ELSE: Registered Member Account :: Credentials :: ARE NOT Valid, Do Not Delete Video File
 
 echo ("Streams Message: Authentication Is Required In Order To Delete Live Video Files.<BR><BR>");
 
-} // [ + ] IF: Registered MEmber Account :: Credentials :: Exist AND ARE Valid
+} // [ + ] IF: Registered Member Account :: Credentials :: Exist AND ARE Valid
 
 } // [ + ] IF: Internal Application: Display :: Media Galleries :: Gallery :: Type :: Video :: Live :: Delete :: Video File :: Is: Activated
 
