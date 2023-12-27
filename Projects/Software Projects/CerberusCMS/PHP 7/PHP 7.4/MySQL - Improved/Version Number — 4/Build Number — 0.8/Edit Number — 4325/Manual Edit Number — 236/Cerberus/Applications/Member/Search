@@ -82,12 +82,12 @@ echo ("
 												<INPUT TYPE=\"TEXT\" NAME=\"AMM_Search_Search_Keyword\"><BR>
 											Section:<BR>
 												<SELECT NAME=\"AMM_Search_Search_Section\">
-													<OPTION VALUE=\"1\">Article Entires</OPTION>
-													<OPTION VALUE=\"2\">File Entries</OPTION>
-													<OPTION VALUE=\"3\">Forum Entries</OPTION>
-													<OPTION VALUE=\"4\">Registered Members</OPTION>
-													<OPTION VALUE=\"5\">News Article Entries</OPTION>
-													<OPTION VALUE=\"6\">Market Entries</OPTION>
+													<OPTION VALUE=\"1\">Entires :: Articles</OPTION>
+													<OPTION VALUE=\"2\">Entries :: Files</OPTION>
+													<OPTION VALUE=\"3\">Entries :: Forum</OPTION>
+													<OPTION VALUE=\"4\">Registered Member Accounts</OPTION>
+													<OPTION VALUE=\"5\">Entries :: News Articles</OPTION>
+													<OPTION VALUE=\"6\">Entries :: Market</OPTION>
 												</SELECT><BR>
 											<INPUT TYPE=\"SUBMIT\" VALUE=\"Search\">
 										</FORM>

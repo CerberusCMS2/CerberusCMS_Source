@@ -67,7 +67,7 @@
  ============================================================================================================
 */
 
-$_FIND_FILE_LEGAL_DOCUMENT							= "./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Text/Legal.txt";
+$_FIND_FILE_LEGAL_DOCUMENT							= "./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Legal.txt";
 
 /*
  ============================================================================================================
@@ -81,7 +81,7 @@ if (file_exists($_FIND_FILE_LEGAL_DOCUMENT)) {
 
 } else {
 
-											echo ("Missing: $_FIND_FILE_LEGAL_DOCUMENT");
+											echo ("Message: Missing File: $_FIND_FILE_LEGAL_DOCUMENT");
 
 } // [ + ] IF: File Exists: Software Project :: File :: Legal Document File
 ?>
