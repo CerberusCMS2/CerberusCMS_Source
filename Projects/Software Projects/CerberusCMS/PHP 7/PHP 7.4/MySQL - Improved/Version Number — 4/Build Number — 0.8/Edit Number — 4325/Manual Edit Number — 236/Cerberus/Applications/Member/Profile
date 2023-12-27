@@ -4998,7 +4998,7 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) 
 
 echo ("
 			Live Video Stream<HR>
-			<OBJECT DATA=\"./System/Plug-Ins/Camera/Default/Box/Camera.php\" WIDTH=\"75%\" HEIGHT=\"250\></OBJECT>
+			<OBJECT DATA=\"./System/Plug-Ins/Camera/Default/Live/Profile/Camera.php\" WIDTH=\"75%\" HEIGHT=\"250\></OBJECT>
 ");
 
 } else {
