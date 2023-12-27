@@ -387,8 +387,9 @@ This Plug-In automatically handles and processes the Measurement of Date, Time a
 * '''Watermark'''
 This Plug-In automatically handles and processes every file that is uploaded to the system. Audio, Document, Image and Video files are embedded with a Watermark so that
 if in the event the file is downloaded by anyone the file can be traced back to the Web Server it was uploaded to. The Watermark is in the form of a QR Code that is
-embedded into the file and can be invisible or visible. This prevents malicious actors from downloading Profile Images to use them in duplicated accounts. There are several
-options of QR Codes that can be embedded into the files.
+embedded into the file and can be invisible or visible. This prevents malicious actors from downloading Profile Images to use them in duplicated accounts. If a malicious actor
+duplicates an account on the system or on some other web server the content that they downloaded from the real profile owner will have an embedded QR code that is invisible
+where when looked at everyone will know that the profile is a fake version of the real one. There are several options of QR Codes that can be embedded into the files.
 
 ==Project Web Server Software Compatibility==
 
