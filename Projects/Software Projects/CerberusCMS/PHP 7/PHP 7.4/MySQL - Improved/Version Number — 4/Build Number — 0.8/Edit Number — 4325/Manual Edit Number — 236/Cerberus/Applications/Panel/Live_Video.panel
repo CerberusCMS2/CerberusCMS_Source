@@ -65,5 +65,5 @@
  ============================================================================================================
 */
 
-include_once "./System/Plug-Ins/Camera/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA/Camera.html";
+include_once "./System/Plug-Ins/Camera/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA/Live/Panel/Camera.php";
 ?>
