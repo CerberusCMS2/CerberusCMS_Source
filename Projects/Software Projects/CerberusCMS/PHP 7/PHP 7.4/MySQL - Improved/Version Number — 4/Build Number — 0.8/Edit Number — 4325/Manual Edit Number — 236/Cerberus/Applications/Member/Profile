@@ -5000,7 +5000,7 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME == "$_Application_Module_Member_Profile_LIST
 
 echo ("
 			Live Video Stream<HR>
-			<OBJECT DATA=\"./System/Plug-Ins/Camera/Default/Live/Profile/Camera.php\" WIDTH=\"75%\" HEIGHT=\"265\></OBJECT>
+			<OBJECT DATA=\"./System/Plug-Ins/Camera/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA/Live/Profile/Camera.php\" WIDTH=\"75%\" HEIGHT=\"265\></OBJECT>
 ");
 
 } else {
