@@ -1979,7 +1979,7 @@ $_Application_Module_Member_Message_Theme_Header									= "<CENTER>[ <B><A HREF
  ============================================================================================================
 */
 
-$_Application_Module_Member_Message_Theme_SET_SUCCESSFUL								= "<CENTER>Cerberus: I have set the requested Theme Successfully.</CENTER>";
+$_Application_Module_Member_Message_Theme_SET_SUCCESSFUL								= "<CENTER><HR ALIGN=\"CENTER\" WIDTH=\"50%\">Cerberus: I have set the requested Theme Successfully<HR ALIGN=\"CENTER\" WIDTH=\"50%\"></CENTER>";
 
 /*
  ============================================================================================================

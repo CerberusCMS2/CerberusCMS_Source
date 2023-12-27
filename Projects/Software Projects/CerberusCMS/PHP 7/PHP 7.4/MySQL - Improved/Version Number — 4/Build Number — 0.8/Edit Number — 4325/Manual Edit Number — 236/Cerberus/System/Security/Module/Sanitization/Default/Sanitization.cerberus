@@ -373,7 +373,6 @@ $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST		
 
 $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST								= str_replace("`", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
 
-
 /*
  ============================================================================================================
  +
@@ -591,6 +590,18 @@ $_Kernel_Set_Member_Account_POST_SET_THEME									= str_replace(" ", "", $_Kern
  +
  +
  +
+ + [ @ ] Application :: Services :: Control Panel
+ +
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
  + [ @ ] Application :: Services :: Integrity
  +
  +
@@ -603,7 +614,31 @@ $_Kernel_Set_Member_Account_POST_SET_THEME									= str_replace(" ", "", $_Kern
  +
  +
  +
+ + [ @ ] Application :: Services :: Kernel
+ +
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
  + [ @ ] Application :: Services :: Loops
+ +
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ @ ] Application :: Services :: Services
  +
  +
  +
@@ -1724,6 +1759,18 @@ $_Application_Module_Administration_File_Categories_POST_UPDATE_FILE_CATEGORY_DE
  +
  +
  +
+ + [ @ ] Application :: Administration :: File_Manager
+ +
+ + Number of Variables :: GET  ::
+ + Number of Variables :: POST ::
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
  + [ @ ] Application :: Administration :: Forum
  +
  + Number of Variables :: GET  :: 
@@ -2209,7 +2256,7 @@ $_Application_Module_Administration_Networking_POST_BLOCK_INTERNET_PROTOCOL_ADDR
  + [ @ ] Application :: Administration :: Messenger
  +
  + Number of Variables :: GET ::
- + Number of Variables :: POST ::
+ + Number of Variables :: POST :: 033
  ============================================================================================================
 */
 
@@ -2221,6 +2268,40 @@ $_Application_Module_Administration_Networking_POST_BLOCK_INTERNET_PROTOCOL_ADDR
  ============================================================================================================
 */
 
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME							= $_POST['AMM_Messenger_Visible_Clear_Text_File_Messenger_Select_Room_Name'];
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN						= $_POST['AMM_Messenger_Visible_Clear_Text_File_Messenger_Select_Room_Name_Hidden'];
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE							= $_POST['AMM_Messenger_Visible_Clear_Text_File_Messenger_Room_Message'];
+$_Application_Module_Member_Messenger_POST_GENERATE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_PASSWORD_ENTRY				= $_POST['AMM_Messenger_Visible_Clear_Text_File_Messenger_Room_Password_Entry'];
+$_Application_Module_Member_Messenger_POST_GENERATE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_PASSWORD_MAINTENANCE				= $_POST['AMM_Messenger_Visible_Clear_Text_File_Messenger_Room_Password_Maintenance'];
+$_Application_Module_Member_Messenger_POST_GENERATE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_PASSWORD_ENTRY				= $_POST['AMM_Messenger_Visible_Clear_Text_File_Messenger_Room_Password_Entry'];
+$_Application_Module_Member_Messenger_POST_GENERATE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_PASSWORD_MAINTENANCE				= $_POST['AMM_Messenger_Visible_Clear_Text_File_Messenger_Room_Password_Maintenance'];
+$_Application_Module_Member_Messenger_POST_GENERATE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME						= $_POST['AMM_Messenger_Visible_Clear_Text_File_Messenger_Room_Name_Generate'];
+$_Application_Module_Member_Messenger_POST_ARCHIVE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME						= $_POST['AMM_Messenger_Visible_Archive_Clear_Text_File_Messenger_Room_Name_Hidden'];
+$_Application_Module_Member_Messenger_POST_ARCHIVE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_PASSWORD					= $_POST['AMM_Messenger_Visible_Archive_Clear_Text_File_Messenger_Room_Name_Password'];
+$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME						= $_POST['AMM_Messenger_Visible_Erase_Clear_Text_File_Messenger_Room_Name_Hidden'];
+$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_PASSWORD					= $_POST['AMM_Messenger_Erase_Clear_Text_File_Messenger_Room_Name_Password'];
+$_Application_Module_Member_Messenger_POST_DELETE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME							= $_POST['AMM_Messenger_Delete_Clear_Text_File_Messenger_Room_Name_Hidden'];
+$_Application_Module_Member_Messenger_POST_DELETE_CLEAR_TEXT_FILE_MESSENGER_ROOM_PASSWORD						= $_POST['AMM_Messenger_Delete_Clear_Text_File_Messenger_Room_Password'];
+$_Application_Module_Member_Messenger_UPLOAD_FILE_AUDIO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME						= $_POST['AMM_Messenger_Visible_Clear_Text_File_Messenger_Room_Name_File_Upload_Audio'];
+$_Application_Module_Member_Messenger_UPLOAD_FILE_DOCUMENT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME						= $_POST['AMM_Messenger_Visible_Clear_Text_File_Messenger_Room_Name_File_Upload_Document'];
+$_Application_Module_Member_Messenger_UPLOAD_FILE_IMAGE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME						= $_POST['AMM_Messenger_Visible_Clear_Text_File_Messenger_Room_Name_File_Upload_Image'];
+$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME						= $_POST['AMM_Messenger_Visible_Clear_Text_File_Messenger_Room_Name_File_Upload_Video'];
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE							= $_POST['AMM_Messenger_P2P_Clear_Text_File_Messenger_Room_Message'];
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_DELETE							= $_POST['AMM_Messenger_P2P_Clear_Text_File_Messenger_Room_Delete'];
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_ERASE							= $_POST['AMM_Messenger_P2P_Clear_Text_File_Messenger_Room_Erase'];
+$_Application_Module_Member_Messenger_POST_FIND_CLEAR_TEXT_FILE_INVISIBLE_MESSENGER_ROOM_NAME						= $_POST['AMM_Messenger_Clear_Text_File_Invisible_Messenger_Room_Name'];
+$_Application_Module_Member_Messenger_POST_FIND_SMS_RECIPIENT_NAME									= $_POST['AMM_Messenger_Find_Messenger_SMS_Recipient_Name'];
+$_Application_Module_Member_Messenger_POST_FIND_MMS_RECIPIENT_NAME									= $_POST['AMM_Messenger_Find_Messenger_MMS_Recipient_Name'];
+$_Application_Module_Member_Messenger_POST_SMS_MOBILE_DEVICE_CARRIER									= $_POST['AMM_Messenger_SMS_Mobile_Device_Carrier'];
+$_Application_Module_Member_Messenger_POST_SMS_MOBILE_DEVICE_CARRIER_PHONE_NUMBER						= $_POST['AMM_Messenger_SMS_Mobile_Device_Carrier_Phone_Number'];
+$_Application_Module_Member_Messenger_POST_SMS_MESSAGE													= $_POST['AMM_Messenger_SMS_Message'];
+$_Application_Module_Member_Messenger_POST_MMS_MOBILE_DEVICE_CARRIER									= $_POST['AMM_Messenger_MMS_Mobile_Device_Carrier'];
+$_Application_Module_Member_Messenger_POST_MMS_MOBILE_DEVICE_CARRIER_PHONE_NUMBER						= $_POST['AMM_Messenger_MMS_Mobile_Device_Carrier_Phone_Number'];
+$_Application_Module_Member_Messenger_POST_MMS_MESSAGE													= $_POST['AMM_Messenger_MMS_Message'];
+$_Application_Module_Member_Messenger_POST_MMS_MESSAGE_FILE_UPLOAD										= $_POST['AMM_Messenger_MMS_Message_File_Upload'];
+$_Application_Module_Member_Messenger_POST_VISIBLE_ENCRYPTED_TEXT_FILE_MESSENGER_MESSAGE						= $_POST['AMM_Messenger_Visible_Encrypted_Text_File_Messenger_Room_Message'];
+$_Application_Module_Member_Messenger_POST_VISIBLE_ENCRYPTED_TEXT_FILE_MESSENGER_MESSAGE						= $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE;
+
 /*
  ============================================================================================================
  +
@@ -2228,8 +2309,6 @@ $_Application_Module_Administration_Networking_POST_BLOCK_INTERNET_PROTOCOL_ADDR
  +
  ============================================================================================================
 */
-
-
 
 $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("`", "", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
 $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("@", "&commat;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
@@ -2716,6 +2795,18 @@ $_Application_Module_Administration_Publish_POST_PUBLISH_ARTICLE_TEXT						= str
 $_Application_Module_Administration_Publish_POST_PUBLISH_ARTICLE_TEXT						= str_replace("^", "&hat;", $_Application_Module_Administration_Publish_POST_PUBLISH_ARTICLE_TEXT);
 $_Application_Module_Administration_Publish_POST_PUBLISH_ARTICLE_TEXT						= str_replace("_", "&lowbar;", $_Application_Module_Administration_Publish_POST_PUBLISH_ARTICLE_TEXT);
 $_Application_Module_Administration_Publish_POST_PUBLISH_ARTICLE_TEXT						= str_replace("|", "&verbar;", $_Application_Module_Administration_Publish_POST_PUBLISH_ARTICLE_TEXT);
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ @ ] Application :: Administration :: Plug-Ins
+ +
+ + Number of Variables :: GET  ::
+ + Number of Variables :: POST ::
+ ============================================================================================================
+*/
 
 /*
  ============================================================================================================
@@ -3448,6 +3539,18 @@ $_Application_Module_Administration_Terminal_POST_TERMINAL_COMMAND						= str_re
 $_Application_Module_Administration_Terminal_POST_TERMINAL_COMMAND						= str_replace("^", "&hat;", $_Application_Module_Administration_Terminal_POST_TERMINAL_COMMAND);
 $_Application_Module_Administration_Terminal_POST_TERMINAL_COMMAND						= str_replace("_", "&lowbar;", $_Application_Module_Administration_Terminal_POST_TERMINAL_COMMAND);
 $_Application_Module_Administration_Terminal_POST_TERMINAL_COMMAND						= str_replace("|", "&verbar;", $_Application_Module_Administration_Terminal_POST_TERMINAL_COMMAND);
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ @ ] Application :: Administration :: Themes
+ +
+ + Number of Variables :: GET  ::
+ + Number of Variables :: POST ::
+ ============================================================================================================
+*/
 
 /*
  ============================================================================================================
@@ -4251,6 +4354,18 @@ $_Application_Module_Administration_Update_POST_UPDATE_FILE_UPLOADER						= str_
  +
  +
  +
+ + [ @ ] Application :: Administration :: VoIP
+ +
+ + Number of Variables :: GET  ::
+ + Number of Variables :: POST ::
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
  + [ @ ] Application :: Administration :: Web_Pages
  +
  + Number of Variables :: GET  :: 
@@ -4615,6 +4730,18 @@ $_Application_Module_Administration_Web_Pages_POST_UPDATE_CUSTOM_APPLICATION_TIM
  +
  +
  +
+ + [ @ ] Application :: Moderator :: Forum
+ +
+ + Number of Variables :: GET  ::
+ + Number of Variables :: POST ::
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
  +
  + [ ^ ] Applications :: Member
  +
@@ -4632,7 +4759,7 @@ $_Application_Module_Administration_Web_Pages_POST_UPDATE_CUSTOM_APPLICATION_TIM
  + [ @ ] Application :: Member :: Account_Data
  +
  + Number of Variables :: GET  :: 
- + Number of Variables :: POST :: 09
+ + Number of Variables :: POST :: 34
  ============================================================================================================
 */
 
@@ -4643,6 +4770,41 @@ $_Application_Module_Administration_Web_Pages_POST_UPDATE_CUSTOM_APPLICATION_TIM
  +
  ============================================================================================================
 */
+
+$_Application_Module_Member_Account_Data_POST_DELETE_DIRECTORY_GALLERY_AUDIO_SELECTION			= $_POST['AMM_Account_Data_Delete_Directory_Gallery_Audio_Selection'];
+$_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_AUDIO_FILE			= $_POST['AMM_Account_Data_Upload_Directory_Gallery_Audio_File'];
+$_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_AUDIO_SELECTION			= $_POST['AMM_Account_Data_Upload_Gallery_Audio_Selection_Directory'];
+$_Application_Module_Member_Account_Data_POST_DELETE_DIRECTORY_GALLERY_DOCUMENT_SELECTION		= $_POST['AMM_Account_Data_Delete_Directory_Gallery_Document_Selection'];
+$_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_DOCUMENT_FILE			= $_POST['AMM_Account_Data_Upload_Directory_Gallery_Document_File'];
+$_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_DOCUMENT_SELECTION		= $_POST['AMM_Account_Data_Upload_Gallery_Document_Selection_Directory'];
+$_Application_Module_Member_Account_Data_POST_DELETE_FILE_GALLERY_IMAGE_PROFILE				= $_POST['AMM_Account_Data_Delete_File_Gallery_Image_Profile'];
+$_Application_Module_Member_Account_Data_POST_DELETE_DIRECTORY_GALLERY_IMAGE_SELECTION			= $_POST['AMM_Account_Data_Delete_Directory_Gallery_Image_Selection'];
+$_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_PROFILE_FILE		= $_POST['AMM_Account_Data_Upload_Directory_Gallery_Image_Profile_File'];
+$_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_FILE			= $_POST['AMM_Account_Data_Upload_Directory_Gallery_Image_File'];
+$_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE				= $_POST['AMM_Account_Data_Upload_Directory_Gallery_Image'];
+$_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_IMAGE_SELECTION			= $_POST['AMM_Account_Data_Upload_Gallery_Image_Selection_Directory'];
+$_Application_Module_Member_Account_Data_POST_DELETE_FILE_GALLERY_VIDEO_PROFILE_IMAGE			= $_POST['AMM_Account_Data_Delete_File_Gallery_Video_Profile_Image'];
+$_Application_Module_Member_Account_Data_POST_DELETE_DIRECTORY_GALLERY_VIDEO_SELECTION			= $_POST['AMM_Account_Data_Delete_Directory_Gallery_Video_Selection'];
+$_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_VIDEO_PROFILE_FILE		= $_POST['AMM_Account_Data_Upload_Directory_Gallery_Video_Profile_File'];
+$_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_VIDEO_FILE			= $_POST['AMM_Account_Data_Upload_Directory_Gallery_Video_File'];
+$_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_VIDEO				= $_POST['AMM_Account_Data_Upload_Directory_Gallery_Video'];
+$_Application_Module_Member_Account_Data_POST_UPLOAD_DIRECTORY_GALLERY_VIDEO_SELECTION			= $_POST['AMM_Account_Data_Upload_Gallery_Video_Selection_Directory'];
+$_Application_Module_Member_Account_Data_POST_CREATE_DIRECTORY_GALLERY_AUDIO				= $_POST['AMM_Account_Data_Create_Directory_Gallery_Audio'];
+$_Application_Module_Member_Account_Data_POST_CREATE_DIRECTORY_GALLERY_DOCUMENT				= $_POST['AMM_Account_Data_Create_Directory_Gallery_Document'];
+$_Application_Module_Member_Account_Data_POST_CREATE_DIRECTORY_GALLERY_IMAGE				= $_POST['AMM_Account_Data_Create_Directory_Gallery_Image'];
+$_Application_Module_Member_Account_Data_POST_CREATE_DIRECTORY_GALLERY_VIDEO				= $_POST['AMM_Account_Data_Create_Directory_Gallery_Video'];
+$_Application_Module_Member_Account_Data_POST_CREATE_DIRECTORY_GALLERY_VIDEO_LIVE			= $_POST['AMM_Account_Data_Create_Directory_Gallery_Video_Live'];
+$_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_AUDIO_SELECTION_DIRECTORY			= $_POST['AMM_Account_Data_Upload_Gallery_Audio_Selection_Directory'];
+$_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_AUDIO_SELECTION_DIRECTORY_TEMPORARY	= $_POST['AMM_Account_Data_Upload_Gallery_Audio_Selection_Directory_Temporary'];
+$_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_DOCUMENT_SELECTION_DIRECTORY		= $_POST['AMM_Account_Data_Upload_Gallery_Document_Selection_Directory'];
+$_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_DOCUMENT_SELECTION_DIRECTORY_TEMPORARY	= $_POST['AMM_Account_Data_Upload_Gallery_Document_Selection_Directory_Temporary'];
+$_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_PROFILE_DIRECTORY_TEMPORARY		= $_POST['AMM_Account_Data_Upload_File_Gallery_Image_Profile_Directory_Temporary'];
+$_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_DIRECTORY_TEMPORARY	= $_POST['AMM_Account_Data_Upload_File_Gallery_Image_Selection_Directory_Temporary'];
+$_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_DIRECTORY          	= $_POST['AMM_Account_Data_Upload_File_Gallery_Image_Selection_Directory'];
+$_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_IMAGE_SELECTION_MULTIPLE                   = $_POST['AMM_Account_Data_Upload_File_Gallery_Image_Selection_Multiple'];
+$_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_VIDEO_PROFILE_IMAGE_DIRECTORY_TEMPORARY	= $_POST['AMM_Account_Data_Upload_File_Gallery_Video_Profile_Image_Directory_Temporary'];
+$_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_VIDEO_SELECTION_DIRECTORY			= $_POST['AMM_Account_Data_Upload_Gallery_Video_Selection_Directory'];
+$_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_VIDEO_SELECTION_DIRECTORY_TEMPORARY	= $_POST['AMM_Account_Data_Upload_Gallery_Video_Selection_Directory_Temporary'];
 
 /*
  ============================================================================================================
@@ -4660,7 +4822,7 @@ $_Application_Module_Administration_Web_Pages_POST_UPDATE_CUSTOM_APPLICATION_TIM
  + [ @ ] Application :: Member :: Account_Recovery
  +
  + Number of Variables :: GET  :: 
- + Number of Variables :: POST :: 02
+ + Number of Variables :: POST :: 12
  ============================================================================================================
 */
 
@@ -4672,8 +4834,18 @@ $_Application_Module_Administration_Web_Pages_POST_UPDATE_CUSTOM_APPLICATION_TIM
  ============================================================================================================
 */
 
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= $_POST['AMM_Account_Recovery_Electronic_Mail_Address'];
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= $_POST['AMM_Account_Recovery_UserName'];
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS			= $_POST['AMM_Account_Recovery_Initial_Member_Electronic_Mail_Address'];
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME				= $_POST['AMM_Account_Recovery_Initial_Member_UserName'];
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY				= $_POST['AMM_Account_Recovery_Recovery_Key_Member_Recovery_Key'];
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS			= $_POST['AMM_Account_Recovery_Recovery_Key_Member_Electronic_Mail_Address'];
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME				= $_POST['AMM_Account_Recovery_Recovery_Key_Member_UserName'];
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER		= $_POST['AMM_Account_Recovery_Recovery_SMS_Mobile_Device_Phone_Number'];
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1			= $_POST['AMM_Account_Recovery_Recovery_Key_Update_Member_Password_1'];
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2			= $_POST['AMM_Account_Recovery_Recovery_Key_Update_Member_Password_2'];
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA		= $_POST['AMM_Account_Recovery_Recovery_Key_Update_Member_Password_Hidden_EMA'];
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME		= $_POST['AMM_Account_Recovery_Recovery_Key_Update_Member_Password_Hidden_UserName'];
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY	= $_POST['AMM_Account_Recovery_Recovery_Key_Update_Member_Password_Hidden_Key'];
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER		= $_POST['AMM_Account_Recovery_Recovery_SMS_Mobile_Device_Phone_Number'];
 
 /*
  ============================================================================================================
@@ -4683,67 +4855,376 @@ $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= $_POS
  ============================================================================================================
 */
 
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace("`", "", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace("@", "&commat;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace("<", "&lt;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace(">", "&gt;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace("\"", "&quot;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace("&", "&amp;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace("'", "&apos;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace("~", "&#126;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace("$", "&#36;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace("=", "&#61;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace("{", "&lcub;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace("}", "&rcub;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace("(", "&lpar;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace(")", "&rpar;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace("#", "&num;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace("%", "&percnt;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace("*", "&ast;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace("+", "&plus;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace(",", "&comma;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace("-", "&minus;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace(".", "&period;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace("/", "&sol;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace(":", "&colon;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace("\;", "&semi;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace("?", "&quest;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace("[", "&lsqb;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace("]", "&rsqb;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace("^", "&hat;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace("_", "&lowbar;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS				= str_replace("|", "&verbar;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("`", "", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("@", "&commat;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("<", "&lt;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace(">", "&gt;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("\"", "&quot;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("&", "&amp;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("'", "&apos;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("~", "&#126;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("$", "&#36;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("=", "&#61;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("{", "&lcub;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("}", "&rcub;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("(", "&lpar;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace(")", "&rpar;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("#", "&num;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("%", "&percnt;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("*", "&ast;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("+", "&plus;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace(",", "&comma;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("-", "&minus;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace(".", "&period;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("/", "&sol;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace(":", "&colon;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("\;", "&semi;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("?", "&quest;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("[", "&lsqb;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("]", "&rsqb;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("^", "&hat;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("_", "&lowbar;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("|", "&verbar;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS);
 
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace("`", "", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace("@", "&commat;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace("<", "&lt;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace(">", "&gt;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace("\"", "&quot;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace("&", "&amp;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace("'", "&apos;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace("~", "&#126;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace("$", "&#36;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace("=", "&#61;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace("{", "&lcub;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace("}", "&rcub;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace("(", "&lpar;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace(")", "&rpar;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace("#", "&num;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace("%", "&percnt;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace("*", "&ast;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace("+", "&plus;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace(",", "&comma;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace("-", "&minus;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace(".", "&period;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace("/", "&sol;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace(":", "&colon;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace("\;", "&semi;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace("?", "&quest;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace("[", "&lsqb;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace("]", "&rsqb;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace("^", "&hat;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace("_", "&lowbar;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
-$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME						= str_replace("|", "&verbar;", $_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace("`", "", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace("@", "&commat;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace("<", "&lt;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace(">", "&gt;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace("\"", "&quot;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace("&", "&amp;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace("'", "&apos;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace("~", "&#126;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace("$", "&#36;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace("=", "&#61;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace("{", "&lcub;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace("}", "&rcub;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace("(", "&lpar;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace(")", "&rpar;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace("#", "&num;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace("%", "&percnt;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace("*", "&ast;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace("+", "&plus;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace(",", "&comma;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace("-", "&minus;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace(".", "&period;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace("/", "&sol;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace(":", "&colon;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace("\;", "&semi;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace("?", "&quest;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace("[", "&lsqb;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace("]", "&rsqb;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace("^", "&hat;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace("_", "&lowbar;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME							= str_replace("|", "&verbar;", $_Application_Module_Member_Account_Recovery_POST_STEP_1_MEMBER_USERNAME);
+
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace("`", "", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace("@", "&commat;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace("<", "&lt;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace(">", "&gt;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace("\"", "&quot;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace("&", "&amp;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace("'", "&apos;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace("~", "&#126;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace("$", "&#36;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace("=", "&#61;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace("{", "&lcub;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace("}", "&rcub;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace("(", "&lpar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace(")", "&rpar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace("#", "&num;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace("%", "&percnt;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace("*", "&ast;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace("+", "&plus;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace(",", "&comma;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace(".", "&period;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace("/", "&sol;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace(":", "&colon;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace("\;", "&semi;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace("?", "&quest;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace("[", "&lsqb;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace("]", "&rsqb;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace("^", "&hat;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace("_", "&lowbar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY							= str_replace("|", "&verbar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_RECOVERY_KEY);
+
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("`", "", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("@", "&commat;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("<", "&lt;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace(">", "&gt;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("\"", "&quot;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("&", "&amp;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("'", "&apos;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("~", "&#126;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("$", "&#36;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("=", "&#61;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("{", "&lcub;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("}", "&rcub;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("(", "&lpar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace(")", "&rpar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("#", "&num;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("%", "&percnt;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("*", "&ast;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("+", "&plus;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace(",", "&comma;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("-", "&minus;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace(".", "&period;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("/", "&sol;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace(":", "&colon;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("\;", "&semi;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("?", "&quest;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("[", "&lsqb;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("]", "&rsqb;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("^", "&hat;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("_", "&lowbar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS							= str_replace("|", "&verbar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_ELECTRONIC_MAIL_ADDRESS);
+
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace("`", "", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace("@", "&commat;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace("<", "&lt;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace(">", "&gt;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace("\"", "&quot;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace("&", "&amp;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace("'", "&apos;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace("~", "&#126;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace("$", "&#36;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace("=", "&#61;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace("{", "&lcub;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace("}", "&rcub;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace("(", "&lpar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace(")", "&rpar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace("#", "&num;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace("%", "&percnt;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace("*", "&ast;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace("+", "&plus;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace(",", "&comma;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace("-", "&minus;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace(".", "&period;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace("/", "&sol;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace(":", "&colon;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace("\;", "&semi;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace("?", "&quest;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace("[", "&lsqb;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace("]", "&rsqb;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace("^", "&hat;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace("_", "&lowbar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME							= str_replace("|", "&verbar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_MEMBER_USERNAME);
+
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("`", "", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("@", "&commat;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("<", "&lt;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace(">", "&gt;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("\"", "&quot;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("&", "&amp;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("'", "&apos;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("~", "&#126;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("$", "&#36;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("=", "&#61;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("{", "&lcub;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("}", "&rcub;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("(", "&lpar;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace(")", "&rpar;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("#", "&num;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("%", "&percnt;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("*", "&ast;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("+", "&plus;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace(",", "&comma;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("-", "&minus;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace(".", "&period;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("/", "&sol;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace(":", "&colon;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("\;", "&semi;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("?", "&quest;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("[", "&lsqb;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("]", "&rsqb;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("^", "&hat;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("_", "&lowbar;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("|", "&verbar;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace("`", "", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace("@", "&commat;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace("<", "&lt;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace(">", "&gt;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace("\"", "&quot;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace("&", "&amp;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace("'", "&apos;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace("~", "&#126;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace("$", "&#36;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace("=", "&#61;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace("{", "&lcub;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace("}", "&rcub;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace("(", "&lpar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace(")", "&rpar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace("#", "&num;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace("%", "&percnt;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace("*", "&ast;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace("+", "&plus;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace(",", "&comma;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace("-", "&minus;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace(".", "&period;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace("/", "&sol;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace(":", "&colon;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace("\;", "&semi;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace("?", "&quest;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace("[", "&lsqb;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace("]", "&rsqb;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace("^", "&hat;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace("_", "&lowbar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1							= str_replace("|", "&verbar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_1);
+
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace("`", "", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace("@", "&commat;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace("<", "&lt;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace(">", "&gt;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace("\"", "&quot;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace("&", "&amp;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace("'", "&apos;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace("~", "&#126;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace("$", "&#36;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace("=", "&#61;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace("{", "&lcub;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace("}", "&rcub;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace("(", "&lpar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace(")", "&rpar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace("#", "&num;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace("%", "&percnt;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace("*", "&ast;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace("+", "&plus;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace(",", "&comma;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace("-", "&minus;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace(".", "&period;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace("/", "&sol;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace(":", "&colon;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace("\;", "&semi;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace("?", "&quest;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace("[", "&lsqb;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace("]", "&rsqb;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace("^", "&hat;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace("_", "&lowbar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2							= str_replace("|", "&verbar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_2);
+
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace("`", "", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace("@", "&commat;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace("<", "&lt;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace(">", "&gt;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace("\"", "&quot;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace("&", "&amp;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace("'", "&apos;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace("~", "&#126;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace("$", "&#36;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace("=", "&#61;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace("{", "&lcub;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace("}", "&rcub;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace("(", "&lpar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace(")", "&rpar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace("#", "&num;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace("%", "&percnt;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace("*", "&ast;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace("+", "&plus;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace(",", "&comma;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace("-", "&minus;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace(".", "&period;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace("/", "&sol;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace(":", "&colon;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace("\;", "&semi;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace("?", "&quest;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace("[", "&lsqb;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace("]", "&rsqb;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace("^", "&hat;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace("_", "&lowbar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA							= str_replace("|", "&verbar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_EMA);
+
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace("`", "", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace("@", "&commat;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace("<", "&lt;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace(">", "&gt;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace("\"", "&quot;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace("&", "&amp;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace("'", "&apos;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace("~", "&#126;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace("$", "&#36;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace("=", "&#61;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace("{", "&lcub;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace("}", "&rcub;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace("(", "&lpar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace(")", "&rpar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace("#", "&num;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace("%", "&percnt;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace("*", "&ast;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace("+", "&plus;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace(",", "&comma;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace("-", "&minus;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace(".", "&period;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace("/", "&sol;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace(":", "&colon;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace("\;", "&semi;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace("?", "&quest;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace("[", "&lsqb;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace("]", "&rsqb;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace("^", "&hat;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace("_", "&lowbar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME							= str_replace("|", "&verbar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_USERNAME);
+
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace("`", "", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace("@", "&commat;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace("<", "&lt;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace(">", "&gt;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace("\"", "&quot;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace("&", "&amp;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace("'", "&apos;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace("~", "&#126;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace("$", "&#36;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace("=", "&#61;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace("{", "&lcub;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace("}", "&rcub;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace("(", "&lpar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace(")", "&rpar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace("#", "&num;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace("%", "&percnt;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace("*", "&ast;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace("+", "&plus;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace(",", "&comma;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace("-", "&minus;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace(".", "&period;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace("/", "&sol;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace(":", "&colon;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace("\;", "&semi;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace("?", "&quest;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace("[", "&lsqb;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace("]", "&rsqb;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace("^", "&hat;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace("_", "&lowbar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+$_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY							= str_replace("|", "&verbar;", $_Application_Module_Member_Account_Recovery_POST_STEP_2_UPDATE_MEMBER_PASSWORD_HIDDEN_RECOVERY_KEY);
+
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("`", "", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("@", "&commat;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("<", "&lt;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace(">", "&gt;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("\"", "&quot;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("&", "&amp;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("'", "&apos;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("~", "&#126;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("$", "&#36;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("=", "&#61;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("{", "&lcub;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("}", "&rcub;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("(", "&lpar;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace(")", "&rpar;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("#", "&num;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("%", "&percnt;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("*", "&ast;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("+", "&plus;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace(",", "&comma;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("-", "&minus;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace(".", "&period;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("/", "&sol;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace(":", "&colon;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("\;", "&semi;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("?", "&quest;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("[", "&lsqb;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("]", "&rsqb;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("^", "&hat;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("_", "&lowbar;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
+$_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER							= str_replace("|", "&verbar;", $_Application_Module_Member_Account_Recovery_POST_STEP_3_MEMBER_MOBILE_DEVICE_PHONE_NUMBER);
 
 /*
  ============================================================================================================
@@ -4979,6 +5460,29 @@ $_Application_Module_Member_Calculator_SIMPLE_POST_VALUE_NUMBER_2						= str_rep
 $_Application_Module_Member_Calculator_SIMPLE_POST_VALUE_NUMBER_2						= str_replace("_", "&lowbar;", $_Application_Module_Member_Calculator_SIMPLE_POST_VALUE_NUMBER_2);
 $_Application_Module_Member_Calculator_SIMPLE_POST_VALUE_NUMBER_2						= str_replace("|", "&verbar;", $_Application_Module_Member_Calculator_SIMPLE_POST_VALUE_NUMBER_2);
 
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ @ ] Application :: Member :: Calculator
+ +
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ @ ] Application :: Member :: Calendar
+ +
+ +
+ +
+ ============================================================================================================
+*/
 
 /*
  ============================================================================================================
@@ -5152,6 +5656,18 @@ $_Application_Module_Member_Comment_POST_UPDATE_COMMENT_DATA							= str_replace
 $_Application_Module_Member_Comment_POST_UPDATE_COMMENT_DATA							= str_replace("_", "&lowbar;", $_Application_Module_Member_Comment_POST_UPDATE_COMMENT_DATA);
 $_Application_Module_Member_Comment_POST_UPDATE_COMMENT_DATA							= str_replace("|", "&verbar;", $_Application_Module_Member_Comment_POST_UPDATE_COMMENT_DATA);
 
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ @ ] Application :: Member :: Contact_Administrator
+ +
+ +
+ +
+ ============================================================================================================
+*/
+
 $_Application_Module_Member_Contact_Administrator_POST_NAME							= str_replace("`", "", $_Application_Module_Member_Contact_Administrator_POST_NAME);
 $_Application_Module_Member_Contact_Administrator_POST_NAME							= str_replace("@", "&commat;", $_Application_Module_Member_Contact_Administrator_POST_NAME);
 $_Application_Module_Member_Contact_Administrator_POST_NAME							= str_replace("<", "&lt;", $_Application_Module_Member_Contact_Administrator_POST_NAME);
@@ -5250,18 +5766,6 @@ $_Application_Module_Member_Contact_Administrator_POST_MESSAGE							= str_repla
  +
  +
  +
- + [ @ ] Application :: Member :: Contact_Administrator
- +
- +
- +
- ============================================================================================================
-*/
-
-/*
- ============================================================================================================
- +
- +
- +
  + [ @ ] Application :: Member :: Control_Panel
  +
  + Number of Variables :: GET  :: 
@@ -5317,6 +5821,18 @@ $_Application_Module_Member_Control_Panel_POST_ACCOUNT_ACTIVATION_KEY						= str
 $_Application_Module_Member_Control_Panel_POST_ACCOUNT_ACTIVATION_KEY						= str_replace("^", "&hat;", $_Application_Module_Member_Control_Panel_POST_ACCOUNT_ACTIVATION_KEY);
 $_Application_Module_Member_Control_Panel_POST_ACCOUNT_ACTIVATION_KEY						= str_replace("_", "&lowbar;", $_Application_Module_Member_Control_Panel_POST_ACCOUNT_ACTIVATION_KEY);
 $_Application_Module_Member_Control_Panel_POST_ACCOUNT_ACTIVATION_KEY						= str_replace("|", "&verbar;", $_Application_Module_Member_Control_Panel_POST_ACCOUNT_ACTIVATION_KEY);
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ @ ] Application :: Member :: Devices
+ +
+ +
+ +
+ ============================================================================================================
+*/
 
 /*
  ============================================================================================================
@@ -5410,10 +5926,91 @@ $_Application_Module_Member_Electronic_Mail_POST_MESSAGE							= str_replace("|"
  +
  + [ @ ] Application :: Member :: Emulators
  +
+ + Number of Variables :: GET :: 02
+ + Number of Variables :: POST ::
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
  +
+ + Variables :: POST Variables
  +
  ============================================================================================================
 */
+
+$_Application_Module_Member_Emulators_POST_TYPE						= $_POST['AMM_Emulators_Search_Type'];
+$_Application_Module_Member_Emulators_POST_KEYWORD					= $_POST['AMM_Emulators_Search_Keyword'];
+
+/*
+ ============================================================================================================
+ +
+ + Variables :: POST Variables :: Character and String Replacement
+ +
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace("`", "", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace("@", "&commat;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace("<", "&lt;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace(">", "&gt;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace("\"", "&quot;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace("&", "&amp;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace("'", "&apos;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace("~", "&#126;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace("$", "&#36;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace("=", "&#61;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace("{", "&lcub;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace("}", "&rcub;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace("(", "&lpar;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace(")", "&rpar;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace("#", "&num;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace("%", "&percnt;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace("*", "&ast;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace("+", "&plus;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace(",", "&comma;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace("-", "&minus;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace(".", "&period;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace("/", "&sol;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace(":", "&colon;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace("\;", "&semi;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace("?", "&quest;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace("[", "&lsqb;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace("]", "&rsqb;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace("^", "&hat;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace("_", "&lowbar;", $_Application_Module_Member_Emulators_POST_TYPE);
+$_Application_Module_Member_Emulators_POST_TYPE							= str_replace("|", "&verbar;", $_Application_Module_Member_Emulators_POST_TYPE);
+
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace("`", "", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace("@", "&commat;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace("<", "&lt;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace(">", "&gt;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace("\"", "&quot;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace("&", "&amp;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace("'", "&apos;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace("~", "&#126;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace("$", "&#36;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace("=", "&#61;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace("{", "&lcub;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace("}", "&rcub;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace("(", "&lpar;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace(")", "&rpar;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace("#", "&num;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace("%", "&percnt;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace("*", "&ast;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace("+", "&plus;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace(",", "&comma;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace("-", "&minus;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace(".", "&period;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace("/", "&sol;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace(":", "&colon;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace("\;", "&semi;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace("?", "&quest;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace("[", "&lsqb;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace("]", "&rsqb;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace("^", "&hat;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace("_", "&lowbar;", $_Application_Module_Member_Emulators_POST_KEYWORD);
+$_Application_Module_Member_Emulators_POST_KEYWORD							= str_replace("|", "&verbar;", $_Application_Module_Member_Emulators_POST_KEYWORD);
 
 /*
  ============================================================================================================
@@ -5422,8 +6019,8 @@ $_Application_Module_Member_Electronic_Mail_POST_MESSAGE							= str_replace("|"
  +
  + [ @ ] Application :: Member :: Files
  +
- +
- +
+ + Number of Variables :: GET ::
+ + Number of Variables :: POST ::
  ============================================================================================================
 */
 
@@ -5927,8 +6524,8 @@ $_Application_Module_Member_Forward_POST_FORWARD_ELECTRONIC_MAIL_ADDRESS					= s
  +
  + [ @ ] Application :: Member :: Language
  +
- +
- +
+ + Number of Variables :: GET  ::
+ + Number of Variables :: POST ::
  ============================================================================================================
 */
 
@@ -5939,8 +6536,8 @@ $_Application_Module_Member_Forward_POST_FORWARD_ELECTRONIC_MAIL_ADDRESS					= s
  +
  + [ @ ] Application :: Member :: Legal
  +
- +
- +
+ + Number of Variables :: GET  ::
+ + Number of Variables :: POST ::
  ============================================================================================================
 */
 
@@ -5952,134 +6549,9 @@ $_Application_Module_Member_Forward_POST_FORWARD_ELECTRONIC_MAIL_ADDRESS					= s
  + [ @ ] Application :: Member :: Lightning_Calculate
  +
  + Number of Variables :: GET  :: 
- + Number of Variables :: POST :: 00
+ + Number of Variables :: POST ::
  ============================================================================================================
 */
-
-/*
- ============================================================================================================
- +
- +
- +
- + [ @ ] Application :: Member :: Links
- +
- + Number of Variables :: GET  :: 
- + Number of Variables :: POST :: 03
- ============================================================================================================
-*/
-
-/*
- ============================================================================================================
- +
- + Variables :: POST Variables
- +
- ============================================================================================================
-*/
-
-$_Application_Module_Member_Links_POST_LINK_TITLE								= $_POST['AMM_Links_Link_Title'];
-$_Application_Module_Member_Links_POST_LINK_URL									= $_POST['AMM_Links_Link_URL'];
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= $_POST['AMM_Links_Link_Description'];
-
-/*
- ============================================================================================================
- +
- + Variables :: POST Variables :: Character and String Replacement
- +
- ============================================================================================================
-*/
-
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace("`", "", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace("@", "&commat;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace("<", "&lt;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace(">", "&gt;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace("\"", "&quot;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace("&", "&amp;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace("'", "&apos;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace("~", "&#126;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace("$", "&#36;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace("=", "&#61;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace("{", "&lcub;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace("}", "&rcub;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace("(", "&lpar;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace(")", "&rpar;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace("#", "&num;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace("%", "&percnt;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace("*", "&ast;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace("+", "&plus;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace(",", "&comma;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace("-", "&minus;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace(".", "&period;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace("/", "&sol;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace(":", "&colon;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace("\;", "&semi;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace("?", "&quest;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace("[", "&lsqb;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace("]", "&rsqb;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace("^", "&hat;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace("_", "&lowbar;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-$_Application_Module_Member_Links_POST_LINK_TITLE								= str_replace("|", "&verbar;", $_Application_Module_Member_Links_POST_LINK_TITLE);
-
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace("`", "", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace("@", "&commat;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace("<", "&lt;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace(">", "&gt;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace("\"", "&quot;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace("&", "&amp;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace("'", "&apos;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace("~", "&#126;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace("$", "&#36;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace("=", "&#61;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace("{", "&lcub;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace("}", "&rcub;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace("(", "&lpar;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace(")", "&rpar;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace("#", "&num;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace("%", "&percnt;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace("*", "&ast;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace("+", "&plus;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace(",", "&comma;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace("-", "&minus;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace(".", "&period;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace("/", "&sol;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace(":", "&colon;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace("\;", "&semi;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace("?", "&quest;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace("[", "&lsqb;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace("]", "&rsqb;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace("^", "&hat;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace("_", "&lowbar;", $_Application_Module_Member_Links_POST_LINK_URL);
-$_Application_Module_Member_Links_POST_LINK_URL									= str_replace("|", "&verbar;", $_Application_Module_Member_Links_POST_LINK_URL);
-
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("`", "", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("@", "&commat;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("<", "&lt;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace(">", "&gt;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("\"", "&quot;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("&", "&amp;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("'", "&apos;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("~", "&#126;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("$", "&#36;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("=", "&#61;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("{", "&lcub;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("}", "&rcub;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("(", "&lpar;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace(")", "&rpar;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("#", "&num;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("%", "&percnt;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("*", "&ast;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("+", "&plus;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace(",", "&comma;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("-", "&minus;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace(".", "&period;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("/", "&sol;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace(":", "&colon;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("\;", "&semi;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("?", "&quest;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("[", "&lsqb;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("]", "&rsqb;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("^", "&hat;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("_", "&lowbar;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
-$_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("|", "&verbar;", $_Application_Module_Member_Links_POST_LINK_DESCRIPTION);
 
 /*
  ============================================================================================================
@@ -6088,8 +6560,8 @@ $_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("|"
  +
  + [ @ ] Application :: Member :: List
  +
- +
- +
+ + Number of Variables :: GET  ::
+ + Number of Variables :: POST ::
  ============================================================================================================
 */
 
@@ -6101,7 +6573,7 @@ $_Application_Module_Member_Links_POST_LINK_DESCRIPTION								= str_replace("|"
  + [ @ ] Application :: Member :: Login
  +
  + Number of Variables :: GET  :: 
- + Number of Variables :: POST :: 04
+ + Number of Variables :: POST :: 10
  ============================================================================================================
 */
 
@@ -6117,6 +6589,14 @@ $_Application_Module_Member_Login_POST_AUTHORIZATION_INTERNET_PROTOCOL_ADDRESS		
 $_Application_Module_Member_Login_POST_AUTHORIZATION_INTERNET_PROTOCOL_ADDRESS_TOKEN				= $_POST['AMM_Login_Authorization_IP_Token'];
 $_Application_Module_Member_Login_POST_AUTHORIZATION_ELECTRONIC_MAIL_ADDRESS					= $_POST['AMM_Login_Authorization_Electronic_Mail_Address'];
 $_Application_Module_Member_Login_POST_AUTHORIZATION_USERNAME							= $_POST['AMM_Login_Authorization_UserName'];
+
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT			= $_POST['AMM_Login_Electronic_Mail_Address_Kill_Current'];
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT				= $_POST['AMM_Login_Password_Kill_Current'];
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT				= $_POST['AMM_Login_UserName_Kill_Current'];
+
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST			= $_POST['AMM_Login_Electronic_Mail_Address_Kill_Ghost'];
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= $_POST['AMM_Login_Password_Kill_Ghost'];
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= $_POST['AMM_Login_UserName_Kill_Ghost'];
 
 /*
  ============================================================================================================
@@ -6249,6 +6729,204 @@ $_Application_Module_Member_Login_POST_AUTHORIZATION_USERNAME							= str_replac
 $_Application_Module_Member_Login_POST_AUTHORIZATION_USERNAME							= str_replace("^", "&hat;", $_Application_Module_Member_Login_POST_AUTHORIZATION_USERNAME);
 $_Application_Module_Member_Login_POST_AUTHORIZATION_USERNAME							= str_replace("_", "&lowbar;", $_Application_Module_Member_Login_POST_AUTHORIZATION_USERNAME);
 $_Application_Module_Member_Login_POST_AUTHORIZATION_USERNAME							= str_replace("|", "&verbar;", $_Application_Module_Member_Login_POST_AUTHORIZATION_USERNAME);
+
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("`", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("@", "&commat;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("<", "&lt;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace(">", "&gt;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("\"", "&quot;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("&", "&amp;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("'", "&apos;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("~", "&#126;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("$", "&#36;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("=", "&#61;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("{", "&lcub;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("}", "&rcub;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("(", "&lpar;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace(")", "&rpar;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("#", "&num;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("%", "&percnt;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("*", "&ast;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("+", "&plus;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace(",", "&comma;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("-", "&minus;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace(".", "&period;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("/", "&sol;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace(":", "&colon;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("\;", "&semi;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("?", "&quest;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("[", "&lsqb;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("]", "&rsqb;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("^", "&hat;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("_", "&lowbar;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("|", "&verbar;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
+
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace("`", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace("@", "&commat;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace("<", "&lt;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace(">", "&gt;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace("\"", "&quot;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace("&", "&amp;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace("'", "&apos;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace("~", "&#126;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace("$", "&#36;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace("=", "&#61;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace("{", "&lcub;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace("}", "&rcub;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace("(", "&lpar;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace(")", "&rpar;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace("#", "&num;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace("%", "&percnt;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace("*", "&ast;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace("+", "&plus;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace(",", "&comma;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace("-", "&minus;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace(".", "&period;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace("/", "&sol;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace(":", "&colon;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace("\;", "&semi;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace("?", "&quest;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace("[", "&lsqb;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace("]", "&rsqb;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace("^", "&hat;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace("_", "&lowbar;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT					= str_replace("|", "&verbar;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace("`", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace("@", "&commat;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace("<", "&lt;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace(">", "&gt;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace("\"", "&quot;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace("&", "&amp;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace("'", "&apos;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace("~", "&#126;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace("$", "&#36;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace("=", "&#61;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace("{", "&lcub;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace("}", "&rcub;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace("(", "&lpar;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace(")", "&rpar;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace("#", "&num;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace("%", "&percnt;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace("*", "&ast;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace("+", "&plus;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace(",", "&comma;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace("-", "&minus;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace(".", "&period;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace("/", "&sol;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace(":", "&colon;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace("\;", "&semi;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace("?", "&quest;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace("[", "&lsqb;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace("]", "&rsqb;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace("^", "&hat;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace("_", "&lowbar;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT					= str_replace("|", "&verbar;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("`", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("@", "&commat;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("<", "&lt;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace(">", "&gt;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("\"", "&quot;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("&", "&amp;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("'", "&apos;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("~", "&#126;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("$", "&#36;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("=", "&#61;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("{", "&lcub;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("}", "&rcub;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("(", "&lpar;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace(")", "&rpar;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("#", "&num;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("%", "&percnt;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("*", "&ast;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("+", "&plus;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace(",", "&comma;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("-", "&minus;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace(".", "&period;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("/", "&sol;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace(":", "&colon;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("\;", "&semi;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("?", "&quest;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("[", "&lsqb;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("]", "&rsqb;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("^", "&hat;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("_", "&lowbar;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("|", "&verbar;", $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
+
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace("`", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace("@", "&commat;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace("<", "&lt;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace(">", "&gt;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace("\"", "&quot;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace("&", "&amp;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace("'", "&apos;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace("~", "&#126;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace("$", "&#36;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace("=", "&#61;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace("{", "&lcub;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace("}", "&rcub;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace("(", "&lpar;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace(")", "&rpar;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace("#", "&num;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace("%", "&percnt;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace("*", "&ast;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace("+", "&plus;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace(",", "&comma;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace("-", "&minus;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace(".", "&period;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace("/", "&sol;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace(":", "&colon;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace("\;", "&semi;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace("?", "&quest;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace("[", "&lsqb;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace("]", "&rsqb;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace("^", "&hat;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace("_", "&lowbar;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= str_replace("|", "&verbar;", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST);
+
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace("`", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace("@", "&commat;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace("<", "&lt;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace(">", "&gt;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace("\"", "&quot;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace("&", "&amp;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace("'", "&apos;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace("~", "&#126;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace("$", "&#36;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace("=", "&#61;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace("{", "&lcub;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace("}", "&rcub;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace("(", "&lpar;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace(")", "&rpar;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace("#", "&num;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace("%", "&percnt;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace("*", "&ast;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace("+", "&plus;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace(",", "&comma;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace("-", "&minus;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace(".", "&period;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace("/", "&sol;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace(":", "&colon;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace("\;", "&semi;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace("?", "&quest;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace("[", "&lsqb;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace("]", "&rsqb;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace("^", "&hat;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace("_", "&lowbar;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= str_replace("|", "&verbar;", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST);
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ @ ] Application :: Member :: Market
+ +
+ + Number of Variables :: GET ::
+ + Number of Variables :: POST ::
+ ============================================================================================================
+*/
 
 /*
  ============================================================================================================
@@ -7018,6 +7696,30 @@ $_Application_Module_Member_Messenger_POST_VISIBLE_ENCRYPTED_TEXT_FILE_MESSENGER
  +
  +
  +
+ + [ @ ] Application :: Member :: Notepad
+ +
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ @ ] Application :: Member :: Pages
+ +
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
  + [ @ ] Application :: Member :: Profile
  +
  + Number of Variables :: GET  :: 
@@ -7347,6 +8049,18 @@ $_Application_Module_Member_Profile_SERVICES_COMMAND_TYPE							= str_replace("|
  +
  +
  +
+ + [ @ ] Application :: Member :: Recommendations
+ +
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
  + [ @ ] Application :: Member :: Referrers
  +
  + Number of Variables :: GET  :: 
@@ -7466,6 +8180,7 @@ $_Application_Module_Member_Referrers_POST_SELECT_DATE_MONTH_DAY						= str_repl
 $_Application_Module_Member_Referrers_POST_SELECT_DATE_MONTH_DAY						= str_replace("^", "&hat;", $_Application_Module_Member_Referrers_POST_SELECT_DATE_MONTH_DAY);
 $_Application_Module_Member_Referrers_POST_SELECT_DATE_MONTH_DAY						= str_replace("_", "&lowbar;", $_Application_Module_Member_Referrers_POST_SELECT_DATE_MONTH_DAY);
 $_Application_Module_Member_Referrers_POST_SELECT_DATE_MONTH_DAY						= str_replace("|", "&verbar;", $_Application_Module_Member_Referrers_POST_SELECT_DATE_MONTH_DAY);
+
 
 /*
  ============================================================================================================
@@ -8007,18 +8722,6 @@ $_Application_Module_Member_Search_POST_SECTION									= str_replace("|", "&ver
  +
  +
  +
- + [ @ ] Application :: Member :: Statistics
- +
- +
- +
- ============================================================================================================
-*/
-
-/*
- ============================================================================================================
- +
- +
- +
  + [ @ ] Application :: Member :: Submit_News
  +
  + Number of Variables :: GET  :: 
@@ -8075,13 +8778,36 @@ $_Application_Module_Member_Submit_News_POST_NEWS_MESSAGE							= str_replace("^
 $_Application_Module_Member_Submit_News_POST_NEWS_MESSAGE							= str_replace("_", "&lowbar;", $_Application_Module_Member_Submit_News_POST_NEWS_MESSAGE);
 $_Application_Module_Member_Submit_News_POST_NEWS_MESSAGE							= str_replace("|", "&verbar;", $_Application_Module_Member_Submit_News_POST_NEWS_MESSAGE);
 
-
 /*
  ============================================================================================================
  +
  +
  +
  + [ @ ] Application :: Member :: System_Message
+ +
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ @ ] Application :: Member :: Theme
+ +
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ @ ] Application :: Member :: Travel
  +
  +
  +
@@ -8544,130 +9270,6 @@ $_Application_Module_Webspace_POST_WEBSPACE_DATA								= str_replace("|", "&ver
  +
  +
  +
- + [ ^ ] Applications :: Public
- +
- +
- +
- +
- ============================================================================================================
-*/
-
-/*
- ============================================================================================================
- +
- +
- +
- + [ @ ] Application :: Public :: Engine_Validation
- +
- +
- +
- ============================================================================================================
-*/
-
-/*
- ============================================================================================================
- +
- +
- +
- +
- + [ ^ ] Applications :: Internal
- +
- +
- +
- +
- ============================================================================================================
-*/
-
-/*
- ============================================================================================================
- +
- +
- +
- + [ @ ] Application :: Services :: Commander
- +
- + Number of Variables :: GET  ::
- + Number of Variables :: POST ::
- ============================================================================================================
-*/
-
-/*
- ============================================================================================================
- +
- + Variables :: POST Variables
- +
- ============================================================================================================
-*/
-
-/*
- ============================================================================================================
- +
- + Variables :: POST Variables :: Character and String Replacement
- +
- ============================================================================================================
-*/
-
-/*
- ============================================================================================================
- +
- +
- +
- + [ @ ] Application :: Services :: Integrity
- +
- + Number of Variables :: GET  ::
- + Number of Variables :: POST ::
- ============================================================================================================
-*/
-
-/*
- ============================================================================================================
- +
- + Variables :: POST Variables
- +
- ============================================================================================================
-*/
-
-/*
- ============================================================================================================
- +
- + Variables :: POST Variables :: Character and String Replacement
- +
- ============================================================================================================
-*/
-
-/*
- ============================================================================================================
- +
- +
- +
- + [ @ ] Application :: Services :: Loops
- +
- + Number of Variables :: GET  ::
- + Number of Variables :: POST ::
- ============================================================================================================
-*/
-
-/*
- ============================================================================================================
- +
- + Variables :: POST Variables
- +
- ============================================================================================================
-*/
-
-/*
- ============================================================================================================
- +
- + Variables :: POST Variables :: Character and String Replacement
- +
- ============================================================================================================
-*/
-
-/*
- ============================================================================================================
- +
- +
- +
- +
  + [ ^ ] Applications :: Panel
  +
  +
@@ -8765,6 +9367,18 @@ $_Application_Module_Webspace_POST_WEBSPACE_DATA								= str_replace("|", "&ver
  +
  +
  +
+ + [ @ ] Application :: Panel :: Live_Video
+ +
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
  + [ @ ] Application :: Panel :: Member_Panel
  +
  +
@@ -8817,6 +9431,178 @@ $_Application_Module_Webspace_POST_WEBSPACE_DATA								= str_replace("|", "&ver
  +
  +
  +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ +
+ + [ ^ ] Applications :: Public
+ +
+ +
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ @ ] Application :: Public :: Engine_Validation
+ +
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ +
+ + [ ^ ] Applications :: Services
+ +
+ +
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ @ ] Application :: Services :: Commander
+ +
+ + Number of Variables :: GET  ::
+ + Number of Variables :: POST ::
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ + Variables :: POST Variables
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ + Variables :: POST Variables :: Character and String Replacement
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ @ ] Application :: Services :: Integrity
+ +
+ + Number of Variables :: GET  ::
+ + Number of Variables :: POST ::
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ + Variables :: POST Variables
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ + Variables :: POST Variables :: Character and String Replacement
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ @ ] Application :: Services :: Control_Panel
+ +
+ + Number of Variables :: GET  ::
+ + Number of Variables :: POST ::
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ @ ] Application :: Services :: Integrity
+ +
+ + Number of Variables :: GET  ::
+ + Number of Variables :: POST ::
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ @ ] Application :: Services :: Kernel
+ +
+ + Number of Variables :: GET  ::
+ + Number of Variables :: POST ::
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ @ ] Application :: Services :: Loops
+ +
+ + Number of Variables :: GET  ::
+ + Number of Variables :: POST ::
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ + Variables :: POST Variables
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ + Variables :: POST Variables :: Character and String Replacement
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ @ ] Application :: Services :: Services
+ +
+ + Number of Variables :: GET  ::
+ + Number of Variables :: POST ::
  ============================================================================================================
 */
 ?>
