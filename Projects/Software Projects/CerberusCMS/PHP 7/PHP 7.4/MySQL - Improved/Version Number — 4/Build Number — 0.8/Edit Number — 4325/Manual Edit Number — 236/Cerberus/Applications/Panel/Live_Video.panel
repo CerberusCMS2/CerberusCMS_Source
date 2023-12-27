@@ -65,7 +65,9 @@
  ============================================================================================================
 */
 
-include_once "./System/Plug-Ins/Camera/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA/Live/Panel/Camera.php";
+//include_once "./System/Plug-Ins/Camera/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA/Live/Panel/Camera.php";
 
-			//<OBJECT DATA=\"./System/Plug-Ins/Camera/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA/Live/Profile/Camera.php\" WIDTH=\"100%\" HEIGHT=\"125\></OBJECT>
+echo ("
+			<OBJECT DATA=\"./System/Plug-Ins/Camera/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA/Live/Profile/Camera.php\" WIDTH=\"100%\" HEIGHT=\"125\></OBJECT>
+");
 ?>
