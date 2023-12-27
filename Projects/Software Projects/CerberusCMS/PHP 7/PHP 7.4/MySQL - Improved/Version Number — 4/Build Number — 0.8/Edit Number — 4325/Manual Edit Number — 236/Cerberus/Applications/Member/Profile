@@ -4996,10 +4996,18 @@ if ($_GET["Live"] == "VideoStream") {
 
 if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) {
 
+if ($_GLOBAL_COOKIE_MEMBER_USERNAME == "$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME") {
+
 echo ("
 			Live Video Stream<HR>
-			<OBJECT DATA=\"./System/Plug-Ins/Camera/Default/Live/Profile/Camera.php\" WIDTH=\"75%\" HEIGHT=\"250\></OBJECT>
+			<OBJECT DATA=\"./System/Plug-Ins/Camera/Default/Live/Profile/Camera.php\" WIDTH=\"75%\" HEIGHT=\"265\></OBJECT>
 ");
+
+} else {
+
+echo ("Streams Message: This Registered Member Account Does Not Belong To You.");
+
+} // [ + ] IF: Registered Member Account :: UserName :: DOES NOT Match Current Registered Member Account Profile UserName
 
 } else {
 
