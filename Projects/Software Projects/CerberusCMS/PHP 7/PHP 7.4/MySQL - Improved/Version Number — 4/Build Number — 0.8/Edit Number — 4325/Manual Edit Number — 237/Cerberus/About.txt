@@ -72,7 +72,7 @@ Everything else is Pure Pre-Hyper-Text-Post-Processor, HTML5, HTML5 Canvas, C.S.
 
 The still-secure and easier-to-use releases make extensive use of JavaScript, JQuery Library and Asynchronous Javascript and X.M.L. ( A.J.A.X. ) for the best drag-and-drop user experience.
 
-Cerberus Content Management System Releases follow authentic Frisian / Frysk words for elements.
+Official Cerberus Content Management System Releases follow authentic Northern-Frisian words for elements or names of Greek Goddesses.
 
 Cerberus Content Management System, Version Number: 4, Build Number: 0.8, Edit Number: 4,325, Manual Edit Number: 240 - Final - Code Name: Nyx - Pure-PHP has been debugged and tested to be 100% functional and digitally information secure on the latest
 Apache, H.T.M.L., P.H.P., Zend and MyS.Q.L. versions which at the time of this official Cerberus Content Management System release is:
