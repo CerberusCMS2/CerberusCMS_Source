@@ -27,7 +27,7 @@
  + - Compatibility		 : Zend Engine				   :: Version Numbers: 3, 4
  + - Official Release Date	 : Wednesday, January 31st of 2024
  + ----------------------------------------------------------------------------------------------------------
- + -------------------------------------------------------------------------------	- Nyx -
+ + -------------------------------------------------------------------------------	 - Nyx -
  + --[][]--[][][]--[][][]--[][][]---[][][]--[][][]--[]--[]------[][][]------------   []++++||=======>
  + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------
  + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    |'-._/\_.-'|
@@ -571,11 +571,11 @@ if ($_GET("Page") == "1") {} else }}
 
 * Renamed Newest_Members.panel To Latest_Members.panel
 
-[ 01 - 24 - 2023 ~~ 12 - 31 - 2023 ]
+[ 01 - 24 - 2023 ~~ 11 - 15 - 2023 ]
 
 * Finished Master Santization Security Module.
 * Updated All POST Names Into Organized Prefix Strings.
 * Added Location By Global-Positioning-System, Location By GEO, Location By Internet Protocol Address Plug-In.
 * Added Secure-Delete Capabilities.
-* Added Over 1,500+ New Features. All Features Need To Be Documented Here.
+* Added Over 1,000 New Features. All Features Need To Be Documented Here.
 Much more than this. Will need to be documented.

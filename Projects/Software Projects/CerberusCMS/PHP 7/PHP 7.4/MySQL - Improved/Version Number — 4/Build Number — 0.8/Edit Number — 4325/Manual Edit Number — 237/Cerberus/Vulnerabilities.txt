@@ -55,7 +55,7 @@
 [2008-07-23]
 Cookie Injection
 * https://cve.report/bid/30416
-Addressed and Secured. No longer vulnerable to any injections as of Version Number: 4, Build Number: 0.8, Edit Number: 4325, Manual Edit Number: 240
+Addressed and Secured. No longer vulnerable to any injections as of Version Number: 4, Build Number: 0.8, Edit Number: 4325.
 
 Automated Tools Used For Testing:
 * Burp
