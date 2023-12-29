@@ -512,8 +512,8 @@ $_INTERNAL_FILE_MAINTENANCE_REPAIR					= "Soteria.php";
  ============================================================================================================
 */
 
-$_PROJECT_VERSION_SHORT							= "4.0.8";
-$_PROJECT_VERSION_EXTENDED						= "Cerberus Content Management System - Version Number: 4, Build Number: 0.8, Edit Number: 4,325 - Manual Edit Number: 237 ~ Nyx - Monday, December 31 of 2023";
+$_PROJECT_VERSION_SHORT							= "4.0.8.4325.237";
+$_PROJECT_VERSION_EXTENDED						= "Cerberus Content Management System - Version Number: 4, Build Number: 0.8, Edit Number: 4,325 - Manual Edit Number: 237 ~ Nyx - Wednesday, January 31st of 2023";
 $_PROJECT_VERSION_EDIT_NUMBER_GENERATED					= "4325";
 $_PROJECT_VERSION_EDIT_NUMBER_MANUAL					= "237";
 
@@ -530,19 +530,6 @@ $_PROJECT_STRING_NAME_EXTENDED						= "Cerberus Content Management System";
 $_PROJECT_STRING_NAME_SHORT						= "Cerberus";
 $_PROJECT_STRING_NAME_ROBOT_ELECTRONIC_MAIL				= "Cerberus";
 $_PROJECT_STRING_NAME_UNIX						= "CerberusCMS";
-$_PROJECT_STRING_PGP_KEY_PRIMARY_PUBLIC					= "
-xjMEZY4btRYJKwYBBAHaRw8BAQdA2Oxs6WR6JIAVO6Gv11K9otBDv3c+mBjK
-AAiq7x7BmvjNL0NlcmJlcnVzQ01TMkBwcm90b24ubWUgPENlcmJlcnVzQ01T
-MkBwcm90b24ubWU+wowEEBYKAD4FgmWOG7UECwkHCAmQ3Yhr0E2y26gDFQgK
-BBYAAgECGQECmwMCHgEWIQQ0GO8dvb00CqUomEndiGvQTbLbqAAAJLEA+wb0
-K0W53zP6x5gla4BUhPWUuBdLg2/o1LxZhi17qZSHAP9V//I5gS6wFK7ccqub
-Sx83K9zPI2iMN1dtwLjszrQ4D844BGWOG7USCisGAQQBl1UBBQEBB0Dwza8P
-dhnCGW2HnJ77K8QM6cJBAikO+siMQAVycRo+UwMBCAfCeAQYFgoAKgWCZY4b
-tQmQ3Yhr0E2y26gCmwwWIQQ0GO8dvb00CqUomEndiGvQTbLbqAAAQlgA/1vW
-wWA1hnXMHSAhiu+m9gzTgxY2Sjo6ig9F3krqt3ryAP9BIbl5gb7M17t5Hyk8
-MHwj+behBcK7Q7rI8Loudq11BQ==
-=/j1Y
-";
 
 /*
  ============================================================================================================
