@@ -70,7 +70,7 @@ Currently you will only find a few lines of JavaScript code in the Official Pure
 
 Everything else is Pure-PHP, HTML5, HTML5 Canvas, C.S.S. and X.M.L.
 
-The still-secure and easier-to-use releases make extensive use of JavaScript, JQuery Library and Asynchronous Javascript and XML ( A.J.A.X. ) for the best drag-and-drop user experience.
+The still-secure and easier-to-use releases make extensive use of JavaScript, JQuery Library and Asynchronous Javascript and X.M.L. ( A.J.A.X. ) for the best drag-and-drop user experience.
 
 Cerberus Content Management System Releases follow authentic Frisian / Frysk words for elements.
 
