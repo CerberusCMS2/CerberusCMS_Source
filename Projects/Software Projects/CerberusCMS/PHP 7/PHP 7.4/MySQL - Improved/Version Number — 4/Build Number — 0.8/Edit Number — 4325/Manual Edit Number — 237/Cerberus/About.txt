@@ -64,8 +64,8 @@ All of the data will be decrypted from the database or from the individual file 
 Custom encryption mathematics is also supported.
 
 Currently you will only find a few lines of JavaScript code in the Official Pure-PHP Release of Cerberus Content Management System:
-* One line as the last line of the Kernel file to autoclose the Web-Page for inactive connections
-* One line for the insertion of Bulletin Board ( B.B. ) codes into input forms
+* One line as the last line of the Kernel file to automatically close the Web-Page for inactive connections
+* One line for the insertion of Bulletin Board ( B.B. ) codes into input forms across the system
 * One line to print the News Entries and Article Entries
 
 Everything else is Pure-PHP, HTML5, HTML5 Canvas, C.S.S. and X.M.L.
