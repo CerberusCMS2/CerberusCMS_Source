@@ -516,6 +516,7 @@ $_PROJECT_VERSION_SHORT							= "4.0.8.4325.237";
 $_PROJECT_VERSION_EXTENDED						= "Cerberus Content Management System - Version Number: 4, Build Number: 0.8, Edit Number: 4,325 - Manual Edit Number: 237 ~ Nyx - Wednesday, January 31st of 2023";
 $_PROJECT_VERSION_EDIT_NUMBER_GENERATED					= "4325";
 $_PROJECT_VERSION_EDIT_NUMBER_MANUAL					= "237";
+$_PROJECT_VERSION_FILE_NUMBER						= "0.7.2";
 
 /*
  ============================================================================================================
