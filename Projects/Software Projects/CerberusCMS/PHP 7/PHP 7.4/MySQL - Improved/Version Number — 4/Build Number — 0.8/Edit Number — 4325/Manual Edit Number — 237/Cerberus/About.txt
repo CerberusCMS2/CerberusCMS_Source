@@ -51,7 +51,7 @@ There are several hundred high quality Web Application Modules that can be cURL,
 Additional Hand Written Web Application Modules by the Cerberus Content Management System Project authors are capable of everything from:
 * Advanced Scientific Calculators
 * Retro Video Game Console Emulators such as for playing Nintendo Entertainment System, Super Nintendo Entertainment System, Nintento 64 video games in the web browser itsself
-* Applications for downloading 4k resolution and higher quality movies directly to the Web Server itself so that the movies can be played and watched anywhere by any Registered Member Account on any device
+* Applications for downloading 4k resolution and higher quality movies / films directly to the Web Server itself by initiating this transaction from a Mobile Cell Phone or a Computer so that the movies / films can be downloaded without using the Internet Connection of the Mobile Cell Phone or Computer and so that the movie / film can be streamed and watched anywhere by any Registered Member Account from any device that is connected to it.
 * Live Voice and Video Chat With a FaceBook / Twitter-like Live Video Recorder Called: Cerberus Streams
 Much more.
 
