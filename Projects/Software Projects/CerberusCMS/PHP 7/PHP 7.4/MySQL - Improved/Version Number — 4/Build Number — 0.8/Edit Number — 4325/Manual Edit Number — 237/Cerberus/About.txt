@@ -33,7 +33,9 @@
  ============================================================================================================
 */
 
-Cerberus Content Management System is a Monolithic and Modular Content Management System as well as a Web Application Framework that is written in 100% Pure Pre-Hyper-Text-Post-Processor Programming Code with 100% Pure Hyper-Text-Markup-Language output and it supports multiple Database Management System Server Software Projects and their Versions. This Web Application Software Project is aimed towards small to medium companies as well as individuals and small organizations. This "Bare-Bone" system is 100% free to the public. This Web Application Software Project was started originally as a communications platform and later as an alternative to other Content Management System Projects. Now it is under development as an alternative to Wordpress, Moodle, Drupal.
+Cerberus Content Management System is a Monolithic and Modular Content Management System as well as a consistent Web Application Programming Code Framework that is written in 100% Pure Pre-Hyper-Text-Post-Processor Programming Code with 100% Pure Hyper-Text-Markup-Language output and it supports multiple Database Management System Server Software Projects and their Versions. The Web Application Programming Code Framework is extremely consistent and organized.
+
+This Web Application Software Project is aimed towards small to medium companies as well as individuals and small organizations. This "Bare-Bone" system is 100% free to the public. This Web Application Software Project was started originally as a communications platform and later as an alternative to other Content Management System Projects. Now it is under development as an alternative to Wordpress, Moodle, Drupal.
 Please refer to the Official Software License in the License.txt file.
 
 Official Cerberus Content Management System Versions are always thoroughly tested for errors before official release and upon release will be free of error and will always pass validation checks for:
