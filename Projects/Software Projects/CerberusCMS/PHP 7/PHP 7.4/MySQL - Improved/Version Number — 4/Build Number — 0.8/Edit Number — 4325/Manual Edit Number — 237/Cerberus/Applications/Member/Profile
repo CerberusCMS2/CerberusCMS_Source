@@ -488,17 +488,24 @@ $_Application_Module_Member_Profile_SERVICES_COMMAND_TYPE							= $_POST['AMM_Pr
 
 /*
  ============================================================================================================
- + Registered Member Account :: Streams :: Find :: Member Account Directories :: Streams
+ + Registered Member Account :: Streams :: Find :: Registered Member Account :: Directories :: Streams
  ============================================================================================================
 */
 
 $_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL						= "./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Document/Streams/Wall";
-$_Application_Module_Member_Profile_FIND_WRITE_DIRECTORY_MEMBER_STREAMS_WALL					= "./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Document/Streams/Wall/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL";
+$_Application_Module_Member_Profile_FIND_WRITE_DIRECTORY_MEMBER_STREAMS_WALL					= "./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Streams/Wall/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL";
 $_Application_Module_Member_Profile_OPEN_WRITE_DIRECTORY_MEMBER_STREAMS_WALL					= fopen("$_Application_Module_Member_Profile_FIND_WRITE_DIRECTORY_MEMBER_STREAMS_WALL/Stream.txt", "a");
 
 $_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_FILE_TIMESTAMP_STREAM					= "$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Stream.txt";
 $_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_FILE_TIMESTAMP_STREAM					= fopen("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Stream.txt", "w");
 $_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_FILE_TIMESTAMP_STREAM_FILE_LIST			= fopen("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Files.txt", "w");
+
+$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL_DETAILED					= "./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Document/Streams/Wall";
+$_Application_Module_Member_Profile_FIND_WRITE_DIRECTORY_MEMBER_STREAMS_WALL_DETAILED				= "./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Streams/Wall/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL";
+$_Application_Module_Member_Profile_OPEN_WRITE_DIRECTORY_MEMBER_STREAMS_WALL_DETAILED				= fopen("$_Application_Module_Member_Profile_FIND_WRITE_DIRECTORY_MEMBER_STREAMS_WALL/Stream_Detailed.txt", "a");
+
+$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_FILE_TIMESTAMP_STREAM_DETAILED			= "$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Stream_DETAILED.txt";
+$_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_FILE_TIMESTAMP_STREAM_DETAILED			= fopen("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Stream_Detailed.html", "w");
 
 /*
  ============================================================================================================
@@ -4331,7 +4338,7 @@ echo ("
 														<INPUT TYPE=\"text\" NAME=\"AMM_Profile_Streams_Stream_Name\" VALUE=\"Name This Stream\" MAXLENGTH=\"100\"><BR>
 													* <I>Stream Message and Content</I>:<BR>
 													[ Maximum Length: 5,000 Alpha-Numeric Characters ]<BR>
-														<TEXTAREA ROWS=\"10%\" COLS=\"80%\" NAME=\"AMM_Profile_Streams_Stream_Data\" MAXLENGTH=\"5000\" ID=\"WYSIWYG\">Write Messages Here...</TEXTAREA><BR>
+														<TEXTAREA ROWS=\"10%\" COLS=\"80%\" NAME=\"AMM_Profile_Streams_Stream_Data\" MAXLENGTH=\"5000\" ID=\"WYSIWYG\">Write Stream Message Here...</TEXTAREA><BR>
 													* <I>Upload Unique Files To This Stream</I>:<BR>
 														<INPUT TYPE=\"file\" NAME=\"AMM_Profile_Streams_Upload_File_Multiple[]\" MAXLENGTH=\"100\" MULTIPLE><BR>
 														<INPUT TYPE=\"submit\" VALUE=\"Create Stream\">
@@ -4415,6 +4422,36 @@ copy ("./Member/Setup/Indexes/Files/Document/Streams/Wall/Year/Month/Day/Timesta
 */
 
 fwrite($_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_FILE_TIMESTAMP_STREAM, "
+	<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+<A HREF=\"./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Streams/Wall/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/Stream_Detailed.html\" TITLE=\":: Open & Display :: The Stream :: Detailed :: $_Application_Module_Member_Profile_POST_STREAM_NAME ::\" TARGET=\"_TARGET\">$_Application_Module_Member_Profile_POST_STREAM_NAME</A>
+	<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+		<A HREF=\"$_Application_Module_Member_Profile_IMAGE_PROFILE_PICTURE_DISPLAY?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TARGET=\"_NEW\" TITLE=\":: Open & Display This Registered Member Account :: Image :: Profile Image :: \"><IMG SRC=\"$_Application_Module_Member_Profile_IMAGE_PROFILE_PICTURE_DISPLAY?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"50\" HEIGHT=\"50\" CLASS=\"StreamImageMessage\"></A>
+			&nbsp;&nbsp;
+			<A HREF=\"$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TARGET=\"_NEW\">$_Application_Module_Member_Profile_LIST_MEMBER_NAME_FIRST $_Application_Module_Member_Profile_LIST_MEMBER_NAME_LAST</A> Wrote:</B><BR><BR>
+			<BIG>&quot;</BIG> $_Application_Module_Member_Profile_POST_STREAM_DATA <BIG>&quot;</BIG><BR><BR>
+
+	<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+			<B>Stream Details :: Timestamps</B>
+	<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+			<B>Device :: This Web Server</B><BR>
+			* Stream :: Timestamp :: This Stream :: This Web Server :: Standard: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD<BR>
+			* Stream :: Timestamp :: This Stream :: This Web Server :: Unix-Epoch: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_TIMESTAMP_UNIX_EPOCH\" TITLE=\":: Open & Display :: The :: Unix-Epoch Time Reader ::\" TARGET=\"_NEW\">$_GLOBAL_LOCAL_SERVER_TIME_UNIX</A><BR><BR>
+
+			<B>Device :: Connecting Device</B><BR>
+			* Time :: Timestamp :: This Stream :: Connecting Device :: Device-Reported: Unix-Epoch: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_TIMESTAMP_UNIX_EPOCH\" TITLE=\":: Open & Display :: The :: Unix-Epoch Time Reader ::\" TARGET=\"_NEW\">$_GLOBAL_LOCAL_SERVER_TIME_UNIX</A><BR><BR>
+
+	<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+			<B>Stream :: Attached Media</B>
+	<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+");
+
+/*
+ ============================================================================================================
+ + Write :: New Stream Data :: To Stream File :: Detailed
+ ============================================================================================================
+*/
+
+fwrite($_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_FILE_TIMESTAMP_STREAM_DETAILED, "
 	<HR>
 <B>$_Application_Module_Member_Profile_POST_STREAM_NAME</B>
 	<HR>
