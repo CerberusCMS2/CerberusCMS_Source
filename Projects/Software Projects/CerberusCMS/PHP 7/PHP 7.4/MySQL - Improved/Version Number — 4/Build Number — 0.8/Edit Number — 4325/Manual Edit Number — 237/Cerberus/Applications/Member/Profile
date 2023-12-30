@@ -502,10 +502,10 @@ $_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_TIMESTAMP_STREAM_FILE_
 
 $_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL_DETAILED					= "./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Document/Streams/Wall";
 $_Application_Module_Member_Profile_FIND_WRITE_DIRECTORY_MEMBER_STREAMS_WALL_DETAILED				= "./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Document/Streams/Wall/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL";
-$_Application_Module_Member_Profile_OPEN_WRITE_DIRECTORY_MEMBER_STREAMS_WALL_DETAILED				= fopen("$_Application_Module_Member_Profile_FIND_WRITE_DIRECTORY_MEMBER_STREAMS_WALL/Stream_Detailed.html", "a");
+$_Application_Module_Member_Profile_OPEN_WRITE_DIRECTORY_MEMBER_STREAMS_WALL_DETAILED				= fopen("$_Application_Module_Member_Profile_FIND_WRITE_DIRECTORY_MEMBER_STREAMS_WALL_DETAILED/Stream_Detailed.html", "a");
 
-$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_TIMESTAMP_STREAM_FILE_DETAILED			= "$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL_DETAILED/Stream.html";
-$_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_TIMESTAMP_STREAM_FILE_DETAILED			= fopen("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL_DETAILED/Stream.html", "w");
+$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_TIMESTAMP_STREAM_FILE_DETAILED			= "$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL_DETAILED/Stream_Detailed.html";
+$_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_TIMESTAMP_STREAM_FILE_DETAILED			= fopen("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL_DETAILED/Stream_Detailed.html", "w");
 /*
  ============================================================================================================
  + Registered Member Account :: Streams :: Stream Name and Stream Data
@@ -4806,7 +4806,7 @@ fclose("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/S
 */
 
 copy("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Stream.txt", "$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/Stream.txt");
-copy("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Stream.html", "$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/Stream.html");
+copy("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Stream_Detailed.html", "$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/Stream_Detailed.html");
 
 /*
  ============================================================================================================
@@ -4815,7 +4815,7 @@ copy("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Str
 */
 
 unlink("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Stream.txt");
-unlink("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Stream.html");
+unlink("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Stream_Detailed.html");
 
 /*
  ============================================================================================================
