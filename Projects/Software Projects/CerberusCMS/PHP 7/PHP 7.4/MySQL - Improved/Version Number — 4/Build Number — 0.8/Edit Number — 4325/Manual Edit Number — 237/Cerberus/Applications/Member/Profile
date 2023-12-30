@@ -496,17 +496,16 @@ $_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL						= ".
 $_Application_Module_Member_Profile_FIND_WRITE_DIRECTORY_MEMBER_STREAMS_WALL					= "./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Document/Streams/Wall/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL";
 $_Application_Module_Member_Profile_OPEN_WRITE_DIRECTORY_MEMBER_STREAMS_WALL					= fopen("$_Application_Module_Member_Profile_FIND_WRITE_DIRECTORY_MEMBER_STREAMS_WALL/Stream.txt", "a");
 
-$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_FILE_TIMESTAMP_STREAM					= "$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Stream.txt";
-$_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_FILE_TIMESTAMP_STREAM					= fopen("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Stream.txt", "w");
-$_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_FILE_TIMESTAMP_STREAM_FILE_LIST			= fopen("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Files.txt", "w");
+$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_TIMESTAMP_STREAM_FILE					= "$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Stream.txt";
+$_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_TIMESTAMP_STREAM_FILE					= fopen("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Stream.txt", "w");
+$_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_TIMESTAMP_STREAM_FILE_MEDIA_LIST			= fopen("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Files.txt", "w");
 
 $_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL_DETAILED					= "./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Document/Streams/Wall";
 $_Application_Module_Member_Profile_FIND_WRITE_DIRECTORY_MEMBER_STREAMS_WALL_DETAILED				= "./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Document/Streams/Wall/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL";
 $_Application_Module_Member_Profile_OPEN_WRITE_DIRECTORY_MEMBER_STREAMS_WALL_DETAILED				= fopen("$_Application_Module_Member_Profile_FIND_WRITE_DIRECTORY_MEMBER_STREAMS_WALL/Stream_Detailed.html", "a");
 
-$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_FILE_TIMESTAMP_STREAM_DETAILED			= "$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Stream_Detailed.html";
-$_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_FILE_TIMESTAMP_STREAM_DETAILED			= fopen("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Stream_Detailed.html", "w");
-
+$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_TIMESTAMP_STREAM_FILE_DETAILED			= "$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL_DETAILED/Stream.html";
+$_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_TIMESTAMP_STREAM_FILE_DETAILED			= fopen("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL_DETAILED/Stream.html", "w");
 /*
  ============================================================================================================
  + Registered Member Account :: Streams :: Stream Name and Stream Data
@@ -4421,7 +4420,7 @@ copy ("./Member/Setup/Indexes/Files/Document/Streams/Wall/Year/Month/Day/Timesta
  ============================================================================================================
 */
 
-fwrite($_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_FILE_TIMESTAMP_STREAM, "
+fwrite($_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_TIMESTAMP_STREAM_FILE, "
 	<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 <A HREF=\"./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Streams/Wall/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/Stream_Detailed.html\" TITLE=\":: Open & Display :: The Stream :: Detailed :: $_Application_Module_Member_Profile_POST_STREAM_NAME ::\" TARGET=\"_TARGET\">$_Application_Module_Member_Profile_POST_STREAM_NAME</A>
 	<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
@@ -4451,7 +4450,7 @@ fwrite($_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_FILE_TIMESTAMP_
  ============================================================================================================
 */
 
-fwrite($_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_FILE_TIMESTAMP_STREAM_DETAILED, "
+fwrite($_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_TIMESTAMP_STREAM_FILE_DETAILED, "
 	<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 <B>$_Application_Module_Member_Profile_POST_STREAM_NAME</B>
 	<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
@@ -4764,7 +4763,7 @@ if (move_uploaded_file($_FILES['AMM_Profile_Streams_Upload_File_Multiple']['tmp_
  ============================================================================================================
 */
 
-fwrite($_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_FILE_TIMESTAMP_STREAM, "
+fwrite($_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_TIMESTAMP_STREAM_FILE, "
 				$_Application_Module_Member_Profile_STREAMS_MESSAGE_PREPARED_DATA
 				&nbsp;
 ");
@@ -4785,7 +4784,7 @@ echo ("Streams :: Message: One or more of the Files Uploaded have a File Extensi
  ============================================================================================================
 */
 
-fwrite($_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_FILE_TIMESTAMP_STREAM, "
+fwrite($_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_TIMESTAMP_STREAM_FILE, "
 	<HR>
 		<A HREF=\"$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME&amp;Display&#61;Streams&amp;DeleteStream&#61;$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL\" TITLE=\":: Delete This Stream ::\">Delete This Stream</A>
 	<HR>
@@ -4807,6 +4806,7 @@ fclose("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/S
 */
 
 copy("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Stream.txt", "$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/Stream.txt");
+copy("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Stream.html", "$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/Stream.html");
 
 /*
  ============================================================================================================
@@ -4815,6 +4815,7 @@ copy("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Str
 */
 
 unlink("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Stream.txt");
+unlink("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Stream.html");
 
 /*
  ============================================================================================================
