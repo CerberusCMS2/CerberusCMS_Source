@@ -493,7 +493,7 @@ $_Application_Module_Member_Profile_SERVICES_COMMAND_TYPE							= $_POST['AMM_Pr
 */
 
 $_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL						= "./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Document/Streams/Wall";
-$_Application_Module_Member_Profile_FIND_WRITE_DIRECTORY_MEMBER_STREAMS_WALL					= "./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Streams/Wall/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL";
+$_Application_Module_Member_Profile_FIND_WRITE_DIRECTORY_MEMBER_STREAMS_WALL					= "./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Document/Streams/Wall/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL";
 $_Application_Module_Member_Profile_OPEN_WRITE_DIRECTORY_MEMBER_STREAMS_WALL					= fopen("$_Application_Module_Member_Profile_FIND_WRITE_DIRECTORY_MEMBER_STREAMS_WALL/Stream.txt", "a");
 
 $_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_FILE_TIMESTAMP_STREAM					= "$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Stream.txt";
@@ -501,7 +501,7 @@ $_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_FILE_TIMESTAMP_STREAM	
 $_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_FILE_TIMESTAMP_STREAM_FILE_LIST			= fopen("$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Files.txt", "w");
 
 $_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL_DETAILED					= "./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Document/Streams/Wall";
-$_Application_Module_Member_Profile_FIND_WRITE_DIRECTORY_MEMBER_STREAMS_WALL_DETAILED				= "./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Streams/Wall/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL";
+$_Application_Module_Member_Profile_FIND_WRITE_DIRECTORY_MEMBER_STREAMS_WALL_DETAILED				= "./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Document/Streams/Wall/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL";
 $_Application_Module_Member_Profile_OPEN_WRITE_DIRECTORY_MEMBER_STREAMS_WALL_DETAILED				= fopen("$_Application_Module_Member_Profile_FIND_WRITE_DIRECTORY_MEMBER_STREAMS_WALL/Stream_Detailed.html", "a");
 
 $_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_FILE_TIMESTAMP_STREAM_DETAILED			= "$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/Stream_Detailed.html";
@@ -4452,9 +4452,9 @@ fwrite($_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_FILE_TIMESTAMP_
 */
 
 fwrite($_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_FILE_TIMESTAMP_STREAM_DETAILED, "
-	<HR>
+	<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 <B>$_Application_Module_Member_Profile_POST_STREAM_NAME</B>
-	<HR>
+	<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 		<A HREF=\"$_Application_Module_Member_Profile_IMAGE_PROFILE_PICTURE_DISPLAY?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TARGET=\"_NEW\" TITLE=\":: Open & Display This Registered Member Account :: Image :: Profile Image :: \"><IMG SRC=\"$_Application_Module_Member_Profile_IMAGE_PROFILE_PICTURE_DISPLAY?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"50\" HEIGHT=\"50\" CLASS=\"StreamImageMessage\"></A>
 			&nbsp;&nbsp;
 			<A HREF=\"$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TARGET=\"_NEW\">$_Application_Module_Member_Profile_LIST_MEMBER_NAME_FIRST $_Application_Module_Member_Profile_LIST_MEMBER_NAME_LAST</A> Wrote:</B><BR><BR>
@@ -4463,28 +4463,28 @@ fwrite($_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_FILE_TIMESTAMP_
 	<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 			<B>Stream Details :: Timestamps</B>
 	<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-			<B>Server :: Local</B><BR>
-			* Stream :: Timestamp :: Message :: Server :: This Web Server :: Standard: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD<BR>
-			* Stream :: Timestamp :: Message :: Server :: This Web Server :: Unix-Epoch: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_TIMESTAMP_UNIX_EPOCH\" TITLE=\":: Open & Display :: The :: Unix-Epoch Time Reader ::\" TARGET=\"_NEW\">$_GLOBAL_LOCAL_SERVER_TIME_UNIX</A><BR><BR>
+			<B>Device :: This Web Server</B><BR>
+			* Stream :: Timestamp :: This Stream :: This Web Server :: Standard: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD<BR>
+			* Stream :: Timestamp :: This Stream :: This Web Server :: Unix-Epoch: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_TIMESTAMP_UNIX_EPOCH\" TITLE=\":: Open & Display :: The :: Unix-Epoch Time Reader ::\" TARGET=\"_NEW\">$_GLOBAL_LOCAL_SERVER_TIME_UNIX</A><BR><BR>
 
-			<B>Server :: Remote</B><BR>
-			* Time :: Timestamp :: Message :: Connecting Device :: Device-Reported: <BR><BR>
+			<B>Device :: Connecting Device</B><BR>
+			* Time :: Timestamp :: This Stream :: Connecting Device :: Device-Reported: Unix-Epoch: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_TIMESTAMP_UNIX_EPOCH\" TITLE=\":: Open & Display :: The :: Unix-Epoch Time Reader ::\" TARGET=\"_NEW\">$_GLOBAL_LOCAL_SERVER_TIME_UNIX</A><BR><BR>
 
 	<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-			<B>Stream Details :: Device</B>
+			<B>Stream Details :: Connecting Device :: Web Browser</B>
 	<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-			* Details :: Device :: Web Browser :: $_GLOBAL_LOCAL_SERVER_HTTP_USER_AGENT<BR><BR>
+			* Stream Details :: Connecting Device :: Web Browser :: $_GLOBAL_LOCAL_SERVER_HTTP_USER_AGENT<BR><BR>
 
 	<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 			<B>Stream Details :: Location</B>
 	<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 			<B>Location :: Internet Protocol Address</B><BR>
-			* Location :: Server :: Internet Protocol Address :: This Web Server: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_LOCAL_SERVER_ADDRESS\" TITLE=\":: Open & Display :: The :: Who-Is Registry Information For The Internet Protocol Address: $_GLOBAL_LOCAL_SERVER_ADDRESS ::\" TARGET=\"_NEW\">$_GLOBAL_LOCAL_SERVER_ADDRESS</A> :: $_GLOBAL_LOCAL_SERVER_PORT<BR>
-			* Location :: Server :: Internet Protocol Address :: Connecting Device: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_REMOTE_SERVER_ADDRESS\" TITLE=\":: Open & Display :: The :: Who-Is Registry Information For The Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS ::\" TARGET=\"_NEW\">$_GLOBAL_REMOTE_SERVER_ADDRESS</A> :: $_GLOBAL_REMOTE_SERVER_PORT<BR><BR>
+			* Location :: Internet Protocol Address :: This Web Server: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_LOCAL_SERVER_ADDRESS\" TITLE=\":: Open & Display :: The :: Who-Is Registry Information For The Internet Protocol Address: $_GLOBAL_LOCAL_SERVER_ADDRESS ::\" TARGET=\"_NEW\">$_GLOBAL_LOCAL_SERVER_ADDRESS</A> :: $_GLOBAL_LOCAL_SERVER_PORT<BR>
+			* Location :: Internet Protocol Address :: Connecting Device: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_REMOTE_SERVER_ADDRESS\" TITLE=\":: Open & Display :: The :: Who-Is Registry Information For The Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS ::\" TARGET=\"_NEW\">$_GLOBAL_REMOTE_SERVER_ADDRESS</A> :: $_GLOBAL_REMOTE_SERVER_PORT<BR><BR>
 			
 			<B>Location :: Global-Positioning-System Coordinates</B><BR>
-			* Location :: Account Device :: Global-Positioning-System Coordinates :: From :: In X, Y, Z :: H.T.M.L.<BR>
-			* Location :: Account Device :: Global-Positioning-System Coordinates :: From :: In X, Y, Z :: P.H.P.<BR><BR>
+			* Location :: Connecting Device :: Global-Positioning-System Coordinates :: In X, Y, Z :: From: H.T.M.L.<BR>
+			* Location :: Connecting Device :: Global-Positioning-System Coordinates :: In X, Y, Z :: From: P.H.P.<BR><BR>
 
 	<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 			<B>Stream Details :: Media</B>
