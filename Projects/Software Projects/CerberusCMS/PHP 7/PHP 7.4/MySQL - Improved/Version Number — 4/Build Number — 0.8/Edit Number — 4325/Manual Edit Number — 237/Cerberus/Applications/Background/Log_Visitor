@@ -222,98 +222,123 @@ if (strlen($_Application_Module_Background_Log_Visitor_GET_USER_AGENT) > "250") 
 */
 
 fwrite($_Application_Module_Background_Log_Visitor_Box_OPEN_FILE_NAME, "
-*** Timestamp :: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD
---------------------------------------------------------------------------
-Machine and Connection Information :: Non-Registered Visitor
---------------------------------------------------------------------------
-* Non-Registered Visitor' :: Machine :: Local Server :: Document View Timestamp: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD
-* Non-Registered Visitor' :: Machine :: Remote Server :: Document View Timestamp: $_GLOBAL_REMOTE_SERVER_DATE_STANDARD
-* Non-Registered Visitor' :: Machine :: Local Server :: Document Referrer: $_Application_Module_Background_Log_Visitor_GET_REFERRER
-* Non-Registered Visitor' :: Machine :: Local Server :: Request String: $_GLOBAL_LOCAL_SERVER_QUERY_STRING
-* Non-Registered Visitor' :: Machine :: Local Server :: Request Method: $_GLOBAL_LOCAL_SERVER_REQUEST_METHOD
-* Non-Registered Visitor' :: Machine :: Local Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME
-* Non-Registered Visitor' :: Machine :: Local Server :: Connection Type: $_GLOBAL_LOCAL_SERVER_HTTP_CONNECTION_TYPE
-* Non-Registered Visitor' :: Machine :: Remote Server :: Network :: Host-Name: $_GLOBAL_REMOTE_SERVER_HOSTNAME
-* Non-Registered Visitor' :: Machine :: Remote Server :: Network :: Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS
-* Non-Registered Visitor' :: Machine :: Remote Server :: Network :: Internet Protocol Address :: Port Number: $_GLOBAL_REMOTE_SERVER_PORT
-* Non-Registered Visitor' :: Machine :: Remote Server :: Network :: User-Agent :: Web Browser: $_Application_Module_Background_Log_Visitor_GET_USER_AGENT
+Activity Log :: Detailed Information :: Non-Registered Visitor
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Machine and Connection Information
+---------------------------------------------------------------------------------
+Internet Protocol Address
+* Non-Registered Visitor :: This Web Server :: Internet Protocol Address: $_GLOBAL_LOCAL_SERVER_ADDRESS
+* Non-Registered Visitor :: This Web Server :: Internet Protocol Address :: Port Number :: This Web Server: $_GLOBAL_LOCAL_SERVER_PORT
+* Non-Registered Visitor :: Connecting Device :: Internet Protocol Address :: Port Number: $_Application_Module_Background_Log_Visitor_GET_IP
+* Non-Registered Visitor :: Connecting Device :: Internet Protocol Address :: Port Number: $_GLOBAL_REMOTE_SERVER_PORT
+
+Connecting Device :: Details
+* Non-Registered Visitor :: Connecting Device :: Host-Name: $_GLOBAL_REMOTE_SERVER_HOSTNAME
+* Non-Registered Visitor :: Connecting Device :: User-Agent ( Web Browser ): $_Application_Module_Background_Log_Visitor_GET_USER_AGENT
+
+This Web Server :: Document Details
+* Non-Registered Visitor :: Connecting Device :: This Web Server :: Document View Timestamp: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD
+* Non-Registered Visitor :: Connecting Device :: This Web Server :: Document Referrer: $_Application_Module_Background_Log_Visitor_GET_REFERRER
+* Non-Registered Visitor :: Connecting Device :: This Web Server :: Request Method: $_GLOBAL_LOCAL_SERVER_REQUEST_METHOD
+* Non-Registered Visitor :: Connecting Device :: This Web Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME
+* Non-Registered Visitor :: Connecting Device :: Connection Type: $_GLOBAL_LOCAL_SERVER_HTTP_CONNECTION_TYPE
+* Non-Registered Visitor :: Connecting Device :: Request String: $_GLOBAL_LOCAL_SERVER_QUERY_STRING
+
+---------------------------------------------------------------------------------
+Location Information
+---------------------------------------------------------------------------------
+* Non-Registered Visitor :: Connecting Device :: Location :: By Global-Positioning-System :: Coordinates :: In: X, Y, Z :: From H.T.M.L.: getLocationOutputLongitude getLocationOutputLatitude
+* Non-Registered Visitor :: Connecting Device :: Location :: By Geographical Localization of Objects: 
+* Non-Registered Visitor :: Connecting Device :: Location :: By Area :: From Programming Code:
+* Non-Registered Visitor :: Connecting Device :: Location :: By Region :: From Programming Code:
+* Non-Registered Visitor :: Connecting Device :: Location :: By Time-Zone :: From Programming Code:
+* Non-Registered Visitor :: Connecting Device :: Location :: By Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS :: $_GLOBAL_REMOTE_SERVER_PORT
+
+---------------------------------------------------------------------------------
+Machine and Connection Information
+---------------------------------------------------------------------------------
+Hyper-Text-Transfer-Protocol
+* This Web Server :: Hyper-Text-Transfer-Protocol :: Host: $_GLOBAL_LOCAL_SERVER_HTTP_HOST
+* This Web Server :: Hyper-Text-Transfer-Protocol :: Accept Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT
+* This Web Server :: Hyper-Text-Transfer-Protocol :: Character Set: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_CHARACTER_SET
+* This Web Server :: Hyper-Text-Transfer-Protocol :: Encoding: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_ENCODING
+* This Web Server :: Hyper-Text-Transfer-Protocol :: Loading Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LOADING
+* This Web Server :: Hyper-Text-Transfer-Protocol :: Language: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LANGUAGE
+
+Network :: Details
+* This Web Server :: Network Gateway Interface: $_GLOBAL_LOCAL_SERVER_GATEWAY_INTERFACE
+* This Web Server :: Internet Protocol Address: $_GLOBAL_LOCAL_SERVER_ADDRESS
+
+Server Software :: Details
+* This Web Server :: Software: $_GLOBAL_LOCAL_SERVER_SOFTWARE
+* This Web Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME
+
+Document :: Details
+* This Web Server :: Request Time ( Float ): $_GLOBAL_LOCAL_SERVER_REQUEST_TIME_FLOAT
+* This Web Server :: Document Root: $_GLOBAL_LOCAL_SERVER_DOCUMENT_ROOT
 
 --------------------------------------------------------------------------
-Location :: Information :: Non-Registered Visitor
+Web-Page Document Cache Circumvention Strings
 --------------------------------------------------------------------------
-* Non-Registered Visitor' :: Device Location :: From :: Global-Positioning-System Coordinates In: X, Y, Z:
-* Non-Registered Visitor' :: Device Location :: From :: Geographical Localization of Objects:
-* Non-Registered Visitor' :: Device Location :: From :: Region: $_GLOBAL_REMOTE_SERVER_LOCATION_REGION
-* Non-Registered Visitor' :: Device Location :: From :: Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS
-
---------------------------------------------------------------------------
-Local Server :: Information :: Non-Registered Visitor
---------------------------------------------------------------------------
-* Local Server :: Machine :: Server :: Hyper-Text-Transfer-Protocol :: Host: $_GLOBAL_LOCAL_SERVER_HTTP_HOST
-* Local Server :: Machine :: Network :: Internet Protocol Address: $_GLOBAL_LOCAL_SERVER_ADDRESS
-* Local Server :: Machine :: Network :: Internet Protocol Address :: Connecting Port Number: $_GLOBAL_REMOTE_SERVER_PORT
-* Local Server :: Machine :: Network :: Gateway Interface: $_GLOBAL_LOCAL_SERVER_GATEWAY_INTERFACE
-* Local Server :: Machine :: Software: $_GLOBAL_LOCAL_SERVER_SOFTWARE
-* Local Server :: Machine Server :: Hyper-Text-Transfer-Protocol :: Accept Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT
-* Local Server :: Machine Server :: Hyper-Text-Transfer-Protocol :: Character Set: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_CHARACTER_SET
-* Local Server :: Machine Server :: Hyper-Text-Transfer-Protocol :: Encoding: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_ENCODING
-* Local Server :: Machine Server :: Hyper-Text-Transfer-Protocol :: Loading Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LOADING
-* Local Server :: Machine Server :: Hyper-Text-Transfer-Protocol :: Language: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LANGUAGE
-* Local Server :: Machine :: Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME
-* Local Server :: Machine :: Server :: Request Time ( Float ): $_GLOBAL_LOCAL_SERVER_REQUEST_TIME_FLOAT
-* Local Server :: Machine :: Server :: Document Root: $_GLOBAL_LOCAL_SERVER_DOCUMENT_ROOT
-
---------------------------------------------------------------------------
-Digital Fingerprint Information
---------------------------------------------------------------------------
-* Non-Registered Visitor' :: Digital Fingerprint :: Generated :: Clear-Text:
-$_INTERNAL_SECURITY_GENERATED_MEMBER_FINGERPRINT_CLEARTEXT
-
-* Non-Registered Visitor' :: Digital Fingerprint :: Generated :: HASHED:
-$_INTERNAL_SECURITY_GENERATED_MEMBER_FINGERPRINT_HASHED
-
---------------------------------------------------------------------------
-Web Page Document Cache Circumvention Strings
---------------------------------------------------------------------------
-* Non-Registered Visitor' :: Cache Circumvention :: Randomly Generated String :: Hyper-Text Reference
+* Non-Registered Visitor :: Cache Circumvention :: Randomly Generated String :: Hyper-Text-Transfer-Protocol Reference
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION
 
-* Non-Registered Visitor' :: Cache Circumvention :: Randomly Generated String :: Audio
+* Non-Registered Visitor :: Cache Circumvention :: Randomly Generated String :: Audio
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_AUDIO_RANDOM_STRING_GENERATION
 
-* Non-Registered Visitor' :: Cache Circumvention :: Randomly Generated String :: Document
+* Non-Registered Visitor :: Cache Circumvention :: Randomly Generated String :: Document
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_DOCUMENT_RANDOM_STRING_GENERATION
 
-* Non-Registered Visitor' :: Cache Circumvention :: Randomly Generated String :: Image
+* Non-Registered Visitor :: Cache Circumvention :: Randomly Generated String :: Image
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION
 
-* Non-Registered Visitor' :: Cache Circumvention :: Randomly Generated String :: Video
+* Non-Registered Visitor :: Cache Circumvention :: Randomly Generated String :: Video
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_VIDEO_RANDOM_STRING_GENERATION
 
-* Registered Member Account :: Cache Circumvention :: Randomly Generated String :: File Inclusion
+* Non-Registered Visitor :: Cache Circumvention :: Randomly Generated String :: File Inclusion
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_FILEINCLUSION_RANDOM_STRING_GENERATION
+
+---------------------------------------------------------------------------------
+Digital Fingerprint Information
+---------------------------------------------------------------------------------
+* Non-Registered Visitor :: Digital Fingerprint :: Generated :: Clear-Text:
+$_INTERNAL_SECURITY_GENERATED_MEMBER_FINGERPRINT_CLEARTEXT
+
+* Non-Registered Visitor :: Digital Fingerprint :: Generated :: HASHED:
+$_INTERNAL_SECURITY_GENERATED_MEMBER_FINGERPRINT_HASHED
 
 ---------------------------------------------------------------------------------
 Timestamps
 ---------------------------------------------------------------------------------
-* Timestamp :: Server :: Local :: Year: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL
-* Timestamp :: Server :: Local :: Month: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL
-* Timestamp :: Server :: Local :: Day: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL
-* Timestamp :: Server :: Local :: Hour: $_GLOBAL_LOCAL_SERVER_TIME_HOURS
-* Timestamp :: Server :: Local :: Minute: $_GLOBAL_LOCAL_SERVER_TIME_MINUTES
-* Timestamp :: Server :: Local :: Second: $_GLOBAL_LOCAL_SERVER_TIME_SECONDS
+This Web Server :: Date :: Standard
+* Timestamp :: This Web Server :: Year: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL
+* Timestamp :: This Web Server :: Month: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL
+* Timestamp :: This Web Server :: Day: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL
 
-* Timestamp :: Server :: Remote :: Year: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_YEAR_FULL
-* Timestamp :: Server :: Remote :: Month: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_FULL
-* Timestamp :: Server :: Remote :: Day: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL
-* Timestamp :: Server :: Remote :: Hour: $_GLOBAL_REMOTE_SERVER_TIME_HOURS
-* Timestamp :: Server :: Remote :: Minute: $_GLOBAL_REMOTE_SERVER_TIME_MINUTES
-* Timestamp :: Server :: Remote :: Second: $_GLOBAL_REMOTE_SERVER_TIME_SECONDS
+This Web Server :: Time :: Standard 
+* Timestamp :: This Web Server :: Hour: $_GLOBAL_LOCAL_SERVER_TIME_HOURS
+* Timestamp :: This Web Server :: Minute: $_GLOBAL_LOCAL_SERVER_TIME_MINUTES
+* Timestamp :: This Web Server :: Second: $_GLOBAL_LOCAL_SERVER_TIME_SECONDS
 
-* Timestamp :: Server :: Local :: Unix: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
-* Timestamp :: Server :: Local :: Micro Time: $_GLOBAL_LOCAL_SERVER_TIME_UNIX
-* Timestamp :: Server :: Remote :: Unix: $_GLOBAL_REMOTE_SERVER_TIME_MICROTIME
-* Timestamp :: Server :: Remote :: Micro Time: $_GLOBAL_REMOTE_SERVER_TIME_UNIX
+This Web Server :: Time :: Unix
+* Timestamp :: This Web Server :: Unix: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
+* Timestamp :: This Web Server :: Micro-Time: $_GLOBAL_LOCAL_SERVER_TIME_UNIX
+
+Connecting Device :: Date :: Standard
+* Timestamp :: Connecting Device :: Year: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_YEAR_FULL
+* Timestamp :: Connecting Device :: Month: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_FULL
+* Timestamp :: Connecting Device :: Day: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL
+
+Connecting Device :: Time :: Standard
+* Timestamp :: Connecting Device :: Hour: $_GLOBAL_REMOTE_SERVER_TIME_HOURS
+* Timestamp :: Connecting Device :: Minute: $_GLOBAL_REMOTE_SERVER_TIME_MINUTES
+* Timestamp :: Connecting Device :: Second: $_GLOBAL_REMOTE_SERVER_TIME_SECONDS
+
+Connecting Device :: Time :: Unix
+* Timestamp :: Server :: Remote :: Unix: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
+* Timestamp :: Server :: Remote :: Micro-Time: $_GLOBAL_LOCAL_SERVER_TIME_UNIX
 ");
 
 /*
@@ -329,90 +354,126 @@ Timestamps
 */
 
 fwrite($_Application_Module_Background_Log_Visitor_Raw_OPEN_FILE_NAME, "
-<HR>
-<B>Activity Log :: Non-Registered Visitor :: Detailed Information</B>
-<HR>
-<B>Machine and Connection Information :: Non-Registered Visitor</B><BR>
-* Non-Registered Visitor' :: Machine :: Local Server :: Document View Timestamp: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD<BR>
-* Non-Registered Visitor' :: Machine :: Local Server :: Document Referrer: <A HREF=\"$_Application_Module_Background_Log_Visitor_GET_REFERRER\" TITLE=\":: Open & Display The Referrer Document Page In New Window ::\" TARGET=\"_NEW\">$_Application_Module_Background_Log_Visitor_GET_REFERRER</A><BR>
-* Non-Registered Visitor' :: Machine :: Local Server :: Request String: $_GLOBAL_LOCAL_SERVER_QUERY_STRING<BR>
-* Non-Registered Visitor' :: Machine :: Local Server :: Request Method: $_GLOBAL_LOCAL_SERVER_REQUEST_METHOD<BR>
-* Non-Registered Visitor' :: Machine :: Local Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME<BR>
-* Non-Registered Visitor' :: Machine :: Local Server :: Connection Type: $_GLOBAL_LOCAL_SERVER_HTTP_CONNECTION_TYPE<BR>
-* Non-Registered Visitor' :: Machine :: Remote Server :: Network :: Host-Name: $_GLOBAL_REMOTE_SERVER_HOSTNAME<BR>
-* Non-Registered Visitor' :: Machine :: Remote Server :: Network :: Internet Protocol Address: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_REMOTE_SERVER_ADDRESS\" TARGET=\"_NEW\" TITLE=\":: Open & Display The Who-Is Information For The Remote User Internet Protocol Address :: $_GLOBAL_REMOTE_SERVER_ADDRESS ::\">$_GLOBAL_REMOTE_SERVER_ADDRESS</A><BR>
-* Non-Registered Visitor' :: Machine :: Remote Server :: Network :: Internet Protocol Address :: Port Number: $_GLOBAL_REMOTE_SERVER_PORT<BR>
-* Non-Registered Visitor' :: Machine :: Remote Server :: Network :: User-Agent :: Web Browser: $_Application_Module_Background_Log_Visitor_GET_USER_AGENT<BR><BR>
+<B>Activity Log :: Detailed Information :: Non-Registered Visitor</B>
+<HR><BR><BR>
 
-<B>Location :: Information :: Non-Registered Visitor</B><BR>
-* Non-Registered Visitor' :: Device Location :: By Global-Positioning-System Coordinates In: X, Y, Z: <SPAN ID=\"container\"></SPAN><BR>
-* Non-Registered Visitor' :: Device Location :: By Geographical Localization of Objects: <BR>
-* Non-Registered Visitor' :: Device Location :: By Region: <BR>
-* Non-Registered Visitor' :: Device Location :: By Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS<BR><BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"75\">
+Machine and Connection Information
+<HR ALIGN=\"LEFT\" WIDTH=\"75\">
+Internet Protocol Address<BR>
+* Non-Registered Visitor :: This Web Server :: Internet Protocol Address: $_GLOBAL_LOCAL_SERVER_ADDRESS<BR>
+* Non-Registered Visitor :: This Web Server :: Internet Protocol Address :: Port Number :: This Web Server: $_GLOBAL_LOCAL_SERVER_PORT<BR>
+* Non-Registered Visitor :: Connecting Device :: Internet Protocol Address:  $_Application_Module_Background_Log_Visitor_GET_IP<BR>
+* Non-Registered Visitor :: Connecting Device :: Internet Protocol Address :: Port Number: $_GLOBAL_REMOTE_SERVER_PORT<BR><BR>
 
-<B>Local Server :: Information :: Non-Registered Visitor</B><BR>
-* Local Server :: Machine :: Server :: Hyper-Text-Transfer-Protocol :: Host: $_GLOBAL_LOCAL_SERVER_HTTP_HOST<BR>
-* Local Server :: Machine :: Network :: Internet Protocol Address: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_LOCAL_SERVER_ADDRESS\" TARGET=\"_NEW\" TITLE=\":: Open & Display The Who-Is Information For Local Server Internet Protocol Address :: $_GLOBAL_LOCAL_SERVER_ADDRESS ::\">$_GLOBAL_LOCAL_SERVER_ADDRESS</A><BR>
-* Local Server :: Machine :: Network :: Internet Protocol Address :: Connecting Port Number: $_GLOBAL_REMOTE_SERVER_PORT<BR>
-* Local Server :: Machine :: Network :: Gateway Interface: $_GLOBAL_LOCAL_SERVER_GATEWAY_INTERFACE<BR>
-* Local Server :: Machine :: Software: $_GLOBAL_LOCAL_SERVER_SOFTWARE<BR>
-* Local Server :: Machine Server :: Hyper-Text-Transfer-Protocol :: Accept Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT<BR>
-* Local Server :: Machine Server :: Hyper-Text-Transfer-Protocol :: Character Set: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_CHARACTER_SET<BR>
-* Local Server :: Machine Server :: Hyper-Text-Transfer-Protocol :: Encoding: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_ENCODING<BR>
-* Local Server :: Machine Server :: Hyper-Text-Transfer-Protocol :: Loading Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LOADING<BR>
-* Local Server :: Machine Server :: Hyper-Text-Transfer-Protocol :: Language: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LANGUAGE<BR>
-* Local Server :: Machine :: Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME<BR>
-* Local Server :: Machine :: Server :: Request Time ( Float ): $_GLOBAL_LOCAL_SERVER_REQUEST_TIME_FLOAT<BR>
-* Local Server :: Machine :: Server :: Document Root: $_GLOBAL_LOCAL_SERVER_DOCUMENT_ROOT<BR><BR>
+Connecting Device :: Details<BR>
+* Non-Registered Visitor :: Connecting Device :: Host-Name: $_GLOBAL_REMOTE_SERVER_HOSTNAME<BR>
+* Non-Registered Visitor :: Connecting Device :: User-Agent ( Web Browser ): $_Application_Module_Background_Log_Visitor_GET_USER_AGENT<BR><BR>
 
-<B>Web Page Document Cache Circumvention Strings</B><BR>
-* Non-Registered Visitor' :: Cache Circumvention :: Randomly Generated String :: Hyper-Text Reference<BR>
+This Web Server :: Document Details<BR>
+* Non-Registered Visitor :: Connecting Device :: This Web Server :: Document View Timestamp: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD<BR>
+* Non-Registered Visitor :: Connecting Device :: This Web Server :: Document Referrer: $_Application_Module_Background_Log_Visitor_GET_REFERRER<BR>
+* Non-Registered Visitor :: Connecting Device :: This Web Server :: Request Method: $_GLOBAL_LOCAL_SERVER_REQUEST_METHOD<BR>
+* Non-Registered Visitor :: Connecting Device :: This Web Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME<BR>
+* Non-Registered Visitor :: Connecting Device :: Connection Type: $_GLOBAL_LOCAL_SERVER_HTTP_CONNECTION_TYPE<BR>
+* Non-Registered Visitor :: Connecting Device :: Request String: $_GLOBAL_LOCAL_SERVER_QUERY_STRING<BR><BR>
+
+<HR ALIGN=\"LEFT\" WIDTH=\"75\">
+Location Information
+<HR ALIGN=\"LEFT\" WIDTH=\"75\">
+* Non-Registered Visitor :: Connecting Device :: Location :: By Global-Positioning-System :: Coordinates :: In: X, Y, Z :: From H.T.M.L.: getLocationOutputLongitude getLocationOutputLatitude<BR>
+* Non-Registered Visitor :: Connecting Device :: Location :: By Geographical Localization of Objects:<BR>
+* Non-Registered Visitor :: Connecting Device :: Location :: By Area :: From Programming Code:<BR>
+* Non-Registered Visitor :: Connecting Device :: Location :: By Region :: From Programming Code:<BR>
+* Non-Registered Visitor :: Connecting Device :: Location :: By Time-Zone :: From Programming Code:<BR>
+* Non-Registered Visitor :: Connecting Device :: Location :: By Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS :: $_GLOBAL_REMOTE_SERVER_PORT<BR><BR>
+
+<HR ALIGN=\"LEFT\" WIDTH=\"75\">
+Machine and Connection Information
+<HR ALIGN=\"LEFT\" WIDTH=\"75\">
+Hyper-Text-Transfer-Protocol<BR>
+* This Web Server :: Hyper-Text-Transfer-Protocol :: Host: $_GLOBAL_LOCAL_SERVER_HTTP_HOST<BR>
+* This Web Server :: Hyper-Text-Transfer-Protocol :: Accept Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT<BR>
+* This Web Server :: Hyper-Text-Transfer-Protocol :: Character Set: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_CHARACTER_SET<BR>
+* This Web Server :: Hyper-Text-Transfer-Protocol :: Encoding: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_ENCODING<BR>
+* This Web Server :: Hyper-Text-Transfer-Protocol :: Loading Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LOADING<BR>
+* This Web Server :: Hyper-Text-Transfer-Protocol :: Language: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LANGUAGE<BR><BR>
+
+Network :: Details<BR>
+* This Web Server :: Network Gateway Interface: $_GLOBAL_LOCAL_SERVER_GATEWAY_INTERFACE<BR>
+* This Web Server :: Internet Protocol Address: $_GLOBAL_LOCAL_SERVER_ADDRESS<BR><BR>
+
+Server Software :: Details<BR>
+* This Web Server :: Software: $_GLOBAL_LOCAL_SERVER_SOFTWARE<BR>
+* This Web Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME<BR><BR>
+
+Document :: Details<BR>
+* This Web Server :: Request Time ( Float ): $_GLOBAL_LOCAL_SERVER_REQUEST_TIME_FLOAT<BR>
+* This Web Server :: Document Root: $_GLOBAL_LOCAL_SERVER_DOCUMENT_ROOT<BR><BR>
+
+<HR ALIGN=\"LEFT\" WIDTH=\"75\">
+Web-Page Document Cache Circumvention Strings
+<HR ALIGN=\"LEFT\" WIDTH=\"75\">
+* Non-Registered Visitor :: Cache Circumvention :: Randomly Generated String :: Hyper-Text-Transfer-Protocol Reference<BR>
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION<BR><BR>
 
-* Non-Registered Visitor' :: Cache Circumvention :: Randomly Generated String :: Audio<BR>
+* Non-Registered Visitor :: Cache Circumvention :: Randomly Generated String :: Audio<BR>
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_AUDIO_RANDOM_STRING_GENERATION<BR><BR>
 
-* Non-Registered Visitor' :: Cache Circumvention :: Randomly Generated String :: Document<BR>
+* Non-Registered Visitor :: Cache Circumvention :: Randomly Generated String :: Document<BR>
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_DOCUMENT_RANDOM_STRING_GENERATION<BR><BR>
 
-* Non-Registered Visitor' :: Cache Circumvention :: Randomly Generated String :: Image<BR>
+* Non-Registered Visitor :: Cache Circumvention :: Randomly Generated String :: Image<BR>
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION<BR><BR>
 
-* Non-Registered Visitor' :: Cache Circumvention :: Randomly Generated String :: Video<BR>
+* Non-Registered Visitor :: Cache Circumvention :: Randomly Generated String :: Video<BR>
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_VIDEO_RANDOM_STRING_GENERATION<BR><BR>
 
-* Non-Registered Visitor' :: Cache Circumvention :: Randomly Generated String :: File Inclusion<BR>
+* Non-Registered Visitor :: Cache Circumvention :: Randomly Generated String :: File Inclusion<BR>
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_FILEINCLUSION_RANDOM_STRING_GENERATION<BR><BR>
 
-<B>Digital Fingerprint Information</B><BR>
-* Non-Registered Visitor' :: Digital Fingerprint :: Generated :: Clear-Text:<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"75\">
+Digital Fingerprint Information
+<HR ALIGN=\"LEFT\" WIDTH=\"75\">
+* Non-Registered Visitor :: Digital Fingerprint :: Generated :: Clear-Text:<BR>
 $_INTERNAL_SECURITY_GENERATED_MEMBER_FINGERPRINT_CLEARTEXT<BR><BR>
 
-* Non-Registered Visitor' :: Digital Fingerprint :: Generated :: HASHED:<BR>
+* Non-Registered Visitor :: Digital Fingerprint :: Generated :: HASHED:<BR>
 $_INTERNAL_SECURITY_GENERATED_MEMBER_FINGERPRINT_HASHED<BR><BR>
 
-<B>Timestamps</B><HR>
-* Timestamp :: Server :: Local :: Year: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL<BR>
-* Timestamp :: Server :: Local :: Month: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL<BR>
-* Timestamp :: Server :: Local :: Day: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL<BR>
-* Timestamp :: Server :: Local :: Hour: $_GLOBAL_LOCAL_SERVER_TIME_HOURS<BR>
-* Timestamp :: Server :: Local :: Minute: $_GLOBAL_LOCAL_SERVER_TIME_MINUTES<BR>
-* Timestamp :: Server :: Local :: Second: $_GLOBAL_LOCAL_SERVER_TIME_SECONDS<BR><BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"75\">
+Timestamps
+<HR ALIGN=\"LEFT\" WIDTH=\"75\">
+This Web Server :: Date :: Standard<BR>
+* Timestamp :: This Web Server :: Year: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL<BR>
+* Timestamp :: This Web Server :: Month: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL<BR>
+* Timestamp :: This Web Server :: Day: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL<BR><BR>
 
-* Timestamp :: Server :: Remote :: Year: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_YEAR_FULL<BR>
-* Timestamp :: Server :: Remote :: Month: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_FULL<BR>
-* Timestamp :: Server :: Remote :: Day: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL<BR>
-* Timestamp :: Server :: Remote :: Hour: $_GLOBAL_REMOTE_SERVER_TIME_HOURS<BR>
-* Timestamp :: Server :: Remote :: Minute: $_GLOBAL_REMOTE_SERVER_TIME_MINUTES<BR>
-* Timestamp :: Server :: Remote :: Second: $_GLOBAL_REMOTE_SERVER_TIME_SECONDS<BR><BR>
+This Web Server :: Time :: Standard<BR>
+* Timestamp :: This Web Server :: Hour: $_GLOBAL_LOCAL_SERVER_TIME_HOURS<BR>
+* Timestamp :: This Web Server :: Minute: $_GLOBAL_LOCAL_SERVER_TIME_MINUTES<BR>
+* Timestamp :: This Web Server :: Second: $_GLOBAL_LOCAL_SERVER_TIME_SECONDS<BR><BR>
 
-* Timestamp :: Server :: Local :: Unix: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME<BR>
-* Timestamp :: Server :: Local :: Micro Time: $_GLOBAL_LOCAL_SERVER_TIME_UNIX<BR>
-* Timestamp :: Server :: Remote :: Unix: $_GLOBAL_REMOTE_SERVER_TIME_MICROTIME<BR>
-* Timestamp :: Server :: Remote :: Micro Time: $_GLOBAL_REMOTE_SERVER_TIME_UNIX<BR><BR>
+This Web Server :: Time :: Unix<BR>
+* Timestamp :: This Web Server :: Unix: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME<BR>
+* Timestamp :: This Web Server :: Micro-Time: $_GLOBAL_LOCAL_SERVER_TIME_UNIX<BR><BR>
 
-<A HREF=\"./Applications/Background/Log_Visitor\" TITLE=\":: Open & Display The Source Code For This Background Activity Log ::\">Source Code For This Background Activity Log</A>
-<HR><BR>
+Connecting Device :: Date :: Standard<BR>
+* Timestamp :: Connecting Device :: Year: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_YEAR_FULL<BR>
+* Timestamp :: Connecting Device :: Month: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_FULL<BR>
+* Timestamp :: Connecting Device :: Day: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL<BR><BR>
+
+Connecting Device :: Time :: Standard<BR>
+* Timestamp :: Connecting Device :: Hour: $_GLOBAL_REMOTE_SERVER_TIME_HOURS<BR>
+* Timestamp :: Connecting Device :: Minute: $_GLOBAL_REMOTE_SERVER_TIME_MINUTES<BR>
+* Timestamp :: Connecting Device :: Second: $_GLOBAL_REMOTE_SERVER_TIME_SECONDS<BR>
+
+Connecting Device :: Time :: Unix<BR>
+* Timestamp :: Server :: Remote :: Unix: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME<BR>
+* Timestamp :: Server :: Remote :: Micro-Time: $_GLOBAL_LOCAL_SERVER_TIME_UNIX<BR><BR>
+
+<A HREF=\"./Applications/Background/Log_Visitor\" TITLE=\":: Open & Display :: The Source Code :: For :: This Background Activity Log ::\">Source Code For This Background Activity Log</A>
+<HR><BR><BR>
 ");
 
 /*

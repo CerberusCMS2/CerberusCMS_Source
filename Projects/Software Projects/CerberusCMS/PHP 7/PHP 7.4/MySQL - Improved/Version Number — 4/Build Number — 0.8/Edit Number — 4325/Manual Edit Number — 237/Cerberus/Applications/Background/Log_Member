@@ -234,90 +234,138 @@ if (strlen($_Application_Module_Background_Log_Member_GET_LOG_MEMBER_USERNAME) >
 */
 
 fwrite($_Application_Module_Background_Log_Member_Box_OPEN_FILE_NAME, "
-<B>Activity Log :: Detailed Information :: Registered Member Account</B>
-<HR>
-<B>Machine and Connection Information :: Registered Member Account</B><BR>
-* Registered Member Account :: UserName: <A HREF=\"../../../../$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Background_Log_Administrator_GET_LOG_MEMBER_USERNAME\" TARGET=\"_NEW\" TITLE=\":: Open & Display The Member Account Profile For :: $_Application_Module_Background_Log_Administrator_GET_LOG_MEMBER_USERNAME ::\">$_Application_Module_Background_Log_Administrator_GET_LOG_MEMBER_USERNAME</A><BR>
-* Registered Member Account :: Local Server :: Document View Timestamp: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD<BR>
-* Registered Member Account :: Local Server :: Document Referrer: <A HREF=\"$_Application_Module_Background_Log_Administrator_GET_REFERRER\" TITLE=\":: Open & Display The Referrer Document Page In New Window ::\" TARGET=\"_NEW\">$_Application_Module_Background_Log_Administrator_GET_REFERRER</A><BR>
-* Registered Member Account :: User-Agent ( Browser ): $_Application_Module_Background_Log_Administrator_GET_USER_AGENT<BR>
-* Registered Member Account :: Internet Protocol Address: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_REMOTE_SERVER_ADDRESS\" TARGET=\"_NEW\" TITLE=\":: Open & Display The Who-Is Information For The Remote User Internet Protocol Address :: $_GLOBAL_REMOTE_SERVER_ADDRESS ::\">$_GLOBAL_REMOTE_SERVER_ADDRESS</A><BR>
-* Registered Member Account :: Remote Server :: Host-Name: $_GLOBAL_REMOTE_SERVER_HOSTNAME<BR>
-* Registered Member Account :: Remote Server :: Port Number: $_GLOBAL_REMOTE_SERVER_PORT<BR>
-* Registered Member Account :: Request String: $_GLOBAL_LOCAL_SERVER_QUERY_STRING<BR><BR>
+Activity Log :: Detailed Information :: Registered Member Account :: Administration
+<HR ALIGN=\"LEFT\" WIDTH=\"75%\"><BR><BR>
 
-<B>Connection Information :: Registered Member Account</B><BR>
-* Registered Member Account :: Local Server :: Request Method: $_GLOBAL_LOCAL_SERVER_REQUEST_METHOD<BR>
-* Registered Member Account :: Local Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME<BR>
-* Registered Member Account :: Local Server :: Connection Type: $_GLOBAL_LOCAL_SERVER_HTTP_CONNECTION_TYPE<BR><BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"75%\">
+Machine and Connection Information
+<HR ALIGN=\"LEFT\" WIDTH=\"75%\">
+Internet Protocol Address<BR>
+* This Registered Member Account :: This Web Server :: Internet Protocol Address: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_LOCAL_SERVER_ADDRESS\" TARGET=\"_NEW\" TITLE=\":: Open & Display :: The Who-Is Information :: For :: The Internet Protocol Address :: $_GLOBAL_LOCAL_SERVER_ADDRESS ::\">$_GLOBAL_LOCAL_SERVER_ADDRESS</A><BR>
+* This Registered Member Account :: This Web Server :: Internet Protocol Address :: Port Number :: This Web Server: $_GLOBAL_LOCAL_SERVER_PORT<BR>
+* This Registered Member Account :: Connecting Device :: Internet Protocol Address :: Port Number: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_Application_Module_Background_Log_Member_GET_IP\" TARGET=\"_NEW\" TITLE=\":: Open & Display :: The Who-Is Information :: For :: The Internet Protocol Address :: $_Application_Module_Background_Log_Member_GET_IP ::\">$_Application_Module_Background_Log_Member_GET_IP</A><BR>
+* This Registered Member Account :: Connecting Device :: Internet Protocol Address :: Port Number: $_GLOBAL_REMOTE_SERVER_PORT<BR><BR>
 
-<B>Location Information :: Registered Member Account</B><BR>
-* Registered Member Account :: Device Location :: By Global-Positioning-System Coordinates :: From H.T.M.L. :: In: X, Y, Z: <DIV ID=\"getLocationOutputLongitude\"></DIV>&nbsp;<DIV ID=\"getLocationOutputLatitude\"></DIV><BR>
-* Registered Member Account :: Device Location :: By Geographical Localization of Objects: <BR>
-* Registered Member Account :: Device Location :: By Region: <BR>
-* Registered Member Account :: Device Location :: By Internet Protocol Address: <BR><BR>
+Connecting Device :: Details<BR>
+* This Registered Member Account :: Connecting Device :: Host-Name: $_GLOBAL_REMOTE_SERVER_HOSTNAME<BR>
+* This Registered Member Account :: Connecting Device :: User-Agent ( Web Browser ): $_Application_Module_Background_Log_Member_GET_USER_AGENT<BR><BR>
 
-<B>Local Server Information :: Registered Member Account</B><BR>
-* Local Server :: Hyper-Text-Transfer-Protocol :: Host: $_GLOBAL_LOCAL_SERVER_HTTP_HOST<BR>
-* Local Server :: Network Gateway Interface: $_GLOBAL_LOCAL_SERVER_GATEWAY_INTERFACE<BR>
-* Local Server :: Internet Protocol Address: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_LOCAL_SERVER_ADDRESS\" TARGET=\"_NEW\" TITLE=\":: Open & Display The Who-Is Information For Local Server Internet Protocol Address :: $_GLOBAL_LOCAL_SERVER_ADDRESS ::\">$_GLOBAL_LOCAL_SERVER_ADDRESS</A><BR>
-* Local Server :: Software: $_GLOBAL_LOCAL_SERVER_SOFTWARE<BR>
-* Local Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME<BR>
-* Local Server :: Request Time ( Float ): $_GLOBAL_LOCAL_SERVER_REQUEST_TIME_FLOAT<BR>
-* Local Server :: Document Root: $_GLOBAL_LOCAL_SERVER_DOCUMENT_ROOT<BR>
-* Local Server :: Hyper-Text-Transfer-Protocol :: Accept Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT<BR>
-* Local Server :: Hyper-Text-Transfer-Protocol :: Character Set: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_CHARACTER_SET<BR>
-* Local Server :: Hyper-Text-Transfer-Protocol :: Encoding: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_ENCODING<BR>
-* Local Server :: Hyper-Text-Transfer-Protocol :: Loading Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LOADING<BR>
-* Local Server :: Hyper-Text-Transfer-Protocol :: Language: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LANGUAGE<BR><BR>
+Registered Member Account :: Details<BR>
+* This Registered Member Account :: UserName: <A HREF=\"../../../../$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Background_Log_Member_GET_LOG_MEMBER_USERNAME\" TARGET=\"_NEW\" TITLE=\":: Open & Display :: The Registered Member Account :: Profile :: For :: $_Application_Module_Background_Log_Member_GET_LOG_MEMBER_USERNAME ::\">$_Application_Module_Background_Log_Member_GET_LOG_MEMBER_USERNAME</A><BR><BR>
 
-<B>Web Page Document Cache Circumvention Strings</B><HR>
-* Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Hyper-Text Reference<BR>
+This Web Server :: Document Details<BR>
+* This Registered Member Account :: Connecting Device :: This Web Server :: Document View Timestamp: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD<BR>
+* This Registered Member Account :: Connecting Device :: This Web Server :: Document Referrer: $_Application_Module_Background_Log_Member_GET_REFERRER<BR>
+* This Registered Member Account :: Connecting Device :: This Web Server :: Request Method: $_GLOBAL_LOCAL_SERVER_REQUEST_METHOD<BR>
+* This Registered Member Account :: Connecting Device :: This Web Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME<BR>
+* This Registered Member Account :: Connecting Device :: Connection Type: $_GLOBAL_LOCAL_SERVER_HTTP_CONNECTION_TYPE<BR>
+* This Registered Member Account :: Connecting Device :: Request String: $_GLOBAL_LOCAL_SERVER_QUERY_STRING<BR><BR>
+
+<HR ALIGN=\"LEFT\" WIDTH=\"75%\">
+Location Information
+<HR ALIGN=\"LEFT\" WIDTH=\"75%\">
+* This Registered Member Account :: Connecting Device :: Location :: By Global-Positioning-System :: Coordinates :: In: X, Y, Z: getLocationOutputLongitude getLocationOutputLatitude<BR>
+* This Registered Member Account :: Connecting Device :: Location :: By Geographical Localization of Objects:<BR>
+* This Registered Member Account :: Connecting Device :: Location :: By Area :: From Programming Code:<BR>
+* This Registered Member Account :: Connecting Device :: Location :: By Area :: Given: $_Application_Module_Member_Profile_LIST_MEMBER_LOCATION_DEVICE_AREA<BR>
+* This Registered Member Account :: Connecting Device :: Location :: By Region :: From Programming Code:<BR>
+* This Registered Member Account :: Connecting Device :: Location :: By Region :: Given: $_Application_Module_Member_Profile_LIST_MEMBER_LOCATION_DEVICE_REGION<BR>
+* This Registered Member Account :: Connecting Device :: Location :: By Time-Zone :: From Programming Code:<BR>
+* This Registered Member Account :: Connecting Device :: Location :: By Time-Zone :: Given: $_Application_Module_Member_Profile_LIST_MEMBER_LOCATION_GIVEN_TIMEZONE<BR>
+* This Registered Member Account :: Connecting Device :: Location :: By Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS :: $_GLOBAL_REMOTE_SERVER_PORT<BR><BR>
+
+<HR ALIGN=\"LEFT\" WIDTH=\"75%\">
+Machine and Connection Information
+<HR ALIGN=\"LEFT\" WIDTH=\"75%\">
+Hyper-Text-Transfer-Protocol<BR>
+* This Web Server :: Hyper-Text-Transfer-Protocol :: Host: $_GLOBAL_LOCAL_SERVER_HTTP_HOST<BR>
+* This Web Server :: Hyper-Text-Transfer-Protocol :: Accept Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT<BR>
+* This Web Server :: Hyper-Text-Transfer-Protocol :: Character Set: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_CHARACTER_SET<BR>
+* This Web Server :: Hyper-Text-Transfer-Protocol :: Encoding: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_ENCODING<BR>
+* This Web Server :: Hyper-Text-Transfer-Protocol :: Loading Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LOADING<BR>
+* This Web Server :: Hyper-Text-Transfer-Protocol :: Language: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LANGUAGE<BR><BR>
+
+Network :: Details<BR>
+* This Web Server :: Network Gateway Interface: $_GLOBAL_LOCAL_SERVER_GATEWAY_INTERFACE<BR>
+* This Web Server :: Internet Protocol Address: $_GLOBAL_LOCAL_SERVER_ADDRESS<BR><BR>
+
+Server Software :: Details<BR>
+* This Web Server :: Software: $_GLOBAL_LOCAL_SERVER_SOFTWARE<BR>
+* This Web Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME<BR><BR>
+
+Document :: Details<BR>
+* This Web Server :: Request Time ( Float ): $_GLOBAL_LOCAL_SERVER_REQUEST_TIME_FLOAT<BR>
+* This Web Server :: Document Root: $_GLOBAL_LOCAL_SERVER_DOCUMENT_ROOT<BR><BR>
+
+<HR ALIGN=\"LEFT\" WIDTH=\"75%\">
+Web-Page Document Cache Circumvention Strings
+<HR ALIGN=\"LEFT\" WIDTH=\"75%\">
+* This Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Hyper-Text-Transfer-Protocol Reference<BR>
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION<BR><BR>
 
-* Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Audio<BR>
+* This Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Audio<BR>
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_AUDIO_RANDOM_STRING_GENERATION<BR><BR>
 
-* Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Document<BR>
+* This Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Document<BR>
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_DOCUMENT_RANDOM_STRING_GENERATION<BR><BR>
 
-* Registered Member Account' :: Cache Circumvention :: Randomly Generated String :: Image<BR>
+* This Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Image<BR>
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION<BR><BR>
 
-* Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Video<BR>
+* This Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Video<BR>
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_VIDEO_RANDOM_STRING_GENERATION<BR><BR>
 
-* Registered Member Account :: Cache Circumvention :: Randomly Generated String :: File Inclusion<BR>
+* This Registered Member Account :: Cache Circumvention :: Randomly Generated String :: File Inclusion<BR>
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_FILEINCLUSION_RANDOM_STRING_GENERATION<BR><BR>
 
-<B>Digital Fingerprint Information</B><HR>
-* Registered Member Account :: Digital Fingerprint :: Authentication :: Clear-Text:<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"75%\">
+Digital Fingerprint Information
+<HR ALIGN=\"LEFT\" WIDTH=\"75%\">
+* This Registered Member Account :: Digital Fingerprint :: Generated :: Clear-Text:<BR>
+$_INTERNAL_SECURITY_GENERATED_MEMBER_FINGERPRINT_CLEARTEXT<BR><BR>
+
+* This Registered Member Account :: Digital Fingerprint :: Generated :: HASHED:<BR>
+$_INTERNAL_SECURITY_GENERATED_MEMBER_FINGERPRINT_HASHED<BR><BR>
+
+* This Registered Member Account :: Digital Fingerprint :: Authentication :: Clear-Text:<BR>
 $_GLOBAL_MEMBER_SECURITY_FINGERPRINT_CLEARTEXT<BR><BR>
 
-* Registered Member Account :: Digital Fingerprint :: Authentication :: HASHED:<BR>
+* This Registered Member Account :: Digital Fingerprint :: Authentication :: HASHED:<BR>
 $_GLOBAL_MEMBER_SECURITY_FINGERPRINT_HASHED<BR><BR>
 
-<B>Timestamps</B><HR>
-* Timestamp :: Server :: Local :: Year: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL<BR>
-* Timestamp :: Server :: Local :: Month: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL<BR>
-* Timestamp :: Server :: Local :: Day: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL<BR>
-* Timestamp :: Server :: Local :: Hour: $_GLOBAL_LOCAL_SERVER_TIME_HOURS<BR>
-* Timestamp :: Server :: Local :: Minute: $_GLOBAL_LOCAL_SERVER_TIME_MINUTES<BR>
-* Timestamp :: Server :: Local :: Second: $_GLOBAL_LOCAL_SERVER_TIME_SECONDS<BR><BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"75%\">
+Timestamps
+<HR ALIGN=\"LEFT\" WIDTH=\"75%\">
+This Web Server :: Date :: Standard
+* Timestamp :: This Web Server :: Year: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL<BR>
+* Timestamp :: This Web Server :: Month: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL<BR>
+* Timestamp :: This Web Server :: Day: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL<BR><BR>
 
-* Timestamp :: Server :: Remote :: Year: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_YEAR_FULL<BR>
-* Timestamp :: Server :: Remote :: Month: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_FULL<BR>
-* Timestamp :: Server :: Remote :: Day: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL<BR>
-* Timestamp :: Server :: Remote :: Hour: $_GLOBAL_REMOTE_SERVER_TIME_HOURS<BR>
-* Timestamp :: Server :: Remote :: Minute: $_GLOBAL_REMOTE_SERVER_TIME_MINUTES<BR>
-* Timestamp :: Server :: Remote :: Second: $_GLOBAL_REMOTE_SERVER_TIME_SECONDS<BR><BR>
+This Web Server :: Time :: Standard <BR>
+* Timestamp :: This Web Server :: Hour: $_GLOBAL_LOCAL_SERVER_TIME_HOURS<BR>
+* Timestamp :: This Web Server :: Minute: $_GLOBAL_LOCAL_SERVER_TIME_MINUTES<BR>
+* Timestamp :: This Web Server :: Second: $_GLOBAL_LOCAL_SERVER_TIME_SECONDS<BR><BR>
 
-* Timestamp :: Server :: Local :: Unix: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME<BR>
-* Timestamp :: Server :: Local :: Micro Time: $_GLOBAL_LOCAL_SERVER_TIME_UNIX<BR>
-* Timestamp :: Server :: Remote :: Unix: $_GLOBAL_REMOTE_SERVER_TIME_MICROTIME<BR>
-* Timestamp :: Server :: Remote :: Micro Time: $_GLOBAL_REMOTE_SERVER_TIME_UNIX<BR><BR>
+This Web Server :: Time :: Unix<BR>
+* Timestamp :: This Web Server :: Unix: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME<BR>
+* Timestamp :: This Web Server :: Micro-Time: $_GLOBAL_LOCAL_SERVER_TIME_UNIX<BR><BR>
 
-<A HREF=\"../../../../Applications/Background/Log_Member\" TARGET=\"_NEW\" TITLE=\":: Open & Display The Source Code For This Background Activity Log ::\">Source Code For This Background Activity Log</A><BR><BR>
+Connecting Device :: Date :: Standard<BR>
+* Timestamp :: Connecting Device :: Year: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_YEAR_FULL<BR>
+* Timestamp :: Connecting Device :: Month: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_FULL<BR>
+* Timestamp :: Connecting Device :: Day: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL<BR><BR>
+
+Connecting Device :: Time :: Standard<BR>
+* Timestamp :: Connecting Device :: Hour: $_GLOBAL_REMOTE_SERVER_TIME_HOURS<BR>
+* Timestamp :: Connecting Device :: Minute: $_GLOBAL_REMOTE_SERVER_TIME_MINUTES<BR>
+* Timestamp :: Connecting Device :: Second: $_GLOBAL_REMOTE_SERVER_TIME_SECONDS<BR><BR>
+
+Connecting Device :: Time :: Unix<BR>
+* Timestamp :: Server :: Remote :: Unix: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME<BR>
+* Timestamp :: Server :: Remote :: Micro-Time: $_GLOBAL_LOCAL_SERVER_TIME_UNIX<BR><BR>
+
+<A HREF=\"../../../../Applications/Background/Log_Member\" TARGET=\"_NEW\" TITLE=\":: Open & Display :: The Source Code :: For :: This Background Activity Log ::\">Source Code For This Background Activity Log</A>
+<HR><BR><BR>
 ");
 
 /*
@@ -327,107 +375,135 @@ $_GLOBAL_MEMBER_SECURITY_FINGERPRINT_HASHED<BR><BR>
 */
 
 fwrite($_Application_Module_Background_Log_Member_Raw_OPEN_FILE_NAME, "
-Activity Log :: Detailed Information :: Registered Member Account :: $_GLOBAL_COOKIE_MEMBER_USERNAME
----------------------------------------------------------------------------------------
-Machine and Connection Information :: Registered Member Account
----------------------------------------------------------------------------------------
-* Registered Member Account :: UserName: $_Application_Module_Background_Log_Administrator_GET_LOG_MEMBER_USERNAME
-* Registered Member Account :: Local Server :: Document View Timestamp: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD
-* Registered Member Account :: Local Server :: Document Referrer: $_Application_Module_Background_Log_Administrator_GET_REFERRER
-* Registered Member Account :: User-Agent ( Browser ): $_Application_Module_Background_Log_Administrator_GET_USER_AGENT
-* Registered Member Account :: Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS
-* Registered Member Account :: Remote Server :: Host-Name: $_GLOBAL_REMOTE_SERVER_HOSTNAME
-* Registered Member Account :: Remote Server :: Port Number: $_GLOBAL_REMOTE_SERVER_PORT
-* Registered Member Account :: Request String: $_GLOBAL_LOCAL_SERVER_QUERY_STRING
+Activity Log :: Detailed Information :: Registered Member Account :: $_Application_Module_Background_Log_Member
+---------------------------------------------------------------------------------
 
----------------------------------------------------------------------------------------
-Connection Information :: Registered Member Account
----------------------------------------------------------------------------------------
-* Registered Member Account :: Local Server :: Request Method: $_GLOBAL_LOCAL_SERVER_REQUEST_METHOD
-* Registered Member Account :: Local Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME
-* Registered Member Account :: Local Server :: Connection Type: $_GLOBAL_LOCAL_SERVER_HTTP_CONNECTION_TYPE
+---------------------------------------------------------------------------------
+Machine and Connection Information
+---------------------------------------------------------------------------------
+Internet Protocol Address
+* This Registered Member Account :: This Web Server :: Internet Protocol Address: $_GLOBAL_LOCAL_SERVER_ADDRESS
+* This Registered Member Account :: This Web Server :: Internet Protocol Address :: Port Number :: This Web Server: $_GLOBAL_LOCAL_SERVER_PORT
+* This Registered Member Account :: Connecting Device :: Internet Protocol Address :: Port Number: $_GLOBAL_REMOTE_SERVER_ADDRESS
+* This Registered Member Account :: Connecting Device :: Internet Protocol Address :: Port Number: $_GLOBAL_REMOTE_SERVER_PORT
 
----------------------------------------------------------------------------------------
-Location Information :: Registered Member Account
----------------------------------------------------------------------------------------
-* Registered Member Account :: Device Location :: By Global-Positioning-System Coordinates :: From H.T.M.L. :: In: X, Y, Z: getLocationOutputLongitude getLocationOutputLatitude<BR>
-* Registered Member Account :: Device Location :: By Geographical Localization of Objects: 
-* Registered Member Account :: Device Location :: By Region: 
-* Registered Member Account :: Device Location :: By Internet Protocol Address: 
+Connecting Device :: Details
+* This Registered Member Account :: Connecting Device :: Host-Name: $_GLOBAL_REMOTE_SERVER_HOSTNAME
+* This Registered Member Account :: Connecting Device :: User-Agent ( Web Browser ): $_Application_Module_Background_Log_Member_GET_USER_AGENT
 
----------------------------------------------------------------------------------------
-Local Server Information :: Registered Member Account
----------------------------------------------------------------------------------------
-* Local Server :: Hyper-Text-Transfer-Protocol :: Host: $_GLOBAL_LOCAL_SERVER_HTTP_HOST
-* Local Server :: Network Gateway Interface: $_GLOBAL_LOCAL_SERVER_GATEWAY_INTERFACE
-* Local Server :: Internet Protocol Address: $_GLOBAL_LOCAL_SERVER_ADDRESS
-* Local Server :: Software: $_GLOBAL_LOCAL_SERVER_SOFTWARE
-* Local Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME
-* Local Server :: Request Time ( Float ): $_GLOBAL_LOCAL_SERVER_REQUEST_TIME_FLOAT
-* Local Server :: Document Root: $_GLOBAL_LOCAL_SERVER_DOCUMENT_ROOT
-* Local Server :: Hyper-Text-Transfer-Protocol :: Accept Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT
-* Local Server :: Hyper-Text-Transfer-Protocol :: Character Set: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_CHARACTER_SET
-* Local Server :: Hyper-Text-Transfer-Protocol :: Encoding: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_ENCODING
-* Local Server :: Hyper-Text-Transfer-Protocol :: Loading Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LOADING
-* Local Server :: Hyper-Text-Transfer-Protocol :: Language: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LANGUAGE
+Registered Member Account :: Details
+* This Registered Member Account :: UserName: $_Application_Module_Background_Log_Member_GET_LOG_MEMBER_USERNAME
 
----------------------------------------------------------------------------------------
-Digital Fingerprint Information
----------------------------------------------------------------------------------------
-* Registered Member Account :: Digital Fingerprint :: Generated :: Clear-Text:
-$_INTERNAL_SECURITY_GENERATED_MEMBER_FINGERPRINT_CLEARTEXT
+This Web Server :: Document Details
+* This Registered Member Account :: Connecting Device :: This Web Server :: Document View Timestamp: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD
+* This Registered Member Account :: Connecting Device :: This Web Server :: Document Referrer: $_Application_Module_Background_Log_Member_GET_REFERRER
+* This Registered Member Account :: Connecting Device :: This Web Server :: Request Method: $_GLOBAL_LOCAL_SERVER_REQUEST_METHOD
+* This Registered Member Account :: Connecting Device :: This Web Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME
+* This Registered Member Account :: Connecting Device :: Connection Type: $_GLOBAL_LOCAL_SERVER_HTTP_CONNECTION_TYPE
+* This Registered Member Account :: Connecting Device :: Request String: $_GLOBAL_LOCAL_SERVER_QUERY_STRING
 
-* Registered Member Account :: Digital Fingerprint :: Generated :: HASHED:
-$_INTERNAL_SECURITY_GENERATED_MEMBER_FINGERPRINT_HASHED
+---------------------------------------------------------------------------------
+Location Information
+---------------------------------------------------------------------------------
+* This Registered Member Account :: Connecting Device :: Location :: By Global-Positioning-System :: Coordinates :: In: X, Y, Z: getLocationOutputLongitude getLocationOutputLatitude
+* This Registered Member Account :: Connecting Device :: Location :: By Geographical Localization of Objects: 
+* This Registered Member Account :: Connecting Device :: Location :: By Area :: From Programming Code:
+* This Registered Member Account :: Connecting Device :: Location :: By Area :: Given: $_Application_Module_Member_Profile_LIST_MEMBER_LOCATION_DEVICE_AREA
+* This Registered Member Account :: Connecting Device :: Location :: By Region :: From Programming Code:
+* This Registered Member Account :: Connecting Device :: Location :: By Region :: Given: $_Application_Module_Member_Profile_LIST_MEMBER_LOCATION_DEVICE_REGION
+* This Registered Member Account :: Connecting Device :: Location :: By Time-Zone :: From Programming Code:
+* This Registered Member Account :: Connecting Device :: Location :: By Time-Zone :: Given: $_Application_Module_Member_Profile_LIST_MEMBER_LOCATION_GIVEN_TIMEZONE
+* This Registered Member Account :: Connecting Device :: Location :: By Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS :: $_GLOBAL_REMOTE_SERVER_PORT
 
-* Registered Member Account :: Digital Fingerprint :: Authentication :: Clear-Text:
-$_GLOBAL_MEMBER_SECURITY_FINGERPRINT_CLEARTEXT
+---------------------------------------------------------------------------------
+Machine and Connection Information
+---------------------------------------------------------------------------------
+Hyper-Text-Transfer-Protocol
+* This Web Server :: Hyper-Text-Transfer-Protocol :: Host: $_GLOBAL_LOCAL_SERVER_HTTP_HOST
+* This Web Server :: Hyper-Text-Transfer-Protocol :: Accept Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT
+* This Web Server :: Hyper-Text-Transfer-Protocol :: Character Set: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_CHARACTER_SET
+* This Web Server :: Hyper-Text-Transfer-Protocol :: Encoding: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_ENCODING
+* This Web Server :: Hyper-Text-Transfer-Protocol :: Loading Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LOADING
+* This Web Server :: Hyper-Text-Transfer-Protocol :: Language: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LANGUAGE
 
-* Registered Member Account :: Digital Fingerprint :: Authentication :: HASHED:
-$_GLOBAL_MEMBER_SECURITY_FINGERPRINT_HASHED
+Network :: Details
+* This Web Server :: Network Gateway Interface: $_GLOBAL_LOCAL_SERVER_GATEWAY_INTERFACE
+* This Web Server :: Internet Protocol Address: $_GLOBAL_LOCAL_SERVER_ADDRESS
+
+Server Software :: Details
+* This Web Server :: Software: $_GLOBAL_LOCAL_SERVER_SOFTWARE
+* This Web Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME
+
+Document :: Details
+* This Web Server :: Request Time ( Float ): $_GLOBAL_LOCAL_SERVER_REQUEST_TIME_FLOAT
+* This Web Server :: Document Root: $_GLOBAL_LOCAL_SERVER_DOCUMENT_ROOT
 
 --------------------------------------------------------------------------
-Web Page Document Cache Circumvention Strings
+Web-Page Document Cache Circumvention Strings
 --------------------------------------------------------------------------
-* Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Hyper-Text Reference
+* This Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Hyper-Text-Transfer-Protocol Reference
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION
 
-* Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Audio
+* This Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Audio
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_AUDIO_RANDOM_STRING_GENERATION
 
-* Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Document
+* This Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Document
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_DOCUMENT_RANDOM_STRING_GENERATION
 
-* Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Image
+* This Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Image
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION
 
-* Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Video
+* This Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Video
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_VIDEO_RANDOM_STRING_GENERATION
 
-* Registered Member Account :: Cache Circumvention :: Randomly Generated String :: File Inclusion
+* This Registered Member Account :: Cache Circumvention :: Randomly Generated String :: File Inclusion
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_FILEINCLUSION_RANDOM_STRING_GENERATION
+
+---------------------------------------------------------------------------------
+Digital Fingerprint Information
+---------------------------------------------------------------------------------
+* This Registered Member Account :: Digital Fingerprint :: Generated :: Clear-Text:
+$_INTERNAL_SECURITY_GENERATED_MEMBER_FINGERPRINT_CLEARTEXT
+
+* This Registered Member Account :: Digital Fingerprint :: Generated :: HASHED:
+$_INTERNAL_SECURITY_GENERATED_MEMBER_FINGERPRINT_HASHED
+
+* This Registered Member Account :: Digital Fingerprint :: Authentication :: Clear-Text:
+$_GLOBAL_MEMBER_SECURITY_FINGERPRINT_CLEARTEXT
+
+* This Registered Member Account :: Digital Fingerprint :: Authentication :: HASHED:
+$_GLOBAL_MEMBER_SECURITY_FINGERPRINT_HASHED
 
 ---------------------------------------------------------------------------------
 Timestamps
 ---------------------------------------------------------------------------------
-* Timestamp :: Server :: Local :: Year: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL
-* Timestamp :: Server :: Local :: Month: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL
-* Timestamp :: Server :: Local :: Day: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL
-* Timestamp :: Server :: Local :: Hour: $_GLOBAL_LOCAL_SERVER_TIME_HOURS
-* Timestamp :: Server :: Local :: Minute: $_GLOBAL_LOCAL_SERVER_TIME_MINUTES
-* Timestamp :: Server :: Local :: Second: $_GLOBAL_LOCAL_SERVER_TIME_SECONDS
+This Web Server :: Date :: Standard
+* Timestamp :: This Web Server :: Year: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL
+* Timestamp :: This Web Server :: Month: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL
+* Timestamp :: This Web Server :: Day: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL
 
-* Timestamp :: Server :: Remote :: Year: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_YEAR_FULL
-* Timestamp :: Server :: Remote :: Month: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_FULL
-* Timestamp :: Server :: Remote :: Day: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL
-* Timestamp :: Server :: Remote :: Hour: $_GLOBAL_REMOTE_SERVER_TIME_HOURS
-* Timestamp :: Server :: Remote :: Minute: $_GLOBAL_REMOTE_SERVER_TIME_MINUTES
-* Timestamp :: Server :: Remote :: Second: $_GLOBAL_REMOTE_SERVER_TIME_SECONDS
+This Web Server :: Time :: Standard 
+* Timestamp :: This Web Server :: Hour: $_GLOBAL_LOCAL_SERVER_TIME_HOURS
+* Timestamp :: This Web Server :: Minute: $_GLOBAL_LOCAL_SERVER_TIME_MINUTES
+* Timestamp :: This Web Server :: Second: $_GLOBAL_LOCAL_SERVER_TIME_SECONDS
 
-* Timestamp :: Server :: Local :: Unix: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
-* Timestamp :: Server :: Local :: Micro Time: $_GLOBAL_LOCAL_SERVER_TIME_UNIX
-* Timestamp :: Server :: Remote :: Unix: $_GLOBAL_REMOTE_SERVER_TIME_MICROTIME
-* Timestamp :: Server :: Remote :: Micro Time: $_GLOBAL_REMOTE_SERVER_TIME_UNIX
+This Web Server :: Time :: Unix
+* Timestamp :: This Web Server :: Unix: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
+* Timestamp :: This Web Server :: Micro-Time: $_GLOBAL_LOCAL_SERVER_TIME_UNIX
+
+Connecting Device :: Date :: Standard
+* Timestamp :: Connecting Device :: Year: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_YEAR_FULL
+* Timestamp :: Connecting Device :: Month: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_FULL
+* Timestamp :: Connecting Device :: Day: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL
+
+Connecting Device :: Time :: Standard
+* Timestamp :: Connecting Device :: Hour: $_GLOBAL_REMOTE_SERVER_TIME_HOURS
+* Timestamp :: Connecting Device :: Minute: $_GLOBAL_REMOTE_SERVER_TIME_MINUTES
+* Timestamp :: Connecting Device :: Second: $_GLOBAL_REMOTE_SERVER_TIME_SECONDS
+
+Connecting Device :: Time :: Unix
+* Timestamp :: Server :: Remote :: Unix: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
+* Timestamp :: Server :: Remote :: Micro-Time: $_GLOBAL_LOCAL_SERVER_TIME_UNIX
 ");
 
 /*
