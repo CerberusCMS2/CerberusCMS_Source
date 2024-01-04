@@ -1,4 +1,4 @@
-﻿Cerberus Content Management System, Officially Registered Unix-Name: CerberusCMS and Cerberus-Content-Management-System in year 2000 - 2001 on FreshMeat which became SourceForge and then SlashDot Media.
+Cerberus Content Management System, Officially Registered Unix-Name: CerberusCMS and Cerberus-Content-Management-System in year 2000 - 2001 on FreshMeat which became SourceForge and then SlashDot Media.
 
 ==Origins==
 
@@ -237,16 +237,20 @@ Options for managing Custom Web Page Entries, Custom Web Page Entry Data and App
 22 Administration-Level Application Modules
 
 ====Registered Member-Level Application Modules====
+* '''Account_Data'''
+* '''Account_Recovery'''
 * '''Active_Members'''
 * '''All_News'''
 * '''All_Shouts'''
 * '''Application_List'''
 * '''Articles'''
+* '''Calculator'''
 * '''Calendar'''
+* '''Clock'''
 * '''Comment'''
 * '''Contact_Administrator'''
 * '''Control_Panel'''
-* '''Clock'''
+* '''Devices'''
 * '''Documentation'''
 * '''Download / Torrent'''
 * '''Electronic_Mail'''
@@ -254,12 +258,11 @@ Options for managing Custom Web Page Entries, Custom Web Page Entry Data and App
 * '''File_Manager'''
 * '''Files'''
 * '''Forum'''
-* '''Forward_Friend'''
+* '''Forward'''
 * '''Friend'''
 * '''Language'''
 * '''Legal'''
 * '''Lightning_Calculate'''
-* '''Links'''
 * '''List'''
 * '''Login'''
 * '''Market'''
@@ -267,24 +270,26 @@ Options for managing Custom Web Page Entries, Custom Web Page Entry Data and App
 * '''Member_Directory'''
 * '''Messenger'''
 * '''News'''
+* '''Notepad'''
 * '''Pages'''
-* '''Private_Files'''
 * '''Profile'''
+* '''Recommendations'''
 * '''Referrers'''
 * '''Register'''
 * '''Reset_Password'''
 * '''Search'''
-* '''Statistics'''
 * '''Submit_News'''
+* '''System'''
 * '''System_Message'''
+* '''Theme'''
+* '''Travel'''
 * '''Update_Account'''
 * '''Update_Password'''
 * '''Upload'''
-* '''Video_Games'''
-* '''Webspace'''
 * '''VoIP Phone'''
+* '''Webspace'''
 
-46 Registered Member-Level Application Modules
+50 Registered Member-Level Application Modules
 
 ====Background-Level Application Modules====
 
@@ -300,17 +305,21 @@ Activity Logging
 ====Panel Application Modules====
 * '''Administration.panel'''
 * '''Applications_Panel.panel'''
-* '''Banned_Networks.panel'''
+* '''Clock.panel'''
 * '''Language.panel'''
 * '''Latest_Articles.panel'''
 * '''Latest_Files.panel'''
 * '''Latest_Members.panel'''
 * '''Latest_Shouts.panel'''
+* '''Live_Video.panel'''
+* '''Location.panel'''
 * '''Member_Panel.panel'''
+* '''Networking.panel'''
 * '''Project_Badges.panel'''
 * '''RSS_Panel.panel'''
+* '''Theme.panel'''
 
-11 Application Panels
+16 Application Panels
 
 ====Open :: Public Application Modules====
 * '''Engine_Validation'''
