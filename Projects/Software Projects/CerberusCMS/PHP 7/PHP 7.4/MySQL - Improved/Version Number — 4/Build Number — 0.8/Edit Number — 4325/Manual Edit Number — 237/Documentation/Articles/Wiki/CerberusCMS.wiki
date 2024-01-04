@@ -198,11 +198,17 @@ Options for Sending, Receiving and Executing GIT-Like Commands on the system.
 * '''Messenger'''
 Options for managing the Instant Messenger, Messenger Chat Rooms and Messenger Data.
 
+* '''Networking'''
+Options for managing the Networking System. Filtering, Blocking, Blacklisting and Whitelisting Internet Protocol Addresses and Domain Name Server Addresses.
+
 * '''Server_Information'''
 Options and Information about the Web Server and the CerberusCMS Installation.
 
 * '''Panels'''
 Options for managing the Application Panels.
+
+* '''Plug-Ins'''
+Options for managing the Plug-Ins on the system.
 
 * '''Publish'''
 Options for managing Publications on the system such as News Article Entries, Article Entries and Sending Mass Newsletters to all Registered Member Accounts.
