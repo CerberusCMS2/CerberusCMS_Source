@@ -5329,7 +5329,15 @@ By dissecting every part of a Mathematical Concept, Mathematical Statement, Math
 Start first by dissecting each part the entire Mathematical Statement and Mathematical Algorithm shown above. In order to dissect each part this one must first solve each part of the statement and algorithm part by part. This statement is essentially stating that 1 whole Pi is equal to:<BR>
 12 * Sigma Summation starting at q = 0 * (-1)^q * (6*q)! (545140134q + 13591409) divided by (3*q)! * (q!)^3 * (640320)^3*q + 3/2.<BR><BR>
 
-How do I do this ? Solve each part of the statement and then perform the calculations using the P.E.M.D.A.S. Mathematical Proceedure. Once after this is solved where q = 0 then next one will become q = 1 and then q = 2 all the way to infinity.<BR><BR>
+How do I do this ? Solve each part of this Mathematical Statement, Algorithm and Equation part by part and then perform the calculations by using the P.E.M.D.A.S. Mathematical Proceedure. Once after this is solved where q = 0 the next one will become q = 1 and then q = 2 all the way to infinity.<BR><BR>
+
+Step #01: (-1) To The Power of q = 0 because q is 0<BR>
+Step #02: (6 * q) ! = 0 because q is 0<BR>
+Step #03: (545140134 * q = 0 + 13591409 = 13591409 because q is 0<BR>
+----------------------------------------------------------<BR>
+Step #04: (3 * q) ! = 0 because q is 0<BR>
+Step #05: (q !) To The Power of q = 0 because q is 0<BR>
+Step #06: (640320) To The Power of 3 * q + 1.50 = 1.50 because three halfs is perfectly equal to 1.50 and because q is 0<BR><BR>
 
 <BIG><B>Training Course</B></BIG><BR>
 The author of this digital Application Module has designed a training course for people that already possess the natural counting ability. This specific training course covers a span of 6 months of intensive mental training and internal meditation. The training course can be completed alone or with others. The author of this training system does not socially interact with anyone and the materials are completely public and completely free.
