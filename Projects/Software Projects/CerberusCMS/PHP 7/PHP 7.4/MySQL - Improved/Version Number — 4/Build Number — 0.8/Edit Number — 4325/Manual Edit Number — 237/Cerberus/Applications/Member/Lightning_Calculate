@@ -5331,30 +5331,46 @@ Start first by dissecting each part the entire Mathematical Statement and Mathem
 
 How do I do this ? Solve each part of this Mathematical Statement, Algorithm and Equation part by part and then perform the basic mathematical operations by using the P.E.M.D.A.S. Mathematical Procedure. Once after this is solved where q = 0 the next one will become q = 1 and then q = 2 all the way to infinity. Important to note is that this is calculated 2 different ways where in the Mathematical Process applying the character ! Factorial is different from calculating it in a computer program.<BR><BR>
 
-Step #01: (-1) To The Power of q = 0 because q is 0<BR>
-Step #02: (6 * q) ! = 0 because q is 0<BR>
-Step #03: (545140134 * q = 0 + 13591409) = 13591409 because q is 0<BR>
+Step #01: 12 * q = 0 because q is 0<BR>
+Step #02: (-1) To The Power of q = 0 because q is 0<BR>
+Step #03: (6 * q) ! = 0 because q is 0<BR>
+Step #04: (545140134 * q = 0 + 13591409) = 13591409 because q is 0<BR>
 ----------------------------------------------------------<BR>
-Step #04: (3 * q) ! = 0 because q is 0<BR>
-Step #05: (q !) To The Power of q = 0 because q is 0<BR>
-Step #06: (640320) To The Power of 3 * q + 1.50 = 1.50 because three halfs is perfectly equal to 1.50 and because q is 0<BR><BR>
+Step #05: (3 * q) ! = 0 because q is 0<BR>
+Step #06: (q !) To The Power of q = 0 because q is 0<BR>
+Step #07: (640320) To The Power of 3 * q + 1.50 = 1.50 because three halfs is perfectly equal to 1.50 and because q is 0<BR><BR>
 
 Applying the function of the character ! NOT in mathematics would be ! <A HREF=\"https://simple.wikipedia.org/wiki/Factorial\" TITLE=\":: Open & Display :: The Official Wikipedia Article Entry :: For :: Factorial In Mathematics ::\" TARGET=\"_NEW\">Factorial</A><BR><BR>
 
-Step #01: (-1) To The Power of q = 0 because q is 0<BR>
-Step #02: (6 * q) ! = 1 because q is 0 and Mathematical Factorial 0 is 1<BR>
-Step #03: (545140134 * q = 0 + 13591409) = 13591409 because q is 0<BR>
+Step #01: 12 * q = 0 because q is 0<BR>
+Step #02: (-1) To The Power of q = 0 because q is 0<BR>
+Step #03: (6 * q) ! = 1 because q is 0 and Mathematical Factorial 0 is 1<BR>
+Step #04: (545140134 * q = 0 + 13591409) = 13591409 because q is 0<BR>
 ----------------------------------------------------------<BR>
-Step #04: (3 * q) ! = 1 because q is 0 and Mathematical Factorial 0 is 1<BR>
-Step #05: (q !) To The Power of q = 1 because q is 0 and Mathematical Factorial 0 is 1<BR>
-Step #06: (640320) To The Power of 3 * q + 1.50 = 1.50 because three halfs is perfectly equal to 1.50 and because q is 0<BR>
-Step #07: 0 * 1 * 13591409 = 0<BR>
-Step #08: 0 * 1 To The Power of 3 = 0<BR>
-Step #09: 640320 To The Power of 3 = 262537412640768000 * 0 = 0 + 1.50 = 1.50<BR><BR>
+Step #05: (3 * q) ! = 1 because q is 0 and Mathematical Factorial 0 is 1<BR>
+Step #06: (q !) To The Power of q = 1 because q is 0 and Mathematical Factorial 0 is 1<BR>
+Step #07: (640320) To The Power of 3 * q + 1.50 = 1.50 because three halfs is perfectly equal to 1.50 and because q is 0<BR>
+Step #08: 0 * 1 * 13591409 = 0<BR>
+Step #09: 0 * 1 To The Power of 3 = 0<BR>
+Step #10: 640320 To The Power of 3 = 262537412640768000 * 0 = 0 + 1.50 = 1.50<BR>
+Step #11: 0 * 0 = 0<BR>
 
 Similarly one can apply the exact same procedure to the next Statement, Algorithm and Equation known as the <A HREF=\"https://en.Wikipedia.org/wiki/Chudnovsky_algorithm\" TITLE=\":: Open & Display :: The Official Wikipedia Article Entry :: For :: Chudnovsky Algorithm ::\" TARGET=\"_NEW\">Chudnovsky Algorithm</A><BR><BR>
 
 <A HREF=\"./Theme/2023_Lightning_Calculate/Image/Lightning_Calculate/Algorithm_Chudnovsky.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Digitization of the Chudnovsky Mathematical Algorithm For Deriving Pi ::\" TARGET=\"_NEW\"><IMG SRC=\"./Theme/2023_Lightning_Calculate/Image/Lightning_Calculate/Algorithm_Chudnovsky.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Digitization of the Chudnovsky Mathematical Algorithm For Deriving Pi ::\" CLASS=\"MemberProfile\"></A></IMG><BR><BR>
+
+Step #01: 12 * k = 0 because k is 0<BR>
+Step #02: (-1)^k = 0 because k is 0<BR>
+Step #03: (6 * k)! = 1 because k is 0 and Mathematical Factorial 0 is 1<BR>
+Step #04: 545140134 * k = 0 because k is 0<BR>
+Step #05: 0 + 13591409 = 13591409<BR>
+----------------------------------------------------------<BR>
+Step #06: (3 * k)! = 1 because k is 0 and Mathematical Factorial 0 is 1<BR>
+Step #07: (k!)^3 = 1 because k is 0 and Mathematical Factorial 0 is 1<BR>
+Step #08: (640320)^3*k + 3/2 = 1.50<BR>
+Step #09: 13591410 / 512384047.996 = 0.0265258258003108 OR Reverse: 37.69910906933129<BR>
+Step #10: 12 * 0.0265258258003108 = 0.3183099096037296
+Step #11: Then Add Together 3.14 with the rest of the decimal numbers calculated<BR><BR>
 
 <BIG><B>Training Course</B></BIG><BR>
 The author of this digital Application Module has designed a training course for people that already possess the natural counting ability. This specific training course covers a span of 6 months of intensive mental training and internal meditation. The training course can be completed alone or with others. The author of this training system does not socially interact with anyone and the materials are completely public and completely free.
