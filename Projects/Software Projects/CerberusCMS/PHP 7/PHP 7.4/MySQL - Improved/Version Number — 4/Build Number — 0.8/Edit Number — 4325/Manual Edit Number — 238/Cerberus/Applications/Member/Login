@@ -237,7 +237,7 @@ echo ("
 
 											Additional Options
 											<HR>
-											Registered Member Account :: Options :: Authentication :: Connection :: Insecure :: Clear-Text
+											Registered Member Account :: Options :: Authentication :: Connection :: Insecure
 											<HR ALIGN=\"LEFT\" WIDTH=\"35%\">
 											* <A HREF=\"$_ACCESS_URL_CLEARTEXT/$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Login&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Hyper-Text-Transfer-Protocol-Insecure Over Clear-Text Insecure Connection ::\">Connection :: Insecure :: Clear-Text</A><BR>
 											Note: <I>Clear-Text Web Server Connections are non-secure clear-text connections between an electronic device and a web server over Hyper-Text-Transfer-Protocol. <A HREF=\"https://en.Wikipedia.org/wiki/HTTP\" TITLE=\":: Open & Display :: The Wikipedia Article Entry :: For :: Hyper-Text-Transfer-Protocol ::\" TARGET=\"_NEW\">Hyper-Text-Transfer-Protocol</A> is an application layer in the <A HREF=\"https://en.Wikipedia.org/wiki/Internet_protocol_suite\" TITLE=\":: Open & Display :: The Wikipedia Article Entry :: For :: Internet Protocol Suite ::\" TARGET=\"_TARGET\">Internet Protocol Suite</A>. All Clear-Text connections are not secure and they can easily be read by any server physically placed between your device and the Web Server this Web Application
@@ -264,8 +264,8 @@ echo ("
 
 											Registered Member Account :: Options :: Authentication :: Account Control
 											<HR ALIGN=\"LEFT\" WIDTH=\"35%\">
-											* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Login&amp;Authenticated&#61;Kill_Account_Current&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Initiate The Kill Currently Authenticated Registered Member Account Options ::\">Registered Member Account :: Authenticated :: Kill Authentication :: Current</A><BR>
-											* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Login&amp;Authenticated&#61;Kill_Account_Ghost&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Initiate The Kill Ghost Authenticated Registered Member Account Options ::\">Registered Member Account :: Authenticated :: Kill Authentication :: Ghost</A><BR>
+											* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Login&amp;Authenticated&#61;Kill_Account_Current&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Initiate The Kill Currently Authenticated Registered Member Account Options ::\">Registered Member Account :: Account Control :: Authenticated :: Kill Authentication :: Current</A><BR>
+											* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Login&amp;Authenticated&#61;Kill_Account_Ghost&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Initiate The Kill Ghost Authenticated Registered Member Account Options ::\">Registered Member Account :: Account Control :: Authenticated :: Kill Authentication :: Ghost</A><BR>
 											Note: <I>Did you authenticate into your Registered Member Account on this system and forget to de-authenticate or did you clear the Web Browser Cookies before de-authenticating ? Was your Registered Member Account hijacked ? Use these options to force a de-authentication on your Registered Member Account.</I><BR><BR>
 											
 											Registered Member Account :: Options :: Authentication :: Authorization
