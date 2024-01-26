@@ -4406,8 +4406,8 @@ copy("./Applications/Member/All_News","./System/Security/Integrity/Backup/Applic
 copy("./Applications/Member/All_Shouts","./System/Security/Integrity/Backup/Applications/Member/All_Shouts");
 copy("./Applications/Member/Application_List","./System/Security/Integrity/Backup/Applications/Member/Application_List");
 copy("./Applications/Member/Articles","./System/Security/Integrity/Backup/Applications/Member/Articles");
-copy("./Applications/Member/Calendar","./System/Security/Integrity/Backup/Applications/Member/Calendar");
 copy("./Applications/Member/Calculator","./System/Security/Integrity/Backup/Applications/Member/Calculator");
+copy("./Applications/Member/Calendar","./System/Security/Integrity/Backup/Applications/Member/Calendar");
 copy("./Applications/Member/Clock","./System/Security/Integrity/Backup/Applications/Member/Clock");
 copy("./Applications/Member/Comment","./System/Security/Integrity/Backup/Applications/Member/Comment");
 copy("./Applications/Member/Contact_Administrator","./System/Security/Integrity/Backup/Applications/Member/Contact_Administrator");
@@ -4439,8 +4439,8 @@ copy("./Applications/Member/Referrers","./System/Security/Integrity/Backup/Appli
 copy("./Applications/Member/Register","./System/Security/Integrity/Backup/Applications/Member/Register");
 copy("./Applications/Member/Reset_Password","./System/Security/Integrity/Backup/Applications/Member/Reset_Password");
 copy("./Applications/Member/Search","./System/Security/Integrity/Backup/Applications/Member/Search");
-copy("./Applications/Member/System","./System/Security/Integrity/Backup/Applications/Member/System");
 copy("./Applications/Member/Submit_News","./System/Security/Integrity/Backup/Applications/Member/Submit_News");
+copy("./Applications/Member/System","./System/Security/Integrity/Backup/Applications/Member/System");
 copy("./Applications/Member/System_Message","./System/Security/Integrity/Backup/Applications/Member/System_Message");
 copy("./Applications/Member/Theme","./System/Security/Integrity/Backup/Applications/Member/Theme");
 copy("./Applications/Member/Travel","./System/Security/Integrity/Backup/Applications/Member/Travel");
