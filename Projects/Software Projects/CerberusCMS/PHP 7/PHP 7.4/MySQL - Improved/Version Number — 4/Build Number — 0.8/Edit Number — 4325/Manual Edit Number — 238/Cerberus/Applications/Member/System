@@ -597,7 +597,7 @@ echo ("
 											<B>Settings :: System :: Plug-Ins ::</B> <A HREF=\"./System/Plug-Ins/Camera/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA/Camera.$_INTERNAL_FILE_EXTENSION\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Plug-In Application Module :: Camera ::\" TARGET=\"_NEW\">Camera</A><BR>
 												*&nbsp;Plug-In :: Camera :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA<BR>
 												*&nbsp;Plug-In :: Camera :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_CAMERA | $_Application_Module_Member_System_PlugIn_Status_Camera<BR>
-											<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Devices&amp;Display&#61;Options&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Application :: Devices ::\">Device :: Hardware :: Testing :: Microphone</A><BR><BR>
+											<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Devices&amp;Display&#61;Options&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Application :: Devices ::\">Device :: Hardware :: Testing :: Camera</A><BR><BR>
 
 											<B>Settings :: System :: Plug-Ins ::</B> <A HREF=\"./System/Plug-Ins/Microphone/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_MICROPHONE/Microphone.$_INTERNAL_FILE_EXTENSION\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Plug-In Application Module :: Microphone ::\" TARGET=\"_NEW\">Microphone</A><BR>
 												*&nbsp;Plug-In :: Microphone :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_MICROPHONE<BR>
@@ -666,8 +666,8 @@ echo ("
 											</B><HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 
 											<B>Settings :: Security :: Security Modules</B><BR>
-												*&nbsp;Security Module :: Master Sanitization Module :: Directory :: $_GLOBAL_SETTING_SYSTEM_SECURITY_MODULE_DIRECTORY_MASTER_SANITIZATION<BR>
-												*&nbsp;Security Module :: Master Sanitization Module :: Status :: $_GLOBAL_SETTING_SYSTEM_SECURITY_MODULE_STATUS_MASTER_SANITIZATION | $_Application_Module_Member_System_System_Security_Module_Status_Master_Sanitization<BR><BR>
+												*&nbsp;System :: Security Module :: Master Sanitization Module :: Directory :: $_GLOBAL_SETTING_SYSTEM_SECURITY_MODULE_DIRECTORY_MASTER_SANITIZATION<BR>
+												*&nbsp;System :: Security Module :: Master Sanitization Module :: Status :: $_GLOBAL_SETTING_SYSTEM_SECURITY_MODULE_STATUS_MASTER_SANITIZATION | $_Application_Module_Member_System_System_Security_Module_Status_Master_Sanitization<BR><BR>
 ");
 
 } // [ + ] IF: Internal Application: Display :: Plug-Ins :: Is: Activated
