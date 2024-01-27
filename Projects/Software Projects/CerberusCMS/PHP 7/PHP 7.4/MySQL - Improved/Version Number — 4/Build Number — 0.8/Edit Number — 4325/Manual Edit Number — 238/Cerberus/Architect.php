@@ -3837,18 +3837,18 @@ copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/Master
 
 	echo ("[ Done ]<BR><BR>");
 
-	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Installing Root Administrator Account ( $_PROJECT_STRING_NAME_SHORT ) Directory Structure Clone... Wait.<BR><BR>");
-
 /*
  ============================================================================================================
  + Make and Create Backup Root Administrator Directory and Files
  ============================================================================================================
 */
 
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Installing Root Administrator Account ( $_PROJECT_STRING_NAME_SHORT ) Directory Structure Clone... Wait.<BR><BR>");
+
 	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Currently Making:<BR><BR>");
 
 /*
- + Make Directory: Administrator UserName
+ + Make Directory: Root Administration UserName
 */
 
 	echo ("./Member/$_PROJECT_STRING_NAME_SHORT<BR>");
@@ -3858,7 +3858,7 @@ copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/Master
 	echo ("[ Done ]<BR><BR>");
 
 /*
- + Make Directory: Administrator' Organized File Directory Structure
+ + Make Directory: Root Administration Organized File Directory Structure
 */
 
 	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files<BR>");
@@ -3972,7 +3972,7 @@ copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/Master
 
 	echo ("[ Done ]<BR><BR>");
 
-	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Installing Specified Administrator Account Directory Structure Index Files... Wait.<BR>");
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Installing Root Administration Account Directory Structure Index Files... Wait.<BR>");
 
 /*
  + Directory Security: Copy Directory Denial Index Files
@@ -4028,6 +4028,16 @@ copy("./Member/Setup/Indexes/Files/Image/Profile/Profile.php","./Member/$_PROJEC
 copy("./Member/Setup/Indexes/Files/Image/Profile/Backup/Backup.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Profile/Backup/index.php");
 copy("./Member/Setup/Indexes/Files/Image/Streams/Streams.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Streams/index.php");
 
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Installing Root Administrator Account Personal Profile Image... Wait.<BR>");
+
+/*
+ + Copy: Root Administration Personal Profile Image
+*/
+
+copy("./Theme/$_INTERNAL_FILE_ARCHITECT_INSTALL_THEME_DIRECTORY_NAME/Image/Icon_Avatar/$_INTERNAL_FILE_ARCHITECT_INSTALL_ROOT_ACCOUNT_USERNAME.png","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Profile/Backup/Profile.png");
+copy("./Theme/$_INTERNAL_FILE_ARCHITECT_INSTALL_THEME_DIRECTORY_NAME/Image/Icon_Avatar/$_INTERNAL_FILE_ARCHITECT_INSTALL_ROOT_ACCOUNT_USERNAME.png","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Profile/Profile.png");
+	echo ("[ Done ]<BR><BR>");
+
 // Video
 
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/index.php");
@@ -4043,7 +4053,7 @@ copy("./Member/Setup/Indexes/Files/Video/Streams/Streams.php","./Member/$_PROJEC
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/index.php");
 	echo ("[ Done ]<BR><BR>");
 
-	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Installing Specified Administrator Account Personal Web Page... Wait.<BR>");
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Installing Root Administration Account Personal Web Page... Wait.<BR>");
 
 /*
  + Make Directory: Administrator Hyper-Text-Markup-Language Web-Page Index File
@@ -4053,20 +4063,20 @@ copy("./System/Default/Register/Register.html","./Member/$_PROJECT_STRING_NAME_S
 
 	echo ("[ Done ]<BR><BR>");
 
-	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Installing Specified Administrator Account Physical Electronic Mail Address File... Wait.<BR>");
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Installing Root Administration Account Physical Electronic Mail Address File... Wait.<BR>");
 
 /*
- + Copy Default Files To Organized Directory Structure: Administrator Electronic Mail Address
+ + Copy Default Files To Organized Directory Structure: Root Administration Electronic Mail Address
 */
 
 copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Electronic_Mail/$_INTERNAL_FILE_ARCHITECT_INSTALL_ROOT_ACCOUNT_ELECTRONIC_MAIL_ADDRESS");
 
 	echo ("[ Done ]<BR><BR>");
 
-	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Adding Specified Administrator Account Electronic Mail Address To The Electronic Mail Address Master List... Wait.<BR>");
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Adding Root Administration Account Electronic Mail Address To The Electronic Mail Address Master List... Wait.<BR>");
 
 /*
- + Copy Administrator Electronic Mail Address To Master List
+ + Copy Root Administration Electronic Mail Address To Master List
 */
 
 copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/Master_List/Electronic_Mail_Addresses/$_INTERNAL_FILE_ARCHITECT_INSTALL_ROOT_ACCOUNT_ELECTRONIC_MAIL_ADDRESS");
