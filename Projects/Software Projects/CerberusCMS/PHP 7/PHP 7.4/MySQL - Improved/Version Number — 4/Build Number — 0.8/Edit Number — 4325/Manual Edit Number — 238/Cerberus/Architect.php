@@ -483,7 +483,7 @@ Machine and Connection Information
 * Architect :: Machine :: This Web Server :: Connection Type: $_GLOBAL_LOCAL_SERVER_HTTP_CONNECTION_TYPE
 
 -- Connecting Device
-* Architect :: Machine :: Connecting Device :: Document View Timestamp: $_GLOBAL_REMOTE_SERVER_DATE_STANDARD
+* Architect :: Machine :: Connecting Device :: Timestamp :: Document-View :: Unix-Time: $_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP_UNIX
 * Architect :: Machine :: Connecting Device :: Network :: Host-Name: $_GLOBAL_REMOTE_SERVER_HOSTNAME
 * Architect :: Machine :: Connecting Device :: Network :: Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS
 * Architect :: Machine :: Connecting Device :: Network :: Internet Protocol Address :: Port Number: $_GLOBAL_REMOTE_SERVER_PORT
