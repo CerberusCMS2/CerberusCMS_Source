@@ -295,7 +295,7 @@ $_GLOBAL_LOCAL_SERVER_HTTP_REFERRER									= $_SERVER['HTTP_REFERER'];
 $_GLOBAL_REMOTE_SERVER_ADDRESS										= $_SERVER['REMOTE_ADDR'];
 $_GLOBAL_REMOTE_SERVER_HOSTNAME										= $_SERVER['REMOTE_HOST'];
 $_GLOBAL_REMOTE_SERVER_PORT										= $_SERVER['REMOTE_PORT'];
-$_GLOBAL_REMOTE_USER											= $_SERVER['REMOTE_USER'];
+$_GLOBAL_REMOTE_SERVER_USER_AGENT											= $_SERVER['REMOTE_USER'];
 
 /*
  ============================================================================================================
@@ -440,7 +440,7 @@ $_GLOBAL_LOCAL_SERVER_HTTP_REFERRER									= $_SERVER['HTTP_REFERER'];
 $_GLOBAL_REMOTE_SERVER_ADDRESS										= $_SERVER['REMOTE_ADDR'];
 $_GLOBAL_REMOTE_SERVER_HOSTNAME										= $_SERVER['REMOTE_HOST'];
 $_GLOBAL_REMOTE_SERVER_PORT										= $_SERVER['REMOTE_PORT'];
-$_GLOBAL_REMOTE_USER											= $_SERVER['REMOTE_USER'];
+$_GLOBAL_REMOTE_SERVER_USER_AGENT											= $_SERVER['REMOTE_USER'];
 
 /*
  ============================================================================================================
@@ -472,54 +472,76 @@ $_ARCHITECT_LOG_INTERACTION_LOG_OPEN_FILE_NAME								= fopen($_ARCHITECT_LOG_IN
 $_ARCHITECT_LOG_INTERACTION_LOG_DATA									= "
 *** Timestamp :: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD
 --------------------------------------------------------------------------
-Machine and Connection Information :: Architect
+Machine and Connection Information
 --------------------------------------------------------------------------
--- Hyper-Text :: Document
-* Architect :: Machine :: Document Execution :: Timestamp :: Local Server: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD
-* Architect :: Machine :: Document Execution :: Timestamp :: Remote Server: $_GLOBAL_REMOTE_SERVER_DATE_STANDARD
-* Architect :: Machine :: Local Server :: Document :: Referrer: $_GLOBAL_LOCAL_SERVER_HTTP_REFERRER
-* Architect :: Machine :: Local Server :: Document :: Query String: $_GLOBAL_LOCAL_SERVER_QUERY_STRING
-* Architect :: Machine :: Local Server :: Request Method: $_GLOBAL_LOCAL_SERVER_REQUEST_METHOD
-* Architect :: Machine :: Local Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME
-* Architect :: Machine :: Local Server :: Connection Type: $_GLOBAL_LOCAL_SERVER_HTTP_CONNECTION_TYPE
+-- This Web Server
+* Architect :: Machine :: This Web Server :: Document View Timestamp: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD
+* Architect :: Machine :: This Web Server :: Document Referrer: $_Application_Module_Background_Log_Visitor_GET_REFERRER
+* Architect :: Machine :: This Web Server :: Request String: $_GLOBAL_LOCAL_SERVER_QUERY_STRING
+* Architect :: Machine :: This Web Server :: Request Method: $_GLOBAL_LOCAL_SERVER_REQUEST_METHOD
+* Architect :: Machine :: This Web Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME
+* Architect :: Machine :: This Web Server :: Connection Type: $_GLOBAL_LOCAL_SERVER_HTTP_CONNECTION_TYPE
+
+-- Connecting Device
+* Architect :: Machine :: Connecting Device :: Document View Timestamp: $_GLOBAL_REMOTE_SERVER_DATE_STANDARD
+* Architect :: Machine :: Connecting Device :: Network :: Host-Name: $_GLOBAL_REMOTE_SERVER_HOSTNAME
+* Architect :: Machine :: Connecting Device :: Network :: Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS
+* Architect :: Machine :: Connecting Device :: Network :: Internet Protocol Address :: Port Number: $_GLOBAL_REMOTE_SERVER_PORT
+* Architect :: Machine :: Connecting Device :: Network :: User-Agent :: Web Browser: $_GLOBAL_REMOTE_SERVER_USER_AGENT
+
 --------------------------------------------------------------------------
+Location :: Information
+--------------------------------------------------------------------------
+* Architect :: Location :: Connecting Device :: From :: Global-Positioning-System Coordinates In: X, Y, Z:
+* Architect :: Location :: Connecting Device :: From :: Geographical Localization of Objects:
+* Architect :: Location :: Connecting Device :: From :: Region: $_GLOBAL_REMOTE_SERVER_LOCATION_REGION
+* Architect :: Location :: Connecting Device :: From :: Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS
+
+--------------------------------------------------------------------------
+This Web Server :: Information
+--------------------------------------------------------------------------
+-- Hyper-Text-Transfer-Protocol
+* This Web Server :: Machine :: Server :: Hyper-Text-Transfer-Protocol :: Host: $_GLOBAL_LOCAL_SERVER_HTTP_HOST
+* This Web Server :: Machine :: Hyper-Text-Transfer-Protocol :: Accept Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT
+* This Web Server :: Machine :: Hyper-Text-Transfer-Protocol :: Character Set: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_CHARACTER_SET
+* This Web Server :: Machine :: Hyper-Text-Transfer-Protocol :: Encoding: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_ENCODING
+* This Web Server :: Machine :: Hyper-Text-Transfer-Protocol :: Loading Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LOADING
+* This Web Server :: Machine :: Hyper-Text-Transfer-Protocol :: Language: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LANGUAGE
 
 -- Network
-* Architect :: Machine :: Remote Server :: Network :: Host-Name: $_GLOBAL_REMOTE_SERVER_HOSTNAME
-* Architect :: Machine :: Remote Server :: Network :: Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS
-* Architect :: Machine :: Remote Server :: Network :: Internet Protocol Address :: Connecting Port Number: $_GLOBAL_REMOTE_SERVER_PORT
-* Architect :: Machine :: Remote Server :: Network :: User-Agent :: Web Browser: $_GLOBAL_REMOTE_SERVER_HTTP_USER_AGENT
---------------------------------------------------------------------------
+* This Web Server :: Machine :: Network :: Internet Protocol Address: $_GLOBAL_LOCAL_SERVER_ADDRESS
+* This Web Server :: Machine :: Network :: Internet Protocol Address :: Connecting Port Number: $_GLOBAL_REMOTE_SERVER_PORT
+* This Web Server :: Machine :: Network :: Gateway Interface: $_GLOBAL_LOCAL_SERVER_GATEWAY_INTERFACE
 
---------------------------------------------------------------------------
-Location :: Information :: Architect
---------------------------------------------------------------------------
-* Architect :: Device Location :: From :: Global-Positioning-System Coordinates In X, Y, Z:
-* Architect :: Device Location :: From :: Geographical Localization of Objects:
-* Architect :: Device Location :: From :: Region: $_GLOBAL_REMOTE_SERVER_LOCATION_REGION
-* Architect :: Device Location :: From :: Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS
---------------------------------------------------------------------------
+-- Software
+* This Web Server :: Machine :: Software: $_GLOBAL_LOCAL_SERVER_SOFTWARE
 
---------------------------------------------------------------------------
-Local Server :: Information :: Architect
---------------------------------------------------------------------------
--- Network
-* Local Server :: Machine :: Server :: Hyper-Text-Transfer-Protocol :: Host: $_GLOBAL_LOCAL_SERVER_HTTP_HOST
-* Local Server :: Machine :: Network :: Internet Protocol Address: $_GLOBAL_LOCAL_SERVER_ADDRESS
-* Local Server :: Machine :: Network :: Internet Protocol Address :: Connecting Port Number: $_GLOBAL_REMOTE_SERVER_PORT
-* Local Server :: Machine :: Network :: Gateway Interface: $_GLOBAL_LOCAL_SERVER_GATEWAY_INTERFACE
-* Local Server :: Machine :: Software: $_GLOBAL_LOCAL_SERVER_SOFTWARE
+-- Request
+* This Web Server :: Machine :: Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME
+* This Web Server :: Machine :: Server :: Request Time ( Float ): $_GLOBAL_LOCAL_SERVER_REQUEST_TIME_FLOAT
+* This Web Server :: Machine :: Server :: Document Root: $_GLOBAL_LOCAL_SERVER_DOCUMENT_ROOT
 
--- Hyper-Text :: Document
-* Local Server :: Machine Server :: Hyper-Text-Transfer-Protocol :: Accept Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT
-* Local Server :: Machine Server :: Hyper-Text-Transfer-Protocol :: Character Set: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_CHARACTER_SET
-* Local Server :: Machine Server :: Hyper-Text-Transfer-Protocol :: Encoding: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_ENCODING
-* Local Server :: Machine Server :: Hyper-Text-Transfer-Protocol :: Loading Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LOADING
-* Local Server :: Machine Server :: Hyper-Text-Transfer-Protocol :: Language: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LANGUAGE
-* Local Server :: Machine :: Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME
-* Local Server :: Machine :: Server :: Request Time ( Float ): $_GLOBAL_LOCAL_SERVER_REQUEST_TIME_FLOAT
-* Local Server :: Machine :: Server :: Document Root: $_GLOBAL_LOCAL_SERVER_DOCUMENT_ROOT
---------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Timestamps
+---------------------------------------------------------------------------------
+* Timestamp :: This Web Server :: Year: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL
+* Timestamp :: This Web Server :: Month: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL
+* Timestamp :: This Web Server :: Day: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL
+* Timestamp :: This Web Server :: Hour: $_GLOBAL_LOCAL_SERVER_TIME_HOURS
+* Timestamp :: This Web Server :: Minute: $_GLOBAL_LOCAL_SERVER_TIME_MINUTES
+* Timestamp :: This Web Server :: Second: $_GLOBAL_LOCAL_SERVER_TIME_SECONDS
+
+* Timestamp :: Connecting Device :: Year: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_YEAR_FULL
+* Timestamp :: Connecting Device :: Month: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_FULL
+* Timestamp :: Connecting Device :: Day: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL
+* Timestamp :: Connecting Device :: Hour: $_GLOBAL_REMOTE_SERVER_TIME_HOURS
+* Timestamp :: Connecting Device :: Minute: $_GLOBAL_REMOTE_SERVER_TIME_MINUTES
+* Timestamp :: Connecting Device :: Second: $_GLOBAL_REMOTE_SERVER_TIME_SECONDS
+
+* Timestamp :: This Web Server :: Unix: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
+* Timestamp :: This Web Server :: Micro Time: $_GLOBAL_LOCAL_SERVER_TIME_UNIX
+* Timestamp :: Connecting Device :: Unix: $_GLOBAL_REMOTE_SERVER_TIME_MICROTIME
+* Timestamp :: Connecting Device :: Micro Time: $_GLOBAL_REMOTE_SERVER_TIME_UNIX
 ";
 
 /*
@@ -5390,7 +5412,7 @@ echo ("
 *&nbsp;Remote Server Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS<BR>
 *&nbsp;Remote Server HostName: $_GLOBAL_REMOTE_SERVER_HOSTNAME<BR>
 *&nbsp;Remote Server Port: $_GLOBAL_REMOTE_SERVER_PORT<BR>
-*&nbsp;Remote Server User: $_GLOBAL_REMOTE_USER
+*&nbsp;Remote Server User: $_GLOBAL_REMOTE_SERVER_USER_AGENT
 ");
 
 } // [ + ] IF: Internal Application: ServerSoftware_Information Is Activated
