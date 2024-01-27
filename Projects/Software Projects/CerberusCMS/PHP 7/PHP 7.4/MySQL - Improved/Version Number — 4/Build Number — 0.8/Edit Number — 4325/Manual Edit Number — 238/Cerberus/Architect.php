@@ -4719,15 +4719,15 @@ If you have receieved this Non-Encrypted Electronic Mail Message $_PROJECT_STRIN
 The only thing left for you to do now is for you to manually configure this installation of $_PROJECT_STRING_NAME_EXTENDED
 Read through the Portable Document Format Documentation File or watch the Educational Videos to see how to further secure this installation.
 -------------------------------------------------------
-Internet Protocol Address
-* Server :: Local :: Internet Protocol Address: $_GLOBAL_LOCAL_SERVER_ADDRESS
-* Server :: Remote :: Internet Protocol Address ( Who Installed This ): $_GLOBAL_REMOTE_SERVER_ADDRESS
+-- Internet Protocol Addresses
+* Internet Protocol Address :: This Web Server: $_GLOBAL_LOCAL_SERVER_ADDRESS
+* Internet Protocol Address :: Connecting Device: ( Who Installed This ): $_GLOBAL_REMOTE_SERVER_ADDRESS
 
-Software Information :: Local Server
-* Server :: Local :: Software Information: $_GLOBAL_LOCAL_SERVER_SOFTWARE
+-- Software Information :: This Web Server
+* This Web Server :: Software Information: $_GLOBAL_LOCAL_SERVER_SOFTWARE
 
-Timestamps
-* Server :: Local :: Electronic Mail Message Timestamp: $_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP
+-- Timestamps
+* Timestamp :: This Web Server :: Electronic Mail Message: $_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP
 ------------------------------------------------------
 Have a nice day !
 
