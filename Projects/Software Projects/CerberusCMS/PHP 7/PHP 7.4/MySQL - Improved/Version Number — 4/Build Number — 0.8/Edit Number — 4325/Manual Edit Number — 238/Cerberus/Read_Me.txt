@@ -48,29 +48,29 @@
 Installation Instructions
 =============================================================================================================
 
-https://www.SourceForge.net/projects/cerberuscms/Documentation
-https://www.GitHub.com/TinkeSoftware/CerberusCMS_Documentation
+https://www.SourceForge.net/projects/cerberuscms2
+https://www.GitHub.com/CerberusCMS2/CerberusCMS_Documentation
 
 =============================================================================================================
 CerberusCMS on Source Forge
 =============================================================================================================
 
-https://www.SourceForge.net/projects/cerberuscms/
+https://www.SourceForge.net/projects/cerberuscms2/
 
 =============================================================================================================
 CerberusCMS on Source Forge ( Demonstration Server )
 =============================================================================================================
 
-http://CerberusCMS.SourceForge.net
+http://CerberusCMS2.SourceForge.net
 
 =============================================================================================================
 CerberusCMS on Git Hub
 =============================================================================================================
 
-https://www.GitHub.com/TinkeSoftware/CerberusCMS
+https://www.GitHub.com/CerberusCMS2
 
 =============================================================================================================
 CerberusCMS on Bit Bucket
 =============================================================================================================
 
-https://www.BitBucket.org/TinkeSoftware/CerberusCMS
+https://www.BitBucket.org/CerberusCMS2

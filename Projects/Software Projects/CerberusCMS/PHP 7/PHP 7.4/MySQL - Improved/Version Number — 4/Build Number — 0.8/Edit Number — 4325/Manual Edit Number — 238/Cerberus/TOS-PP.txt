@@ -43,7 +43,7 @@ VISITOR TRACKING
 This Software Project does not track or follow the visitor's information or data to any other servers.
 None of the sensitive information that belongs to any visitor is ever shared or displayed anywhere on this system except for identifying device and location information.
 Encryption and Digital Information Security procedures are used in this Software Project Web Application. Modifying or changing
-the official programming code in this Software Project Web Application that is given out for free is at the discretion of the Web Server Administrator who runs this
+the official programming code in this Software Project Web Application that is given out for free is at the discretion of the Web Server Administration who runs this
 Software Project Web Application.
 
 WARRANTY AND DAMAGES
