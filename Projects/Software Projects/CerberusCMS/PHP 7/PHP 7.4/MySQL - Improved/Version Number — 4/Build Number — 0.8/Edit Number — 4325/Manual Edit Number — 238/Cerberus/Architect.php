@@ -4057,7 +4057,7 @@ copy("./System/Default/Register/Register.html","./Member/$_PROJECT_STRING_NAME_S
  + Copy Default Files To Organized Directory Structure: Administrator Electronic Mail Address
 */
 
-copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Electronic_Mail/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_ELECTRONIC_MAIL_ADDRESS");
+copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Electronic_Mail/$_INTERNAL_FILE_ARCHITECT_INSTALL_ROOT_ACCOUNT_ELECTRONIC_MAIL_ADDRESS");
 
 	echo ("[ Done ]<BR><BR>");
 
@@ -4067,7 +4067,7 @@ copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/$_PROJ
  + Copy Administrator Electronic Mail Address To Master List
 */
 
-copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/Master_List/Electronic_Mail_Addresses/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_ELECTRONIC_MAIL_ADDRESS");
+copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/Master_List/Electronic_Mail_Addresses/$_INTERNAL_FILE_ARCHITECT_INSTALL_ROOT_ACCOUNT_ELECTRONIC_MAIL_ADDRESS");
 
 	echo ("[ Done ]<BR>");
 	echo ("-----------------------------------<BR><BR>");
