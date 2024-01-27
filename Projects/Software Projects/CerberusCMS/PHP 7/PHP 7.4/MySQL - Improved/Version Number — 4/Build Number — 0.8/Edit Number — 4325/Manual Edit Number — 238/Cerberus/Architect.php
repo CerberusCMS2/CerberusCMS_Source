@@ -295,7 +295,7 @@ $_GLOBAL_LOCAL_SERVER_HTTP_REFERRER									= $_SERVER['HTTP_REFERER'];
 $_GLOBAL_REMOTE_SERVER_ADDRESS										= $_SERVER['REMOTE_ADDR'];
 $_GLOBAL_REMOTE_SERVER_HOSTNAME										= $_SERVER['REMOTE_HOST'];
 $_GLOBAL_REMOTE_SERVER_PORT										= $_SERVER['REMOTE_PORT'];
-$_GLOBAL_REMOTE_SERVER_USER_AGENT											= $_SERVER['REMOTE_USER'];
+$_GLOBAL_REMOTE_SERVER_USER										= $_SERVER['REMOTE_USER'];
 
 /*
  ============================================================================================================
@@ -440,7 +440,7 @@ $_GLOBAL_LOCAL_SERVER_HTTP_REFERRER									= $_SERVER['HTTP_REFERER'];
 $_GLOBAL_REMOTE_SERVER_ADDRESS										= $_SERVER['REMOTE_ADDR'];
 $_GLOBAL_REMOTE_SERVER_HOSTNAME										= $_SERVER['REMOTE_HOST'];
 $_GLOBAL_REMOTE_SERVER_PORT										= $_SERVER['REMOTE_PORT'];
-$_GLOBAL_REMOTE_SERVER_USER_AGENT											= $_SERVER['REMOTE_USER'];
+$_GLOBAL_REMOTE_SERVER_USER										= $_SERVER['REMOTE_USER'];
 
 /*
  ============================================================================================================
@@ -470,13 +470,13 @@ $_ARCHITECT_LOG_INTERACTION_LOG_OPEN_FILE_NAME								= fopen($_ARCHITECT_LOG_IN
 */
 
 $_ARCHITECT_LOG_INTERACTION_LOG_DATA									= "
-*** Timestamp :: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD
+*** Timestamp :: $_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP
 --------------------------------------------------------------------------
 Machine and Connection Information
 --------------------------------------------------------------------------
 -- This Web Server
-* Architect :: Machine :: This Web Server :: Document View Timestamp: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD
-* Architect :: Machine :: This Web Server :: Document Referrer: $_Application_Module_Background_Log_Visitor_GET_REFERRER
+* Architect :: Machine :: This Web Server :: Document View Timestamp: $_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP
+* Architect :: Machine :: This Web Server :: Document Referrer: $_GLOBAL_LOCAL_SERVER_HTTP_REFERRER
 * Architect :: Machine :: This Web Server :: Request String: $_GLOBAL_LOCAL_SERVER_QUERY_STRING
 * Architect :: Machine :: This Web Server :: Request Method: $_GLOBAL_LOCAL_SERVER_REQUEST_METHOD
 * Architect :: Machine :: This Web Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME
@@ -487,7 +487,7 @@ Machine and Connection Information
 * Architect :: Machine :: Connecting Device :: Network :: Host-Name: $_GLOBAL_REMOTE_SERVER_HOSTNAME
 * Architect :: Machine :: Connecting Device :: Network :: Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS
 * Architect :: Machine :: Connecting Device :: Network :: Internet Protocol Address :: Port Number: $_GLOBAL_REMOTE_SERVER_PORT
-* Architect :: Machine :: Connecting Device :: Network :: User-Agent :: Web Browser: $_GLOBAL_REMOTE_SERVER_USER_AGENT
+* Architect :: Machine :: Connecting Device :: Network :: User-Agent :: Web Browser: $_GLOBAL_LOCAL_SERVER_HTTP_USER_AGENT
 
 --------------------------------------------------------------------------
 Location :: Information
@@ -538,10 +538,10 @@ Timestamps
 * Timestamp :: Connecting Device :: Minute: $_GLOBAL_REMOTE_SERVER_TIME_MINUTES
 * Timestamp :: Connecting Device :: Second: $_GLOBAL_REMOTE_SERVER_TIME_SECONDS
 
-* Timestamp :: This Web Server :: Unix: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
-* Timestamp :: This Web Server :: Micro Time: $_GLOBAL_LOCAL_SERVER_TIME_UNIX
-* Timestamp :: Connecting Device :: Unix: $_GLOBAL_REMOTE_SERVER_TIME_MICROTIME
-* Timestamp :: Connecting Device :: Micro Time: $_GLOBAL_REMOTE_SERVER_TIME_UNIX
+* Timestamp :: This Web Server :: Unix-Time: $_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP_UNIX
+* Timestamp :: This Web Server :: Micro-Time: $_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP_UNIX
+* Timestamp :: Connecting Device :: Unix-Time: $_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP_UNIX
+* Timestamp :: Connecting Device :: Micro-Time: $_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP_UNIX
 ";
 
 /*
@@ -5412,7 +5412,7 @@ echo ("
 *&nbsp;Remote Server Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS<BR>
 *&nbsp;Remote Server HostName: $_GLOBAL_REMOTE_SERVER_HOSTNAME<BR>
 *&nbsp;Remote Server Port: $_GLOBAL_REMOTE_SERVER_PORT<BR>
-*&nbsp;Remote Server User: $_GLOBAL_REMOTE_SERVER_USER_AGENT
+*&nbsp;Remote Server User: $_GLOBAL_REMOTE_SERVER_USER
 ");
 
 } // [ + ] IF: Internal Application: ServerSoftware_Information Is Activated
