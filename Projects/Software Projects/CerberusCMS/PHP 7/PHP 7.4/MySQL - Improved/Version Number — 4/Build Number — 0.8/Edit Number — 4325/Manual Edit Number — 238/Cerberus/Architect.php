@@ -3742,10 +3742,13 @@ member_username
  + Directory Security: Copy Directory Denial Index Files
 */
 
-// Audio
+// Archive
 
 copy("./Member/Setup/Indexes/Files/Files.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/index.php");
 copy("./Member/Setup/Indexes/Files/Archive/Archive.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Archive/index.php");
+
+// Audio
+
 copy("./Member/Setup/Indexes/Files/Audio/Audio.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Audio/index.php");
 copy("./Member/Setup/Indexes/Files/Audio/Gallery/Gallery.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Audio/Gallery/index.php");
 copy("./Member/Setup/Indexes/Files/Audio/Gallery/Backup/Backup.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Audio/Gallery/Backup/index.php");
@@ -3823,7 +3826,7 @@ copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/$_ARCH
 
 	echo ("[ Done ]<BR><BR>");
 
-	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Adding Specified Administrator Account Electronic Mail To Electronic Mail Master List... Wait.<BR>");
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Adding Specified Administrator Account Electronic Mail Address To The Electronic Mail Address Master List... Wait.<BR>");
 
 /*
  + Copy Administrator Electronic Mail Address To Master List
@@ -3841,10 +3844,10 @@ copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/Master
  ============================================================================================================
 */
 
-	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Currently Making:<BR>");
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Currently Making:<BR><BR>");
 
 /*
- + Make Directory: Root Administrator' UserName
+ + Make Directory: Administrator UserName
 */
 
 	echo ("./Member/$_PROJECT_STRING_NAME_SHORT<BR>");
@@ -3854,7 +3857,7 @@ copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/Master
 	echo ("[ Done ]<BR><BR>");
 
 /*
- + Make Directory: Root Administrator' Organized File Directory Structure
+ + Make Directory: Administrator' Organized File Directory Structure
 */
 
 	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files<BR>");
@@ -3874,6 +3877,7 @@ copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/Master
 	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Audio/Recordings<BR>");
 	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Audio/Streams<BR>");
 
+	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Archive");
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Audio");
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Audio/Gallery");
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Audio/Gallery/Backup");
@@ -3887,9 +3891,25 @@ copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/Master
 
 // Document
 
-	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Archive");
+	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document<BR>");
+	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Activity_Logging<BR>");
+	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Electronic_Mail<BR>");
+	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Friends<BR>");
+	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Gallery<BR>");
+	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Gallery/Backup<BR>");
+	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/GPS<BR>");
+	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/GPS/Coordinates<BR>");
+	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/GPS/GLO<BR>");
+	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/GPS/Region<BR>");
+	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Messenger<BR>");
+	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Messenger/Clear-Text<BR>");
+	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Messenger/Encrypted<BR>");
+	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Streams<BR>");
+	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Streams/Wall<BR>");
+
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document");
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Activity_Logging");
+
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Electronic_Mail");
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Friends");
 
@@ -3899,10 +3919,6 @@ copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/Master
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/GPS/Coordinates");
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/GPS/GLO");
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/GPS/Region");
-
-	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Messenger<BR>");
-	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Messenger/Clear-Text<BR>");
-	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Messenger/Encrypted<BR>");
 
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Messenger");
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Messenger/Clear-Text");
@@ -3919,12 +3935,14 @@ copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/Master
 	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Gallery<BR>");
 	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Gallery/Backup<BR>");
 	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Profile<BR>");
+	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Profile/Backup<BR>");
 	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Streams<BR>");
 
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image");
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Gallery");
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Gallery/Backup");
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Profile");
+	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Profile/Backup");
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Streams");
 
 	echo ("[ Done ]<BR><BR>");
@@ -3938,6 +3956,7 @@ copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/Master
 	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Live/Backup<BR>");
 	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Movies<BR>");
 	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Profile<BR>");
+	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Profile/Backup<BR>");
 	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Streams<BR>");
 
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video");
@@ -3947,28 +3966,24 @@ copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/Master
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Live/Backup");
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Movies");
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Profile");
+	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Profile/Backup");
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Streams");
 
 	echo ("[ Done ]<BR><BR>");
 
 	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Installing Specified Administrator Account Directory Structure Index Files... Wait.<BR>");
 
-	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Installing Specified Administrator Account Personal Web Page... Wait.<BR>");
-
-/*
- + Make Directory: Root Administrator' Hyper-Text-Markup-Language Web-Page Index File
-*/
-
-copy("./System/Default/Register/Register.html","./Member/$_PROJECT_STRING_NAME_SHORT/index.html");
-
 /*
  + Directory Security: Copy Directory Denial Index Files
 */
 
-// Audio
+// Archive
 
 copy("./Member/Setup/Indexes/Files/Files.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/index.php");
 copy("./Member/Setup/Indexes/Files/Archive/Archive.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Archive/index.php");
+
+// Audio
+
 copy("./Member/Setup/Indexes/Files/Audio/Audio.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Audio/index.php");
 copy("./Member/Setup/Indexes/Files/Audio/Gallery/Gallery.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Audio/Gallery/index.php");
 copy("./Member/Setup/Indexes/Files/Audio/Gallery/Backup/Backup.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Audio/Gallery/Backup/index.php");
@@ -4024,18 +4039,35 @@ copy("./Member/Setup/Indexes/Files/Video/Profile/Backup/Backup.php","./Member/$_
 copy("./Member/Setup/Indexes/Files/Video/Streams/Streams.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Streams/index.php");
 
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/index.php");
+	echo ("[ Done ]<BR><BR>");
+
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Installing Specified Administrator Account Personal Web Page... Wait.<BR>");
 
 /*
- + Copy Project Root Administrator' Profile Image To Organized Directory Structure
+ + Make Directory: Administrator Hyper-Text-Markup-Language Web-Page Index File
 */
 
-copy("./Theme/$_INTERNAL_FILE_ARCHITECT_INSTALL_THEME_DIRECTORY_NAME/Image/Icon_Root/Profile.png","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Profile/Profile.png");
+copy("./System/Default/Register/Register.html","./Member/$_PROJECT_STRING_NAME_SHORT/index.html");
 
 	echo ("[ Done ]<BR><BR>");
 
-	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Installing Default Friend System... Wait.<BR>");
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Installing Specified Administrator Account Physical Electronic Mail Address File... Wait.<BR>");
 
-copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/Master_List/Electronic_Mail_Addresses/$_INTERNAL_FILE_ARCHITECT_INSTALL_ROOT_ACCOUNT_ELECTRONIC_MAIL_ADDRESS");
+/*
+ + Copy Default Files To Organized Directory Structure: Administrator Electronic Mail Address
+*/
+
+copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Electronic_Mail/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_ELECTRONIC_MAIL_ADDRESS");
+
+	echo ("[ Done ]<BR><BR>");
+
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Adding Specified Administrator Account Electronic Mail Address To The Electronic Mail Address Master List... Wait.<BR>");
+
+/*
+ + Copy Administrator Electronic Mail Address To Master List
+*/
+
+copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/Master_List/Electronic_Mail_Addresses/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_ELECTRONIC_MAIL_ADDRESS");
 
 	echo ("[ Done ]<BR>");
 	echo ("-----------------------------------<BR><BR>");
