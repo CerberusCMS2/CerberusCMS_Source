@@ -3788,8 +3788,9 @@ copy("./Member/Setup/Indexes/Files/Image/Image.php","./Member/$_ARCHITECT_POST_A
 copy("./Member/Setup/Indexes/Files/Image/Gallery/Gallery.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Image/Gallery/index.php");
 copy("./Member/Setup/Indexes/Files/Image/Gallery/Backup/Backup.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Image/Gallery/Backup/index.php");
 copy("./Member/Setup/Indexes/Files/Image/Image.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Image/Profile/index.php");
-copy("./Member/Setup/Indexes/Files/Image/Image.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Image/Streams/index.php");
 copy("./Member/Setup/Indexes/Files/Image/Profile/Profile.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Image/Profile/index.php");
+copy("./Member/Setup/Indexes/Files/Image/Profile/Backup/Backup.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Image/Profile/Backup/index.php");
+copy("./Member/Setup/Indexes/Files/Image/Streams/Streams.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Image/Streams/index.php");
 
 // Video
 
@@ -4023,8 +4024,9 @@ copy("./Member/Setup/Indexes/Files/Image/Image.php","./Member/$_PROJECT_STRING_N
 copy("./Member/Setup/Indexes/Files/Image/Gallery/Gallery.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Gallery/index.php");
 copy("./Member/Setup/Indexes/Files/Image/Gallery/Backup/Backup.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Gallery/Backup/index.php");
 copy("./Member/Setup/Indexes/Files/Image/Image.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Profile/index.php");
-copy("./Member/Setup/Indexes/Files/Image/Image.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Streams/index.php");
 copy("./Member/Setup/Indexes/Files/Image/Profile/Profile.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Profile/index.php");
+copy("./Member/Setup/Indexes/Files/Image/Profile/Backup/Backup.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Profile/Backup/index.php");
+copy("./Member/Setup/Indexes/Files/Image/Streams/Streams.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Streams/index.php");
 
 // Video
 
