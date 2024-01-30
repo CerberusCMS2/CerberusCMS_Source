@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*
  ============================================================================================================
  + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -5320,13 +5320,28 @@ The idea and the concepts of the measurement of time known as: Common Era, is ac
 
 Realistically the year to date is not $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL it is actually 4 - 6 months less * 431 years which is approximately 4 * 431 = 1,724 / 12 = 143 years less than $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL. 143 years less than $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL would be the current year to date.<BR><BR>
 
-All of the known Mathematical Expressions, Statements, Equations and more can easily be solved by solving them part by part and each can be broken down to the actual whole or fractional numbers where one can then apply the order of P.E.M.D.A.S. to each set of numbers to then instantly solve and arrive at the correct answer or correct answers no matter how complicated the Mathematical Expression, Statement or Equation is. Personally I have taken University-Level tests and scored nearly perfect or perfect.<BR><BR>
+All of the known Mathematical Expressions, Statements, Equations, Algorithms, Logarithms and more can easily be solved by solving them part by part and each one can be broken down into the actual whole or fractional numbers where one can then apply the order of P.E.M.D.A.S. to each set of numbers to then instantly solve and arrive at the correct answer or correct answers no matter how complicated the Mathematical Expression, Statement, Equation, Algorithm or Logarithm is. Personally I have taken University-Level tests and scored nearly perfect or perfect on those tests.<BR><BR>
 
-Take for example the Mathematical Equation shown below. This Mathematical Equation is known as the Ramanujan-Chudnovski Pi Mathematical Algorithm. This Mathematical Algorithm is the go-to Mathematical Algorithm for deriving the next decimal place of Pi in the seemingly infinite Pi number. Google is known to use a version of this Mathematical Algorithm in a super computer to get the next decimal place of Pi, but if a Mental Mathematics Master dissected this Mathematical Algorithm that Master could mentally calculate the next decimal place of Pi as he or she gradually memorizes each next decimal place as he or she goes.<BR><BR>
+Take for example the Mathematical Statement, Expression, Equation and Algorithm shown below. This Mathematical Statement, Expression, Equation and Algorithm is known as the Ramanujan-Chudnovski Pi Mathematical Algorithm. This Mathematical Algorithm is the go-to Mathematical Algorithm for deriving the next decimal place of Pi in the seemingly infinite Pi number. The Google &copy; &reg; Company is known to use a version of this Mathematical Algorithm in a super computer to get the next decimal place of Pi where the super computer runs 24/7, but if a Mental Mathematics Master dissected this Mathematical Algorithm that Master could mentally calculate the next decimal place of Pi as he or she gradually memorizes each next decimal place as he or she goes.<BR><BR>
 
-By dissecting every part of a Mathematical Concept, Mathematical Statement, Mathematical Equation, Mathematical Algorithm, Mathematical Logarithm and anything else visible one can easily and quickly understand it and solve it. Try now to dissect every part of the Ramanujan-Chudnovski Mathematical Algorithm by breaking down every part of it into a whole or decimal number and then use the Rules and Orders of Operation known as P.E.M.D.A.S. to solve it. Keep in mind that this one uses an Infinite Summation represented by the Greek Letter Sigma. That means once this is executed the next number in the Summation is incremented by 1. If it were 0 the first time the second time it will be 1 and then 2 and then 3, etcetera.<BR><BR>
+By dissecting every part of a Mathematical Concept, Mathematical Expression, Mathematical Statement, Mathematical Equation, Mathematical Algorithm, Mathematical Logarithm, Mathematical Proof and anything else visible one can easily and quickly understand it and solve it. Try now to dissect every part of the Ramanujan-Chudnovski Mathematical Algorithm by breaking down every part of it into a whole or decimal number and then use the Rules and Orders of Operation known as P.E.M.D.A.S. to solve it. Keep in mind that this one uses an Infinite Summation represented by the Greek Letter Sigma. That means once this is executed the next number in the Summation is incremented by 1. If it were 0 the first time the second time it will be 1 and then 2 and then 3, etcetera.<BR><BR>
+
+Try first with the supposedly original Pi Algorithm created by Indian Mathematician Ramanujan in 1914.<BR><BR>
+
+<A HREF=\"./Theme/2023_Lightning_Calculate/Image/Lightning_Calculate/Ramanujan-Pi-1914-2.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Digitization of the Ramanujan-1914 Mathematical Algorithm For Deriving Pi ::\" TARGET=\"_NEW\"><IMG SRC=\"./Theme/2023_Lightning_Calculate/Image/Lightning_Calculate/Ramanujan-Pi-1914-2.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Digitization of the Ramanujan-1914 Mathematical Algorithm For Deriving Pi ::\" CLASS=\"MemberProfile\" WIDTH=\"50%\" HEIGHT=\"100\"></A></IMG><BR><BR>
+Note: The First 10 Decimal Places of Pi Are: 3.1415926535<BR><BR>
+
+Step #01: Square Root of 2 Divided By 9801 OR &#8730; 2 / 9801 = 0.0002885856 OR Reverse: 3,465.176781200009 * 1103 / 1 = 0.3183099168 OR Reverse: 3,822,089.98966361<BR>
+Step #02: 9801 Divided By 2206 * Square Root of 2 OR 9801 / 2206 * &#8730; 2 = 3.141592730020181<BR>
+Step #03: Disregard the rest of the decimal places starting after 3.141592 where the decimal places are: 730020181<BR>
+Step #04: Re-Calculate and Re-Solve this specific algorithm with a new Summation Incremented by 1 to get the next decimal place of Pi<BR>
+Step #05: Continue on calculating this over and over again infinitely where each new time you solve and calculate this Mathematical Algorithm you replace the <B><I>k</I></B> variable with 1 higher number than the last to get the infinitely long decimal places of Pi. Memorize each new decimal to add to your memory. As you calculate the new decimal places you can memorize hundreds to thousands to hundreds of thousands of decimal places of Pi.<BR><BR>
+
+<A HREF=\"./Theme/2023_Lightning_Calculate/Image/Lightning_Calculate/Ramanujan-Pi-1914.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Digitization of the Ramanujan-1914 Mathematical Algorithm For Deriving Pi ::\" TARGET=\"_NEW\"><IMG SRC=\"./Theme/2023_Lightning_Calculate/Image/Lightning_Calculate/Ramanujan-Pi-1914.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Digitization of the Ramanujan-1914 Mathematical Algorithm For Deriving Pi ::\" CLASS=\"MemberProfile\" WIDTH=\"50%\" HEIGHT=\"100\"></A></IMG><BR><BR>
+Note: The First 10 Decimal Places of Pi Are: 3.1415926535<BR><BR>
 
 <A HREF=\"./Theme/2023_Lightning_Calculate/Image/Lightning_Calculate/Ramanujan-Chudnovski_Pi.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Digitization of the Ramanujan-Chudnovski Mathematical Algorithm For Deriving Pi ::\" TARGET=\"_NEW\"><IMG SRC=\"./Theme/2023_Lightning_Calculate/Image/Lightning_Calculate/Ramanujan-Chudnovski_Pi.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Digitization of the Ramanujan-Chudnovski Mathematical Algorithm For Deriving Pi ::\" CLASS=\"MemberProfile\"></A></IMG><BR><BR>
+Note: The First 10 Decimal Places of Pi Are: 3.1415926535<BR><BR>
 
 Start first by dissecting each part the entire Mathematical Statement and Mathematical Algorithm shown above. In order to dissect each part this one must first solve each part of the statement and algorithm part by part. This statement is essentially stating that 1 whole Pi is equal to:<BR>
 12 * Sigma Summation starting at q = 0 * (-1)^q * (6*q)! (545140134q + 13591409) divided by (3*q)! * (q!)^3 * (640320)^3*q + 3/2.<BR><BR>
@@ -5375,6 +5390,9 @@ Step #08: (640320)^3*k + 3/2 = 1.50<BR>
 Step #09: 13591410 / 512384047.996 = 0.0265258258003108 OR Reverse: 37.69910906933129<BR>
 Step #10: 12 * 0.0265258258003108 = 0.3183099096037296<BR>
 Step #11: Then add together the 3.14 with the rest of the decimal numbers calculated<BR><BR>
+
+<B>Identifying and Classifying Mathematics ? How To Out Mathematical Fakes and Philosophy Fakes Anywhere ?</B><BR>
+What are the differences between Mathematical Concepts, Mathematical Proofs, Mathematical Algorithms, Mathematical Expressions, Mathematical Statements, Mathematical Logarithms and other Mathematical Things ? Can each one be classified as more than one or more ? How can I out Mathematics Fakes anywhere ?<BR><BR>
 
 <BIG><B>Training Course</B></BIG><BR>
 The author of this digital Application Module has designed a training course for people that already possess the natural counting ability. This specific training course covers a span of 6 months of intensive mental training and internal meditation. The training course can be completed alone or with others. The author of this training system does not socially interact with anyone and the materials are completely public and completely free.
