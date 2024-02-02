@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*
  ============================================================================================================
  + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -6638,7 +6638,7 @@ $_KERNEL_WEBPAGE_GENERATION_TIME_TOTAL_TIME						= round($_KERNEL_WEBPAGE_GENERA
 
 echo ("
 		<CENTER>
-			This Web Site Is Powered By:&nbsp;<A HREF=\"https://www.SourceForge.net/projects/cerberuscms\" TARGET=\"_NEW\" TITLE=\":: $_PROJECT_STRING_NAME_EXTENDED :: Official SourceForge Software Project Web Page ::\">$_PROJECT_STRING_NAME_EXTENDED</A>&nbsp;|&nbsp;Web-Page Data Generation Time: " . $_KERNEL_WEBPAGE_GENERATION_TIME_TOTAL_TIME . " Seconds&nbsp;|&nbsp;");
+			This Web Site Is Powered By:&nbsp;<A HREF=\"$_PROJECT_SERVER_URL_SOURCEFORGE_SECURE\" TARGET=\"_NEW\" TITLE=\":: $_PROJECT_STRING_NAME_EXTENDED :: Official SourceForge Software Project Web Page ::\">$_PROJECT_STRING_NAME_EXTENDED</A>&nbsp;|&nbsp;Web-Page Data Generation Time: " . $_KERNEL_WEBPAGE_GENERATION_TIME_TOTAL_TIME . " Seconds&nbsp;|&nbsp;");
 
 /*
  ============================================================================================================
