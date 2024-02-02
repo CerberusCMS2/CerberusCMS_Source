@@ -68,8 +68,14 @@
 /*
  ============================================================================================================
  +
- + Search Form :: Variables :: Post Variables
+ + Search Form :: Variables
  +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Search Form :: Variables :: Post Variables
  ============================================================================================================
 */
 
@@ -80,15 +86,15 @@ if ((!$_Application_Module_Member_Search_POST_KEYWORD) || (!$_Application_Module
 
 echo ("
 										<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Search&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"POST\">
-											Keywords:<BR>
+											Keywords<BR>
 												<INPUT TYPE=\"TEXT\" NAME=\"AMM_Search_Search_Keyword\"><BR>
-											Section:<BR>
+											Section<BR>
 												<SELECT NAME=\"AMM_Search_Search_Section\">
 													<OPTION VALUE=\"1\">Entires :: Articles</OPTION>
 													<OPTION VALUE=\"2\">Entries :: Files</OPTION>
 													<OPTION VALUE=\"3\">Entries :: Forum</OPTION>
-													<OPTION VALUE=\"4\">Registered Member Accounts</OPTION>
-													<OPTION VALUE=\"5\">Entries :: News Articles</OPTION>
+													<OPTION VALUE=\"4\">Entries :: News Articles</OPTION>
+													<OPTION VALUE=\"5\">Entries :: Registered Member Accounts</OPTION>
 													<OPTION VALUE=\"6\">Entries :: Market</OPTION>
 												</SELECT><BR>
 											<INPUT TYPE=\"SUBMIT\" VALUE=\"Search\">
@@ -98,11 +104,20 @@ echo ("
 } else {
 
 										echo ("<B>Search Results For Keywords</B>: <I>$_Application_Module_Member_Search_POST_KEYWORD</I><HR>");
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] SECTION 1: Articles
+ +
+ +
+ ============================================================================================================
+*/
 
 /*
  ============================================================================================================
  +
- + SECTION 1: Articles
+ + IF: Internal Application: Search :: Section :: Is: 1, Article Entries
  +
  ============================================================================================================
 */
@@ -148,7 +163,17 @@ $_Application_Module_Member_Search_LIST_ARTICLE_DATA_REDUCED...<BR><BR>
 /*
  ============================================================================================================
  +
- + SECTION 2: Files
+ +
+ + [ @ ] SECTION 1: File Entries
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ + IF: Internal Application: Search :: Section :: Is: 2, File Entries
  +
  ============================================================================================================
 */
@@ -194,7 +219,17 @@ $_Application_Module_Member_Search_LIST_FILE_DATA_REDUCED...<BR><BR>
 /*
  ============================================================================================================
  +
- + SECTION 3: Forum
+ +
+ + [ @ ] SECTION 1: Forum Entries
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ + IF: Internal Application: Search :: Section :: Is: 3, Forum Entries
  +
  ============================================================================================================
 */
@@ -240,12 +275,78 @@ $_Application_Module_Member_Search_LIST_FORUM_DATA_REDUCED...<BR><BR>
 /*
  ============================================================================================================
  +
- + SECTION 4: Members
+ +
+ + [ @ ] SECTION 4: News Article Entries
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ + IF: Internal Application: Search :: Section :: Is: 4, News Article Entries
  +
  ============================================================================================================
 */
 
 if ($_Application_Module_Member_Search_POST_SECTION == 4) {
+
+$_Application_Module_Member_Search_DB_Query_SEARCH_NEWS 				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_news WHERE news_data LIKE '%$_Application_Module_Member_Search_POST_KEYWORD%' ORDER BY id ASC");
+$_Application_Module_Member_Search_DB_Query_SEARCH_NEWS_NUMBER_OF_ROWS			= $_Application_Module_Member_Search_DB_Query_SEARCH_NEWS->num_rows;
+
+if ($_Application_Module_Member_Search_DB_Query_SEARCH_NEWS_NUMBER_OF_ROWS <= 0) {
+
+										echo ($_Application_Module_Member_Message_Search_RESULTS_NEWS_NONE);
+
+} else {
+
+while ($_Application_Module_Member_Search_DB_Query_SEARCH_NEWS_Fetch_Array = $_Application_Module_Member_Search_DB_Query_SEARCH_NEWS->fetch_array(MYSQLI_BOTH)) {
+
+$_Application_Module_Member_Search_LIST_NEWS_ID						= $_Application_Module_Member_Search_DB_Query_SEARCH_NEWS_Fetch_Array['id'];
+$_Application_Module_Member_Search_LIST_NEWS_DATA					= $_Application_Module_Member_Search_DB_Query_SEARCH_NEWS_Fetch_Array['news_data'];
+$_Application_Module_Member_Search_LIST_NEWS_TITLE					= $_Application_Module_Member_Search_DB_Query_SEARCH_NEWS_Fetch_Array['news_title'];
+$_Application_Module_Member_Search_LIST_NEWS_DATA_REDUCED				= substr($_Application_Module_Member_Search_LIST_NEWS_DATA, 0, 30);
+
+echo ("
+<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;All_News&amp;DisplayID&#61;$_Application_Module_Member_Search_LIST_NEWS_ID&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The News Article Entry :: $_Application_Module_Member_Search_LIST_NEWS_TITLE\">$_Application_Module_Member_Search_LIST_NEWS_TITLE</A><BR>
+---------------------------------<BR>
+$_Application_Module_Member_Search_LIST_NEWS_DATA_REDUCED...<BR><BR>
+");
+
+} // [ + ] WHILE: Retrieving News Article Entries From Database Server With Specified Search Characters
+
+} // [ + ] IF: News Article Entries In Database Server With Specified Search Characters Is Less Than Or Equal To Zero
+
+/*
+ ============================================================================================================
+ + Kill SQL Database Server Query: Select From News
+ ============================================================================================================
+*/
+
+// [ C ] $_Application_Module_Member_Search_DB_Query_SEARCH_NEWS->free_result();
+
+} // [ + ] IF: Search Type Is: News Article Entries
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] SECTION 5: Registered Member Account Entries
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ + IF: Internal Application: Search :: Section :: Is: 5, Registered Member Account Entries
+ +
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Search_POST_SECTION == 5) {
 
 $_Application_Module_Member_Search_DB_Query_SEARCH_MEMBERS 				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_username LIKE '%$_Application_Module_Member_Search_POST_KEYWORD%' ORDER BY id ASC");
 $_Application_Module_Member_Search_DB_Query_SEARCH_MEMBERS_NUMBER_OF_ROWS		= $_Application_Module_Member_Search_DB_Query_SEARCH_MEMBERS->num_rows;
@@ -292,52 +393,6 @@ $_Application_Module_Member_Search_LIST_MEMBER_PROFILE_ABOUT...<BR><BR>
 // [ C ] $_Application_Module_Member_Search_DB_Query_SEARCH_MEMBERS->free_result();
 
 } // [ + ] IF: Search Type Is: Registered Member Account Entries
-
-/*
- ============================================================================================================
- +
- + SECTION 5: News
- +
- ============================================================================================================
-*/
-
-if ($_Application_Module_Member_Search_POST_SECTION == 5) {
-
-$_Application_Module_Member_Search_DB_Query_SEARCH_NEWS 				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_news WHERE news_data LIKE '%$_Application_Module_Member_Search_POST_KEYWORD%' ORDER BY id ASC");
-$_Application_Module_Member_Search_DB_Query_SEARCH_NEWS_NUMBER_OF_ROWS			= $_Application_Module_Member_Search_DB_Query_SEARCH_NEWS->num_rows;
-
-if ($_Application_Module_Member_Search_DB_Query_SEARCH_NEWS_NUMBER_OF_ROWS <= 0) {
-
-										echo ($_Application_Module_Member_Message_Search_RESULTS_NEWS_NONE);
-
-} else {
-
-while ($_Application_Module_Member_Search_DB_Query_SEARCH_NEWS_Fetch_Array = $_Application_Module_Member_Search_DB_Query_SEARCH_NEWS->fetch_array(MYSQLI_BOTH)) {
-
-$_Application_Module_Member_Search_LIST_NEWS_ID						= $_Application_Module_Member_Search_DB_Query_SEARCH_NEWS_Fetch_Array['id'];
-$_Application_Module_Member_Search_LIST_NEWS_DATA					= $_Application_Module_Member_Search_DB_Query_SEARCH_NEWS_Fetch_Array['news_data'];
-$_Application_Module_Member_Search_LIST_NEWS_TITLE					= $_Application_Module_Member_Search_DB_Query_SEARCH_NEWS_Fetch_Array['news_title'];
-$_Application_Module_Member_Search_LIST_NEWS_DATA_REDUCED				= substr($_Application_Module_Member_Search_LIST_NEWS_DATA, 0, 30);
-
-echo ("
-<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;All_News&amp;DisplayID&#61;$_Application_Module_Member_Search_LIST_NEWS_ID&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The News Article Entry :: $_Application_Module_Member_Search_LIST_NEWS_TITLE\">$_Application_Module_Member_Search_LIST_NEWS_TITLE</A><BR>
----------------------------------<BR>
-$_Application_Module_Member_Search_LIST_NEWS_DATA_REDUCED...<BR><BR>
-");
-
-} // [ + ] WHILE: Retrieving News Article Entries From Database Server With Specified Search Characters
-
-} // [ + ] IF: News Article Entries In Database Server With Specified Search Characters Is Less Than Or Equal To Zero
-
-/*
- ============================================================================================================
- + Kill SQL Database Server Query: Select From News
- ============================================================================================================
-*/
-
-// [ C ] $_Application_Module_Member_Search_DB_Query_SEARCH_NEWS->free_result();
-
-} // [ + ] IF: Search Type Is: News Article Entries
 
 } // [ + ] IF: Database Server Search Form Variables Have Executed
 ?>
