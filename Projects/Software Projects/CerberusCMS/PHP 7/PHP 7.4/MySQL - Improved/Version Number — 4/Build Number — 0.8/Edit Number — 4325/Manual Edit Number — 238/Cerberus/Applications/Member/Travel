@@ -178,44 +178,69 @@ echo ("
 <HR ALIGN=\"CENTER\" WIDTH=\"30%\"></CENTER>
 <CENTER>Backpacking :: Go Bag :: Gear :: Lightweight :: General</CENTER>
 <HR ALIGN=\"CENTER\" WIDTH=\"30%\">
-<CENTER><OBJECT HEIGHT=\"300\" WIDTH=\"80%\" DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Recommendations_Personal_Gear_Travel_Backpacking_General.txt\"></OBJECT></CENTER><BR><BR>
+<CENTER><OBJECT HEIGHT=\"300\" WIDTH=\"80%\" DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Recommendations_Personal_Gear_Travel_Backpacking_General.txt\"></OBJECT></CENTER>
 
+<BR><BR>
 HeadWear
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
+<BR><BR>
 EyeWear
 <HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 
+<BR><BR>
+Smart Glasses
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/HeadWear/EyeWear/SmartGlasses/SmartGlasses_Ray-Ban_Wayfarer_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\"></IMG>&nbsp;
+
+<BR><BR>
+Sun Glasses
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/HeadWear/EyeWear/SunGlasses/SunGlasses_Lacoste_Aviator.png\" WIDTH=\"125\" HEIGHT=\"125\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/HeadWear/EyeWear/SunGlasses/SunGlasses_Ray-Ban_Aviator_Chromance_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/HeadWear/EyeWear/SunGlasses/SunGlasses_Vuarnet_007_Brown.png\" WIDTH=\"125\" HEIGHT=\"125\"></IMG>&nbsp;
+
+<BR><BR>
 EarWear
 <HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 
+<BR><BR>
 Earrings
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 
+<BR><BR>
 NeckWear
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
+<BR><BR>
 Shemagh / Kefflyeh
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 
+<BR><BR>
 TorsoWear
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
+<BR><BR>
 Jackets
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 
+<BR><BR>
 Shirts
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 
+<BR><BR>
 ArmWear
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
+<BR><BR>
 WristWear
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
+<BR><BR>
 LegWear
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
+<BR><BR>
 Accessories
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Suspenders/Suspenders_RothcoX_Nylon_Polyester_Black.jpg\" WIDTH=\"125\" HEIGHT=\"125\"></IMG>&nbsp;
