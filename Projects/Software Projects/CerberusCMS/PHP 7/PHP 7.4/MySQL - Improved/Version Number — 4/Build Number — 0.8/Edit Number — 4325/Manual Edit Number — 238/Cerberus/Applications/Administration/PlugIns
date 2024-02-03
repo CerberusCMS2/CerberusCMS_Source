@@ -50,11 +50,81 @@
  +
  +
  +
- + [ ^ ] Application Module :: Administration :: PlugIns
+ + [ ^ ] Application Module :: Administration :: Plug-Ins
  +
  +
  +
  ============================================================================================================
 */
 
+/*
+ ============================================================================================================
+ +
+ + Upload :: Plug-In :: File
+ +
+ ============================================================================================================
+*/
+
+$_Application_Module_Administration_Panels_FIND_DIRECTORY_UPLOAD_PLUGIN				= "./System/Plug-Ins/";
+$_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE				= $_Application_Module_Administration_Panels_FIND_DIRECTORY_UPLOAD_PLUGIN. basename($_FILES['AMA_PlugIns_Upload_PlugIn_File_Name']['name']);
+$_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE_TEMPORARY			= $_POST['AMA_PlugIns_Upload_PlugIn_Temporary'];
+$_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE_BASENAME			= basename($_FILES['AMA_PlugIns_Upload_PlugIn_File_Name']['name']);
+
+/*
+ ============================================================================================================
+ + IF: Plug-In :: Upload :: Input Form :: Variables HAVE NOT Executed, Display :: Input Form
+ ============================================================================================================
+*/
+
+if (!$_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE_TEMPORARY) {
+
+echo ("
+													<BR><HR><CENTER><B>Upload Plug-In</B></CENTER><HR>
+														<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_ADMINISTRATOR&#61;Control_Panel&amp;Action&#61;PlugIns&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\" ENCTYPE=\"multipart/form-data\">
+																<INPUT TYPE=\"hidden\" NAME=\"AMA_PlugIns_Upload_PlugIn_File_Temporary\" VALUE=\"1\">
+															This Plug-In File must have a File Extension of: <I>.zip</I> which is case-sensitive<BR>
+																<INPUT TYPE=\"file\" NAME=\"AMA_PlugIns_Upload_PlugIn_File_Name\"><BR>
+																<INPUT TYPE=\"submit\" VALUE=\"Upload Plug-In\">
+														</FORM><BR><BR>
+");
+
+} else {
+
+/*
+ ============================================================================================================
+ + IF: Upload :: Plug-In :: File
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + IF: File Exists: Uploaded :: Plug-In File :: File Name, HALT Uploaded File Operation
+ ============================================================================================================
+*/
+
+if (file_exists("./System/Plug-Ins/$_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE_BASENAME")) {
+
+													echo ($_Application_Module_Administration_Message_PlugIns_UPLOAD_HALTED);
+
+} else {
+
+/*
+ ============================================================================================================
+ + IF: Upload :: Plug-In File :: Move :: Directory :: Plug-In File Directory
+ ============================================================================================================
+*/
+
+if (move_uploaded_file($_FILES['AMA_Panels_Upload_PlugIn_File_Name']['tmp_name'], $_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE)) {
+
+													echo ($_Application_Module_Administration_Message_PlugIns_UPLOAD_SUCCESSFUL);
+
+} else {
+
+													echo ($_Message_ERROR_ACTION_UNIVERSAL);
+
+} // [ + ] IF: File Exists: Uploaded Plug-In File :: HALT Upload
+
+} // [ + ] IF: Upload :: Plug-In :: File
+
+} // [ + ] IF: Upload :: Plug-In :: Input Form Variables :: HAVE NOT Executed
 ?>
