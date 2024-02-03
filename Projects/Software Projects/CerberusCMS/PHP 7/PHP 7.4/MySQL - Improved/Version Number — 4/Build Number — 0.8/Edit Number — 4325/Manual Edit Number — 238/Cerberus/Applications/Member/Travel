@@ -178,7 +178,47 @@ echo ("
 <HR ALIGN=\"CENTER\" WIDTH=\"30%\"></CENTER>
 <CENTER>Backpacking :: Go Bag :: Gear :: Lightweight :: General</CENTER>
 <HR ALIGN=\"CENTER\" WIDTH=\"30%\">
-<CENTER><OBJECT HEIGHT=\"300\" WIDTH=\"80%\" DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Recommendations_Personal_Gear_Travel_Backpacking_General.txt\"></OBJECT></CENTER>
+<CENTER><OBJECT HEIGHT=\"300\" WIDTH=\"80%\" DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Recommendations_Personal_Gear_Travel_Backpacking_General.txt\"></OBJECT></CENTER><BR><BR>
+
+HeadWear
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+EyeWear
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+EarWear
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+Earrings
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+
+NeckWear
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+Shemagh / Kefflyeh
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+
+TorsoWear
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+Jackets
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+
+Shirts
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+
+ArmWear
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+WristWear
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+LegWear
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+Accessories
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Suspenders/Suspenders_RothcoX_Nylon_Polyester_Black.jpg\" WIDTH=\"125\" HEIGHT=\"125\"></IMG>&nbsp;
 ");
 
 } // [ + ] IF: Internal Application: Display :: Backpacking Gear :: Type :: General
