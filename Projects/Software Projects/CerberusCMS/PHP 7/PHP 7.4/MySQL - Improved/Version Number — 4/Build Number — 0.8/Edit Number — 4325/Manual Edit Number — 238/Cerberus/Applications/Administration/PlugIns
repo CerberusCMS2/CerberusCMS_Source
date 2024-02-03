@@ -65,8 +65,8 @@
  ============================================================================================================
 */
 
-$_Application_Module_Administration_Panels_FIND_DIRECTORY_UPLOAD_PLUGIN				= "./System/Plug-Ins/";
-$_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE				= $_Application_Module_Administration_Panels_FIND_DIRECTORY_UPLOAD_PLUGIN. basename($_FILES['AMA_PlugIns_Upload_PlugIn_File_Name']['name']);
+$_Application_Module_Administration_Panels_FIND_DIRECTORY_UPLOAD_PLUGINS			= "./System/Plug-Ins/";
+$_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE				= $_Application_Module_Administration_Panels_FIND_DIRECTORY_UPLOAD_PLUGINS . basename($_FILES['AMA_PlugIns_Upload_PlugIn_File_Name']['name']);
 $_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE_TEMPORARY			= $_POST['AMA_PlugIns_Upload_PlugIn_Temporary'];
 $_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE_BASENAME			= basename($_FILES['AMA_PlugIns_Upload_PlugIn_File_Name']['name']);
 
@@ -81,7 +81,7 @@ if (!$_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE_TEMPORAR
 echo ("
 													<BR><HR><CENTER><B>Upload Plug-In</B></CENTER><HR>
 														<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_ADMINISTRATOR&#61;Control_Panel&amp;Action&#61;PlugIns&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\" ENCTYPE=\"multipart/form-data\">
-																<INPUT TYPE=\"hidden\" NAME=\"AMA_PlugIns_Upload_PlugIn_File_Temporary\" VALUE=\"1\">
+																<INPUT TYPE=\"hidden\" NAME=\"AMA_PlugIns_Upload_PlugIn_Temporary\" VALUE=\"1\">
 															This Plug-In File must have a File Extension of: <I>.zip</I> which is case-sensitive<BR>
 																<INPUT TYPE=\"file\" NAME=\"AMA_PlugIns_Upload_PlugIn_File_Name\"><BR>
 																<INPUT TYPE=\"submit\" VALUE=\"Upload Plug-In\">
@@ -114,7 +114,7 @@ if (file_exists("./System/Plug-Ins/$_Application_Module_Administration_Panels_PO
  ============================================================================================================
 */
 
-if (move_uploaded_file($_FILES['AMA_Panels_Upload_PlugIn_File_Name']['tmp_name'], $_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE)) {
+if (move_uploaded_file($_FILES['AMA_PlugIns_Upload_PlugIn_File_Name']['tmp_name'], $_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE)) {
 
 													echo ($_Application_Module_Administration_Message_PlugIns_UPLOAD_SUCCESSFUL);
 
