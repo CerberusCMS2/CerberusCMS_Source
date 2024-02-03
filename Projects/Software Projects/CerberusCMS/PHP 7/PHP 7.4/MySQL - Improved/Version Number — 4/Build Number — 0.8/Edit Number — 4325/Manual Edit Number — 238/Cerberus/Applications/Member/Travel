@@ -185,6 +185,37 @@ HeadWear
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
 <BR><BR>
+FootWear
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Boots
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/FootWear/Boots/Boots_DrMartens_Combes_Nylon_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+
+<BR><BR>
+Sandals
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/FootWear/Sandals/Sandals_Olukai_Brown.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/FootWear/Sandals/Sandals_QuickSilver_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+
+<BR><BR>
+Laces
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/FootWear/Laces/Laces_BootLaces_Kevlar_Paracord_MetalTips_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+
+<BR><BR>
+Laces
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/FootWear/RubberCement/RubberCement_ShoeGoo.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+
+<BR><BR>
+Rubber Cement
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/FootWear/MemoryFoam/FootWear_MemoryFoam_AirPlus_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+
+
+<BR><BR>
 EyeWear
 <HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 
@@ -215,6 +246,7 @@ NeckWear
 <BR><BR>
 Shemagh / Kefflyeh
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/HeadWear/NeckWear/Shemagh/Shemagh_VoodooTactical_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
 TorsoWear
@@ -223,10 +255,12 @@ TorsoWear
 <BR><BR>
 Jackets
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/HeadWear/NeckWear/Shemagh/Jacket_UnderArmor_Polyester_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
 Shirts
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/HeadWear/NeckWear/Shemagh/Shirt_UnderArmor_Polyester_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
 ArmWear
@@ -241,9 +275,36 @@ LegWear
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
 <BR><BR>
+UnderWear
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Thermals
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/UnderWear/Thermals/Thermal_Shirt_UnderArmor_Polyester.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/UnderWear/Thermals/Thermal_Pant_UnderArmor_Polyester.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/UnderWear/Thermals/Thermal_Set_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+
+<BR><BR>
 Accessories
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Suspenders
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Suspenders/Suspenders_RothcoX_Nylon_Polyester_Black.jpg\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+
+<BR><BR>
+Miscellanious
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Blankets
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Blankets :: Mexican Blankets
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 ");
 
 } // [ + ] IF: Internal Application: Display :: Backpacking Gear :: Type :: General
