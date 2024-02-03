@@ -58,6 +58,10 @@
 */
 
 /*
+* Note: add options to list plug-in directories and delete plug-in directories, add options to list Plug-In zip file directory storage and delete Plug-In zip files from the directory storage, add options to upload Plug-In zip files
+*/
+
+/*
  ============================================================================================================
  +
  + Upload :: Plug-In :: File
