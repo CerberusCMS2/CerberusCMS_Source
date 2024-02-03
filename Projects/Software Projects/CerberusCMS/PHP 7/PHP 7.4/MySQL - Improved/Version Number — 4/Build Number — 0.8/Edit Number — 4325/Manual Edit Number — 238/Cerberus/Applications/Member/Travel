@@ -262,9 +262,16 @@ TorsoWear
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
 <BR><BR>
-Jackets
+Jackets :: Performance
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/TorsoWear/Jacket/Jacket_UnderArmor_Polyester_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+
+<BR><BR>
+Jackets :: Rain Jackets
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/TorsoWear/Jacket/RainJacket_4Element_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/TorsoWear/Jacket/RainJacket_OzarkTrail_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+
 
 <BR><BR>
 Shirts
@@ -317,6 +324,21 @@ Suspenders
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Suspenders/Suspenders_RothcoX_Nylon_Polyester_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
+Accessories :: Survival :: FireStarter
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Survival/Accessories_Survival_FireStarter.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+
+<BR><BR>
+Accessories :: Survival :: Multi-Card Tool
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Survival/Accessories_Survival_VoodooTactical_MultiCard_Tool.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+
+<BR><BR>
+Accessories :: Survival :: Flash Light
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Flashlight/Flashlight_Unbranded_Aluminum_T6_LightSaber.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+
+<BR><BR>
 Miscellanious
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
@@ -347,6 +369,14 @@ Backpack :: Military Issue :: All Weather :: Waterproof :: 3-Day Backpack
 Backpack :: Attachments :: Plastic ID Container
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Backpack/Attachments/Backpack_Attachments_Plastic_ID_Container.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+
+<BR><BR>
+Backpack :: Attachments :: Carabiner
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Backpack/Attachments/Backpack_Attachments_NiteIze_Carabiner.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Backpack/Attachments/Backpack_Attachments_NiteIze_CamJam.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Backpack/Attachments/Backpack_Attachments_BlackDiamond_Carabiner.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+
 ");
 
 } // [ + ] IF: Internal Application: Display :: Backpacking Gear :: Type :: General
