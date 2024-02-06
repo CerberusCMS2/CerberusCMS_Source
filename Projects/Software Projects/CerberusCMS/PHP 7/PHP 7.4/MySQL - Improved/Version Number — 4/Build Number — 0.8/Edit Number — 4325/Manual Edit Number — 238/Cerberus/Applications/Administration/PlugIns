@@ -173,7 +173,7 @@ echo ("* Done. Exiting.<BR><BR>");
 
 /*
  ============================================================================================================
- + IF: Plug-In :: Upload :: Input Form :: Variables HAVE NOT Executed, Display :: Input Form
+ + IF: System :: Plug-In :: File :: Upload :: Input Form Has Not Executed, Display Input Form
  ============================================================================================================
 */
 
@@ -193,7 +193,7 @@ echo ("
 
 /*
  ============================================================================================================
- + IF: Upload :: Plug-In :: File
+ + ELSE: System :: Plug-In :: File :: Upload :: Input Form Has Executed, Upload Plug-In File
  ============================================================================================================
 */
 
@@ -211,7 +211,7 @@ if (file_exists("./System/Plug-Ins/Archive/$_Application_Module_Administration_P
 
 /*
  ============================================================================================================
- + IF: Upload :: Plug-In File :: Move :: Directory :: Plug-In File Directory
+ + IF: Upload :: File :: Plug-In File :: Move :: Directory :: Plug-In File Archive Directory
  ============================================================================================================
 */
 
@@ -233,7 +233,7 @@ if (move_uploaded_file($_FILES['AMA_PlugIns_Upload_PlugIn_File_Name']['tmp_name'
 /*
  ============================================================================================================
  +
- + Plug-Ins Directory
+ + Read :: Directory :: Plug-Ins Archive Directory
  +
  ============================================================================================================
 */
@@ -242,7 +242,7 @@ if (move_uploaded_file($_FILES['AMA_PlugIns_Upload_PlugIn_File_Name']['tmp_name'
 
 /*
  ============================================================================================================
- + WHILE: Reading :: Directory :: Administration Applications
+ + WHILE: Reading :: Directory :: Plug-Ins :: Archive Directory
  ============================================================================================================
 */
 
