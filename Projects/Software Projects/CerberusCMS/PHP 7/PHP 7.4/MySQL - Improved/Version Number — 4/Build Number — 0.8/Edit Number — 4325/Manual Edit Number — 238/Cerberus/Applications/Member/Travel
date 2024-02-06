@@ -80,12 +80,19 @@ Backpacking :: Tutorial :: Expert
 <HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;Tutorial&amp;Type&#61;Backpacking&amp;Level&#61;Expert\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Tutorial :: Expert ::\">Backpacking :: Tutorial :: Expert</A><BR><BR>
 
-Backpacking :: Gear :: All-In-One
+Backpacking :: Gear :: All-In-One :: Male
 <HR ALIGN=\"LEFT\" WIDTH=\"20%\">
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Type&#61;General&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Gear :: Lightweight :: General ::\">Backpacking :: Gear :: Lightweight :: General</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Type&#61;Desert&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Gear :: Lightweight :: General ::\">Backpacking :: Gear :: Lightweight :: Desert</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Type&#61;Coastal&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Gear :: Lightweight :: Coastal ::\">Backpacking :: Gear :: Lightweight :: Coastal</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Type&#61;Mountain&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Gear :: Lightweight :: Mountain ::\">Backpacking :: Gear :: Lightweight :: Mountain</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Gender&#61;Male&amp;Type&#61;General&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Gear :: Lightweight :: General ::\">Backpacking :: Gear :: Lightweight :: General</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Gender&#61;Male&amp;Type&#61;Desert&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Gear :: Lightweight :: General ::\">Backpacking :: Gear :: Lightweight :: Desert</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Gender&#61;Male&amp;Type&#61;Coastal&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Gear :: Lightweight :: Coastal ::\">Backpacking :: Gear :: Lightweight :: Coastal</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Gender&#61;Male&amp;Type&#61;Mountain&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Gear :: Lightweight :: Mountain ::\">Backpacking :: Gear :: Lightweight :: Mountain</A><BR><BR>
+
+Backpacking :: Gear :: All-In-One :: Femald
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Gender&#61;Female&amp;Type&#61;General&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Gear :: Lightweight :: General ::\">Backpacking :: Gear :: Lightweight :: General</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Gender&#61;Female&amp;Type&#61;Desert&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Gear :: Lightweight :: General ::\">Backpacking :: Gear :: Lightweight :: Desert</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Gender&#61;Female&amp;Type&#61;Coastal&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Gear :: Lightweight :: Coastal ::\">Backpacking :: Gear :: Lightweight :: Coastal</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Gender&#61;Female&amp;Type&#61;Mountain&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Gear :: Lightweight :: Mountain ::\">Backpacking :: Gear :: Lightweight :: Mountain</A><BR><BR>
 ");
 
 } // [ + ] IF: Internal Application: Display :: Is: Options
@@ -163,6 +170,16 @@ echo ("
 */
 
 if ($_GET["Display"] == "BackpackingGear") {
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Backpacking Gear :: Gender :: Male
+ +
+ ============================================================================================================
+*/
+
+if ($_GET"Gender"] == "Male") {
 
 /*
  ============================================================================================================
@@ -458,6 +475,8 @@ echo ("
 ");
 
 } // [ + ] IF: Internal Application: Display :: Backpacking Gear :: Type :: Mountain
+
+} // [ + ] IF: Internal Application: Display :: Backpacking Gear :: Gender :: Male
 
 } // [ + ] IF: Internal Application: Display :: Backpacking Gear
 ?>
