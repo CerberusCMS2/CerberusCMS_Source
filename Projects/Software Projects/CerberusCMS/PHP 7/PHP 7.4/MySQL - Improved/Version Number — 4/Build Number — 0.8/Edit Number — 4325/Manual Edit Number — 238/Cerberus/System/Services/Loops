@@ -217,4 +217,8 @@ imagecopyresampled($_Application_Module_Services_Loops_Resize_Image_Upload_File_
 return $_Application_Module_Services_Loops_Resize_Image_Upload_File_Destination;
 
 } // [ + ] IF:
+
+/*
+* add loop here later to remove all chmod +x from all files throughout the system and force chmod safe directories and files upon every reload of the web page
+*/
 ?>
