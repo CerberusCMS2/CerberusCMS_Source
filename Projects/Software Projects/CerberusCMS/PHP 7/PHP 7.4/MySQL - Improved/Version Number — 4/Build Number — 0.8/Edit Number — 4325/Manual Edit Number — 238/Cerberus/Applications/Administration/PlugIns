@@ -288,7 +288,7 @@ unlink("./System/Plug-Ins/Archive/$_Application_Module_Administration_PlugIns_RE
 
 /*
  ============================================================================================================
- + Close :: Directory :: Plug-Ins
+ + Close :: Directory :: System => Plug-Ins => Archive
  ============================================================================================================
 */
 
