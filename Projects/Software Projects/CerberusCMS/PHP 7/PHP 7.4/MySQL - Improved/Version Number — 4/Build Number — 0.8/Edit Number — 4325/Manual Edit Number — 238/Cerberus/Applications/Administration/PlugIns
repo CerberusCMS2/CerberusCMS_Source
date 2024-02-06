@@ -229,7 +229,6 @@ if (move_uploaded_file($_FILES['AMA_PlugIns_Upload_PlugIn_File_Name']['tmp_name'
 
 } // [ + ] IF: Upload :: Plug-In :: Input Form Variables :: HAVE NOT Executed
 
-
 /*
  ============================================================================================================
  +
@@ -267,18 +266,6 @@ Archive File :: Name: <I>$_Application_Module_Administration_PlugIns_READ_DIRECT
 Archive File :: Timestamp :: Upload :: <I></I><BR>
 <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_ADMINISTRATOR&#61;Control_Panel&amp;Action&#61;PlugIns&amp;Delete&#61;$_Application_Module_Administration_PlugIns_READ_DIRECTORY_UPLOAD_PLUGINS\" TITLE=\":: Delete :: The Selected Plug-In Archive File: $_Application_Module_Administration_PlugIns_READ_DIRECTORY_UPLOAD_PLUGINS ::\">Delete This Plug-In Archive</A><BR><BR>");
 
-} // [ + ] IF: STOP: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
-
-} // [ + ] WHILE: Reading :: Directory :: Plug-Ins
-
-/*
- ============================================================================================================
- + Close :: Directory :: Plug-Ins
- ============================================================================================================
-*/
-
-closedir($_Application_Module_Administration_PlugIns_OPEN_DIRECTORY_UPLOAD_PLUGINS);
-
 /*
  ============================================================================================================
  +
@@ -294,4 +281,16 @@ unlink("./System/Plug-Ins/Archive/$_Application_Module_Administration_PlugIns_RE
 													echo ("This Plug-In Archive File Was Deleted Successfully<BR><BR>");
 
 } // [ + ] IF: Internal Application: Plug-Ins :: Delete :: Selected Plug-In
+
+} // [ + ] IF: STOP: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
+
+} // [ + ] WHILE: Reading :: Directory :: Plug-Ins
+
+/*
+ ============================================================================================================
+ + Close :: Directory :: Plug-Ins
+ ============================================================================================================
+*/
+
+closedir($_Application_Module_Administration_PlugIns_OPEN_DIRECTORY_UPLOAD_PLUGINS);
 ?>
