@@ -69,11 +69,12 @@
  ============================================================================================================
 */
 
-$_Application_Module_Administration_Panels_FIND_DIRECTORY_UPLOAD_PLUGINS			= "./System/Plug-Ins/Archive/";
-$_Application_Module_Administration_Panels_OPEN_DIRECTORY_UPLOAD_PLUGINS			= opendir($_Application_Module_Administration_Panels_FIND_DIRECTORY_UPLOAD_PLUGINS);
-$_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE				= $_Application_Module_Administration_Panels_FIND_DIRECTORY_UPLOAD_PLUGINS . basename($_FILES['AMA_PlugIns_Upload_PlugIn_File_Name']['name']);
-$_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE_TEMPORARY			= $_POST['AMA_PlugIns_Upload_PlugIn_Temporary'];
-$_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE_BASENAME			= basename($_FILES['AMA_PlugIns_Upload_PlugIn_File_Name']['name']);
+$_Application_Module_Administration_PlugIns_FIND_DIRECTORY_UPLOAD_PLUGINS			= "./System/Plug-Ins/Archive/";
+$_Application_Module_Administration_PlugIns_OPEN_DIRECTORY_UPLOAD_PLUGINS			= opendir($_Application_Module_Administration_Panels_FIND_DIRECTORY_UPLOAD_PLUGINS);
+$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE				= $_Application_Module_Administration_Panels_FIND_DIRECTORY_UPLOAD_PLUGINS . basename($_FILES['AMA_PlugIns_Upload_PlugIn_File_Name']['name']);
+$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_TEMPORARY			= $_POST['AMA_PlugIns_Upload_PlugIn_Temporary'];
+$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_BASENAME			= basename($_FILES['AMA_PlugIns_Upload_PlugIn_File_Name']['name']);
+$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_CURL_INPUT			= $_POST['AMA_PlugIns_Upload_PlugIn_CURL'];
 
 /*
  ============================================================================================================
@@ -95,29 +96,30 @@ echo ("
 														</FORM><BR>
 ");
 
-$_Application_Module_Services_Kernel_FIND_KERNEL_FILE_INPUT								= "./System/Plug-Ins/Archive/$_Application_Module_Services_Kernel_POST_CURL_DOWNLOAD_KERNEL_INPUT";
-$_Application_Module_Services_Kernel_OPEN_KERNEL_FILE_INPUT								= fopen("$_Application_Module_Services_Kernel_FIND_KERNEL_FILE_INPUT", "w");
+$_Application_Module_Administration_PlugIns_FIND_PLUGIN_DIRECTORY_ARCHIVE						= "./System/Plug-Ins/Archive/$_Application_Module_Services_Kernel_POST_CURL_DOWNLOAD_KERNEL_INPUT";
+$_Application_Module_Administration_PlugIns_OPEN_PLUGIN_DIRECTORY_ARCHIVE						= fopen("$_Application_Module_Services_Kernel_FIND_KERNEL_FILE_INPUT", "w");
 
 echo ("Kernel Application Message: Reading Latest Kernel File Using cURL Functionality Over Hyper-Text-Transfer-Protocol-Secure... Wait.<BR><BR>");
 
-$_Application_Module_Services_Kernel_cURL_Initialize_Selected							= curl_init();
+$_Application_Module_Administration_PlugIns_cURL_Initialize_Selected							= curl_init();
 
-curl_setopt($_Application_Module_Services_Kernel_cURL_Initialize_Selected, CURLOPT_URL, "$_ACCESS_URL_GIT_REPOSITORY_PLUGINS/$_Application_Module_Administration_PlugIns_POST_CURL_DOWNLOAD_PLUGIN_INPUT.zip");
-curl_setopt($_Application_Module_Services_Kernel_cURL_Initialize_Selected, CURLOPT_SSL_VERIFYPEER, false);
-curl_setopt($_Application_Module_Services_Kernel_cURL_Initialize_Selected, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($_Application_Module_Administration_PlugIns_cURL_Initialize_Selected, CURLOPT_URL, "$_ACCESS_URL_GIT_REPOSITORY_PLUGINS/$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_CURL_INPUT");
+curl_setopt($_Application_Module_Administration_PlugIns_cURL_Initialize_Selected, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($_Application_Module_Administration_PlugIns_cURL_Initialize_Selected, CURLOPT_RETURNTRANSFER, 1);
 
-$_Application_Module_Services_Kernel_cURL_Download_Kernel_Data_Selected						= curl_exec($_Application_Module_Services_Kernel_cURL_Initialize_Selected);
-curl_close($_Application_Module_Services_Kernel_cURL_Initialize_Selected);
+$_Application_Module_Administration_PlugIns_cURL_Download_Data_Selected							= curl_exec($_Application_Module_Administration_PlugIns_cURL_Initialize_Selected);
+
+curl_close($_Application_Module_Administration_PlugIns_cURL_Initialize_Selected);
 
 echo ("Kernel Application Message: Downloading Kernel File From:<BR>
-<A HREF=\"$_ACCESS_URL_GIT_REPOSITORY_KERNEL/$_Application_Module_Services_Kernel_POST_CURL_DOWNLOAD_KERNEL_INPUT/Kernel.kernel\" TITLE=\":: Open & Display :: The Master GIT Repository :: Requested Kernel File ::\" TARGET=\"_NEW\">$_ACCESS_URL_GIT_REPOSITORY_KERNEL/$_Application_Module_Services_Kernel_POST_CURL_DOWNLOAD_KERNEL_INPUT/Kernel.kernel</A> ... Wait.<BR><BR>
+<A HREF=\"$_ACCESS_URL_GIT_REPOSITORY_PLUGINS/$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_CURL_INPUT\" TITLE=\":: Open & Display :: The Master GIT Repository :: Requested System Plug-In File ::\" TARGET=\"_NEW\">$_ACCESS_URL_GIT_REPOSITORY_PLUGINS/$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_CURL_INPUT</A> ... Wait.<BR><BR>
 ");
 
 echo ("Done.<BR><BR>");
 
-echo ("Kernel Application Message: Writing Kernel Programming Source Code To Kernel File On Local Hard Disk Drive... Wait.<BR><BR>");
+echo ("Kernel Application Message: Writing Plug-In File To Archive Directory... Wait.<BR><BR>");
 
-fwrite($_Application_Module_Services_Kernel_OPEN_KERNEL_FILE_INPUT, "$_Application_Module_Services_Kernel_cURL_Download_Kernel_Data_Selected");
+fwrite($_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_CURL_INPUT, "$_Application_Module_Administration_PlugIns_cURL_Download_Data_Selected");
 
 echo ("Done. Exiting.<BR><BR>");
 
@@ -127,7 +129,7 @@ echo ("Done. Exiting.<BR><BR>");
  ============================================================================================================
 */
 
-if (!$_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE_TEMPORARY) {
+if (!$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_TEMPORARY) {
 
 echo ("
 													<HR ALIGN=\"LEFT\" WIDTH=\"25%\">System :: Plug-Ins :: Upload Plug-In :: Archive Package<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
@@ -153,7 +155,7 @@ echo ("
  ============================================================================================================
 */
 
-if (file_exists("./System/Plug-Ins/Archive/$_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE_BASENAME")) {
+if (file_exists("./System/Plug-Ins/Archive/$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_BASENAME")) {
 
 													echo ($_Application_Module_Administration_Message_PlugIns_UPLOAD_HALTED);
 
@@ -165,7 +167,7 @@ if (file_exists("./System/Plug-Ins/Archive/$_Application_Module_Administration_P
  ============================================================================================================
 */
 
-if (move_uploaded_file($_FILES['AMA_PlugIns_Upload_PlugIn_File_Name']['tmp_name'], $_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE)) {
+if (move_uploaded_file($_FILES['AMA_PlugIns_Upload_PlugIn_File_Name']['tmp_name'], $_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE)) {
 
 													echo ($_Application_Module_Administration_Message_PlugIns_UPLOAD_SUCCESSFUL);
 
@@ -196,7 +198,7 @@ if (move_uploaded_file($_FILES['AMA_PlugIns_Upload_PlugIn_File_Name']['tmp_name'
  ============================================================================================================
 */
 
-while (($_Application_Module_Administration_Panels_READ_DIRECTORY_UPLOAD_PLUGINS = readdir($_Application_Module_Administration_Panels_OPEN_DIRECTORY_UPLOAD_PLUGINS))) {
+while (($_Application_Module_Administration_PlugIns_READ_DIRECTORY_UPLOAD_PLUGINS = readdir($_Application_Module_Administration_PlugIns_OPEN_DIRECTORY_UPLOAD_PLUGINS))) {
 
 /*
  ============================================================================================================
@@ -204,18 +206,18 @@ while (($_Application_Module_Administration_Panels_READ_DIRECTORY_UPLOAD_PLUGINS
  ============================================================================================================
 */
 
-if ($_Application_Module_Administration_Panels_READ_DIRECTORY_UPLOAD_PLUGINS == "." || $_Application_Module_Administration_Panels_READ_DIRECTORY_UPLOAD_PLUGINS == ".." || $_Application_Module_Administration_Panels_READ_DIRECTORY_UPLOAD_PLUGINS == "index.php") {
+if ($_Application_Module_Administration_PlugIns_READ_DIRECTORY_UPLOAD_PLUGINS == "." || $_Application_Module_Administration_PlugIns_READ_DIRECTORY_UPLOAD_PLUGINS == ".." || $_Application_Module_Administration_PlugIns_READ_DIRECTORY_UPLOAD_PLUGINS == "index.php") {
 /**
  * Do Nothing
 **/
 } else {
 
 echo ("
-System :: Plug-In :: Archive :: File :: <I>$_Application_Module_Administration_Panels_READ_DIRECTORY_UPLOAD_PLUGINS</I>
+System :: Plug-In :: Archive :: File :: <I>$_Application_Module_Administration_PlugIns_READ_DIRECTORY_UPLOAD_PLUGINS</I>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-Archive File :: Name: <I>$_Application_Module_Administration_Panels_READ_DIRECTORY_UPLOAD_PLUGINS</I><BR>
+Archive File :: Name: <I>$_Application_Module_Administration_PlugIns_READ_DIRECTORY_UPLOAD_PLUGINS</I><BR>
 Archive File :: Timestamp :: Upload :: <I></I><BR>
-<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_ADMINISTRATOR&#61;Control_Panel&amp;Action&#61;PlugIns&amp;Delete&#61;$_Application_Module_Administration_Panels_READ_DIRECTORY_UPLOAD_PLUGINS\" TITLE=\":: Delete :: The Selected Plug-In Archive File: $_Application_Module_Administration_Panels_READ_DIRECTORY_UPLOAD_PLUGINS ::\">Delete This Plug-In Archive</A><BR><BR>");
+<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_ADMINISTRATOR&#61;Control_Panel&amp;Action&#61;PlugIns&amp;Delete&#61;$_Application_Module_Administration_PlugIns_READ_DIRECTORY_UPLOAD_PLUGINS\" TITLE=\":: Delete :: The Selected Plug-In Archive File: $_Application_Module_Administration_PlugIns_READ_DIRECTORY_UPLOAD_PLUGINS ::\">Delete This Plug-In Archive</A><BR><BR>");
 
 } // [ + ] IF: STOP: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
 
@@ -227,7 +229,7 @@ Archive File :: Timestamp :: Upload :: <I></I><BR>
  ============================================================================================================
 */
 
-closedir($_Application_Module_Administration_Panels_OPEN_DIRECTORY_UPLOAD_PLUGINS);
+closedir($_Application_Module_Administration_PlugIns_OPEN_DIRECTORY_UPLOAD_PLUGINS);
 
 /*
  ============================================================================================================
@@ -237,9 +239,9 @@ closedir($_Application_Module_Administration_Panels_OPEN_DIRECTORY_UPLOAD_PLUGIN
  ============================================================================================================
 */
 
-if ($_GET["Delete"] == "$_Application_Module_Administration_Panels_READ_DIRECTORY_UPLOAD_PLUGIN") {
+if ($_GET["Delete"] == "$_Application_Module_Administration_PlugIns_READ_DIRECTORY_UPLOAD_PLUGINS") {
 
-unlink("./System/Plug-Ins/Archive/$_Application_Module_Administration_Panels_READ_DIRECTORY_UPLOAD_PLUGIN");
+unlink("./System/Plug-Ins/Archive/$_Application_Module_Administration_PlugIns_READ_DIRECTORY_UPLOAD_PLUGINS");
 
 													echo ("This Plug-In Archive File Was Deleted Successfully<BR><BR>");
 
