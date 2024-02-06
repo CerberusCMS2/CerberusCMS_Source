@@ -58,29 +58,59 @@
 */
 
 /*
-* Note: add options to list plug-in directories and delete plug-in directories, add options to list Plug-In zip file directory storage and delete Plug-In zip files from the directory storage, add options to upload Plug-In zip files
+ ============================================================================================================
+ +
+ +
+ + [ @ ] Application Module :: Administration :: Plug-Ins :: Variables
+ +
+ +
+ ============================================================================================================
 */
 
 /*
  ============================================================================================================
  +
- + File :: Plug-In :: Upload :: From Archive
+ + Application Module :: Administration :: Plug-Ins :: Variables :: POST Variables
  +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + System :: Directory :: Find and Open :: Plug-In :: Archive
  ============================================================================================================
 */
 
 $_Application_Module_Administration_PlugIns_FIND_DIRECTORY_UPLOAD_PLUGINS			= "./System/Plug-Ins/Archive/";
-$_Application_Module_Administration_PlugIns_OPEN_DIRECTORY_UPLOAD_PLUGINS			= opendir($_Application_Module_Administration_Panels_FIND_DIRECTORY_UPLOAD_PLUGINS);
-$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE				= $_Application_Module_Administration_Panels_FIND_DIRECTORY_UPLOAD_PLUGINS . basename($_FILES['AMA_PlugIns_Upload_PlugIn_File_Name']['name']);
+$_Application_Module_Administration_PlugIns_OPEN_DIRECTORY_UPLOAD_PLUGINS			= opendir($_Application_Module_Administration_PlugIns_FIND_DIRECTORY_UPLOAD_PLUGINS);
+
+/*
+ ============================================================================================================
+ + System :: Directory :: Upload :: Plug-In :: Archive :: File
+ ============================================================================================================
+*/
+
+$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE				= $_Application_Module_Administration_PlugIns_FIND_DIRECTORY_UPLOAD_PLUGINS . basename($_FILES['AMA_PlugIns_Upload_PlugIn_File_Name']['name']);
 $_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_TEMPORARY			= $_POST['AMA_PlugIns_Upload_PlugIn_Temporary'];
 $_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_BASENAME			= basename($_FILES['AMA_PlugIns_Upload_PlugIn_File_Name']['name']);
+
+/*
+ ============================================================================================================
+ + System :: Directory :: Upload :: Plug-In :: Archive :: Client-Uniform-Resource-Location
+ ============================================================================================================
+*/
+
 $_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_CURL_INPUT			= $_POST['AMA_PlugIns_Upload_PlugIn_CURL'];
 
 /*
  ============================================================================================================
- +
- + File :: Plug-In :: Upload :: From Client-From-Uniform-Resource-Location
- +
+ + File :: Plug-In :: Download :: From Client-From-Uniform-Resource-Location
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + IF: System :: Plug-In :: File :: Download :: cURL :: Input Form Has Not Executed, Display Input Form
  ============================================================================================================
 */
 
@@ -99,6 +129,12 @@ echo ("
 ");
 
 } else {
+
+/*
+ ============================================================================================================
+ + ELSE: System :: Plug-In :: File :: Upload :: cURL :: Input Form Has Executed, Download Plug-In File
+ ============================================================================================================
+*/
 
 $_Application_Module_Administration_PlugIns_FIND_PLUGIN_DIRECTORY_ARCHIVE						= "./System/Plug-Ins/Archive/$_Application_Module_Services_Kernel_POST_CURL_DOWNLOAD_KERNEL_INPUT";
 $_Application_Module_Administration_PlugIns_OPEN_PLUGIN_DIRECTORY_ARCHIVE						= fopen("$_Application_Module_Services_Kernel_FIND_KERNEL_FILE_INPUT", "w");
@@ -123,8 +159,7 @@ $_Application_Module_Administration_PlugIns_cURL_Download_Data_Selected							= 
 
 curl_close($_Application_Module_Administration_PlugIns_cURL_Initialize_Selected);
 
-<A HREF=\"$_ACCESS_URL_GIT_REPOSITORY_PLUGINS/$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_CURL_INPUT\" TITLE=\":: Open & Display :: The Master GIT Repository :: Requested System Plug-In File ::\" TARGET=\"_NEW\">$_ACCESS_URL_GIT_REPOSITORY_PLUGINS/$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_CURL_INPUT</A> ... Wait.<BR><BR>
-");
+echo ("<A HREF=\"$_ACCESS_URL_GIT_REPOSITORY_PLUGINS/$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_CURL_INPUT\" TITLE=\":: Open & Display :: The Master GIT Repository :: Requested System Plug-In File ::\" TARGET=\"_NEW\">$_ACCESS_URL_GIT_REPOSITORY_PLUGINS/$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_CURL_INPUT</A> ... Wait.<BR><BR>");
 
 echo ("* Done.<BR><BR>");
 
