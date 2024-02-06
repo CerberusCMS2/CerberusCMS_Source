@@ -64,15 +64,62 @@
 /*
  ============================================================================================================
  +
- + Upload :: Plug-In :: File
+ + File :: Plug-In :: Upload :: From Archive
  +
  ============================================================================================================
 */
 
-$_Application_Module_Administration_Panels_FIND_DIRECTORY_UPLOAD_PLUGINS			= "./System/Plug-Ins/";
+$_Application_Module_Administration_Panels_FIND_DIRECTORY_UPLOAD_PLUGINS			= "./System/Plug-Ins/Archive/";
+$_Application_Module_Administration_Panels_OPEN_DIRECTORY_UPLOAD_PLUGINS			= opendir($_Application_Module_Administration_Panels_FIND_DIRECTORY_UPLOAD_PLUGINS);
 $_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE				= $_Application_Module_Administration_Panels_FIND_DIRECTORY_UPLOAD_PLUGINS . basename($_FILES['AMA_PlugIns_Upload_PlugIn_File_Name']['name']);
 $_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE_TEMPORARY			= $_POST['AMA_PlugIns_Upload_PlugIn_Temporary'];
 $_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE_BASENAME			= basename($_FILES['AMA_PlugIns_Upload_PlugIn_File_Name']['name']);
+
+/*
+ ============================================================================================================
+ +
+ + File :: Plug-In :: Upload :: From Client-From-Uniform-Resource-Location
+ +
+ ============================================================================================================
+*/
+
+echo ("
+													<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+														System :: Plug-Ins :: Upload Plug-In :: Client-URL
+													<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+														<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_ADMINISTRATOR&#61;Control_Panel&amp;Action&#61;PlugIns&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
+															<TEXTAREA ROWS=\"15\" COLS=\"75\" NAME=\"AMA_PlugIns_Upload_PlugIn_CURL\">System Plug-In Archive Package File Name...</TEXTAREA><BR><BR>
+														Current Plug-In GIT URL<BR>
+															<TEXTAREA ROWS=\"15\" COLS=\"75\"></TEXTAREA><BR>
+															<INPUT TYPE=\"submit\" VALUE=\"Download Plug-In Package\">
+														</FORM><BR>
+");
+
+$_Application_Module_Services_Kernel_FIND_KERNEL_FILE_INPUT								= "./System/Plug-Ins/Archive/$_Application_Module_Services_Kernel_POST_CURL_DOWNLOAD_KERNEL_INPUT";
+$_Application_Module_Services_Kernel_OPEN_KERNEL_FILE_INPUT								= fopen("$_Application_Module_Services_Kernel_FIND_KERNEL_FILE_INPUT", "w");
+
+echo ("Kernel Application Message: Reading Latest Kernel File Using cURL Functionality Over Hyper-Text-Transfer-Protocol-Secure... Wait.<BR><BR>");
+
+$_Application_Module_Services_Kernel_cURL_Initialize_Selected							= curl_init();
+
+curl_setopt($_Application_Module_Services_Kernel_cURL_Initialize_Selected, CURLOPT_URL, "$_ACCESS_URL_GIT_REPOSITORY_PLUGINS/$_Application_Module_Administration_PlugIns_POST_CURL_DOWNLOAD_PLUGIN_INPUT.zip");
+curl_setopt($_Application_Module_Services_Kernel_cURL_Initialize_Selected, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($_Application_Module_Services_Kernel_cURL_Initialize_Selected, CURLOPT_RETURNTRANSFER, 1);
+
+$_Application_Module_Services_Kernel_cURL_Download_Kernel_Data_Selected						= curl_exec($_Application_Module_Services_Kernel_cURL_Initialize_Selected);
+curl_close($_Application_Module_Services_Kernel_cURL_Initialize_Selected);
+
+echo ("Kernel Application Message: Downloading Kernel File From:<BR>
+<A HREF=\"$_ACCESS_URL_GIT_REPOSITORY_KERNEL/$_Application_Module_Services_Kernel_POST_CURL_DOWNLOAD_KERNEL_INPUT/Kernel.kernel\" TITLE=\":: Open & Display :: The Master GIT Repository :: Requested Kernel File ::\" TARGET=\"_NEW\">$_ACCESS_URL_GIT_REPOSITORY_KERNEL/$_Application_Module_Services_Kernel_POST_CURL_DOWNLOAD_KERNEL_INPUT/Kernel.kernel</A> ... Wait.<BR><BR>
+");
+
+echo ("Done.<BR><BR>");
+
+echo ("Kernel Application Message: Writing Kernel Programming Source Code To Kernel File On Local Hard Disk Drive... Wait.<BR><BR>");
+
+fwrite($_Application_Module_Services_Kernel_OPEN_KERNEL_FILE_INPUT, "$_Application_Module_Services_Kernel_cURL_Download_Kernel_Data_Selected");
+
+echo ("Done. Exiting.<BR><BR>");
 
 /*
  ============================================================================================================
@@ -83,12 +130,12 @@ $_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE_BASENAME			= 
 if (!$_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE_TEMPORARY) {
 
 echo ("
-													<BR><HR><CENTER><B>Upload Plug-In</B></CENTER><HR>
+													<HR ALIGN=\"LEFT\" WIDTH=\"25%\">System :: Plug-Ins :: Upload Plug-In :: Archive Package<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 														<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_ADMINISTRATOR&#61;Control_Panel&amp;Action&#61;PlugIns&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\" ENCTYPE=\"multipart/form-data\">
 																<INPUT TYPE=\"hidden\" NAME=\"AMA_PlugIns_Upload_PlugIn_Temporary\" VALUE=\"1\">
-															This Plug-In File must have a File Extension of: <I>.zip</I> which is case-sensitive<BR>
+															This Plug-In File Must Have a File Extension of: <I>.zip</I> Which Is Case-Sensitive<BR>
 																<INPUT TYPE=\"file\" NAME=\"AMA_PlugIns_Upload_PlugIn_File_Name\"><BR>
-																<INPUT TYPE=\"submit\" VALUE=\"Upload Plug-In\">
+																<INPUT TYPE=\"submit\" VALUE=\"Upload Plug-In Package\">
 														</FORM><BR><BR>
 ");
 
@@ -106,7 +153,7 @@ echo ("
  ============================================================================================================
 */
 
-if (file_exists("./System/Plug-Ins/$_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE_BASENAME")) {
+if (file_exists("./System/Plug-Ins/Archive/$_Application_Module_Administration_Panels_POST_UPLOAD_PLUGIN_FILE_BASENAME")) {
 
 													echo ($_Application_Module_Administration_Message_PlugIns_UPLOAD_HALTED);
 
@@ -131,4 +178,70 @@ if (move_uploaded_file($_FILES['AMA_PlugIns_Upload_PlugIn_File_Name']['tmp_name'
 } // [ + ] IF: Upload :: Plug-In :: File
 
 } // [ + ] IF: Upload :: Plug-In :: Input Form Variables :: HAVE NOT Executed
+
+
+/*
+ ============================================================================================================
+ +
+ + Plug-Ins Directory
+ +
+ ============================================================================================================
+*/
+
+													echo ("<HR ALIGN=\"LEFT\" WIDTH=\"25%\">System :: Plug-Ins :: Existing Plug-In Packages<HR ALIGN=\"LEFT\" WIDTH=\"25%\"><BR><BR>");
+
+/*
+ ============================================================================================================
+ + WHILE: Reading :: Directory :: Administration Applications
+ ============================================================================================================
+*/
+
+while (($_Application_Module_Administration_Panels_READ_DIRECTORY_UPLOAD_PLUGINS = readdir($_Application_Module_Administration_Panels_OPEN_DIRECTORY_UPLOAD_PLUGINS))) {
+
+/*
+ ============================================================================================================
+ + IF: Stop :: Exploit :: Local-File-Inclusion and Remote-File-Inclusion
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Administration_Panels_READ_DIRECTORY_UPLOAD_PLUGINS == "." || $_Application_Module_Administration_Panels_READ_DIRECTORY_UPLOAD_PLUGINS == ".." || $_Application_Module_Administration_Panels_READ_DIRECTORY_UPLOAD_PLUGINS == "index.php") {
+/**
+ * Do Nothing
+**/
+} else {
+
+echo ("
+System :: Plug-In :: Archive :: File :: <I>$_Application_Module_Administration_Panels_READ_DIRECTORY_UPLOAD_PLUGINS</I>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Archive File :: Name: <I>$_Application_Module_Administration_Panels_READ_DIRECTORY_UPLOAD_PLUGINS</I><BR>
+Archive File :: Timestamp :: Upload :: <I></I><BR>
+<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_ADMINISTRATOR&#61;Control_Panel&amp;Action&#61;PlugIns&amp;Delete&#61;$_Application_Module_Administration_Panels_READ_DIRECTORY_UPLOAD_PLUGINS\" TITLE=\":: Delete :: The Selected Plug-In Archive File: $_Application_Module_Administration_Panels_READ_DIRECTORY_UPLOAD_PLUGINS ::\">Delete This Plug-In Archive</A><BR><BR>");
+
+} // [ + ] IF: STOP: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
+
+} // [ + ] WHILE: Reading :: Directory :: Plug-Ins
+
+/*
+ ============================================================================================================
+ + Close :: Directory :: Plug-Ins
+ ============================================================================================================
+*/
+
+closedir($_Application_Module_Administration_Panels_OPEN_DIRECTORY_UPLOAD_PLUGINS);
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Plug-Ins :: Delete :: Selected Plug-In
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Delete"] == "$_Application_Module_Administration_Panels_READ_DIRECTORY_UPLOAD_PLUGIN") {
+
+unlink("./System/Plug-Ins/Archive/$_Application_Module_Administration_Panels_READ_DIRECTORY_UPLOAD_PLUGIN");
+
+													echo ("This Plug-In Archive File Was Deleted Successfully<BR><BR>");
+
+} // [ + ] IF: Internal Application: Plug-Ins :: Delete :: Selected Plug-In
 ?>
