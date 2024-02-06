@@ -198,118 +198,117 @@ echo ("
 <CENTER><OBJECT HEIGHT=\"300\" WIDTH=\"80%\" DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Recommendations_Personal_Gear_Travel_Backpacking_General.txt\"></OBJECT></CENTER>
 
 <BR><BR>
-HeadWear
+Gender :: Male :: HeadWear
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
 <BR><BR>
-FootWear
+Gender :: Male :: FootWear
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
 <BR><BR>
-Boots
+Gender :: Male :: Boots
 <HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/FootWear/Boots/Boots_DrMartens_Combes_Nylon_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
-Sandals
+Gender :: Male :: Sandals
 <HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/FootWear/Sandals/Sandals_Olukai_Brown.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/FootWear/Sandals/Sandals_QuickSilver_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
-Laces
+Gender :: Male :: Boots :: Laces
 <HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/FootWear/Laces/Laces_BootLaces_Kevlar_Paracord_MetalTips_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
-Rubber Cement
+Gender :: Male :: Shoes :: Rubber Cement
 <HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/FootWear/RubberCement/RubberCement_ShoeGoo.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
-Rubber Cement
+Gender :: Male :: Boots :: Inserts
 <HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/FootWear/MemoryFoam/FootWear_MemoryFoam_AirPlus_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
-EyeWear
+Gender :: Male :: EyeWear
 <HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 
 <BR><BR>
-Smart Glasses
+Gender :: Male :: EyeWear :: Smart Glasses
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/HeadWear/EyeWear/SmartGlasses/SmartGlasses_Ray-Ban_Wayfarer_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
-Sun Glasses
+Gender :: Male :: EyeWear :: Sun Glasses
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/HeadWear/EyeWear/SunGlasses/SunGlasses_Lacoste_Aviator.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/HeadWear/EyeWear/SunGlasses/SunGlasses_Ray-Ban_Aviator_Chromance_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/HeadWear/EyeWear/SunGlasses/SunGlasses_Vuarnet_007_Brown.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
-EarWear
+Gender :: Male :: EarWear
 <HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 
 <BR><BR>
-Earrings
+Gender :: Male :: EarWear :: Earrings
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 
 <BR><BR>
-NeckWear
+Gender :: Male :: NeckWear
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
 <BR><BR>
-Shemagh / Kefflyeh
+Gender :: Male :: NeckWear :: Shemagh / Kefflyeh
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/NeckWear/Shemagh/Shemagh_VoodooTactical_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
-NeckGuard
+Gender :: Male :: NeckWear :: NeckGuard
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/NeckWear/NeckGuard/NeckGuard_GuardWell_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
-Scarf
+Gender :: Male :: NeckWear :: Scarf
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/NeckWear/Scarf/Scarf_BurBerry_Cashmere_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
-TorsoWear
+Gender :: Male :: TorsoWear
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
 <BR><BR>
-Jackets :: Performance
+Gender :: Male :: TorsoWear :: Jacket :: Performance
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/TorsoWear/Jacket/Jacket_UnderArmor_Polyester_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
-Jackets :: Rain Jackets
+Gender :: Male :: TorsoWear :: Jacket :: Rain Jacket
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/TorsoWear/Jacket/RainJacket_4Element_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/TorsoWear/Jacket/RainJacket_OzarkTrail_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
-
 <BR><BR>
-Shirts
+Gender :: Male :: TorsoWear :: Shirt
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/TorsoWear/Shirt/Shirt_UnderArmor_Polyester_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
-ArmWear
+Gender :: Male :: ArmWear
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
 <BR><BR>
-WristWear
+Gender :: Male :: WristWear
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
 <BR><BR>
-Analog Watches
+Gender :: Male :: WristWear :: Analog Watch
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/WristWear/Watch/AnalogWatch/AnalogWatch_Timex_Expedition_Titanium.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
-Smart Watches
+Gender :: Male :: WristWear :: Smart Watch
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/WristWear/Watch/SmartWatch/SmartWatch_DMCooler_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/WristWear/Watch/SmartWatch/SmartWatch_Google_Pixel_2.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
@@ -317,99 +316,108 @@ Smart Watches
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/WristWear/Watch/SmartWatch/SmartWatch_Samsung_Galaxy_Watch_5.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
-LegWear
+Gender :: Male :: LegWear
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
 <BR><BR>
-UnderWear
+Gender :: Male :: UnderWear
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
 <BR><BR>
-Thermals
+Gender :: Male :: UnderWear :: Thermals
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/UnderWear/Thermal/Thermal_Shirt_UnderArmor_Polyester.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/UnderWear/Thermal/Thermal_Pant_UnderArmor_Polyester.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/UnderWear/Thermal/Thermal_Set_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
-Accessories
+Gender :: Male :: Accessories
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
 <BR><BR>
-Suspenders
+Gender :: Male :: Accessories :: Suspenders
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Suspenders/Suspenders_RothcoX_Nylon_Polyester_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
-Accessories :: Survival :: FireStarter
+Gender :: Male :: Accessories :: Survival :: FireStarter
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Survival/Accessories_Survival_FireStarter.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
-Accessories :: Survival :: Multi-Card Tool
+Gender :: Male :: Accessories :: Multi-Card Tool
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Survival/Accessories_Survival_VoodooTactical_MultiCard_Tool.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
-Accessories :: Survival :: Flash Light
+Gender :: Male :: Accessories :: Flash Light
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Flashlight/Flashlight_Unbranded_Aluminum_T6_LightSaber.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Flashlight/Flashlight_GearLight_UVLight.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
-Accessories :: Writing :: Pen
+Gender :: Male :: Accessories :: Writing :: Pen
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Writing/Writing_Zebra_Pen_StainlessSteel.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
-Knives
+Gender :: Male :: Knife
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
 <BR><BR>
-Knife :: Desert :: Glass
+Gender :: Male :: Knife :: Desert :: Glass
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Knives/Knife_Uzi_Desert_Glass.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
-Knife :: All Weather :: Survival
+Gender :: Male :: Knife :: All Weather :: Survival
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Knives/Knife_ColdSteel_Survival.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
+<BR><BR>
+Gender :: Male :: Knife :: All Weather :: Fixed Blade Lanyard
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Knives/Knife_ColdSteel_Survival.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>
+High Quality Rust-Proof Fixed Blade Knives With Blood-Drain, Hand-Guard and Kevlar / Paracord 750 Lanyard Make For The Most Dangerous Knife In The World. Why ? Because once
+the lanyard is securely fastened around the wrist the knife cannot be removed from the wrist or from the hand and when anyone attempts to take the knife they are instantly cut by the knife because
+they cannot take it away from the hand or the wrist. Knife fighting with a lanyard is the best way to go because it cannot be removed from the hand or from the wrist therefore the only thing the knife weilder
+can do is keep up with stabbing or cutting motions. One can kill bears, wild animals, enemies or even those with an automatic rifle or gun close range. Demonstrations have proven that an enemy with a gun cannot
+aim and shoot fast enough close range against someone with a lanyard fixed blade knife. Fixed blade knives do not bend or break.
 
 <BR><BR>
-Miscellanious
+Gender :: Male :: Miscellanious
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
 <BR><BR>
-Blankets
+Gender :: Male :: Blanket
 <HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 
 <BR><BR>
-Blankets :: Mexican Blankets
+Gender :: Male :: Blanket :: Mexican Blankets
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Blanket/Blanket_Mexican_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
-Backpack
+Gender :: Male :: Backpack
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
 <BR><BR>
-Backpack :: Military Issue :: Desert :: Molle 3-Day Backpack
+Gender :: Male :: Backpack :: Military Issue :: Desert :: Molle 3-Day Backpack
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Backpack/Molle/Backpack_Unbranded_MilitaryIssue_Molle_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
-Backpack :: Military Issue :: All Weather :: Waterproof :: 3-Day Backpack
+Gender :: Male :: Backpack :: Military Issue :: All Weather :: Waterproof :: 3-Day Backpack
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Backpack/Waterproof/Backpack_Unbranded_Waterproof.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
-Backpack :: Attachments :: Plastic ID Container
+Gender :: Male :: Backpack :: Attachments :: Plastic ID Container
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Backpack/Attachments/Backpack_Attachments_Plastic_ID_Container.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 
 <BR><BR>
-Backpack :: Attachments :: Carabiner
+Gender :: Male :: Backpack :: Attachments :: Carabiner
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Backpack/Attachments/Backpack_Attachments_NiteIze_Carabiner.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Backpack/Attachments/Backpack_Attachments_NiteIze_CamJam.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
