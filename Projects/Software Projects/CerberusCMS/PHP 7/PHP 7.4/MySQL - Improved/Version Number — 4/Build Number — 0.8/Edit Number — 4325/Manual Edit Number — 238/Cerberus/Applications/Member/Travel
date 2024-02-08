@@ -416,7 +416,7 @@ Gender :: Male :: Financial :: Cards :: American Express
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Financial/Cards/Financial_Card_AmericanExpress_BlueBird.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Financial/Cards/Financial_Card_AmericanExpress_Serve.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
-The American Express &#8482; Cash-Pre-Paid card accounts and card can be used for travel. The cards are high security because the cards can be activated and deactivated from the Internet, all of the card transactions can be tracked
+The American Express backed &#8482; Cash-Pre-Paid card accounts and card can be used for travel. The cards are high security because the cards can be activated and deactivated from the Internet, all of the card transactions can be tracked
 and read by friends and family from the Internet or over the phone, the cards can be instantly deactivated and new cards can be sent out by next-day air delivery to any location, the accounts can be replenished with funds by the
 account owner or friends and family and finally large amounts of cash can be withdrawn anywhere in the world through RIA Money Transfer or where any cash location pickup is available.
 
@@ -426,6 +426,9 @@ Gender :: Male :: Financial :: Cards :: Visa
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Financial/Cards/Financial_Card_Visa_BlueBird.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Financial/Cards/Financial_Card_Visa_CashApp.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Financial/Cards/Financial_Card_Visa_Chime.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The Visa backed &#8482; Cash-Pre-Paid card accounts and card can be used for travel. The cards are high security because the cards can be activated and deactivated from the Internet, all of the card transactions can be tracked
+and read by friends and family from the Internet or over the phone, the cards can be instantly deactivated and new cards can be sent out by next-day air delivery to any location, the accounts can be replenished with funds by the
+account owner or friends and family and finally large amounts of cash can be withdrawn anywhere in the world through RIA Money Transfer or where any cash location pickup is available.
 
 <BR><BR>
 Gender :: Male :: Miscellanious
@@ -439,6 +442,8 @@ Gender :: Male :: Miscellanious :: Valuable
 Gender :: Male :: Miscellanious :: Sterling Silver
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Miscellanious/Miscellanious_Sterling_Silver_Wire.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The Sterling Silver Wire can be purchased in spools and then wrapped around objects that a traveler travels with. The Sterling Silver Wire can then be sold to individuals or to businesses to get large amounts of
+cash in emergency situations.
 
 <BR><BR>
 Gender :: Male :: Weather Safety
