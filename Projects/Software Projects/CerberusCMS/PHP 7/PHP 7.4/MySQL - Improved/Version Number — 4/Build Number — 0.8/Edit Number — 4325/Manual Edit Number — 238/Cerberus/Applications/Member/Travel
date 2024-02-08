@@ -454,9 +454,10 @@ Gender :: Male :: Weather Safety :: Tent
 <HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 
 <BR><BR>
-Gender :: Male :: Weather Safety :: Tent :: Lightweight
+Gender :: Male :: Weather Safety :: Tent :: Light-Weight
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Tent/Tent_1Person_OzarkTrail_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown Light-Weight Tent has enough room for 1 person, the tent is waterproof and weatherproof. This tent can be easily carried in a slim and discrete tube for quick movement.
 
 <BR><BR>
 Gender :: Male :: Weather Safety :: Sleeping Bag
