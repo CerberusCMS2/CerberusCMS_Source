@@ -395,11 +395,13 @@ Gender :: Male :: Wallet
 Gender :: Male :: Wallet :: Passport
 <HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Wallet/Wallet_SwissGear_Passport.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The Swiss Gear &#8482; Passport Wallet can be modified with extra-tough stitching re-inforcements to guarantee long lasting Passport security while traveling.
 
 <BR><BR>
 Gender :: Male :: Wallet :: Discrete
 <HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Wallet/Wallet_TrayVax_Metal.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The TrayVax &#8482; Metal wallet is guaranteed to keep secure all folded money and financial cards.
 
 <BR><BR>
 Gender :: Male :: Financial
@@ -414,6 +416,9 @@ Gender :: Male :: Financial :: Cards :: American Express
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Financial/Cards/Financial_Card_AmericanExpress_BlueBird.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Financial/Cards/Financial_Card_AmericanExpress_Serve.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The American Express &#8482; Cash-Pre-Paid card accounts and card can be used for travel. The cards are high security because the cards can be activated and deactivated from the Internet, all of the card transactions can be tracked
+and read by friends and family from the Internet or over the phone, the cards can be instantly deactivated and new cards can be sent out by next-day air delivery to any location, the accounts can be replenished with funds by the
+account owner or friends and family and finally large amounts of cash can be withdrawn anywhere in the world through RIA Money Transfer or where any cash location pickup is available.
 
 <BR><BR>
 Gender :: Male :: Financial :: Cards :: Visa
