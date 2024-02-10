@@ -219,7 +219,7 @@ Gender :: Male :: EyeWear :: Sun Glasses
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/HeadWear/EyeWear/SunGlasses/SunGlasses_Lacoste_Aviator.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/HeadWear/EyeWear/SunGlasses/SunGlasses_Ray-Ban_Aviator_Chromance_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/HeadWear/EyeWear/SunGlasses/SunGlasses_Vuarnet_007_Brown.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
-The shown Sun Glasses with polarized lenses make for a high quality viewing experience in different weather conditions. The Lacoste &#8482; Aviator sun glasses are a high quality product made by a traditional French company.
+The shown Sun Glasses with polarized lenses make for a high quality viewing experience in different weather conditions.
 
 <BR><BR>
 Gender :: Male :: EarWear
@@ -301,7 +301,7 @@ Gender :: Male :: WristWear :: Smart Watch
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/WristWear/Watch/SmartWatch/SmartWatch_Google_Pixel_2.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/WristWear/Watch/SmartWatch/SmartWatch_Lenovo_Pro.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/WristWear/Watch/SmartWatch/SmartWatch_Samsung_Galaxy_Watch_5.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
-The shown Smart Watches &#8482; make for an excellent electronics accessory that can almost always provide radio communications such as voice and video communications directly from the wrist.
+The shown Smart Watches &#8482; make for an excellent electronics accessory that can almost always provide radio communications over Mobile Cell Phone Internet Connection. Radio communications such as voice and video communications can be established directly from the wrist.
 
 <BR><BR>
 Gender :: Male :: HandWear
@@ -457,7 +457,7 @@ Gender :: Male :: Weather Safety :: Tent
 Gender :: Male :: Weather Safety :: Tent :: Light-Weight
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Tent/Tent_1Person_OzarkTrail_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
-The shown Light-Weight Tent has enough room for 1 person, the tent is waterproof and weatherproof. This tent can be easily carried in a slim and discrete tube for quick movement.
+The shown Light-Weight Tent has enough room for 1 person, the tent is waterproof and weatherproof. This tent can be easily carried in a slim and discrete tube for quick travel from campsite to campsite.
 
 <BR><BR>
 Gender :: Male :: Weather Safety :: Sleeping Bag
@@ -467,6 +467,8 @@ Gender :: Male :: Weather Safety :: Sleeping Bag
 Gender :: Male :: Weather Safety :: Sleeping Bag :: Lightweight
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Sleeping Bag/SleepingBag_0Degree_NorthFace_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown Light-Weight Sleepig Bag with modifications of stitching reinforcement and additional water-proof, moisture-proof and cold-proof material is usable down to 0 degrees Farenheit and will keep the body extra warm down to 0 degrees Farenheit. The additional material will make the shown sleeping bag water-proof in up to
+several inches of direct rain fall on the sleeping bag for up to 48 hours before the rain fall begins to soak into the material.
 
 <BR><BR>
 Gender :: Male :: Backpack
