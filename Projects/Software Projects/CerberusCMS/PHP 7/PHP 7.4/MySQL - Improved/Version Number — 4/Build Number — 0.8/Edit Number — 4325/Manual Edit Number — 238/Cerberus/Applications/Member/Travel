@@ -676,6 +676,7 @@ Gender :: Male :: Accessories :: Survival :: Lighter :: Kerosene
 Gender :: Male :: Accessories :: Survival :: Lighter :: Kerosene :: Zippo
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Lighter/Lighter_Kerosene_Zippo.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown Zippo &#8482; Kerosene Lighter can be modified to project an open flame of several inches and additional Kerosene Cotton can be placed within the lighter to store more Korosene Fluid.
 
 <BR><BR>
 Gender :: Male :: Accessories :: Survival :: Lighter :: Zippo :: Accessories
@@ -683,6 +684,7 @@ Gender :: Male :: Accessories :: Survival :: Lighter :: Zippo :: Accessories
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Lighter/Lighter_Kerosene_Zippo_Flint.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Lighter/Lighter_Kerosene_Zippo_Fluid.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Lighter/Lighter_Kerosene_Zippo_Wick.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown Zippo &#8482; Kerosene Lighter Accessories provide long lasting fire capability for long durations of travel and backpacking.
 
 <BR><BR>
 Gender :: Male :: Accessories :: Survival :: Lighter :: Butane
@@ -700,22 +702,27 @@ and then modified where then the parts can be placed within the non-branded alum
 Gender :: Male :: Accessories :: Survival :: FireStarter
 <HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Survival/Accessories_Survival_FireStarter.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown non-branded Fire Starter Stick can be used with a knife to start a fire by scraping this Fire Starter Stick underneath flammable ember material collected near a campsite.
 
 <BR><BR>
 Gender :: Male :: Accessories :: Multi-Card Tool
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Survival/Accessories_Survival_VoodooTactical_MultiCard_Tool.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown metal Multi-Card Tool can be used for hundreds if not more purposes while traveling and backpacking. It can be used as a screw driver, cutting tool, bottle opener and many different things.
 
 <BR><BR>
 Gender :: Male :: Accessories :: Flash Light
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Flashlight/Flashlight_Unbranded_Aluminum_T6_LightSaber.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Flashlight/Flashlight_GearLight_UVLight.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown non-branded Flash Light contains a T-6 or a T-8 L.E.D. bulb that can be concentrated onto a view area and is almost as bright as a car spot light. The battery can be upgraded to a high quality high capacity 21700 cylinderical
+battery of 10,000 Miliampere Hours for extremely bright and long lasting light while traveling and while backpacking.
 
 <BR><BR>
 Gender :: Male :: Accessories :: Writing :: Pen
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Writing/Writing_Zebra_Pen_StainlessSteel.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The Zebra &#8482; Stainless Steel Pens and Pencils provide high quality writing that remains rust-proof, fire-proof, water-proof and moisture-proof while traveling and while backpacking.
 
 <BR><BR>
 Gender :: Male :: Knife
@@ -725,11 +732,14 @@ Gender :: Male :: Knife
 Gender :: Male :: Knife :: Desert :: Glass
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Knives/Knife_Uzi_Desert_Glass.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown Uzi &#8482; Desert Weather Condition Folding Pocket Knife is an excellent tool while traveling and while backpacking. The glass handle is heat-proof and it can be left out in the direct sun at up to
+117 degrees farenheight for an unlimited amount of time without damage to the knife.
 
 <BR><BR>
 Gender :: Male :: Knife :: All Weather :: Survival
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Knives/Knife_ColdSteel_Survival.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown Cold Steel &#8482; Survival Knife remains one of the best long lasting survival knives available. The hilt has a lanyard hole where a lanyard cord can be attached.
 
 <BR><BR>
 Gender :: Male :: Knife :: All Weather :: Fixed Blade Lanyard
@@ -755,7 +765,7 @@ Gender :: Male :: Blanket
 Gender :: Male :: Blanket :: Mexican Blankets
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Blanket/Blanket_Mexican_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
-The shown Mexican Blanket can be used as a poncho as well as a blanket. The fabric material is guaranteed for long lasting use and will keep the body very warm in different weather conditions.
+The shown Mexican Blanket can be used as a poncho as well as a blanket. It is hand made in Mexico. The fabric material is guaranteed for long lasting use and will keep the body very warm in different weather conditions.
 ");
 
 } // [ + ] IF: Internal Application: Display :: Backpacking Gear :: Type :: General
