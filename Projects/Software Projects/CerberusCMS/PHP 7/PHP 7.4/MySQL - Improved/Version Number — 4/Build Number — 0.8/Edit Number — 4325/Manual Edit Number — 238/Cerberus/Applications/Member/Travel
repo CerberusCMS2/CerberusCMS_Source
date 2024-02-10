@@ -492,7 +492,7 @@ for pickpockets to cut the backpack open with a razor blade to steal any items o
 Gender :: Male :: Backpack :: Military Issue :: All Weather :: Waterproof :: 3-Day Backpack
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Backpack/Waterproof/Backpack_Unbranded_Waterproof.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
-The shown non-branded military issue backpack looks like a water-proof cooler backpack, but it is not. This backpack is compeletely waterproof and air tight. This backpack can be completely submerged into water
+The shown non-branded military issue backpack looks like a water-proof cooler backpack, but it is not. This backpack is compeletely water-proof and air-tight. This backpack can be completely submerged into water
 and all of the items within it will remain completely dry especially if the items are placed into water-proof plastic bags. This backpack is usable in any weather conditions and it will not melt in high heat
 desert weather conditions in up to 48 hours of direct sunlight on the backpack at up to ~115 degrees farenheit.
 
@@ -500,6 +500,7 @@ desert weather conditions in up to 48 hours of direct sunlight on the backpack a
 Gender :: Male :: Backpack :: Attachments :: Plastic ID Container
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Backpack/Attachments/Backpack_Attachments_Plastic_ID_Container.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown plastic ID containers can be attached to the backpack and a personal ID or an address ID can be placed into the plastic ID container so that everyone will know who the backpack belongs to.
 
 <BR><BR>
 Gender :: Male :: Backpack :: Attachments :: Carabiner
@@ -507,6 +508,8 @@ Gender :: Male :: Backpack :: Attachments :: Carabiner
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Backpack/Attachments/Backpack_Attachments_NiteIze_Carabiner.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Backpack/Attachments/Backpack_Attachments_NiteIze_CamJam.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Backpack/Attachments/Backpack_Attachments_BlackDiamond_Carabiner.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown Black Diamond &#8482; Carabiner can be used with Paracord 750 and rock climbing Paracord and rope. This specific carabiner can support up to 1,000 pounds of weight. The NiteIze &#8482; Carabiners and CamJams
+can be used to attach to the backpack and to other objects.
 
 <BR><BR>
 Gender :: Male :: Electronics
