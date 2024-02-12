@@ -610,6 +610,8 @@ $_ARCHITECT_INSTALL_FORM_POST_URL_SECURE_TLS_CUSTOM								= $_POST['Architect_U
 $_ARCHITECT_INSTALL_FORM_POST_URL_CLEARTEXT									= $_POST['Architect_URL_ClearText'];
 $_ARCHITECT_INSTALL_FORM_POST_URL_GIT_REPOSITORY_APPLICATIONS							= $_POST['Architect_URL_GIT_Repository_Applications'];
 $_ARCHITECT_INSTALL_FORM_POST_URL_GIT_REPOSITORY_KERNEL								= $_POST['Architect_URL_GIT_Repository_Kernel'];
+$_ARCHITECT_INSTALL_FORM_POST_URL_GIT_REPOSITORY_PLUGINS							= $_POST['Architect_URL_GIT_Repository_PlugIns'];
+$_ARCHITECT_INSTALL_FORM_POST_URL_GIT_REPOSITORY_THEMES								= $_POST['Architect_URL_GIT_Repository_Themes'];
 $_ARCHITECT_INSTALL_FORM_POST_SYSTEM_PASSWORD_MAINTENANCE							= $_POST['Architect_System_Password_Maintenance'];
 $_ARCHITECT_INSTALL_FORM_POST_SYSTEM_PASSWORD_MAINTENANCE_HASHED						= hash('sha256', $_ARCHITECT_INSTALL_FORM_POST_SYSTEM_PASSWORD_MAINTENANCE);
 
@@ -986,12 +988,20 @@ echo ("
 		<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 			
 		* <I>GIT :: Repository :: Uniform-Resource-Location With Path-To-Directory :: Applications</I>:<BR>
-		Example: http://www.GITWebServer.com/RepositoryName/Version/Edit Number/Manual Edit Number/Applications<BR>
+		Example: http://www.GITWebServer.com/RepositoryName/Version Number/Edit Number/Manual Edit Number/Applications<BR>
 			<INPUT TYPE=\"TEXT\" NAME=\"Architect_URL_GIT_Repository_Applications\"><BR><BR>
 			
 		* <I>GIT :: Repository :: Uniform-Resource-Location With Path-To-Directory :: Kernel</I>:<BR>
-		Example: http://www.GITWebServer.com/RepositoryName/Version/Edit Number/Manual Edit Number/System/Kernel/Version<BR>
+		Example: http://www.GITWebServer.com/RepositoryName/Version Number/Edit Number/Manual Edit Number/System/Kernel/Version<BR>
 			<INPUT TYPE=\"TEXT\" NAME=\"Architect_URL_GIT_Repository_Kernel\"><BR><BR>
+
+		* <I>GIT :: Repository :: Uniform-Resource-Location With Path-To-Directory :: Plug-Ins</I>:<BR>
+		Example: http://www.GITWebServer.com/RepositoryName/Version Number/Edit Number/Manual Edit Number/System/Plug-Ins<BR>
+			<INPUT TYPE=\"TEXT\" NAME=\"Architect_URL_GIT_Repository_PlugIns\"><BR><BR>
+
+		* <I>GIT :: Repository :: Uniform-Resource-Location With Path-To-Directory :: Themes</I>:<BR>
+		Example: http://www.GITWebServer.com/RepositoryName/Version Number/Edit Number/Manual Edit Number/Themes<BR>
+			<INPUT TYPE=\"TEXT\" NAME=\"Architect_URL_GIT_Repository_Themes\"><BR><BR>
 			
 		<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 		Settings :: Maintenance
@@ -1327,6 +1337,8 @@ $_SYSTEM_CONFIGURATION_ACCESS_FILE_DATA							= "<?php
 \$_ACCESS_URL_SECURE_TLS_CUSTOM								= \"$_ARCHITECT_INSTALL_FORM_POST_URL_SECURE_TLS_CUSTOM\";
 \$_ACCESS_URL_GIT_REPOSITORY_APPLICATIONS						=\"$_ARCHITECT_INSTALL_FORM_POST_URL_GIT_REPOSITORY_APPLICATIONS\";
 \$_ACCESS_URL_GIT_REPOSITORY_KERNEL							=\"$_ARCHITECT_INSTALL_FORM_POST_URL_GIT_REPOSITORY_KERNEL\";
+\$_ACCESS_URL_GIT_REPOSITORY_PLUGINS							=\"$_ARCHITECT_INSTALL_FORM_POST_URL_GIT_REPOSITORY_PLUGINS\";
+\$_ACCESS_URL_GIT_REPOSITORY_THEMES							=\"$_ARCHITECT_INSTALL_FORM_POST_URL_GIT_REPOSITORY_THEMES\";
 \$_ACCESS_ELECTRONIC_MAIL_ADDRESS_SYSTEM_ADMINISTRATOR					= \"$_ARCHITECT_INSTALL_FORM_POST_ELECTRONIC_MAIL_ADDRESS_SYSTEM_ADMINISTRATOR\";
 \$_ACCESS_ELECTRONIC_MAIL_ADDRESS_SYSTEM_ROOT						= \"$_ARCHITECT_INSTALL_FORM_POST_ELECTRONIC_MAIL_ADDRESS_SYSTEM_ROOT\";
 \$_ACCESS_ELECTRONIC_MAIL_ADDRESS_SYSTEM_SERVICES					= \"$_ARCHITECT_INSTALL_FORM_POST_ELECTRONIC_MAIL_ADDRESS_SYSTEM_SERVICES\";
