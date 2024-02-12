@@ -120,6 +120,22 @@ $_ACCESS_URL_GIT_REPOSITORY_APPLICATIONS			= "";
 $_ACCESS_URL_GIT_REPOSITORY_KERNEL				= "";
 
 /*
+ ==================================================
+ + GIT :: Repository :: Plug-Ins
+ ==================================================
+*/
+
+$_ACCESS_URL_GIT_REPOSITORY_PLUGINS				= "";
+
+/*
+ ==================================================
+ + GIT :: Repository :: Themes
+ ==================================================
+*/
+
+$_ACCESS_URL_GIT_REPOSITORY_THEMES				= "";
+
+/*
  ============================================================================================================
  +
  + System :: Configuration :: Electronic Mail Addresses and Electronic Mail Message Encryption
