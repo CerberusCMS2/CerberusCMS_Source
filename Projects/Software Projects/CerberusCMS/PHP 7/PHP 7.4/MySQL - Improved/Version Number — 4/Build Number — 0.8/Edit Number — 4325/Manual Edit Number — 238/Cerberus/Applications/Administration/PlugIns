@@ -160,11 +160,11 @@ $_Application_Module_Administration_PlugIns_cURL_Download_Data_Selected							= 
 
 curl_close($_Application_Module_Administration_PlugIns_cURL_Initialize_Selected);
 
-echo ("<A HREF=\"$_ACCESS_URL_GIT_REPOSITORY_PLUGINS/$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_CURL_INPUT\" TITLE=\":: Open & Display :: The Master GIT Repository :: Requested System Plug-In File ::\" TARGET=\"_NEW\">$_ACCESS_URL_GIT_REPOSITORY_PLUGINS/$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_CURL_INPUT</A> ... Wait.<BR><BR>");
+echo ("<A HREF=\"$_ACCESS_URL_GIT_REPOSITORY_PLUGINS/$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_CURL_INPUT\" TITLE=\":: Open & Display :: The Master GIT Repository :: Requested System Plug-In File ::\" TARGET=\"_NEW\">$_ACCESS_URL_GIT_REPOSITORY_PLUGINS/$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_CURL_INPUT</A> ... Wait.<BR>");
 
 echo ("* Done.<BR><BR>");
 
-echo ("* Plug-In Application Message: Writing Requested System Plug-In File To Archive Directory... Wait.<BR><BR>");
+echo ("* Plug-In Application Message: Writing Requested System Plug-In File To Archive Directory... Wait.<BR>");
 
 fwrite($_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_CURL_INPUT, "$_Application_Module_Administration_PlugIns_cURL_Download_Data_Selected");
 
