@@ -573,6 +573,16 @@ echo ("
 												<FORM>
 													<TEXTAREA ROWS=\"7\" COLS=\"50\">$_ACCESS_URL_GIT_REPOSITORY_KERNEL</TEXTAREA>
 												</FORM><BR><BR>
+
+												<B>Uniform-Resource-Location :: GIT :: Plug-Ins</B><BR>
+												<FORM>
+													<TEXTAREA ROWS=\"7\" COLS=\"50\">$_ACCESS_URL_GIT_REPOSITORY_PLUGINS</TEXTAREA>
+												</FORM><BR><BR>
+
+												<B>Uniform-Resource-Location :: GIT :: Themes</B><BR>
+												<FORM>
+													<TEXTAREA ROWS=\"7\" COLS=\"50\">$_ACCESS_URL_GIT_REPOSITORY_THEMES</TEXTAREA>
+												</FORM><BR><BR>
 ");
 												
 } // [ + ] IF: Internal Application: Display :: Settings :: Is: Activated
