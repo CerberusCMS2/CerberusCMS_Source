@@ -137,8 +137,8 @@ echo ("
  ============================================================================================================
 */
 
-$_Application_Module_Administration_PlugIns_FIND_PLUGIN_DIRECTORY_ARCHIVE						= "./System/Plug-Ins/Archive/$_Application_Module_Services_Kernel_POST_CURL_DOWNLOAD_KERNEL_INPUT";
-$_Application_Module_Administration_PlugIns_OPEN_PLUGIN_DIRECTORY_ARCHIVE						= fopen("$_Application_Module_Services_Kernel_FIND_KERNEL_FILE_INPUT", "w");
+$_Application_Module_Administration_PlugIns_FIND_PLUGIN_DIRECTORY_ARCHIVE						= "./System/Plug-Ins/Archive/$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_CURL_INPUT";
+$_Application_Module_Administration_PlugIns_OPEN_PLUGIN_DIRECTORY_ARCHIVE						= fopen("$_Application_Module_Administration_PlugIns_FIND_PLUGIN_DIRECTORY_ARCHIVE", "w");
 
 echo ("* Initializing Client-Uniform-Resource-Location Functions... Wait.<BR>");
 
@@ -146,7 +146,7 @@ $_Application_Module_Administration_PlugIns_cURL_Initialize_Selected							= cur
 
 echo ("* Done<BR><BR>");
 
-echo ("* Kernel Application Message: Reading Requested System Plug-In Archive Package From GIT Repository... Wait.<BR>");
+echo ("* Plug-In Application Message: Reading Requested System Plug-In File From Configured GIT Repository... Wait.<BR>");
 
 curl_setopt($_Application_Module_Administration_PlugIns_cURL_Initialize_Selected, CURLOPT_URL, "$_ACCESS_URL_GIT_REPOSITORY_PLUGINS/$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_CURL_INPUT");
 curl_setopt($_Application_Module_Administration_PlugIns_cURL_Initialize_Selected, CURLOPT_SSL_VERIFYPEER, false);
@@ -154,7 +154,7 @@ curl_setopt($_Application_Module_Administration_PlugIns_cURL_Initialize_Selected
 
 echo ("* Done<BR><BR>");
 
-echo ("* Kernel Application Message: Downloading Requested System Plug-In Archive File... Wait.<BR>");
+echo ("* Plug-In Application Message: Downloading Requested System Plug-In Archive File... Wait.<BR>");
 
 $_Application_Module_Administration_PlugIns_cURL_Download_Data_Selected							= curl_exec($_Application_Module_Administration_PlugIns_cURL_Initialize_Selected);
 
@@ -164,7 +164,7 @@ echo ("<A HREF=\"$_ACCESS_URL_GIT_REPOSITORY_PLUGINS/$_Application_Module_Admini
 
 echo ("* Done.<BR><BR>");
 
-echo ("* Kernel Application Message: Writing System Plug-In Archive File To Archive Directory... Wait.<BR><BR>");
+echo ("* Plug-In Application Message: Writing Requested System Plug-In File To Archive Directory... Wait.<BR><BR>");
 
 fwrite($_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_CURL_INPUT, "$_Application_Module_Administration_PlugIns_cURL_Download_Data_Selected");
 
@@ -253,7 +253,7 @@ echo ("
 
 if (file_exists("./System/Plug-Ins/$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_DIRECTORY_CREATE/index.php")) {
 
-													echo ("* The Plug-In Directory: <I>$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_DIRECTORY_CREATE</I> Cannot Be Created Because It Already Exists.<BR>");
+													echo ("* The Plug-In Directory: <I>$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_DIRECTORY_CREATE</I> Cannot Be Created Because It Already Exists.<BR><BR>");
 
 } else {
 
@@ -322,7 +322,7 @@ if ($_GET["Delete"] == "$_Application_Module_Administration_PlugIns_READ_DIRECTO
 
 unlink("./System/Plug-Ins/Archive/$_Application_Module_Administration_PlugIns_READ_DIRECTORY_UPLOAD_PLUGINS");
 
-													echo ("This Plug-In Archive File Was Deleted Successfully<BR><BR>");
+													echo ("This Plug-In Archive File Was Deleted Successfully.<BR><BR>");
 
 } // [ + ] IF: Internal Application: Plug-Ins :: Delete :: Selected Plug-In
 
