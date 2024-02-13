@@ -753,7 +753,7 @@ echo ("
 												*&nbsp;This Web Server :: Time :: In Unix-Epoch: $_GLOBAL_LOCAL_SERVER_TIME_UNIX<BR><BR>
 												
 												<B>Server :: This Web Server :: Time :: Internet Time</B><BR>
-												*&nbsp;This Web Server :: TIme :: In <A HREF=\"https://en.wikipedia.org/wiki/Swatch_Internet_Time\" TITLE=\":: Open & Display :: The Official Wikipedia Article Entry :: For :: Swatch Internet Time ::\" TARGET=\"_NEW\">Swatch Internet Time: $_GLOBAL_LOCAL_SERVER_TIME_SWATCH_INTERNET</A><BR><BR>
+												*&nbsp;This Web Server :: TIme :: In <A HREF=\"https://en.wikipedia.org/wiki/Internet_Time\" TITLE=\":: Open & Display :: The Official Wikipedia Article Entry :: For :: Internet Time ::\" TARGET=\"_NEW\">Internet Time: $_GLOBAL_LOCAL_SERVER_TIME_SWATCH_INTERNET</A><BR><BR>
 
 												<B>Unix-Epoch :: Time :: Built-In</B><HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 												*&nbsp;This Web Server :: Time :: In Microtime: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME<BR>
