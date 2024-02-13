@@ -664,7 +664,7 @@ echo ("
 											System :: Settings :: Services :: <A HREF=\"./System/Services/Loops\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Application Module :: Loops ::\" TARGET=\"_NEW\">Loops</A><BR>
 												*&nbsp;System :: Services :: Status :: Loops: $_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_LOOPS | $_Application_Module_Member_System_System_Services_Status_Loops<BR><BR>
 
-											System :: Settings :: Services :: <A HREF=\"./System/Services/Services\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Application Module :: Loops ::\" TARGET=\"_NEW\">Services</A><BR>
+											System :: Settings :: Services :: <A HREF=\"./System/Services/Services\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Application Module :: Services ::\" TARGET=\"_NEW\">Services</A><BR>
 												*&nbsp;System :: Services :: Status: Services: $_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_SERVICES | $_Application_Module_Member_System_System_Services_Status_Services<BR><BR>
 												
 											System :: Settings :: Services :: <A HREF=\"./System/Services/Tasks\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Application Module :: Tasks ::\" TARGET=\"_NEW\">Tasks</A><BR>
