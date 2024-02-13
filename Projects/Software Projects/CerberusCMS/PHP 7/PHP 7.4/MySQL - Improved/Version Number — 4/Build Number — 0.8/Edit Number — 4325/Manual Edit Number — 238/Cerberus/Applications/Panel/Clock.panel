@@ -75,7 +75,7 @@ echo ("
 * Unix-Epoch: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_TIMESTAMP_UNIX_EPOCH\" TITLE=\":: Open & Display :: The :: Unix-Epoch Time Reader ::\" TARGET=\"_NEW\">$_GLOBAL_LOCAL_SERVER_TIME_UNIX</A><BR><BR>
 
 <B>Time :: Internet Time</B><BR>
-* Internet-Time: $_GLOBAL_LOCAL_SERVER_TIME_INTERNET
+* Internet-Time: <A HREF=\"https://en.Wikipedia.org/wiki/Internet_Time\" TITLE=\":: Open & Display :: The Official Wikipedia Article Entry :: For :: Internet Time ::\" TARGET=\"_NEW\">$_GLOBAL_LOCAL_SERVER_TIME_INTERNET</A>
 <HR>
 ");
 ?>
