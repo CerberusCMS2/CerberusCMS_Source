@@ -101,6 +101,7 @@ $_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_BASENAME			=
 */
 
 $_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_CURL_INPUT			= $_POST['AMA_PlugIns_Upload_PlugIn_CURL'];
+$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_DIRECTORY_CREATE			= $_POST['AMA_PlugIns_Upload_PlugIn_Directory_Create'];
 
 /*
  ============================================================================================================
@@ -228,6 +229,51 @@ if (move_uploaded_file($_FILES['AMA_PlugIns_Upload_PlugIn_File_Name']['tmp_name'
 } // [ + ] IF: Upload :: Plug-In :: File
 
 } // [ + ] IF: Upload :: Plug-In :: Input Form Variables :: HAVE NOT Executed
+
+/*
+ ============================================================================================================
+ +
+ + Create :: Directory :: Plug-In
+ +
+ ============================================================================================================
+*/
+
+													echo ("<HR ALIGN=\"LEFT\" WIDTH=\"25%\">System :: Plug-Ins :: Directory :: Create<HR ALIGN=\"LEFT\" WIDTH=\"25%\"><BR><BR>");
+
+if (!$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_DIRECTORY_CREATE) {
+
+echo ("
+													<HR ALIGN=\"LEFT\" WIDTH=\"25%\">System :: Plug-Ins :: Upload Plug-In :: Create Directory<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+														<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_ADMINISTRATOR&#61;Control_Panel&amp;Action&#61;PlugIns&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
+															The Plug-In Directory Is Case-Sensitive<BR>
+																<INPUT TYPE=\"text\" NAME=\"AMA_PlugIns_Upload_PlugIn_Directory_Create\"><BR>
+																<INPUT TYPE=\"submit\" VALUE=\"Create Plug-In Directory\">
+														</FORM><BR>
+");
+
+} else {
+
+if (file_exists("./System/Plug-Ins/$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_DIRECTORY_CREATE/index.php")) {
+
+													echo ("* The Plug-In Directory: <I>$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_DIRECTORY_CREATE</I> Cannot Be Created Because It Already Exists.<BR>");
+
+} else {
+
+													echo ("* Making The Plug-In Directory: <I>$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_DIRECTORY_CREATE</I>... Wait.<BR>");
+
+mkdir("./System/Plug-Ins/$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_DIRECTORY_CREATE");
+
+													echo ("* Done.<BR><BR>");
+
+copy("./System/Plug-Ins/index.php","./System/Plug-Ins/$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_DIRECTORY_CREATE/index.php");
+
+													echo ("* Copying The Plug-In Directory: <I>$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_DIRECTORY_CREATE</I> Index File... Wait.<BR>");
+
+													echo ("* Done.<BR><BR>");
+
+} // [ + ] IF: Internal Application :: Plug-Ins :: Directory :: Create :: Directory Exists
+
+} // [ + ] IF: Internal Application :: Plug-Ins :: Directory :: Create
 
 /*
  ============================================================================================================
