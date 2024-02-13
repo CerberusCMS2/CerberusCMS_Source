@@ -166,7 +166,7 @@ echo ("* Done.<BR><BR>");
 
 echo ("* Plug-In Application Message: Writing Requested System Plug-In File To Archive Directory... Wait.<BR>");
 
-fwrite($_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_FILE_CURL_INPUT, "$_Application_Module_Administration_PlugIns_cURL_Download_Data_Selected");
+fwrite($_Application_Module_Administration_PlugIns_OPEN_PLUGIN_DIRECTORY_ARCHIVE, "$_Application_Module_Administration_PlugIns_cURL_Download_Data_Selected");
 
 echo ("* Done. Exiting.<BR><BR>");
 
