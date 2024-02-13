@@ -535,7 +535,7 @@ echo ("
 												<B>Database Management System Server Database Entry :: Kernel File :: Backup :: From Initial Installation</B><BR>
 												*&nbsp;Database Management System Server Database Entry :: Kernel File :: Installation :: Installation Date: $_GLOBAL_SYSTEM_SETTINGS_KERNEL_BACKUP_INSTALLATION_DATE_INSTALLATION<BR>
 												*&nbsp;Database Management System Server Database Entry :: Kernel File :: Installation :: Integrity: $_GLOBAL_SYSTEM_SETTINGS_KERNEL_BACKUP_INSTALLATION_FILE_INTEGRITY<BR>
-												*&nbsp;Database Management System Server Database Entry :: Kernel File :: Installation :: Name: $_GLOBAL_SYSTEM_SETTINGS_KERNEL_BACKUP_INSTALLATION_FILE_NAME<BR>
+												*&nbsp;Database Management System Server Database Entry :: Kernel File :: Installation :: Name: <A HREF=\"./System/Kernel/Backup/Kernel_Installation.kernel\" TITLE=\":: Open & Display :: The Kernel File :: Installation Kernel File ::\" TARGET=\"_NEW\">$_GLOBAL_SYSTEM_SETTINGS_KERNEL_BACKUP_INSTALLATION_FILE_NAME</A><BR>
 												*&nbsp;Database Management System Server Database Entry :: Kernel File :: Installation :: Version: $_GLOBAL_SYSTEM_SETTINGS_KERNEL_BACKUP_INSTALLATION_FILE_VERSION<BR><BR>
 										
 												<B>Database Management System Server Database Entry :: Kernel File :: Backup :: Current</B><BR>
