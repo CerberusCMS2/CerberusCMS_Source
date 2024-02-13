@@ -238,8 +238,6 @@ if (move_uploaded_file($_FILES['AMA_PlugIns_Upload_PlugIn_File_Name']['tmp_name'
  ============================================================================================================
 */
 
-													echo ("<HR ALIGN=\"LEFT\" WIDTH=\"25%\">System :: Plug-Ins :: Directory :: Create<HR ALIGN=\"LEFT\" WIDTH=\"25%\"><BR><BR>");
-
 if (!$_Application_Module_Administration_PlugIns_POST_UPLOAD_PLUGIN_DIRECTORY_CREATE) {
 
 echo ("
