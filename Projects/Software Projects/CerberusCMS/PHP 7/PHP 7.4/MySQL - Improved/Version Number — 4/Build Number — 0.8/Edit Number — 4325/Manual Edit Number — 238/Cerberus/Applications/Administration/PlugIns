@@ -122,7 +122,7 @@ echo ("
 														System :: Plug-Ins :: Upload Plug-In :: Client-URL
 													<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 														<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_ADMINISTRATOR&#61;Control_Panel&amp;Action&#61;PlugIns&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
-															<TEXTAREA ROWS=\"15\" COLS=\"75\" NAME=\"AMA_PlugIns_Upload_PlugIn_CURL\">System Plug-In Archive Package File Name...</TEXTAREA><BR><BR>
+															<TEXTAREA ROWS=\"15\" COLS=\"75\" NAME=\"AMA_PlugIns_Upload_PlugIn_CURL\">System Plug-In Archive Package File Name or Directory and File Name... Example: Camera/Camera.extension</TEXTAREA><BR><BR>
 														Current Plug-In GIT URL<BR>
 															<TEXTAREA ROWS=\"15\" COLS=\"75\">$_ACCESS_URL_GIT_REPOSITORY_PLUGINS</TEXTAREA><BR>
 															<INPUT TYPE=\"submit\" VALUE=\"Download Plug-In Package\">
