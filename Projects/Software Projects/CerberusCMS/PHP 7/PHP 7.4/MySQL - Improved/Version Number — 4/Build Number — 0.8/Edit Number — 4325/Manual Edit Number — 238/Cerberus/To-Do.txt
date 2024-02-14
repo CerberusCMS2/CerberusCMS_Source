@@ -149,3 +149,4 @@ impossible to hack the internal names.
 unverified registered accounts. Write it through services.
 * fix the messenger profile image. for some reason it will not send the profile image URI to the messenger log.
 * add character filtering to the member account last known referrer variable in the kernel.
+* add ../ and blocking on create directory functions.. if $_POST data contains ../ in mkdir(); block it so that no folders can be made.
