@@ -377,11 +377,11 @@ $_Application_Module_Administration_Accounts_Message_SYSTEM_MESSAGE_SEND_ERROR		
  ============================================================================================================
 */
 
-$_Application_Module_Administration_Message_Applications_APPLICATION_INSTALL_SUCCESSFUL					= "<BR><BR><CENTER>Cerberus: I have Installed the Application Module Successfully.</CENTER><BR><BR>";
-$_Application_Module_Administration_Message_Applications_APPLICATION_DELETE_SUCCESSFUL					= "<BR><HR><CENTER>Cerberus: I have Deleted the Application Module Successfully.</CENTER><HR><BR>";
-$_Application_Module_Administration_Message_Applications_APPLICATION_UPDATE_SUCCESSFUL					= "<HR><CENTER>Cerberus: I have Updated the Application Module Successfully.</CENTER><HR><BR>";
-$_Application_Module_Administration_Message_Applications_APPLICATION_UPLOAD_SUCCESSFUL					= "<BR><HR><CENTER>Cerberus: I have Uploaded the Application Module Successfully.</CENTER><HR><BR>";
-$_Application_Module_Administration_Message_Applications_APPLICATION_UPLOAD_HALTED					= "<BR><HR><CENTER>Cerberus: I have Halted the Upload. The Uploaded Application File Module Name already exists.</CENTER><HR><BR>";
+$_Application_Module_Administration_Message_Applications_APPLICATION_INSTALL_SUCCESSFUL					= "<BR><BR><HR ALIGN=\"CENTER\" WIDTH=\"25%\"><CENTER>Cerberus: I have Installed This Application Module Successfully<HR ALIGN=\"CENTER\" WIDTH=\"25%\"></CENTER><BR><BR>";
+$_Application_Module_Administration_Message_Applications_APPLICATION_DELETE_SUCCESSFUL					= "<BR><HR><CENTER>Cerberus: I Have Deleted This Application Module Successfully</CENTER><HR><BR>";
+$_Application_Module_Administration_Message_Applications_APPLICATION_UPDATE_SUCCESSFUL					= "<HR><CENTER>Cerberus: I Have Updated This Application Module Successfully</CENTER><HR><BR>";
+$_Application_Module_Administration_Message_Applications_APPLICATION_UPLOAD_SUCCESSFUL					= "<BR><HR><CENTER>Cerberus: I have Uploaded This Application Module Successfully</CENTER><HR><BR>";
+$_Application_Module_Administration_Message_Applications_APPLICATION_UPLOAD_HALTED					= "<BR><HR><CENTER>Cerberus: This Uploaded Application Module File Already Exists</CENTER><HR><BR>";
 
 /*
  ============================================================================================================
