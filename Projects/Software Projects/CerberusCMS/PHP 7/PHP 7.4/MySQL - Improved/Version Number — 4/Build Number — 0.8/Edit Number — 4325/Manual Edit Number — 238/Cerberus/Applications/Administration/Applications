@@ -260,7 +260,7 @@ if ($_Application_Module_Administration_Applications_DB_Query_Insert_Application
  ============================================================================================================
 */
 
-$_Application_Module_Administration_Applications_FIND_DIRECTORY_UPLOAD_APPLICATION_MEMBER		= "./System/Security/Integrity/Applications/Member/";
+$_Application_Module_Administration_Applications_FIND_DIRECTORY_UPLOAD_APPLICATION_MEMBER		= "./System/Security/Integrity/Backup/Applications/Member/";
 $_Application_Module_Administration_Applications_FILE_UPLOAD 						= $_Application_Module_Administration_Applications_FIND_DIRECTORY_UPLOAD_APPLICATION_MEMBER . basename($_FILES['AMA_Applications_Upload_Application_File_Name']['name']);
 $_Application_Module_Administration_Applications_FILE_BASENAME						= basename($_FILES['AMA_Applications_Upload_Application_File_Name']['name']);
 $_Application_Module_Administration_Applications_POST_UPLOAD_DIRECTORY_TEMPORARY			= $_POST['AMA_Applications_Upload_Temporary'];
@@ -298,7 +298,7 @@ echo ("
  ============================================================================================================
 */
 
-if (file_exists("./System/Security/Integrity/Applications/Member/$_Application_Module_Administration_Applications_FILE_BASENAME")) {
+if (file_exists("/System/Security/Integrity/Backup/Applications/Member/$_Application_Module_Administration_Applications_FILE_BASENAME")) {
 
 													echo ($_Application_Module_Administration_Message_Applications_APPLICATION_UPLOAD_HALTED);
 
@@ -312,7 +312,7 @@ if (file_exists("./System/Security/Integrity/Applications/Member/$_Application_M
 
 if (move_uploaded_file($_FILES['AMA_Applications_Upload_Application_File_Name']['tmp_name'], $_Application_Module_Administration_Applications_FILE_UPLOAD)) {
 
-copy("./System/Security/Integrity/Applications/Member/$_Application_Module_Administration_Applications_FILE_BASENAME","./Applications/Member/$_Application_Module_Administration_Applications_FILE_BASENAME");
+copy("/System/Security/Integrity/Backup/Applications/Member/$_Application_Module_Administration_Applications_FILE_BASENAME","./Applications/Member/$_Application_Module_Administration_Applications_FILE_BASENAME");
 
 													echo ($_Application_Module_Administration_Message_Applications_APPLICATION_UPLOAD_SUCCESSFUL);
 
