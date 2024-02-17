@@ -2274,7 +2274,7 @@ if (mkdir("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Video/Gallery/Backup/$
 */
 
 echo ("
-												<B>Gallery :: Video :: Directory :: Delete</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
+												Gallery :: Video :: Directory :: Delete<HR WIDTH=\"50%\" ALIGN=\"LEFT\">
 											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Account_Data&amp;Display&#61;Gallery&amp;Type&#61;Video&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
 													<SELECT NAME=\"AMM_Account_Data_Delete_Directory_Gallery_Video_Selection\">
 ");
