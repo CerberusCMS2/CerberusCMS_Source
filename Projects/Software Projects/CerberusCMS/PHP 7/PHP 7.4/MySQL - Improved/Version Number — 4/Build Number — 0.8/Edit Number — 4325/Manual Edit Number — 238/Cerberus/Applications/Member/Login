@@ -663,7 +663,7 @@ echo ("
 														<INPUT TYPE=\"text\" NAME=\"AMM_Login_UserName_Kill_Current\" MAXLENGTH=\"50\"><BR>
 													<I>Member' Account Password</I>:<BR>
 														<INPUT TYPE=\"password\" NAME=\"AMM_Login_Password_Kill_Current\" MAXLENGTH=\"250\"><BR>
-													<INPUT TYPE=\"submit\" VALUE=\"Login\">
+													<INPUT TYPE=\"submit\" VALUE=\"Kill Current Authentication\">
 												<HR>
 											</FORM><BR>
 ");
@@ -736,7 +736,7 @@ echo ("
 														<INPUT TYPE=\"text\" NAME=\"AMM_Login_UserName_Kill_Ghost\" MAXLENGTH=\"50\"><BR>
 													<I>Member' Account Password</I>:<BR>
 														<INPUT TYPE=\"password\" NAME=\"AMM_Login_Password_Kill_Ghost\" MAXLENGTH=\"250\"><BR>
-													<INPUT TYPE=\"submit\" VALUE=\"Login\">
+													<INPUT TYPE=\"submit\" VALUE=\"Kill Ghost Authentication\">
 												<HR>
 											</FORM><BR>
 ");
