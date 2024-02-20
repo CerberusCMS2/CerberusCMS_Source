@@ -90,7 +90,7 @@ echo ("
 												<INPUT TYPE=\"TEXT\" NAME=\"AMM_Search_Search_Keyword\"><BR>
 											Section<BR>
 												<SELECT NAME=\"AMM_Search_Search_Section\">
-													<OPTION VALUE=\"1\">Entires :: Articles</OPTION>
+													<OPTION VALUE=\"1\">Entries :: Articles</OPTION>
 													<OPTION VALUE=\"2\">Entries :: Files</OPTION>
 													<OPTION VALUE=\"3\">Entries :: Forum</OPTION>
 													<OPTION VALUE=\"4\">Entries :: News Articles</OPTION>
