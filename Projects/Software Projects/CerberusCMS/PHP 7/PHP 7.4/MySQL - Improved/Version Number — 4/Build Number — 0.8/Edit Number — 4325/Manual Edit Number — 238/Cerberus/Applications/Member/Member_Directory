@@ -69,7 +69,7 @@ echo ("
 										<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Search\" METHOD=\"POST\">
 											Search For Registered Member Account Details<BR>
 												<INPUT TYPE=\"TEXT\" NAME=\"AMM_Search_Search_Keyword\"><BR>
-												<INPUT TYPE=\"HIDDEN\" NAME=\"AMM_Search_Search_Section\" VALUE=\"4\">
+												<INPUT TYPE=\"HIDDEN\" NAME=\"AMM_Search_Search_Section\" VALUE=\"5\">
 											<INPUT TYPE=\"SUBMIT\" VALUE=\"Search\">
 										</FORM><BR><BR>
 ");
