@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*
  ============================================================================================================
  + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -442,6 +442,15 @@ $_DB_Query_Kernel_Select_System_Settings_Fetch_Array					= $_DB_Query_Kernel_Sel
 
 $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA							= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_camera'];
 $_GLOBAL_SYSTEM_PLUGIN_STATUS_CAMERA							= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_camera'];
+
+/*
+ ============================================================================================================
+ + Global :: System :: S.Q.L. Settings: Plug-Ins :: Encryption
+ ============================================================================================================
+*/
+
+$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_ENCRYPTION						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_encryption'];
+$_GLOBAL_SYSTEM_PLUGIN_STATUS_ENCRYPTION						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_encryption'];
 
 /*
  ============================================================================================================
