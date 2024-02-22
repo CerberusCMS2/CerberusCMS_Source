@@ -110,8 +110,8 @@ Options Note: Local Server Application Module Files can be flashed with these op
 <B>Integrity :: Options :: Kernel</B><BR>
 Options Note: Local Server Kernel Module Files can be flashed with these options. The Kernel Module Files can be re-installed either from the Local Server or from the Master Remote Server. The Master Remote Server is this Official Software Project Server Repository.<BR><BR>
 
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_SERVICES&#61;Integrity&amp;Flash&#61;Kernel&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Application :: Integrity :: Check & Flash :: Kernel Module File :: Server :: Local ::\">Integrity :: Flash :: Applications :: Server :: Local</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_SERVICES&#61;Integrity&amp;Flash&#61;Kernel&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Application :: Integrity :: Check & Flash :: Kernel Module File :: Server :: Remote ::\">Integrity :: Flash :: Applications :: Server :: Remote</A><BR><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_SERVICES&#61;Integrity&amp;Flash&#61;Kernel&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Application :: Integrity :: Check & Flash :: Kernel Module File :: Server :: Local ::\">Integrity :: Flash :: Kernel Module File :: Server :: Local</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_SERVICES&#61;Integrity&amp;Flash&#61;Kernel&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Application :: Integrity :: Check & Flash :: Kernel Module File :: Server :: Remote ::\">Integrity :: Flash :: Kernel Module File :: Server :: Remote</A><BR><BR>
 
 
 <B>Integrity :: Options :: KeyRing</B><BR>
