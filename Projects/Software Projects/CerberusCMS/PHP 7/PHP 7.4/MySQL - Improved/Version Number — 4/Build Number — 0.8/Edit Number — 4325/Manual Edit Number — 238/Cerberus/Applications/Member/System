@@ -17,7 +17,7 @@
  +  ------------------------------
  +  Application Module
  + ----------------------------------------------------------------------------------------------------------
- + - This File, Location	 : Root Directory => Applications => Member => Control_Panel
+ + - This File, Location	 : Root Directory => Applications => Member => System
  + - This File, Version		 : 0.7.2
  + - This File, Programming Code : Pure Pre-Hyper-Text-Post-Processor
  + - Programming Code Model	 : Procedural, Functional, Object Oriented :: Pre-Order Algebraic
@@ -50,7 +50,7 @@
  +
  +
  +
- + [ ^ ] Application Module :: Member :: Member Control Panel
+ + [ ^ ] Application Module :: Member :: System
  +
  +
  +
@@ -63,808 +63,853 @@
  ============================================================================================================
 */
 
-										echo ($_Application_Module_Member_Message_Control_Panel_Header);
+												echo ($_Application_Module_Member_Message_System_Header);
 
 /*
  ============================================================================================================
  +
- + Registered Member Account :: Control Panel :: Variables
- +
- ============================================================================================================
-*/
-
-
-/*
- ============================================================================================================
- + Registered Member Account :: Control Panel :: Variables :: Log :: Authentication Log
- ============================================================================================================
-*/
-
-$_Application_Module_Member_Control_Panel_CONTENTS_LOG_FILE_AUTHENTICATION_LOG				= "./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Activity_Logging/Authentication_Log_Private.php";
-$_Application_Module_Member_Control_Panel_CONTENTS_LOG_FILE_AUTHENTICATION_LOG_CONTENTS			= file_get_contents($_Application_Module_Member_Control_Panel_CONTENTS_LOG_FILE_AUTHENTICATION_LOG);
-$_Application_Module_Member_Control_Panel_CONTENTS_LOG_FILE_AUTHENTICATION_LOG_CONTENTS_HASH_SHA256	= hash_file('sha256', $_Application_Module_Member_Control_Panel_CONTENTS_LOG_FILE_AUTHENTICATION_LOG);
-
-/*
- ============================================================================================================
- + Registered Member Account :: Control Panel :: Variables :: Log :: Interaction Log
- ============================================================================================================
-*/
-
-$_Application_Module_Member_Control_Panel_CONTENTS_LOG_FILE_INTERACTION_LOG				= "./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Activity_Logging/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/Log_Member_Raw.txt";
-$_Application_Module_Member_Control_Panel_CONTENTS_LOG_FILE_INTERACTION_LOG_CONTENTS			= file_get_contents($_Application_Module_Member_Control_Panel_CONTENTS_LOG_FILE_INTERACTION_LOG);
-$_Application_Module_Member_Control_Panel_CONTENTS_LOG_FILE_INTERACTION_LOG_CONTENTS_HASH_SHA256	= hash_file('sha256', $_Application_Module_Member_Control_Panel_CONTENTS_LOG_FILE_INTERACTION_LOG);
-
-/*
- ============================================================================================================
- + Registered Member Account :: Control Panel :: Variables :: Log :: Location Log
- ============================================================================================================
-*/
-
-$_Application_Module_Member_Control_Panel_CONTENTS_LOG_FILE_LOCATION_LOG				= "./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Activity_Logging/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/Log_Member_Raw.txt";
-$_Application_Module_Member_Control_Panel_CONTENTS_LOG_FILE_LOCATION_LOG_CONTENTS			= file_get_contents($_Application_Module_Member_Control_Panel_CONTENTS_LOG_FILE_LOCATION_LOG);
-$_Application_Module_Member_Control_Panel_CONTENTS_LOG_FILE_LOCATION_LOG_CONTENTS_HASH_SHA256		= hash_file('sha256', $_Application_Module_Member_Control_Panel_CONTENTS_LOG_FILE_LOCATION_LOG);
-
-/*
- ============================================================================================================
- +
- + Registered Member Account :: Control Panel :: Audio Settings
+ + Fetch Statistics Data From The Database Server
  +
  ============================================================================================================
 */
 
 /*
  ============================================================================================================
- + IF: Registered Member Account :: Rank :: Level Is: 1
+ + Find :: Statistics Data
  ============================================================================================================
 */
 
-if ($_GLOBAL_MEMBER_LEVEL_RANK <= 1) {
-
-	$_Application_Module_Member_Control_Panel_AUDIO_PLAY_CONTROL_PANEL	= "./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Audio/Rank_1.$_GLOBAL_SYSTEM_SOUND_EXTENSION";
-
-} // [ + ] IF: Registered Member Account Rank Level Is Less Than Or Equal To: 1, Play Specific Audio File
+$_Application_Module_Member_System_DB_Query_SELECT_ALL_STATISTICS					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_statistics ORDER BY id ASC LIMIT 1");
+$_Application_Module_Member_System_DB_Query_SELECT_ALL_MEMBERS						= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members ORDER BY id ASC");
+$_Application_Module_Member_System_DB_Query_SELECT_ALL_MEMBERS_ACTIVE					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_status_account_active='1' ORDER BY id ASC");
+$_Application_Module_Member_System_DB_Query_SELECT_ALL_MEMBERS_INACTIVE					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_status_account_active='0' ORDER BY id ASC");
+$_Application_Module_Member_System_DB_Query_SELECT_ALL_COMMENTS						= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_comments");
+$_Application_Module_Member_System_DB_Query_SELECT_ALL_FILES						= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_files");
+$_Application_Module_Member_System_DB_Query_SELECT_ALL_FORUM						= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_forum");
+$_Application_Module_Member_System_DB_Query_SELECT_ALL_FORUM_TOPICS					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_topic");
+$_Application_Module_Member_System_DB_Query_SELECT_ALL_FORUM_TOPIC_MESSAGES				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_topic_message");
 
 /*
  ============================================================================================================
- + IF: Registered Member Account :: Rank :: Level Is: 2
+ + Count :: Number of Rows :: Database Management System Server Query :: SELECT
  ============================================================================================================
 */
 
-if ($_GLOBAL_MEMBER_LEVEL_RANK = 2) {
-
-	$_Application_Module_Member_Control_Panel_AUDIO_PLAY_CONTROL_PANEL	= "./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Audio/Rank_2.$_GLOBAL_SYSTEM_SOUND_EXTENSION";
-
-} // [ + ] IF: Registered Member Account Rank Level Is Less Than Or Equal To: 2, Play Specific Audio File
+$_Application_Module_Member_System_DB_Query_SELECT_ALL_FORUM_NUMBER_OF_ROWS				= $_Application_Module_Member_System_DB_Query_SELECT_ALL_FORUM->num_rows;
+$_Application_Module_Member_System_DB_Query_SELECT_ALL_FORUM_NUMBER_OF_ROWS_TOPICS			= $_Application_Module_Member_System_DB_Query_SELECT_ALL_FORUM_TOPICS->num_rows;
+$_Application_Module_Member_System_DB_Query_SELECT_ALL_FORUM_NUMBER_OF_ROWS_TOPIC_MESSAGES		= $_Application_Module_Member_System_DB_Query_SELECT_ALL_FORUM_TOPIC_MESSAGES->num_rows;
+$_Application_Module_Member_System_DB_Query_SELECT_ALL_FILES_NUMBER_OF_ROWS				= $_Application_Module_Member_System_DB_Query_SELECT_ALL_FILES->num_rows;
+$_Application_Module_Member_System_DB_Query_SELECT_ALL_COMMENTS_NUMBER_OF_ROWS				= $_Application_Module_Member_System_DB_Query_SELECT_ALL_COMMENTS->num_rows;
+$_Application_Module_Member_System_DB_Query_SELECT_ALL_MEMBERS_NUMBER_OF_ROWS				= $_Application_Module_Member_System_DB_Query_SELECT_ALL_MEMBERS->num_rows;
+$_Application_Module_Member_System_DB_Query_SELECT_ALL_MEMBERS_NUMBER_OF_ROWS_ACTIVE			= $_Application_Module_Member_System_DB_Query_SELECT_ALL_MEMBERS_ACTIVE->num_rows;
+$_Application_Module_Member_System_DB_Query_SELECT_ALL_MEMBERS_NUMBER_OF_ROWS_INACTIVE			= $_Application_Module_Member_System_DB_Query_SELECT_ALL_MEMBERS_INACTIVE->num_rows;
 
 /*
  ============================================================================================================
- + IF: Registered Member Account :: Rank :: Level Is: 3
+ + List :: Statistics Data :: Miscellanious
  ============================================================================================================
 */
 
-if ($_GLOBAL_MEMBER_LEVEL_RANK = 3) {
+$_Application_Module_Member_System_DB_Query_FETCH_ARRAY_STATISTICS					= $_Application_Module_Member_System_DB_Query_SELECT_ALL_STATISTICS->fetch_array(MYSQLI_BOTH);
 
-	$_Application_Module_Member_Control_Panel_AUDIO_PLAY_CONTROL_PANEL	= "./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Audio/Rank_3.$_GLOBAL_SYSTEM_SOUND_EXTENSION";
-
-} // [ + ] IF: Registered Member Account Rank Level Is Less Than Or Equal To: 3, Play Specific Audio File
+$_Application_Module_Member_System_LIST_TOTAL_NUMBER_OF_DOCUMENT_EXECUTIONS_NON_UNIQUE			= $_Application_Module_Member_System_DB_Query_FETCH_ARRAY_STATISTICS['statistics_total_number_of_document_executions_non_unique'];
+$_Application_Module_Member_System_LIST_TOTAL_NUMBER_OF_DOCUMENT_EXECUTIONS_UNIQUE			= $_Application_Module_Member_System_DB_Query_FETCH_ARRAY_STATISTICS['statistics_total_number_of_document_executions_unique'];
+$_Application_Module_Member_System_LIST_INSTALLATION_DATE						= $_Application_Module_Member_System_DB_Query_FETCH_ARRAY_STATISTICS['statistics_installation_date'];
 
 /*
  ============================================================================================================
- + IF: Registered Member Account :: Rank :: Level Is: 4
+ + IF: System :: Plug-In :: Status :: GZIP Compression :: Is: 0, Define AS OFF :: ELSE :: Is: 1, Define AS ON
  ============================================================================================================
 */
 
-if ($_GLOBAL_MEMBER_LEVEL_RANK = 4) {
+if ($_GLOBAL_SYSTEM_STATUS_GZIP == "1") {
 
-	$_Application_Module_Member_Control_Panel_AUDIO_PLAY_CONTROL_PANEL	= "./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Audio/Rank_4.$_GLOBAL_SYSTEM_SOUND_EXTENSION";
+	$_Application_Module_Member_System_Status_GZIP							= "On";
 
-} // [ + ] IF: Registered Member Account Rank Level Is Less Than Or Equal To: 4, Play Specific Audio File
+} else { // [ + ] IF: G.N.U. ZIP Compression System Setting Is: Off
+
+	$_Application_Module_Member_System_Status_GZIP							= "Off";
+
+} // [ + ] IF: G.N.U. ZIP Compression System Setting Is: On
 
 /*
  ============================================================================================================
- + IF: Registered Member Account :: Rank :: Level Is: 5
+ + IF: System :: Plug-In :: Status :: Camera :: Is: 0, Define AS OFF :: ELSE :: Is: 1, Define AS ON
  ============================================================================================================
 */
 
-if ($_GLOBAL_MEMBER_LEVEL_RANK = 5) {
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_CAMERA == "1") {
 
-	$_Application_Module_Member_Control_Panel_AUDIO_PLAY_CONTROL_PANEL	= "./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Audio/Rank_5.$_GLOBAL_SYSTEM_SOUND_EXTENSION";
+	$_Application_Module_Member_System_PlugIn_Status_Camera						= "On";
 
-} // [ + ] IF: Registered Member Account Rank Level Is Less Than Or Equal To: 5, Play Specific Audio File
+} else { // [ + ] IF: The Camera Plug-In System Setting Is: Off
+
+	$_Application_Module_Member_System_PlugIn_Status_Camera						= "Off";
+
+} // [ + ] IF: The System :: Plug-In :: Status :: Camera :: Is: On OR Off
+
+/*
+ ============================================================================================================
+ + IF: System :: Plug-In :: Status :: Microphone :: Is: 0, Define AS OFF :: ELSE :: Is: 1, Define AS ON
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_MICROPHONE == "1") {
+
+	$_Application_Module_Member_System_PlugIn_Status_Microphone					= "On";
+
+} else { // [ + ] IF: The Microphone Plug-In System Setting Is: Off
+
+	$_Application_Module_Member_System_PlugIn_Status_Microphone					= "Off";
+
+} // [ + ] IF: The System :: Plug-In :: Status :: Microphone :: Is: On OR Off
+
+/*
+ ============================================================================================================
+ + IF: System :: Plug-In :: Status :: Location :: Is: 0, Define AS OFF :: ELSE :: Is: 1, Define AS ON
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_LOCATION == "1") {
+
+	$_Application_Module_Member_System_PlugIn_Status_Location					= "On";
+
+} else { // [ + ] IF: The Location Plug-In System Setting Is: Off
+
+	$_Application_Module_Member_System_PlugIn_Status_Location					= "Off";
+
+} // [ + ] IF: The System :: Plug-In :: Status :: Location :: Is: On OR Off
+
+/*
+ ============================================================================================================
+ + IF: System :: Plug-In :: Status :: Notifications :: Is: 0, Define AS OFF :: ELSE :: Is: 1, Define AS ON
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_NOTIFICATIONS == "1") {
+
+	$_Application_Module_Member_System_PlugIn_Status_Notifications					= "On";
+
+} else { // [ + ] IF: The Notifications Plug-In System Setting Is: Off
+
+	$_Application_Module_Member_System_PlugIn_Status_Notifications					= "Off";
+
+} // [ + ] IF: The System :: Plug-In :: Status :: Notifications :: Is: On OR Off
+
+/*
+ ============================================================================================================
+ + IF: System :: Plug-In :: Status :: Secure-Delete :: Is: 0, Define AS OFF :: ELSE :: Is: 1, Define AS ON
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_ENCRYPTION == "1") {
+
+	$_Application_Module_Member_System_PlugIn_Status_Encryption					= "On";
+
+} else { // [ + ] IF: The Encryption Plug-In System Setting Is: Off
+
+	$_Application_Module_Member_System_PlugIn_Status_Encryption					= "Off";
+
+} // [ + ] IF: The System :: Plug-In :: Status :: Encryption :: Is: On OR Off
+
+/*
+ ============================================================================================================
+ + IF: System :: Plug-In :: Status :: Safe-HTML :: Is: 0, Define AS OFF :: ELSE :: Is: 1, Define AS ON
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_SAFEHTML == "1") {
+
+	$_Application_Module_Member_System_PlugIn_Status_SafeHTML					= "On";
+
+} else { // [ + ] IF: The Safe-HTML Plug-In System Setting Is: Off
+
+	$_Application_Module_Member_System_PlugIn_Status_SafeHTML					= "Off";
+
+} // [ + ] IF: The System :: Plug-In :: Status :: Safe-HTML :: Is: On OR Off
+
+/*
+ ============================================================================================================
+ + IF: System :: Plug-In :: Status :: Secure-Delete :: Is: 0, Define AS OFF :: ELSE :: Is: 1, Define AS ON
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_SECURE_DELETE == "1") {
+
+	$_Application_Module_Member_System_PlugIn_Status_Secure_Delete					= "On";
+
+} else { // [ + ] IF: The Secure-Delete Plug-In System Setting Is: Off
+
+	$_Application_Module_Member_System_PlugIn_Status_Secure_Delete					= "Off";
+
+} // [ + ] IF: The System :: Plug-In :: Status :: Secure-Delete :: Is: On OR Off
+
+/*
+ ============================================================================================================
+ + IF: System :: Plug-In :: Status :: Text-Editor :: Is: 0, Define AS OFF :: ELSE :: Is: 1, Define AS ON
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_TEXT_EDITOR == "1") {
+
+	$_Application_Module_Member_System_PlugIn_Status_Text_Editor					= "On";
+
+} else { // [ + ] IF: The Text-Editor Plug-In System Setting Is: Off
+
+	$_Application_Module_Member_System_PlugIn_Status_Text_Editor					= "Off";
+
+} // [ + ] IF: The System :: Plug-In :: Status :: Text-Editor :: Is: On OR Off
+
+/*
+ ============================================================================================================
+ + IF: System :: Plug-In :: Status :: Time :: Is: 0, Define AS OFF :: ELSE :: Is: 1, Define AS ON
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_TIME == "1") {
+
+	$_Application_Module_Member_System_PlugIn_Status_Time						= "On";
+
+} else { // [ + ] IF: The Time Plug-In System Setting Is: Off
+
+	$_Application_Module_Member_System_PlugIn_Status_Time						= "Off";
+
+} // [ + ] IF: The System :: Plug-In :: Status :: Time :: Is: On OR Off
+
+/*
+ ============================================================================================================
+ + IF: System :: Services :: Status :: Commander :: Is: 0, Define AS OFF :: ELSE :: Is: 1, Define AS ON
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_COMMANDER != "1") {
+
+	$_Application_Module_Member_System_System_Services_Status_Commander				= "Off";
+
+} else { // [ + ] IF: The System :: Services :: Status :: Commander :: Is: On OR Off
+
+	$_Application_Module_Member_System_System_Services_Status_Commander				= "On";
+
+} // [ + ] IF: The System :: Services :: Status :: Commander :: Is: On OR Off
+
+/*
+ ============================================================================================================
+ + IF: System :: Services :: Status :: Integrity :: Is: 0, Define AS OFF :: ELSE :: Is: 1, Define AS ON
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_INTEGRITY != "1") {
+
+	$_Application_Module_Member_System_System_Services_Status_Integrity				= "Off";
+
+} else { // [ + ] IF: The System :: Services :: Status :: Integrity :: Is: On OR Off
+
+	$_Application_Module_Member_System_System_Services_Status_Integrity				= "On";
+
+} // [ + ] IF: The System :: Services :: Status :: Integrity :: Is: On OR Off
+
+/*
+ ============================================================================================================
+ + IF: System :: Services :: Status :: Loops :: Is: 0, Define AS OFF :: ELSE :: Is: 1, Define AS ON
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_LOOPS != "1") {
+
+	$_Application_Module_Member_System_System_Services_Status_Loops					= "Off";
+
+} else { // [ + ] IF: The System :: Services :: Status :: Loops :: Is: On OR Off
+
+	$_Application_Module_Member_System_System_Services_Status_Loops					= "On";
+
+} // [ + ] IF: The System :: Services :: Status :: Loops :: Is: On OR Off
+
+/*
+ ============================================================================================================
+ + IF: System :: Services :: Status :: Services :: Is: 0, Define AS OFF :: ELSE :: Is: 1, Define AS ON
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_SERVICES != "1") {
+
+	$_Application_Module_Member_System_System_Services_Status_Services				= "Off";
+
+} else { // [ + ] IF: The System :: Services :: Status :: Services :: Is: On OR Off
+
+	$_Application_Module_Member_System_System_Services_Status_Services				= "On";
+
+} // [ + ] IF: The System :: Services :: Status :: Services :: Is: On OR Off
+
+/*
+ ============================================================================================================
+ + IF: System :: Services :: Status :: Services :: Is: 0, Define AS OFF :: ELSE :: Is: 1, Define AS ON
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_TASKS != "1") {
+
+	$_Application_Module_Member_System_System_Services_Status_Tasks					= "Off";
+
+} else { // [ + ] IF: The System :: Services :: Status :: Tasks :: Is: On OR Off
+
+	$_Application_Module_Member_System_System_Services_Status_Tasks					= "On";
+
+} // [ + ] IF: The System :: Services :: Status :: Tasks :: Is: On OR Off
+
+/*
+ ============================================================================================================
+ + IF: System :: Security :: Module :: Status :: Master Sanitization :: Is: 0, Define AS OFF :: ELSE :: Is: 1, Define AS ON
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SETTING_SYSTEM_SECURITY_MODULE_STATUS_MASTER_SANITIZATION != "1") {
+
+	$_Application_Module_Member_System_System_Security_Module_Status_Master_Sanitization 		= "Off";
+
+} else { // [ + ] IF: The System :: Security :: Module :: Status :: Master Sanitization :: Is: On OR Off
+
+	$_Application_Module_Member_System_System_Security_Module_Status_Master_Sanitization 		= "On";
+
+} // [ + ] IF: The System :: Security :: Module :: Status :: Master Sanitization :: Is: On OR Off
+
+/*
+ ============================================================================================================
+ + IF: System :: Security :: Module :: Status :: Cache Circumvention :: Is: 0, Define AS OFF :: ELSE :: Is: 1, Define AS ON
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SETTING_SYSTEM_SECURITY_SETTING_STATUS_CACHE_CIRCUMVENTION != "1") {
+
+	$_Application_Module_Member_System_System_Security_Module_Status_Cache_Circumvention 		= "Off";
+
+} else { // [ + ] IF: The System :: Security :: Module :: Status :: Cache Circumvention :: Is: On OR Off
+
+	$_Application_Module_Member_System_System_Security_Module_Status_Cache_Circumvention 		= "On";
+
+} // [ + ] IF: The System :: Security :: Module :: Status :: Cache Circumvention :: Is: On OR Off
 
 /*
  ============================================================================================================
  +
- + Display :: Registered Member Account :: Control Panel
+ + IF: Internal Application: Display :: Is: Options
  +
  ============================================================================================================
 */
+												
+if ($_GET["Display"] == "Options") {
 
 echo ("
-<B>Registered Member Account :: Options :: Credentials and Authentication</B><BR>
-<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Update_Password&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Update Password ::\"><IMG SRC=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Image/Icon_Member/Icon_Account_Update_Password.$_GLOBAL_SYSTEM_IMAGE_EXTENSION?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" HEIGHT=\"50\" WIDTH=\"50\" CLASS=\"AMMControlPanel\"></IMG></A><BR><BR>
+<B>System :: Settings</B>
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;System&amp;Display&#61;Settings&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Application :: System :: Settings ::\">System :: Settings</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;System&amp;Display&#61;Time&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Application :: System :: Settings :: Date and Time ::\">System :: Settings :: Date and Time</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;System&amp;Display&#61;Plug-Ins&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Application :: System :: Settings :: Plug-Ins ::\">System :: Settings :: Plug-Ins</A><BR><BR>
 
-<B>Registered Member Account :: Options :: Personal Data</B><BR>
-<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Account_Data&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Upload & Manage :: Private Files :: For This Registered Member Account ::\"><IMG SRC=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Image/Icon_Member/Icon_Account_Files.$_GLOBAL_SYSTEM_IMAGE_EXTENSION?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" HEIGHT=\"50\" WIDTH=\"50\"></IMG></A>&nbsp;
-<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Webspace&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Update :: This Registered Member Account :: Personal Hyper-Text-Markup-Language Web-Page Document ::\"><IMG SRC=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Image/Icon_Member/Icon_Account_Web_Page.$_GLOBAL_SYSTEM_IMAGE_EXTENSION?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" HEIGHT=\"50\" WIDTH=\"50\"></IMG></A>&nbsp;
-<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Control_Panel&amp;Display&#61;Archive&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Manage :: This Registered Member Account :: Data Archives ::\"><IMG SRC=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Image/Icon_Member/Icon_Account_Archive.$_GLOBAL_SYSTEM_IMAGE_EXTENSION?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" HEIGHT=\"50\" WIDTH=\"50\"></IMG></A>&nbsp;
-<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Control_Panel&amp;DeleteAccount&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Delete :: This Registered Member Account ::\"><IMG SRC=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Image/Icon_Member/Icon_Account_Delete.$_GLOBAL_SYSTEM_IMAGE_EXTENSION?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" HEIGHT=\"50\" WIDTH=\"50\"></IMG></A><BR><BR>
+<B>System :: Information</B>
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;System&amp;Display&#61;Networking&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Application :: System :: Information :: Networking Information ::\">System :: Information :: Network Information</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;System&amp;Display&#61;Software&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Application :: System :: Information :: Software Information ::\">System :: Information :: Software Information</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;System&amp;Display&#61;Statistics&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Application :: System :: Information :: Statistics :: System-Wide :: \">System :: Information :: Statistics :: System-Wide</A><BR><BR>
 
-<B>Registered Member Account :: Options :: Social Interaction</B><BR>
-<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Friend&amp;Display&#61;All&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: This Registered Member Account :: Friend List and Options ::\"><IMG SRC=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Image/Icon_Member/Icon_Account_Friends.$_GLOBAL_SYSTEM_IMAGE_EXTENSION?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" HEIGHT=\"50\" WIDTH=\"50\"></IMG></A><BR><BR>
+<B>System :: Internal Documents</B>
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+* <A HREF=\"./About.txt?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Document :: About ::\">About</A><BR>
+* <A HREF=\"./Bug_Tracker.txt?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Document :: Bug Tracker ::\">Bug Tracker</A><BR>
+* <A HREF=\"./Change-Log.txt?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Document :: Change Log ::\">Change Log</A><BR>
+* <A HREF=\"./File-List.txt?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Document :: File List ::\">File List</A><BR>
+* <A HREF=\"./License.txt?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Document :: License ::\">License</A><BR>
+* <A HREF=\"./Project-Scores.txt?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Document :: Project Scores ::\">Project Scores</A><BR>
+* <A HREF=\"./Read_Me.txt?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Document :: Read Me ::\">Read Me</A><BR>
+* <A HREF=\"./Security.txt?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Document :: Security ::\">Security</A><BR>
+* <A HREF=\"./Software-Valuation.txt?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Document :: Software Valuation ::\">Software Valuation</A><BR>
+* <A HREF=\"./To-Do.txt?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Document :: To Do ::\">To Do</A><BR>
+* <A HREF=\"./TOS-PP.txt?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Document :: Terms of Service and Privacy Policy ::\">Terms of Service and Privacy Policy</A><BR>
+* <A HREF=\"./Version.txt?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Document :: Version ::\">Version</A><BR>
+* <A HREF=\"./Vulnerabilities.txt?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Document :: Vulnerabilities ::\">Vulnerabilities</A><BR>
+");
 
-<B>Registered Member Account :: Options :: Messaging</B><BR>
-<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;Display&#61;Conversations&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Send & Receive :: Instant Messenger :: Private Messages ::\"><IMG SRC=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Image/Icon_Member/Icon_Account_Messages_Private_Messages.$_GLOBAL_SYSTEM_IMAGE_EXTENSION?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" HEIGHT=\"50\" WIDTH=\"50\"></IMG></A>&nbsp;
-<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;Display&#61;MessengerOptions&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Send & Receive :: Instant Messenger :: Group Messages ::\"><IMG SRC=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Image/Icon_Member/Icon_Account_Messages_Messenger.$_GLOBAL_SYSTEM_IMAGE_EXTENSION?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" HEIGHT=\"50\" WIDTH=\"50\"></IMG></A>&nbsp;
-<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;Display&#61;MessengerOptions&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Send & Receive :: Short Message Service :: Messages ::\"><IMG SRC=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Image/Icon_Member/Icon_Account_Messages_Messenger_SMS.$_GLOBAL_SYSTEM_IMAGE_EXTENSION?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" HEIGHT=\"50\" WIDTH=\"50\"></IMG></A>&nbsp;
-<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;Display&#61;MessengerOptions&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Send & Receive :: Multimedia Message Service :: Messages ::\"><IMG SRC=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Image/Icon_Member/Icon_Account_Messages_Messenger_MMS.$_GLOBAL_SYSTEM_IMAGE_EXTENSION?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" HEIGHT=\"50\" WIDTH=\"50\"></IMG></A><BR><BR>
+} // [ + ] IF: Internal Application: Display :: Options :: Is: Activated
 
-<B>Registered Member Account :: Options :: Account Details</B><BR>
-<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Update_Account&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Update :: This Registered Member Account :: Profile Data ::\"><IMG SRC=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Image/Icon_Member/Icon_Account_Update.$_GLOBAL_SYSTEM_IMAGE_EXTENSION?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" HEIGHT=\"50\" WIDTH=\"50\"></IMG></A><BR><BR>
+/*
+ ============================================================================================================
+ +
+ + IF: Internal Application: Display :: Is: Statistics
+ +
+ ============================================================================================================
+*/
+												
+if ($_GET["Display"] == "Statistics") {
 
-<B>Registered Member Account :: Options :: Security</B><BR>
-<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Control_Panel&amp;Display&#61;Authorizations&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Manage :: This Registered Member Account :: Authorizations ::\"><IMG SRC=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Image/Icon_Member/Icon_Revoke_Authorization.$_GLOBAL_SYSTEM_IMAGE_EXTENSION?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" HEIGHT=\"50\" WIDTH=\"50\"></IMG></A><BR><BR>
+echo ("
+											<B>System Statistical Information</B><HR>
+												*&nbsp;Project Installation Date: $_Application_Module_Member_System_LIST_INSTALLATION_DATE<BR>
+												*&nbsp;Total Number of :: Web-Page Document Executions :: Unique: $_Application_Module_Member_System_LIST_TOTAL_NUMBER_OF_DOCUMENT_EXECUTIONS_UNIQUE<BR>
+												*&nbsp;Total Number of :: Web-Page Document Executions :: Non-Unique: $_Application_Module_Member_System_LIST_TOTAL_NUMBER_OF_DOCUMENT_EXECUTIONS_NON_UNIQUE<BR><BR>
 
-<B>Registered Member Account :: Options :: Logs</B><BR>
-<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Control_Panel&amp;Display&#61;Interaction_Log&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: This Registered Member Account :: Log :: Activity and Interaction Log ::\"><IMG SRC=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Image/Icon_Member/Icon_Account_Log_Interaction.$_GLOBAL_SYSTEM_IMAGE_EXTENSION?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" HEIGHT=\"50\" WIDTH=\"50\"></IMG></A>&nbsp;
-<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Control_Panel&amp;Display&#61;Authentication_Log&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: This Registered Member Account :: Log :: Authentication Log ::\"><IMG SRC=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Image/Icon_Member/Icon_Account_Log_Authentication.$_GLOBAL_SYSTEM_IMAGE_EXTENSION?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" HEIGHT=\"50\" WIDTH=\"50\"></IMG></A>
-<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Control_Panel&amp;Display&#61;Location_Log&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: This Registered Member Account :: Log :: Location Log ::\"><IMG SRC=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Image/Icon_Member/Icon_Account_Log_Location.$_GLOBAL_SYSTEM_IMAGE_EXTENSION?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" HEIGHT=\"50\" WIDTH=\"50\"></IMG></A>
+											<B>System-Wide Social Interaction Information & Statistics</B><HR>
+
+											<B>System-Wide :: Forum Information & Statistics</B><BR>
+												*&nbsp;Total Number of Forums: $_Application_Module_Member_System_DB_Query_SELECT_ALL_FORUM_NUMBER_OF_ROWS<BR>
+												*&nbsp;Total Number of Forum' Topics: $_Application_Module_Member_System_DB_Query_SELECT_ALL_FORUM_NUMBER_OF_ROWS_TOPICS<BR>
+												*&nbsp;Total Number of Forum' Topic' Messages: $_Application_Module_Member_System_DB_Query_SELECT_ALL_FORUM_NUMBER_OF_ROWS_TOPIC_MESSAGES<BR><BR>
+
+											<B>System-Wide :: Commentation Information & Statistics</B><BR>
+												*&nbsp;Total Number of Comments: $_Application_Module_Member_System_DB_Query_SELECT_ALL_COMMENTS_NUMBER_OF_ROWS<BR><BR>
+
+											<B>System-Wide :: Registered Member Accounts Information & Statistics</B><BR>
+												*&nbsp;Total Number of Registered Member Accounts: $_Application_Module_Member_System_DB_Query_SELECT_ALL_MEMBERS_NUMBER_OF_ROWS<BR>
+												*&nbsp;Total Number of Registered Member Accounts :: Currently Active: $_Application_Module_Member_System_DB_Query_SELECT_ALL_MEMBERS_NUMBER_OF_ROWS_ACTIVE<BR>
+												*&nbsp;Total Number of Registered Member Accounts :: Currently Inactive: $_Application_Module_Member_System_DB_Query_SELECT_ALL_MEMBERS_NUMBER_OF_ROWS_INACTIVE<BR><BR>
+
+											<B>System-Wide :: File System Information & Statistics</B><BR>
+												*&nbsp;Total Number of Files Within The File System: $_Application_Module_Member_System_DB_Query_SELECT_ALL_FILES_NUMBER_OF_ROWS<BR><BR>
+");
+
+} // [ + ] IF: Internal Application: Display :: Statistics :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + IF: Internal Application: Display :: Is: Settings
+ +
+ ============================================================================================================
+*/
+												
+if ($_GET["Display"] == "Settings") {
+
+echo ("
+											<B>Settings :: System :: Current</B><HR>
+
+											<B>Settings :: System :: Web-Page Document :: Output Data :: Compression</B><BR>
+												*&nbsp;G.N.U. ZIP ( GZIP ) Data Compression: $_GLOBAL_SYSTEM_STATUS_GZIP | $_Application_Module_Member_System_Status_GZIP<BR><BR>
+
+											<B>Settings :: System :: Graphical User Interface :: Theme</B><BR>
+												*&nbsp;System :: Theme :: File Format :: Audio: $_GLOBAL_SYSTEM_SOUND_EXTENSION<BR>
+												*&nbsp;System :: Theme :: File Format :: Image: $_GLOBAL_SYSTEM_IMAGE_EXTENSION<BR>
+												*&nbsp;System :: Theme :: Directory: $_GLOBAL_SYSTEM_THEME_DIRECTORY<BR><BR>
+
+											<B>Settings :: System :: Language</B><BR>
+												*&nbsp;System :: Language: $_GLOBAL_SYSTEM_LANGUAGE_DIRECTORY<BR><BR>
+												
+											<B>Settings :: System :: Security :: Web-Page Output :: Cache :: Cache-Circumvention
+											</B><HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+											<B>Settings :: Security :: Cache Circumvention</B><BR>
+												*&nbsp;Security :: Setting :: Cache Circumvention :: Status :: $_GLOBAL_SETTING_SYSTEM_SECURITY_SETTING_STATUS_CACHE_CIRCUMVENTION | $_Application_Module_Member_System_System_Security_Module_Status_Cache_Circumvention<BR><BR>
+
+											<B>Settings :: Security :: Cache-Circumvention :: Random Generated Strings</B><BR>
+												*&nbsp;=> Secure HASH Algorithm, 512 :: Hyper-Text Reference<BR>
+												$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION<BR>
+												*&nbsp;=> Secure HASH Algorithm, 512 :: Audio<BR>
+												$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_AUDIO_RANDOM_STRING_GENERATION<BR>
+												*&nbsp;=> Secure HASH Algorithm, 512 :: Document<BR>
+												$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_DOCUMENT_RANDOM_STRING_GENERATION<BR>
+												*&nbsp;=> Secure HASH Algorithm, 512 :: Image<BR>
+												$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION<BR>
+												*&nbsp;=> Secure HASH Algorithm, 512 :: Video<BR>
+												$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_VIDEO_RANDOM_STRING_GENERATION<BR>
+												*&nbsp;=> Secure HASH Algorithm, 512 :: Internal File Inclusion<BR>
+												$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_FILEINCLUSION_RANDOM_STRING_GENERATION<BR><BR>
+
+											<B>Settings :: System :: Security :: Account Control :: Authentication
+											</B><HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+											<B>Settings :: Security :: Account Authentication :: Authorization</B><BR>
+												*&nbsp;Account Restrictions :: Authentication :: Authorized :: MAC Address: $_GLOBAL_SYSTEM_SETTING_ACCOUNT_SECURITY_RESTRICT_AUTHORIZED_MAC_ADDRESS<BR>
+												*&nbsp;Account Restrictions :: Authentication :: Authorized :: Internet Protocol Address: $_GLOBAL_SYSTEM_SETTING_ACCOUNT_SECURITY_RESTRICT_AUTHORIZED_INTERNET_PROTOCOL_ADDRESS<BR>
+												*&nbsp;Account Restrictions :: Authentication :: Authorized :: Web Browser: $_GLOBAL_SYSTEM_SETTING_ACCOUNT_SECURITY_RESTRICT_AUTHORIZED_WEB_BROWSER<BR><BR>
+												
+												<B>Settings :: Upload :: File Size Control</B>
+												<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+												<B>File Categories</B><BR>
+												*&nbsp;File Size Upload Limitations :: In BITS :: File System :: $_GLOBAL_SYSTEM_UPLOAD_SIZE_PUBLIC_FILE_CATEGORIES<BR><BR>
+
+												<B>Registered Member Account :: Data</B><BR>
+												*&nbsp;File Size Upload Limitations :: In BITS :: Registered Member Account :: Media :: Audio: $_GLOBAL_SYSTEM_UPLOAD_SIZE_PRIVATE_MEMBER_AUDIO<BR>
+												*&nbsp;File Size Upload Limitations :: In BITS :: Registered Member Account :: Media :: Document: $_GLOBAL_SYSTEM_UPLOAD_SIZE_PRIVATE_MEMBER_DOCUMENT<BR>
+												*&nbsp;File Size Upload Limitations :: In BITS :: Registered Member Account :: Media :: Image: $_GLOBAL_SYSTEM_UPLOAD_SIZE_PRIVATE_MEMBER_IMAGE<BR>
+												*&nbsp;File Size Upload Limitations :: In BITS :: Registered Member Account :: Media :: Video: $_GLOBAL_SYSTEM_UPLOAD_SIZE_PRIVATE_MEMBER_VIDEO<BR><BR>
+
+												<B>Registered Member Account :: Streams</B><BR>
+												*&nbsp;File Size Upload Limitations :: In BITS :: Registered Member Account :: Streams :: Individual Files :: Audio: $_GLOBAL_SYSTEM_UPLOAD_SIZE_PRIVATE_MEMBER_STREAMS_AUDIO<BR>
+												*&nbsp;File Size Upload Limitations :: In BITS :: Registered Member Account :: Streams :: Individual Files :: Document: $_GLOBAL_SYSTEM_UPLOAD_SIZE_PRIVATE_MEMBER_STREAMS_DOCUMENT<BR>
+												*&nbsp;File Size Upload Limitations :: In BITS :: Registered Member Account :: Streams :: Individual Files :: Image: $_GLOBAL_SYSTEM_UPLOAD_SIZE_PRIVATE_MEMBER_STREAMS_IMAGE<BR>
+												*&nbsp;File Size Upload Limitations :: In BITS :: Registered Member Account :: Streams :: Individual Files :: Video: $_GLOBAL_SYSTEM_UPLOAD_SIZE_PRIVATE_MEMBER_STREAMS_VIDEO<BR><BR>
+
+												<B>Instant Messenger :: Data</B><BR>
+												*&nbsp;File Size Upload Limitations :: In BITS :: Instant Messenger :: Audio: $_GLOBAL_SYSTEM_UPLOAD_SIZE_PUBLIC_FILE_MESSENGER_AUDIO<BR>
+												*&nbsp;File Size Upload Limitations :: In BITS :: Instant Messenger :: Document: $_GLOBAL_SYSTEM_UPLOAD_SIZE_PUBLIC_FILE_MESSENGER_DOCUMENT<BR>
+												*&nbsp;File Size Upload Limitations :: In BITS :: Instant Messenger :: Image: $_GLOBAL_SYSTEM_UPLOAD_SIZE_PUBLIC_FILE_MESSENGER_IMAGE<BR>
+												*&nbsp;File Size Upload Limitations :: In BITS :: Instant Messenger :: Video: $_GLOBAL_SYSTEM_UPLOAD_SIZE_PUBLIC_FILE_MESSENGER_VIDEO<BR><BR>
+												
+											<B>Settings :: System :: Kernel Parameters & Information</B><BR>
+											<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 											
+											<BR><B>Database Management System Server Database Entries</B>
+											<HR ALIGN=\"LEFT\" WIDTH=\"5%\">
+												<B>Database Management System Server Database Entry :: Kernel File :: Backup :: From Initial Installation</B><BR>
+												*&nbsp;Database Management System Server Database Entry :: Kernel File :: Installation :: Installation Date: $_GLOBAL_SYSTEM_SETTINGS_KERNEL_BACKUP_INSTALLATION_DATE_INSTALLATION<BR>
+												*&nbsp;Database Management System Server Database Entry :: Kernel File :: Installation :: Integrity: $_GLOBAL_SYSTEM_SETTINGS_KERNEL_BACKUP_INSTALLATION_FILE_INTEGRITY<BR>
+												*&nbsp;Database Management System Server Database Entry :: Kernel File :: Installation :: Name: <A HREF=\"./System/Kernel/Backup/Kernel_Installation.kernel\" TITLE=\":: Open & Display :: The Kernel File :: Installation Kernel File ::\" TARGET=\"_NEW\">$_GLOBAL_SYSTEM_SETTINGS_KERNEL_BACKUP_INSTALLATION_FILE_NAME</A><BR>
+												*&nbsp;Database Management System Server Database Entry :: Kernel File :: Installation :: Version: $_GLOBAL_SYSTEM_SETTINGS_KERNEL_BACKUP_INSTALLATION_FILE_VERSION<BR><BR>
+										
+												<B>Database Management System Server Database Entry :: Kernel File :: Backup :: Current</B><BR>
+												*&nbsp;Database Management System Server Database Entry :: Kernel File :: Backup :: Current :: Installation Date: $_GLOBAL_SYSTEM_SETTINGS_KERNEL_BACKUP_CURRENT_DATE_INSTALLATION<BR>
+												*&nbsp;Database Management System Server Database Entry :: Kernel File :: Backup :: Current :: Integrity: $_GLOBAL_SYSTEM_SETTINGS_KERNEL_BACKUP_CURRENT_FILE_INTEGRITY<BR>
+												*&nbsp;Database Management System Server Database Entry :: Kernel File :: Backup :: Current :: Name: <A HREF=\"./System/Kernel/Backup/Kernel_Installation.kernel\" TITLE=\":: Open & Display :: The Kernel File :: Current Kernel File ::\" TARGET=\"_NEW\">./System/Kernel/Backup/Current.kernel</A><BR>
+												*&nbsp;Database Management System Server Database Entry :: Kernel File :: Backup :: Current :: Version: $_GLOBAL_SYSTEM_SETTINGS_KERNEL_BACKUP_CURRENT_FILE_VERSION<BR><BR>
+
+											<B>Physical Kernel Files</B>
+											<HR ALIGN=\"LEFT\" WIDTH=\"5%\">
+
+												<B>Physical Kernel File :: From Initial Installation</B><BR>
+												*&nbsp;Physical Kernel File :: :: Backup :: From Initial Installation :: Name and Location: <A HREF=\"./System/Kernel/Backup/Kernel_Installation.kernel\" TITLE=\":: Open & Display :: The Kernel File :: Installation Kernel File ::\" TARGET=\"_NEW\">./System/Kernel/Backup/Kernel_Installation.kernel</A><BR>
+												*&nbsp;Physical Kernel File :: :: Backup :: From Initial Installation :: Version: $_GLOBAL_SYSTEM_SETTINGS_KERNEL_BACKUP_INSTALLATION_FILE_VERSION<BR>
+												*&nbsp;Physical Kernel File :: :: Backup :: From Initial Installation :: Integrity: $_GLOBAL_SYSTEM_KERNEL_FILE_INTEGRITY_BACKUP_INSTALLATION<BR><BR>
+
+												<B>Physical Kernel File :: Backup :: Current</B><BR>
+												*&nbsp;Physical Kernel File :: Backup :: Current :: Name and Location: <A HREF=\"./System/Kernel/Backup/Current.kernel\" TITLE=\":: Open & Display :: The Kernel File :: Backup :: Current Kernel File ::\" TARGET=\"_NEW\">./System/Kernel/Backup/Current.kernel</A><BR>
+												*&nbsp;Physical Kernel File :: Backup :: Current :: Version: $_GLOBAL_SYSTEM_SETTINGS_KERNEL_BACKUP_INSTALLATION_FILE_VERSION<BR>
+												*&nbsp;Physical Kernel File :: Backup :: Current :: Integrity: $_GLOBAL_SYSTEM_KERNEL_FILE_INTEGRITY_BACKUP_CURRENT<BR><BR>
+												
+												<B>Physical Kernel File :: Configuration File Parameters</B><BR>
+												*&nbsp;Configuration File Parameters :: Kernel File :: Name and Location: $_INTERNAL_FILE_KERNEL<BR>
+												*&nbsp;Configuration File Parameters :: Kernel File :: Version: $_INTERNAL_FILE_KERNEL_VERSION<BR>
+												*&nbsp;Configuration File Parameters :: Kernel File :: Integrity: $_INTERNAL_FILE_KERNEL_INTEGRITY<BR><BR>
+												
+											<B>Settings :: System :: Uniform-Resource-Locations :: GIT</B><BR>
+											</B><HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+												<B>Uniform-Resource-Location :: GIT :: Applications</B><BR>
+												<FORM>
+													<TEXTAREA ROWS=\"7\" COLS=\"50\">$_ACCESS_URL_GIT_REPOSITORY_APPLICATIONS</TEXTAREA>
+												</FORM><BR><BR>
+
+												<B>Uniform-Resource-Location :: GIT :: Kernel</B><BR>
+												<FORM>
+													<TEXTAREA ROWS=\"7\" COLS=\"50\">$_ACCESS_URL_GIT_REPOSITORY_KERNEL</TEXTAREA>
+												</FORM><BR><BR>
+
+												<B>Uniform-Resource-Location :: GIT :: Plug-Ins</B><BR>
+												<FORM>
+													<TEXTAREA ROWS=\"7\" COLS=\"50\">$_ACCESS_URL_GIT_REPOSITORY_PLUGINS</TEXTAREA>
+												</FORM><BR><BR>
+
+												<B>Uniform-Resource-Location :: GIT :: Themes</B><BR>
+												<FORM>
+													<TEXTAREA ROWS=\"7\" COLS=\"50\">$_ACCESS_URL_GIT_REPOSITORY_THEMES</TEXTAREA>
+												</FORM><BR><BR>
+");
+												
+} // [ + ] IF: Internal Application: Display :: Settings :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + IF: Internal Application: Display :: Is: Settings :: Plug-Ins
+ +
+ ============================================================================================================
+*/
+												
+if ($_GET["Display"] == "Plug-Ins") {
+
+echo ("
+
+											<B>Settings :: System :: Plug-Ins :: Current</B><HR><BR>
+
+											<B>Settings :: System :: Plug-Ins :: Hardware Devices
+											</B><HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+											<B>Settings :: System :: Plug-Ins ::</B> <A HREF=\"./System/Plug-Ins/Camera/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA/Camera.$_INTERNAL_FILE_EXTENSION\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Plug-In Application Module :: Camera ::\" TARGET=\"_NEW\">Camera</A><BR>
+												*&nbsp;Plug-In :: Camera :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA<BR>
+												*&nbsp;Plug-In :: Camera :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_CAMERA | $_Application_Module_Member_System_PlugIn_Status_Camera<BR>
+											<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Devices&amp;Display&#61;Options&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Application :: Devices ::\">Device :: Hardware :: Testing :: Camera</A><BR><BR>
+
+											<B>Settings :: System :: Plug-Ins ::</B> <A HREF=\"./System/Plug-Ins/Microphone/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_MICROPHONE/Microphone.$_INTERNAL_FILE_EXTENSION\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Plug-In Application Module :: Microphone ::\" TARGET=\"_NEW\">Microphone</A><BR>
+												*&nbsp;Plug-In :: Microphone :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_MICROPHONE<BR>
+												*&nbsp;Plug-In :: Microphone :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_MICROPHONE | $_Application_Module_Member_System_PlugIn_Status_Location<BR>
+											<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Devices&amp;Display&#61;Options&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Application :: Devices ::\">Device :: Hardware :: Testing :: Microphone</A><BR><BR>
+
+											<B>Settings :: System :: Plug-Ins ::</B> <A HREF=\"./System/Plug-Ins/Location/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_LOCATION/Location.$_INTERNAL_FILE_EXTENSION\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Plug-In Application Module :: Location ::\" TARGET=\"_NEW\">Location</A><BR>
+												*&nbsp;Plug-In :: Location :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_LOCATION<BR>
+												*&nbsp;Plug-In :: Location :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_LOCATION | $_Application_Module_Member_System_PlugIn_Status_Location<BR><BR>
+
+											<B>Settings :: System :: Plug-Ins ::</B> <A HREF=\"./System/Plug-Ins/Notifications/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_NOTIFICATIONS/Notifications.$_INTERNAL_FILE_EXTENSION\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Plug-In Application Module :: Notifications ::\" TARGET=\"_NEW\">Notifications</A><BR>
+												*&nbsp;Plug-In :: Notifications :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_NOTIFICATIONS<BR>
+												*&nbsp;Plug-In :: Notifications :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_NOTIFICATIONS | $_Application_Module_Member_System_PlugIn_Status_Notifications<BR><BR>
+
+											<B>Settings :: System :: Plug-Ins :: Data Processing
+											</B><HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+
+											<B>Settings :: System :: Plug-Ins ::</B> <A HREF=\"./System/Plug-Ins/Encryption/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_ENCRYPTION/Encryption.$_INTERNAL_FILE_EXTENSION\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Plug-In Application Module :: Encryption ::\" TARGET=\"_NEW\">Encryption</A><BR>
+												*&nbsp;Plug-In :: Encryption :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_ENCRYPTION<BR>
+												*&nbsp;Plug-In :: Encryption :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_ENCRYPTION | $_Application_Module_Member_System_PlugIn_Status_EncryptionL<BR><BR>
+
+											<B>Settings :: System :: Plug-Ins ::</B> <A HREF=\"./System/Plug-Ins/Safe-HTML/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SAFEHTML/Safe-HTML.$_INTERNAL_FILE_EXTENSION\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Plug-In Application Module :: Safe-HTML ::\" TARGET=\"_NEW\">Safe-HTML</A><BR>
+												*&nbsp;Plug-In :: Safe-HTML :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SAFEHTML<BR>
+												*&nbsp;Plug-In :: Safe-HTML :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_SAFEHTML | $_Application_Module_Member_System_PlugIn_Status_SafeHTML<BR><BR>
+
+											<B>Settings :: System :: Plug-Ins ::</B> <A HREF=\"./System/Plug-Ins/Text-Editor/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_TEXT_EDITOR/Text-Editor.$_INTERNAL_FILE_EXTENSION\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Plug-In Application Module :: Text-Editor ::\" TARGET=\"_NEW\">Text-Editor</A><BR>
+												*&nbsp;Plug-In :: Text-Editor :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_TEXT_EDITOR<BR>
+												*&nbsp;Plug-In :: Text-Editor :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_TEXT_EDITOR | $_Application_Module_Member_System_PlugIn_Status_Text_Editor<BR><BR>
+
+											<B>Settings :: System :: Plug-Ins ::</B> Data Sanitization
+											</B><HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+											<B>Settings :: System :: Plug-Ins ::</B> <A HREF=\"./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Secure-Delete.$_INTERNAL_FILE_EXTENSION\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Plug-In Application Module :: Secure-Delete ::\" TARGET=\"_NEW\">Secure-Delete</A><BR>
+												*&nbsp;Plug-In :: Secure-Delete :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE<BR>
+												*&nbsp;Plug-In :: Secure-Delete :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_SECURE_DELETE | $_Application_Module_Member_System_PlugIn_Status_Secure_Delete<BR><BR>
+
+											<B>Settings :: System :: Plug-Ins :: Date and Time
+											</B><HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+											<B>Settings :: System :: Plug-Ins ::</B> <A HREF=\"./System/Plug-Ins/Time/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_TIME/Time.$_INTERNAL_FILE_EXTENSION\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Plug-In Application Module :: Time ::\" TARGET=\"_NEW\">Time</A><BR>
+												*&nbsp;Plug-In :: Time :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_TIME<BR>
+												*&nbsp;Plug-In :: Time :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_TIME | $_Application_Module_Member_System_PlugIn_Status_Time<BR><BR>
+
+											<B>Settings :: System :: Plug-Ins :: Terminal and Console
+											</B><HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+											<B>System :: Settings :: Plug-Ins :: Graphical</B><BR>
+												*&nbsp;Plug-In :: Smileys and Emojis :: Directory: $_GLOBAL_SYSTEM_SMILEYS_DIRECTORY<BR><BR>
+
+											<B>Settings :: System :: Services :: Current</B><HR><BR>
+
+											System :: Settings :: Services :: <A HREF=\"./System/Services/Commander\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Application Module :: Commander ::\" TARGET=\"_NEW\">Commander</A><BR>
+												*&nbsp;System :: Services :: Status :: Commander: $_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_COMMANDER | $_Application_Module_Member_System_System_Services_Status_Commander<BR><BR>
+
+											System :: Settings :: Services :: <A HREF=\"./System/Services/Integrity\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Application Module :: Integrity ::\" TARGET=\"_NEW\">Integrity</A><BR>
+												*&nbsp;System :: Services :: Status :: Integrity: $_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_INTEGRITY | $_Application_Module_Member_System_System_Services_Status_Integrity<BR><BR>
+
+											System :: Settings :: Services :: <A HREF=\"./System/Services/Loops\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Application Module :: Loops ::\" TARGET=\"_NEW\">Loops</A><BR>
+												*&nbsp;System :: Services :: Status :: Loops: $_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_LOOPS | $_Application_Module_Member_System_System_Services_Status_Loops<BR><BR>
+
+											System :: Settings :: Services :: <A HREF=\"./System/Services/Services\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Application Module :: Services ::\" TARGET=\"_NEW\">Services</A><BR>
+												*&nbsp;System :: Services :: Status: Services: $_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_SERVICES | $_Application_Module_Member_System_System_Services_Status_Services<BR><BR>
+												
+											System :: Settings :: Services :: <A HREF=\"./System/Services/Tasks\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Application Module :: Tasks ::\" TARGET=\"_NEW\">Tasks</A><BR>
+												*&nbsp;System :: Services :: Status: Tasks: $_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_TASKS | $_Application_Module_Member_System_System_Services_Status_Tasks<BR><BR>
+
+											<B>System Security Settings</B><HR><BR>
+
+											<B>Settings :: System :: Security
+											</B><HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+											<B>Settings :: Security :: Security Modules</B><BR>
+												*&nbsp;System :: Security Module :: Master Sanitization Module :: Directory :: $_GLOBAL_SETTING_SYSTEM_SECURITY_MODULE_DIRECTORY_MASTER_SANITIZATION<BR>
+												*&nbsp;System :: Security Module :: Master Sanitization Module :: Status :: $_GLOBAL_SETTING_SYSTEM_SECURITY_MODULE_STATUS_MASTER_SANITIZATION | $_Application_Module_Member_System_System_Security_Module_Status_Master_Sanitization<BR><BR>
+");
+
+} // [ + ] IF: Internal Application: Display :: Plug-Ins :: Is: Activated
+												
+/*
+ ============================================================================================================
+ +
+ + IF: Internal Application: Display :: Is: Networking
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Display"] == "Networking") {
+
+echo ("
+
+											<B>Network Connection and Web Server Information</B><HR>
+
+											<B>Visitor' :: Network :: Connection Information</B><BR>
+												*&nbsp;Visitor' :: Network :: Server Request Method :: $_GLOBAL_LOCAL_SERVER_REQUEST_METHOD<BR>
+												*&nbsp;Visitor' :: Network :: Server Request Time :: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME<BR>
+												*&nbsp;Visitor' :: Network :: Server Connection Type :: $_GLOBAL_LOCAL_SERVER_HTTP_CONNECTION_TYPE<BR>
+												*&nbsp;Visitor' :: Network :: Internet Protocol Address :: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_REMOTE_SERVER_ADDRESS\" TITLE=\":: Open & Display :: The :: Who-Is Information :: For :: Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS :: \" TARGET=\"_NEW\">$_GLOBAL_REMOTE_SERVER_ADDRESS</A><BR>
+												*&nbsp;Visitor' :: Network :: Internet Protocol Address :: Connecting Port Number :: $_GLOBAL_REMOTE_SERVER_PORT<BR>
+												*&nbsp;Visitor' :: Network :: Web-Browser :: User-Agent :: $_GLOBAL_REMOTE_SERVER_HTTP_USER_AGENT_DISPLAY<BR>
+												*&nbsp;Visitor' :: Location :: Global-Positioning-System :: Coordinates :: X, Y, Z ::
+												&nbsp;<A ID=\"getLocationOutputLatitude\" TITLE=\":: Global-Positioning-System :: Coordinates :: Latitude ::\"></A>,
+												<A ID=\"getLocationOutputLongitude\" TITLE=\":: Global-Positioning-System :: Coordinates ::: Longitude ::\"></A>
+												&nbsp;With Altitude Above Sea-Level:&nbsp;<A ID=\"getLocationOutputAltitude\" TITLE=\":: Global-Positioning-System :: Coordinates :: Altitude ::\"></A>
+												&nbsp;<SPAN ID=\"OutputLocation\"></SPAN><BR><BR>
+
+											<B>Local Web Server :: Information</B><BR>
+												*&nbsp;This Web Server :: Hyper-Text-Transfer-Protocol Host :: $_GLOBAL_LOCAL_SERVER_HTTP_HOST<BR>
+												*&nbsp;This Web Server ::  Gateway Interface :: $_GLOBAL_LOCAL_SERVER_GATEWAY_INTERFACE<BR>
+												*&nbsp;This Web Server :: Address :: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_LOCAL_SERVER_ADDRESS\" TITLE=\":: Open & Display :: The :: Who-Is Information :: For :: Internet Protocol Address: $_GLOBAL_LOCAL_SERVER_ADDRESS ::\" TARGET=\"_NEW\">$_GLOBAL_LOCAL_SERVER_ADDRESS</A><BR>
+												*&nbsp;This Web Server :: Address :: Connecting Port Number: $_GLOBAL_LOCAL_SERVER_PORT<BR>
+												*&nbsp;This Web Server :: Software :: $_GLOBAL_LOCAL_SERVER_SOFTWARE<BR>
+												*&nbsp;This Web Server :: Request Time :: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME<BR>
+												*&nbsp;This Web Server :: Request Time ( Float ) :: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME_FLOAT<BR>
+												*&nbsp;This Web Server :: Document Root :: $_GLOBAL_LOCAL_SERVER_DOCUMENT_ROOT<BR>
+												*&nbsp;This Web Server :: Hyper-Text-Transfer-Protocol Accept Type :: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT<BR>
+												*&nbsp;This Web Server :: Hyper-Text-Transfer-Protocol Character Set :: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_CHARACTER_SET<BR>
+												*&nbsp;This Web Server :: Hyper-Text-Transfer-Protocol Encoding :: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_ENCODING<BR>
+												*&nbsp;This Web Server :: Hyper-Text-Transfer-Protocol Loading Type :: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LOADING<BR>
+												*&nbsp;This Web Server :: Hyper-Text-Transfer-Protocol Language :: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LANGUAGE<BR>
+");
+
+} // [ + ] IF: Internal Application: Display :: Networking :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + IF: Internal Application: Display :: Is: Time
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Display"] == "Time") {
+
+echo ("
+											<B>Current System Date and Time Settings</B><HR>
+												<B>Server :: This Web Server :: Date</B><BR>
+												*&nbsp;This Web Server :: Date :: Standard :: Timestamp :: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD<BR>
+												*&nbsp;This Web Server :: Date :: In Years :: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL<BR>
+												*&nbsp;This Web Server :: Date :: In Months :: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL<BR>
+												*&nbsp;This Web Server :: Date :: In Days :: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL<BR><BR>
+
+												<B>Server :: This Web Server :: Time</B><BR>
+												*&nbsp;This Web Server :: Time :: In Hours: $_GLOBAL_LOCAL_SERVER_TIME_HOURS<BR>
+												*&nbsp;This Web Server :: Time :: In Minutes: $_GLOBAL_LOCAL_SERVER_TIME_MINUTES<BR>
+												*&nbsp;This Web Server :: Time :: In Seconds: $_GLOBAL_LOCAL_SERVER_TIME_SECONDS<BR>
+												*&nbsp;This Web Server :: Time :: In Microseconds: $_GLOBAL_LOCAL_SERVER_TIME_MICROSECONDS<BR>
+												*&nbsp;This Web Server :: Time :: In Unix-Epoch: $_GLOBAL_LOCAL_SERVER_TIME_UNIX<BR><BR>
+												
+												<B>Server :: This Web Server :: Time :: Internet Time</B><BR>
+												*&nbsp;This Web Server :: TIme :: In <A HREF=\"https://en.wikipedia.org/wiki/Internet_Time\" TITLE=\":: Open & Display :: The Official Wikipedia Article Entry :: For :: Internet Time ::\" TARGET=\"_NEW\">Internet Time: $_GLOBAL_LOCAL_SERVER_TIME_INTERNET</A><BR><BR>
+
+												<B>Unix-Epoch :: Time :: Built-In</B><HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+												*&nbsp;This Web Server :: Time :: In Microtime: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME<BR>
+												*&nbsp;This Web Server :: Time :: In Unix-Epoch Start Time: January, 1st of 1970<BR>
+												*&nbsp;This Web Server :: Time :: In Unix-Epoch: $_GLOBAL_LOCAL_SERVER_TIME_UNIX<BR><BR>
+
+												<B>Unix-Epoch :: Time :: Built-In</B></BR>
+												*&nbsp;This Web Server :: Time :: In Unix-Epoch :: Seconds: $_GLOBAL_LOCAL_SERVER_TIME_UNIX<BR>
+												*&nbsp;This Web Server :: Time :: In Unix-Epoch :: Minutes: $_GLOBAL_LOCAL_SERVER_TIME_UNIX_MINUTES<BR>
+												*&nbsp;This Web Server :: Time :: In Unix-Epoch :: Hours: $_GLOBAL_LOCAL_SERVER_TIME_UNIX_HOURS<BR>
+												*&nbsp;This Web Server :: Time :: In Unix-Epoch :: Days: $_GLOBAL_LOCAL_SERVER_TIME_UNIX_DAYS<BR>
+												*&nbsp;This Web Server :: Time :: In Unix-Epoch :: Months: $_GLOBAL_LOCAL_SERVER_TIME_UNIX_MONTHS<BR>
+												*&nbsp;This Web Server :: Time :: In Unix-Epoch :: Years: ~ $_GLOBAL_LOCAL_SERVER_TIME_UNIX_YEARS<BR><BR>
+
+												<B>Unix-Epoch :: Date-Time :: Built-In</B><BR>
+												*&nbsp;This Web Server :: Date-Time :: In Unix-Epoch :: Years: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_YEARS<BR>
+												*&nbsp;This Web Server :: Date-Time :: In Unix-Epoch :: Months: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_MONTHS<BR>
+												*&nbsp;This Web Server :: Date-Time :: In Unix-Epoch :: Days: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_DAYS<BR>
+												*&nbsp;This Web Server :: Date-Time :: In Unix-Epoch :: Hours: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_HOURS<BR>
+												*&nbsp;This Web Server :: Date-Time :: In Unix-Epoch :: Minutes: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_MINUTES<BR>
+												*&nbsp;This Web Server :: Date-Time :: In Unix-Epoch :: Seconds: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_SECONDS<BR><BR>
+
+												<B>Unix-Epoch :: Date-Time :: Manually Programmed :: Non-Leap Year</B><BR>
+												*&nbsp;This Web Server :: Date-Time :: In Unix-Epoch :: Years: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_EPOCH_MANUAL_YEARS<BR>
+												*&nbsp;This Web Server :: Date-Time :: In Unix-Epoch :: Months: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_EPOCH_MANUAL_MONTHS<BR>
+												*&nbsp;This Web Server :: Date-Time :: In Unix-Epoch :: Days: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_EPOCH_MANUAL_DAYS<BR>
+												*&nbsp;This Web Server :: Date-Time :: In Unix-Epoch :: Hours: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_EPOCH_MANUAL_HOURS<BR>
+												*&nbsp;This Web Server :: Date-Time :: In Unix-Epoch :: Minutes: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_EPOCH_MANUAL_MINUTES<BR>
+												*&nbsp;This Web Server :: Date-Time :: In Unix-Epoch :: Seconds: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_EPOCH_MANUAL_SECONDS<BR><BR>
+
+												<B>Server :: Remote</B><BR><BR>
+
+												<B><A HREF=\"https://en.Wikipedia.org/wiki/Gregorian_calendar\" TITLE=\":: Open & Display :: The :: Official Wikipedia Article Entry :: For :: Gregorian Calendar ::\" TARGET=\"_NEW\">Gregorian Calendar</A> :: Non-Leap Year</B><BR>
+												*&nbsp;Number of Seconds In 365 Days With 24 Hours In Each Day: 60 Seconds * 60 Minutes * 24 Hours * 365 Days = 31,536,000 Seconds<BR>
+												*&nbsp;Number of Minutes In 365 Days With 24 Hours In Each Day: 60 Minutes * 24 Hours * 365 Days = 31,536,000 Minutes<BR>
+												*&nbsp;Number of Hours In 365 Days With 24 Hours In Each Day: 24 Hours * 365 Days = 8,760 Hours<BR>
+												*&nbsp;Number of Days In 365 Days With 24 Hours In Each Day: 365 Days / 1 = 365 Days<BR>
+												*&nbsp;Number of Weeks In 365 Days With 24 Hours In Each Day: 365 / 7 = 52.1428571429 Weeks<BR><BR>
+
+												<B>Celestial</B><BR>
+");
+												
+} // [ + ] IF: Internal Application: Display :: DateTime :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + IF: Internal Application: Display :: Is: Software
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Display"] == "Software") {
+
+echo ("
+											<B>Web Server Technologies</B><HR>
+
+											<B>Hyper-Text-Transfer-Protocol Engine Information :: General</B><BR>
+											*&nbsp;Apache Hyper-Text-Transfer-Protocol Engine, Currently Loaded :: $_PROJECT_WEB_SERVER_TECHNOLOGY_VERSION<BR><BR>
+
+											<B>Hyper-Text-Transfer-Protocol Engine Information :: Apache</B><BR>
+											*&nbsp;Apache Hyper-Text-Transfer-Protocol Engine, Currently Loaded :: $_PROJECT_WEB_SERVER_TECHNOLOGY_VERSION_APACHE<BR><BR>
+
+											<B>My-Structured-Query-Language Engine Information</B><BR>
+											*&nbsp;My-Structured-Query-Language Engine Version Number, Currently Loaded :: $_PROJECT_WEB_SERVER_TECHNOLOGY_VERSION_MYSQL<BR><BR>
+
+											<B>Operating System Environment Information</B><BR>
+											*&nbsp;Operating System Environment, Currently Loaded :: $_PROJECT_WEB_SERVER_TECHNOLOGY_VERSION_OPERATING_SYSTEM<BR><BR>
+
+											<B>Pre-Hyper-Text-Post-Processor Engine Information</B><BR>
+											*&nbsp;Pre-Hyper-Text-Post-Processor :: Parser Engine :: Version Number :: Configuration File :: $_ACCESS_PHP_ENGINE_VERSION<BR>
+											*&nbsp;Pre-Hyper-Text-Post-Processor :: Parser Engine :: Version Number :: Currently Loaded :: $_PROJECT_WEB_SERVER_TECHNOLOGY_VERSION_PHP<BR>
+											*&nbsp;Pre-Hyper-Text-Post-Processor :: Zend Engine :: Version Number, Currently Loaded :: $_PROJECT_WEB_SERVER_TECHNOLOGY_VERSION_PHP_ZEND<BR><BR>
+");
+
+} // [ + ] IF: Internal Application: Display :: Statistics :: Is: Activated
+
+echo ("
 											<HR>
-											<CENTER>[ <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_INTERNAL&#61;Logout&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Logout :: Secure-Delete This Session, Credentials & Cookies ::\">Logout</A> ]</CENTER>
+											<CENTER><B>[ <A HREF=\"$_PROJECT_SERVER_URL_SECURE/Projects/CerberusCMS/Validation/Validate.php?Version&#61;$_PROJECT_VERSION_SHORT\" TITLE=\":: Validate This $_PROJECT_STRING_NAME_EXTENDED Installation ::\">$_PROJECT_VERSION_EXTENDED</A> ]</B></CENTER><HR>
 ");
 
 /*
  ============================================================================================================
- + Database Server Query :: Retrieve :: Registered Member Account Settings From The Database Server
+ + Kill SQL Database Server Query: Select From Statistics
  ============================================================================================================
 */
 
-$_Application_Module_Member_Control_Panel_DB_Query_SELECT_MEMBERS					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
-
-$_Application_Module_Member_Control_Panel_DB_Query_SELECT_MEMBERS_Fetch_Array = $_Application_Module_Member_Control_Panel_DB_Query_SELECT_MEMBERS->fetch_array(MYSQLI_BOTH);
-
-$_Application_Module_Member_Control_Panel_LIST_MEMBER_ID						= $_Application_Module_Member_Control_Panel_DB_Query_SELECT_MEMBERS_Fetch_Array['id'];
-$_Application_Module_Member_Control_Panel_LIST_MEMBER_STATUS_ACCOUNT_ACTIVATION				= $_Application_Module_Member_Control_Panel_DB_Query_SELECT_MEMBERS_Fetch_Array['member_status_account_activation'];
-$_Application_Module_Member_Control_Panel_LIST_MEMBER_ACCOUNT_ACTIVATION_KEY				= $_Application_Module_Member_Control_Panel_DB_Query_SELECT_MEMBERS_Fetch_Array['member_status_account_activation_key'];
-$_Application_Module_Member_Control_Panel_LIST_MEMBER_SETTINGS_CONTROL_PANEL_SOUND			= $_Application_Module_Member_Control_Panel_DB_Query_SELECT_MEMBERS_Fetch_Array['member_sound'];
+// [ C ] $_Application_Module_Member_System_DB_Query_SELECT_ALL_STATISTICS->free_result();
 
 /*
  ============================================================================================================
- + Registered Member Account :: Activation :: Activation Key :: Variables :: Post Variables
+ + Kill SQL Database Server Query: Select From Members
  ============================================================================================================
 */
 
-$_Application_Module_Member_Control_Panel_POST_ACCOUNT_ACTIVATION_KEY					= $_POST['AMM_Control_Panel_Account_Activation_Key'];
-$_Application_Module_Member_Control_Panel_POST_ACCOUNT_ACTIVATION_KEY					= stripslashes($_Application_Module_Member_Control_Panel_POST_ACCOUNT_ACTIVATION_KEY);
+// [ C ] $_Application_Module_Member_System_DB_Query_SELECT_ALL_MEMBERS->free_result();
 
 /*
  ============================================================================================================
- +
- + Registered Member Account :: Control Panel :: Audio Settings
- +
+ + Kill SQL Database Server Query: Select From Comments
  ============================================================================================================
 */
+
+// [ C ] $_Application_Module_Member_System_DB_Query_SELECT_ALL_COMMENTS->free_result();
 
 /*
  ============================================================================================================
- + IF: Registered Member Account :: Control Panel Audio :: Setting Is: On, Play Audio Files
+ + Kill SQL Database Server Query: Select From Files
  ============================================================================================================
 */
 
-if ($_Application_Module_Member_Control_Panel_LIST_MEMBER_SETTINGS_CONTROL_PANEL_SOUND >= "1") {
-
-echo ("
-											<EMBED SRC=\"$_Application_Module_Member_Control_Panel_AUDIO_PLAY_CONTROL_PANEL\" HIDDEN=\"true\" AUTOPLAY=\"true\" LOOP=\"false\"></EMBED>
-");
-
-} // [ + ] IF: Registered Member Account :: Control Panel :: Setting :: Audio Option Is: On
+// [ C ] $_Application_Module_Member_System_DB_Query_SELECT_ALL_FILES->free_result();
 
 /*
  ============================================================================================================
- +
- + Registered Member Account :: Activation By Stored Activation Key
- +
+ + Kill SQL Database Server Query: Select From Forum
  ============================================================================================================
 */
+
+// [ C ] $_Application_Module_Member_System_DB_Query_SELECT_ALL_FORUM_NUMBER_OF_ROWS->free_result();
 
 /*
  ============================================================================================================
- + IF: Registered Member Account :: Activation Key :: Variable :: HAS NOT Executed
+ + Kill SQL Database Server Query: Select From Forum Topics
  ============================================================================================================
 */
 
-if (!$_Application_Module_Member_Control_Panel_POST_ACCOUNT_ACTIVATION_KEY) {
+// [ C ] $_Application_Module_Member_System_DB_Query_SELECT_ALL_FORUM_NUMBER_OF_ROWS_TOPICS->free_result();
 
 /*
  ============================================================================================================
- + IF: Registered Member Account :: IS NOT Activated, Display Activation Message
+ + Kill SQL Database Server Query: Select From Forum Topic Messages
  ============================================================================================================
 */
 
-if ($_Application_Module_Member_Control_Panel_LIST_MEMBER_STATUS_ACCOUNT_ACTIVATION <= 0) {
-
-echo ("
-											<BR><BR>$_Application_Module_Member_Message_Control_Panel_KEY_ACTIVATE<HR>
-												<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Control_Panel\" METHOD=\"POST\">
-													Account Activation Key:<BR>
-														<INPUT TYPE=\"TEXT\" NAME=\"AMM_Control_Panel_Account_Activation_Key\" MAXLENGTH=\"32\"><BR>
-													<INPUT TYPE=\"SUBMIT\" VALUE=\"Activate\">
-												</FORM>
-");
-
-} // [ + ] IF: Registered Member Account :: IS NOT Activated
-
-} else {
-
-											echo ("$_Application_Module_Member_Message_Control_Panel_KEY_CHECK <BR>");
-
-/*
- ============================================================================================================
- + IF: Typed OR Pasted :: String :: Activation Key :: IS NOT :: Activation Key Stored In The Database Management System Server Database
- ============================================================================================================
-*/
-
-if ($_Application_Module_Member_Control_Panel_LIST_MEMBER_ACCOUNT_ACTIVATION_KEY != $_Application_Module_Member_Control_Panel_POST_ACCOUNT_ACTIVATION_KEY) {
-
-											echo ($_Application_Module_Member_Message_Control_Panel_KEY_CHECK_ERROR);
-
-} else {
-
-$_Application_Module_Member_Control_Panel_DB_Query_UPDATE_MEMBERS					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET member_status_account_activation='1' WHERE id='$_Application_Module_Member_Control_Panel_LIST_MEMBER_ID'");
-
-/*
- ============================================================================================================
- + IF: Database Management System Server :: Database :: Query :: Update :: Registered Member Account :: Activation Key
- ============================================================================================================
-*/
-
-
-if ($_Application_Module_Member_Control_Panel_DB_Query_UPDATE_MEMBERS) {
-
-											echo ($_Application_Module_Member_Message_Control_Panel_KEY_ACCEPT);
-
-} else {
-
-											echo ($_Application_Module_Member_Message_Control_Panel_KEY_ACCEPT_ERROR);
-
-} // [ + ] IF: Update: Database Management System Server Database Entry => Registered Member Account
-
-/*
- ============================================================================================================
- + Kill Database Server Query: Update Member Activation Key
- ============================================================================================================
-*/
-
-$DB->free($_Application_Module_Member_Control_Panel_DB_Query_UPDATE_MEMBERS);
-
-} // [ + ] IF: Database Query => List :: Registered Member Account :: Details
-
-} // [ + ] IF: Post Update => Registered Member Account Activation
-
-/*
- ============================================================================================================
- + Kill Database Server Query: Select All Member Entries
- ============================================================================================================
-*/
-
-// [ C ] $_Application_Module_Member_Control_Panel_DB_Query_SELECT_MEMBERS->free_result();
-
-/*
- ============================================================================================================
- +
- + IF: Internal Application: Display :: Archive
- +
- ============================================================================================================
-*/
-
-if ($_GET["Display"] == "Archive") {
-
-echo ("
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Control_Panel&amp;Display&#61;Archive&amp;Option&#61;CreateArchive\" TITLE=\":: Create Archive ::\">Create Archive</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Control_Panel&amp;Display&#61;Archive&amp;Option&#61;ManageArchive\" TITLE=\":: Manage Archive ::\">Manage Archive</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Control_Panel&amp;Display&#61;Archive&amp;Option&#61;RestoreArchive\" TITLE=\":: Restore Archive ::\">Restore Archive</A><BR><BR>
-");
-
-/*
- ============================================================================================================
- +
- + IF: Internal Application: Display :: Archive :: Option :: IS :: Create Archive
- +
- ============================================================================================================
-*/
-
-if ($_GET["Option"] == "CreateArchive") {
-
-$_Application_Module_Member_Control_Panel_ARCHIVE_CREATE_ARCHIVE_FIND_DIRECTORY			= "./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files"; 
-$_Application_Module_Member_Control_Panel_ARCHIVE_CREATE_ARCHIVE_FILE				= "./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Archive/Archive.zip";
-$_Application_Module_Member_Control_Panel_ARCHIVE_CREATE_ARCHIVE_INITIALIZE			= new ZipArchive;
-
-/*
- ============================================================================================================
- + IF: Initialize ZIP Archive -> Open :: Registered Member Account :: Directory
- ============================================================================================================
-*/
-
-if ($_Application_Module_Member_Control_Panel_ARCHIVE_CREATE_ARCHIVE_INITIALIZE->open($_Application_Module_Member_Control_Panel_ARCHIVE_CREATE_ARCHIVE_FIND_DIRECTORY, ZipArchive::CREATE ) === TRUE) {
-
-$_Application_Module_Member_Control_Panel_ARCHIVE_CREATE_ARCHIVE_DIRECTORY_OPEN_DIRECTORY	= opendir($_Application_Module_Member_Control_Panel_ARCHIVE_CREATE_ARCHIVE_FIND_DIRECTORY);
-
-/*
- ============================================================================================================
- + WHILE: Reading :: Directory :: Registered Member Account
- ============================================================================================================
-*/
-
-while ($_Application_Module_Member_Control_Panel_ARCHIVE_CREATE_ARCHIVE_FILE = readdir($_Application_Module_Member_Control_Panel_ARCHIVE_CREATE_ARCHIVE_DIRECTORY_OPEN_DIRECTORY)) {
-
-/*
- ============================================================================================================
- + IF: IS File: Registered Member Account :: Directory :: Files
- ============================================================================================================
-*/
-
-if (is_file($_Application_Module_Member_Control_Panel_ARCHIVE_CREATE_ARCHIVE_FIND_DIRECTORY.$_Application_Module_Member_Control_Panel_ARCHIVE_CREATE_ARCHIVE_FILE)) {
-
-$_Application_Module_Member_Control_Panel_ARCHIVE_CREATE_ARCHIVE_INITIALIZE->addFile($_Application_Module_Member_Control_Panel_ARCHIVE_CREATE_ARCHIVE_FIND_DIRECTORY.$_Application_Module_Member_Control_Panel_ARCHIVE_CREATE_ARCHIVE_FILE, $_Application_Module_Member_Control_Panel_ARCHIVE_CREATE_ARCHIVE_FILE);
-
-} // [ + ] IF: Files Found Within Read Directory ARE Added To Archive File
-
-} // [ + ] WHILE: Reading :: Directory :: For :: Archive File
-
-$_Application_Module_Member_Control_Panel_ARCHIVE_CREATE_ARCHIVE_INITIALIZE->close();
-
-} // [ + ] IF: ZIP :: Open :: Directory, Create :: ZIP Archive File
-
-} // [ + ] IF: Internal Application: Control Panel :: Registered Member Account :: Display :: Archive :: Option :: CreateArchive
-
-} // [ + ] IF: Internal Application: Control Panel :: Registered Member Account :: Display :: Archive
-
-/*
- ============================================================================================================
- +
- + IF: Internal Application: Display :: Authorizations
- +
- ============================================================================================================
-*/
-
-if ($_GET["Display"] == "Authorizations") {
-
-echo ("
-<HR>
-<B>Registered Member Account Security Programming :: Device :: Authorization</B><BR>
-Registered Member Account Authentication Authorization Security Programming Code provides the means to Authorize and Revoke Authentication Authorizations for Device details instantly if the System Settings for Restricted Device Authorizations Is: Disabled.<BR><BR>
-
-Internet Protocol Addresses usually cannot be spoofed, but if an attacker or a malicious hacker looking to gain access to your Registered Member Account here knows the Internet Protocol Address Location that you Authenticated into this Registered Member Account from they could physically go to that Location and Authenticate into your
-Registered Member Account if the attacker or malicious hacker knows your Clear-Text Registered Member Account Electronic Mail Address, Password and UserName Combination. The attacker or malicious hacker could also Clone the Credential Cookies from the Device itself and copy the Cloned Credential Cookies onto their Device or Devices and gain access to your Registered Member Account even if they do not know your Clear-Text Registered Member Account Electronic Mail Address, Password and UserName Combination.
-This can happen if the attacker or malicious hacker is physically there watching you type in your Registered Member Account Electronic Mail Address, Password and UserName Combination or if you happen to forget to Logout from this Registered Member Account after Successfully Authenticating into this Registered Member Account from a Public Place such as a Public Library, College or University, Coffee Shop or Local-Area-Network Center.<BR><BR>
-
-If the attacker or malicious hacker were to Clone and then Inject the Credential Cookies because you did not Logout from this Registered Member Account after having Successfully Authenticated into it from a Public Place the attacker or Malicious Hacker could then move to a different area that has a different Internet Protocol Address and remain Logged-In to this Registered Member Account.
-If this were to happen the Device Internet Protocol Address in use by the attacker or malicious hacker could be different than your current Device Internet Protocol Address and this would be shown in the Authentication Logs, Interaction Logs and Location Logs unless they followed you from place to place and used the same Internet Protocol Address that you are using at the same time that you are using it or if they have somehow gained physical access to the Long-Term-Evolution ( LTE ) system
-that assigned your Mobile Device Data Internet Protocol Address or if the Internet Service Provider deliberately gave them the same Internet Protocol Address that you are using so as to allow them to gain access to your Registered Member Account and the data in it.<BR><BR>
-
-These malicious hacking techniques known as Session Hijacking, Session Cloning and Cookie Cloning are almost impossible to secure from especially if using Session Programming. All Session Programming Functions are easily exploited and all Sessions can be Hijacked and or Cloned from Device to Device. Sessions are even more insecure
-than Credential Cookies with Extensive Cookie Validation and Verification Security Programming. Nearly every Social Media Service available on the Internet including free and paid major Electronic Mail Address providers cannot protect against attacks such as these because there is no built-in Security Programming Functionality that exists in any Programming Language Session Functions to secure from it and just about
-every Social Media Service available on the Internet uses Session Functions.<BR><BR>
-
-The Security Programming of this system uses Non-Exploitable Registered Member Account Cookie Credential Checks in a Pre-Order Algebraic set of Programming Systems
-upon every execution of the document. If any byte changes in the Registered Member Account Credential Cookies the Device is automatically Logged-Out and all of the Authorization details are set back to 0 in the Database Management System Server Database that keeps your
-Registered Member Account Entry Data.<BR><BR>
-
-Additional Device Security Programming into this System has Authorization Checks that constantly check your current Internet Protocol Address, MAC Address and Web Browser to the Authorized Internet Protocol Address, MAC Address and Web Browser
-on your Registered Member Account. <B>IF: this Security Feature is enabled by the Systems Administration you can Authorize and Revoke Authorizations of these details instantly to allow for Authentication into your Registered Member Account here. This is not the same thing that is shown on other services that feature Authorization Details and 2-Factor Authentication does not protect against these kinds of attacks. This is the only real way of doing it. Once after you have successfully Authenticated into your Registered Member Account with one or
-more of these details you can then Revoke the Authorization on any of these details instantly to stay Logged-In while then disallowing anyone else from Authenticating from the same Location with the same Authentication Details even if they know all of the details.</B><BR><BR>
-
-<B>Internet Protocol Address Security Enforcement works in a few different ways</B>:<BR>
-* <B>IF: The System Security Setting for Restricted Internet Protocol Address Location Authorization Is: Enabled</B> then the Registered Member Account requires a completely random Secure-Hash-Algorithm, 512 Authorization Security Token from Electronic Mail Message Inbox or 2-Part Short-Message-Service Message to Authenticate into the
-Registered Member Account every time a new Authentication Authorization is requested even if it is from the exact same Location or previous Locations that Successfully Authenticated. Once after the Device has Successfully Authenticated into the Registered Member Account the Authorization Security Token is set back to 0 and once after the Device is Successfully Logged-Out the Authorized Internet Protocol Address Location is set back to 0 where if a new Authorization Request is made then access to the Registered Member Account
-Electronic Mail Message Address Inbox to receive the Authorization Security Token would be required in order to then Successfully Authenticate into the Registered Member Account.<BR><BR>
-
-* <B>IF: The System Security Setting for Non-Changing Internet Protocol Address Enforcement Is: Enabled</B> the Authenticated Device ***WILL*** be Logged-Out instantly when the Internet Protocol Address changes such as if you Authenticated into the Registered Member Account from
-a Mobile Device Cell Data Connection and that Device began moving from area to area and the Internet Protocol Address changed it would then be instantly Logged-Out because the Internet Protocol Address changed from the Authorized Internet Protocol Address.<BR><BR>
-
-* <B>IF: The System Security Setting for Non-Changing Internet Protocol Address Enforcement Is: Disabled</B> the Device will ***NOT*** be Logged-Out when the Device Internet Protocol Address Changes, but
-if your assigned Internet Protocol Address changes as you move from place to place such as if the Device stays Logged-In on a Mobile Device with a Cellular Data Connection or if the Device physically goes to a different
-Wireless Access Point Location it is still possible for someone to Authenticate into your Registered Member Account if they know the Location of where you Authenticated from. This could be
-an Internet Protocol Address at a Public Library, Coffee Shop, Local-Area-Network Center, College or University, Mobile Device Data Cellular Network or somewhere else. If they know, they can physically
-go to that Location and Log-In by using Cloned Registered Member Account Credential Cookies even if they do not actually know the Clear-Text Registered Member Account Electronic Mail Address, Password and UserName.
-While this System Security Programming is invulnerable to Session Hijacking due to this system not using any Session Programming Code anywhere it is still possible for an attacker
-to Clone the Registered Member Account Cookies, inject those Cloned Registered Member Account Cookies into a Web Browser or a Device they own and control and then Authenticate into the Registered Member Account if the <B>Restricted Internet Protocol Address Authorization Location Setting Is: Off.</B><BR><BR>
-
-In other words: <B>IF: the Internet Protocol Address Location Authorization Setting Is: On</B> no one else can Authenticate into the Registered Member Account even if they know the Clear-Text Electronic Mail Address, Password and UserName Combination unless they are also physically at the same exact Location that you are in and using the same exact Internet Protocol Address that you are using when you Authenticate into this Registered Member Account.<BR><BR>
-
-The attacker would need to know four pieces of information to take the intrusion a step further if they do not have physical access to the Device:<BR>
-* The Electronic Mail Address<BR>
-* The Password<BR>
-* The UserName<BR>
-* The Internet Protocol Address of where you Authenticated from<BR><BR>
-
-Public Libraries, Local-Area-Network Centers, Coffee Shops and more locations such as these all provide Public Wireless Access Points. Mobile Device Cellular Data Connections and Wide Area Networks often share Internet Protocol Addresses among
-several different Devices at the same time even if they are owned and operated by multiple different people. As you can see this is a security risk. Although Device MAC Addresses and Web Browser User-Agent Strings can be spoofed by anyone that knows how, you yourself can also form a custom and or
-completely randomized Web Browser User-Agent String and a completely randomized Device MAC Address and then add those strings to the Authorization at the point of Authentication Authorization.<BR><BR>
-
-Your Device MAC Address whether it is completely randomized or not automatically remains hidden from Public View in the Authentication Logs and the Interaction Logs so as to make
-it impossible for anyone else who should not have access to the Registered Member Account from successfully Authenticating into the Registered Member Account. Your Device Web Browser User-Agent String can also be hidden from Public View or Friend View in the Authentication and Interaction Logs.<BR><BR>
-
-Once after you have Successfully Authenticated into your Registered Member Account all that is needed is to Revoke the Authorizations for each Device Detail and or then Update the Password on the Registered Member Account to make it
-impossible for anyone else to Authenticate into this Registered Member Account.<BR><BR>
-
-<B>Current Settings :: System :: Security :: Restrictions :: Registered Member Account :: Authentication :: Authorizations :: Multi-Factor</B><HR>
-* Registered Member Account :: Restriction :: Authentication :: Multi-Factor :: Internet Protocol Address: $_GLOBAL_SYSTEM_SETTING_ACCOUNT_SECURITY_DEVICE_AUTHENTICATION_MULTIFACTOR_IP<BR><BR>
-
-<B>Current Settings :: System :: Security :: Restrictions :: Registered Member Account :: Device :: Authorizations</B><HR>
-* Registered Member Account :: Restriction :: Device :: Authorization :: Internet Protocol Address: $_GLOBAL_SYSTEM_SETTING_ACCOUNT_SECURITY_RESTRICT_AUTHORIZED_INTERNET_PROTOCOL_ADDRESS<BR>
-* Registered Member Account :: Restriction :: Device :: Authorization :: MAC Address: $_GLOBAL_SYSTEM_SETTING_ACCOUNT_SECURITY_RESTRICT_AUTHORIZED_MAC_ADDRESS<BR>
-* Registered Member Account :: Restriction :: Device :: Authorization :: Web Browser: $_GLOBAL_SYSTEM_SETTING_ACCOUNT_SECURITY_RESTRICT_AUTHORIZED_WEB_BROWSER<BR><BR>
-
-<B>Current Details :: Device :: Live</B><HR>
-
-* Device :: Internet Protocol Address<BR>
-<TEXTAREA ROWS=\"5\" COLS=\"25\" MAXLENGTH=\"1000\">$_GLOBAL_REMOTE_SERVER_ADDRESS :: Conecting Port Number :: $_GLOBAL_REMOTE_SERVER_PORT</TEXTAREA><BR><BR>
-
-* Device :: MAC Address<BR>
-<TEXTAREA ROWS=\"5\" COLS=\"25\" MAXLENGTH=\"1000\">$_GLOBAL_REMOTE_SERVER_MAC_ADDRESS</TEXTAREA><BR><BR>
-
-* Device :: Web Browser :: User-Agent String<BR>
-<TEXTAREA ROWS=\"5\" COLS=\"25\" MAXLENGTH=\"1000\">$_GLOBAL_REMOTE_SERVER_HTTP_USER_AGENT</TEXTAREA><BR><BR>
-
-<B>Current Details :: Device :: From :: Database Management System Server :: Database Entry :: Registered Member Account</B><HR>
-
-* Device :: Internet Protocol Address<BR>
-<TEXTAREA ROWS=\"5\" COLS=\"25\" MAXLENGTH=\"1000\">$_GLOBAL_MEMBER_IP_ADDRESS_CURRENT</TEXTAREA><BR><BR>
-
-* Device :: MAC Address<BR>
-<TEXTAREA ROWS=\"5\" COLS=\"25\" MAXLENGTH=\"1000\">$_GLOBAL_MEMBER_ACCOUNT_DEVICE_MAC_ADDRESS</TEXTAREA><BR><BR>
-
-* Device :: Web Browser :: User-Agent String<BR>
-<TEXTAREA ROWS=\"5\" COLS=\"25\" MAXLENGTH=\"1000\">$_GLOBAL_MEMBER_ACCOUNT_DEVICE_WEB_BROWSER</TEXTAREA><BR><BR>
-
-<B>Device Details :: From Registered Member Account :: Database Entry :: Authentication :: Multi-Factor :: Authorized</B><HR>
-
-* Device :: Internet Protocol Address<BR>
-<TEXTAREA ROWS=\"5\" COLS=\"25\" MAXLENGTH=\"1000\">$_GLOBAL_MEMBER_IP_ADDRESS_AUTHORIZED_MULTIFACTOR</TEXTAREA><BR><BR>
-
-* Security Token<BR>
-<TEXTAREA ROWS=\"5\" COLS=\"25\" MAXLENGTH=\"1000\">$_GLOBAL_MEMBER_AUTHENTICATION_AUTHORIZATION_SECURITY_TOKEN</TEXTAREA><BR><BR>
-
-<B>Device Details :: From Registered Member Account :: Database Entry :: Authorized</B><HR>
-
-* Device :: Internet Protocol Address<BR>
-<TEXTAREA ROWS=\"5\" COLS=\"25\" MAXLENGTH=\"1000\">$_GLOBAL_MEMBER_IP_ADDRESS_AUTHORIZED</TEXTAREA><BR><BR>
-
-* Device :: MAC Address<BR>
-<TEXTAREA ROWS=\"5\" COLS=\"25\" MAXLENGTH=\"1000\">$_GLOBAL_MEMBER_IP_ADDRESS_AUTHORIZED</TEXTAREA><BR><BR>
-
-* Device :: Web Browser :: User-Agent String<BR>
-<TEXTAREA ROWS=\"5\" COLS=\"25\" MAXLENGTH=\"1000\">$_GLOBAL_MEMBER_ACCOUNT_DEVICE_WEB_BROWSER_AUTHORIZED</TEXTAREA><BR><BR>
-
-<B>Digital Fingerprints :: Registered Member Account</B><HR>
-Digital Fingerprint :: Generated :: Random :: Clear-Text:<BR>
-$_INTERNAL_SECURITY_GENERATED_MEMBER_FINGERPRINT_CLEARTEXT<BR><BR>
-
-Digital Fingerprint :: Generated :: Random :: HASHED:<BR>
-$_INTERNAL_SECURITY_GENERATED_MEMBER_FINGERPRINT_HASHED<BR><BR>
-
-Digital Fingerprint :: From Database Entry :: Clear-Text<BR>
-$_GLOBAL_MEMBER_SECURITY_FINGERPRINT_CLEARTEXT<BR><BR>
-
-Digital Fingerprint :: From Database Entry :: HASHED<BR>
-$_GLOBAL_MEMBER_SECURITY_FINGERPRINT_HASHED<BR><BR>
-
-Digital Fingerprint :: Cookie :: HASHED:<BR>
-$_GLOBAL_COOKIE_MEMBER_SECURITY_FINGERPRINT<BR><BR>
-
-<B>Revoke Current :: Registered Member Account :: Authentication :: Multi-Factor</B><HR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Control_Panel&amp;Display&#61;Authorizations&amp;Revoke&#61;MultiFactor_IP\" TITLE=\":: Revoke :: Authentication :: Device :: Authorization :: Internet Protocol Address ::\">Revoke Current :: Registered Member Account :: Authentication :: Multi-Factor :: Authorization :: Internet Protocol Address</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Control_Panel&amp;Display&#61;Authorizations&amp;Revoke&#61;SecurityToken\" TITLE=\":: Revoke :: Authentication :: Device :: Authorization :: Security Token ::\">Revoke Current :: Registered Member Account :: Authentication :: Multi-Factor :: Authorization :: Security Token</A><BR><BR>
-
-<B>Revoke Current :: Registered Member Account :: Device :: Authorizations</B><HR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Control_Panel&amp;Display&#61;Authorizations&amp;Revoke&#61;IP\" TITLE=\":: Revoke Current :: Registered Member Account :: Device :: Authorization :: Internet Protocol Address ::\">Revoke Current :: Registered Member Account :: Device :: Authorized :: Internet Protocol Address</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Control_Panel&amp;Display&#61;Authorizations&amp;Revoke&#61;MAC_Address\" TITLE=\":: Revoke Current :: Registered Member Account :: Device :: Authorization :: MAC Address ::\">Revoke Current :: Registered Member Account :: Device :: Authorized :: MAC Address</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Control_Panel&amp;Display&#61;Authorizations&amp;Revoke&#61;Web_Browser\" TITLE=\":: Revoke Current :: Registered Member Account :: Device :: Authorization :: Web Browser ::\">Revoke Current :: Registered Member Account :: Device :: Authorized :: Web Browser</A><BR><BR>
-");
-
-/*
- ============================================================================================================
- +
- + IF: Internal Application: Display :: Authentication :: Authorizations :: Revoke :: Security Token
- +
- ============================================================================================================
-*/
-
-if ($_GET["Revoke"] == "SecurityToken") {
-
-/*
- ============================================================================================================
- + Database Server Query :: Update :: Revoke :: Registered Member Account Entry :: Internet Protocol Address :: Authorized
- ============================================================================================================
-*/
-
-$_Application_Module_Member_Control_Panel_DB_Query_UPDATE_REVOKE_MEMBER_AUTHORIZATION_SECURITY_TOKEN		= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET
-member_ip_address_authorization_token='0'
-WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'
-");
-
-/*
- ============================================================================================================
- + IF: Database Server Query :: Update :: Revoke :: Registered Member Account Entry :: Authentication :: Authorization :: Security Token
- ============================================================================================================
-*/
-
-if ($_Application_Module_Member_Control_Panel_DB_Query_UPDATE_REVOKE_MEMBER_AUTHORIZATION_SECURITY_TOKEN) {
-
-echo ("Kernel Message: I have Revoked the Security Token Successfully.");
-
-} else {
-
-echo ("Kernel Message: I was not able to Revoke the Security Token. Try Again ?");
-
-} // [ + ] IF: Database Management System Database Server :: Query :: Update :: Revoke :: Registered Member Account :: Authentication :: Authorization :: Security Token
-
-} // [ + ] IF: Internal Application: Display :: Authorizations :: Revoke :: Registered Member Account :: Authentication :: Authorization :: Security Token :: Is: Activated
-
-/*
- ============================================================================================================
- +
- + IF: Internal Application: Display :: Authentication :: Authorizations :: Revoke :: Multi-Factor :: Internet Protocol Address
- +
- ============================================================================================================
-*/
-
-if ($_GET["Revoke"] == "MultiFactor_IP") {
-
-/*
- ============================================================================================================
- + Database Server Query :: Update :: Revoke :: Registered Member Account Entry :: Internet Protocol Address :: Authorized
- ============================================================================================================
-*/
-
-$_Application_Module_Member_Control_Panel_DB_Query_UPDATE_REVOKE_MEMBER_DEVICE_AUTHORIZED_MULTIFACTOR_INTERNET_PROTOCOL_ADDRESS		= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET
-member_ip_address_authorized_multifactor='000.000.000.000'
-WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'
-");
-
-/*
- ============================================================================================================
- + IF: Database Server Query :: Update :: Revoke :: Registered Member Account Entry :: Internet Protocol Address :: Authentication :: Authorized :: Multi-Factor :: Internet Protocol Address
- ============================================================================================================
-*/
-
-if ($_Application_Module_Member_Control_Panel_DB_Query_UPDATE_REVOKE_MEMBER_DEVICE_AUTHORIZED_MULTIFACTOR_INTERNET_PROTOCOL_ADDRESS) {
-
-echo ("Kernel Message: The Current Authorized :: Registered Member Account :: Multi-Factor :: Authentication :: Internet Protocol Address :: Was Revoked Successfully.<BR>");
-
-} else {
-
-echo ("Kernel Message: I Was Not Able To Revoke The Current Authorized :: Registered Member Account :: Multi-Factor :: Authentication :: Internet Protocol Address. Try Again ?<BR>");
-
-} // [ + ] IF: Database Management System Database Server :: Query :: Update :: Revoke :: Registered Member Account :: Device :: Authentication :: Authorization :: Multi-Factor :: Internet Protocol Address
-
-} // [ + ] IF: Internal Application: Display :: Authorizations :: Revoke :: Registered Member Account :: Authentication :: Authorization :: Multi-Factor :: Internet Protocol Address :: Is: Activated
-
-/*
- ============================================================================================================
- +
- + IF: Internal Application: Display :: Authorizations :: Revoke :: Internet Protocol Address
- +
- ============================================================================================================
-*/
-
-if ($_GET["Revoke"] == "IP") {
-
-/*
- ============================================================================================================
- + Database Server Query :: Update :: Revoke :: Registered Member Account Entry :: Internet Protocol Address :: Authorized
- ============================================================================================================
-*/
-
-$_Application_Module_Member_Control_Panel_DB_Query_UPDATE_REVOKE_MEMBER_ACCOUNT_AUTHORIZED_INTERNET_PROTOCOL_ADDRESS			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET
-member_ip_address_authorized='000.000.000.000'
-WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'
-");
-
-/*
- ============================================================================================================
- + IF: Database Server Query :: Update :: Revoke :: Registered Member Account Entry :: Internet Protocol Address :: Authorized
- ============================================================================================================
-*/
-
-if ($_Application_Module_Member_Control_Panel_DB_Query_UPDATE_REVOKE_MEMBER_ACCOUNT_AUTHORIZED_INTERNET_PROTOCOL_ADDRESS) {
-
-echo ("Kernel Message: The Current Authorized :: Registered Member Account :: Device :: Internet Protocol Address Was Revoked Successfully.<BR>");
-
-} else {
-
-echo ("Kernel Message: I Was Not Able To Revoke The Current Authorized :: Registered Member Account :: Device :: Internet Protocol Address. Try Again ?<BR>");
-
-} // [ + ] IF: Database Management System Database Server :: Query :: Update :: Revoke Authorization :: Internet Protocol Address
-
-} // [ + ] IF: Internal Application: Display :: Authorizations :: Revoke Authorization :: IP :: Is: Activated
-
-/*
- ============================================================================================================
- +
- + IF: Internal Application: Display :: Authorizations :: Revoke :: MAC Address
- +
- ============================================================================================================
-*/
-
-if ($_GET["Revoke"] == "MAC_Address") {
-
-/*
- ============================================================================================================
- + Database Server Query :: Update :: Revoke :: Registered Member Account Entry :: MAC Address :: Authorized
- ============================================================================================================
-*/
-
-$_Application_Module_Member_Control_Panel_DB_Query_UPDATE_REVOKE_MEMBER_ACCOUNT_AUTHORIZED_MAC_ADDRESS			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET
-member_account_device_mac_address_authorized='00:00:00:00:00:00'
-WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'
-");
-
-/*
- ============================================================================================================
- + IF: Database Server Query :: Update :: Revoke :: Registered Member Account Entry :: MAC Address :: Authorized
- ============================================================================================================
-*/
-
-if ($_Application_Module_Member_Control_Panel_DB_Query_UPDATE_REVOKE_MEMBER_ACCOUNT_AUTHORIZED_MAC_ADDRESS) {
-
-echo ("Kernel Message: The Current Authorized Device MAC Address Was Revoked Successfully.<BR>");
-
-} else {
-
-echo ("Kernel Message: I Was Not Able To Revoke The Current Authorized Device MAC Address. Try Again ?<BR>");
-
-} // [ + ] IF: Database Management System Database Server :: Query :: Update :: Revoke Authorization :: MAC Address
-
-} // [ + ] IF: Internal Application: Display :: Authorizations :: Revoke Authorization :: MAC Address :: Is: Activated
-
-/*
- ============================================================================================================
- +
- + IF: Internal Application: Display :: Authorizations :: Revoke :: Web Browser
- +
- ============================================================================================================
-*/
-
-if ($_GET["Revoke"] == "Web_Browser") {
-
-$_Application_Module_Member_Control_Panel_DB_Query_UPDATE_REVOKE_MEMBER_ACCOUNT_AUTHORIZED_WEB_BROWSER			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET
-member_account_device_web_browser='00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'
-");
-
-/*
- ============================================================================================================
- + IF: Database Server Query :: Update :: Revoke :: Registered Member Account Entry :: Web Browser :: Authorized
- ============================================================================================================
-*/
-
-if ($_Application_Module_Member_Control_Panel_DB_Query_UPDATE_REVOKE_MEMBER_ACCOUNT_AUTHORIZED_WEB_BROWSER) {
-
-echo ("Kernel Message: The Current Authorized Web Browser User-Agent String Was Revoked Successfully.<BR>");
-
-} else {
-
-echo ("Kernel Message: I Was Not Able To Revoke The Current Authorized Web Browser User-Agent String. Try Again ?<BR>");
-
-} // [ + ] IF: Database Management System Database Server :: Query :: Update :: Revoke Authorization :: MAC Address
-
-} // [ + ] IF: Internal Application: Display :: Authorizations :: Revoke Authorization :: Web Browser :: Is: Activated
-
-} // [ + ] IF: Internal Application: Display :: Authorizations :: Revoke Authorizations :: Is: Activated
-
-/*
- ============================================================================================================
- +
- + IF: Internal Application: Display :: Registered Member Account :: Log :: Authentication Log
- +
- ============================================================================================================
-*/
-
-if ($_GET["Display"] == "Authentication_Log") {
-
-/*
- ============================================================================================================
- + IF: File Exists: Registered Member Account :: Log :: File :: Authentication Log
- ============================================================================================================
-*/
-
-if (file_exists($_Application_Module_Member_Control_Panel_CONTENTS_LOG_FILE_AUTHENTICATION_LOG)) {
-
-echo ("
-		<HR><BR><BR>
-		------------------------------------------------------------------<BR>
-		Registered Member Account :: Log :: Authentication Log<BR>
-		------------------------------------------------------------------<BR>
-		Authentication Log File HASH, Secure-Hash-Algorithm, 256: $_Application_Module_Member_Control_Panel_CONTENTS_LOG_FILE_AUTHENTICATION_LOG_CONTENTS_HASH_SHA256
-		<FORM>
-			<TEXTAREA ROWS=\"20\" COLS=\"100\">$_Application_Module_Member_Control_Panel_CONTENTS_LOG_FILE_AUTHENTICATION_LOG_CONTENTS</TEXTAREA>
-		</FORM>
-");
-
-} else {
-
-		echo ("Kernel Message: Error: Cannot Locate The Registered Member Account :: Log File :: Authentication Log");
-
-} // [ + ] IF: File Exists: Registered Member Account :: File :: Log :: Authentication Log
-
-} // [ + ] IF: Internal Application: Display :: Log File :: Authentication Log
-
-/*
- ============================================================================================================
- +
- + IF: Internal Application: Display :: Registered Member Account :: Log :: Interaction Log
- +
- ============================================================================================================
-*/
-
-if ($_GET["Display"] == "Interaction_Log") {
-
-/*
- ============================================================================================================
- + IF: File Exists: Registered Member Account :: Log :: File :: Interaction Log
- ============================================================================================================
-*/
-
-if (file_exists("$_Application_Module_Member_Control_Panel_CONTENTS_LOG_FILE_INTERACTION_LOG")) {
-
-echo ("
-		<HR><BR><BR>
-		------------------------------------------------------------------<BR>
-		Registered Member Account Activity and Interaction Log :: $_GLOBAL_LOCAL_SERVER_DATE<BR>
-		Activity and Interaction Log File For: $_GLOBAL_COOKIE_MEMBER_USERNAME<BR>
-		------------------------------------------------------------------<BR>
-		Interaction Log File HASH, Secure-Hash-Algorithm, 256: $_Application_Module_Member_Control_Panel_CONTENTS_LOG_FILE_INTERACTION_LOG_CONTENTS_HASH_SHA256
-		<FORM>
-			<TEXTAREA ROWS=\"20\" COLS=\"100\">$_Application_Module_Member_Control_Panel_CONTENTS_LOG_FILE_INTERACTION_LOG_CONTENTS</TEXTAREA>
-		</FORM>
-");
-
-} else {
-
-		echo ("Kernel Message: Error: Cannot Locate The Registered Member Account :: Log File :: Interaction Log");
-
-} // [ + ] IF: File Exists: Registered Member Account :: File :: Log :: Interaction Log
-
-} // [ + ] IF: Internal Application: Display :: Log File :: Interaction Log
-
-/*
- ============================================================================================================
- +
- + IF: Internal Application: Display :: Registered Member Account :: Log :: Location Log
- +
- ============================================================================================================
-*/
-
-if ($_GET["Display"] == "Location_Log") {
-
-/*
- ============================================================================================================
- + IF: File Exists: Registered Member Account :: Log :: File :: Location Log
- ============================================================================================================
-*/
-
-if (file_exists("$_Application_Module_Member_Control_Panel_CONTENTS_LOG_FILE_LOCATION_LOG")) {
-
-echo ("
-		<HR><BR><BR>
-		------------------------------------------------------------------<BR>
-		Registered Member Account Activity and Location Log :: $_GLOBAL_LOCAL_SERVER_DATE<BR>
-		Activity and Location Log File For: $_GLOBAL_COOKIE_MEMBER_USERNAME<BR>
-		------------------------------------------------------------------<BR>
-		Location Log File HASH, Secure-Hash-Algorithm, 256: $_Application_Module_Member_Control_Panel_CONTENTS_LOG_FILE_LOCATION_LOG_CONTENTS_HASH_SHA256
-		<FORM>
-			<TEXTAREA ROWS=\"20\" COLS=\"100\">$_Application_Module_Member_Control_Panel_CONTENTS_LOG_FILE_LOCATION_LOG_CONTENTS</TEXTAREA>
-		</FORM>
-");
-
-} else {
-
-		echo ("Kernel Message: Error: Cannot Locate The Registered Member Account :: Log File :: Location Log");
-
-} // [ + ] IF: File Exists: Registered Member Account :: File :: Log :: Location Log
-
-} // [ + ] IF: Internal Application: Display :: Log File :: Location Log
+// [ C ] $_Application_Module_Member_System_DB_Query_SELECT_ALL_FORUM_NUMBER_OF_ROWS_TOPIC_MESSAGES->free_result();
 ?>
