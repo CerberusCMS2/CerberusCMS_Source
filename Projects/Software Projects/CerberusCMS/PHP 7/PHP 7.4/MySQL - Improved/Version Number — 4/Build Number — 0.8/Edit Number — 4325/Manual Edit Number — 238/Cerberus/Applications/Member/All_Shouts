@@ -111,9 +111,9 @@ $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_TIME			= $_Application
 
 echo ("
 											<B>Shout Message</B><HR>
-											<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\"Open Profile For :: $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR\">$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR</A> Shouted:<BR>
+											<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Registered Member Account Profile :: For :: $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR\">$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR</A> Shouted:<BR>
 											<B>&#34;</B><I>$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_DATA</I><B>&#34;</B><BR>
-											This Shout Message Was Posted On: <I>$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_TIME</I><BR>
+											This Shout Message Was Shouted On: <I>$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_TIME</I><BR>
 											<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;All_Shouts&amp;DeleteID&#61;$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_ID&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Delete This Shout Message ::\">Delete This Shout Message</A><BR><BR>
 ");
 
