@@ -2146,15 +2146,15 @@ if (fwrite($_Application_Module_Member_Messenger_FIND_VISIBILE_CLEAR_TEXT_MESSEN
 							Message Details
 							<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 							<B>Timestamps</B><BR>
-							<B>* This Message Timestamp :: Server :: Local:</B>&nbsp;$_GLOBAL_LOCAL_SERVER_DATE_STANDARD<BR>
-							<B>* This Message Timestamp :: Server :: Remote:</B>&nbsp;$_GLOBAL_REMOTE_SERVER_DATE_STANDARD<BR><BR>
+							<B>* This Message Timestamp :: Device :: This Web Server:</B>&nbsp;$_GLOBAL_LOCAL_SERVER_DATE_STANDARD<BR>
+							<B>* This Message Timestamp :: Device :: Connected Device:</B>&nbsp;$_GLOBAL_LOCAL_SERVER_TIME_UNIX<BR><BR>
 
 							<B>Location :: Internet Protocol Address</B><BR>
-							<B>* Internet Protocol Address, Sent From :: Local:</B>&nbsp;<A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_LOCAL_SERVER_ADDRESS\" TITLE=\":: Open & Display :: The Who-Is Information :: For This Internet Protocol Address ::\" TARGET=\"_NEW\">$_GLOBAL_LOCAL_SERVER_ADDRESS :: $_GLOBAL_LOCAL_SERVER_PORT</A><BR>
-							<B>* Internet Protocol Address, Sent From :: Remote:</B>&nbsp;<A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_REMOTE_SERVER_ADDRESS\" TITLE=\":: Open & Display :: The Who-Is Information :: For This Internet Protocol Address ::\" TARGET=\"_NEW\">$_GLOBAL_REMOTE_SERVER_ADDRESS</A> :: $_GLOBAL_REMOTE_SERVER_PORT<BR><BR>
+							<B>* Internet Protocol Address, Sent :: Device :: To This Web Server:</B>&nbsp;<A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_LOCAL_SERVER_ADDRESS\" TITLE=\":: Open & Display :: The Who-Is Information :: For This Internet Protocol Address ::\" TARGET=\"_NEW\">$_GLOBAL_LOCAL_SERVER_ADDRESS :: $_GLOBAL_LOCAL_SERVER_PORT</A><BR>
+							<B>* Internet Protocol Address, Sent :: Device :: Connected Device:</B>&nbsp;<A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_REMOTE_SERVER_ADDRESS\" TITLE=\":: Open & Display :: The Who-Is Information :: For This Internet Protocol Address ::\" TARGET=\"_NEW\">$_GLOBAL_REMOTE_SERVER_ADDRESS</A> :: $_GLOBAL_REMOTE_SERVER_PORT<BR><BR>
 
 							<B>Device :: Details</B><BR>
-							<B>* Device, Sent From :: Remote:</B>&nbsp;$_GLOBAL_REMOTE_SERVER_HTTP_USER_AGENT_DISPLAY :: $_GLOBAL_REMOTE_SERVER_PORT<BR>
+							<B>* Device :: Web Browser :: Connected Device</B>&nbsp;$_GLOBAL_REMOTE_SERVER_HTTP_USER_AGENT_DISPLAY :: $_GLOBAL_REMOTE_SERVER_ADDRESS :: $_GLOBAL_REMOTE_SERVER_PORT<BR>
 						<HR><BR>
 ")) {
 
