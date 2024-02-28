@@ -2966,8 +2966,6 @@ echo ("
 
 													<FORM ACTION=\"./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;P2P&#61;Clear_Text&amp;MemberName&#61;$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME&amp;UploadFileSelection&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"POST\" ENCTYPE=\"multipart/form-data\">
 														* <I>Upload Unique File To This P2P :: Clear-Text File :: Messenger Room</I>:<BR>
-														[ Permitted Files ]<BR>
-														* WAV, MP3, WMA, AAC, FLAC, OGG<BR>
 														<INPUT TYPE=\"file\" NAME=\"\" MAXLENGTH=\"100\"><BR>
 														<INPUT TYPE=\"submit\" VALUE=\"Upload File\">
 													</FORM><BR><BR>
