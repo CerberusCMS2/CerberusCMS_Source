@@ -2013,7 +2013,7 @@ if ($_GET["UploadFile"] == "Video") {
 
 											echo ("* Checking For Video File Extension Type...<BR>");
 
-if (in_array($_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION, $_Application_Module_Member_Messenger_ALLOWED_FILE_EXTENSION_VIDEO)) {
+if (in_array($_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION_TYPE, $_Application_Module_Member_Messenger_ALLOWED_FILE_EXTENSION_VIDEO)) {
 
 $_Application_Module_Messenger_UPLOAD_FILE_VIDEO_PREPARE_FILE									= "1";
 
@@ -2023,7 +2023,7 @@ $_Application_Module_Messenger_UPLOAD_FILE_VIDEO_PREPARE_FILE									= "0";
 
 } // [ + ] IF: File Extension :: Video :: Is In Allowed File Extension Array
 
-											echo ("* File Extension Type Is: $_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION<BR>");
+											echo ("* File Extension Type Is: $_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION_TYPE<BR>");
 
 											echo ("* File Extension Type Is: $_Application_Module_Messenger_UPLOAD_FILE_VIDEO_PREPARE_FILE Where 1 is allowed and 0 is not allowed.<BR>");
 
@@ -2069,9 +2069,9 @@ move_uploaded_file($_FILES['AMM_Messenger_Visible_Clear_Text_File_Messenger_Room
 
 											echo ("* Done...<BR>");
 
-											echo ("* Renaming Video File From: ./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME To: ./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME - $_Application_Module_Member_Messenger_RANDOM_NUMBER_GENERATOR_1_HASH_MD5_1.$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION<BR>");
+											echo ("* Renaming Video File From: ./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME To: ./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME - $_Application_Module_Member_Messenger_RANDOM_NUMBER_GENERATOR_1_HASH_MD5_1.$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION_TYPE<BR>");
 
-rename("./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME", "./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME - $_Application_Module_Member_Messenger_RANDOM_NUMBER_GENERATOR_1_HASH_MD5_1.$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION");
+rename("./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME", "./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME - $_Application_Module_Member_Messenger_RANDOM_NUMBER_GENERATOR_1_HASH_MD5_1.$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION_TYPE");
 
 											echo ("* Video File has been renamed.<BR>");
 
@@ -2079,13 +2079,13 @@ rename("./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VID
 
 											echo ("* Copying Video File From Location: ./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME To Location: ./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN/Files/Video/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME<BR><BR>");
 
-copy("./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME - $_Application_Module_Member_Messenger_RANDOM_NUMBER_GENERATOR_1_HASH_MD5_1.$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION","./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN/Files/Video/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME - $_Application_Module_Member_Messenger_RANDOM_NUMBER_GENERATOR_1_HASH_MD5_1.$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION");
+copy("./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME - $_Application_Module_Member_Messenger_RANDOM_NUMBER_GENERATOR_1_HASH_MD5_1.$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION_TYPE","./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN/Files/Video/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME - $_Application_Module_Member_Messenger_RANDOM_NUMBER_GENERATOR_1_HASH_MD5_1.$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION_TYPE");
 
 											echo ("* Video File has been copied.<BR>");
 
 											echo ("* Deleting Orignal Video File From: ./Temporary/Upload");
 
-											unlink("./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME - $_Application_Module_Member_Messenger_RANDOM_NUMBER_GENERATOR_1_HASH_MD5_1.$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION");
+											unlink("./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME - $_Application_Module_Member_Messenger_RANDOM_NUMBER_GENERATOR_1_HASH_MD5_1.$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION_TYPE");
 
 											echo ("* Original Video File Deleted.");
 
