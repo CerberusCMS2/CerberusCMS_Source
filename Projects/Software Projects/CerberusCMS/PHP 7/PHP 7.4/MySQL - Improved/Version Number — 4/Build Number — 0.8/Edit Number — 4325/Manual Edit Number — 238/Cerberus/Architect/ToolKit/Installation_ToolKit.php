@@ -122,6 +122,7 @@ error_reporting(0);
 include_once ("../../System/Configuration/Global_Configuration.php");
 include_once ("../../System/Configuration/Global_Server_Configuration.php");
 include_once ("../../System/Configuration/Global_SQL_Server_Database_Class_MySQL_Standard");
+include_once ("../../System/Security/Module/Sanitization/Default/Sanitization.$_INTERNAL_FILE_EXTENSION");
 
 /*
  ============================================================================================================
@@ -158,9 +159,9 @@ echo ("
 if ($_GET["Application"] == "Unpack") {
 
 $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE					= $_POST['Installation_ToolKit_Zip_Archive_Unpack_File'];
-$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION		= $_POST['Installation_ToolKit_Zip_Archive_Unpack_File_Location'];
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION				= $_POST['Installation_ToolKit_Zip_Archive_Unpack_File_Location'];
 $_Installation_ToolKit_ZIP_Archive_Initialize						= new ZipArchive;
-$_Installation_ToolKit_ZIP_Archive_Unpack							= $_Installation_ToolKit_ZIP_Archive_Initialize->open('$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK');
+$_Installation_ToolKit_ZIP_Archive_Unpack						= $_Installation_ToolKit_ZIP_Archive_Initialize->open('$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK');
 
 if ($_Installation_ToolKit_ZIP_Archive_Unpack === TRUE) {
 
@@ -187,7 +188,7 @@ echo ("ToolKit Message: There was an error. I was not able to unpack the archive
 	 
 if ($_GET["Application"] == "Terminal") {
 	
-$_Installation_ToolKit_POST_TERMINAL_COMMANDS				= $_POST['Installation_ToolKit_Terminal_Commands'];
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS						= $_POST['Installation_ToolKit_Terminal_Commands'];
 	
 if (!$_Installation_ToolKit_POST_TERMINAL_COMMANDS) {
 
@@ -203,7 +204,7 @@ echo ("
 	
 		echo ("Executing Terminal Command: '$_Installation_ToolKit_POST_TERMINAL_COMMANDS'<BR>");
 	
-$_Installation_ToolKit_EXECUTE_TERMINAL_COMMAND				= shell_exec($_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_EXECUTE_TERMINAL_COMMAND						= shell_exec($_Installation_ToolKit_POST_TERMINAL_COMMANDS);
 	
 		echo ("$_Installation_ToolKit_EXECUTE_TERMINAL_COMMAND");
 
