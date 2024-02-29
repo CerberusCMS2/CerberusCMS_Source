@@ -1147,6 +1147,165 @@ $_ARCHITECT_INSTALL_FORM_POST_INSTALL_DATABASE_SERVER_DATABASE_NAME_CREATE_DATAB
  +
  +
  +
+ + [ ^ ] Applications :: Installation :: Structured-Query-Language :: Generator
+ +
+ +
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ @ ] Applications :: Installation :: Structured-Query-Language :: Generator :: MySQL
+ +
+ + Number of Variables :: GET  :: 00
+ + Number of Variables :: POST :: 04
+ ============================================================================================================
+*/
+
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX 						= $_POST['Architect_MySQL_Generator_Database_Table_Name_Prefix'];
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS						= $_POST['Architect_Administrator_Electronic_Mail_Address'];
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME								= $_POST['Architect_Administrator_UserName'];
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD								= $_POST['Architect_Administrator_Password'];
+
+/*
+ ============================================================================================================
+ +
+ + Variables :: POST Variables
+ +
+ ============================================================================================================
+*/
+
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace("`", "", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace("@", "&commat;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace("<", "&lt;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace(">", "&gt;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace("\"", "&quot;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace("&", "&amp;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace("'", "&apos;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace("~", "&#126;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace("$", "&#36;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace("=", "&#61;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace("{", "&lcub;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace("}", "&rcub;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace("(", "&lpar;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace(")", "&rpar;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace("#", "&num;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace("%", "&percnt;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace("*", "&ast;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace("+", "&plus;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace(",", "&comma;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace("-", "&minus;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace(".", "&period;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace("/", "&sol;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace(":", "&colon;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace("\;", "&semi;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace("?", "&quest;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace("[", "&lsqb;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace("]", "&rsqb;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace("^", "&hat;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX					= str_replace("|", "&verbar;", $_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX);
+
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace("`", "", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace("<", "&lt;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace(">", "&gt;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace("\"", "&quot;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace("&", "&amp;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace("'", "&apos;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace("~", "&#126;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace("$", "&#36;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace("=", "&#61;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace("{", "&lcub;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace("}", "&rcub;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace("(", "&lpar;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace(")", "&rpar;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace("#", "&num;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace("%", "&percnt;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace("*", "&ast;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace("+", "&plus;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace(",", "&comma;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace("-", "&minus;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace(".", "&period;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace("/", "&sol;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace(":", "&colon;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace("\;", "&semi;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace("?", "&quest;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace("[", "&lsqb;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace("]", "&rsqb;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace("^", "&hat;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+$_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS					= str_replace("|", "&verbar;", $_MySQL_Generator_POST_ADMINISTRATOR_ELECTRONIC_MAIL_ADDRESS);
+
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace("`", "", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace("@", "&commat;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace("<", "&lt;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace(">", "&gt;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace("\"", "&quot;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace("&", "&amp;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace("'", "&apos;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace("~", "&#126;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace("$", "&#36;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace("=", "&#61;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace("{", "&lcub;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace("}", "&rcub;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace("(", "&lpar;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace(")", "&rpar;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace("#", "&num;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace("%", "&percnt;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace("*", "&ast;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace("+", "&plus;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace(",", "&comma;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace("-", "&minus;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace(".", "&period;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace("/", "&sol;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace(":", "&colon;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace("\;", "&semi;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace("?", "&quest;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace("[", "&lsqb;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace("]", "&rsqb;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace("^", "&hat;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+$_MySQL_Generator_POST_ADMINISTRATOR_USERNAME					= str_replace("|", "&verbar;", $_MySQL_Generator_POST_ADMINISTRATOR_USERNAME);
+
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace("`", "", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace("@", "&commat;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace("<", "&lt;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace(">", "&gt;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace("\"", "&quot;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace("&", "&amp;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace("'", "&apos;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace("~", "&#126;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace("$", "&#36;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace("=", "&#61;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace("{", "&lcub;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace("}", "&rcub;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace("(", "&lpar;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace(")", "&rpar;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace("#", "&num;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace("%", "&percnt;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace("*", "&ast;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace("+", "&plus;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace(",", "&comma;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace("-", "&minus;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace(".", "&period;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace("/", "&sol;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace(":", "&colon;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace("\;", "&semi;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace("?", "&quest;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace("[", "&lsqb;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace("]", "&rsqb;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace("^", "&hat;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace("_", "&lowbar;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+$_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD					= str_replace("|", "&verbar;", $_MySQL_Generator_POST_ADMINISTRATOR_PASSWORD);
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ +
  + [ ^ ] Applications :: Installation :: ToolKit
  +
  +
