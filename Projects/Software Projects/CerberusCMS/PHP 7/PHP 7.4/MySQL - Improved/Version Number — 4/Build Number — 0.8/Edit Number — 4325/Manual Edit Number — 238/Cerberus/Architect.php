@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /*
  ============================================================================================================
  + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -114,7 +114,7 @@ error_reporting(0);
  +
  +
  +
- + [ @ ] System Configuration Settings
+ + [ @ ] Settings :: System :: Configuration
  +
  +
  +
@@ -138,6 +138,36 @@ error_reporting(0);
 */
 
 include_once ("./System/Configuration/Global_Configuration.php");
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ @ ] Settings :: System :: Security
+ +
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ + File Inclusion :: System :: Security :: Sanitization :: Master Sanitization
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + File Inclusion :: System :: Configuration :: Global Configuration File
+ ============================================================================================================
+*/
+
+include_once ("./System/Security/Module/Sanitization/Default/Sanitization.$_INTERNAL_FILE_EXTENSION");
 
 /*
  ============================================================================================================
@@ -475,12 +505,12 @@ $_ARCHITECT_LOG_INTERACTION_LOG_DATA									= "
 Machine and Connection Information
 --------------------------------------------------------------------------
 -- This Web Server
-* Architect :: Machine :: This Web Server :: Document View Timestamp: $_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP
-* Architect :: Machine :: This Web Server :: Document Referrer: $_GLOBAL_LOCAL_SERVER_HTTP_REFERRER
-* Architect :: Machine :: This Web Server :: Request String: $_GLOBAL_LOCAL_SERVER_QUERY_STRING
-* Architect :: Machine :: This Web Server :: Request Method: $_GLOBAL_LOCAL_SERVER_REQUEST_METHOD
-* Architect :: Machine :: This Web Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME
-* Architect :: Machine :: This Web Server :: Connection Type: $_GLOBAL_LOCAL_SERVER_HTTP_CONNECTION_TYPE
+* Architect :: Machine :: This Web Server :: Document :: View Timestamp: $_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP
+* Architect :: Machine :: This Web Server :: Document :: Referrer: $_GLOBAL_LOCAL_SERVER_HTTP_REFERRER
+* Architect :: Machine :: This Web Server :: Document :: Request String: $_GLOBAL_LOCAL_SERVER_QUERY_STRING
+* Architect :: Machine :: This Web Server :: Document :: Request Method: $_GLOBAL_LOCAL_SERVER_REQUEST_METHOD
+* Architect :: Machine :: This Web Server :: Document :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME
+* Architect :: Machine :: This Web Server :: Document :: Connection Type: $_GLOBAL_LOCAL_SERVER_HTTP_CONNECTION_TYPE
 
 -- Connecting Device
 * Architect :: Machine :: Connecting Device :: Timestamp :: Document-View :: Unix-Time: $_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP_UNIX
@@ -492,16 +522,16 @@ Machine and Connection Information
 --------------------------------------------------------------------------
 Location :: Information
 --------------------------------------------------------------------------
-* Architect :: Location :: Connecting Device :: From :: Global-Positioning-System Coordinates In: X, Y, Z:
-* Architect :: Location :: Connecting Device :: From :: Geographical Localization of Objects:
-* Architect :: Location :: Connecting Device :: From :: Region: $_GLOBAL_REMOTE_SERVER_LOCATION_REGION
-* Architect :: Location :: Connecting Device :: From :: Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS
+* Architect :: Location :: Connecting Device :: Drawn From :: Global-Positioning-System Coordinates In: X, Y, Z:
+* Architect :: Location :: Connecting Device :: Drawn From :: Geographical Localization of Objects:
+* Architect :: Location :: Connecting Device :: Drawn From :: Region: $_GLOBAL_REMOTE_SERVER_LOCATION_REGION
+* Architect :: Location :: Connecting Device :: Drawn From :: Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS
 
 --------------------------------------------------------------------------
 This Web Server :: Information
 --------------------------------------------------------------------------
 -- Hyper-Text-Transfer-Protocol
-* This Web Server :: Machine :: Server :: Hyper-Text-Transfer-Protocol :: Host: $_GLOBAL_LOCAL_SERVER_HTTP_HOST
+* This Web Server :: Machine :: Hyper-Text-Transfer-Protocol :: Host: $_GLOBAL_LOCAL_SERVER_HTTP_HOST
 * This Web Server :: Machine :: Hyper-Text-Transfer-Protocol :: Accept Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT
 * This Web Server :: Machine :: Hyper-Text-Transfer-Protocol :: Character Set: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_CHARACTER_SET
 * This Web Server :: Machine :: Hyper-Text-Transfer-Protocol :: Encoding: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_ENCODING
@@ -517,31 +547,31 @@ This Web Server :: Information
 * This Web Server :: Machine :: Software: $_GLOBAL_LOCAL_SERVER_SOFTWARE
 
 -- Request
-* This Web Server :: Machine :: Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME
-* This Web Server :: Machine :: Server :: Request Time ( Float ): $_GLOBAL_LOCAL_SERVER_REQUEST_TIME_FLOAT
-* This Web Server :: Machine :: Server :: Document Root: $_GLOBAL_LOCAL_SERVER_DOCUMENT_ROOT
+* This Web Server :: Machine :: This Web Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME
+* This Web Server :: Machine :: This Web Server :: Request Time ( Float ): $_GLOBAL_LOCAL_SERVER_REQUEST_TIME_FLOAT
+* This Web Server :: Machine :: This Web Server :: Document Root: $_GLOBAL_LOCAL_SERVER_DOCUMENT_ROOT
 
 ---------------------------------------------------------------------------------
 Timestamps
 ---------------------------------------------------------------------------------
-* Timestamp :: This Web Server :: Year: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL
-* Timestamp :: This Web Server :: Month: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL
-* Timestamp :: This Web Server :: Day: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL
-* Timestamp :: This Web Server :: Hour: $_GLOBAL_LOCAL_SERVER_TIME_HOURS
-* Timestamp :: This Web Server :: Minute: $_GLOBAL_LOCAL_SERVER_TIME_MINUTES
-* Timestamp :: This Web Server :: Second: $_GLOBAL_LOCAL_SERVER_TIME_SECONDS
+* Timestamp :: Machine :: This Web Server :: Year: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL
+* Timestamp :: Machine :: This Web Server :: Month: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL
+* Timestamp :: Machine :: This Web Server :: Day: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL
+* Timestamp :: Machine :: This Web Server :: Hour: $_GLOBAL_LOCAL_SERVER_TIME_HOURS
+* Timestamp :: Machine :: This Web Server :: Minute: $_GLOBAL_LOCAL_SERVER_TIME_MINUTES
+* Timestamp :: Machine :: This Web Server :: Second: $_GLOBAL_LOCAL_SERVER_TIME_SECONDS
 
-* Timestamp :: Connecting Device :: Year: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_YEAR_FULL
-* Timestamp :: Connecting Device :: Month: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_FULL
-* Timestamp :: Connecting Device :: Day: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL
-* Timestamp :: Connecting Device :: Hour: $_GLOBAL_REMOTE_SERVER_TIME_HOURS
-* Timestamp :: Connecting Device :: Minute: $_GLOBAL_REMOTE_SERVER_TIME_MINUTES
-* Timestamp :: Connecting Device :: Second: $_GLOBAL_REMOTE_SERVER_TIME_SECONDS
+* Timestamp :: Machine :: Connecting Device :: Year: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_YEAR_FULL
+* Timestamp :: Machine :: Connecting Device :: Month: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_FULL
+* Timestamp :: Machine :: Connecting Device :: Day: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL
+* Timestamp :: Machine :: Connecting Device :: Hour: $_GLOBAL_REMOTE_SERVER_TIME_HOURS
+* Timestamp :: Machine :: Connecting Device :: Minute: $_GLOBAL_REMOTE_SERVER_TIME_MINUTES
+* Timestamp :: Machine :: Connecting Device :: Second: $_GLOBAL_REMOTE_SERVER_TIME_SECONDS
 
-* Timestamp :: This Web Server :: Unix-Time: $_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP_UNIX
-* Timestamp :: This Web Server :: Micro-Time: $_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP_UNIX
-* Timestamp :: Connecting Device :: Unix-Time: $_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP_UNIX
-* Timestamp :: Connecting Device :: Micro-Time: $_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP_UNIX
+* Timestamp :: Machine :: This Web Server :: Unix-Time: $_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP_UNIX
+* Timestamp :: Machine :: This Web Server :: Micro-Time: $_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP_UNIX
+* Timestamp :: Machine :: Connecting Device :: Unix-Time: $_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP_UNIX
+* Timestamp ::Machine ::  Connecting Device :: Micro-Time: $_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP_UNIX
 ";
 
 /*
@@ -2191,7 +2221,7 @@ settings_system_status_offline_mode CHAR(1),
 settings_system_file_extension_audio VARCHAR(4),
 settings_system_file_extension_image CHAR(3),
 settings_system_directory_language VARCHAR(50),
-settings_system_directory_theme VARCHAR(50),
+settings_system_directory_theme VARCHAR(100),
 settings_system_website_title VARCHAR(250),
 settings_system_upload_size_private_member_audio CHAR(15),
 settings_system_upload_size_private_member_document CHAR(15),
