@@ -132,7 +132,7 @@ $_Security_Module_Sanitization_POST_STRIP_CHARACTERS_INJECTION_ARRAY					= str_r
  +
  +
  +
- + [ ^ ] Applications :: Architect
+ + [ ^ ] Applications :: Installation :: Architect
  +
  +
  +
@@ -145,7 +145,7 @@ $_Security_Module_Sanitization_POST_STRIP_CHARACTERS_INJECTION_ARRAY					= str_r
  +
  +
  +
- + [ @ ] Application :: Architect
+ + [ @ ] Application :: Installation :: Architect
  +
  + Number of Variables :: GET  :: 00
  + Number of Variables :: POST :: 35
@@ -1140,6 +1140,145 @@ $_ARCHITECT_INSTALL_FORM_POST_INSTALL_DATABASE_SERVER_DATABASE_NAME_CREATE_DATAB
 $_ARCHITECT_INSTALL_FORM_POST_INSTALL_DATABASE_SERVER_DATABASE_NAME_CREATE_DATABASE_NAME				= str_replace("]", "&rsqb;", $_ARCHITECT_INSTALL_FORM_POST_INSTALL_DATABASE_SERVER_DATABASE_NAME_CREATE_DATABASE_NAME);
 $_ARCHITECT_INSTALL_FORM_POST_INSTALL_DATABASE_SERVER_DATABASE_NAME_CREATE_DATABASE_NAME				= str_replace("^", "&hat;", $_ARCHITECT_INSTALL_FORM_POST_INSTALL_DATABASE_SERVER_DATABASE_NAME_CREATE_DATABASE_NAME);
 $_ARCHITECT_INSTALL_FORM_POST_INSTALL_DATABASE_SERVER_DATABASE_NAME_CREATE_DATABASE_NAME				= str_replace("|", "&verbar;", $_ARCHITECT_INSTALL_FORM_POST_INSTALL_DATABASE_SERVER_DATABASE_NAME_CREATE_DATABASE_NAME);
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ +
+ + [ ^ ] Applications :: Installation :: ToolKit
+ +
+ +
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ @ ] Application :: Installation :: ToolKit
+ +
+ + Number of Variables :: GET  :: 00
+ + Number of Variables :: POST :: 03
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ + Variables :: POST Variables
+ +
+ ============================================================================================================
+*/
+
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= $_POST['Installation_ToolKit_Zip_Archive_Unpack_File'];
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= $_POST['Installation_ToolKit_Zip_Archive_Unpack_File_Location'];
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= $_POST['Installation_ToolKit_Terminal_Commands'];
+
+/*
+ ============================================================================================================
+ +
+ + Variables :: POST Variables :: Character and String Replacement
+ +
+ ============================================================================================================
+*/
+
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace("`", "", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace("@", "&commat;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace("<", "&lt;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace(">", "&gt;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace("\"", "&quot;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace("&", "&amp;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace("'", "&apos;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace("~", "&#126;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace("$", "&#36;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace("=", "&#61;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace("{", "&lcub;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace("}", "&rcub;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace("(", "&lpar;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace(")", "&rpar;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace("#", "&num;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace("%", "&percnt;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace("*", "&ast;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace("+", "&plus;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace(",", "&comma;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace("-", "&minus;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace(".", "&period;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace("/", "&sol;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace(":", "&colon;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace("\;", "&semi;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace("?", "&quest;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace("[", "&lsqb;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace("]", "&rsqb;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace("^", "&hat;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace("_", "&lowbar;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE						= str_replace("|", "&verbar;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE);
+
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace("`", "", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace("@", "&commat;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace("<", "&lt;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace(">", "&gt;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace("\"", "&quot;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace("&", "&amp;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace("'", "&apos;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace("~", "&#126;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace("$", "&#36;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace("=", "&#61;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace("{", "&lcub;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace("}", "&rcub;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace("(", "&lpar;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace(")", "&rpar;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace("#", "&num;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace("%", "&percnt;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace("*", "&ast;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace("+", "&plus;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace(",", "&comma;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace("-", "&minus;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace(".", "&period;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace("/", "&sol;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace(":", "&colon;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace("\;", "&semi;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace("?", "&quest;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace("[", "&lsqb;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace("]", "&rsqb;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace("^", "&hat;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace("_", "&lowbar;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION					= str_replace("|", "&verbar;", $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION);
+
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace("`", "", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace("@", "&commat;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace("<", "&lt;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace(">", "&gt;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace("\"", "&quot;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace("&", "&amp;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace("'", "&apos;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace("~", "&#126;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace("$", "&#36;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace("=", "&#61;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace("{", "&lcub;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace("}", "&rcub;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace("(", "&lpar;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace(")", "&rpar;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace("#", "&num;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace("%", "&percnt;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace("*", "&ast;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace("+", "&plus;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace(",", "&comma;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace("-", "&minus;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace(".", "&period;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace("/", "&sol;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace(":", "&colon;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace("\;", "&semi;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace("?", "&quest;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace("[", "&lsqb;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace("]", "&rsqb;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace("^", "&hat;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace("_", "&lowbar;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
+$_Installation_ToolKit_POST_TERMINAL_COMMANDS							= str_replace("|", "&verbar;", $_Installation_ToolKit_POST_TERMINAL_COMMANDS);
 
 /*
  ============================================================================================================
