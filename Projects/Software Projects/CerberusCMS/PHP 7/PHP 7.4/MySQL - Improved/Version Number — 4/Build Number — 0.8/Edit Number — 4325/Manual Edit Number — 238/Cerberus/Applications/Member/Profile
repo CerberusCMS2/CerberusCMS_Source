@@ -3347,7 +3347,7 @@ if ($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_IMAGE == 
 **/
 } else {
 
-echo ("* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME&amp;Display&#61;MediaGalleries&amp;Type&#61;Image&amp;Album&#61;$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_IMAGE&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Media Gallery :: Image :: Album :: For :: This Registered Member Account :: \">$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_IMAGE</A><BR>");
+echo ("* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME&amp;Display&#61;MediaGalleries&amp;Type&#61;Image&amp;Album&#61;$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_IMAGE&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Media Gallery :: Image :: Album :: For :: This Registered Member Account ::\">$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_IMAGE</A><BR>");
 
 /*
  ============================================================================================================
@@ -3386,7 +3386,7 @@ if ($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_IMAGE_ALB
 **/
 } else {
 
-echo ("<A HREF=\"$_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_IMAGE_ALBUM/$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_IMAGE_ALBUM\" TITLE=\":: Open & Display :: The Media Gallery :: File :: Image :: $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_IMAGE_ALBUM ::\" TARGET=\"_NEW\"><IMG SRC=\"$_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_IMAGE_ALBUM/$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_IMAGE_ALBUM\" WIDTH=\"75\" HEIGHT=\"75\" CLASS=\"MemberProfileGalleryImage\"></IMG></A>&nbsp;&nbsp;");
+echo ("<A HREF=\"$_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_IMAGE_ALBUM/$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_IMAGE_ALBUM\" TITLE=\":: Open & Display :: The Media Gallery :: File :: Image :: $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_IMAGE_ALBUM ::\" TARGET=\"_NEW\"><IMG SRC=\"$_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_IMAGE_ALBUM/$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_IMAGE_ALBUM\" WIDTH=\"75\" HEIGHT=\"75\" CLASS=\"MemberProfile\"></IMG></A>&nbsp;&nbsp;");
 
 } // [ + ] IF: STOP: Remote-File-Inclusion AND Local-File-Inclusion
 

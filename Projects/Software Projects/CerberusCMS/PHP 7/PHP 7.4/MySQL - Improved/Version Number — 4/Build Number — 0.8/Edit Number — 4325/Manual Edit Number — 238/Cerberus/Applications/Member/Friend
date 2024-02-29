@@ -106,7 +106,7 @@ if ($_Application_Module_Member_Friend_READ_DIRECTORY_FRIEND_LIST == "." || $_Ap
 
 echo ("
 <B>Friend Name</B>: <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_Friend_READ_DIRECTORY_FRIEND_LIST&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Registered Member Account :: Profile :: For Friend :: $_Application_Module_Member_Friend_READ_DIRECTORY_FRIEND_LIST ::\">$_Application_Module_Member_Friend_READ_DIRECTORY_FRIEND_LIST</A><HR>
-<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Friend&amp;RemoveFriend&#61;$_Application_Module_Member_Friend_READ_DIRECTORY_FRIEND_LIST\" TITLE=\":: Remove :: From Friend List :: $_Application_Module_Member_Friend_READ_DIRECTORY_FRIEND_LIST ::\">Remove From Friend List</A><BR><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Friend&amp;RemoveFriend&#61;$_Application_Module_Member_Friend_READ_DIRECTORY_FRIEND_LIST\" TITLE=\":: Remove: $_Application_Module_Member_Friend_READ_DIRECTORY_FRIEND_LIST :: From This Registered Member Account Friend List ::\">Remove</A><BR><BR>
 ");
 
 } // [ + ] IF: Stop :: Exploit :: Local-File-Inclusion and Remote-File-Inclusion

@@ -502,8 +502,8 @@ $_Application_Module_Member_Messenger_POST_FIND_MMS_RECIPIENT_NAME									= $_P
 */
 
 $_Application_Module_Member_Messenger_POST_SMS_MOBILE_DEVICE_CARRIER									= $_POST['AMM_Messenger_SMS_Mobile_Device_Carrier'];
-$_Application_Module_Member_Messenger_POST_SMS_MOBILE_DEVICE_CARRIER_PHONE_NUMBER						= $_POST['AMM_Messenger_SMS_Mobile_Device_Carrier_Phone_Number'];
-$_Application_Module_Member_Messenger_POST_SMS_MESSAGE													= $_POST['AMM_Messenger_SMS_Message'];
+$_Application_Module_Member_Messenger_POST_SMS_MOBILE_DEVICE_CARRIER_PHONE_NUMBER							= $_POST['AMM_Messenger_SMS_Mobile_Device_Carrier_Phone_Number'];
+$_Application_Module_Member_Messenger_POST_SMS_MESSAGE											= $_POST['AMM_Messenger_SMS_Message'];
 
 /*
  ============================================================================================================
@@ -512,182 +512,9 @@ $_Application_Module_Member_Messenger_POST_SMS_MESSAGE													= $_POST['AMM
 */
 
 $_Application_Module_Member_Messenger_POST_MMS_MOBILE_DEVICE_CARRIER									= $_POST['AMM_Messenger_MMS_Mobile_Device_Carrier'];
-$_Application_Module_Member_Messenger_POST_MMS_MOBILE_DEVICE_CARRIER_PHONE_NUMBER						= $_POST['AMM_Messenger_MMS_Mobile_Device_Carrier_Phone_Number'];
-$_Application_Module_Member_Messenger_POST_MMS_MESSAGE													= $_POST['AMM_Messenger_MMS_Message'];
-$_Application_Module_Member_Messenger_POST_MMS_MESSAGE_FILE_UPLOAD										= $_POST['AMM_Messenger_MMS_Message_File_Upload'];
-
-/*
- ============================================================================================================
- +
- + Internal Application :: Variables :: Encrypted-Text File Messenger
- +
- ============================================================================================================
-*/
-
-/*
- ============================================================================================================
- +
- + Internal Application :: Variables :: Encrypted-Text File Messenger :: Pretty-Good-Privacy
- +
- ============================================================================================================
-*/
-
-/*
- ============================================================================================================
- + Define :: The G.N.U.-Not-Unix Privacy Guard Operating Environment
- ============================================================================================================
-*/
-
-//putenv("GNUPGHOME=./Temporary/Messenger/$_Application_Module_Member_Messenger_POST_SELECT_ENCRYPTED_TEXT_FILE_MESSENGER_ROOM_NAME/Files/Document/Encryption/PublicKey_1.gnupg");
-//putenv("GNUPGHOME=./Temporary/Messenger/$_Application_Module_Member_Messenger_POST_SELECT_ENCRYPTED_TEXT_FILE_MESSENGER_ROOM_NAME/Files/Document/Encryption/PublicKey_2.gnupg");
-
-/*
- ============================================================================================================
- + Define :: The Pretty-Good-Privacy Public Keys
- ============================================================================================================
-*/
-
-$_Application_Module_Member_Messenger_SPECIFY_PGP_PUBLIC_KEY_1              								= file_get_contents(getenv('GNUPGHOME=./Temporary/Messenger/Physical/Encrypted/$_Application_Module_Member_Messenger_POST_SELECT_ENCRYPTED_TEXT_FILE_MESSENGER_ROOM_NAME/Files/Document/Encryption/PublicKey_1.gnupg') . 'public.key');
-$_Application_Module_Member_Messenger_SPECIFY_PGP_PUBLIC_KEY_2              								= file_get_contents(getenv('GNUPGHOME=./Temporary/Messenger/Physical/Encrypted/$_Application_Module_Member_Messenger_POST_SELECT_ENCRYPTED_TEXT_FILE_MESSENGER_ROOM_NAME/Files/Document/Encryption/PublicKey_2.gnupg') . 'public.key');
-
-/*
- ============================================================================================================
- + Initialize :: The G.N.U.-Privacy Guard
- ============================================================================================================
-*/
-
-//$_Application_Module_Member_Messenger_INITIALIZE_GNUPG                               							= new gnupg();
-//$_Application_Module_Member_Messenger_INITIALIZE_GNUPG->
-
-/*
- ============================================================================================================
- + Set :: The G.N.U.-Privacy Guard Error Mode
- ============================================================================================================
-*/
-
-//$_Application_Module_Member_Messenger_INITIALIZE_GNUPG->seterrormode(gnupg::ERROR_EXCEPTION);
-
-/*
- ============================================================================================================
- + Import :: G.N.U.-Pretty-Good-Privacy Public Keys
- ============================================================================================================
-*/
-
-//$_Application_Module_Member_Messenger_GNUPG_IMPORT_PUBLIC_KEY_1									= $_Application_Module_Member_Messenger_INITIALIZE_GNUPG->import($_Application_Module_Member_Messenger_SPECIFY_PGP_PUBLIC_KEY_1);
-//$_Application_Module_Member_Messenger_GNUPG_IMPORT_PUBLIC_KEY_2									= $_Application_Module_Member_Messenger_INITIALIZE_GNUPG->import($_Application_Module_Member_Messenger_SPECIFY_PGP_PUBLIC_KEY_2);
-
-/*
- ============================================================================================================
- + Add :: Pretty-Good-Privacy Key Fingerprints
- ============================================================================================================
-*/
-
-//$_Application_Module_Member_Messenger_GNUPG_IMPORT_PUBLIC_KEY_FINGERPRINT_1								= $_Application_Module_Member_Messenger_GNUPG->addencryptkey($_Application_Module_Member_Messenger_GNUPG_IMPORT_PUBLIC_KEY_1['fingerprint']);
-//$_Application_Module_Member_Messenger_GNUPG_IMPORT_PUBLIC_KEY_FINGERPRINT_2								= $_Application_Module_Member_Messenger_GNUPG->addencryptkey($_Application_Module_Member_Messenger_GNUPG_IMPORT_PUBLIC_KEY_2['fingerprint']);
-
-/*
- ============================================================================================================
- + Get :: File Contents of The Encrypted-Text-File Messenger Room Messenger File
- ============================================================================================================
-*/
-
-$_Application_Module_Member_Messenger_FIND_ENCRYPTED_MESSENGER_ROOM_NAME_FILE								= file_get_contents('./Temporary/Messenger/Physical/Encrypted/$_Application_Module_Member_Messenger_POST_SELECT_ENCRYPTED_TEXT_FILE_MESSENGER_ROOM_NAME/$_Application_Module_Member_Messenger_POST_SELECT_ENCRYPTED_TEXT_FILE_MESSENGER_ROOM_NAME.html');
-
-/*
- ============================================================================================================
- + Encrypt :: Message :: Data :: Using Pretty-Good-Privacy
- ============================================================================================================
-*/
-
-//$_Application_Module_Member_Messenger_GNUPG_ENCRYPT_MESSAGE										= $_Application_Module_Member_Messenger_GNUPG->encrypt($_Application_Module_Member_Messenger_FIND_ENCRYPTED_MESSENGER_ROOM_NAME_FILE);
-
-/*
- ============================================================================================================
- +
- +
- + Internal Application Variables :: Encrypted-Text File Messenger :: Advanced Encryption Standard
- +
- +
- ============================================================================================================
-*/
-
-/*
- ============================================================================================================
- +
- + Variables :: Encryption :: Advanced Encryption Standard :: 256
- +
- ============================================================================================================
-*/
-
-/*
- ============================================================================================================
- + Post Variables :: Encryption :: Advanced Encryption Standard :: 256 :: Clear-Text Message Data
- ============================================================================================================
-*/
-
-$_Application_Module_Member_Messenger_POST_VISIBLE_ENCRYPTED_TEXT_FILE_MESSENGER_MESSAGE						= $_POST['AMM_Messenger_Visible_Encrypted_Text_File_Messenger_Room_Message'];
-$_Application_Module_Member_Messenger_POST_VISIBLE_ENCRYPTED_TEXT_FILE_MESSENGER_MESSAGE						= $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE;
-
-/*
- ============================================================================================================
- + Variables :: Encryption :: Advanced Encryption Standard :: 256 :: Cipher Parameters
- ============================================================================================================
-*/
-
-//$_Application_Module_Member_Messenger_Encrypted_Text_File_Messenger_Encryption_Type_AES_Cipher_Ring_Type				= "AES-256-CBC";
-//$_Application_Module_Member_Messenger_Encrypted_Text_File_Messenger_Encryption_Type_AES_Cipher_Ring_IV_Length				= openssl_cipher_iv_length($_Application_Module_Member_Messenger_Encrypted_Text_File_Messenger_Encryption_Type_AES_Cipher_Ring_Type);
-//$_Application_Module_Member_Messenger_Encrypted_Text_File_Messenger_Encryption_Type_AES_Cipher_Ring_IV				= openssl_random_pseudo_bytes($_Application_Module_Member_Messenger_Encrypted_Text_File_Messenger_Encryption_Type_AES_Cipher_Ring_IV_Length);
-//$_Application_Module_Member_Messenger_Encrypted_Text_File_Messenger_Encryption_Type_AES_Cipher_Ring_IV_Options			= '0';
-
-/*
- ============================================================================================================
- + Encryption :: Cipher Method :: Cipher Ring :: Vector
- ============================================================================================================
-*/
-
-$_Application_Module_Member_Messenger_Encrypted_Text_File_Messenger_Encryption_Type_AES_Cipher_Ring_IV_Vector				= '1234567891011121';
-
-/*
- ============================================================================================================
- + Encryption :: Cipher Method :: Cipher :: Key
- ============================================================================================================
-*/
-
-$_Application_Module_Member_Messenger_Encrypted_Text_File_Messenger_Encryption_Type_AES_Password					= "$_GLOBAL_COOKIE_MEMBER_PASSWORD";
-
-/*
- ============================================================================================================
- + Encryption :: Cipher Method :: Randomization
- ============================================================================================================
-*/
-
-//$_Application_Module_Member_Messenger_Encrypted_Text_File_Messenger_Encryption_Type_AES_Cipher_Ring_IV_Random				= random_bytes($_Application_Module_Member_Messenger_Encrypted_Text_File_Messenger_Encryption_Type_AES_Cipher_Ring_IV_Length);
-
-/*
- ============================================================================================================
- + Encryption :: Cipher Method :: Open Secure Socket Layer :: Digest Key
- ============================================================================================================
-*/
-
-//$_Application_Module_Member_Messenger_Encrypted_Text_File_Messenger_Encryption_Type_AES_Digest_Length					= openssl_digest(php_uname(), 'MD5', true);
-
-/*
- ============================================================================================================
- + Encryption :: Cipher Method :: Encryption :: Of :: Message Data
- ============================================================================================================
-*/
-
-//$_Application_Module_Member_Messenger_Encrypted_Text_File_Messenger_Encryption_Type_AES_Encrypted_Data				= openssl_encrypt($_Application_Module_Member_Messenger_POST_VISIBLE_ENCRYPTED_TEXT_FILE_MESSENGER_MESSAGE, $_Application_Module_Member_Messenger_Encrypted_Text_File_Messenger_Encryption_Type_AES_Cipher_Ring_Type, $_Application_Module_Member_Messenger_Encrypted_Text_File_Messenger_Encryption_Type_AES_Password, $_Application_Module_Member_Messenger_Encrypted_Text_File_Messenger_Encryption_Type_AES_Cipher_Ring_IV_Options, $_Application_Module_Member_Messenger_Encrypted_Text_File_Messenger_Encryption_Type_AES_Cipher_Ring_IV);
-
-/*
- ============================================================================================================
- +
- + Variables :: Decryption :: Advanced Encryption Standard :: 256
- +
- ============================================================================================================
-*/
-
-//$_Application_Module_Member_Messenger_Encrypted_Text_File_Messenger_Decryption_Type_AES_Decrypted_Data				= openssl_decrypt("", $_Application_Module_Member_Messenger_Encrypted_Text_File_Messenger_Encryption_Type_AES_Cipher_Ring_Type, $_Application_Module_Member_Messenger_Encrypted_Text_File_Messenger_Encryption_Type_AES_Password, $_Application_Module_Member_Messenger_Encrypted_Text_File_Messenger_Encryption_Type_AES_Cipher_Ring_IV_Options, $_Application_Module_Member_Messenger_Encrypted_Text_File_Messenger_Encryption_Type_AES_Cipher_Ring_IV);
+$_Application_Module_Member_Messenger_POST_MMS_MOBILE_DEVICE_CARRIER_PHONE_NUMBER							= $_POST['AMM_Messenger_MMS_Mobile_Device_Carrier_Phone_Number'];
+$_Application_Module_Member_Messenger_POST_MMS_MESSAGE											= $_POST['AMM_Messenger_MMS_Message'];
+$_Application_Module_Member_Messenger_POST_MMS_MESSAGE_FILE_UPLOAD									= $_POST['AMM_Messenger_MMS_Message_File_Upload'];
 
 /*
  ============================================================================================================
@@ -1051,8 +878,8 @@ if ($_GET["Display"] == "VisibleTextFileMessenger") {
  ============================================================================================================
 */
 
-$_Application_Module_Member_Messenger_DB_Query_RETRIEVE_ALL_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_messenger_clear_text_file_room ORDER BY id ASC");
-$_Application_Module_Member_Messenger_DB_Query_RETRIEVE_ALL_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES_NUMBER_OF_ROWS				= $_Application_Module_Member_Messenger_DB_Query_RETRIEVE_ALL_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES->num_rows;
+$_Application_Module_Member_Messenger_DB_Query_RETRIEVE_ALL_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_messenger_clear_text_file_room ORDER BY id ASC");
+$_Application_Module_Member_Messenger_DB_Query_RETRIEVE_ALL_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES_NUMBER_OF_ROWS		= $_Application_Module_Member_Messenger_DB_Query_RETRIEVE_ALL_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES->num_rows;
 
 /*
  ============================================================================================================
@@ -1451,7 +1278,7 @@ if ($_Application_Module_Member_Messenger_DIRECTORY_READ_VIDEO_CLEAR_TEXT_FILE_M
 **/
 } else {
 
-$_Application_Module_Member_Messenger_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_FILE_LIST_VIDEO							= fopen("./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME/Files/Video/Files.html", "a");
+$_Application_Module_Member_Messenger_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_FILE_LIST_VIDEO						= fopen("./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME/Files/Video/Files.html", "a");
 
 /*
  ============================================================================================================
@@ -2013,7 +1840,7 @@ if ($_GET["UploadFile"] == "Video") {
 
 											echo ("* Checking For Video File Extension Type...<BR>");
 
-if (in_array($_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION_TYPE, $_Application_Module_Member_Messenger_ALLOWED_FILE_EXTENSION_VIDEO)) {
+if (in_array($_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION, $_Application_Module_Member_Messenger_ALLOWED_FILE_EXTENSION_VIDEO)) {
 
 $_Application_Module_Messenger_UPLOAD_FILE_VIDEO_PREPARE_FILE									= "1";
 
@@ -2023,7 +1850,7 @@ $_Application_Module_Messenger_UPLOAD_FILE_VIDEO_PREPARE_FILE									= "0";
 
 } // [ + ] IF: File Extension :: Video :: Is In Allowed File Extension Array
 
-											echo ("* File Extension Type Is: $_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION_TYPE<BR>");
+											echo ("* File Extension Type Is: $_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION<BR>");
 
 											echo ("* File Extension Type Is: $_Application_Module_Messenger_UPLOAD_FILE_VIDEO_PREPARE_FILE Where 1 is allowed and 0 is not allowed.<BR>");
 
@@ -2069,9 +1896,9 @@ move_uploaded_file($_FILES['AMM_Messenger_Visible_Clear_Text_File_Messenger_Room
 
 											echo ("* Done...<BR>");
 
-											echo ("* Renaming Video File From: ./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME To: ./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME - $_Application_Module_Member_Messenger_RANDOM_NUMBER_GENERATOR_1_HASH_MD5_1.$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION_TYPE<BR>");
+											echo ("* Renaming Video File From: ./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME To: ./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME - $_Application_Module_Member_Messenger_RANDOM_NUMBER_GENERATOR_1_HASH_MD5_1.$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION<BR>");
 
-rename("./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME", "./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME - $_Application_Module_Member_Messenger_RANDOM_NUMBER_GENERATOR_1_HASH_MD5_1.$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION_TYPE");
+rename("./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME", "./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME - $_Application_Module_Member_Messenger_RANDOM_NUMBER_GENERATOR_1_HASH_MD5_1.$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION");
 
 											echo ("* Video File has been renamed.<BR>");
 
@@ -2079,13 +1906,13 @@ rename("./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VID
 
 											echo ("* Copying Video File From Location: ./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME To Location: ./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN/Files/Video/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME<BR><BR>");
 
-copy("./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME - $_Application_Module_Member_Messenger_RANDOM_NUMBER_GENERATOR_1_HASH_MD5_1.$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION_TYPE","./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN/Files/Video/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME - $_Application_Module_Member_Messenger_RANDOM_NUMBER_GENERATOR_1_HASH_MD5_1.$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION_TYPE");
+copy("./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME - $_Application_Module_Member_Messenger_RANDOM_NUMBER_GENERATOR_1_HASH_MD5_1.$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION","./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN/Files/Video/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME - $_Application_Module_Member_Messenger_RANDOM_NUMBER_GENERATOR_1_HASH_MD5_1.$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION");
 
 											echo ("* Video File has been copied.<BR>");
 
 											echo ("* Deleting Orignal Video File From: ./Temporary/Upload");
 
-											unlink("./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME - $_Application_Module_Member_Messenger_RANDOM_NUMBER_GENERATOR_1_HASH_MD5_1.$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION_TYPE");
+											unlink("./Temporary/Upload/$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_BASENAME - $_Application_Module_Member_Messenger_RANDOM_NUMBER_GENERATOR_1_HASH_MD5_1.$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_SPECIFY_UPLOAD_FILE_EXTENSION");
 
 											echo ("* Original Video File Deleted.");
 
@@ -2146,15 +1973,15 @@ if (fwrite($_Application_Module_Member_Messenger_FIND_VISIBILE_CLEAR_TEXT_MESSEN
 							Message Details
 							<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 							<B>Timestamps</B><BR>
-							<B>* This Message Timestamp :: Device :: This Web Server:</B>&nbsp;$_GLOBAL_LOCAL_SERVER_DATE_STANDARD<BR>
-							<B>* This Message Timestamp :: Device :: Connected Device:</B>&nbsp;$_GLOBAL_LOCAL_SERVER_TIME_UNIX<BR><BR>
+							<B>* Timestamp :: This Message :: Device :: This Web Server:</B>&nbsp;$_GLOBAL_LOCAL_SERVER_DATE_STANDARD<BR>
+							<B>* Timestamp :: This Message :: Device :: Connected Device:</B>&nbsp;$_GLOBAL_REMOTE_SERVER_DATE_STANDARD<BR><BR>
 
 							<B>Location :: Internet Protocol Address</B><BR>
-							<B>* Internet Protocol Address, Sent :: Device :: To This Web Server:</B>&nbsp;<A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_LOCAL_SERVER_ADDRESS\" TITLE=\":: Open & Display :: The Who-Is Information :: For This Internet Protocol Address ::\" TARGET=\"_NEW\">$_GLOBAL_LOCAL_SERVER_ADDRESS :: $_GLOBAL_LOCAL_SERVER_PORT</A><BR>
-							<B>* Internet Protocol Address, Sent :: Device :: Connected Device:</B>&nbsp;<A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_REMOTE_SERVER_ADDRESS\" TITLE=\":: Open & Display :: The Who-Is Information :: For This Internet Protocol Address ::\" TARGET=\"_NEW\">$_GLOBAL_REMOTE_SERVER_ADDRESS</A> :: $_GLOBAL_REMOTE_SERVER_PORT<BR><BR>
+							<B>* Internet Protocol Address, Sent To :: Device :: This Web Server:</B>&nbsp;<A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_LOCAL_SERVER_ADDRESS\" TITLE=\":: Open & Display :: The Who-Is Information :: For This Internet Protocol Address ::\" TARGET=\"_NEW\">$_GLOBAL_LOCAL_SERVER_ADDRESS :: $_GLOBAL_LOCAL_SERVER_PORT</A><BR>
+							<B>* Internet Protocol Address, Sent From :: Device :: Connected Device:</B>&nbsp;<A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_REMOTE_SERVER_ADDRESS\" TITLE=\":: Open & Display :: The Who-Is Information :: For This Internet Protocol Address ::\" TARGET=\"_NEW\">$_GLOBAL_REMOTE_SERVER_ADDRESS</A> :: $_GLOBAL_REMOTE_SERVER_PORT<BR><BR>
 
 							<B>Device :: Details</B><BR>
-							<B>* Device :: Web Browser :: Connected Device</B>&nbsp;$_GLOBAL_REMOTE_SERVER_HTTP_USER_AGENT_DISPLAY :: $_GLOBAL_REMOTE_SERVER_ADDRESS :: $_GLOBAL_REMOTE_SERVER_PORT<BR>
+							<B>* Web Browser :: Sent From :: Device :: Connected Device:</B>&nbsp;$_GLOBAL_REMOTE_SERVER_HTTP_USER_AGENT_DISPLAY :: $_GLOBAL_REMOTE_SERVER_PORT<BR>
 						<HR><BR>
 ")) {
 
@@ -2853,7 +2680,7 @@ echo ("* Messenger: Creating P2P Clear-Text Messenger Database Entry: ./Member/$
 
 $_Application_Module_Member_Messenger_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_FILE_SIZE						= hash_file('sha256', "./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME/Messenger.html");
 
-$_Application_Module_Member_Messenger_DB_Query_INSERT_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_messenger_p2p_clear_text_file_room(
+$_Application_Module_Member_Messenger_DB_Query_INSERT_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_messenger_p2p_clear_text_file_room(
 messenger_room_creation_author,
 messenger_room_creation_author_device_ip_address,
 messenger_room_creation_timestamp,
@@ -2966,6 +2793,19 @@ echo ("
 
 													<FORM ACTION=\"./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;P2P&#61;Clear_Text&amp;MemberName&#61;$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME&amp;UploadFileSelection&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"POST\" ENCTYPE=\"multipart/form-data\">
 														* <I>Upload Unique File To This P2P :: Clear-Text File :: Messenger Room</I>:<BR>
+														[ Permitted File Extensions ]<BR>
+														<I>Audio</I><BR>
+															* WAV, MP3, WMA, AAC, FLAC, OGG<BR><BR>
+
+														<I>Document</I><BR>
+															* DOC, XLS, PPT, PDF, EPS, PSD, TXT<BR>
+															* ZIP, TAR, TAR.GZ, GIT, Mercurial<BR><BR>
+
+														<I>Image</I><BR>
+															* PNG, JPG, TIF / TIFF, BMP, TGA, DPE<BR><BR>
+
+														<I>Video</I><BR>
+															* AVI, MP4, MOV, WMV, AVCHD, FLV, SWF, MKV, WEBM<BR>
 														<INPUT TYPE=\"file\" NAME=\"\" MAXLENGTH=\"100\"><BR>
 														<INPUT TYPE=\"submit\" VALUE=\"Upload File\">
 													</FORM><BR><BR>
@@ -2989,10 +2829,22 @@ echo ("
 														<AUDIO CONTROLS AUTOPLAY HIDDEN=\"TRUE\" SRC=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Audio/Notifications/Messenger/Notification_Messenger_Message_Send.$_GLOBAL_SYSTEM_SOUND_EXTENSION?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_AUDIO_RANDOM_STRING_GENERATION\" TYPE=\"audio/mp3\"></AUDIO>
 ");
 
+/*
+ =============================================================================================================
+ + Database Management System Server :: Database :: Query :: Update :: Messenger :: Clear-Text File :: File Size
+ =============================================================================================================
+*/
+
 $_Application_Module_Messenger_DB_Query_UPDATE_MESSENGER_P2P_CLEAR_TEXT					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_messenger_p2p_clear_text_file_room SET 
 messenger_room_file_size='$_Application_Module_Member_Messenger_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_FILE_SIZE' 
 WHERE messenger_room_username_local='$_GLOBAL_COOKIE_MEMBER_USERNAME' AND messenger_room_username_remote='$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME'
 ");
+
+/*
+ =============================================================================================================
+ + IF: Database Management System Server :: Database :: Query :: Update :: Messenger :: Clear-Text File :: File Size
+ =============================================================================================================
+*/
 
 if ($_Application_Module_Messenger_DB_Query_UPDATE_MESSENGER_P2P_CLEAR_TEXT) {
 /**
@@ -3002,17 +2854,23 @@ if ($_Application_Module_Messenger_DB_Query_UPDATE_MESSENGER_P2P_CLEAR_TEXT) {
 /**
  * Do Nothing
 */
-} // [ + ] IF:
+} // [ + ] IF: Database Management System Server :: Database :: Query :: Update :: Messenger :: Clear-Text File :: File Size
 
 } else {
+
+/*
+ =============================================================================================================
+ + Write: Messenger :: Clear-Text File :: Message Data
+ =============================================================================================================
+*/
 
 $_Application_Module_Member_Messenger_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE				= "
 <IMG SRC=\"../../../../../../../$_GLOBAL_MEMBER_IMAGE_PROFILE_DISPLAY\" WIDTH=\"75\" HEIGHT=\"75\" CLASS=\"MemberProfile\" ALT=\":: $_GLOBAL_COOKIE_MEMBER_USERNAME ::\"></IMG>&nbsp;&nbsp;<A HREF=\"?$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_GLOBAL_COOKIE_MEMBER_USERNAME\" TITLE\":: Open & Display :: The Application Module :: Profile :: For :: Registered Member Account: $_GLOBAL_COOKIE_MEMBER_USERNAME\" TARGET=\"_NEW\">$_GLOBAL_COOKIE_MEMBER_USERNAME</A> Wrote:
 <HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 <BIG><B>&quot;</B></BIG> <I>$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE</I> <BIG><B>&quot;</B></BIG><BR><BR>
 <HR ALIGN=\"LEFT\" WIDTH=\"50%\">
-This Clear-Text Message Was Sent :: Date :: Standard :: Server :: Local: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD<BR>
-This Clear-Text Message Was Sent :: Date :: Epoch :: Server :: Local: $_GLOBAL_LOCAL_SERVER_TIME_UNIX<BR><BR>
+Message Timestamp :: Device :: This Web Server: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD<BR>
+Message Timestamp :: Device :: Connected Device: $_GLOBAL_LOCAL_SERVER_TIME_UNIX<BR><BR>
 ";
 
 $_Application_Module_Member_Messenger_FIND_WRITE_CLEAR_TEXT_MESSENGER_MEMBER_LOCAL_FILE_NAME			= fopen("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME/Messenger.html", "a");
