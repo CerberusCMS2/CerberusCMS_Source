@@ -85,7 +85,7 @@
  ============================================================================================================
 */
 
-$_Message_ERROR_ACTION_UNIVERSAL                                   							= "<CENTER>Cerberus: I was not able to perform the request. Try Again ?</CENTER>";
+$_Message_ERROR_ACTION_UNIVERSAL                                   							= "<CENTER>Cerberus: I was not able to perform this request. Try Again ?</CENTER>";
 
 /*
  ============================================================================================================
@@ -103,11 +103,11 @@ $_Message_ERROR_ACTION_UNIVERSAL                                   							= "<CE
  ============================================================================================================
 */
 
-$_Message_Kernel_APPLICATION_MEMBER_APPLICATION_DEACTIVATED								= "<CENTER>Cerberus: This Application Module Is Deactivated.</CENTER>";
-$_Message_Kernel_APPLICATION_MEMBER_APPLICATION_FILE_NOT_FOUND								= "<CENTER>Cerberus: The Specified Application Module could not be located.</CENTER>";
-$_Message_Kernel_APPLICATION_MEMBER_APPLICATION_ACCESS_RESTRICTED_MODERATOR						= "<CENTER>Cerberus: This Application Module is restricted to Registered Members with Moderator Privileges.</CENTER>";
-$_Message_Kernel_APPLICATION_MEMBER_APPLICATION_ACCESS_RESTRICTED_MEMBER						= "<CENTER>Cerberus: This Application Module is restricted to Registered Members.</CENTER>";
-$_Message_Kernel_APPLICATION_MEMBER_APPLICATION_NOT_FOUND_EXPLOIT_WARNING						= "<CENTER>Cerberus: The Specified Application Module could not be located ( Exploit Warning :: Local or Remote File Inclusion Detected ).</CENTER>";
+$_Message_Kernel_APPLICATION_MEMBER_APPLICATION_DEACTIVATED								= "<CENTER>Cerberus: This Application Module Is Not Activated.</CENTER>";
+$_Message_Kernel_APPLICATION_MEMBER_APPLICATION_FILE_NOT_FOUND								= "<CENTER>Cerberus: The Requested Application Module Could Not Be Located.</CENTER>";
+$_Message_Kernel_APPLICATION_MEMBER_APPLICATION_ACCESS_RESTRICTED_MODERATOR						= "<CENTER>Cerberus: This Application Module is restricted to Registered Member Accounts with Moderation Privileges.</CENTER>";
+$_Message_Kernel_APPLICATION_MEMBER_APPLICATION_ACCESS_RESTRICTED_MEMBER						= "<CENTER>Cerberus: This Application Module is restricted to Registered Member Accounts.</CENTER>";
+$_Message_Kernel_APPLICATION_MEMBER_APPLICATION_NOT_FOUND_EXPLOIT_WARNING						= "<CENTER>Cerberus: The Requested Application Module could not be located ( Exploit Warning :: Local or Remote File Inclusion Detected ).</CENTER>";
 
 /*
  ============================================================================================================
@@ -115,10 +115,10 @@ $_Message_Kernel_APPLICATION_MEMBER_APPLICATION_NOT_FOUND_EXPLOIT_WARNING						=
  ============================================================================================================
 */
 
-$_Message_Kernel_APPLICATION_ADMINISTRATION_APPLICATION_DEACTIVATED							= "<CENTER>Cerberus: This Administration Application Module Is Deactivated.</CENTER>";
-$_Message_Kernel_APPLICATION_ADMINISTRATION_APPLICATION_FILE_NOT_FOUND							= "<CENTER>Cerberus: The Specified Administration Application Module could not be located.</CENTER>";
+$_Message_Kernel_APPLICATION_ADMINISTRATION_APPLICATION_DEACTIVATED							= "<CENTER>Cerberus: This Administration Application Module Is Not Activated.</CENTER>";
+$_Message_Kernel_APPLICATION_ADMINISTRATION_APPLICATION_FILE_NOT_FOUND							= "<CENTER>Cerberus: The Requested Administration Application Module could not be located.</CENTER>";
 $_Message_Kernel_APPLICATION_ADMINISTRATION_APPLICATION_ACCESS_RESTRICTED_ADMINISTRATOR					= "<CENTER>Cerberus: This Application Module is restricted to Registered Members With Administration Privileges.</CENTER>";
-$_Message_Kernel_APPLICATION_ADMINISTRATION_APPLICATION_NOT_FOUND_EXPLOIT_WARNING					= "<CENTER>Cerberus: The Specified Administration Application Module could not be located ( Exploit Warning :: Local or Remote File Inclusion Detected ).</CENTER>";
+$_Message_Kernel_APPLICATION_ADMINISTRATION_APPLICATION_NOT_FOUND_EXPLOIT_WARNING					= "<CENTER>Cerberus: The Requested Administration Application Module could not be located ( Exploit Warning :: Local or Remote File Inclusion Detected ).</CENTER>";
 
 /*
  ============================================================================================================
@@ -127,9 +127,9 @@ $_Message_Kernel_APPLICATION_ADMINISTRATION_APPLICATION_NOT_FOUND_EXPLOIT_WARNIN
 */
 
 $_Message_Kernel_APPLICATION_ROOT_APPLICATION_DEACTIVATED								= "<CENTER>Cerberus: This Root Administration Application Module Is Deactivated.</CENTER>";
-$_Message_Kernel_APPLICATION_ROOT_APPLICATION_FILE_NOT_FOUND								= "<CENTER>Cerberus: The Specified Root Administration Application Module could not be located.</CENTER>";
+$_Message_Kernel_APPLICATION_ROOT_APPLICATION_FILE_NOT_FOUND								= "<CENTER>Cerberus: The Requested Root Administration Application Module could not be located.</CENTER>";
 $_Message_Kernel_APPLICATION_ROOT_APPLICATION_ACCESS_RESTRICTED_ROOT							= "<CENTER>Cerberus: This Application Module is restricted to Registered Members With Root-Administration Privileges.</CENTER>";
-$_Message_Kernel_APPLICATION_ROOT_APPLICATION_NOT_FOUND_EXPLOIT_WARNING							= "<CENTER>Cerberus: The Specified Root Application Module could not be located ( Exploit Warning :: Local or Remote File Inclusion Detected ).</CENTER>";
+$_Message_Kernel_APPLICATION_ROOT_APPLICATION_NOT_FOUND_EXPLOIT_WARNING							= "<CENTER>Cerberus: The Requested Root Application Module could not be located ( Exploit Warning :: Local or Remote File Inclusion Detected ).</CENTER>";
 
 /*
  ============================================================================================================
@@ -138,9 +138,9 @@ $_Message_Kernel_APPLICATION_ROOT_APPLICATION_NOT_FOUND_EXPLOIT_WARNING							= 
 */
 
 $_Message_Kernel_APPLICATION_SERVICES_APPLICATION_DEACTIVATED								= "<CENTER>Cerberus: This Services Root Administration Application Module Is Deactivated.</CENTER>";
-$_Message_Kernel_APPLICATION_SERVICES_APPLICATION_FILE_NOT_FOUND							= "<CENTER>Cerberus: The Specified Services Root Administration Application Module could not be located.</CENTER>";
+$_Message_Kernel_APPLICATION_SERVICES_APPLICATION_FILE_NOT_FOUND							= "<CENTER>Cerberus: The Requested Services Root Administration Application Module could not be located.</CENTER>";
 $_Message_Kernel_APPLICATION_SERVICES_APPLICATION_ACCESS_RESTRICTED_SERVICES						= "<CENTER>Cerberus: This Application Module is restricted to Registered Members With Services Root-Administration Privileges.</CENTER>";
-$_Message_Kernel_APPLICATION_SERVICES_APPLICATION_NOT_FOUND_EXPLOIT_WARNING						= "<CENTER>Cerberus: The Specified Services Root Application Module could not be located ( Exploit Warning :: Local or Remote File Inclusion Detected ).</CENTER>";
+$_Message_Kernel_APPLICATION_SERVICES_APPLICATION_NOT_FOUND_EXPLOIT_WARNING						= "<CENTER>Cerberus: The Requested Services Root Application Module could not be located ( Exploit Warning :: Local or Remote File Inclusion Detected ).</CENTER>";
 
 /*
  ============================================================================================================
@@ -148,8 +148,8 @@ $_Message_Kernel_APPLICATION_SERVICES_APPLICATION_NOT_FOUND_EXPLOIT_WARNING					
  ============================================================================================================
 */
 
-$_Message_Kernel_ERROR_SQL_RANK												= "Cerberus: There was an error: I was unable to update the Rank S.Q.L. Table.";
-$_Message_Kernel_ERROR_SQL_MEMBER_LAST_POST										= "Cerberus: There was an error: I was unable to update the Member S.Q.L. Table.";
+$_Message_Kernel_ERROR_SQL_RANK												= "Cerberus: The Rank System Could Not Be Updated.";
+$_Message_Kernel_ERROR_SQL_MEMBER_LAST_POST										= "Cerberus: This Registered Member Account Data Could Not Be Updated.";
 
 /*
  ============================================================================================================
@@ -353,12 +353,12 @@ $_Application_Module_Tasks_Message_Commander_Header									= "<CENTER>[ <B><A H
  ============================================================================================================
 */
 
-$_Application_Module_Administration_Accounts_Message_UPDATE_ACCOUNT_WITHOUT_PASSWORD_SUCCESSFUL			= "<BR><HR><CENTER>Cerberus: I have updated the Member Table ( Without Password ) Successfully.</CENTER><HR><BR>";
-$_Application_Module_Administration_Accounts_Message_UPDATE_ACCOUNT_WITHOUT_PASSWORD_ERROR			= "<BR><HR><CENTER>Cerberus: I was *NOT* able to update the Member Table ( Without Password ).</CENTER><HR><BR>";
-$_Application_Module_Administration_Accounts_Message_UPDATE_ACCOUNT_WITH_PASSWORD_SUCCESSFUL			= "<BR><HR><CENTER>Cerberus: I have updated the Member Table ( With Password ) Successfully.</CENTER><HR><BR>";
-$_Application_Module_Administration_Accounts_Message_UPDATE_ACCOUNT_WITH_PASSWORD_ERROR				= "<BR><HR><CENTER>Cerberus: I was *NOT* able to Update the Member Table ( With Password )</CENTER><HR><BR>";
-$_Application_Module_Administration_Accounts_Message_SYSTEM_MESSAGE_SEND_MESSAGE_LENGTH_ERROR			= "<HR><CENTER>Cerberus: Your Message is greater than 100 Characters. Please go back and reduce the Message Length.</CENTER><HR>";
-$_Application_Module_Administration_Accounts_Message_SYSTEM_MESSAGE_SEND_SUCCESSFUL				= "<HR><CENTER>Cerberus: I have sent this Electronic Message successfully.</CENTER><HR>";
+$_Application_Module_Administration_Accounts_Message_UPDATE_ACCOUNT_WITHOUT_PASSWORD_SUCCESSFUL			= "<BR><HR><CENTER>Cerberus: This Registered Member Account Table ( Without Password ) Was Updated Successfully.</CENTER><HR><BR>";
+$_Application_Module_Administration_Accounts_Message_UPDATE_ACCOUNT_WITHOUT_PASSWORD_ERROR			= "<BR><HR><CENTER>Cerberus: This Registered Member Account Table ( Without Password ) Was Not Updated.</CENTER><HR><BR>";
+$_Application_Module_Administration_Accounts_Message_UPDATE_ACCOUNT_WITH_PASSWORD_SUCCESSFUL			= "<BR><HR><CENTER>Cerberus: This Registered Member Account Table ( With Password ) Was Updated Successfully.</CENTER><HR><BR>";
+$_Application_Module_Administration_Accounts_Message_UPDATE_ACCOUNT_WITH_PASSWORD_ERROR				= "<BR><HR><CENTER>Cerberus: This Registered Member Account Table ( With Password ) Was Not Updated.</CENTER><HR><BR>";
+$_Application_Module_Administration_Accounts_Message_SYSTEM_MESSAGE_SEND_MESSAGE_LENGTH_ERROR			= "<HR><CENTER>Cerberus: This Message is greater than 100 Characters which is not allowed. Go back and reduce the Message Length.</CENTER><HR>";
+$_Application_Module_Administration_Accounts_Message_SYSTEM_MESSAGE_SEND_SUCCESSFUL				= "<HR><CENTER>Cerberus: This Electronic Mail Message Was Sent Successfully.</CENTER><HR>";
 $_Application_Module_Administration_Accounts_Message_SYSTEM_MESSAGE_SEND_ERROR					= "<HR><CENTER>Cerberus: There was an error: Try Again ?</CENTER><HR>";
 
 /*
@@ -378,9 +378,9 @@ $_Application_Module_Administration_Accounts_Message_SYSTEM_MESSAGE_SEND_ERROR		
 */
 
 $_Application_Module_Administration_Message_Applications_APPLICATION_INSTALL_SUCCESSFUL					= "<BR><BR><HR ALIGN=\"CENTER\" WIDTH=\"25%\"><CENTER>Cerberus: I Have Installed This Application Module Successfully<HR ALIGN=\"CENTER\" WIDTH=\"25%\"></CENTER><BR><BR>";
-$_Application_Module_Administration_Message_Applications_APPLICATION_DELETE_SUCCESSFUL					= "<BR><HR><CENTER>Cerberus: I Have Deleted This Application Module Successfully</CENTER><HR><BR>";
-$_Application_Module_Administration_Message_Applications_APPLICATION_UPDATE_SUCCESSFUL					= "<HR><CENTER>Cerberus: I Have Updated This Application Module Successfully</CENTER><HR><BR>";
-$_Application_Module_Administration_Message_Applications_APPLICATION_UPLOAD_SUCCESSFUL					= "<BR><HR><CENTER>Cerberus: I have Uploaded This Application Module Successfully</CENTER><HR><BR>";
+$_Application_Module_Administration_Message_Applications_APPLICATION_DELETE_SUCCESSFUL					= "<BR><HR><CENTER>Cerberus: This Application Module Was Deleted Successfully</CENTER><HR><BR>";
+$_Application_Module_Administration_Message_Applications_APPLICATION_UPDATE_SUCCESSFUL					= "<HR><CENTER>Cerberus: This Application Module Was Updated Successfully</CENTER><HR><BR>";
+$_Application_Module_Administration_Message_Applications_APPLICATION_UPLOAD_SUCCESSFUL					= "<BR><HR><CENTER>Cerberus: This Application Module Was Uploaded Successfully</CENTER><HR><BR>";
 $_Application_Module_Administration_Message_Applications_APPLICATION_UPLOAD_HALTED					= "<BR><HR><CENTER>Cerberus: This Uploaded Application Module File Already Exists</CENTER><HR><BR>";
 
 /*
@@ -399,8 +399,8 @@ $_Application_Module_Administration_Message_Applications_APPLICATION_UPLOAD_HALT
  ============================================================================================================
 */
 
-$_Application_Module_Administration_Message_Archive_PACKAGE_COMPRESSION_SUCCESSFUL					= "<CENTER>Cerberus: I have Archived the Package Successfully.</CENTER>";
-$_Application_Module_Administration_Message_Archive_PACKAGE_DELETE_SUCCESSFUL						= "<CENTER>Cerberus: I have Deleted the Archive Package Successfully.</CENTER>";
+$_Application_Module_Administration_Message_Archive_PACKAGE_COMPRESSION_SUCCESSFUL					= "<CENTER>Cerberus: This Package Selection Was Archived Successfully.</CENTER>";
+$_Application_Module_Administration_Message_Archive_PACKAGE_DELETE_SUCCESSFUL						= "<CENTER>Cerberus: This Archive Package Was Deleted Successfully.</CENTER>";
 
 /*
  ============================================================================================================
@@ -418,10 +418,10 @@ $_Application_Module_Administration_Message_Archive_PACKAGE_DELETE_SUCCESSFUL			
  ============================================================================================================
 */
 
-$_Application_Module_Administration_Message_File_Categories_FILE_CATEGORY_INSTALLATION_SUCCESSFUL			= "<CENTER>Cerberus: I have Installed the File Category Successfully.</CENTER>";
-$_Application_Module_Administration_Message_File_Categories_FILE_CATEGORY_ENTRIES_EMPTY					= "<CENTER>Cerberus: There are no File Categories Installed.</CENTER>";
-$_Application_Module_Administration_Message_File_Categories_FILE_CATEGORY_DELETION_SUCCESSFUL				= "<BR><HR><CENTER>Cerberus: I have Deleted the File Category Successfully.</CENTER><HR><BR>";
-$_Application_Module_Administration_Message_File_Categories_FILE_CATEGORY_UPDATE_SUCCESSFUL				= "<BR><HR><CENTER>Cerberus: I have Updated the File Category Successfully.</CENTER><HR><BR>";
+$_Application_Module_Administration_Message_File_Categories_FILE_CATEGORY_INSTALLATION_SUCCESSFUL			= "<CENTER>Cerberus: This File Category Was Deleted Successfully.</CENTER>";
+$_Application_Module_Administration_Message_File_Categories_FILE_CATEGORY_ENTRIES_EMPTY					= "<CENTER>Cerberus: No File Categories Are Installed.</CENTER>";
+$_Application_Module_Administration_Message_File_Categories_FILE_CATEGORY_DELETION_SUCCESSFUL				= "<BR><HR><CENTER>Cerberus: This File Category Was Deleted Successfully.</CENTER><HR><BR>";
+$_Application_Module_Administration_Message_File_Categories_FILE_CATEGORY_UPDATE_SUCCESSFUL				= "<BR><HR><CENTER>Cerberus: This File Category Was Updated Successfully.</CENTER><HR><BR>";
 
 /*
  ============================================================================================================
