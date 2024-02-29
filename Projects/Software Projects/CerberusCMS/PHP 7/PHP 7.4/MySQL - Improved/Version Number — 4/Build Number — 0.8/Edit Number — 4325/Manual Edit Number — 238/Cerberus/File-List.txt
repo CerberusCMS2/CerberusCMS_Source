@@ -374,24 +374,6 @@ Total:												927
 
 ------------------------------------------------------------------------------------------------------------
  +
- + Directory: ./Applications/Moderator/
- +
-------------------------------------------------------------------------------------------------------------
-
-------------------------------------------------------------------------------------------------------------
- + Directories Within Directory: ./Applications/Moderator/
-------------------------------------------------------------------------------------------------------------
-* None
-
-------------------------------------------------------------------------------------------------------------
- + Files Within Directory: ./Applications/Moderator/
-------------------------------------------------------------------------------------------------------------
-* => Forum			0.7.2		[ + ]			[ + ]			927
-------------------------------------------------------------------------------------------------------------
-Total:												927
-
-------------------------------------------------------------------------------------------------------------
- +
  + Directory: ./Applications/Panel/
  +
 ------------------------------------------------------------------------------------------------------------
@@ -2982,6 +2964,15 @@ Total:													93
 ------------------------------------------------------------------------------------------------------------
 Total:													93
 
-Number of Pre-Hyper-Text-Post-Processor Index Files: 251 * 93 Lines of Pre-Hyper-Text-Post-Processor Programming Code = 23,343
-Total Number of Lines of High Quality and Completely Functional and Commented Pre-Hyper-Text-Post-Processor Programming Code Within This Official Release Number: ~153,209 to ~175,000
-Total Number of Lines of High Quality and Completely Functional Non-Commented Pre-Hyper-Text-Post-Processor Programming Code Within This Official Release Number: ~130,000
+------------------------------------------------------------------------------------------------------------
+ +
+ + Programming Code Statistics
+ +
+------------------------------------------------------------------------------------------------------------
+
+NUMBER OF LINES OF PROGRAMMING CODE
+* Number of Pre-Hyper-Text-Post-Processor Index Files: 251 * 93 Lines of Pre-Hyper-Text-Post-Processor Programming Code Per Index File: 23,343 Lines of Programming Code
+* Total Number of Lines of High Quality and Completely Functional and Commented Pre-Hyper-Text-Post-Processor Programming Code Within This Official Release Number ( Bare-Bone Programming Code): ~96,630 Lines of Programming Code
+* Total Number of Lines of High Quality and Completely Functional and Commented Pre-Hyper-Text-Post-Processor Programming Code Within This Official Release Number ( With Index File Programming Code): ~119,973 Lines of Programming Code
+* Total Number of Lines of High Quality and Completely Functional and Non-Commented Pre-Hyper-Text-Post-Processor Programming Code Within This Official Release Number ( Bare-Bone Programming Code): ~75,000 Lines of Programming Code
+* Total Number of Lines of High Quality and Completely Functional and Commented Pre-Hyper-Text-Post-Processor Programming Code Within This Official Release Number: ~153,209 to ~175,000 Lines of Programming Code
