@@ -4337,19 +4337,23 @@ Server :: This Web Server :: Internet Protocol Addresses
 Connecting Device :: Details :: Location
 ---------------------------------------------------------------------------------------
 Global Positioning System Coordinates
-* Location :: Device :: Global-Positioning-Coordinates In: X, Y, Z :: From H.T.M.L. ::
-* Location :: Device :: Global-Positioning-Coordinates In: X, Y, Z :: From P.H.P. ::
+* Location :: Device :: This Web Server :: Global-Positioning-Coordinates In: X, Y, Z :: From H.T.M.L. ::
+* Location :: Device :: This Web Server :: Global-Positioning-Coordinates In: X, Y, Z :: From P.H.P. ::
+
+* Location :: Device :: Connecting Device :: Global-Positioning-Coordinates In: X, Y, Z :: From H.T.M.L. ::
+* Location :: Device :: Connecting Device :: Global-Positioning-Coordinates In: X, Y, Z :: From P.H.P. ::
 
 Geographical Localization of Objects
-* Location :: Device :: Geographical-Localization-Objects :: $_GLOBAL_MEMBER_LOCATION_CURRENT_GLO
+* Location :: Device :: This Web Server :: Geographical-Localization-Objects :: $_GLOBAL_MEMBER_LOCATION_CURRENT_GLO
+* Location :: Device :: Connecting Device :: Geographical-Localization-Objects :: $_GLOBAL_MEMBER_LOCATION_CURRENT_GLO
 
 Time-Zone
 * Location :: Device :: This Web Server :: Time-Zone :: $_GLOBAL_MEMBER_LOCATION_CURRENT_TIMEZONE_SERVER_LOCAL
-* Location :: Device :: This Web Server :: Time-Zone :: $_GLOBAL_MEMBER_LOCATION_CURRENT_TIMEZONE_SERVER_REMOTE
+* Location :: Device :: Connecting Device :: Time-Zone :: $_GLOBAL_MEMBER_LOCATION_CURRENT_TIMEZONE_SERVER_REMOTE
 
 Region
-* Location :: Device :: Region :: This Web Server :: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_LOCAL
-* Location :: Device :: Region :: Connecting Device :: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_REMOTE
+* Location :: Device :: This Web Server :: Region: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_LOCAL
+* Location :: Device :: Connecting Device :: Region: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_REMOTE
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
@@ -4428,19 +4432,23 @@ Server :: This Web Server :: Internet Protocol Addresses
 Connecting Device :: Details :: Location
 ---------------------------------------------------------------------------------------
 Global Positioning System Coordinates
-* Location :: Device :: Global-Positioning-Coordinates In: X, Y, Z :: From H.T.M.L. ::
-* Location :: Device :: Global-Positioning-Coordinates In: X, Y, Z :: From P.H.P. ::
+* Location :: Device :: This Web Server :: Global-Positioning-Coordinates In: X, Y, Z :: From H.T.M.L. ::
+* Location :: Device :: This Web Server :: Global-Positioning-Coordinates In: X, Y, Z :: From P.H.P. ::
+
+* Location :: Device :: Connecting Device :: Global-Positioning-Coordinates In: X, Y, Z :: From H.T.M.L. ::
+* Location :: Device :: Connecting Device :: Global-Positioning-Coordinates In: X, Y, Z :: From P.H.P. ::
 
 Geographical Localization of Objects
-* Location :: Device :: Geographical-Localization-Objects :: $_GLOBAL_MEMBER_LOCATION_CURRENT_GLO
+* Location :: Device :: This Web Server :: Geographical-Localization-Objects :: $_GLOBAL_MEMBER_LOCATION_CURRENT_GLO
+* Location :: Device :: Connecting Device :: Geographical-Localization-Objects :: $_GLOBAL_MEMBER_LOCATION_CURRENT_GLO
 
 Time-Zone
 * Location :: Device :: This Web Server :: Time-Zone :: $_GLOBAL_MEMBER_LOCATION_CURRENT_TIMEZONE_SERVER_LOCAL
-* Location :: Device :: This Web Server :: Time-Zone :: $_GLOBAL_MEMBER_LOCATION_CURRENT_TIMEZONE_SERVER_REMOTE
+* Location :: Device :: Connecting Device :: Time-Zone :: $_GLOBAL_MEMBER_LOCATION_CURRENT_TIMEZONE_SERVER_REMOTE
 
 Region
-* Location :: Device :: Region :: This Web Server :: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_LOCAL
-* Location :: Device :: Region :: Connecting Device :: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_REMOTE
+* Location :: Device :: This Web Server :: Region: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_LOCAL
+* Location :: Device :: Connecting Device :: Region: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_REMOTE
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
@@ -4591,19 +4599,23 @@ Server :: This Web Server :: Internet Protocol Addresses
 Connecting Device :: Details :: Location
 ---------------------------------------------------------------------------------------
 Global Positioning System Coordinates
-* Location :: Device :: Global-Positioning-Coordinates In: X, Y, Z :: From H.T.M.L. ::
-* Location :: Device :: Global-Positioning-Coordinates In: X, Y, Z :: From P.H.P. ::
+* Location :: Device :: This Web Server :: Global-Positioning-Coordinates In: X, Y, Z :: From H.T.M.L. ::
+* Location :: Device :: This Web Server :: Global-Positioning-Coordinates In: X, Y, Z :: From P.H.P. ::
+
+* Location :: Device :: Connecting Device :: Global-Positioning-Coordinates In: X, Y, Z :: From H.T.M.L. ::
+* Location :: Device :: Connecting Device :: Global-Positioning-Coordinates In: X, Y, Z :: From P.H.P. ::
 
 Geographical Localization of Objects
-* Location :: Device :: Geographical-Localization-Objects :: $_GLOBAL_MEMBER_LOCATION_CURRENT_GLO
+* Location :: Device :: This Web Server :: Geographical-Localization-Objects :: $_GLOBAL_MEMBER_LOCATION_CURRENT_GLO
+* Location :: Device :: Connecting Device :: Geographical-Localization-Objects :: $_GLOBAL_MEMBER_LOCATION_CURRENT_GLO
 
 Time-Zone
 * Location :: Device :: This Web Server :: Time-Zone :: $_GLOBAL_MEMBER_LOCATION_CURRENT_TIMEZONE_SERVER_LOCAL
-* Location :: Device :: This Web Server :: Time-Zone :: $_GLOBAL_MEMBER_LOCATION_CURRENT_TIMEZONE_SERVER_REMOTE
+* Location :: Device :: Connecting Device :: Time-Zone :: $_GLOBAL_MEMBER_LOCATION_CURRENT_TIMEZONE_SERVER_REMOTE
 
 Region
-* Location :: Device :: Region :: This Web Server :: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_LOCAL
-* Location :: Device :: Region :: Connecting Device :: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_REMOTE
+* Location :: Device :: This Web Server :: Region: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_LOCAL
+* Location :: Device :: Connecting Device :: Region: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_REMOTE
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
@@ -4853,19 +4865,23 @@ Server :: This Web Server :: Internet Protocol Addresses
 Connecting Device :: Details :: Location
 ---------------------------------------------------------------------------------------
 Global Positioning System Coordinates
-* Location :: Device :: Global-Positioning-Coordinates In: X, Y, Z :: From H.T.M.L. ::
-* Location :: Device :: Global-Positioning-Coordinates In: X, Y, Z :: From P.H.P. ::
+* Location :: Device :: This Web Server :: Global-Positioning-Coordinates In: X, Y, Z :: From H.T.M.L. ::
+* Location :: Device :: This Web Server :: Global-Positioning-Coordinates In: X, Y, Z :: From P.H.P. ::
+
+* Location :: Device :: Connecting Device :: Global-Positioning-Coordinates In: X, Y, Z :: From H.T.M.L. ::
+* Location :: Device :: Connecting Device :: Global-Positioning-Coordinates In: X, Y, Z :: From P.H.P. ::
 
 Geographical Localization of Objects
-* Location :: Device :: Geographical-Localization-Objects :: $_GLOBAL_MEMBER_LOCATION_CURRENT_GLO
+* Location :: Device :: This Web Server :: Geographical-Localization-Objects :: $_GLOBAL_MEMBER_LOCATION_CURRENT_GLO
+* Location :: Device :: Connecting Device :: Geographical-Localization-Objects :: $_GLOBAL_MEMBER_LOCATION_CURRENT_GLO
 
 Time-Zone
 * Location :: Device :: This Web Server :: Time-Zone :: $_GLOBAL_MEMBER_LOCATION_CURRENT_TIMEZONE_SERVER_LOCAL
-* Location :: Device :: This Web Server :: Time-Zone :: $_GLOBAL_MEMBER_LOCATION_CURRENT_TIMEZONE_SERVER_REMOTE
+* Location :: Device :: Connecting Device :: Time-Zone :: $_GLOBAL_MEMBER_LOCATION_CURRENT_TIMEZONE_SERVER_REMOTE
 
 Region
-* Location :: Device :: Region :: This Web Server :: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_LOCAL
-* Location :: Device :: Region :: Connecting Device :: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_REMOTE
+* Location :: Device :: This Web Server :: Region: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_LOCAL
+* Location :: Device :: Connecting Device :: Region: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_REMOTE
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
@@ -4944,19 +4960,23 @@ Server :: This Web Server :: Internet Protocol Addresses
 Connecting Device :: Details :: Location
 ---------------------------------------------------------------------------------------
 Global Positioning System Coordinates
-* Location :: Device :: Global-Positioning-Coordinates In: X, Y, Z :: From H.T.M.L. ::
-* Location :: Device :: Global-Positioning-Coordinates In: X, Y, Z :: From P.H.P. ::
+* Location :: Device :: This Web Server :: Global-Positioning-Coordinates In: X, Y, Z :: From H.T.M.L. ::
+* Location :: Device :: This Web Server :: Global-Positioning-Coordinates In: X, Y, Z :: From P.H.P. ::
+
+* Location :: Device :: Connecting Device :: Global-Positioning-Coordinates In: X, Y, Z :: From H.T.M.L. ::
+* Location :: Device :: Connecting Device :: Global-Positioning-Coordinates In: X, Y, Z :: From P.H.P. ::
 
 Geographical Localization of Objects
-* Location :: Device :: Geographical-Localization-Objects :: $_GLOBAL_MEMBER_LOCATION_CURRENT_GLO
+* Location :: Device :: This Web Server :: Geographical-Localization-Objects :: $_GLOBAL_MEMBER_LOCATION_CURRENT_GLO
+* Location :: Device :: Connecting Device :: Geographical-Localization-Objects :: $_GLOBAL_MEMBER_LOCATION_CURRENT_GLO
 
 Time-Zone
 * Location :: Device :: This Web Server :: Time-Zone :: $_GLOBAL_MEMBER_LOCATION_CURRENT_TIMEZONE_SERVER_LOCAL
-* Location :: Device :: This Web Server :: Time-Zone :: $_GLOBAL_MEMBER_LOCATION_CURRENT_TIMEZONE_SERVER_REMOTE
+* Location :: Device :: Connecting Device :: Time-Zone :: $_GLOBAL_MEMBER_LOCATION_CURRENT_TIMEZONE_SERVER_REMOTE
 
 Region
-* Location :: Device :: Region :: This Web Server :: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_LOCAL
-* Location :: Device :: Region :: Connecting Device :: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_REMOTE
+* Location :: Device :: This Web Server :: Region: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_LOCAL
+* Location :: Device :: Connecting Device :: Region: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_REMOTE
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
