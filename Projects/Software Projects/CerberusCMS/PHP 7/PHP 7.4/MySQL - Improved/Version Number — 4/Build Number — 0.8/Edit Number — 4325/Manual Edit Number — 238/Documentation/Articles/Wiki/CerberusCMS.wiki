@@ -49,8 +49,7 @@ The super organized directory structure with all of the additional applications,
 The XBMC Dashboard and custom Linux Operating System available for the Orignal Microsoft XBOX from 2008 to 2016 was comparable to some of the highest end commercial media software that is even available today. Custom Application Modules for CerberusCMS were made so that it could remotely control the entire Original Microsoft XBOX so when an owner left the house or the location of the Original Microsoft XBOX they could then login to an instance of CerberusCMS and remotely control the Original Microsoft XBOX itself that is connected to the local network.
 
 From the years of 2006 - 2016 one could buy an original Microsoft XBOX and then upgrade each of the internal components within it such as the CPU to a 1.4 GHz by reball, RAM to 128 MB to 256 MB and sometimes 512MB by reball, Hard Disk Drive to a 750 GB to 1 TB or greater capacity, Ribbon Cables to SATA1 or Ribbon Cables to ~300MHz, Power Supply Unit to regulated OverVoltage and then flash the
-firmware on the Original Microsoft XBOX Motherboard / Mainboard to then install a custom Dashboard Media Center called XBMC. XBMC was under constant development by the community. After one installed XBMC from the years of 2006 - 2016 one could then purchase a 40" or greater High End flat screen computer monitor capable of 1080p/i or higher video resolution output and then use a converter box with the 24Karat Gold Plated Component Cables to get 1080p/i video resolution output with high definition optical audio output from the Original Microsoft XBOX. If one had a high quality wired or wireless surround sound system with 5 - 7 speakers and a subwoofer or more than one subwoofer one could also get high defintion audio as well as high definition 3D surround sound audio from the Original Microsoft XBOX. All of the movies, video games and music
-could be launched to use the high defintion surround sound audio and high definition 3D surround sound audio.
+firmware on the Original Microsoft XBOX Motherboard / Mainboard to then install a custom Dashboard Media Center called XBMC. XBMC was under constant development by the community. After one installed XBMC from the years of 2006 - 2016 one could then purchase a 40" or greater High End flat screen computer monitor capable of 1080p/i or higher video resolution output and then use a converter box with the 24Karat Gold Plated Component Cables to get 1080p/i video resolution output with high definition optical audio output from the Original Microsoft XBOX. If one had a high quality wired or wireless surround sound system with 5 - 7 speakers and a subwoofer or more than one subwoofer one could also get high defintion audio as well as high definition 3D surround sound audio from the Original Microsoft XBOX. All of the movies, video games and music could be launched to use the high defintion surround sound audio and high definition 3D surround sound audio.
 
 From ~2006 to 2012 one could then download and watch every film ever made directly from the Orignal Microsoft XBOX itself and sometimes films and television shows came out to different communities in 720p and higher video resolution several months before the films made it into the public cinemas. This setup was better than what some of the highest end electronics were available to the public from the years of ~2006 to 2012.
 
@@ -62,7 +61,7 @@ CerberusCMS with custom Application Modules was used in the Microsoft XBOX 360 M
 ===Use In The CyanogenMod Community===
 CerberusCMS with custom Application Modules was used in the CyanogenMod Community from ~2010 until it became LineageOS.
 
-===Use In The Internet of Things Community===
+===Use In The Original and Current Internet of Things Community===
 CerberusCMS was used in the original Internet of Things Community in ~2009 where custom application modules were made to control the lights, power, air conditioning and other things inside of a house from a web server connected to a smart board. All of the things inside of the house could be controlled from a mobile cell phone and in addition to this live security video feeds from security cameras attached to the house could be watched and recorded from the mobile cell phone.
 
 ===Loss of Development Progress===
@@ -79,10 +78,9 @@ All official builds are generated from a C++ application named Charon alternatel
 Once an official build number reaches the number: 0100, where the official version has progressed to an acceptable level of development and features an entirely new version of the project is announced and released into public circulation.
 
 Official Software Project Package Releases follow:
-CerberusCMS - Version Number: **Number**, Build Number: **Number**, Edit Number: **Number** and Manual Edit: **Number**
+CerberusCMS - Version Number: **Number**, Build Number: **Number**, Edit Number: **Number** and Manual Edit Number: **Number**
 
-Each official release in different packaged forms are accompanied with a Portable-Document-File
-documentation file format and a SHA-512 HASH file size for comparison against the official package released.
+Each official release in different packaged forms are accompanied with a Portable-Document-File documentation file format and a SHA-512 HASH file size for comparison against the official package released.
 
 ====Application Module Versioning System====
 Each Application Module has a version number where newer and improved Application Modules ascend in number.
