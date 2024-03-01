@@ -314,6 +314,15 @@ $_Application_Module_Member_Update_Account_LIST_MEMBER_SOCIALMEDIA_VIDEO_YOUTUBE
 
 /*
  ============================================================================================================
+ + Member Account Details :: Social Media Accounts :: Video Gaming :: Steam
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Update_Account_LIST_MEMBER_SOCIALMEDIA_VIDEO_GAMING_STEAM				= $_Application_Module_Member_Update_Account_DB_Query_SELECT_MEMBERS_Fetch_Array['member_socialmedia_video_gaming_steam'];
+
+
+/*
+ ============================================================================================================
  + Member Account Details :: Social Media Accounts :: Video
  ============================================================================================================
 */
@@ -571,7 +580,8 @@ $_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_SOCIALMEDI
 $_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_SOCIALMEDIA_AUDIO_SPOTIFY 		= $_POST['AMM_Update_Account_Member_SocialMedia_Audio_Spotify'];
 
 $_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_SOCIALMEDIA_BUSINESS_LINKEDIN 		= $_POST['AMM_Update_Account_Member_SocialMedia_Business_Linkedin'];
-$_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_SOCIALMEDIA_VIDEO_YOUTUBE 		= $_POST['AMM_Update_Account_Member_SocialMedia_Video_Youtube'];
+$_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_SOCIALMEDIA_VIDEO_YOUTUBE 		= $_POST['AMM_Update_Account_Member_SocialMedia_Video_YouTube'];
+$_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_SOCIALMEDIA_VIDEO_GAMING_STEAM		= $_POST['AMM_Update_Account_Member_SocialMedia_Video_Gaming_Steam'];
 $_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_SOCIALMEDIA_SECURITY_KEYBASE 		= $_POST['AMM_Update_Account_Member_SocialMedia_Security_Keybase'];
 
 $_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_SOCIALMEDIA_PROGRAMMING_BITBUCKET		= $_POST['AMM_Update_Account_Member_SocialMedia_Programming_BitBucket'];
@@ -987,7 +997,11 @@ echo ("
 
 													<B><I>Video Streaming</I></B><BR>
 														* My YouTube:<BR>
-															<INPUT TYPE=\"text\" NAME=\"AMM_Update_Account_Member_SocialMedia_Video_Youtube\" VALUE=\"$_Application_Module_Member_Update_Account_LIST_MEMBER_SOCIALMEDIA_VIDEO_YOUTUBE\" MAXLENGTH=\"250\"><BR><BR>
+															<INPUT TYPE=\"text\" NAME=\"AMM_Update_Account_Member_SocialMedia_Video_YouTube\" VALUE=\"$_Application_Module_Member_Update_Account_LIST_MEMBER_SOCIALMEDIA_VIDEO_YOUTUBE\" MAXLENGTH=\"250\"><BR><BR>
+
+													<B><I>Video Streaming</I></B><BR>
+														* My Steam:<BR>
+															<INPUT TYPE=\"text\" NAME=\"AMM_Update_Account_Member_SocialMedia_Video_Gaming_Steam\" VALUE=\"$_Application_Module_Member_Update_Account_LIST_MEMBER_SOCIALMEDIA_VIDEO_GAMING_STEAM\" MAXLENGTH=\"250\"><BR><BR>
 
 													<B><I>Security</I></B><BR>
 														* My KeyBase:<BR>
@@ -1580,6 +1594,7 @@ member_socialmedia_programming_github='$_Application_Module_Member_Update_Accoun
 member_socialmedia_programming_launchpad='$_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_SOCIALMEDIA_PROGRAMMING_LAUNCHPAD',
 member_socialmedia_security_keybase='$_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_SOCIALMEDIA_SECURITY_KEYBASE',
 member_socialmedia_video_youtube='$_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_SOCIALMEDIA_VIDEO_YOUTUBE',
+member_socialmedia_video_gaming_steam='$_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_SOCIALMEDIA_VIDEO_GAMING_STEAM',
 member_url_homepage='$_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_URL_HOMEPAGE'
 WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
 
