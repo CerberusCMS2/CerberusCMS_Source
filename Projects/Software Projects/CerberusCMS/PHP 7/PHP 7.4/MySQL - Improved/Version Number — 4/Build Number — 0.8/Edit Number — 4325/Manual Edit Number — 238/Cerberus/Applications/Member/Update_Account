@@ -999,7 +999,7 @@ echo ("
 														* My YouTube:<BR>
 															<INPUT TYPE=\"text\" NAME=\"AMM_Update_Account_Member_SocialMedia_Video_YouTube\" VALUE=\"$_Application_Module_Member_Update_Account_LIST_MEMBER_SOCIALMEDIA_VIDEO_YOUTUBE\" MAXLENGTH=\"250\"><BR><BR>
 
-													<B><I>Video Streaming</I></B><BR>
+													<B><I>Video Gaming</I></B><BR>
 														* My Steam:<BR>
 															<INPUT TYPE=\"text\" NAME=\"AMM_Update_Account_Member_SocialMedia_Video_Gaming_Steam\" VALUE=\"$_Application_Module_Member_Update_Account_LIST_MEMBER_SOCIALMEDIA_VIDEO_GAMING_STEAM\" MAXLENGTH=\"250\"><BR><BR>
 
