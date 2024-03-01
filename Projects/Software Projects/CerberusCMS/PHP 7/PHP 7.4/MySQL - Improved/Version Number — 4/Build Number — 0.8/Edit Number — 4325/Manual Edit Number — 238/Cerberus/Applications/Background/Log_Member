@@ -234,90 +234,132 @@ if (strlen($_Application_Module_Background_Log_Member_GET_LOG_MEMBER_USERNAME) >
 */
 
 fwrite($_Application_Module_Background_Log_Member_Box_OPEN_FILE_NAME, "
-<B>Activity Log :: Detailed Information :: Registered Member Account</B>
-<HR>
-<B>Machine and Connection Information :: Registered Member Account</B><BR>
-* Registered Member Account :: UserName: <A HREF=\"../../../../$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Background_Log_Administrator_GET_LOG_MEMBER_USERNAME\" TARGET=\"_NEW\" TITLE=\":: Open & Display The Member Account Profile For :: $_Application_Module_Background_Log_Administrator_GET_LOG_MEMBER_USERNAME ::\">$_Application_Module_Background_Log_Administrator_GET_LOG_MEMBER_USERNAME</A><BR>
-* Registered Member Account :: Local Server :: Document View Timestamp: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD<BR>
-* Registered Member Account :: Local Server :: Document Referrer: <A HREF=\"$_Application_Module_Background_Log_Administrator_GET_REFERRER\" TITLE=\":: Open & Display The Referrer Document Page In New Window ::\" TARGET=\"_NEW\">$_Application_Module_Background_Log_Administrator_GET_REFERRER</A><BR>
-* Registered Member Account :: User-Agent ( Browser ): $_Application_Module_Background_Log_Administrator_GET_USER_AGENT<BR>
-* Registered Member Account :: Internet Protocol Address: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_REMOTE_SERVER_ADDRESS\" TARGET=\"_NEW\" TITLE=\":: Open & Display The Who-Is Information For The Remote User Internet Protocol Address :: $_GLOBAL_REMOTE_SERVER_ADDRESS ::\">$_GLOBAL_REMOTE_SERVER_ADDRESS</A><BR>
-* Registered Member Account :: Remote Server :: Host-Name: $_GLOBAL_REMOTE_SERVER_HOSTNAME<BR>
-* Registered Member Account :: Remote Server :: Port Number: $_GLOBAL_REMOTE_SERVER_PORT<BR>
-* Registered Member Account :: Request String: $_GLOBAL_LOCAL_SERVER_QUERY_STRING<BR><BR>
+<HR><CENTER>Activity Log :: Detailed Information :: Registered Member Account :: $_GLOBAL_COOKIE_MEMBER_USERNAME</CENTER><HR>
 
-<B>Connection Information :: Registered Member Account</B><BR>
-* Registered Member Account :: Local Server :: Request Method: $_GLOBAL_LOCAL_SERVER_REQUEST_METHOD<BR>
-* Registered Member Account :: Local Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME<BR>
-* Registered Member Account :: Local Server :: Connection Type: $_GLOBAL_LOCAL_SERVER_HTTP_CONNECTION_TYPE<BR><BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+<B>Machine and Connection Information :: $_GLOBAL_COOKIE_MEMBER_USERNAME</B>
+<HR ALIGN=\"LEFT\" WIDTH=\"50%\"><BR>
 
-<B>Location Information :: Registered Member Account</B><BR>
-* Registered Member Account :: Device Location :: By Global-Positioning-System Coordinates :: From H.T.M.L. :: In: X, Y, Z: <DIV ID=\"getLocationOutputLongitude\"></DIV>&nbsp;<DIV ID=\"getLocationOutputLatitude\"></DIV><BR>
-* Registered Member Account :: Device Location :: By Geographical Localization of Objects: <BR>
-* Registered Member Account :: Device Location :: By Region: <BR>
-* Registered Member Account :: Device Location :: By Internet Protocol Address: <BR><BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+<B>- Document Information</B>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: This Web Server :: Document View Timestamp: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD<BR>
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: This Web Server :: Document Referrer: <A HREF=\"$_Application_Module_Background_Log_Visitor_GET_REFERRER\" TITLE=\":: Open & Display The Referrer Document Page In New Window ::\" TARGET=\"_NEW\">$_Application_Module_Background_Log_Visitor_GET_REFERRER</A><BR>
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: This Web Server :: Request String: $_GLOBAL_LOCAL_SERVER_QUERY_STRING<BR>
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: This Web Server :: Request Method: $_GLOBAL_LOCAL_SERVER_REQUEST_METHOD<BR>
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: This Web Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME<BR>
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: This Web Server :: Connection Type: $_GLOBAL_LOCAL_SERVER_HTTP_CONNECTION_TYPE<BR><BR>
 
-<B>Local Server Information :: Registered Member Account</B><BR>
-* Local Server :: Hyper-Text-Transfer-Protocol :: Host: $_GLOBAL_LOCAL_SERVER_HTTP_HOST<BR>
-* Local Server :: Network Gateway Interface: $_GLOBAL_LOCAL_SERVER_GATEWAY_INTERFACE<BR>
-* Local Server :: Internet Protocol Address: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_LOCAL_SERVER_ADDRESS\" TARGET=\"_NEW\" TITLE=\":: Open & Display The Who-Is Information For Local Server Internet Protocol Address :: $_GLOBAL_LOCAL_SERVER_ADDRESS ::\">$_GLOBAL_LOCAL_SERVER_ADDRESS</A><BR>
-* Local Server :: Software: $_GLOBAL_LOCAL_SERVER_SOFTWARE<BR>
-* Local Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME<BR>
-* Local Server :: Request Time ( Float ): $_GLOBAL_LOCAL_SERVER_REQUEST_TIME_FLOAT<BR>
-* Local Server :: Document Root: $_GLOBAL_LOCAL_SERVER_DOCUMENT_ROOT<BR>
-* Local Server :: Hyper-Text-Transfer-Protocol :: Accept Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT<BR>
-* Local Server :: Hyper-Text-Transfer-Protocol :: Character Set: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_CHARACTER_SET<BR>
-* Local Server :: Hyper-Text-Transfer-Protocol :: Encoding: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_ENCODING<BR>
-* Local Server :: Hyper-Text-Transfer-Protocol :: Loading Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LOADING<BR>
-* Local Server :: Hyper-Text-Transfer-Protocol :: Language: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LANGUAGE<BR><BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+<B>- Network Information</B>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: Connecting Device :: Network :: Host-Name: $_GLOBAL_REMOTE_SERVER_HOSTNAME<BR>
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: Connecting Device :: Network :: Internet Protocol Address: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_REMOTE_SERVER_ADDRESS\" TARGET=\"_NEW\" TITLE=\":: Open & Display The Who-Is Information For The Remote User Internet Protocol Address :: $_GLOBAL_REMOTE_SERVER_ADDRESS ::\">$_GLOBAL_REMOTE_SERVER_ADDRESS</A><BR>
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: Connecting Device :: Network :: Internet Protocol Address :: Port Number: $_GLOBAL_REMOTE_SERVER_PORT<BR>
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: Connecting Device :: Network :: User-Agent :: Web Browser: $_Application_Module_Background_Log_Visitor_GET_USER_AGENT<BR><BR>
 
-<B>Web Page Document Cache Circumvention Strings</B><HR>
-* Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Hyper-Text Reference<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+<B>Location :: Information :: $_GLOBAL_COOKIE_MEMBER_USERNAME</B>
+<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device Location :: From :: Global-Positioning-System Coordinates In: X, Y, Z:<BR>
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device Location :: From :: Geographical Localization of Objects:<BR>
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device Location :: From :: Region: $_GLOBAL_REMOTE_SERVER_LOCATION_REGION<BR>
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device Location :: From :: Internet Protocol Address: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_REMOTE_SERVER_ADDRESS\" TARGET=\"_NEW\" TITLE=\":: Open & Display The Who-Is Information For The Remote User Internet Protocol Address :: $_GLOBAL_REMOTE_SERVER_ADDRESS ::\">$_GLOBAL_REMOTE_SERVER_ADDRESS</A><BR><BR>
+
+<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+<B>This Web Server :: Information :: $_GLOBAL_COOKIE_MEMBER_USERNAME</B>
+<HR ALIGN=\"LEFT\" WIDTH=\"50%\"><BR>
+
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+<B>- Hyper-Text-Transfer-Protocol Information</B>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Accept Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT<BR>
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Character Set: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_CHARACTER_SET<BR>
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Encoding: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_ENCODING<BR>
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Loading Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LOADING<BR>
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Language: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LANGUAGE<BR>
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Host: $_GLOBAL_LOCAL_SERVER_HTTP_HOST<BR><BR>
+
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+<B>- Timestamp Information</B>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: This Web Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME<BR>
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: This Web Server :: Request Time ( Float ): $_GLOBAL_LOCAL_SERVER_REQUEST_TIME_FLOAT<BR><BR>
+
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+<B>- Document Information</B>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: This Web Server :: Document Root: $_GLOBAL_LOCAL_SERVER_DOCUMENT_ROOT<BR>
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: This Web Server :: Software: $_GLOBAL_LOCAL_SERVER_SOFTWARE<BR><BR>
+
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+<B>- Network Information</B>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: This Web Server :: Network :: Internet Protocol Address: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_LOCAL_SERVER_ADDRESS\" TARGET=\"_NEW\" TITLE=\":: Open & Display The Who-Is Information For The Remote User Internet Protocol Address :: $_GLOBAL_LOCAL_SERVER_ADDRESS ::\">$_GLOBAL_LOCAL_SERVER_ADDRESS</A><BR>
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: This Web Server :: Network :: Internet Protocol Address :: Connecting Port Number: $_GLOBAL_REMOTE_SERVER_PORT<BR>
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: This Web Server :: Network :: Gateway Interface: $_GLOBAL_LOCAL_SERVER_GATEWAY_INTERFACE<BR><BR>
+
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+<B>Digital Fingerprint Information</B>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Digital Fingerprint :: Generated :: Clear-Text:<BR>
+$_INTERNAL_SECURITY_GENERATED_MEMBER_FINGERPRINT_CLEARTEXT<BR>
+
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Digital Fingerprint :: Generated :: HASHED:<BR>
+$_INTERNAL_SECURITY_GENERATED_MEMBER_FINGERPRINT_HASHED<BR><BR>
+
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+<B>- Web Page Document Cache Circumvention Strings</B>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Cache Circumvention :: Randomly Generated String :: Hyper-Text Reference<BR>
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION<BR><BR>
 
-* Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Audio<BR>
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Cache Circumvention :: Randomly Generated String :: Audio<BR>
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_AUDIO_RANDOM_STRING_GENERATION<BR><BR>
 
-* Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Document<BR>
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Cache Circumvention :: Randomly Generated String :: Document<BR>
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_DOCUMENT_RANDOM_STRING_GENERATION<BR><BR>
 
-* Registered Member Account' :: Cache Circumvention :: Randomly Generated String :: Image<BR>
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Cache Circumvention :: Randomly Generated String :: Image<BR>
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION<BR><BR>
 
-* Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Video<BR>
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Cache Circumvention :: Randomly Generated String :: Video<BR>
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_VIDEO_RANDOM_STRING_GENERATION<BR><BR>
 
 * Registered Member Account :: Cache Circumvention :: Randomly Generated String :: File Inclusion<BR>
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_FILEINCLUSION_RANDOM_STRING_GENERATION<BR><BR>
 
-<B>Digital Fingerprint Information</B><HR>
-* Registered Member Account :: Digital Fingerprint :: Authentication :: Clear-Text:<BR>
-$_GLOBAL_MEMBER_SECURITY_FINGERPRINT_CLEARTEXT<BR><BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+<B>Timestamps</B>
+<HR ALIGN=\"LEFT\" WIDTH=\"50%\"><BR>
 
-* Registered Member Account :: Digital Fingerprint :: Authentication :: HASHED:<BR>
-$_GLOBAL_MEMBER_SECURITY_FINGERPRINT_HASHED<BR><BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+<B>- Timestamp :: This Web Server</B>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+* Timestamp :: Device :: This Web Server :: Year: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL<BR>
+* Timestamp :: Device :: This Web Server :: Month: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL<BR>
+* Timestamp :: Device :: This Web Server :: Day: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL<BR>
+* Timestamp :: Device :: This Web Server :: Hour: $_GLOBAL_LOCAL_SERVER_TIME_HOURS<BR>
+* Timestamp :: Device :: This Web Server :: Minute: $_GLOBAL_LOCAL_SERVER_TIME_MINUTES<BR>
+* Timestamp :: Device :: This Web Server :: Second: $_GLOBAL_LOCAL_SERVER_TIME_SECONDS<BR>
+* Timestamp :: Device :: This Web Server :: Unix: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME<BR>
+* Timestamp :: Device :: This Web Server :: Micro Time: $_GLOBAL_LOCAL_SERVER_TIME_UNIX<BR><BR>
 
-<B>Timestamps</B><HR>
-* Timestamp :: Server :: Local :: Year: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL<BR>
-* Timestamp :: Server :: Local :: Month: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL<BR>
-* Timestamp :: Server :: Local :: Day: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL<BR>
-* Timestamp :: Server :: Local :: Hour: $_GLOBAL_LOCAL_SERVER_TIME_HOURS<BR>
-* Timestamp :: Server :: Local :: Minute: $_GLOBAL_LOCAL_SERVER_TIME_MINUTES<BR>
-* Timestamp :: Server :: Local :: Second: $_GLOBAL_LOCAL_SERVER_TIME_SECONDS<BR><BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+<B>- Timestamp :: Connecting Device</B>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+* Timestamp :: Device :: Connecting Device :: Year: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_YEAR_FULL<BR>
+* Timestamp :: Device :: Connecting Device :: Month: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_FULL<BR>
+* Timestamp :: Device :: Connecting Device :: Day: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL<BR>
+* Timestamp :: Device :: Connecting Device :: Hour: $_GLOBAL_REMOTE_SERVER_TIME_HOURS<BR>
+* Timestamp :: Device :: Connecting Device :: Minute: $_GLOBAL_REMOTE_SERVER_TIME_MINUTES<BR>
+* Timestamp :: Device :: Connecting Device :: Second: $_GLOBAL_REMOTE_SERVER_TIME_SECONDS<BR>
+* Timestamp :: Device :: Connecting Device :: Unix: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME<BR>
+* Timestamp :: Device :: Connecting Device :: Micro Time: $_GLOBAL_LOCAL_SERVER_TIME_UNIX<BR><BR>
 
-* Timestamp :: Server :: Remote :: Year: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_YEAR_FULL<BR>
-* Timestamp :: Server :: Remote :: Month: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_FULL<BR>
-* Timestamp :: Server :: Remote :: Day: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL<BR>
-* Timestamp :: Server :: Remote :: Hour: $_GLOBAL_REMOTE_SERVER_TIME_HOURS<BR>
-* Timestamp :: Server :: Remote :: Minute: $_GLOBAL_REMOTE_SERVER_TIME_MINUTES<BR>
-* Timestamp :: Server :: Remote :: Second: $_GLOBAL_REMOTE_SERVER_TIME_SECONDS<BR><BR>
-
-* Timestamp :: Server :: Local :: Unix: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME<BR>
-* Timestamp :: Server :: Local :: Micro Time: $_GLOBAL_LOCAL_SERVER_TIME_UNIX<BR>
-* Timestamp :: Server :: Remote :: Unix: $_GLOBAL_REMOTE_SERVER_TIME_MICROTIME<BR>
-* Timestamp :: Server :: Remote :: Micro Time: $_GLOBAL_REMOTE_SERVER_TIME_UNIX<BR><BR>
-
-<A HREF=\"../../../../Applications/Background/Log_Member\" TARGET=\"_NEW\" TITLE=\":: Open & Display The Source Code For This Background Activity Log ::\">Source Code For This Background Activity Log</A><BR><BR>
+<HR>
+<CENTER><A HREF=\"./Applications/Background/Log_Visitor\" TITLE=\":: Open & Display The Source Code For This Background Activity Log ::\">Source Code For This Background Activity Log</A></CENTER>
+<HR><BR>
 ");
 
 /*
@@ -327,81 +369,81 @@ $_GLOBAL_MEMBER_SECURITY_FINGERPRINT_HASHED<BR><BR>
 */
 
 fwrite($_Application_Module_Background_Log_Member_Raw_OPEN_FILE_NAME, "
-Activity Log :: Detailed Information :: Registered Member Account :: $_GLOBAL_COOKIE_MEMBER_USERNAME
----------------------------------------------------------------------------------------
-Machine and Connection Information :: Registered Member Account
----------------------------------------------------------------------------------------
-* Registered Member Account :: UserName: $_Application_Module_Background_Log_Administrator_GET_LOG_MEMBER_USERNAME
-* Registered Member Account :: Local Server :: Document View Timestamp: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD
-* Registered Member Account :: Local Server :: Document Referrer: $_Application_Module_Background_Log_Administrator_GET_REFERRER
-* Registered Member Account :: User-Agent ( Browser ): $_Application_Module_Background_Log_Administrator_GET_USER_AGENT
-* Registered Member Account :: Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS
-* Registered Member Account :: Remote Server :: Host-Name: $_GLOBAL_REMOTE_SERVER_HOSTNAME
-* Registered Member Account :: Remote Server :: Port Number: $_GLOBAL_REMOTE_SERVER_PORT
-* Registered Member Account :: Request String: $_GLOBAL_LOCAL_SERVER_QUERY_STRING
+Activity Log :: Detailed Information :: Registered Member Account :: $_GLOBAL_COOKIE_MEMBER_USERNAME With Timestamp $_GLOBAL_LOCAL_SERVER_DATE_STANDARD
+--------------------------------------------------------------------------
+Machine and Connection Information :: $_GLOBAL_COOKIE_MEMBER_USERNAME
+--------------------------------------------------------------------------
+- Document Information
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: This Web Server :: Document View Timestamp: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: This Web Server :: Document Referrer: $_Application_Module_Background_Log_Visitor_GET_REFERRER
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: This Web Server :: Request String: $_GLOBAL_LOCAL_SERVER_QUERY_STRING
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: This Web Server :: Request Method: $_GLOBAL_LOCAL_SERVER_REQUEST_METHOD
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: This Web Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: This Web Server :: Connection Type: $_GLOBAL_LOCAL_SERVER_HTTP_CONNECTION_TYPE
 
----------------------------------------------------------------------------------------
-Connection Information :: Registered Member Account
----------------------------------------------------------------------------------------
-* Registered Member Account :: Local Server :: Request Method: $_GLOBAL_LOCAL_SERVER_REQUEST_METHOD
-* Registered Member Account :: Local Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME
-* Registered Member Account :: Local Server :: Connection Type: $_GLOBAL_LOCAL_SERVER_HTTP_CONNECTION_TYPE
+- Network Information
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: Connecting Device :: Network :: Host-Name: $_GLOBAL_REMOTE_SERVER_HOSTNAME
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: Connecting Device :: Network :: Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: Connecting Device :: Network :: Internet Protocol Address :: Port Number: $_GLOBAL_REMOTE_SERVER_PORT
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: Connecting Device :: Network :: User-Agent :: Web Browser: $_Application_Module_Background_Log_Visitor_GET_USER_AGENT
 
----------------------------------------------------------------------------------------
-Location Information :: Registered Member Account
----------------------------------------------------------------------------------------
-* Registered Member Account :: Device Location :: By Global-Positioning-System Coordinates :: From H.T.M.L. :: In: X, Y, Z: getLocationOutputLongitude getLocationOutputLatitude<BR>
-* Registered Member Account :: Device Location :: By Geographical Localization of Objects: 
-* Registered Member Account :: Device Location :: By Region: 
-* Registered Member Account :: Device Location :: By Internet Protocol Address: 
+--------------------------------------------------------------------------
+Location :: Information :: $_GLOBAL_COOKIE_MEMBER_USERNAME
+--------------------------------------------------------------------------
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device Location :: From :: Global-Positioning-System Coordinates In: X, Y, Z:
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device Location :: From :: Geographical Localization of Objects:
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device Location :: From :: Region: $_GLOBAL_REMOTE_SERVER_LOCATION_REGION
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device Location :: From :: Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS
 
----------------------------------------------------------------------------------------
-Local Server Information :: Registered Member Account
----------------------------------------------------------------------------------------
-* Local Server :: Hyper-Text-Transfer-Protocol :: Host: $_GLOBAL_LOCAL_SERVER_HTTP_HOST
-* Local Server :: Network Gateway Interface: $_GLOBAL_LOCAL_SERVER_GATEWAY_INTERFACE
-* Local Server :: Internet Protocol Address: $_GLOBAL_LOCAL_SERVER_ADDRESS
-* Local Server :: Software: $_GLOBAL_LOCAL_SERVER_SOFTWARE
-* Local Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME
-* Local Server :: Request Time ( Float ): $_GLOBAL_LOCAL_SERVER_REQUEST_TIME_FLOAT
-* Local Server :: Document Root: $_GLOBAL_LOCAL_SERVER_DOCUMENT_ROOT
-* Local Server :: Hyper-Text-Transfer-Protocol :: Accept Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT
-* Local Server :: Hyper-Text-Transfer-Protocol :: Character Set: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_CHARACTER_SET
-* Local Server :: Hyper-Text-Transfer-Protocol :: Encoding: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_ENCODING
-* Local Server :: Hyper-Text-Transfer-Protocol :: Loading Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LOADING
-* Local Server :: Hyper-Text-Transfer-Protocol :: Language: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LANGUAGE
+--------------------------------------------------------------------------
+This Web Server :: Information :: $_GLOBAL_COOKIE_MEMBER_USERNAME
+--------------------------------------------------------------------------
+- Hyper-Text-Transfer-Protocol Information
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Accept Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Character Set: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_CHARACTER_SET
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Encoding: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_ENCODING
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Loading Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LOADING
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Language: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LANGUAGE
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Host: $_GLOBAL_LOCAL_SERVER_HTTP_HOST
 
----------------------------------------------------------------------------------------
+- Timestamp Information
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: This Web Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: This Web Server :: Request Time ( Float ): $_GLOBAL_LOCAL_SERVER_REQUEST_TIME_FLOAT
+
+- Document Information
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: This Web Server :: Document Root: $_GLOBAL_LOCAL_SERVER_DOCUMENT_ROOT
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: This Web Server :: Software: $_GLOBAL_LOCAL_SERVER_SOFTWARE
+
+- Network Information
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: This Web Server :: Network :: Internet Protocol Address: $_GLOBAL_LOCAL_SERVER_ADDRESS
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: This Web Server :: Network :: Internet Protocol Address :: Connecting Port Number: $_GLOBAL_REMOTE_SERVER_PORT
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: This Web Server :: Network :: Gateway Interface: $_GLOBAL_LOCAL_SERVER_GATEWAY_INTERFACE
+
+--------------------------------------------------------------------------
 Digital Fingerprint Information
----------------------------------------------------------------------------------------
-* Registered Member Account :: Digital Fingerprint :: Generated :: Clear-Text:
+--------------------------------------------------------------------------
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Digital Fingerprint :: Generated :: Clear-Text:
 $_INTERNAL_SECURITY_GENERATED_MEMBER_FINGERPRINT_CLEARTEXT
 
-* Registered Member Account :: Digital Fingerprint :: Generated :: HASHED:
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Digital Fingerprint :: Generated :: HASHED:
 $_INTERNAL_SECURITY_GENERATED_MEMBER_FINGERPRINT_HASHED
-
-* Registered Member Account :: Digital Fingerprint :: Authentication :: Clear-Text:
-$_GLOBAL_MEMBER_SECURITY_FINGERPRINT_CLEARTEXT
-
-* Registered Member Account :: Digital Fingerprint :: Authentication :: HASHED:
-$_GLOBAL_MEMBER_SECURITY_FINGERPRINT_HASHED
 
 --------------------------------------------------------------------------
 Web Page Document Cache Circumvention Strings
 --------------------------------------------------------------------------
-* Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Hyper-Text Reference
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Cache Circumvention :: Randomly Generated String :: Hyper-Text Reference
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION
 
-* Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Audio
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Cache Circumvention :: Randomly Generated String :: Audio
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_AUDIO_RANDOM_STRING_GENERATION
 
-* Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Document
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Cache Circumvention :: Randomly Generated String :: Document
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_DOCUMENT_RANDOM_STRING_GENERATION
 
-* Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Image
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Cache Circumvention :: Randomly Generated String :: Image
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION
 
-* Registered Member Account :: Cache Circumvention :: Randomly Generated String :: Video
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Cache Circumvention :: Randomly Generated String :: Video
 $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_VIDEO_RANDOM_STRING_GENERATION
 
 * Registered Member Account :: Cache Circumvention :: Randomly Generated String :: File Inclusion
@@ -410,24 +452,25 @@ $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_FILEINCLUSION_RANDOM_STRING_GENERAT
 ---------------------------------------------------------------------------------
 Timestamps
 ---------------------------------------------------------------------------------
-* Timestamp :: Server :: Local :: Year: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL
-* Timestamp :: Server :: Local :: Month: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL
-* Timestamp :: Server :: Local :: Day: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL
-* Timestamp :: Server :: Local :: Hour: $_GLOBAL_LOCAL_SERVER_TIME_HOURS
-* Timestamp :: Server :: Local :: Minute: $_GLOBAL_LOCAL_SERVER_TIME_MINUTES
-* Timestamp :: Server :: Local :: Second: $_GLOBAL_LOCAL_SERVER_TIME_SECONDS
+- Timestamp :: This Web Server
+* Timestamp :: Device :: This Web Server :: Year: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL
+* Timestamp :: Device :: This Web Server :: Month: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL
+* Timestamp :: Device :: This Web Server :: Day: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL
+* Timestamp :: Device :: This Web Server :: Hour: $_GLOBAL_LOCAL_SERVER_TIME_HOURS
+* Timestamp :: Device :: This Web Server :: Minute: $_GLOBAL_LOCAL_SERVER_TIME_MINUTES
+* Timestamp :: Device :: This Web Server :: Second: $_GLOBAL_LOCAL_SERVER_TIME_SECONDS
+* Timestamp :: Device :: This Web Server :: Unix: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
+* Timestamp :: Device :: This Web Server :: Micro Time: $_GLOBAL_LOCAL_SERVER_TIME_UNIX
 
-* Timestamp :: Server :: Remote :: Year: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_YEAR_FULL
-* Timestamp :: Server :: Remote :: Month: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_FULL
-* Timestamp :: Server :: Remote :: Day: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL
-* Timestamp :: Server :: Remote :: Hour: $_GLOBAL_REMOTE_SERVER_TIME_HOURS
-* Timestamp :: Server :: Remote :: Minute: $_GLOBAL_REMOTE_SERVER_TIME_MINUTES
-* Timestamp :: Server :: Remote :: Second: $_GLOBAL_REMOTE_SERVER_TIME_SECONDS
-
-* Timestamp :: Server :: Local :: Unix: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
-* Timestamp :: Server :: Local :: Micro Time: $_GLOBAL_LOCAL_SERVER_TIME_UNIX
-* Timestamp :: Server :: Remote :: Unix: $_GLOBAL_REMOTE_SERVER_TIME_MICROTIME
-* Timestamp :: Server :: Remote :: Micro Time: $_GLOBAL_REMOTE_SERVER_TIME_UNIX
+- Timestamp :: Connecting Device
+* Timestamp :: Device :: Connecting Device :: Year: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_YEAR_FULL
+* Timestamp :: Device :: Connecting Device :: Month: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_FULL
+* Timestamp :: Device :: Connecting Device :: Day: $_GLOBAL_REMOTE_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL
+* Timestamp :: Device :: Connecting Device :: Hour: $_GLOBAL_REMOTE_SERVER_TIME_HOURS
+* Timestamp :: Device :: Connecting Device :: Minute: $_GLOBAL_REMOTE_SERVER_TIME_MINUTES
+* Timestamp :: Device :: Connecting Device :: Second: $_GLOBAL_REMOTE_SERVER_TIME_SECONDS
+* Timestamp :: Device :: Connecting Device :: Unix: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
+* Timestamp :: Device :: Connecting Device :: Micro Time: $_GLOBAL_LOCAL_SERVER_TIME_UNIX
 ");
 
 /*
