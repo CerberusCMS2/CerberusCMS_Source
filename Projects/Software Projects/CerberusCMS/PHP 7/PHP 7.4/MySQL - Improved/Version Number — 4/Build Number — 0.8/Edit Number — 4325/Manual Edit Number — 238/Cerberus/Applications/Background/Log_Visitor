@@ -463,7 +463,8 @@ $_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_FILEINCLUSION_RANDOM_STRING_GENERAT
 * Timestamp :: Device :: Connecting Device :: Unix: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME<BR>
 * Timestamp :: Device :: Connecting Device :: Micro Time: $_GLOBAL_LOCAL_SERVER_TIME_UNIX<BR><BR>
 
-<A HREF=\"./Applications/Background/Log_Visitor\" TITLE=\":: Open & Display The Source Code For This Background Activity Log ::\">Source Code For This Background Activity Log</A>
+<HR>
+<CENTER><A HREF=\"./Applications/Background/Log_Visitor\" TITLE=\":: Open & Display The Source Code For This Background Activity Log ::\">Source Code For This Background Activity Log</A></CENTER>
 <HR><BR>
 ");
 
