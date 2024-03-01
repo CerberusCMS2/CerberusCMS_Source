@@ -242,7 +242,7 @@ Machine and Connection Information :: $_GLOBAL_COOKIE_MEMBER_USERNAME
 * $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: Connecting Device :: Network :: Host-Name: $_GLOBAL_REMOTE_SERVER_HOSTNAME
 * $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: Connecting Device :: Network :: Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS
 * $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: Connecting Device :: Network :: Internet Protocol Address :: Port Number: $_GLOBAL_REMOTE_SERVER_PORT
-* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: Connecting Device :: Network :: User-Agent :: Web Browser: $_Application_Module_Background_Log_Visitor_GET_USER_AGENT
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: Connecting Device :: Network :: User-Agent :: Web Browser: $_Application_Module_Background_Log_Administrator_GET_USER_AGENT
 
 --------------------------------------------------------------------------
 Location :: Information :: $_GLOBAL_COOKIE_MEMBER_USERNAME
