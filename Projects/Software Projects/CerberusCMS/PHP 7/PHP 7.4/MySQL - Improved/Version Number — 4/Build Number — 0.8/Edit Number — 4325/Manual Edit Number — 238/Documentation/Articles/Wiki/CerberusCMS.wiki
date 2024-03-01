@@ -882,16 +882,16 @@ The Pre-Hyper-Text-Post-Processor Build In Function: echo(); instead of print();
 * Total Number of Lines of High Quality and Completely Functional and Commented Pre-Hyper-Text-Post-Processor Programming Code Within This Official Release Number: ~153,209 to ~175,000 Lines of Programming Code
 * Number of Pre-Hyper-Text-Post-Processor Index Files: 251 * 93 Lines of Pre-Hyper-Text-Post-Processor Programming Code Per Index File: 23,343 Lines of Programming Code
 
-* Average Number of Lines of Premium, High Quality and 100% Functional of Programming Code Per Day: 100
-* Average Number of Lines of Premium, High Quality and 100% Functional of Programming Code Per Year: 10,000
+* Average Number of Lines of Premium, High Quality and 100% Functional Programming Code Per Day: 100
+* Average Number of Lines of Premium, High Quality and 100% Functional Programming Code Per Year: 10,000
 
 ===Programming Code Time===
 * 1 Person @ Approximately 4 hours per day from: ~January 1st of 2000 - ~January 1st of 2002: 1,460 Hours.
 * 1 Person @ Approximately 3 hours per day every 3 days of 1 week from: ~January 1st of 2004 - ~January 1st of 2006: 363 Hours.
 * 1 Person @ Approximately 4 hours per day every 3 days of 1 week from: ~January 1st of 2007 - ~January 1st of 2009: 484 Hours.
 * 1 Person @ Approximately 2 hours per day every 3 days of 1 week from: ~January 1st of 2013 - ~January 1st of 2014: 363 Hours.
-* 1 Person @ Approximately 6 hours per day from: ~January 1st of 2021 - ~February 29th of 2024, 2,190 Hours.
-* Approximate Total: 4,860 Hours.
+* 1 Person @ Approximately 6 hours per day from: ~January 1st of 2021 - ~February 29th of 2024, 6,570 Hours.
+* Approximate Total: 7,780 Hours.
 This section needs to be updated and figured out. It probably took me a lot longer than this because it's true that only 10,000 lines of high quality, premium and 100% functional programming code can be put out by an expert programmer per year.
 
 ===Other Features===
