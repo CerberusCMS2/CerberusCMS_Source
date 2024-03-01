@@ -256,7 +256,7 @@ fwrite($_Application_Module_Background_Log_Member_Box_OPEN_FILE_NAME, "
 * $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: Connecting Device :: Network :: Host-Name: $_GLOBAL_REMOTE_SERVER_HOSTNAME<BR>
 * $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: Connecting Device :: Network :: Internet Protocol Address: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_REMOTE_SERVER_ADDRESS\" TARGET=\"_NEW\" TITLE=\":: Open & Display The Who-Is Information For The Remote User Internet Protocol Address :: $_GLOBAL_REMOTE_SERVER_ADDRESS ::\">$_GLOBAL_REMOTE_SERVER_ADDRESS</A><BR>
 * $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: Connecting Device :: Network :: Internet Protocol Address :: Port Number: $_GLOBAL_REMOTE_SERVER_PORT<BR>
-* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: Connecting Device :: Network :: User-Agent :: Web Browser: $_Application_Module_Background_Log_Visitor_GET_USER_AGENT<BR><BR>
+* $_GLOBAL_COOKIE_MEMBER_USERNAME' :: Device :: Connecting Device :: Network :: User-Agent :: Web Browser: $_Application_Module_Background_Log_Member_GET_USER_AGENT<BR><BR>
 
 <HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 <B>Location :: Information :: $_GLOBAL_COOKIE_MEMBER_USERNAME</B>
@@ -385,7 +385,7 @@ Machine and Connection Information :: $_GLOBAL_COOKIE_MEMBER_USERNAME
 * $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: Connecting Device :: Network :: Host-Name: $_GLOBAL_REMOTE_SERVER_HOSTNAME
 * $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: Connecting Device :: Network :: Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS
 * $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: Connecting Device :: Network :: Internet Protocol Address :: Port Number: $_GLOBAL_REMOTE_SERVER_PORT
-* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: Connecting Device :: Network :: User-Agent :: Web Browser: $_Application_Module_Background_Log_Visitor_GET_USER_AGENT
+* $_GLOBAL_COOKIE_MEMBER_USERNAME :: Device :: Connecting Device :: Network :: User-Agent :: Web Browser: $_Application_Module_Background_Log_Member_GET_USER_AGENT
 
 --------------------------------------------------------------------------
 Location :: Information :: $_GLOBAL_COOKIE_MEMBER_USERNAME
