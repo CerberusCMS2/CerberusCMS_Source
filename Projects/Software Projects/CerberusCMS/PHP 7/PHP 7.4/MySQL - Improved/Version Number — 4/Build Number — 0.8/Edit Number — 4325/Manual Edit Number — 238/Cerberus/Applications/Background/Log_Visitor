@@ -252,25 +252,25 @@ Location :: Information :: Non-Registered Visitor
 This Web Server :: Information :: Non-Registered Visitor
 --------------------------------------------------------------------------
 - Hyper-Text-Transfer-Protocol Information
-* This Web Server :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Accept Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT
-* This Web Server :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Character Set: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_CHARACTER_SET
-* This Web Server :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Encoding: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_ENCODING
-* This Web Server :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Loading Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LOADING
-* This Web Server :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Language: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LANGUAGE
-* This Web Server :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Host: $_GLOBAL_LOCAL_SERVER_HTTP_HOST
+* Non-Registered Visitor' :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Accept Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT
+* Non-Registered Visitor' :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Character Set: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_CHARACTER_SET
+* Non-Registered Visitor' :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Encoding: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_ENCODING
+* Non-Registered Visitor' :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Loading Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LOADING
+* Non-Registered Visitor' :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Language: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LANGUAGE
+* Non-Registered Visitor' :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Host: $_GLOBAL_LOCAL_SERVER_HTTP_HOST
 
 - Timestamp Information
-* This Web Server :: Device :: This Web Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME
-* This Web Server :: Device :: This Web Server :: Request Time ( Float ): $_GLOBAL_LOCAL_SERVER_REQUEST_TIME_FLOAT
+* Non-Registered Visitor' :: Device :: This Web Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME
+* Non-Registered Visitor' :: Device :: This Web Server :: Request Time ( Float ): $_GLOBAL_LOCAL_SERVER_REQUEST_TIME_FLOAT
 
 - Document Information
-* This Web Server :: Device :: This Web Server :: Document Root: $_GLOBAL_LOCAL_SERVER_DOCUMENT_ROOT
-* This Web Server :: Device :: This Web Server :: Software: $_GLOBAL_LOCAL_SERVER_SOFTWARE
+* Non-Registered Visitor' :: Device :: This Web Server :: Document Root: $_GLOBAL_LOCAL_SERVER_DOCUMENT_ROOT
+* Non-Registered Visitor' :: Device :: This Web Server :: Software: $_GLOBAL_LOCAL_SERVER_SOFTWARE
 
 - Network Information
-* This Web Server :: Device :: This Web Server :: Network :: Internet Protocol Address: $_GLOBAL_LOCAL_SERVER_ADDRESS
-* This Web Server :: Device :: This Web Server :: Network :: Internet Protocol Address :: Connecting Port Number: $_GLOBAL_REMOTE_SERVER_PORT
-* This Web Server :: Device :: This Web Server :: Network :: Gateway Interface: $_GLOBAL_LOCAL_SERVER_GATEWAY_INTERFACE
+* Non-Registered Visitor' :: Device :: This Web Server :: Network :: Internet Protocol Address: $_GLOBAL_LOCAL_SERVER_ADDRESS
+* Non-Registered Visitor' :: Device :: This Web Server :: Network :: Internet Protocol Address :: Connecting Port Number: $_GLOBAL_REMOTE_SERVER_PORT
+* Non-Registered Visitor' :: Device :: This Web Server :: Network :: Gateway Interface: $_GLOBAL_LOCAL_SERVER_GATEWAY_INTERFACE
 
 --------------------------------------------------------------------------
 Digital Fingerprint Information
@@ -322,8 +322,8 @@ Timestamps
 * Timestamp :: Device :: Connecting Device :: Hour: $_GLOBAL_REMOTE_SERVER_TIME_HOURS
 * Timestamp :: Device :: Connecting Device :: Minute: $_GLOBAL_REMOTE_SERVER_TIME_MINUTES
 * Timestamp :: Device :: Connecting Device :: Second: $_GLOBAL_REMOTE_SERVER_TIME_SECONDS
-* Timestamp :: Device :: Connecting Device :: Unix: $_GLOBAL_REMOTE_SERVER_TIME_MICROTIME
-* Timestamp :: Device :: Connecting Device :: Micro Time: $_GLOBAL_REMOTE_SERVER_TIME_UNIX
+* Timestamp :: Device :: Connecting Device :: Unix: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
+* Timestamp :: Device :: Connecting Device :: Micro Time: $_GLOBAL_LOCAL_SERVER_TIME_UNIX
 ");
 
 /*
@@ -379,31 +379,31 @@ fwrite($_Application_Module_Background_Log_Visitor_Raw_OPEN_FILE_NAME, "
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 <B>- Hyper-Text-Transfer-Protocol Information</B>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-* This Web Server :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Accept Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT<BR>
-* This Web Server :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Character Set: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_CHARACTER_SET<BR>
-* This Web Server :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Encoding: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_ENCODING<BR>
-* This Web Server :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Loading Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LOADING<BR>
-* This Web Server :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Language: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LANGUAGE<BR>
-* This Web Server :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Host: $_GLOBAL_LOCAL_SERVER_HTTP_HOST<BR><BR>
+* Non-Registered Visitor' :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Accept Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT<BR>
+* Non-Registered Visitor' :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Character Set: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_CHARACTER_SET<BR>
+* Non-Registered Visitor' :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Encoding: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_ENCODING<BR>
+* Non-Registered Visitor' :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Loading Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LOADING<BR>
+* Non-Registered Visitor' :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Language: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LANGUAGE<BR>
+* Non-Registered Visitor' :: Device :: This Web Server :: Hyper-Text-Transfer-Protocol :: Host: $_GLOBAL_LOCAL_SERVER_HTTP_HOST<BR><BR>
 
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 <B>- Timestamp Information</B>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-* This Web Server :: Device :: This Web Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME<BR>
-* This Web Server :: Device :: This Web Server :: Request Time ( Float ): $_GLOBAL_LOCAL_SERVER_REQUEST_TIME_FLOAT<BR><BR>
+* Non-Registered Visitor' :: Device :: This Web Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME<BR>
+* Non-Registered Visitor' :: Device :: This Web Server :: Request Time ( Float ): $_GLOBAL_LOCAL_SERVER_REQUEST_TIME_FLOAT<BR><BR>
 
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 <B>- Document Information</B>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-* This Web Server :: Device :: This Web Server :: Document Root: $_GLOBAL_LOCAL_SERVER_DOCUMENT_ROOT<BR>
-* This Web Server :: Device :: This Web Server :: Software: $_GLOBAL_LOCAL_SERVER_SOFTWARE<BR><BR>
+* Non-Registered Visitor' :: Device :: This Web Server :: Document Root: $_GLOBAL_LOCAL_SERVER_DOCUMENT_ROOT<BR>
+* Non-Registered Visitor' :: Device :: This Web Server :: Software: $_GLOBAL_LOCAL_SERVER_SOFTWARE<BR><BR>
 
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 <B>- Network Information</B>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-* This Web Server :: Device :: This Web Server :: Network :: Internet Protocol Address: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_LOCAL_SERVER_ADDRESS\" TARGET=\"_NEW\" TITLE=\":: Open & Display The Who-Is Information For The Remote User Internet Protocol Address :: $_GLOBAL_LOCAL_SERVER_ADDRESS ::\">$_GLOBAL_LOCAL_SERVER_ADDRESS</A><BR>
-* This Web Server :: Device :: This Web Server :: Network :: Internet Protocol Address :: Connecting Port Number: $_GLOBAL_REMOTE_SERVER_PORT<BR>
-* This Web Server :: Device :: This Web Server :: Network :: Gateway Interface: $_GLOBAL_LOCAL_SERVER_GATEWAY_INTERFACE<BR><BR>
+* Non-Registered Visitor' :: Device :: This Web Server :: Network :: Internet Protocol Address: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_LOCAL_SERVER_ADDRESS\" TARGET=\"_NEW\" TITLE=\":: Open & Display The Who-Is Information For The Remote User Internet Protocol Address :: $_GLOBAL_LOCAL_SERVER_ADDRESS ::\">$_GLOBAL_LOCAL_SERVER_ADDRESS</A><BR>
+* Non-Registered Visitor' :: Device :: This Web Server :: Network :: Internet Protocol Address :: Connecting Port Number: $_GLOBAL_REMOTE_SERVER_PORT<BR>
+* Non-Registered Visitor' :: Device :: This Web Server :: Network :: Gateway Interface: $_GLOBAL_LOCAL_SERVER_GATEWAY_INTERFACE<BR><BR>
 
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 <B>Digital Fingerprint Information</B>
