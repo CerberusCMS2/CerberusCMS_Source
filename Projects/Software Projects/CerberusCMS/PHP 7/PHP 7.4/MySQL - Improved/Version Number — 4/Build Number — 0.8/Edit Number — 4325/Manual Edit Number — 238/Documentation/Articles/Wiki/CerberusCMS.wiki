@@ -300,17 +300,51 @@ Activity Logging
 ====Panel Application Modules====
 * '''Administration.panel'''
 * '''Applications_Panel.panel'''
-* '''Banned_Networks.panel'''
 * '''Language.panel'''
 * '''Latest_Articles.panel'''
 * '''Latest_Files.panel'''
 * '''Latest_Members.panel'''
 * '''Latest_Shouts.panel'''
+* '''Live_Video.panel'''
 * '''Member_Panel.panel'''
+* '''Networking.panel'''
 * '''Project_Badges.panel'''
 * '''RSS_Panel.panel'''
 
-11 Application Panels
+* '''Administration Panel'''
+Application Panel With Options For Managing Administration Options.
+
+* '''Applications Panel'''
+Application Panel That Lists All Available Links To Applications.
+
+* '''Language'''
+Application Panel With Options For Managing Languages.
+
+* '''Latest Articles'''
+Application Panel That Displays The Latest Article Entries.
+
+* '''Latest Files'''
+Application Panel That Displays The Latest File Category File Entries.
+
+* '''Latest Shouts'''
+Application Panel With Options For Text, Voice and Video Shout Messages.
+
+* '''Live Video'''
+Application Panel With Options For Recording Live Video To Be Saved To The Registered Member Account Live Video Directory.
+
+* '''Member Panel'''
+Application Panel With Options For Managing Registered Member Account Options.
+
+* '''Networking'''
+Application Panel With Options For Managing Networking Options such as Network Internet Protocol Address Range or Specific / Domain Name Server Range or Specific Blocking or Whitelisting.
+
+* '''Project Badges'''
+Application Panel That Displays This Software Project Badges With Links
+
+* '''RSS Panel'''
+Application Panel That Displays The Latest Real-Simple-Syndication Feeds From The Cerberus Installation.
+
+12 Application Panels
 
 ====Open :: Public Application Modules====
 * '''Engine_Validation'''
