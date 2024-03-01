@@ -426,6 +426,14 @@ $_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_VIDEO_YOUTUBE					= 
 
 /*
  ============================================================================================================
+ + Registered Member Account :: Details :: Social Media Accounts :: Video Gaming :: Steam
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_VIDEO_GAMING_STEAM					= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_socialmedia_video_gaming_steam'];
+
+/*
+ ============================================================================================================
  + Registered Member Account :: Details :: Digital Fingerprints
  ============================================================================================================
 */
@@ -1795,6 +1803,9 @@ echo ("
 
 												<I>Video Streaming Platforms</I><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
 												&nbsp;*&nbsp;<A HREF=\"https://www.YouTube.com/$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_VIDEO_YOUTUBE\" TITLE=\"YouTube :: $_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_VIDEO_YOUTUBE\" TARGET=\"_NEW\">YouTube</A><BR><BR>
+
+												<I>Video Gaming Platforms</I><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
+												&nbsp;*&nbsp;<A HREF=\"https://www.SteamCommunity.com/id/$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_VIDEO_GAMING_STEAM\" TITLE=\"Steam :: $_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_VIDEO_GAMING_STEAM\" TARGET=\"_NEW\">Steam</A><BR><BR>
 
 												<I>Digital Communications Networks</I><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
 												&nbsp;*&nbsp;<A TITLE=\"Discord :: $_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_COMMUNICATIONS_DISCORD\">Discord</A><BR>
