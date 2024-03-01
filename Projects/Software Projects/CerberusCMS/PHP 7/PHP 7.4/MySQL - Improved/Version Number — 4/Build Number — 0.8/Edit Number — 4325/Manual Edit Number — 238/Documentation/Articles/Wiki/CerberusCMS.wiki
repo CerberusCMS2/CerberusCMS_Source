@@ -844,7 +844,7 @@ CerberusCMS automatically detects the connection speed of the connection and opt
 Custom Application Modules can be written to control IoT Devices connected to the system such as Smart House Electricity Usage Monitoring, Smart House Lightning Systems to turn lights on and off, programmable logic controllers, SCADA and more. All of these things can be controlled from an Application Module with buttons and more.
 
 ==Programming Code Architecture==
-CerberusCMS - Version Number: 4, Build Number: 0.8, Edit Number: 4,325, Manual Edit Number: Final is written in a Linux Operating System Architectural Style where everything is completely modular with HASH checksums on
+CerberusCMS - Version Number: 4, Build Number: 0.8, Edit Number: 4,325, Manual Edit Number: 238 - Final is written in a Linux Operating System Architectural Style where everything is completely modular with HASH checksums on
 each file for integrity comparison. The Kernel file can be continually added to by using the consistent Programming Code Framework that has been written by the author.
 
 ===Programming Code Consistency and Uniqueness===
@@ -872,6 +872,15 @@ The Pre-Hyper-Text-Post-Processor Build In Function: echo(); instead of print();
 
 ===Programming Code Documentation===
 * ~7,000 Panels of Expert In-Line Programming Code Documentation. Every section of Programming Code in this Software Project is throughly documented and all ending statements are documented with searchable characters. By opening and using the 'Find Keyword' and 'Find Character' functions within the Programming Code editor software one can easily find the beginning and ending of each Programming Code statement by searching for the character combinations of: [ ^ ], [ @ ], [ + ] as well as other character combinations.
+
+==Programming Code Statistics==
+
+===Number of Lines of Programming Code===
+* Total Number of Lines of High Quality and Completely Functional and Commented Pre-Hyper-Text-Post-Processor Programming Code Within This Official Release Number ( Bare-Bone Programming Code): ~96,630 Lines of Programming Code - ~100,000 Lines of Programming Code.
+* Total Number of Lines of High Quality and Completely Functional and Commented Pre-Hyper-Text-Post-Processor Programming Code Within This Official Release Number ( With Index File Programming Code): ~119,973 Lines of Programming Code
+* Total Number of Lines of High Quality and Completely Functional and Non-Commented Pre-Hyper-Text-Post-Processor Programming Code Within This Official Release Number ( Bare-Bone Programming Code): ~75,000 Lines of Programming Code
+* Total Number of Lines of High Quality and Completely Functional and Commented Pre-Hyper-Text-Post-Processor Programming Code Within This Official Release Number: ~153,209 to ~175,000 Lines of Programming Code
+* Number of Pre-Hyper-Text-Post-Processor Index Files: 251 * 93 Lines of Pre-Hyper-Text-Post-Processor Programming Code Per Index File: 23,343 Lines of Programming Code
 
 ===Other Features===
 CerberusCMS comes with a feature where each Registered Member Account is allotted an amount of storage data space specified by the Administration. It also has a Messenger
