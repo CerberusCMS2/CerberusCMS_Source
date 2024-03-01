@@ -63,7 +63,7 @@ CerberusCMS with custom Application Modules was used in the Microsoft XBOX 360 M
 CerberusCMS with custom Application Modules was used in the CyanogenMod Community from ~2010 until it became LineageOS.
 
 ===Use In The Internet of Things Community===
-CerberusCMS was used in the original Internet of Things Community in ~2009 where custom application modules were made to control the lights, power, air conditioning and other things inside of a house from a web server connected to a smart board. All of the things inside of the house could be controlled from a mobile cell phone.
+CerberusCMS was used in the original Internet of Things Community in ~2009 where custom application modules were made to control the lights, power, air conditioning and other things inside of a house from a web server connected to a smart board. All of the things inside of the house could be controlled from a mobile cell phone and in addition to this live security video feeds from security cameras attached to the house could be watched and recorded from the mobile cell phone.
 
 ===Loss of Development Progress===
 Around 2 years of development progress was lost before 2013. Several fake versions of this project were put on display so as to distract certain groups.
