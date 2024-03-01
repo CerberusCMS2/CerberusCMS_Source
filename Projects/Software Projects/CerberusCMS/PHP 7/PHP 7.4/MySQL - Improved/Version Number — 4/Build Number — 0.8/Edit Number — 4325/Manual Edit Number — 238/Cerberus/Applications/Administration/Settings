@@ -96,6 +96,8 @@ $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_UPLOAD_SIZE_PUB
 $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_UPLOAD_SIZE_PUBLIC_MESSENGER_VIDEO		= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_upload_size_public_messenger_video'];
 $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_DIRECTORY_CAMERA			= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_plugin_directory_camera'];
 $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_STATUS_CAMERA				= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_plugin_status_camera'];
+$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_DIRECTORY_ENCRYPTION			= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_plugin_directory_encryption'];
+$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_STATUS_ENCRYPTION			= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_plugin_status_encryption'];
 $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_DIRECTORY_LOCATION			= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_plugin_directory_location'];
 $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_STATUS_LOCATION				= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_plugin_status_location'];
 $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_DIRECTORY_MICROPHONE			= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_plugin_directory_microphone'];
@@ -109,7 +111,7 @@ $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_DIRECTOR
 $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_STATUS_TEXT_EDITOR			= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_plugin_status_text_editor'];
 $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_DIRECTORY_SAFEHTML			= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_plugin_directory_safeHTML'];
 $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_STATUS_SAFEHTML				= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_plugin_status_safeHTML'];
-$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_DIRECTORY_TIME			= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_plugin_directory_time'];
+$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_DIRECTORY_TIME				= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_plugin_directory_time'];
 $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_STATUS_TIME				= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_plugin_status_time'];
 $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_SECURITY_MODULE_DIRECTORY_SANITIZATION		= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_security_module_directory_sanitization'];
 $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_SECURITY_MODULE_STATUS_SANITIZATION		= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_security_module_status_sanitization'];
@@ -118,7 +120,7 @@ $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_SERVICES_MODULE
 $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_SERVICES_MODULE_STATUS_LOOPS			= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_services_module_status_loops'];
 $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_SERVICES_MODULE_STATUS_SERVICES		= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_services_module_status_services'];
 $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_SERVICES_MODULE_STATUS_TASKS			= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_services_module_status_tasks'];
-$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_SECURITY_ACCOUNT_REGISTRATION_AGE_REQUIREMENT		= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_security_account_registration_age_requirement']; 
+$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_SECURITY_ACCOUNT_REGISTRATION_AGE_REQUIREMENT	= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_security_account_registration_age_requirement']; 
 $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_SECURITY_STATUS_ACCOUNT_RESTRICT_IP		= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_security_account_restrict_ip'];
 $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_SECURITY_STATUS_ACCOUNT_RESTRICT_WEB_BROWSER	= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_security_account_restrict_web_browser'];
 $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_SECURITY_STATUS_ACCOUNT_RESTRICT_MAC_ADDRESS	= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_security_account_restrict_mac_address'];
@@ -158,6 +160,8 @@ $_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_MESSENGER_I
 $_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_MESSENGER_VIDEO				= $_POST['AMA_Settings_Update_Upload_Size_Public_Messenger_Video'];
 $_Application_Module_Administration_Settings_POST_UPDATE_DIRECTORY_CAMERA					= $_POST['AMA_Settings_Update_Directory_Camera'];
 $_Application_Module_Administration_Settings_POST_UPDATE_STATUS_CAMERA						= $_POST['AMA_Settings_Update_Status_Camera'];
+$_Application_Module_Administration_Settings_POST_UPDATE_DIRECTORY_ENCRYPTION					= $_POST['AMA_Settings_Update_Directory_Encryption'];
+$_Application_Module_Administration_Settings_POST_UPDATE_STATUS_ENCRYPTION					= $_POST['AMA_Settings_Update_Status_Encryption'];
 $_Application_Module_Administration_Settings_POST_UPDATE_DIRECTORY_LOCATION					= $_POST['AMA_Settings_Update_Directory_Location'];
 $_Application_Module_Administration_Settings_POST_UPDATE_STATUS_LOCATION					= $_POST['AMA_Settings_Update_Status_Location'];
 $_Application_Module_Administration_Settings_POST_UPDATE_DIRECTORY_MICROPHONE					= $_POST['AMA_Settings_Update_Directory_Microphone'];
@@ -171,15 +175,15 @@ $_Application_Module_Administration_Settings_POST_UPDATE_STATUS_TEXT_EDITOR					
 $_Application_Module_Administration_Settings_POST_UPDATE_DIRECTORY_SAFEHTML					= $_POST['AMA_Settings_Update_Directory_SafeHTML'];
 $_Application_Module_Administration_Settings_POST_UPDATE_STATUS_SAFEHTML					= $_POST['AMA_Settings_Update_Status_SafeHTML'];
 $_Application_Module_Administration_Settings_POST_UPDATE_STATUS_TEXT_EDITOR					= $_POST['AMA_Settings_Update_Status_Text_Editor'];
-$_Application_Module_Administration_Settings_POST_UPDATE_DIRECTORY_TIME					= $_POST['AMA_Settings_Update_Directory_Time'];
-$_Application_Module_Administration_Settings_POST_UPDATE_STATUS_TIME					= $_POST['AMA_Settings_Update_Status_Time'];
+$_Application_Module_Administration_Settings_POST_UPDATE_DIRECTORY_TIME						= $_POST['AMA_Settings_Update_Directory_Time'];
+$_Application_Module_Administration_Settings_POST_UPDATE_STATUS_TIME						= $_POST['AMA_Settings_Update_Status_Time'];
 $_Application_Module_Administration_Settings_POST_UPDATE_DIRECTORY_SECURITY_MODULE_SANITIZATION			= $_POST['AMA_Settings_Update_Directory_Security_Module_Sanitization'];
 $_Application_Module_Administration_Settings_POST_UPDATE_STATUS_SECURITY_MODULE_SANITIZATION			= $_POST['AMA_Settings_Update_Status_Security_Module_Sanitization'];
 $_Application_Module_Administration_Settings_POST_UPDATE_STATUS_SERVICES_MODULE_COMMANDER			= $_POST['AMA_Settings_Update_Status_Services_Module_Commander'];
 $_Application_Module_Administration_Settings_POST_UPDATE_STATUS_SERVICES_MODULE_INTEGRITY			= $_POST['AMA_Settings_Update_Status_Services_Module_Integrity'];
 $_Application_Module_Administration_Settings_POST_UPDATE_STATUS_SERVICES_MODULE_LOOPS				= $_POST['AMA_Settings_Update_Status_Services_Module_Loops'];
 $_Application_Module_Administration_Settings_POST_UPDATE_STATUS_SERVICES_MODULE_SERVICES			= $_POST['AMA_Settings_Update_Status_Services_Module_Services'];
-$_Application_Module_Administration_Settings_POST_UPDATE_STATUS_SERVICES_MODULE_TASKS			= $_POST['AMA_Settings_Update_Status_Services_Module_Tasks'];
+$_Application_Module_Administration_Settings_POST_UPDATE_STATUS_SERVICES_MODULE_TASKS				= $_POST['AMA_Settings_Update_Status_Services_Module_Tasks'];
 
 $_Application_Module_Administration_Settings_POST_UPDATE_STATUS_ACCOUNT_RESTRICTED_INTERNET_PROTOCOL_ADDRESS	= $_POST['AMA_Settings_Update_Status_Account_Restricted_IP'];
 $_Application_Module_Administration_Settings_POST_UPDATE_STATUS_ACCOUNT_RESTRICTED_WEB_BROWSER			= $_POST['AMA_Settings_Update_Status_Account_Restricted_Web_Browser'];
@@ -278,6 +282,20 @@ echo ("
 														Options Note: <I>The Text-Editor Plug-In handles and processes all of the user input data system-wide.</I><BR><BR>
 
 														<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+														Plug-Ins :: Encryption
+														<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+															Plug-In :: Directory :: Encryption<BR>
+																<INPUT TYPE=\"text\" NAME=\"AMA_Settings_Update_Directory_Encryption\" VALUE=\"$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_DIRECTORY_ENCRYPTION\" MAXLENGTH=\"50\"><BR>
+															Plug-In :: Status :: Encryption<BR>
+															[ Current: $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_STATUS_ENCRYPTION ]<BR>
+																<SELECT NAME=\"AMA_Settings_Update_Status_Encryption\">
+																	<OPTION VALUE=\"1\">1: On</OPTION>
+																	<OPTION VALUE=\"0\">0: Off</OPTION>
+																</SELECT><BR>
+														Options Note: <I>The Encryption Plug-In handles and processes all of the encryption mathematics, input data encryption, electronic mail message encryption and other kinds of encryption system-wide.</I><BR><BR>
+
+														<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 														Plug-Ins :: Data Sanitization
 														<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 
@@ -345,7 +363,7 @@ echo ("
 														Options Note: <I>The Commander Services Module handles and processes all of the commands system-wide. Commands can issued by any Registered Member Account and escalated commands can be issued by any Administration-Level Account.</I><BR><BR>
 																
 														<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
-														System Modules :: Integrity Security
+														System Modules :: Security
 														<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 
 															Services :: Module :: Status :: Integrity<BR>
@@ -617,6 +635,7 @@ settings_system_upload_size_public_messenger_document='$_Application_Module_Admi
 settings_system_upload_size_public_messenger_image='$_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_MESSENGER_IMAGE',
 settings_system_upload_size_public_messenger_video='$_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_MESSENGER_VIDEO',
 settings_system_plugin_directory_camera='$_Application_Module_Administration_Settings_POST_UPDATE_DIRECTORY_CAMERA',
+settings_system_plugin_directory_encryption='$_Application_Module_Administration_Settings_POST_UPDATE_DIRECTORY_ENCRYPTION',
 settings_system_plugin_directory_location='$_Application_Module_Administration_Settings_POST_UPDATE_DIRECTORY_LOCATION',
 settings_system_plugin_directory_microphone='$_Application_Module_Administration_Settings_POST_UPDATE_DIRECTORY_MICROPHONE',
 settings_system_plugin_directory_notifications='$_Application_Module_Administration_Settings_POST_UPDATE_DIRECTORY_NOTIFICATIONS',
@@ -626,6 +645,7 @@ settings_system_plugin_directory_secure_delete='$_Application_Module_Administrat
 settings_system_plugin_directory_text_editor='$_Application_Module_Administration_Settings_POST_UPDATE_DIRECTORY_TEXT_EDITOR',
 settings_system_plugin_directory_time='$_Application_Module_Administration_Settings_POST_UPDATE_DIRECTORY_TIME',
 settings_system_plugin_status_camera='$_Application_Module_Administration_Settings_POST_UPDATE_STATUS_CAMERA',
+settings_system_plugin_status_encryption='$_Application_Module_Administration_Settings_POST_UPDATE_STATUS_ENCRYPTION',
 settings_system_plugin_status_location='$_Application_Module_Administration_Settings_POST_UPDATE_STATUS_LOCATION',
 settings_system_plugin_status_microphone='$_Application_Module_Administration_Settings_POST_UPDATE_STATUS_MICROPHONE',
 settings_system_plugin_status_notifications='$_Application_Module_Administration_Settings_POST_UPDATE_STATUS_NOTIFICATIONS',
