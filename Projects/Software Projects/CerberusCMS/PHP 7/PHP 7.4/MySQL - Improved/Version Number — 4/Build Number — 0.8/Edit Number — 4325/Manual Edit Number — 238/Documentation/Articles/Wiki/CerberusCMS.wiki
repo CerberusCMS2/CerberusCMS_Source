@@ -300,11 +300,13 @@ Activity Logging
 ====Panel Application Modules====
 * '''Administration.panel'''
 * '''Applications_Panel.panel'''
+* '''Clock.panel'''
 * '''Language.panel'''
 * '''Latest_Articles.panel'''
 * '''Latest_Files.panel'''
 * '''Latest_Members.panel'''
 * '''Latest_Shouts.panel'''
+* '''Location.panel'''
 * '''Live_Video.panel'''
 * '''Member_Panel.panel'''
 * '''Networking.panel'''
@@ -313,6 +315,9 @@ Activity Logging
 
 * '''Administration Panel'''
 Application Panel With Options For Managing Administration Options.
+
+* '''Clock'''
+Application Panel That Displays Time Data In Different Formats.
 
 * '''Applications Panel'''
 Application Panel That Lists All Available Links To Applications.
@@ -331,6 +336,9 @@ Application Panel With Options For Text, Voice and Video Shout Messages.
 
 * '''Live Video'''
 Application Panel With Options For Recording Live Video To Be Saved To The Registered Member Account Live Video Directory.
+
+* '''Location'''
+Application Panel That Displays The Devices Current Location In Global-Positioning-System Coordinates With Altitude Above or Below Sea Level.
 
 * '''Member Panel'''
 Application Panel With Options For Managing Registered Member Account Options.
