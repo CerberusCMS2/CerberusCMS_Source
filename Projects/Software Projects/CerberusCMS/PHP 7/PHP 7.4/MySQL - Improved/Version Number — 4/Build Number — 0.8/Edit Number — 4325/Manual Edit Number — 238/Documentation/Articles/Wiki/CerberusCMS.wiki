@@ -965,6 +965,6 @@ Video Games
 Each software project combined totals around ~450,000 lines of original programming code across several different programming languages and scripting languages.
 
 ==Project Copyrights==
-Every line of programming code in CerberusCMS up to CerberusCMS, Version Number: 4, Build Number: 0.8, Edit Number: 4,325 is 100% original from and was written by the computer programmer Gary Christopher Johnson of SouthGate, California, West Los Angeles, California and Oildale, California.
+Every line of programming code in CerberusCMS up to CerberusCMS, Version Number: 4, Build Number: 0.8, Edit Number: 4,325, Manual Edit Number: 238 is 100% original from and was written by the computer programmer Gary Christopher Johnson of SouthGate, California, West Los Angeles, California and Oildale, California in and around Long Beach, California, Oildale, California and other places in Southern California.
 
-This web application was developed and written in Southern California. This project was started in around the year ~2001 when I was about 14 or maybe 15 years old... My girlfriend at the time... a nice laptop was given to me. I started learning computer programming back then. The updates for this specific project is slow because I don't have the time to work on it every day.
+This web application was developed and written in Southern California. This project was started in around the year ~2001 when I was about 13 or 14 years old... My girlfriend at the time... a nice laptop was given to me. I started learning computer programming back then. The updates for this specific project is slow because I don't have the time to work on it every day.
