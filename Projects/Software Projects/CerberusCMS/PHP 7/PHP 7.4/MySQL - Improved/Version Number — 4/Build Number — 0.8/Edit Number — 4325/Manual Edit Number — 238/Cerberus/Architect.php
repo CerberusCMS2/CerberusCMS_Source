@@ -531,25 +531,25 @@ Location :: Information
 This Web Server :: Information
 --------------------------------------------------------------------------
 -- Hyper-Text-Transfer-Protocol
-* This Web Server :: Machine :: Hyper-Text-Transfer-Protocol :: Host: $_GLOBAL_LOCAL_SERVER_HTTP_HOST
-* This Web Server :: Machine :: Hyper-Text-Transfer-Protocol :: Accept Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT
-* This Web Server :: Machine :: Hyper-Text-Transfer-Protocol :: Character Set: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_CHARACTER_SET
-* This Web Server :: Machine :: Hyper-Text-Transfer-Protocol :: Encoding: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_ENCODING
-* This Web Server :: Machine :: Hyper-Text-Transfer-Protocol :: Loading Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LOADING
-* This Web Server :: Machine :: Hyper-Text-Transfer-Protocol :: Language: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LANGUAGE
+* Architect :: Machine :: Hyper-Text-Transfer-Protocol :: Host: $_GLOBAL_LOCAL_SERVER_HTTP_HOST
+* Architect :: Machine :: Hyper-Text-Transfer-Protocol :: Accept Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT
+* Architect :: Machine :: Hyper-Text-Transfer-Protocol :: Character Set: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_CHARACTER_SET
+* Architect :: Machine :: Hyper-Text-Transfer-Protocol :: Encoding: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_ENCODING
+* Architect :: Machine :: Hyper-Text-Transfer-Protocol :: Loading Type: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LOADING
+* Architect :: Machine :: Hyper-Text-Transfer-Protocol :: Language: $_GLOBAL_LOCAL_SERVER_HTTP_ACCEPT_LANGUAGE
 
 -- Network
-* This Web Server :: Machine :: Network :: Internet Protocol Address: $_GLOBAL_LOCAL_SERVER_ADDRESS
-* This Web Server :: Machine :: Network :: Internet Protocol Address :: Connecting Port Number: $_GLOBAL_REMOTE_SERVER_PORT
-* This Web Server :: Machine :: Network :: Gateway Interface: $_GLOBAL_LOCAL_SERVER_GATEWAY_INTERFACE
+* Architect :: Machine :: Network :: Internet Protocol Address: $_GLOBAL_LOCAL_SERVER_ADDRESS
+* Architect :: Machine :: Network :: Internet Protocol Address :: Connecting Port Number: $_GLOBAL_REMOTE_SERVER_PORT
+* Architect :: Machine :: Network :: Gateway Interface: $_GLOBAL_LOCAL_SERVER_GATEWAY_INTERFACE
 
 -- Software
-* This Web Server :: Machine :: Software: $_GLOBAL_LOCAL_SERVER_SOFTWARE
+* Architect :: Machine :: Software: $_GLOBAL_LOCAL_SERVER_SOFTWARE
 
 -- Request
-* This Web Server :: Machine :: This Web Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME
-* This Web Server :: Machine :: This Web Server :: Request Time ( Float ): $_GLOBAL_LOCAL_SERVER_REQUEST_TIME_FLOAT
-* This Web Server :: Machine :: This Web Server :: Document Root: $_GLOBAL_LOCAL_SERVER_DOCUMENT_ROOT
+* Architect :: Machine :: This Web Server :: Request Time: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME
+* Architect :: Machine :: This Web Server :: Request Time ( Float ): $_GLOBAL_LOCAL_SERVER_REQUEST_TIME_FLOAT
+* Architect :: Machine :: This Web Server :: Document Root: $_GLOBAL_LOCAL_SERVER_DOCUMENT_ROOT
 
 ---------------------------------------------------------------------------------
 Timestamps
