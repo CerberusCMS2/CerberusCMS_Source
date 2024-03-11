@@ -524,12 +524,19 @@ Gender :: Male :: Backpack :: Attachments :: Plastic ID Container
 The shown plastic ID containers can be attached to the backpack and a personal ID or an address ID can be placed into the plastic ID container so that everyone will know who the backpack belongs to.
 
 <BR><BR>
+Gender :: Male :: Backpack :: Attachments :: Plastic ID Container With Lanyard
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Backpack/Attachments/Backpack_Attachments_Plastic_ID_Container_Lanyard.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown Plastic ID Container With Lanyard can be attached to the backpack as well as worn around the neck and a personal ID or a custom made emergency ID with address, medical information and photographs of the front, side and back of the head can be placed into this plastic ID container with lanyard so that it can then be flashed and shown to the recording
+cameras in the stores and elsewhere that the traveler is traveling through.
+
+<BR><BR>
 Gender :: Male :: Backpack :: Attachments :: Carabiner
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Backpack/Attachments/Backpack_Attachments_NiteIze_Carabiner.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Backpack/Attachments/Backpack_Attachments_NiteIze_CamJam.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Backpack/Attachments/Backpack_Attachments_BlackDiamond_Carabiner.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
-The shown Black Diamond &#8482; Carabiner can be used with Paracord 750 and rock climbing Paracord and rope. This specific carabiner can support up to 1,000 pounds of weight. The NiteIze &#8482; Carabiners and CamJams
+The shown Black Diamond &#8482; Carabiner can be used with Paracord 750, Rock Climbing Paracord and Rock Climbing Rope. This specific carabiner can support up to 1,000 pounds of weight. The NiteIze &#8482; Carabiners and CamJams
 can be used to attach to the backpack and to other objects.
 
 <BR><BR>
@@ -545,7 +552,7 @@ Gender :: Male :: Electronics :: Laptop / NoteBook :: Lenovo :: T-400s P / T500s
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Electronics/Electronics_Laptop_Lenovo_T440P.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
 The Lenovo &#8482; T-400s model Laptop / NoteBook specifically the Lenovo &#8482; T-440P from the T400s models and the T-560P from the T-500s models can be used as an ultra durable, highly secure and extremely high performance laptop
-that is light weight. The motherboards in these specific laptop models with the NVidia GPU Chips can be upgraded to use an Intel Core i-7 and an Intel Core i-9 CPU Chip where then the the motherboard can be upgraded to
+that is light weight. The motherboards in these specific laptop models with the NVidia GPU Chips can be upgraded to use an Intel Core i-7 and an Intel Core i-9 CPU Chip where then the motherboard can be upgraded to
 use up to 64 GB of DDR3 RAM Memory or up to 128GB of DDR3 RAM Memory with a high capacity Terabyte Solid State Hard Drive. These specific laptops / notebooks can then be upgraded again to use aluminium housing and they
 considered one of the most secure, durable and high performance video gaming laptops on-the-go for the price range as of 2023 and 2024. One upgraded and once after all of the laptop parts are flashed with custom firmware these specific laptops can compete with high performance
 video gaming laptops released in 2023 and 2024. Some of the GPU Chip Firmwares can be flashed with custom firmwares and a Linux Operating System is best for video gaming for free.
@@ -581,7 +588,7 @@ The shown non-branded cell phone cases are extremely high quality and extremely 
 with 2 additional coats of high-heat and fire-proof spray paint mix it will make the case water-proof, moisture-proof, dust-proof, fire-proof. The case comes with a version of Gorilla Glass that can be additionally modified and
 upgraded by an experienced glass worker. One can then apply a privacy-screen onto the reverse-side of the Gorilla Glass and then use non-reversible screws with water-proof screw gaskets to make the cell phone: water-proof, dust-proof,
 fire-proof and moisture-proof. If using the cell phone with this specific modified metal case it should make it extremely difficult for anyone to get into the phone or steal / switch out the SIM card while traveling because
-the culprits will not have the tools at hand to disassemble the cell phone case to remove the parts or hack the cell phone physically. The cell phone can then be submerged into ~200 feet of water and will remain functional.
+the culprits will not have the tools at hand to disassemble the cell phone case to remove the parts or hack the cell phone physically. The cell phone can then be submerged into ~200 feet of water and it will remain functional.
  
 <BR><BR>
 Gender :: Male :: Electronics :: Data Storage
@@ -694,7 +701,7 @@ Gender :: Male :: Accessories :: Survival :: Lighter :: Kerosene
 Gender :: Male :: Accessories :: Survival :: Lighter :: Kerosene :: Zippo
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Lighter/Lighter_Kerosene_Zippo.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
-The shown Zippo &#8482; Kerosene Lighter can be modified to project an open flame of several inches and additional Kerosene Cotton can be placed within the lighter to store more Korosene Fluid.
+The shown Zippo &#8482; Kerosene Lighter can be modified to project an open flame of several inches and additional Kerosene Cotton can be placed within the lighter to store more korosene fluid in it than the stock capacity.
 
 <BR><BR>
 Gender :: Male :: Accessories :: Survival :: Lighter :: Zippo :: Accessories
@@ -702,7 +709,7 @@ Gender :: Male :: Accessories :: Survival :: Lighter :: Zippo :: Accessories
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Lighter/Lighter_Kerosene_Zippo_Flint.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Lighter/Lighter_Kerosene_Zippo_Fluid.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Lighter/Lighter_Kerosene_Zippo_Wick.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
-The shown Zippo &#8482; Kerosene Lighter Accessories provide long lasting fire capability for long durations of travel and backpacking.
+The shown Zippo &#8482; Kerosene Lighter Accessories provide long lasting fire capability for long durations of time while traveling and backpacking.
 
 <BR><BR>
 Gender :: Male :: Accessories :: Survival :: Lighter :: Butane
@@ -733,8 +740,9 @@ Gender :: Male :: Accessories :: Flash Light
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Flashlight/Flashlight_Unbranded_Aluminum_T6_LightSaber.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Flashlight/Flashlight_GearLight_UVLight.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
-The shown non-branded Flash Light contains a T-6 or a T-8 L.E.D. bulb that can be concentrated onto a view area and is almost as bright as a car spot light. The battery can be upgraded to a high quality high capacity 21700 cylinderical
-battery of 10,000 Miliampere Hours for extremely bright and long lasting light while traveling and while backpacking.
+The shown Non-Branded Flash Light contains a T-6 or a T-8 L.E.D. bulb that can be concentrated onto a view area and is almost as bright as a vehicle spot light. The battery can be upgraded to a high quality, high capacity 21700 cylinderical
+battery of 10,000 Miliampere Hours for extremely bright and long lasting light while traveling and while backpacking. The shown Forensic Flash Light can be used to identify fake money and check on the gums in the mouth as well as check on different
+parts of the body.
 
 <BR><BR>
 Gender :: Male :: Accessories :: Writing :: Pen
@@ -751,13 +759,13 @@ Gender :: Male :: Knife :: Desert :: Glass
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Knives/Knife_Uzi_Desert_Glass.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
 The shown Uzi &#8482; Desert Weather Condition Folding Pocket Knife is an excellent tool while traveling and while backpacking. The glass handle is heat-proof and it can be left out in the direct sun at up to
-117 degrees farenheight for an unlimited amount of time without damage to the knife.
+117 degrees farenheight for up to 24 repeating hours without damage to the knife.
 
 <BR><BR>
 Gender :: Male :: Knife :: All Weather :: Survival
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Knives/Knife_ColdSteel_Survival.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
-The shown Cold Steel &#8482; Survival Knife remains one of the best long lasting survival knives available. The hilt has a lanyard hole where a lanyard cord can be attached.
+The shown Cold Steel &#8482; Survival Knife remains one of the best long lasting survival knives available. The hilt has a lanyard hole where a lanyard cord can be attached and it features a hand-guard.
 
 <BR><BR>
 Gender :: Male :: Knife :: All Weather :: Fixed Blade Lanyard Knife
@@ -770,6 +778,16 @@ can do is keep up with stabbing or cutting motions until the target is dead. One
 cannot aim and shoot fast enough close range against someone with a lanyard fixed blade knife and the experienced knife weilder can stab an enemy or animal up to 200 times in ~60 seconds. Some demonstrations and real-world scenarios have proven that a fixed blade lanyard knife weilder
 can stab an enemy target that has a hand gun or an automatic rifle up to 200 times in the neck, head, chest, arms, hands and stomach in ~60 seconds. Fixed Blade Knives do not bend or break and if the Fixed Blade Lanyard Knife has a Hand-Guard you can be sure that your hand will never slip onto the blade while using the knife. If the Fixed Blade Lanyard Knife has a Blood-Drain the knife is guaranteed to not get stuck in the body of the enemy or the animal. Usually
 a thin or thick blade will get stuck in the body of the target because the body is a vacuum and foreign objects will get stuck in it if penetrated, especially a knife if it does not have a Blood-Drain. Handling wild animals close range with a Fixed Blade Lanyard Knife is not difficult once practiced and different parts of the animals body can be removed quickly afterwards. One can also cut away and strip away all of the meat and muscle off of the animal very quickly once the animal is dead. If the blade is thick enough one can be guaranteed to cut through hardened bone with ease. Contrary to popular belief: Fixed Blade Lanyard Knives are more dangerous than a kitchen knife or a meat cleaver.
+
+<BR><BR>
+Gender :: Male :: FireArm
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Gender :: Male :: FireArm :: M1911
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/FireArm/FireArm_M1911.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown authentic M1911 or 1911 FireArm remains one of the best commercially avaiable hand firearms available where hundreds of customizations can be made to this firearm. The barrel of the M1911 or 1911 is usually capable of ejecting a 9 Millimeter to 12 Millimeter round. Customizations can be made to convert the M1911 or 1911 into a 3 - 5 burst-shot or completely automatic.<BR><BR>
 
 <BR><BR>
 Gender :: Male :: Miscellanious
