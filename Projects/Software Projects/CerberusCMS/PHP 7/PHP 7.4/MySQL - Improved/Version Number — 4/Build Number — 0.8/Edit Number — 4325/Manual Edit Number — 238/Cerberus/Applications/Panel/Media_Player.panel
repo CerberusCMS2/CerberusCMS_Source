@@ -88,6 +88,7 @@ $_Application_Module_Panel_Media_Player_OPEN_DIRECTORY_AUDIO_MUSIC				= opendir(
 
 echo ("
 												<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Media_Player&amp;PlayAudioStream&#61;FileName&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
+													Audio :: Music<BR>
 													<SELECT NAME=\"AMM_Media_Player_Play_Audio_File_Name\">
 ");
 
@@ -106,7 +107,7 @@ if ($_Application_Module_Panel_Media_Player_READ_DIRECTORY_AUDIO_MUSIC == "." ||
 
 echo ("
 													</SELECT><BR>
-													<INPUT TYPE=\"submit\" VALUE=\"Play File\">
+													<INPUT TYPE=\"submit\" VALUE=\"Play Media\">
 												</FORM><HR>
 												<CENTER>[&nbsp;<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Media_Player\" TITLE=\":: Open & Display The Application Module :: Media Player ::\">Options</A>&nbsp;]
 ");
