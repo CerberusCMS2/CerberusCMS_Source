@@ -449,22 +449,22 @@ Gender :: Male :: Miscellanious
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
 <BR><BR>
-Gender :: Male :: Miscellanious :: Valuable
-<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
-
-<BR><BR>
-Gender :: Male :: Miscellanious :: Sterling Silver
-<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
-<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Miscellanious/Miscellanious_Sterling_Silver_Wire.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
-The Sterling Silver Wire can be purchased in spools and then wrapped around objects that a traveler travels with. The Sterling Silver Wire can then be sold to individuals or to businesses to get large amounts of
-cash in emergency situations.
-
-<BR><BR>
 Gender :: Male :: Miscellanious :: Stainless Steel Cable
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Miscellanious/Miscellanious_StainlessSteel_Cable.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
 The Stainless Steel Cable of 1/8\" OR 3.175 Millimeters can be used as a wrist lanyard for a Fixed Blade Lanyard Knife where once securely wrapped and worn around the wrist the Stainless Steel Cable cannot be easily removed by any enemy or target even if they have
 in their possession a wire cutting tool. The Stainless Steel Cable can also be used for up to 100 and more known things.
+
+<BR><BR>
+Gender :: Male :: Miscellanious :: Valuable
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Gender :: Male :: Miscellanious :: Valuable :: Sterling Silver
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Miscellanious/Miscellanious_Sterling_Silver_Wire.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The Sterling Silver Wire can be purchased in spools and then wrapped around objects that a traveler travels with. The Sterling Silver Wire can then be sold to individuals or to businesses to get large amounts of
+cash in emergency situations.
 
 <BR><BR>
 Gender :: Male :: Weather Safety
