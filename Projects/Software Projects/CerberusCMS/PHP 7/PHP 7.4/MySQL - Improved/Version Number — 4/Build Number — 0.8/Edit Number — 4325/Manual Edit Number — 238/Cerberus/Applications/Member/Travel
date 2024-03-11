@@ -223,7 +223,7 @@ Gender :: Male :: EyeWear :: Sun Glasses
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/HeadWear/EyeWear/SunGlasses/SunGlasses_Lacoste_Aviator.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/HeadWear/EyeWear/SunGlasses/SunGlasses_Ray-Ban_Aviator_Chromance_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/HeadWear/EyeWear/SunGlasses/SunGlasses_Vuarnet_007_Brown.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
-The shown Sun Glasses with polarized lenses make for a high quality viewing experience in different weather conditions.
+The shown Ray-Ban &reg; &trade;, Randolphe &reg; &trade; and Lacoste &reg; &trade; Sun Glasses with polarized lenses make for an extremely high quality viewing experience in different weather conditions.
 
 <BR><BR>
 Gender :: Male :: EarWear
@@ -283,6 +283,13 @@ Gender :: Male :: Accessories :: Suspenders
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Suspenders/Suspenders_RothcoX_Nylon_Polyester_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
 The High Performance Suspenders with quick dry material is guaranteed to keep the pants high above the waist and keep the pants tight around the lower body.
+
+<BR><BR>
+Gender :: Male :: Accessories :: Belt
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Belt/Accessories_Belt_Levi_Leather_Bison\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The High Performance and Extra Thick Bison / Buffalo Leather Belt With Levi Brand is high quality and long lasting belt that can be used for up to 100 and more known things from knuckle smasher to whip in addition to keeping the
+pants high and tight around the lower body. The belt is made from the hide of a Bison / Buffalo instead of the traditional cow hide.
 
 <BR><BR>
 Gender :: Male :: ArmWear
