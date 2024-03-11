@@ -109,7 +109,7 @@ echo ("
 													</SELECT><BR>
 													<INPUT TYPE=\"submit\" VALUE=\"Play Media\">
 												</FORM><HR>
-												<CENTER>[&nbsp;<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Media_Player\" TITLE=\":: Open & Display The Application Module :: Media Player ::\">Options</A>&nbsp;]
+												<CENTER>[&nbsp;<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Media_Player&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Application Module :: Media Player ::\">Options</A>&nbsp;]
 ");
 
 /*
