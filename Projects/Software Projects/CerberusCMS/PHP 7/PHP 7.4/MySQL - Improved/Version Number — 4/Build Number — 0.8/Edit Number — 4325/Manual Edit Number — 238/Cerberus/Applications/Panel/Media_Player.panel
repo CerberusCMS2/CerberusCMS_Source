@@ -87,7 +87,7 @@ $_Application_Module_Panel_Media_Player_FIND_DIRECTORY_AUDIO_MUSIC				= "./Uploa
 $_Application_Module_Panel_Media_Player_OPEN_DIRECTORY_AUDIO_MUSIC				= opendir($_Application_Module_Panel_Media_Player_FIND_DIRECTORY_AUDIO_MUSIC);
 
 echo ("
-												<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Media_Player&amp;PlayAudioStream&#61;FileName$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
+												<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Media_Player&amp;PlayAudioStream&#61;FileName&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
 													<SELECT NAME=\"AMM_Media_Player_Play_Audio_File_Name\">
 ");
 
@@ -98,7 +98,7 @@ if ($_Application_Module_Panel_Media_Player_READ_DIRECTORY_AUDIO_MUSIC == "." ||
  * Do Nothing
 **/
 } else {
-											echo ("<OPTION VALUE=\"$_Application_Module_Panel_Media_Player_READ_DIRECTORY_AUDIO_MUSIC\">$_Application_Module_Panel_Media_Player_READ_DIRECTORY_AUDIO_MUSIC</OPTION>");
+											echo ("<OPTION VALUE=\"./Upload/Audio/Music/$_Application_Module_Panel_Media_Player_READ_DIRECTORY_AUDIO_MUSIC\">$_Application_Module_Panel_Media_Player_READ_DIRECTORY_AUDIO_MUSIC</OPTION>");
 
 } // [ + ] IF: Directory :: Audio :: Music Directory ARE NOT Specified Files And Directory
 
