@@ -4596,7 +4596,7 @@ copy("./Applications/Panel/Latest_Members.panel","./System/Security/Integrity/Ba
 copy("./Applications/Panel/Latest_Shouts.panel","./System/Security/Integrity/Backup/Applications/Panel/Latest_Shouts.panel");
 copy("./Applications/Panel/Live_Video.panel","./System/Security/Integrity/Backup/Applications/Panel/Live_Video.panel");
 copy("./Applications/Panel/Location.panel","./System/Security/Integrity/Backup/Applications/Panel/Location.panel");
-copy("./Applications/Panel/Member_Panel.panel","./System/Security/Integrity/Backup/Applications/Panel/Media_Player.panel");
+copy("./Applications/Panel/Media_Player.panel","./System/Security/Integrity/Backup/Applications/Panel/Media_Player.panel");
 copy("./Applications/Panel/Member_Panel.panel","./System/Security/Integrity/Backup/Applications/Panel/Member_Panel.panel");
 copy("./Applications/Panel/Moderator.panel","./System/Security/Integrity/Backup/Applications/Panel/Moderator.panel");
 copy("./Applications/Panel/Networking.panel","./System/Security/Integrity/Backup/Applications/Panel/Networking.panel");
