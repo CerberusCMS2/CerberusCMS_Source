@@ -687,7 +687,7 @@ Gender :: Male :: Accessories :: Containers
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Cup/Cup_Flask_Stanely_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Cup/Cup_Thermus_Thermos_Grey.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
-The shown Stanley &#8482; Flask and Thermos &#8482; Thermus are light weight liquid containers that can contain wiskey and rum liquor and other drinks while traveling and while backpacking.
+The shown Stanley &#8482; Flask and Thermos &#8482; Thermus are light weight liquid containers that can contain wiskey and rum liquor and other drinks while traveling and while backpacking. The lids can be replaced with customized heavy-weight carrying lids.
 
 <BR><BR>
 Gender :: Male :: Accessories :: Survival :: Fire
@@ -794,10 +794,6 @@ Gender :: Male :: FireArm :: AK-47
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/FireArm/FireArm_AK47.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
 The shown authentic Atmova Kalashinokov / Atmovat Kalashinokova remains one of the best automatic rifles commercially available where hundreds of customizations can be made to this firarm. This rifle almost never jams due to a gas rotating bolt, it is completely water-proof and it can be carried with several triple taped banana magazines for an ultra fast 0 - 3 second reload.
-
-<BR><BR>
-Gender :: Male :: Miscellanious
-<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
 <BR><BR>
 Gender :: Male :: Blanket
