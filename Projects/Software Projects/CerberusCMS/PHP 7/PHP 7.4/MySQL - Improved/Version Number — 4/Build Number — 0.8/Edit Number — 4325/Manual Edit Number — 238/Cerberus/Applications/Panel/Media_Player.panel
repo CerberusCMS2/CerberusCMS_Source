@@ -66,4 +66,56 @@
  +
  ============================================================================================================
 */
+
+/*
+ ============================================================================================================
+ +
+ + Display :: All Available :: Audio :: Music Files
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ + Find and Open :: Directory :: Audio :: Music Directory
+ +
+ ============================================================================================================
+*/
+
+$_Application_Module_Panel_Media_Player_FIND_DIRECTORY_AUDIO_MUSIC				= "./Upload/Audio/Music";
+$_Application_Module_Panel_Media_Player_OPEN_DIRECTORY_AUDIO_MUSIC				= opendir($_Application_Module_Panel_Media_Player_FIND_DIRECTORY_AUDIO_MUSIC);
+
+echo ("
+												<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Media_Player&amp;PlayAudioStream&#61;FileName$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
+													<SELECT NAME=\"AMM_Media_Player_Play_Audio_File_Name\">
+");
+
+while (($_Application_Module_Panel_Media_Player_READ_DIRECTORY_AUDIO_MUSIC = readdir($_Application_Module_Panel_Media_Player_OPEN_DIRECTORY_AUDIO_MUSIC))) {
+
+if ($_Application_Module_Panel_Media_Player_READ_DIRECTORY_AUDIO_MUSIC == "." || $_Application_Module_Panel_Media_Player_READ_DIRECTORY_AUDIO_MUSIC == ".." || $_Application_Module_Panel_Media_Player_READ_DIRECTORY_AUDIO_MUSIC == "index.php") {
+/**
+ * Do Nothing
+**/
+} else {
+											echo ("<OPTION VALUE=\"$_Application_Module_Panel_Media_Player_READ_DIRECTORY_AUDIO_MUSIC\">$_Application_Module_Panel_Media_Player_READ_DIRECTORY_AUDIO_MUSIC</OPTION>");
+
+} // [ + ] IF: Directory :: Audio :: Music Directory ARE NOT Specified Files And Directory
+
+} // [ + ] WHILE: Reading :: Directory :: Audio :: Music
+
+echo ("
+													</SELECT><BR>
+													<INPUT TYPE=\"submit\" VALUE=\"Set Theme\">
+												</FORM><HR>
+												<CENTER>[&nbsp;<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Media_Player\" TITLE=\":: Open & Display The Application Module :: Media Player ::\">Options</A>&nbsp;]
+");
+
+/*
+ ============================================================================================================
+ + Close Directory :: Audio :: Music
+ ============================================================================================================
+*/
+
+closedir($_Application_Module_Panel_Media_Player_OPEN_DIRECTORY_AUDIO_MUSIC);
 ?>
