@@ -208,10 +208,13 @@ Gender :: Male :: EyeWear
 <BR><BR>
 Gender :: Male :: EyeWear :: Smart Glasses
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
-<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/HeadWear/EyeWear/SmartGlasses/SmartGlasses_Ray-Ban_Wayfarer_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
-The slim and discrete smart glassses can be used to record live video that can then be instantly transmitted to this Web Application over Encrypted Mobile Cell Phone LTE Internet Connection or Satellite Radio Cell Phone Internet Connection.
-These smart glasses can also be used for long distance Voice Communications and Video Communcations over Encrypted Mobile Cell Phone LTE Internet Connection or Satellite Radio Cell Phone Internet Connection.
-The Ray-Ban &#8482; SmartGlasses have been demonstrated to compare to Internal Ear Bone Radio Communication Microphone Implant otherwise known as an Inner Ear Bone Radio Conduction Implant.
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/HeadWear/EyeWear/SmartGlasses/SmartGlasses_Ray-Ban_Wayfarer_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/HeadWear/EyeWear/SmartGlasses/SmartGlasses_NonBranded_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The Ray-Ban &reg; &trade; slim and discrete smart glasses can be used to record live video that can then instantly be transmitted to this Web Application over Encrypted Mobile Cell Phone LTE Internet Connection through a 2048 BIT - 4096 BIT Encrypted Virtual-Private-Network With DNSCrypt-Proxy and or Encrypted Satellite Radio Cell Phone Internet Connection.
+These smart glasses can also be used for Encrypted Long Distance Voice Communications and Video Communcations over Encrypted Mobile Cell Phone LTE Internet Connection and or Encrypted Satellite Radio Cell Phone Internet Connection.
+The Ray-Ban &#8482; Smart Glasses have been demonstrated to compare to Internal Ear Bone Radio Communication Microphone Implant otherwise known as an Inner Ear Bone Radio Conduction Implant. However, as of the year: 2023 the Ray-Ban &reg; &trade; Smart Glasses can no longer be flashed with custom firmware and now the glasses are completely locked to the Meta &reg; &trade; Platform.<BR><BR>
+
+The Non-Branded Smart Glasses can be used with this web application...
 
 <BR><BR>
 Gender :: Male :: EyeWear :: Sun Glasses
@@ -817,7 +820,7 @@ echo ("
  +
  + [ @ ] IF: Internal Application: Display :: Backpacking Gear :: Type :: Mountain
  +
- ============================================================================================================
+ ==========================================================================================h==================
 */
 
 if ($_GET["Type"] == "Mountain") {
