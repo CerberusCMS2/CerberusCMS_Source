@@ -1050,17 +1050,17 @@ echo ("
 			<TEXTAREA ROWS=\"20\" COLS=\"150\">$_ARCHITECT_INSTALL_FORM_GET_FILE_CONTENTS_SYSTEM_FILE_KERNEL</TEXTAREA>
 		</FORM><BR><BR>
 
-		* <I>Current Global System Configuration File</I>:<BR>
+		* <I>Current Global System Configuration File :: ./System/Configuration/Global_Configuration.php</I><BR>
 		<FORM>
 			<TEXTAREA ROWS=\"20\" COLS=\"150\">$_ARCHITECT_INSTALL_FORM_GET_FILE_CONTENTS_SYSTEM_FILE_CONFIGURATION</TEXTAREA>
 		</FORM><BR><BR>
 
-		* <I>Current Global System Database Server Class File For My-Structured-Query-Language :: Standard Driver</I>:<BR>
+		* <I>Current Global System Database Server Class File For My-Structured-Query-Language :: Standard Driver :: ./System/Configuration/Global_SQL_Server_Database_Class_MySQL_Standard.php</I><BR>
 		<FORM>
 			<TEXTAREA ROWS=\"20\" COLS=\"150\">$_ARCHITECT_INSTALL_FORM_GET_FILE_CONTENTS_SYSTEM_FILE_DATABASE_SERVER_CLASS_MySQL_STANDARD</TEXTAREA>
 		</FORM><BR><BR>
 
-		* <I>Current Global System Database Server Class File For My-Structured-Query-Language :: Improved Driver</I>:<BR>
+		* <I>Current Global System Database Server Class File For My-Structured-Query-Language :: Improved Driver :: ./System/Configuration/Global_SQL_Server_Database_Class_MySQL_Improved.php</I><BR>
 		<FORM>
 			<TEXTAREA ROWS=\"20\" COLS=\"150\">$_ARCHITECT_INSTALL_FORM_GET_FILE_CONTENTS_SYSTEM_FILE_DATABASE_SERVER_CLASS_MySQL_IMPROVED</TEXTAREA>
 		</FORM><BR><BR>
