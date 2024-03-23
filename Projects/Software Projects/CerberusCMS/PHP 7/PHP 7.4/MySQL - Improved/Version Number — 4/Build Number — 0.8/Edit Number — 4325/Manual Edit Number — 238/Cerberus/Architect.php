@@ -1288,9 +1288,13 @@ echo ("
 		=>&nbsp;<A HREF=\"?InternalApplication&#61;File_Permissions\" TITLE=\":: Open & Display :: The Internal Application :: Change-Mode ( CHMOD ) File Permissions Loop ::\">Permissions Loops :: Directories</A><BR>
 		=>&nbsp;<A HREF=\"?InternalApplication&#61;File_Permissions\" TITLE=\":: Open & Display :: The Internal Application :: Change-Mode ( CHMOD ) File Permissions Loop ::\">Permissions Loops :: Files</A><BR><BR>
 
-		<B>Diagnostics</B>
+		<B>Maintenance :: Diagnostics</B>
 		<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
-		=>&nbsp;<A HREF=\"./Maintenance/Diagnostics/$_INTERNAL_FILE_MAINTENANCE_DIAGNOSTICS\" TARGET=\"_NEW\" TITLE=\":: Open & Display The System Diagnostics Application ::\">System Diagnostics :: Application</A><BR><BR>
+		=>&nbsp;<A HREF=\"./Maintenance/Diagnostics/$_INTERNAL_FILE_MAINTENANCE_DIAGNOSTICS\" TARGET=\"_NEW\" TITLE=\":: Open & Display The System Diagnostics Application ::\">System Maintenance :: Diagnostics Application</A><BR><BR>
+
+		<B>Maintenance :: Repair</B>
+		<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+		=>&nbsp;<A HREF=\"./Maintenance/Repair/$_INTERNAL_FILE_MAINTENANCE_REPAIR\" TARGET=\"_NEW\" TITLE=\":: Open & Display The System Repair Application ::\">System Maintenance :: Repair Application</A><BR><BR>
 
 		<B>Server Software, Server Software Engine Versions and Extended Information</B><HR>
 		<B>Detailed Server Software and User-Interface Information:</B><BR>
