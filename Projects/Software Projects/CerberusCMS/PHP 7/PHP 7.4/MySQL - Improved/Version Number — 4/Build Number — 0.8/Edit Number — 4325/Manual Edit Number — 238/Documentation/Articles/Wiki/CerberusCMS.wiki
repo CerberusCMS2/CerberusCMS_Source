@@ -172,6 +172,31 @@ Options for managing current and future tasks as well as an advanced Task Manage
 
 ====Administration-Level Application Modules====
 * '''Accounts'''
+* '''Applications'''
+* '''Archive'''
+* '''Control_Panel'''
+* '''Emulators'''
+* '''File_Categories'''
+* '''File_Manager'''
+* '''Forum'''
+* '''GIT'''
+* '''Messenger'''
+* '''Networking'''
+* '''Panels'''
+* '''PlugIns'''
+* '''Publish'''
+* '''Ranks'''
+* '''Referrers'''
+* '''Robot_Monitor'''
+* '''Settings'''
+* '''Submissions'''
+* '''Terminal'''
+* '''Themes'''
+* '''Update'''
+* '''VoIP'''
+* '''Web_Pages'''
+
+* '''Accounts'''
 Options for managing current Registered Member Accounts, Sending System Messages to current Registered Member Accounts.
 
 * '''Applications'''
@@ -204,8 +229,14 @@ Options for managing the Instant Messenger, Messenger Chat Rooms and Messenger D
 * '''Server_Information'''
 Options and Information about the Web Server and the CerberusCMS Installation.
 
+* '''Networking'''
+Options for managing Networking on the system. Blacklisting, Whitelisting / Banning / Whitelisting Registered Member Accounts, Internet Protocol Addresses, Domain Name Server Addresses, Advertisement Servers and more.
+
 * '''Panels'''
 Options for managing the Application Panels.
+
+* '''PlugIns'''
+Options for managing the Plug-Ins on the system.
 
 * '''Publish'''
 Options for managing Publications on the system such as News Article Entries, Article Entries and Sending Mass Newsletters to all Registered Member Accounts.
@@ -231,25 +262,36 @@ Options for managing Tasks on the System.
 * '''Terminal'''
 Options for Sending, Receiving and Executing Terminal Commands on the System.
 
+* '''Themes'''
+Options for Downloading, Uploading, Updating and Deleting Theme Packages.
+
 * '''Update'''
 Options for managing and updating all Entries on the System such as News Article Entries, Article Entries, Comments, Files and more.
+
+* '''VoIP'''
+Options for managing the Voice-Over-Internet-Protocol / WebRTC Phone Calling / Phone Text Messaging Application.
 
 * '''Web_Pages'''
 Options for managing Custom Web Page Entries, Custom Web Page Entry Data and Application Panel Links.
 
-22 Administration-Level Application Modules
+28 Administration-Level Application Modules
 
 ====Registered Member-Level Application Modules====
+* '''Account_Data'''
+* '''Account_Recovery'''
 * '''Active_Members'''
 * '''All_News'''
 * '''All_Shouts'''
 * '''Application_List'''
 * '''Articles'''
+* '''Calculator'''
 * '''Calendar'''
+* '''Clock'''
 * '''Comment'''
 * '''Contact_Administrator'''
+* '''Contacts'''
 * '''Control_Panel'''
-* '''Clock'''
+* '''Devices''''
 * '''Documentation'''
 * '''Download / Torrent'''
 * '''Electronic_Mail'''
@@ -257,12 +299,11 @@ Options for managing Custom Web Page Entries, Custom Web Page Entry Data and App
 * '''File_Manager'''
 * '''Files'''
 * '''Forum'''
-* '''Forward_Friend'''
+* '''Forward'''
 * '''Friend'''
 * '''Language'''
 * '''Legal'''
 * '''Lightning_Calculate'''
-* '''Links'''
 * '''List'''
 * '''Login'''
 * '''Market'''
@@ -270,24 +311,26 @@ Options for managing Custom Web Page Entries, Custom Web Page Entry Data and App
 * '''Member_Directory'''
 * '''Messenger'''
 * '''News'''
+* '''Notepad'''
 * '''Pages'''
-* '''Private_Files'''
 * '''Profile'''
+* '''Recommendations'''
 * '''Referrers'''
 * '''Register'''
 * '''Reset_Password'''
 * '''Search'''
-* '''Statistics'''
 * '''Submit_News'''
+* '''System'''
 * '''System_Message'''
+* '''Theme''''
+* '''Travel'''
 * '''Update_Account'''
 * '''Update_Password'''
 * '''Upload'''
-* '''Video_Games'''
-* '''Webspace'''
 * '''VoIP Phone'''
+* '''Webspace'''
 
-46 Registered Member-Level Application Modules
+51 Registered Member-Level Application Modules
 
 ====Background-Level Application Modules====
 
