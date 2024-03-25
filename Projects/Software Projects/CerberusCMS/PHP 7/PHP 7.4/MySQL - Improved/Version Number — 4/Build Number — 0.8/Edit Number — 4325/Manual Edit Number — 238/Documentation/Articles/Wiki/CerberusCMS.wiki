@@ -402,32 +402,38 @@ the web browser itself.
 3 Extra Application Modules
 
 ====Plug-In Application Modules====
+* '''Archive'''
+This Plug-In Application Module automatically archives and stores archives of each Plug-In Application Module.
+
 * '''Camera'''
-This Plug-In automatically handles and processes the video feed from the device camera.
+This Plug-In Application Module automatically handles and processes the video feed from the device camera.
+
+* '''Encryption'''
+This Plug-In Application Module automatically handles and processes the encryption of data system-wide. The data that is encrypted is audio, document, image and video files as well as all text that is inserted into the input forms system-wide. Custom made Encryption Application Modules can be used for 100% custom encryption complete with custom mathematics for that custom encryption.
 
 * '''Image'''
-This Plug-In automatically handles and processes every image file across the system including uploaded image files.
+This Plug-In Application Module automatically handles and processes every image file across the system including uploaded image files.
 
 * '''Location'''
-This Plug-In gets the exact Global-Positioning-System X, Y and Z Coordinates of the Devices connected to CerberusCMS. Location is capable of getting the Device Global-Positioning-System Coordinates, Device Motion Sensors and a 9 - 10 Foot Radial Location with Altitude to / above or below sea level from the Web Browser of the Device by using H.T.M.L. Version Number: 5 Global-Positioning-System Built-In Functionality for Longitude, Latitude and Altitude with 92% accuracy upon every refresh down to 9 - 10 feet in radius of the device itself and within 3 feet in altitude of that spherical radius in addition to the altitude inside of the spherical radius is reported the actual altitude in Y units to / above or below sea level every 1 to 5 seconds. Location is also capable of getting the Device Global-Positioning-System Coordinates Location from the Google Android Open Source Device or the Apple iPhone Device through the Device Applications. Location stores the exact Global-Positioning-System Coordinates in X, Y and Z to an organized log file within each Registered Member Account log directory. Location can get the Global-Positioning-System Coordinates of Longitude, Latitude and Altitude by Hyper-Text-Markup-Language Version Number: 5 Built-In Functionality From The Web Browser, Pre-Hyper-Text-Post-Processor Built-In Functionality From The Web Browser, Java From The Web Browser, AOSP/Java From The Google Android Smart Phone, iOS/Swift from the Apple iPhone.
+This Plug-In Application Module gets the exact Global-Positioning-System X, Y and Z Coordinates of the Devices connected to CerberusCMS. Location is capable of getting the Device Global-Positioning-System Coordinates, Device Motion Sensors and a 9 - 10 Foot Radial Location with Altitude to / above or below sea level from the Web Browser of the Device by using H.T.M.L. Version Number: 5 Global-Positioning-System Built-In Functionality for Longitude, Latitude and Altitude with 92% accuracy upon every refresh down to 9 - 10 feet in radius of the device itself and within 3 feet in height above or below the center of that spherical radius in addition to the height of the device that is above or below the center inside of the spherical radius is reported the actual altitude in Y units to / above or below sea level every 1 to 5 seconds. Location is also capable of getting the Device Global-Positioning-System Coordinates Location from the Google Android Open Source Device or the Apple iPhone Device through the Device Applications. Location stores the exact Global-Positioning-System Coordinates in X, Y and Z to an organized log file within each Registered Member Account log directory. Location can get the Global-Positioning-System Coordinates of Longitude, Latitude and Altitude by Hyper-Text-Markup-Language Version Number: 5 Built-In Functionality From The Web Browser, Pre-Hyper-Text-Post-Processor Built-In Functionality From The Web Browser, Java From The Web Browser, AOSP/Java From The Google Android Smart Phone, iOS/Swift from the Apple iPhone.
 
 * '''Microphone'''
-This Plug-In automatically handles and processes the audio feed from the device microphone.
+This Plug-In Application Module automatically handles and processes the audio feed from the device microphone.
 
 * '''Notifications'''
-This Plug-In automatically handles and processes the notifications system-wide.
-
-* '''WYSIWYG Text-Editor'''
-This Plug-In is a very simple WYSIWYG Text Editor that can be included into any form throughout the system by invoking a variable.
+This Plug-In Application Module automatically handles and processes the notifications system-wide.
 
 * '''Safe-HTML'''
-This Plug-In automatically converts Hyper-Text-Markup-Language tags to Hyper-Text-Markup-Language entities from all of the input forms throughout the system. Example of this would be converting: '''< B >''' to '''& lt ;''' before it is inserted into the Database Management System Data. This eliminates any possibility of malicious Hyper-Text-Markup-Language tag injection, JavaScript scripting code injection and Post-Hyper-Text-Pre-Processor programming code injection into the Database Management System. All of the entities are converted back to Hyper-Text-Markup-Language tags after being retrieved from the Database Management System.
+This Plug-In Application Module automatically converts Hyper-Text-Markup-Language tags to Hyper-Text-Markup-Language entities from all of the input forms throughout the system. Example of this would be converting: '''< B >''' to '''& lt ;''' before it is inserted into the Database Management System Data. This eliminates any possibility of malicious Hyper-Text-Markup-Language tag injection, JavaScript scripting code injection and Post-Hyper-Text-Pre-Processor programming code injection into the Database Management System. All of the entities are converted back to Hyper-Text-Markup-Language tags after being retrieved from the Database Management System.
 
 * '''Secure-Delete'''
-This Plug-In contains Light and Heavy Zero Files. Zero Files are files that are filled with Zero Characters and or Random Characters in a repeating or non-repeating pattern. By overwriting a location on the hard disk drive with the Secure-Delete Zero File or Scramble File where a file was deleted by this Web Application, the Web Server Hard Disk Drive maintains perfect operation and clean file transfer with the Move(); and Copy(); functions. Some Operating System File Systems will not actually unlink and delete files especially on some Microsoft &reg; Windows &copy; Web Server Operating Systems, but with this Plug-In it is possible to get a clean Move(): and Copy(); of files so that the files are actually deleted and replaced with the new version. This Plug-In prevents "File Hanging" as well as assists in the Secure Deleting of Data from the Web Server. This is especially useful if a Registered Member Account uploads any malicious hacked files to their Registered Member Account Data Storage. It is possible to rename files such as executable .exe files in Microsoft Windows Operating System to picture files such as .jpg and then upload that malicious file to the Web Server to get it hacked... this Plug-In assists the system in securely deleting any malicious files as well as any risidual hanging files in the system.
+This Plug-In Application Module contains Light and Heavy Zero Files and Scramble Files with Scrambled Characters. Zero Files are files that are filled with Zero Characters and or Random Characters in a repeating or non-repeating pattern. By overwriting a file location on the hard disk drive several times with the Secure-Delete Zero File or Scramble File where a file was deleted by this Web Application the Web Server Hard Disk Drive maintains perfect operation and clean file transfer with the Move(); and Copy(); functions and this is almost the same as the functionality of the Linux Terminal Command: dd if=/dev/zero of=/some location.file_extension. Some Operating System File Systems will not actually unlink and delete files especially on some Microsoft &reg; Windows &copy; Web Server Operating Systems, but with this Plug-In it is possible to get a clean Move(): and Copy(); of files so that the files are actually deleted and replaced with the new version. This Plug-In prevents "File Hanging" as well as assists in the Secure Deleting of Data from the Web Server. This is especially useful if a Registered Member Account uploads any malicious hacked files to their Registered Member Account Data Storage. It is possible to rename files such as executable .exe files in Microsoft Windows Operating System to picture files such as .jpg and then upload that malicious file to the Web Server to get it hacked... this Plug-In assists the system in securely deleting any malicious files as well as any risidual hanging files in the system.
+
+* '''WYSIWYG Text-Editor'''
+This Plug-In Application Module is a very simple WYSIWYG Text Editor that can be included into any form throughout the system by invoking a variable.
 
 * '''Time'''
-This Plug-In automatically handles and processes the Measurement of Date, Time and Time-Zones system-wide.
+This Plug-In Application Module automatically handles and processes the Measurement of Date, Time and Time-Zones system-wide.
 
 * '''Watermark'''
 This Plug-In automatically handles and processes every file that is uploaded to the system. Audio, Document, Image and Video files are embedded with a Watermark so that
