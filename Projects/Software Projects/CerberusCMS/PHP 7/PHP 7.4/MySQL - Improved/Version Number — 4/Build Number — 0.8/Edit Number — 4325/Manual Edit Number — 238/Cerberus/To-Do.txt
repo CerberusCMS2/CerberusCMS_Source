@@ -152,3 +152,4 @@ unverified registered accounts. Write it through services.
 * add ../ and blocking on create directory functions.. if $_POST data contains ../ in mkdir(); block it so that no folders can be made.
 * fix the Applications app module for admin
 * fix the banned networking / ip addresses for netwrokig admin app
+* complete the embedding of QR codes to uploaded media app
