@@ -59,7 +59,7 @@
 */
 
 -------------------------------------------------------------------------------------------------------------
-Cost : Programming Code Time
+Cost :: Programming Code Time
 -------------------------------------------------------------------------------------------------------------
 * 1 Person @ Approximately 4 hours per day every x days of y week from: ~January 1st of 2000 - ~January 1st of 2002: 1,460 Hours.
 * 1 Person @ Approximately 3 hours per day every x days of y week from: ~January 1st of 2003 - ~January 1st of 2004: ? Original XBOX ERA
@@ -74,7 +74,7 @@ Cost : Programming Code Time
 * 1 Person @ Approximately 6 hours per day every x days of y week from: ~January 1st of 2021 - ~February 29th of 2024, 6,570 Hours.
 * Total Number of Hours In 365 Days With 24 Hours Within Each Day: 8,760
 -------------------------------------------------------------------------------------------------------------
-Approximate Total Time Cost: 9,640 Hours
+Approximate Total Programming Code Time Cost: 9,640 Hours
 -------------------------------------------------------------------------------------------------------------
 
 /*
@@ -97,10 +97,10 @@ Approximate Total Monetary Cost: $11,691.25 United States Dollars
 -------------------------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------------------------
-Cost :: Programming Code Monetary :: Travel
+Cost :: Travel
 -------------------------------------------------------------------------------------------------------------
 * Area :: California :: Central
 * Area :: California :: Southern
 -------------------------------------------------------------------------------------------------------------
-Approximate Total Monetary Cost: $?
+Approximate Total Travel Cost: $?
 -------------------------------------------------------------------------------------------------------------
