@@ -58,22 +58,27 @@
  ============================================================================================================
 */
 
-* Digital Information Security: 9/10
-* Stress Speed: 8/10
-* Usability: 10/10
-* Unix Name: 10/10
-* Expandability: 9/10
-* Maintenance and Automation: 8/10
-* Creativity: 10/10
-* Originality: 10/10
-* Ease of Installation: 10/10
-* Ease of Removal: 10/10
-* Usefulness: 10/10
-* Functionality: 8/10
-* Architecture: 10/10
-* Ingenuity: 9/10
-* Economy: 2/10
-* Functional and Useful Programming Code: 10/10
+- Digital Information Security: 9/10
+* All input forms and data are 100% sanitized
+
+- Stress Speed: 8/10
+- Usability: 10/10
+- Unix Name: 10/10
+- Expandability: 9/10
+- Maintenance and Automation: 8/10
+- Creativity: 10/10
+- Originality: 10/10
+* The entire web application is completely custom written by hand typing and it was thought up in originalness. It was not created by automated software creating tools and
+because it was created and written by hand it can never be reproduced. It can only be copied.
+
+- Ease of Installation: 10/10
+- Ease of Removal: 10/10
+- Usefulness: 10/10
+- Functionality: 8/10
+- Architecture: 10/10
+- Ingenuity: 9/10
+- Economy: 2/10
+- Functional and Useful Programming Code: 10/10
 
 Unix Name: CerberusCMS: $100,000
 Unix Name: Cerberus: $250,000
