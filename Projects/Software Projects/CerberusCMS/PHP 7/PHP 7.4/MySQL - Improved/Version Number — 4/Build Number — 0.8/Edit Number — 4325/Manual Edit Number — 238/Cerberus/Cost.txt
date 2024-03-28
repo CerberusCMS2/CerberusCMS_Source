@@ -63,8 +63,12 @@ Programming Code Time
 -------------------------------------------------------------------------------------------------------------
 * 1 Person @ Approximately 4 hours per day every x days of y week from: ~January 1st of 2000 - ~January 1st of 2002: 1,460 Hours.
 * 1 Person @ Approximately 3 hours per day every x days of y week from: ~January 1st of 2003 - ~January 1st of 2004: ? Original XBOX ERA
-* 1 Person @ Approximately 3 hours per day every 3 days of 1 week from: ~January 1st of 2004 - ~January 1st of 2006: 363 Hours.
-* 1 Person @ Approximately 4 hours per day every 3 days of 1 week from: ~January 1st of 2007 - ~January 1st of 2009: 484 Hours.
+* 1 Person @ Approximately x hours per day every y days of z week from: ~January 1st of 2004 - ~January 1st of 2005: ?
+* 1 Person @ Approximately 3 hours per day every 3 days of 1 week from: ~January 1st of 2005 - ~January 1st of 2006: 363 Hours.
+* 1 Person @ Approximately 4 hours per day every 3 days of 1 week from: ~January 1st of 2006 - ~January 1st of 2007: 484 Hours.
+* 1 Person @ Approximately 4 hours per day every 3 days of 1 week from: ~January 1st of 2007 - ~January 1st of 2008: ? Hours.
+* 1 Person @ Approximately 4 hours per day every 3 days of 1 week from: ~January 1st of 2008 - ~January 1st of 2009: ? Hours.
+* 1 Person @ Approximately 4 hours per day every 3 days of 1 week from: ~January 1st of 2009 - ~January 1st of 2010: ? Hours.
 * 1 Person @ Approximately 3 hours per day every 3 days of 1 week from: ~January 1st of 2013 - ~August 20th of 2013: 400 Hours.
 * 1 Person @ Approximately 2 hours per day every 3 days of 1 week from: ~January 1st of 2013 - ~January 1st of 2014: 363 Hours.
 * 1 Person @ Approximately 6 hours per day every x days of y week from: ~January 1st of 2021 - ~February 29th of 2024, 6,570 Hours.
