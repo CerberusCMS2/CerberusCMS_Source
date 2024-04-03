@@ -645,6 +645,7 @@ The Application Module teaches fundamentally how to Mentally Calculate all Mathe
 ====Other Application Modules====
 * '''Droid'''
 * '''Disk Operating System'''
+* '''Store Front'''
 
 ====Other Application Modules :: Detailed Information====
 * '''Droid'''
@@ -653,11 +654,12 @@ Options for managing Google Android Open Source Software Operating System connec
 * '''Disk Operating System'''
 CerberusCMS comes with Android and Disk Operating System Emulator Application Modules that successfully emulate Android Applications and Disk Operating System Application Images Directly From the web browser itself.
 
-* CerberusCMS additionally comes with a Digital Store Front named Store Front where Administrators and Moderators can list and sell physical and digital items within item categories and listing entries. The additional Application Module is capable of securely handling personal credit card, debit card, coupon card and CryptoCurrency transactions. The Store Front Application Module stores encrypted personal information of each client for shipping and receiving items and it instantly destroys all debit card and credit card numbers and unique transaction upon completion of the transaction itself to make it impossible for any card information to be hacked. It also provides and stores organized and printable invoices with tracking numbers, bar codes and QR codes that can be configured to automatically send detailed transaction information by electronic mail message to each issuing debit and credit card company electronic mail addresses to confirm that the transaction was made by the actual debit and credit card owner.
-
-* CerberusCMS comes with several HTML5 WebGL and Canvas 3D Video Games that are playable from the Application Module itself by using the computer keyboard or a gamepad. All HTML5 WebGL and Canvas 3D Video Games can be converted for use with CerberusCMS by opening the Video Game Source Programming Code files and rewriting the locations of the .js file extension paths, removing all slash commentation lines as well as by mass replacing each quote character in the Programming Code to then be compatible with the Pre-Hyper-Text-Post-Processor Parser format, being: forward slash and quote.
+* '''Store Front'''
+CerberusCMS additionally comes with a Digital Store Front named Store Front where Administrators and Moderators can list and sell physical and digital items within item categories and listing entries. The additional Application Module is capable of securely handling personal credit card, debit card, coupon card and CryptoCurrency transactions. The Store Front Application Module stores encrypted personal information of each client for shipping and receiving items and it instantly destroys all debit card and credit card numbers and unique transaction upon completion of the transaction itself to make it impossible for any card information to be hacked. It also provides and stores organized and printable invoices with tracking numbers, bar codes and QR codes that can be configured to automatically send detailed transaction information by electronic mail message to each issuing debit and credit card company electronic mail addresses to confirm that the transaction was made by the actual debit and credit card owner.
 
 3 Extra Application Modules
+
+* CerberusCMS comes with several HTML5 WebGL and Canvas 3D Video Games that are playable from the Application Module itself by using the computer keyboard or a gamepad. All HTML5 WebGL and Canvas 3D Video Games can be converted for use with CerberusCMS by opening the Video Game Source Programming Code files and rewriting the locations of the .js file extension paths, removing all slash commentation lines as well as by mass replacing each quote character in the Programming Code to then be compatible with the Pre-Hyper-Text-Post-Processor Parser format, being: forward slash and quote.
 
 ====Plug-In Application Modules====
 * '''Archive'''
@@ -1200,8 +1202,8 @@ G.C. Johnson
 * Everything Else
 
 ===Company Projects===
-Tinke Software was renamed from Rune Software and Rune Software, Inc. which was registered in 2001 through ICANN as RuneSoftware.org after an agreement was made over the name with Rune Software, GMBH in Germany. Tinke Software now maintains and periodically develops 23 unique and different software projects that use just about
-every programming language and scripting language.
+Tinke Software was renamed from Rune Software and Rune Software, Inc. in 2016. Rune Software, Inc. was registered in 2001 through ICANN as RuneSoftware.org after an agreement was made over the name with Rune Software, GMBH in Germany. Tinke Software now maintains and periodically develops 23 unique and different software projects that use just about
+every publicly available programming language and publicly available scripting language.
 
 Content Management Systems
 * Cerberus Content Management System :: Written In P.H.P.-S.Q.L.
