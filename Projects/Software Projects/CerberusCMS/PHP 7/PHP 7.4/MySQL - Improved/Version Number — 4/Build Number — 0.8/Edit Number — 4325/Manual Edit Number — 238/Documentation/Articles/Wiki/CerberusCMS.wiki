@@ -330,6 +330,162 @@ Options for managing Custom Web Page Entries, Custom Web Page Entry Data and App
 * '''VoIP Phone'''
 * '''Webspace'''
 
+* '''Account_Data'''
+Options for managing Registered Member Account data. Account Audio, Document, Image and Video File management options to upload and delete personal this personal data.
+
+* '''Account_Recovery'''
+Options for Registered Member account recovery.
+
+* '''Active_Members'''
+Displays all active Registered Member Accounts on the system searchable by first name, middle name, last name and username.
+
+* '''All_News'''
+Displays all News Article Entries searchable by news article entry title.
+
+* '''All_Shouts'''
+Displays last 100 Shout Text Messages, last 100 Voice Shout Messages, last 100 Video Shout Messages.
+
+* '''Application_List'''
+Displays all available Application Modules registered in the system complete with Installation Date, integrity SHA-256 File HASH comparison system and more.
+
+* '''Articles'''
+Displays all Article Entries searchable by article entry title.
+
+* '''Calculator'''
+Basic to Advanced calculator.
+
+* '''Calendar'''
+Basic to advanced calendar with event scheduling.
+
+* '''Clock'''
+Basic to advanced clock with atomic clock, unix-time, western-world gregorian timestamp and more.
+
+* '''Comment'''
+Options for adding, updating and deleting comments system-wide.
+
+* '''Contact_Administrator'''
+Options for contacting an Administration-Level Registered Member Account by Short-Message-Service Text Message or Electronic Mail Message. Options for adding live video message, pre-recorded video message and more.
+
+* '''Contacts'''
+Options for adding, updating and deleting contacts with labels. Phone numbers, electronic mail addresses, home addresses, work addresses and more.
+
+* '''Control_Panel'''
+Registered Member Account-Level Control Panel with hyper-link images that link to all Registered Member Account-Level application modules for managing the Registered Member Account.
+
+* '''Devices''''
+Options for testing, adding, removing and managing all connected personal devices on the system per Registered Member Account. Devices such as: web cameras, mobile cell phones and its cameras, personal computer / laptop / notebook and more.
+
+* '''Documentation'''
+Project documentation application module with hyper-links to all available documentation files.
+
+* '''Download / Torrent'''
+Options for adding, updating, removing downloads and torrent files for download as well as options for moving, updating and deleting the data that is downloaded. This application module will use the web server bandwidth to download the data. Files could be: paid or free blockbuster / netflix / hulu movies, music and more.
+
+* '''Electronic_Mail'''
+Options for sending and receiving electronic mail messages.
+
+* '''Emulators'''
+Video game emulator application module that will render and display emulated video games directly in the web browser. Video game console emulation supported: Atari, Nintendo Entertainment System, Super Nintendo Entertainment System, Nintendo 64, MAME / Multiple-Arcade-Machine-Emulator, HTML5 Canvas video games and more.
+
+* '''File_Manager'''
+Options for managing specific data: moving, copying, updating and deleting personal Registered Member Account data.
+
+* '''Files'''
+Displays personal Registered Member Account data: Audio, Document, Image and Video files.
+
+* '''Forum'''
+Fully featured forum complete with Forums, Forum Topics, Forum Topic Messages, Registered Member Account personal signatures and more.
+
+* '''Forward'''
+Options for forwarding and sharing Registered Member Account posts and anything else that is sharable on the system.
+
+* '''Friend'''
+Options for adding, updating and removing friends on the friend list.
+
+* '''Language'''
+Options for displaying and instantly changing the output language on the system.
+
+* '''Legal'''
+Displays this web application legal information.
+
+* '''Lightning_Calculate'''
+Lightning Mental Calculating application module for physical and mental training.
+
+* '''List'''
+Displays specific lists of organized data.
+
+* '''Login'''
+Options for Registered Member Account authentication.
+
+* '''Market'''
+Displays new available application modules for download and installation from the official GIT repository.
+
+* '''Media_Player'''
+Basic and advanced media player to play media such as: Audio / Music / Audio Books, Documents / PDFS, Images / Galleries, Video / Movies and more.
+
+* '''Member_Directory'''
+Displays all Registered Member Accounts on the system searchable by first name, middle name, last name and username.
+
+* '''Messenger'''
+Full featured instant messenger with live video and with clear-text and encrypted message options.
+
+* '''News'''
+Displays the latest news articles on the system.
+
+* '''Notepad'''
+Clear-Text and encrypted notepad with options for passwords and with referring URL.
+
+* '''Pages'''
+Displays custom made web pages in an alphabetical and organized list created by a moderator or by the administration.
+
+* '''Profile'''
+Displays organized and detailed information about the Registered Member Account with interaction options. Options for live video streaming, scroll-posting similar to Twitter and Facebook, commentation system, like system, media galleries and more.
+
+* '''Recommendations'''
+Recommendations for software and hardware.
+
+* '''Referrers'''
+Detailed referrer log with interaction features.
+
+* '''Register'''
+Options for registering a new Registered Member Account.
+
+* '''Reset_Password'''
+Options for password reset on a Registered Member Account.
+
+* '''Search'''
+Simple search options for searching different things on the system.
+
+* '''Submit_News'''
+Options for submitting new news article entry information to be reviewed and published by a moderator or administrator on the system.
+
+* '''System'''
+Displays detailed information such as: web server hardware information, web server network information, connecting device information, plug-ins, application modules, time, location and more.
+
+* '''System_Message'''
+Displays current and previous system-messages set by a moderator, administrator or automated services root-administration account.
+
+* '''Theme''''
+Displays all available theme packages and provides options for instantly changing the graphical theme.
+
+* '''Travel'''
+Displays detailed travel information and provides travel and backpacking advice with options for adding and removing backpacking / travel gear. This application module will also create a detailed PDF file of the backpacking gear so it can be printed and given to checkpoints or shown digitally.
+
+* '''Update_Account'''
+Options for updating the data, personal information and settings on the Registered Member Account.
+
+* '''Update_Password'''
+Options for updating the password on the Registered Member Account.
+
+* '''Upload'''
+Options for uploading new publicly shown files and data such as: Audio, Document, Image and Video files system-wide.
+
+* '''VoIP Phone'''
+Options for sending and receiving phone calls with Voice-Over-Internet-Protocol and WebRTC technology.
+
+* '''Webspace'''
+Options for adding, removing and updating personal Registered Member Account web space data and web site.
+
 51 Registered Member-Level Application Modules
 
 ====Background-Level Application Modules====
@@ -403,19 +559,37 @@ Application Panel That Displays The Latest Real-Simple-Syndication Feeds From Th
 ====Open :: Public Application Modules====
 * '''Engine_Validation'''
 
+* '''Engine_Validation'''
+Web Server Engine and this software project engine validation system.
+
 1 Public-Level Application Module
 
 ====Maintenance Applications====
 * '''Asclepius, Diagnostics'''
+Options for running tests on the web server: Mathematics CPU chip tests, CPU tests, setting / deleting cookie data, file integrity checks and more.
+
 * '''Fides, Integrity'''
+Options for checking file integrity on the system and re-installing the entire system upon failure. If the system fails an administrator can input the maintainence password to completely re-install the entire system without losing any of the data that was added after the point of initial installation.
 
 2 Maintenance Applications
 
 ====Pre-Installation and Pre-Configuration Applications====
 * '''Hephaestus'''
 * '''Architect'''
+* '''Pre-Installation_ToolKit'''
 * '''SQL_Generator'''
-* '''Installation_ToolKit'''
+
+* '''Hephaestus'''
+Options for building the entire system from scratch.
+
+* '''Architect'''
+Options for installing this web application software project.
+
+* '''Pre-Installation_ToolKit'''
+Options for configuring and installing this web application before the Architect installation options.
+
+* '''SQL_Generator'''
+Options for generating the Structured-Query-Language Database Structure for installaton.
 
 4 Pre-Configuration and Installation Applications.
 
