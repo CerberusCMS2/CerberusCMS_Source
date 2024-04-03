@@ -144,6 +144,8 @@ CerberusCMS comes with a Kernel File, Installation and Maintenance Applications,
 * Loops
 * Services
 
+====Services Root Administration-Level Application Modules :: Detailed Information====
+
 * '''Accounts'''
 Automated as well as options for managing accounts and account access levels. Automatically deletes unverified and non-activated registered member accounts.
 
@@ -165,6 +167,9 @@ Automated as well as options for managing background services and scheduling spe
 4 Services Root Administration-Level Application Modules
 
 ====Root Administration-Level Application Modules====
+* '''Tasks'''
+
+====Root Administration-Level Application Modules :: Detailed Information====
 * '''Tasks'''
 Options for managing current and future tasks as well as an advanced Task Manager that monitors T.C.P./I.P. connections in real-time.
 
@@ -195,6 +200,8 @@ Options for managing current and future tasks as well as an advanced Task Manage
 * '''Update'''
 * '''VoIP'''
 * '''Web_Pages'''
+
+====Administration-Level Application Modules :: Detailed Information====
 
 * '''Accounts'''
 Options for managing current Registered Member Accounts, Sending System Messages to current Registered Member Accounts.
@@ -329,6 +336,8 @@ Options for managing Custom Web Page Entries, Custom Web Page Entry Data and App
 * '''Upload'''
 * '''VoIP Phone'''
 * '''Webspace'''
+
+====Registered Member-Level Application Modules :: Detailed Information====
 
 * '''Account_Data'''
 Options for managing Registered Member Account data. Account Audio, Document, Image and Video File management options to upload and delete personal this personal data.
@@ -497,6 +506,22 @@ Activity Logging
 * '''Log_Member'''
 * '''Log_Visitor'''
 
+====Background-Level Application Modules :: Detailed Information====
+* '''Internal_Loops'''
+Automatically executed internal loop programming code.
+
+* '''Log_Administration'''
+Writes extremely detailed and extremely organized interaction information of each Registered Member Account with Administration-Level privileges.
+
+* '''Log_Background'''
+Writes extremely detailed background-level interaction information and automated account information.
+
+* '''Log_Member'''
+Writes extremely detailed interaction information of each Registered Member Account.
+
+* '''Log_Visitor'''
+Writes extremely detailed interaction information of each Non-Registered Vistor.
+
 5 Background Application-Modules
 
 ====Panel Application Modules====
@@ -514,6 +539,8 @@ Activity Logging
 * '''Networking.panel'''
 * '''Project_Badges.panel'''
 * '''RSS_Panel.panel'''
+
+====Panel Application Modules :: Detailed Information====
 
 * '''Administration Panel'''
 Application Panel With Options For Managing Administration Options.
@@ -559,12 +586,18 @@ Application Panel That Displays The Latest Real-Simple-Syndication Feeds From Th
 ====Open :: Public Application Modules====
 * '''Engine_Validation'''
 
+====Open :: Public Application Modules :: Detailed Information====
+
 * '''Engine_Validation'''
 Web Server Engine and this software project engine validation system.
 
 1 Public-Level Application Module
 
 ====Maintenance Applications====
+* '''Asclepius, Diagnostics'''
+* '''Fides, Integrity'''
+
+====Maintenance Applications :: Detailed Information====
 * '''Asclepius, Diagnostics'''
 Options for running tests on the web server: Mathematics CPU chip tests, CPU tests, setting / deleting cookie data, file integrity checks and more.
 
@@ -573,14 +606,16 @@ Options for checking file integrity on the system and re-installing the entire s
 
 2 Maintenance Applications
 
-====Pre-Installation and Pre-Configuration Applications====
+====Pre-Installation and Pre-Installation Configuration Applications====
 * '''Hephaestus'''
 * '''Architect'''
 * '''Pre-Installation_ToolKit'''
 * '''SQL_Generator'''
 
+====Pre-Installation and Pre-Installation Configuration Applications :: Detailed Information====
+
 * '''Hephaestus'''
-Options for building the entire system from scratch.
+Options for building the entire system from scratch before installation.
 
 * '''Architect'''
 Options for installing this web application software project.
@@ -595,6 +630,9 @@ Options for generating the Structured-Query-Language Database Structure for inst
 
 ====Secret Application Modules====
 * '''Lightning_Calculate'''
+
+====Secret Application Modules :: Detailed Information====
+* '''Lightning_Calculate'''
 With Version Number: 4, Build Number: 0.8, Edit Number: 4,325, Manual Edit Number: 238 - Final CerberusCMS comes with a secret Application Module named 'Lightning Calculate !' this Application Module teaches the user how to mentally calculate at lightning speed through repetitive patterns. This Application Module also teaches the user how to master
 the Methods of Loci as well as provides a 6 month intensive training course of expert nutrition and physical and mental training to obtain a Mastery of Mathematics.
 
@@ -606,19 +644,24 @@ The Application Module teaches fundamentally how to Mentally Calculate all Mathe
 
 ====Other Application Modules====
 * '''Droid'''
-
 * '''Disk Operating System'''
 
-* CerberusCMS comes with Android and Disk Operating System Emulator Application Modules that successfully emulate Android Applications and Disk Operating System Application Images Directly From
-the web browser itself.
+====Other Application Modules :: Detailed Information====
+* '''Droid'''
+Options for managing Google Android Open Source Software Operating System connected devices.
 
-* CerberusCMS additionally comes with a Digital Store Front named Market where Administrators can list and sell physical and digital items within item categories and entries. The additional Application Module is capable of securely handling personal credit card, debit card, coupon card and CryptoCurrency transactions. The Store Front Application Module stores encrypted personal information for shipping and receiving items. It also provides and stores printable invoices with tracking numbers, bar codes and QR codes.
+* '''Disk Operating System'''
+CerberusCMS comes with Android and Disk Operating System Emulator Application Modules that successfully emulate Android Applications and Disk Operating System Application Images Directly From the web browser itself.
+
+* CerberusCMS additionally comes with a Digital Store Front named Store Front where Administrators and Moderators can list and sell physical and digital items within item categories and listing entries. The additional Application Module is capable of securely handling personal credit card, debit card, coupon card and CryptoCurrency transactions. The Store Front Application Module stores encrypted personal information for shipping and receiving items and instantly destroys all debit card and credit card numbers and unique transaction upon completion of the transaction to make it impossible for any card information to be hacked. It also provides and stores printable invoices with tracking numbers, bar codes and QR codes.
 
 * CerberusCMS comes with several HTML5 WebGL and Canvas 3D Video Games that are playable from the Application Module itself by using the computer keyboard or a gamepad. All HTML5 WebGL and Canvas 3D Video Games can be converted for use with CerberusCMS by opening the Video Game Source Programming Code files and rewriting the locations of the .js file extension paths, removing all slash commentation lines as well as by mass replacing each quote character in the Programming Code to then be compatible with the Pre-Hyper-Text-Post-Processor Parser format, being: forward slash and quote.
 
 3 Extra Application Modules
 
 ====Plug-In Application Modules====
+
+====Plug-In Application Modules :: Detailed Information====
 * '''Archive'''
 This Plug-In Application Module automatically archives and stores archives of each Plug-In Application Module.
 
