@@ -916,76 +916,6 @@ The shown Mexican Blanket can be used as a poncho as well as a blanket. It is ha
 /*
  ============================================================================================================
  +
- + [ @ ] IF: Internal Application: Display :: Hygiene Gear
- +
- ============================================================================================================
-*/
-
-if ($_GET["Display"] == "HygieneGear") {
-
-/*
- ============================================================================================================
- +
- + [ @ ] IF: Internal Application: Display :: Hygiene Gear :: Gender :: Male
- +
- ============================================================================================================
-*/
-
-if ($_GET["Gender"] == "Male") {
-
-/*
- ============================================================================================================
- +
- + [ @ ] IF: Internal Application: Display :: Hygiene Gear :: Gender :: Male :: Type :: General
- +
- ============================================================================================================
-*/
-
-if ($_GET["Type"] == "General") {
-
-echo ("
-<BR><BR>
-Hygiene Gear :: Gender :: Male :: Head
-<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
-
-<BR><BR>
-Hygiene Gear :: Gender :: Male :: Head :: Face
-<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-
-<BR><BR>
-Hygiene Gear :: Gender :: Male :: Head :: Ears
-<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
-
-<BR><BR>
-Hygiene Gear :: Gender :: Male :: Head :: Nose
-<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
-
-<BR><BR>
-Hygiene Gear :: Gender :: Male :: Head :: Mouth
-<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
-
-<BR><BR>
-Hygiene Gear :: Gender :: Male :: Head :: Mouth :: Teeth
-<HR ALIGN=\"LEFT\" WIDTH=\"15%\">
-
-<BR><BR>
-Hygiene Gear :: Gender :: Male :: Middle Body
-<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
-
-<BR><BR>
-Hygiene Gear :: Gender :: Male :: Lower Body
-<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
-");
-
-} // [ + ] IF: Internal Application: Display :: Hygiene Gear
-
-} // [ + ] IF: Internal Application: Display :: Hygiene Gear :: Gender :: Male
-
-} // [ + ] IF: Internal Application: Display :: Hygiene Gear :: Gender :: Male :: Type :: General
-
-/*
- ============================================================================================================
- +
  + [ @ ] IF: Internal Application: Display :: Backpacking Gear :: Gender :: Male :: Type :: Desert
  +
  ============================================================================================================
@@ -1043,4 +973,75 @@ echo ("
 } // [ + ] IF: Internal Application: Display :: Backpacking Gear :: Gender :: Male
 
 } // [ + ] IF: Internal Application: Display :: Backpacking Gear
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Hygiene Gear
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Display"] == "HygieneGear") {
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Hygiene Gear :: Gender :: Male
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Gender"] == "Male") {
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Hygiene Gear :: Gender :: Male :: Type :: General
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Type"] == "General") {
+
+echo ("
+<BR><BR>
+Hygiene Gear :: Gender :: Male :: Head
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Hygiene Gear :: Gender :: Male :: Head :: Face
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+
+<BR><BR>
+Hygiene Gear :: Gender :: Male :: Head :: Ears
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Hygiene Gear :: Gender :: Male :: Head :: Nose
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Hygiene Gear :: Gender :: Male :: Head :: Mouth
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Hygiene Gear :: Gender :: Male :: Head :: Mouth :: Teeth
+<HR ALIGN=\"LEFT\" WIDTH=\"15%\">
+
+
+<BR><BR>
+Hygiene Gear :: Gender :: Male :: Middle Body
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Hygiene Gear :: Gender :: Male :: Lower Body
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+");
+
+} // [ + ] IF: Internal Application: Display :: Hygiene Gear
+
+} // [ + ] IF: Internal Application: Display :: Hygiene Gear :: Gender :: Male
+
+} // [ + ] IF: Internal Application: Display :: Hygiene Gear :: Gender :: Male :: Type :: General
 ?>
