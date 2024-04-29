@@ -405,8 +405,13 @@ Gender :: Male :: UnderWear
 <BR><BR>
 Gender :: Male :: UnderWear :: Thermals
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
-<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/General/Lightweight/UnderWear/Thermal/Thermal_Shirt_UnderArmor_Polyester.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
-<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/General/Lightweight/UnderWear/Thermal/Thermal_Pant_UnderArmor_Polyester.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<B>Thermals :: UnderArmor &#8482; :: Polyester Black :: Shirt</B><BR>
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/General/Lightweight/UnderWear/Thermal/Thermal_Shirt_UnderArmor_Polyester.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+
+<B>Thermals :: UnderArmor &#8482; :: Polyester Black :: Pant</B><BR>
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/General/Lightweight/UnderWear/Thermal/Thermal_Pant_UnderArmor_Polyester.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR><BR>
+
+<B>Thermals :: UnderArmor &#8482; :: Polyester Black :: Set</B><BR>
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/General/Lightweight/UnderWear/Thermal/Thermal_Set_Black.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
 The UnderArmor &#8482; Polyester Thermals are usually made in the U.S.A. and they can be modified with extra-tough kevlar threading, extra-tough nylon threading and other extra-tough threading materials to guarantee that the thermals will last for up to 6 - 7 months of daily use and these specific thermals will keep the body warm down to ~20 degrees farenheit.
 
