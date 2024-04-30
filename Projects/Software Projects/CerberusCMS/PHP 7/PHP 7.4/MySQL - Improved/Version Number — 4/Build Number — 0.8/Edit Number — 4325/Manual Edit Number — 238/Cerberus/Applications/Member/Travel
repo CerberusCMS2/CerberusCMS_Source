@@ -578,7 +578,7 @@ Gender :: Male :: Backpack :: Military Issue :: Desert :: Molle 3-Day Backpack
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/General/Lightweight/Backpack/Molle/Backpack_Unbranded_MilitaryIssue_Molle_Black.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
 The shown Non-Branded Military Issue Nylon Backpack with backpack attachments is usually made in the U.S.A. and it is made of a high quality thick nylon material and it is guaranteed to last for up to 365 days of heavy usage in hot and dry desert weather conditions.
-This backpack with attachments can carry up to ~40 pounds of weight with attached hand gun and ammunition cartridges. The shoulder straps are completely removable and the waist clip with chest clip will guarantee that the backpack stays tight around the body.
+This backpack with attachments can carry up to ~40 pounds of weight with attached hand-gun and ammunition cartridges. The shoulder straps are completely removable and the waist clip with chest clip will guarantee that the backpack stays tight around the body.
 The zippers can be modified so that if anyone that travels by in any circumstance will never be able to steal the backpack or remove the backpack from the person wearing it. The extra thick nylon material makes it very difficult
 for pickpockets to cut the backpack open with a razor blade to steal any items or any objects out of the backpack.
 
@@ -900,7 +900,7 @@ Gender :: Male :: FireArm :: AK-47
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/General/Lightweight/FireArm/FireArm_AK47.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
 The shown authentic Atmova Kalashinokov / Atmovat Kalashinokova is made in Russia and remains one of the best automatic rifles that are commercially available where hundreds of customizations can be made to this firearm. This rifle almost never jams due to a gas rotating bolt that hits the ammunition. This specific rifle is completely water-proof due to the kind of metal and laminated wood that it is made out of and because a gas rotating bolt hits the ammunition it can be fired underwater. This rifle can be carried with several double-taped and triple-taped square or banana shaped magazines for an ultra fast 0 - 5 second reload. Triple-taped magazines for an authentic AK-47 can be made by taping two magazines together where each one is pointed in the opposite direction and then by taping the third magazine sideways at an angle.<BR><BR>
 
-This specific rifle is usually the rifle of choice of small militias, mexican cartels and small armies due to the extreme effectiveness and focus of the rifle whereas most guns and rifles that are manufactured in the United States after the 1970s regularly jam in long durations of fire due to the low quality parts that are used in those hand guns and in those rifles.
+This specific rifle is usually the rifle of choice of small militias, mexican cartels and small armies due to the extreme effectiveness and focus of the rifle whereas most guns and rifles that are manufactured in the United States after the 1970s regularly jam in long durations of fire due to the low quality parts that are used in those hand-guns and in those rifles.
 
 <BR><BR>
 Gender :: Male :: Blanket
@@ -917,7 +917,7 @@ Gender :: Male :: Example GoBag :: Desert :: Lightweight
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/General/Lightweight/Example/[2020] G.C. Johnson - Backpacking Gear - Light Weight - Desert - 0001.jpg?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/General/Lightweight/Example/[2020] G.C. Johnson - Backpacking Gear - Light Weight - Desert - 0002.jpg?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
-The images shown here show a real Desert Weather Conditions GoBag that weighs approximately ~40 pounds.
+The images shown here show a real Desert Weather Conditions GoBag that weighs approximately ~40 pounds including M1911 hand-gun.
 ");
 
 } // [ + ] IF: Internal Application: Display :: Backpacking Gear :: Type :: General
