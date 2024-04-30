@@ -1247,6 +1247,19 @@ Hygiene Gear :: Gender :: Male :: Miscellanious :: Full Body :: Razors :: Gillet
 <HR ALIGN=\"LEFT\" WIDTH=\"15%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Hygiene/General/Lightweight/Full_Body/Miscellanious/HygieneGear_Miscellanious_Razors_Gillete_3Blade.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"100\" HEIGHT=\"175\" CLASS=\"AMMTravel\"></IMG><BR>
 The Gillete &trade; Travel Size 3-Blade Disposable Razor remains one of the best single use razors that are commercially avaialable.
+
+<BR><BR>
+Hygiene Gear :: Gender :: Male :: Head :: Face :: Lotions
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Hygiene Gear :: Gender :: Male :: Head :: Face :: Lotions :: Mixed Lotions
+<HR ALIGN=\"LEFT\" WIDTH=\"15%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Hygiene/General/Lightweight/Head/Face/HygieneGear_Head_Face_Lotion_GoldBond.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"100\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Hygiene/General/Lightweight/Head/Face/HygieneGear_Head_Face_Lotion_Jergens.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"100\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Hygiene/General/Lightweight/Head/Face/HygieneGear_Head_Face_Lotion_Vaseline.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"100\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The GoldBond &trade; Skin Lotion, Jergens &trade; Skin Lotion and Vaseline &trade; Skin Lotion in travel size combined together with a Liquid Multi-Vitamin mixed into this lotion mix will force the skin to heal faster and the skin will instantly absorb the lotion mix.
+
 ");
 
 } // [ + ] IF: Internal Application: Display :: Hygiene Gear
