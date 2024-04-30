@@ -650,7 +650,7 @@ Electronics_Phone_SmartPhone_Nokia_6.1_Plus
 Gender :: Male :: Electronics :: Mobile Cell Phone :: Cell Tower
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/General/Lightweight/Electronics/Electronics_Phone_SmartPhone_Google_Pixel_3XL.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
-<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/General/Lightweight/Electronics/Electronics_Phone_SmartPhone_Nokia_6.1_Plus.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/General/Lightweight/Electronics/Electronics_Phone_SmartPhone_Nokia_6.1_Plus.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"75\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
 The Google &#8482; Pixel Series and the Nokia &trade; 6.1 Plus model Mobile Cell Devices can be flashed with a Linux Operating System such as KDE Linux or a custom AOSP Operating System such as CyanogenMod / LineageOS.
 
 <BR><BR>
@@ -680,13 +680,13 @@ Gender :: Male :: Electronics :: Data Storage
 <BR><BR>
 Gender :: Male :: Electronics :: Data Storage :: MicroSD :: SanDisk
 <HR ALIGN=\"LEFT\" WIDTH=\"20%\">
-<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/General/Lightweight/Electronics/Electronics_DataStorage_MicroSDXC_SanDisk.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/General/Lightweight/Electronics/Electronics_DataStorage_MicroSDXC_SanDisk.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"75\" CLASS=\"AMMTravel\"></IMG><BR>
 This specific SanDisk &#8482; MicroSDXC Data Storage Card can be flashed with custom firmware to store up to 128 GB of secure and encrypted data in a Linux Operating System flashed mobile cell phone.
 
 <BR><BR>
 Gender :: Male :: Electronics :: Data Storage :: MicroSD :: USB Data Storage Stick
 <HR ALIGN=\"LEFT\" WIDTH=\"20%\">
-<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/General/Lightweight/Electronics/Electronics_DataStorage_USB_SanDisk.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/General/Lightweight/Electronics/Electronics_DataStorage_USB_SanDisk.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"75\" CLASS=\"AMMTravel\"></IMG><BR>
 This specific SanDisk &#8482; USB Data Storage Stick can be flashed with custom firmware to store up to 1 Terabyte of secure and encrypted data. The USB Data Storage Stick can be used several thousand
 times of writing and deleting data.
 
@@ -720,7 +720,7 @@ Gender :: Male :: Electronics :: Power :: Power Adapters
 Gender :: Male :: Electronics :: Power :: Power Adapters :: Universal
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/General/Lightweight/Electronics/Electronics_PowerAdapter_BlackWeb_Black.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
-The BlackWeb &trade; Unviversal Power Adapter and High Capacity Braided Power Cable feature high capacity electrical delivery with high quality copper wiring. The high capacity electrical delivery can send up to 4 Volts of electrical current with high amperage @ 3 Amperes to quickly charge up electronics to full battery capacity. This power adapter system will work with any power outlet.
+The BlackWeb &trade; Unviversal Power Adapter and High Capacity Braided Power Cable feature high capacity electrical delivery with high quality copper wiring. The high capacity electrical delivery can send up to ~4 Volts of electrical current with high amperage @ ~3 Amperes to quickly charge up electronics to full battery capacity. This power adapter system will work with any power outlet.
 
 <BR><BR>
 Gender :: Male :: Electronics :: Power :: Power Packs
@@ -911,6 +911,13 @@ Gender :: Male :: Blanket :: Mexican Blankets
 <HR ALIGN=\"LEFT\" WIDTH=\"10%\">
 <IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/General/Lightweight/Blanket/Blanket_Mexican_Blue.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
 The shown Mexican Blanket can be used as a poncho as well as a blanket. It is hand made in Mexico. The fabric material is guaranteed for long lasting use and will keep the body very warm in different weather conditions.
+
+<BR><BR>
+Gender :: Male :: Example GoBag :: Desert :: Lightweight
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/General/Lightweight/Example/[2020] G.C. Johnson - Backpacking Gear - Light Weight - Desert - 0001.jpg?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/General/Lightweight/Example/[2020] G.C. Johnson - Backpacking Gear - Light Weight - Desert - 0002.jpg?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The images shown here show a real Desert Weather Conditions GoBag that weighs approximately ~40 pounds.
 ");
 
 } // [ + ] IF: Internal Application: Display :: Backpacking Gear :: Type :: General
