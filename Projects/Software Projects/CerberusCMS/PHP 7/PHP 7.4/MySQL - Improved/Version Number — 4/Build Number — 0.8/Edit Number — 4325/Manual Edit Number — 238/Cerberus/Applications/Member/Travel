@@ -1104,6 +1104,14 @@ Hygiene Gear :: Gender :: Male :: Head :: Face
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 
 <BR><BR>
+Hygiene Gear :: Gender :: Male :: Head :: Face :: Lotions
+<HR ALIGN=\"LEFT\" WIDTH=\"15%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Hygiene/General/Lightweight/Head/Face/HygieneGear_Head_Face_Lotion_GoldBond.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"75\" HEIGHT=\"75\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Hygiene/General/Lightweight/Head/Face/HygieneGear_Head_Face_Lotion_Jergens.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"75\" HEIGHT=\"75\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Hygiene/General/Lightweight/Head/Face/HygieneGear_Head_Face_Lotion_Vaseline.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"75\" HEIGHT=\"75\" CLASS=\"AMMTravel\"></IMG><BR>
+The GoldBond &trade; Skin Lotion, Jergens &trade; Skin Lotion and Vaseline &trade; Skin Lotion in travel size combined together with a Liquid Multi-Vitamin mixed into this lotion mix will force the skin to heal faster and the skin will instantly absorb the lotion mix.
+
+<BR><BR>
 Hygiene Gear :: Gender :: Male :: Head :: Mouth :: Ears
 <HR ALIGN=\"LEFT\" WIDTH=\"15%\">
 
