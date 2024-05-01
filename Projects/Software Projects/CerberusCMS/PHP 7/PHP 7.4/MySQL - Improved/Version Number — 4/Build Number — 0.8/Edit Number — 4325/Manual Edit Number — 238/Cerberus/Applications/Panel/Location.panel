@@ -78,7 +78,18 @@ echo ("
 * Acceleration:<BR>
 * Linear-Acceleration:<BR>
 * Direction:<BR>
-* Gravity:<BR>
+* Gravity:<BR><BR>
+
+<B>Connected Device :: Network</B><BR>
+* <I><B>Internet Protocol Address :: Connected Device</B></I><BR>
+<A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_REMOTE_SERVER_ADDRESS\" TITLE=\":: Open & Display :: The :: Who-Is Information :: For :: Internet Protocol Address: $_GLOBAL_REMOTE_SERVER_ADDRESS :: \" TARGET=\"_NEW\">$_GLOBAL_REMOTE_SERVER_ADDRESS :: $_GLOBAL_REMOTE_SERVER_PORT</A><BR><BR>
+
+* <I><B>Internet Protocol Address :: This Web Server</B></I><BR>
+<A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_LOCAL_SERVER_ADDRESS\" TITLE=\":: Open & Display :: The :: Who-Is Information :: For :: Internet Protocol Address: $_GLOBAL_LOCAL_SERVER_ADDRESS ::\" TARGET=\"_NEW\">$_GLOBAL_LOCAL_SERVER_ADDRESS :: $_GLOBAL_LOCAL_SERVER_PORT</A><BR><BR>
+
+* <I><B>Connection Type :: Connected Device</B></I><BR>
+$_GLOBAL_LOCAL_SERVER_HTTP_CONNECTION_TYPE<BR>
+
 <HR>
 $_GLOBAL_SYSTEM_PLUGIN_LOCATION_GPS_COORDINATES_XYZ_HTML5_APPLICATION_PANEL
 $_GLOBAL_SYSTEM_PLUGIN_LOCATION_GPS_COORDINATES_XY_HTML5_HTR_APPLICATION_PANEL
