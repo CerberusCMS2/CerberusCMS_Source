@@ -91,7 +91,6 @@ $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO					= $_POST['AM
 $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT					= str_replace($_GLOBAL_PLUGIN_SAFEHTML_CODE, $_GLOBAL_PLUGIN_SAFEHTML_CODE_REPLACE, $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT);
 $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT					= str_replace($_GLOBAL_PLUGIN_SAFEHTML_SMILEYS, $_GLOBAL_PLUGIN_SAFEHTML_SMILEYS_REPLACE, $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT);
 
-
 /*
  ============================================================================================================
  + Shout Message :: Video File :: Upload File Size Limit
@@ -106,7 +105,7 @@ $_Application_Module_Member_All_Shouts_MAXIMUM_UPLOAD_LIMIT_FILE				= $_GLOBAL_S
  ============================================================================================================
 */
 
-$_Application_Module_Member_All_Shouts_SPECIFY_UPLOAD_DIRECTORY					= "./";
+$_Application_Module_Member_All_Shouts_SPECIFY_UPLOAD_DIRECTORY					= "./Temporary/Shouts/";
 $_Application_Module_Member_All_Shouts_SPECIFY_UPLOAD_FILE_VIDEO				= $_Application_Module_Member_All_Shouts_SPECIFY_UPLOAD_DIRECTORY . basename($_FILES['AMM_All_Shouts_Shout_Message_Video']['name']);
 
 /*
@@ -149,11 +148,23 @@ $_Application_Module_Member_All_Shouts_SPECIFY_UPLOAD_FILE_VIDEO_EXTENSION_TYPE	
 $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages ORDER BY id DESC LIMIT 100");
 $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_NUMBER_OF_ROWS	= $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES->num_rows;
 
+/*
+ ============================================================================================================
+ + IF: Shout Message Entries :: Are Less Than Or Equal To: Zero
+ ============================================================================================================
+*/
+
 if ($_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_NUMBER_OF_ROWS <= 0) {
 
 											echo ($_Application_Module_Member_Message_All_Shouts_NO_SHOUTS);
 
 } else {
+
+/*
+ ============================================================================================================
+ + WHILE: Retrieving All Shout Message Entries From The Database Management System Server Database
+ ============================================================================================================
+*/
 
 while ($_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_Fetch_Array = $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES->fetch_array(MYSQLI_BOTH)) {
 
@@ -413,7 +424,7 @@ unlink("./Temporary/Shouts/$_Application_Module_Member_All_Shouts_POST_SHOUT_MES
 
 echo ("[ Done ]<BR>");
 
-$_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages(message_author,message_text,message_video,message_timestamp)VALUES('$_GLOBAL_COOKIE_MEMBER_USERNAME','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT','$_GLOBAL_LOCAL_SERVER_TIME_UNIX - $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO','$_GLOBAL_LOCAL_SERVER_TIME_UNIX')");
+$_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT_MESSAGE				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages(message_author,message_text,message_video,message_timestamp)VALUES('$_GLOBAL_COOKIE_MEMBER_USERNAME','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT','$_GLOBAL_LOCAL_SERVER_TIME_UNIX - $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO','$_GLOBAL_LOCAL_SERVER_TIME_UNIX')");
 
 /*
  ============================================================================================================
@@ -433,7 +444,7 @@ if (strlen($_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT) > "25
  ============================================================================================================
 */
 
-if ($_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT) {
+if ($_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT_MESSAGE) {
 
 											echo ($_Application_Module_Member_Message_All_Shouts_POST_SHOUT);
 
@@ -451,7 +462,7 @@ if ($_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT) {
  ============================================================================================================
 */
 
-// [ C ] $_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT->free_result();
+// [ C ] $_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT_MESSAGE->free_result();
 
 /*
  ============================================================================================================
