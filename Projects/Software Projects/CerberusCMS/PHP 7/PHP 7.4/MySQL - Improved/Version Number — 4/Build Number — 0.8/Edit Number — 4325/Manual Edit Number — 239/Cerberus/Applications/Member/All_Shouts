@@ -186,6 +186,10 @@ $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_TIMESTAMP				= $_Appli
 if ($_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_VIDEO != null) {
 
 echo ("
+											<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+												<B>Shout Message</B>
+											<HR ALIGN=\"LEFT\" WIDTH=\"50%\"><BR><BR>
+
 											<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 												<B>Shout Message Text</B>
 											<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
@@ -207,6 +211,10 @@ echo ("
 } else {
 
 echo ("
+											<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+												<B>Shout Message</B>
+											<HR ALIGN=\"LEFT\" WIDTH=\"50%\"><BR><BR>
+
 											<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 												<B>Shout Message Text</B>
 											<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
