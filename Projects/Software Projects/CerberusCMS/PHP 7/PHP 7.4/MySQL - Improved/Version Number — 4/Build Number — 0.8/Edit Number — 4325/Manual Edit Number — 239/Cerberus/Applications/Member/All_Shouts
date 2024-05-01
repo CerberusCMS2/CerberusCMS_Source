@@ -322,7 +322,7 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) 
  ============================================================================================================
 */
 
-if (move_uploaded_file($_FILES['AMM_All_Shouts_Shout_Message_Video']['tmp_name'], $_Application_Module_Member_All_Shouts_SPECIFY_UPLOAD_FILE_VIDEO)) {
+if (move_uploaded_file($_FILES['AMM_All_Shouts_Shout_Message_Video']['tmp_name'], "./Temporary/Shouts/$_GLOBAL_LOCAL_SERVER_TIME_UNIX - $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO")) {
 
 											echo ("* Cerberus: Attempting To Upload The Shout Message Video File: $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO ... Wait.<BR>");
 											echo ("[ Done ]<BR><BR>");
@@ -395,7 +395,7 @@ if (filesize($_Application_Module_Member_All_Shouts_SPECIFY_UPLOAD_FILE_VIDEO) >
 
 } // [ + ] IF:
 
-$_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages(message_author,message_text,message_video,message_timestamp)VALUES('$_GLOBAL_COOKIE_MEMBER_USERNAME','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO','$_GLOBAL_LOCAL_SERVER_TIME_UNIX')");
+$_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages(message_author,message_text,message_video,message_timestamp)VALUES('$_GLOBAL_COOKIE_MEMBER_USERNAME','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT','$_GLOBAL_LOCAL_SERVER_TIME_UNIX - $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO','$_GLOBAL_LOCAL_SERVER_TIME_UNIX')");
 
 /*
  ============================================================================================================
