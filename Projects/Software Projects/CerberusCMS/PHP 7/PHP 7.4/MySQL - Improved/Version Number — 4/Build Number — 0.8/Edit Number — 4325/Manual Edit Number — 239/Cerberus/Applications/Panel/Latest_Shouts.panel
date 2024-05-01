@@ -73,8 +73,8 @@
  ============================================================================================================
 */
 
-$_Application_Module_Panel_Latest_Shouts_DB_Query_SELECT_SHOUTS			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages ORDER BY id DESC LIMIT 10");
-$_Application_Module_Panel_Latest_Shouts_DB_Query_SELECT_SHOUTS_NUMBER_OF_ROWS	= $_Application_Module_Panel_Latest_Shouts_DB_Query_SELECT_SHOUTS->num_rows;
+$_Application_Module_Panel_Latest_Shouts_DB_Query_SELECT_SHOUTS				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages ORDER BY id DESC LIMIT 10");
+$_Application_Module_Panel_Latest_Shouts_DB_Query_SELECT_SHOUTS_NUMBER_OF_ROWS		= $_Application_Module_Panel_Latest_Shouts_DB_Query_SELECT_SHOUTS->num_rows;
 
 /*
  ============================================================================================================
@@ -96,15 +96,16 @@ if ($_Application_Module_Panel_Latest_Shouts_DB_Query_SELECT_SHOUTS_NUMBER_OF_RO
 
 while ($_Application_Module_Panel_Latest_Shouts_DB_Query_SELECT_SHOUTS_Fetch_Array = $_Application_Module_Panel_Latest_Shouts_DB_Query_SELECT_SHOUTS->fetch_array(MYSQLI_BOTH)) {
 
-$_Application_Module_Panel_Latest_Shouts_LIST_SHOUT_ID			= $_Application_Module_Panel_Latest_Shouts_DB_Query_SELECT_SHOUTS_Fetch_Array['id'];
-$_Application_Module_Panel_Latest_Shouts_LIST_SHOUT_AUTHOR		= $_Application_Module_Panel_Latest_Shouts_DB_Query_SELECT_SHOUTS_Fetch_Array['message_author'];
-$_Application_Module_Panel_Latest_Shouts_LIST_SHOUT_DATA		= $_Application_Module_Panel_Latest_Shouts_DB_Query_SELECT_SHOUTS_Fetch_Array['message_data'];
-$_Application_Module_Panel_Latest_Shouts_LIST_SHOUT_TIME		= $_Application_Module_Panel_Latest_Shouts_DB_Query_SELECT_SHOUTS_Fetch_Array['message_time'];
+$_Application_Module_Panel_Latest_Shouts_LIST_SHOUT_MESSAGE_ID				= $_Application_Module_Panel_Latest_Shouts_DB_Query_SELECT_SHOUTS_Fetch_Array['id'];
+$_Application_Module_Panel_Latest_Shouts_LIST_SHOUT_MESSAGE_AUTHOR			= $_Application_Module_Panel_Latest_Shouts_DB_Query_SELECT_SHOUTS_Fetch_Array['message_author'];
+$_Application_Module_Panel_Latest_Shouts_LIST_SHOUT_MESSAGE_TEXT			= $_Application_Module_Panel_Latest_Shouts_DB_Query_SELECT_SHOUTS_Fetch_Array['message_text'];
+$_Application_Module_Panel_Latest_Shouts_LIST_SHOUT_MESSAGE_VIDEO			= $_Application_Module_Panel_Latest_Shouts_DB_Query_SELECT_SHOUTS_Fetch_Array['message_video'];
+$_Application_Module_Panel_Latest_Shouts_LIST_SHOUT_MESSAGE_TIMESTAMP			= $_Application_Module_Panel_Latest_Shouts_DB_Query_SELECT_SHOUTS_Fetch_Array['message_timestamp'];
 
 echo ("
-											<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Panel_Latest_Shouts_LIST_SHOUT_AUTHOR\" TITLE=\":: Open & Display The Application Module :: Profile :: For :: $_Application_Module_Panel_Latest_Shouts_LIST_SHOUT_AUTHOR&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">$_Application_Module_Panel_Latest_Shouts_LIST_SHOUT_AUTHOR</A> Shouted:<BR>
-											<B>&#34;</B><I>$_Application_Module_Panel_Latest_Shouts_LIST_SHOUT_DATA</I><B>&#34;</B><BR>
-											On: $_Application_Module_Panel_Latest_Shouts_LIST_SHOUT_TIME<BR><BR>
+											<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Panel_Latest_Shouts_LIST_SHOUT_MESSAGE_AUTHOR\" TITLE=\":: Open & Display The Application Module :: Profile :: For :: $_Application_Module_Panel_Latest_Shouts_LIST_SHOUT_MESSAGE_AUTHOR&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">$_Application_Module_Panel_Latest_Shouts_LIST_SHOUT_MESSAGE_AUTHOR</A> Shouted:<BR>
+											<B>&#34;</B><I>$_Application_Module_Panel_Latest_Shouts_LIST_SHOUT_MESSAGE_TEXT</I><B>&#34;</B><BR>
+											On: $_Application_Module_Panel_Latest_Shouts_LIST_SHOUT_MESSAGE_TIMESTAMP<BR><BR>
 ");
 
 } // [ + ] WHILE: Retrieving Latest Shout Entries From Database Server
