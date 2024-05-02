@@ -68,14 +68,14 @@
 /*
  ============================================================================================================
  +
- + Post Shout Message
+ + Variables
  +
  ============================================================================================================
 */
 
 /*
  ============================================================================================================
- + Shout Message Post Variables
+ + Variables :: POST Variables :: Shout Message Post Variables
  ============================================================================================================
 */
 
@@ -84,7 +84,7 @@ $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO					= $_POST['AM
 
 /*
  ============================================================================================================
- + Replace Harmful Characters
+ + Digital Information Security :: Replace Harmful Hyper-Text-Markup-Language Characters
  ============================================================================================================
 */
 
@@ -93,60 +93,30 @@ $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT					= str_replace
 
 /*
  ============================================================================================================
- + Shout Message :: Video File :: Upload File Size Limit
+ + Shout Message :: Video File :: Upload File Size Limitations
  ============================================================================================================
 */
 
-$_Application_Module_Member_All_Shouts_MAXIMUM_UPLOAD_LIMIT_FILE				= $_GLOBAL_SYSTEM_UPLOAD_SIZE_PUBLIC_FILE_CATEGORIES / 1024;
-
-/*
- ============================================================================================================
- + Shout Message :: Video File :: File Upload Details
- ============================================================================================================
-*/
-
-$_Application_Module_Member_All_Shouts_SPECIFY_UPLOAD_DIRECTORY					= "./Temporary/Shouts/";
-$_Application_Module_Member_All_Shouts_SPECIFY_UPLOAD_FILE_VIDEO				= $_Application_Module_Member_All_Shouts_SPECIFY_UPLOAD_DIRECTORY . basename($_FILES['AMM_All_Shouts_Shout_Message_Video']['name']);
-
-/*
- ============================================================================================================
- + Shout Message :: File Extensions :: Allowed :: Video File
- ============================================================================================================
-*/
-
-$_Application_Module_Member_All_Shouts_ALLOWED_FILE_EXTENSION_VIDEO				= array();
-$_Application_Module_Member_All_Shouts_ALLOWED_FILE_EXTENSION_VIDEO[0]				= "mp4";
-$_Application_Module_Member_All_Shouts_ALLOWED_FILE_EXTENSION_VIDEO[1]				= "mov";
-$_Application_Module_Member_All_Shouts_ALLOWED_FILE_EXTENSION_VIDEO[2]				= "wmv";
-$_Application_Module_Member_All_Shouts_ALLOWED_FILE_EXTENSION_VIDEO[3]				= "avi";
-$_Application_Module_Member_All_Shouts_ALLOWED_FILE_EXTENSION_VIDEO[4]				= "flv";
-$_Application_Module_Member_All_Shouts_ALLOWED_FILE_EXTENSION_VIDEO[5]				= "swf";
-$_Application_Module_Member_All_Shouts_ALLOWED_FILE_EXTENSION_VIDEO[6]				= "webm";
-$_Application_Module_Member_All_Shouts_ALLOWED_FILE_EXTENSION_VIDEO[7]				= "qt";
-$_Application_Module_Member_All_Shouts_ALLOWED_FILE_EXTENSION_VIDEO[8]				= "mpeg";
-$_Application_Module_Member_All_Shouts_ALLOWED_FILE_EXTENSION_VIDEO[9]				= "mpg";
-
-/*
- ============================================================================================================
- + Shout Message :: Video File :: File Data Specifications
- ============================================================================================================
-*/
-
-$_Application_Module_Member_All_Shouts_PATHINFO_FILE_VIDEO	 				= pathinfo($_FILES['AMM_All_Shouts_Shout_Message_Video']['name']);
-$_Application_Module_Member_All_Shouts_EXTENSION_FILE_VIDEO					= $_Application_Module_Member_All_Shouts_PATHINFO_FILE_VIDEO['extension'];
-$_Application_Module_Member_All_Shouts_BASENAME_FILE_VIDEO					= $_Application_Module_Member_All_Shouts_PATHINFO_FILE_VIDEO['basename'];
-$_Application_Module_Member_All_Shouts_SPECIFY_UPLOAD_FILE_VIDEO_EXTENSION_TYPE			= pathinfo($_Application_Module_Member_All_Shouts_BASENAME_FILE_VIDEO, PATHINFO_EXTENSION);
+$_Application_Module_Member_All_Shouts_MAXIMUM_UPLOAD_LIMIT_FILE				= $_GLOBAL_SYSTEM_UPLOAD_SIZE_APPLICATION_MODULE_SHOUTS / 1024;
 
 /*
  ============================================================================================================
  +
- + Retrieve All Shout Message Entries
+ + Database Management System Server :: Database Query :: Retrieve All Shout Message Entries
  +
  ============================================================================================================
 */
 
 $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages ORDER BY id DESC LIMIT 100");
 $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_NUMBER_OF_ROWS	= $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES->num_rows;
+
+/*
+ ============================================================================================================
+ +
+ + Shout Message :: Video File :: Specifications
+ +
+ ============================================================================================================
+*/
 
 $_Application_Module_Member_All_Shouts_DIRECTORY_UPLOAD_VIDEO					= "./Temporary/Shouts/";
 $_Application_Module_Member_All_Shouts_FILE_VIDEO						= $_Application_Module_Member_All_Shouts_DIRECTORY_UPLOAD_VIDEO . basename($_FILES["AMM_All_Shouts_Shout_Message_Video"]["name"]);
@@ -155,7 +125,7 @@ $_Application_Module_Member_All_Shouts_FILE_EXTENSION_ALLOWED					= ['mp4', 'wmv
 
 /*
  ============================================================================================================
- + IF: Shout Message Entries :: Are Less Than Or Equal To: Zero
+ + IF: Database Management System Server Database :: Shout Message Entries :: Are Less Than Or Equal To: Zero
  ============================================================================================================
 */
 
@@ -176,14 +146,14 @@ while ($_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES
 /*
  ============================================================================================================
  +
- + List Shout Message Entries
+ + List :: All Shout Message Entries From The Database Management System Server Database
  +
  ============================================================================================================
 */
 
 /*
  ============================================================================================================
- + Shout Message Database Entry Variables
+ + Shout Message Entries Database Entry Variables
  ============================================================================================================
 */
 
@@ -195,7 +165,7 @@ $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_TIMESTAMP				= $_Appli
 
 /*
  ============================================================================================================
- + Display Last 100 Shout Messages
+ + Display :: Last 100 Shout Message Entries With Video Files
  ============================================================================================================
 */
 
@@ -224,6 +194,12 @@ echo ("
 											~ <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;All_Shouts&amp;DeleteID&#61;$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_ID&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Delete This Shout Message Entry ::\">Delete This Shout Message Entry</A>
 											<HR ALIGN=\"LEFT\" WIDTH=\"50%\"><BR><BR>
 ");
+
+/*
+ ============================================================================================================
+ + Display :: Last 100 Shout Message Entries Without Video Files
+ ============================================================================================================
+*/
 
 } else {
 
