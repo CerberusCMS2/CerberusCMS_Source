@@ -123,6 +123,11 @@ $_Application_Module_Member_All_Shouts_FILE_VIDEO						= $_Application_Module_Me
 $_Application_Module_Member_All_Shouts_FILE_VIDEO_LOWERCASE					= strtolower(pathinfo(_Application_Module_Member_All_Shouts_FILE_VIDEO, PATHINFO_EXTENSION));
 $_Application_Module_Member_All_Shouts_FILE_EXTENSION_ALLOWED					= ['mp4', 'wmv', 'webm', 'wma'];
 
+$_Application_Module_Member_All_Shouts_FILE_VIDEO_PATHINFO	 				= pathinfo($_FILES['AMM_All_Shouts_Shout_Message_Video']['name']);
+$_Application_Module_Member_All_Shouts_FILE_VIDEO_EXTENSION					= $_Application_Module_Member_All_Shouts_FILE_VIDEO_PATHINFO['extension'];
+$_Application_Module_Member_All_Shouts_FILE_VIDEO_BASENAME					= $_Application_Module_Member_All_Shouts_FILE_VIDEO_PATHINFO['basename'];
+$_Application_Module_Member_All_Shouts_FILE_VIDEO_FILE_EXTENSION_TYPE				= pathinfo($_Application_Module_Member_All_Shouts_FILE_VIDEO_BASENAME, PATHINFO_EXTENSION);
+
 /*
  ============================================================================================================
  + IF: Database Management System Server Database :: Shout Message Entries :: Are Less Than Or Equal To: Zero
@@ -331,11 +336,11 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) 
 
 if (move_uploaded_file($_FILES["AMM_All_Shouts_Shout_Message_Video"]["tmp_name"], $_Application_Module_Member_All_Shouts_FILE_VIDEO)) {
 
-	echo ("* Cerberus: I have uploaded the Shout Message Entry Video File: $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO Successfully.<BR><BR>");
+	echo ("* Cerberus: I have uploaded the Shout Message Entry Video File: $_Application_Module_Member_All_Shouts_FILE_VIDEO Successfully.<BR><BR>");
 
-	echo ("* Cerberus: Renaming The Shout Message Entry Video File: $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO To: $_GLOBAL_LOCAL_SERVER_TIME_UNIX - $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO ... Wait.<BR>");
+	echo ("* Cerberus: Renaming The Shout Message Entry Video File: $_Application_Module_Member_All_Shouts_FILE_VIDEO To: $_Application_Module_Member_All_Shouts_FILE_VIDEO - $_GLOBAL_LOCAL_SERVER_TIME_UNIX.$_Application_Module_Member_All_Shouts_FILE_VIDEO_FILE_EXTENSION_TYPE ... Wait.<BR>");
 
-copy("./Temporary/Shouts/$_Application_Module_Member_All_Shouts_FILE_VIDEO","./Temporary/Shouts/$_GLOBAL_LOCAL_SERVER_TIME_UNIX - $_Application_Module_Member_All_Shouts_FILE_VIDEO");
+copy("$_Application_Module_Member_All_Shouts_FILE_VIDEO","$_Application_Module_Member_All_Shouts_FILE_VIDEO - $_GLOBAL_LOCAL_SERVER_TIME_UNIX.$_Application_Module_Member_All_Shouts_FILE_VIDEO_FILE_EXTENSION_TYPE");
 
 	echo ("[ Done ]<BR><BR>");
 
@@ -363,7 +368,7 @@ unlink("./Temporary/Shouts/$_Application_Module_Member_All_Shouts_POST_SHOUT_MES
 
 } // [ + ] IF: Upload :: File :: Shout Message Entry :: Video File :: To :: Temporary :: Shout Message Entry Directory
 
-$_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT_MESSAGE				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages(message_author,message_text,message_video,message_timestamp)VALUES('$_GLOBAL_COOKIE_MEMBER_USERNAME','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT','$_GLOBAL_LOCAL_SERVER_TIME_UNIX - $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO','$_GLOBAL_LOCAL_SERVER_TIME_UNIX')");
+$_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT_MESSAGE				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages(message_author,message_text,message_video,message_timestamp)VALUES('$_GLOBAL_COOKIE_MEMBER_USERNAME','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO - $_GLOBAL_LOCAL_SERVER_TIME_UNIX.$_Application_Module_Member_All_Shouts_FILE_VIDEO_FILE_EXTENSION_TYPE','$_GLOBAL_LOCAL_SERVER_TIME_UNIX')");
 
 /*
  ============================================================================================================
@@ -411,7 +416,7 @@ if ($_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT_MESSAGE) {
 
 	echo ("* Cerberus: Automatically Directing Headers To: ?$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=All_Shouts In 5 Seconds... Wait.<BR>");
 
-	header("Refresh:5; Location: $_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=All_Shouts");
+	header("Location: $_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=All_Shouts");
 	exit;
 
 /*
