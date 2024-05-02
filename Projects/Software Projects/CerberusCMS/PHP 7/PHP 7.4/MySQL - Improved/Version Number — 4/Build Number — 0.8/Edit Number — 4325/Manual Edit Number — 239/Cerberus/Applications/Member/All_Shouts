@@ -148,6 +148,11 @@ $_Application_Module_Member_All_Shouts_SPECIFY_UPLOAD_FILE_VIDEO_EXTENSION_TYPE	
 $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages ORDER BY id DESC LIMIT 100");
 $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_NUMBER_OF_ROWS	= $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES->num_rows;
 
+$_Application_Module_Member_All_Shouts_DIRECTORY_UPLOAD_VIDEO					= "./Temporary/Shouts/";
+$_Application_Module_Member_All_Shouts_FILE_VIDEO						= $_Application_Module_Member_All_Shouts_DIRECTORY_UPLOAD_VIDEO . basename($_FILES["AMM_All_Shouts_Shout_Message_Video"]["name"]);
+$_Application_Module_Member_All_Shouts_FILE_VIDEO_LOWERCASE					= strtolower(pathinfo(_Application_Module_Member_All_Shouts_FILE_VIDEO, PATHINFO_EXTENSION));
+$_Application_Module_Member_All_Shouts_FILE_EXTENSION_ALLOWED					= ['mp4', 'wmv'];
+
 /*
  ============================================================================================================
  + IF: Shout Message Entries :: Are Less Than Or Equal To: Zero
@@ -306,7 +311,7 @@ if ($_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("DELET
 if (!$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT) {
 
 echo ("
-											<HR><FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;All_Shouts&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
+											<HR><FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;All_Shouts&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\" ENCTYPE=\"multipart/form-data\">
 												Shout Message Text<BR>
 												[ Maximum Shout Message Text Length: 250 Characters ]<BR>
 													<INPUT TYPE=\"text\" NAME=\"AMM_All_Shouts_Shout_Message_Text\" MAXLENGTH=\"250\"><BR><BR>
@@ -327,102 +332,9 @@ echo ("
 
 if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) {
 
-/*
- ============================================================================================================
- + Move :: File :: Video File :: Video Shout File :: Temporary Directory
- ============================================================================================================
-*/
-
-if (move_uploaded_file($_FILES['AMM_All_Shouts_Shout_Message_Video']['tmp_name'], $_Application_Module_Member_All_Shouts_SPECIFY_UPLOAD_FILE_VIDEO)) {
-
-											echo ("* Cerberus: Attempting To Upload The Shout Message Video File: $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO ... Wait.<BR>");
-											echo ("[ Done ]<BR><BR>");
-
-} else {
-
-move_uploaded_file($_FILES['AMM_All_Shouts_Shout_Message_Video']['tmp_name'], $_Application_Module_Member_All_Shouts_SPECIFY_UPLOAD_FILE_VIDEO);
-
-											echo ("* Cerberus: Error, I was not able to upload the Shout Message Video File: $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO<BR><BR>");
-
-} // [ + ] IF: Move :: File :: Video File :: Video Shout File
-
-/*
- ============================================================================================================
- + Check :: Prepare :: For Allowed Video File Extensions
- ============================================================================================================
-*/
-
-if (in_array($_Application_Module_Member_All_Shouts_SPECIFY_UPLOAD_FILE_VIDEO_EXTENSION_TYPE, $_Application_Module_Member_All_Shouts_ALLOWED_FILE_EXTENSION_VIDEO)) {
-
-$_Application_Module_Member_All_Shouts_PREPARE_FILE_VIDEO				= "1";
-
-} // [ + ] IF: File Extension :: Video File :: Is: Allowed OR Disallowed
-
-											echo ("* Cerberus: The Shout Message Video File: $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO Is Prepared... Wait.<BR><BR>");
-
-/*
- ============================================================================================================
- + IF: Prepared File :: Video File :: Is: Allowed
- ============================================================================================================
-*/
-
-if ($_Application_Module_Member_All_Shouts_PREPARE_FILE_VIDEO == "1") {
-
-/*
- ============================================================================================================
- + Check :: For :: Existing :: Video Shout File Name
- ============================================================================================================
-*/
-
-if (file_exists("./Temporary/Shouts/$_Application_Module_Member_All_Shouts_BASENAME_FILE_VIDEO")) {
-
-											echo ("* Cerberus: Checking For Existing Shout Message Video File Name: $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO ... Wait.<BR>");
-											echo ("* Cerberus: The Shout Message Video File Name: $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO Exists... Deleting.<BR>");
-
-											unlink("./Temporary/Shouts/$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO");
-
-											echo ("[ Done ]<BR><BR>");
-
-} else {
-
-/*
- ============================================================================================================
- + Check :: For :: File Size :: Video Shout File
- ============================================================================================================
-*/
-
-if (filesize($_Application_Module_Member_All_Shouts_SPECIFY_UPLOAD_FILE_VIDEO) > $_GLOBAL_SYSTEM_UPLOAD_SIZE_PUBLIC) {
-
-											echo ("* Cerberus: Checking The Shout Message Video File Size... Wait.<BR>");
-											echo ("* Cerberus: The Shout Message Video File: $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO file size exceeds the file size limitations. Deleting... Wait.<BR>");
-
-											unlink("./Temporary/Shouts/$_Application_Module_Member_All_Shouts_SPECIFY_UPLOAD_FILE_VIDEO");
-
-											echo ("[ Done ]<BR><BR>");
-
-} else {
-
-} // [ + ] IF:
-
-} // [ + ] IF:
-
-} // [ + ] IF:
-
-echo ("* Cerberus: Renaming The Video File: $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO ... Wait.<BR>");
-
-copy("./Temporary/Shouts/$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO","./Temporary/Shouts/$_GLOBAL_LOCAL_SERVER_TIME_UNIX - $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO");
-
-echo ("[ Done ]<BR><BR>");
-
-echo ("* Cerberus: Secure-Deleting The Video File: $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO ... Wait.<BR>");
-
-unlink("./Temporary/Shouts/$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO");
-
-copy("","./Temporary/Shouts/$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO");
-
-unlink("./Temporary/Shouts/$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO");
-
-echo ("[ Done ]<BR>");
+if (move_uploaded_file($_FILES["AMM_All_Shouts_Shout_Message_Video"]["tmp_name"], $_Application_Module_Member_All_Shouts_FILE_VIDEO)) {
+	echo ("file uploaded..");
+}
 
 $_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT_MESSAGE				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages(message_author,message_text,message_video,message_timestamp)VALUES('$_GLOBAL_COOKIE_MEMBER_USERNAME','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT','$_GLOBAL_LOCAL_SERVER_TIME_UNIX - $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO','$_GLOBAL_LOCAL_SERVER_TIME_UNIX')");
 
