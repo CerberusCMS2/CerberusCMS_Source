@@ -224,7 +224,7 @@ echo ("
 /*
  ============================================================================================================
  +
- + Internal Application :: Delete Selected Shout ID
+ + IF: Internal Application :: Delete Selected Shout Message Entry ID
  +
  ============================================================================================================
 */
@@ -233,7 +233,7 @@ if ($_GET["DeleteID"] == "$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESS
 
 /*
  ============================================================================================================
- + IF: Member UserName Is Not Shout Message Author
+ + IF: Registered Member Account UserName IS NOT The Shout Message Entry Author
  ============================================================================================================
 */
 
@@ -245,7 +245,7 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME != $_Application_Module_Member_All_Shouts_LI
 
 /*
  ============================================================================================================
- + ELSE IF: Database Query: Delete Shout Message From Entries
+ + ELSE IF: Database Management System Server Database :: Query: Delete Selected Shout Message Entry Database
  ============================================================================================================
 */
 
@@ -288,11 +288,12 @@ if (!$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT) {
 
 echo ("
 											<HR><FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;All_Shouts&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\" ENCTYPE=\"multipart/form-data\">
-												Shout Message Text<BR>
-												[ Maximum Shout Message Text Length: 250 Characters ]<BR>
+												* Shout Message Entry Text<BR>
+												[ Maximum Shout Message Entry Text Length: 250 Characters ]<BR>
 													<INPUT TYPE=\"text\" NAME=\"AMM_All_Shouts_Shout_Message_Text\" MAXLENGTH=\"250\"><BR><BR>
 
-												[ Maximum Shout Message Video File Name Length: 250 Characters ]<BR>
+												* Shout Message Entry Video File<BR>
+												[ Maximum Shout Message Entry Video File Name Length: 250 Characters ]<BR>
 													<INPUT TYPE=\"file\" NAME=\"AMM_All_Shouts_Shout_Message_Video\" MAXLENGTH=\"250\"><BR>
 													<INPUT TYPE=\"submit\" VALUE=\"Post Shout Message\">
 											</FORM><HR>
@@ -302,15 +303,23 @@ echo ("
 
 /*
  ============================================================================================================
- + IF: Member Is Logged-In, Post Shout Message Data
+ + IF: Registered Member Account :: Is: Logged-In, Post Shout Message Entry Input Form Data
  ============================================================================================================
 */
 
 if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) {
 
+/*
+ ============================================================================================================
+ + IF: Upload :: Shout Message Entry :: Video File
+ ============================================================================================================
+*/
+
 if (move_uploaded_file($_FILES["AMM_All_Shouts_Shout_Message_Video"]["tmp_name"], $_Application_Module_Member_All_Shouts_FILE_VIDEO)) {
+
 	echo ("file uploaded..");
-}
+
+} // [ + ] IF: Upload :: File :: Shout Message Entry :: Video File :: To :: Temporary :: Shout Message Entry Directory
 
 $_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT_MESSAGE				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages(message_author,message_text,message_video,message_timestamp)VALUES('$_GLOBAL_COOKIE_MEMBER_USERNAME','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT','$_GLOBAL_LOCAL_SERVER_TIME_UNIX - $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO','$_GLOBAL_LOCAL_SERVER_TIME_UNIX')");
 
