@@ -284,6 +284,12 @@ if ($_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("DELET
 
 // [ C ] $_Application_Module_Member_All_Shouts_DB_Query_SELECT_SHOUTS->free_result();
 
+/*
+ ============================================================================================================
+ + IF: Shout Message Entry :: Input Form :: Has NOT Executed, Display Input Form
+ ============================================================================================================
+*/
+
 if (!$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT) {
 
 echo ("
@@ -317,7 +323,35 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) 
 
 if (move_uploaded_file($_FILES["AMM_All_Shouts_Shout_Message_Video"]["tmp_name"], $_Application_Module_Member_All_Shouts_FILE_VIDEO)) {
 
-	echo ("file uploaded..");
+	echo ("* Cerberus: I have uploaded the Shout Message Entry Video File: $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO Successfully.<BR><BR>");
+
+	echo ("* Cerberus: Renaming The Shout Message Entry Video File: $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO To: $_GLOBAL_LOCAL_SERVER_TIME_UNIX - $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO ... Wait.<BR>");
+
+copy("./Temporary/Shouts/$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO","./Temporary/Shouts/$_GLOBAL_LOCAL_SERVER_TIME_UNIX - $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO");
+
+	echo ("[ Done ]<BR><BR>");
+
+	echo ("* Cerberus: Secure-Unlinking The Shout Message Entry Video File: $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO ... Wait.<BR>");
+
+unlink("./Temporary/Shouts/$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO");
+
+	echo ("* Cerberus: Filling Data Storage Medium Space With Zero Files... Wait.<BR>");
+
+copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_10MB","./Temporary/Shouts/$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO");
+
+unlink("./Temporary/Shouts/$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO");
+
+copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_10MB","./Temporary/Shouts/$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO");
+
+unlink("./Temporary/Shouts/$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO");
+
+copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_10MB","./Temporary/Shouts/$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO");
+
+unlink("./Temporary/Shouts/$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO");
+
+	echo ("[ Done ]<BR><BR>");
+
+	echo ("* Cerberus: Inserting Shout Message Entry Data Into The Database Management System Server Database... Wait.<BR>");
 
 } // [ + ] IF: Upload :: File :: Shout Message Entry :: Video File :: To :: Temporary :: Shout Message Entry Directory
 
@@ -367,7 +401,9 @@ if ($_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT_MESSAGE) {
  ============================================================================================================
 */
 
-	//header("Location: $_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=All_Shouts");
+	echo ("* Cerberus: Automatically Directing Headers To: ?$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=All_Shouts In 5 Seconds... Wait.<BR>");
+
+	header("Refresh:5; Location: $_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=All_Shouts");
 	exit;
 
 /*
