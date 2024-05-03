@@ -14,7 +14,7 @@ The direct Web Application project fork is named Fenrir Content Management Syste
 The Official Cerberus Content Managemet System Software Project follows the standard adoption of Greek culture in inherited Western-American Academia where Greek cultural ideas and symbols were adopted and are used today. Greek alphabet letters and Greek cultural things were reentered into Western-American Academia especially Mathematics around the year ~1800 and onward.
 
 ===Project Official Alternate Editions===
-Each release of CerberusCMS after CerberusCMS - Version Number: 4, Build Number: 0.8, Edit Number: 4,325, Manual Edit Number: 238 - Final comes with alternate editions named FenrirCMS, RuneCMS and RunicCMS for installation where the entire system is themed around Heathen / Germanic Pagan Gods and Goddesses where in these alternate editions there is no mention of Cerberus and instead of Cerberus it is themed with the names of Heathen / Germanic Gods and Goddesses complete with custom Heathen themed graphics and ascii art. Wodan / Odin, Freyja, Heimdallr and others.
+Each release of CerberusCMS after CerberusCMS - Version Number: 4, Build Number: 0.8, Edit Number: 4,325, Manual Edit Number: 239 - Final comes with alternate editions named FenrirCMS, RuneCMS and RunicCMS for installation where the entire system is themed around Heathen / Germanic Pagan Gods and Goddesses where in these alternate editions there is no mention of Cerberus and instead of Cerberus it is themed with the names of Heathen / Germanic Gods and Goddesses complete with custom Heathen themed graphics and ascii art. Wodan / Odin, Freyja, Heimdallr and others.
 
 ===Project Official Additional Applications===
 CerberusCMS comes with several additional applications:
@@ -62,7 +62,7 @@ CerberusCMS with custom Application Modules was used in the Microsoft XBOX 360 M
 CerberusCMS with custom Application Modules was used in the CyanogenMod Community from ~2010 until it became LineageOS.
 
 ===Use In The Original and Current Internet of Things Community===
-CerberusCMS was used in the original Internet of Things Community in ~2009 where custom application modules were made to control the lights, power, air conditioning and other things inside of a house from a web server connected to a smart board. All of the things inside of the house could be controlled from a mobile cell phone and in addition to this live security video feeds from security cameras attached to the house could be watched and recorded from the mobile cell phone.
+CerberusCMS was used in the original Internet of Things Community in ~2009 where custom application modules were made to control the lights, power, air conditioning and other things inside of a house from a web server that was connected to a smart board. All of the things that were inside of the house could be controlled from a mobile cell phone and in addition to this, live security video feeds from security cameras that were attached to the house could be watched and recorded from the mobile cell phone that was configured to access them remotely.
 
 ===Loss of Development Progress===
 Around 2 years of development progress was lost before 2013. Several fake versions of this project were put on display so as to distract certain groups.
@@ -113,10 +113,10 @@ All programming code is organized in Pre-Ordered Logical and Pre-Oredered Mathem
 ===Project Update Cycles===
 System Updates consist of Programming Code Updates, Programming Code Security Updates, Graphics Updates and more.
 Officially released versions come with an embedded build number where the build itself takes several weeks or months of quality code implementation and updates to complete from the project developer.
-CerberusCMS - Version Number: 4, Build Number: 0.8, Edit Number: 4,325, Manual Edit Number: 238 - Final was manually updated by hand rewrite periodically from the years of ~ January of 2022 to November, 1st of 2023 and is now approximately ~250,000 lines of Pure Pre-Hyper-Text-Post-Processor Programming Code.
+CerberusCMS - Version Number: 4, Build Number: 0.8, Edit Number: 4,325, Manual Edit Number: 239 - Final was manually updated by hand rewrite periodically from the years of ~ January of 2022 to November, 1st of 2023 and is now approximately ~250,000 lines of Pure Pre-Hyper-Text-Post-Processor Programming Code.
 
 ===Project Compatibility and Life Cycle===
-CerberusCMS - Version Number: 4, Build Number: 0.8, Edit Number: 4,325, Manual Edit Number: 238 - Final was hand updated by manual Programming Code Rewrite periodically from the years of ~ January of 2022 to November of 2023. This specific Version Number, Build Number and Edit Number will work for ~ 10 years on Pre-Hyper-Text-Post-Processor Version Number: 8 and Pre-Hyper-Text-Post-Processor Version Number: 9.
+CerberusCMS - Version Number: 4, Build Number: 0.8, Edit Number: 4,325, Manual Edit Number: 239 - Final was hand updated by manual Programming Code Rewrite periodically from the years of ~ January of 2022 to November of 2023. This specific Version Number, Build Number and Edit Number will work for ~ 10 years on Pre-Hyper-Text-Post-Processor Version Number: 8 and Pre-Hyper-Text-Post-Processor Version Number: 9.
 Major programming code updates implemented heavy use of encryption and data sanitization. It was remade for heavy use of riced and crafted Structured-Query-Language queries and concurrent connections numbering in the 100s for shared hosting and 10s of thousands to 100s of thousands with the recommended Dedicated Server Rack Setup with Dedicated and Seperated Servers For Apache, MySQL/MariaDB/Microsoft Database, P.H.P./Zend, Operating System, Cloud/Data Server and other kinds of servers.
 With a Server Setup on a rack with 3 or more different dedicated, separated and security hardened S.Q.L. Server, P.H.P. / Apache Server and Data Storage Server the system can support up to ~ 5,000 unique active concurrent user-connections without any lag or latency in response time.
 
@@ -144,6 +144,8 @@ CerberusCMS comes with a Kernel File, Installation and Maintenance Applications,
 * Loops
 * Services
 
+====Services Root Administration-Level Application Modules :: Detailed Information====
+
 * '''Accounts'''
 Automated as well as options for managing accounts and account access levels. Automatically deletes unverified and non-activated registered member accounts.
 
@@ -165,6 +167,9 @@ Automated as well as options for managing background services and scheduling spe
 4 Services Root Administration-Level Application Modules
 
 ====Root Administration-Level Application Modules====
+* '''Tasks'''
+
+====Root Administration-Level Application Modules :: Detailed Information====
 * '''Tasks'''
 Options for managing current and future tasks as well as an advanced Task Manager that monitors T.C.P./I.P. connections in real-time.
 
@@ -195,6 +200,8 @@ Options for managing current and future tasks as well as an advanced Task Manage
 * '''Update'''
 * '''VoIP'''
 * '''Web_Pages'''
+
+====Administration-Level Application Modules :: Detailed Information====
 
 * '''Accounts'''
 Options for managing current Registered Member Accounts, Sending System Messages to current Registered Member Accounts.
@@ -330,6 +337,164 @@ Options for managing Custom Web Page Entries, Custom Web Page Entry Data and App
 * '''VoIP Phone'''
 * '''Webspace'''
 
+====Registered Member-Level Application Modules :: Detailed Information====
+
+* '''Account_Data'''
+Options for managing Registered Member Account data. Account Audio, Document, Image and Video File management options to upload and delete personal this personal data.
+
+* '''Account_Recovery'''
+Options for Registered Member account recovery.
+
+* '''Active_Members'''
+Displays all active Registered Member Accounts on the system searchable by first name, middle name, last name and username.
+
+* '''All_News'''
+Displays all News Article Entries searchable by news article entry title.
+
+* '''All_Shouts'''
+Displays last 100 Shout Text Messages, last 100 Voice Shout Messages, last 100 Video Shout Messages.
+
+* '''Application_List'''
+Displays all available Application Modules registered in the system complete with Installation Date, integrity SHA-256 File HASH comparison system and more.
+
+* '''Articles'''
+Displays all Article Entries searchable by article entry title.
+
+* '''Calculator'''
+Basic to Advanced calculator.
+
+* '''Calendar'''
+Basic to advanced calendar with event scheduling.
+
+* '''Clock'''
+Basic to advanced clock with atomic clock, unix-time, western-world gregorian timestamp and more.
+
+* '''Comment'''
+Options for adding, updating and deleting comments system-wide.
+
+* '''Contact_Administrator'''
+Options for contacting an Administration-Level Registered Member Account by Short-Message-Service Text Message or Electronic Mail Message. Options for adding live video message, pre-recorded video message and more.
+
+* '''Contacts'''
+Options for adding, updating and deleting contacts with labels. Phone numbers, electronic mail addresses, home addresses, work addresses and more.
+
+* '''Control_Panel'''
+Registered Member Account-Level Control Panel with hyper-link images that link to all Registered Member Account-Level application modules for managing the Registered Member Account.
+
+* '''Devices''''
+Options for testing, adding, removing and managing all connected personal devices on the system per Registered Member Account. Devices such as: web cameras, mobile cell phones and its cameras, personal computer / laptop / notebook and more.
+
+* '''Documentation'''
+Project documentation application module with hyper-links to all available documentation files.
+
+* '''Download / Torrent'''
+Options for adding, updating, removing downloads and torrent files for download as well as options for moving, updating and deleting the data that is downloaded. This application module will use the web server bandwidth to download the data. Files could be: paid or free blockbuster / netflix / hulu movies, music and more.
+
+* '''Electronic_Mail'''
+Options for sending and receiving electronic mail messages.
+
+* '''Emulators'''
+Video game emulator application module that will render and display emulated video games directly in the web browser. Video game console emulation supported: Atari, Nintendo Entertainment System, Super Nintendo Entertainment System, Nintendo 64, MAME / Multiple-Arcade-Machine-Emulator, HTML5 Canvas video games and more.
+
+* '''File_Manager'''
+Options for managing specific data: moving, copying, updating and deleting personal Registered Member Account data.
+
+* '''Files'''
+Displays personal Registered Member Account data: Audio, Document, Image and Video files.
+
+* '''Forum'''
+Fully featured forum complete with Forums, Forum Topics, Forum Topic Messages, Registered Member Account personal signatures and more.
+
+* '''Forward'''
+Options for forwarding and sharing Registered Member Account posts and anything else that is sharable on the system.
+
+* '''Friend'''
+Options for adding, updating and removing friends on the friend list.
+
+* '''Language'''
+Options for displaying and instantly changing the output language on the system.
+
+* '''Legal'''
+Displays this web application legal information.
+
+* '''Lightning_Calculate'''
+Lightning Mental Calculating application module for physical and mental training.
+
+* '''List'''
+Displays specific lists of organized data.
+
+* '''Login'''
+Options for Registered Member Account authentication.
+
+* '''Market'''
+Displays new available application modules for download and installation from the official GIT repository.
+
+* '''Media_Player'''
+Basic and advanced media player to play media such as: Audio / Music / Audio Books, Documents / PDFS, Images / Galleries, Video / Movies and more.
+
+* '''Member_Directory'''
+Displays all Registered Member Accounts on the system searchable by first name, middle name, last name and username.
+
+* '''Messenger'''
+Full featured instant messenger with live video and with clear-text and encrypted message options.
+
+* '''News'''
+Displays the latest news articles on the system.
+
+* '''Notepad'''
+Clear-Text and encrypted notepad with options for passwords and with referring URL.
+
+* '''Pages'''
+Displays custom made web pages in an alphabetical and organized list created by a moderator or by the administration.
+
+* '''Profile'''
+Displays organized and detailed information about the Registered Member Account with interaction options. Options for live video streaming, scroll-posting similar to Twitter and Facebook, commentation system, like system, media galleries and more.
+
+* '''Recommendations'''
+Recommendations for software and hardware.
+
+* '''Referrers'''
+Detailed referrer log with interaction features.
+
+* '''Register'''
+Options for registering a new Registered Member Account.
+
+* '''Reset_Password'''
+Options for password reset on a Registered Member Account.
+
+* '''Search'''
+Simple search options for searching different things on the system.
+
+* '''Submit_News'''
+Options for submitting new news article entry information to be reviewed and published by a moderator or administrator on the system.
+
+* '''System'''
+Displays detailed information such as: web server hardware information, web server network information, connecting device information, plug-ins, application modules, time, location and more.
+
+* '''System_Message'''
+Displays current and previous system-messages set by a moderator, administrator or automated services root-administration account.
+
+* '''Theme''''
+Displays all available theme packages and provides options for instantly changing the graphical theme.
+
+* '''Travel'''
+Displays detailed travel information and provides travel and backpacking advice with options for adding and removing backpacking / travel gear. This application module will also create a detailed PDF file of the backpacking gear so it can be printed and given to checkpoints or shown digitally.
+
+* '''Update_Account'''
+Options for updating the data, personal information and settings on the Registered Member Account.
+
+* '''Update_Password'''
+Options for updating the password on the Registered Member Account.
+
+* '''Upload'''
+Options for uploading new publicly shown files and data such as: Audio, Document, Image and Video files system-wide.
+
+* '''VoIP Phone'''
+Options for sending and receiving phone calls with Voice-Over-Internet-Protocol and WebRTC technology.
+
+* '''Webspace'''
+Options for adding, removing and updating personal Registered Member Account web space data and web site.
+
 51 Registered Member-Level Application Modules
 
 ====Background-Level Application Modules====
@@ -340,6 +505,22 @@ Activity Logging
 * '''Log_Background'''
 * '''Log_Member'''
 * '''Log_Visitor'''
+
+====Background-Level Application Modules :: Detailed Information====
+* '''Internal_Loops'''
+Automatically executed internal loop programming code.
+
+* '''Log_Administration'''
+Writes extremely detailed and extremely organized interaction information of each Registered Member Account with Administration-Level privileges.
+
+* '''Log_Background'''
+Writes extremely detailed background-level interaction information and automated account information.
+
+* '''Log_Member'''
+Writes extremely detailed interaction information of each Registered Member Account.
+
+* '''Log_Visitor'''
+Writes extremely detailed interaction information of each Non-Registered Vistor.
 
 5 Background Application-Modules
 
@@ -358,6 +539,8 @@ Activity Logging
 * '''Networking.panel'''
 * '''Project_Badges.panel'''
 * '''RSS_Panel.panel'''
+
+====Panel Application Modules :: Detailed Information====
 
 * '''Administration Panel'''
 Application Panel With Options For Managing Administration Options.
@@ -403,25 +586,54 @@ Application Panel That Displays The Latest Real-Simple-Syndication Feeds From Th
 ====Open :: Public Application Modules====
 * '''Engine_Validation'''
 
+====Open :: Public Application Modules :: Detailed Information====
+
+* '''Engine_Validation'''
+Web Server Engine and this software project engine validation system.
+
 1 Public-Level Application Module
 
 ====Maintenance Applications====
 * '''Asclepius, Diagnostics'''
 * '''Fides, Integrity'''
 
+====Maintenance Applications :: Detailed Information====
+* '''Asclepius, Diagnostics'''
+Options for running tests on the web server: Mathematics CPU chip tests, CPU tests, setting / deleting cookie data, file integrity checks and more.
+
+* '''Fides, Integrity'''
+Options for checking file integrity on the system and re-installing the entire system upon failure. If the system fails an administrator can input the maintainence password to completely re-install the entire system without losing any of the data that was added after the point of initial installation.
+
 2 Maintenance Applications
 
-====Pre-Installation and Pre-Configuration Applications====
+====Pre-Installation and Pre-Installation Configuration Applications====
 * '''Hephaestus'''
 * '''Architect'''
+* '''Pre-Installation_ToolKit'''
 * '''SQL_Generator'''
-* '''Installation_ToolKit'''
+
+====Pre-Installation and Pre-Installation Configuration Applications :: Detailed Information====
+
+* '''Hephaestus'''
+Options for building the entire system from scratch before installation.
+
+* '''Architect'''
+Options for installing this web application software project.
+
+* '''Pre-Installation_ToolKit'''
+Options for configuring and installing this web application before the Architect installation options.
+
+* '''SQL_Generator'''
+Options for generating the Structured-Query-Language Database Structure for installaton.
 
 4 Pre-Configuration and Installation Applications.
 
 ====Secret Application Modules====
 * '''Lightning_Calculate'''
-With Version Number: 4, Build Number: 0.8, Edit Number: 4,325, Manual Edit Number: 238 - Final CerberusCMS comes with a secret Application Module named 'Lightning Calculate !' this Application Module teaches the user how to mentally calculate at lightning speed through repetitive patterns. This Application Module also teaches the user how to master
+
+====Secret Application Modules :: Detailed Information====
+* '''Lightning_Calculate'''
+With Version Number: 4, Build Number: 0.8, Edit Number: 4,325, Manual Edit Number: 239 - Final CerberusCMS comes with a secret Application Module named 'Lightning Calculate !' this Application Module teaches the user how to mentally calculate at lightning speed through repetitive patterns. This Application Module also teaches the user how to master
 the Methods of Loci as well as provides a 6 month intensive training course of expert nutrition and physical and mental training to obtain a Mastery of Mathematics.
 
 The author has mental calculating capabilities as a high-level Lightning Human Calculator capable of 4 Digit * 4 Digit mental multiplication as well as several other kinds of lightning mental calculating capabilities.
@@ -432,19 +644,38 @@ The Application Module teaches fundamentally how to Mentally Calculate all Mathe
 
 ====Other Application Modules====
 * '''Droid'''
+* '''Disk Operating System'''
+* '''Store Front'''
+
+====Other Application Modules :: Detailed Information====
+* '''Droid'''
+Options for managing Google Android Open Source Software Operating System connected devices.
 
 * '''Disk Operating System'''
+CerberusCMS comes with Android and Disk Operating System Emulator Application Modules that successfully emulate Android Applications and Disk Operating System Application Images Directly From the web browser itself.
 
-* CerberusCMS comes with Android and Disk Operating System Emulator Application Modules that successfully emulate Android Applications and Disk Operating System Application Images Directly From
-the web browser itself.
-
-* CerberusCMS additionally comes with a Digital Store Front named Market where Administrators can list and sell physical and digital items within item categories and entries. The additional Application Module is capable of securely handling personal credit card, debit card, coupon card and CryptoCurrency transactions. The Store Front Application Module stores encrypted personal information for shipping and receiving items. It also provides and stores printable invoices with tracking numbers, bar codes and QR codes.
-
-* CerberusCMS comes with several HTML5 WebGL and Canvas 3D Video Games that are playable from the Application Module itself by using the computer keyboard or a gamepad. All HTML5 WebGL and Canvas 3D Video Games can be converted for use with CerberusCMS by opening the Video Game Source Programming Code files and rewriting the locations of the .js file extension paths, removing all slash commentation lines as well as by mass replacing each quote character in the Programming Code to then be compatible with the Pre-Hyper-Text-Post-Processor Parser format, being: forward slash and quote.
+* '''Store Front'''
+CerberusCMS additionally comes with a Digital Store Front named Store Front where Administrators and Moderators can list and sell physical and digital items within item categories and listing entries. The additional Application Module is capable of securely handling personal credit card, debit card, coupon card and CryptoCurrency transactions. The Store Front Application Module stores encrypted personal information of each client for shipping and receiving items and it instantly destroys all debit card and credit card numbers and unique transaction upon completion of the transaction itself to make it impossible for any card information to be hacked. It also provides and stores organized and printable invoices with tracking numbers, bar codes and QR codes that can be configured to automatically send detailed transaction information by electronic mail message to each issuing debit and credit card company electronic mail addresses to confirm that the transaction was made by the actual debit and credit card owner.
 
 3 Extra Application Modules
 
+* CerberusCMS comes with several HTML5 WebGL and Canvas 3D Video Games that are playable from the Application Module itself by using the computer keyboard or a gamepad. All HTML5 WebGL and Canvas 3D Video Games can be converted for use with CerberusCMS by opening the Video Game Source Programming Code files and rewriting the locations of the .js file extension paths, removing all slash commentation lines as well as by mass replacing each quote character in the Programming Code to then be compatible with the Pre-Hyper-Text-Post-Processor Parser format, being: forward slash and quote.
+
 ====Plug-In Application Modules====
+* '''Archive'''
+* '''Camera'''
+* '''Encryption'''
+* '''Image'''
+* '''Location'''
+* '''Microphone'''
+* '''Notifications'''
+* '''Safe-HTML'''
+* '''Secure-Delete'''
+* '''WYSIWIG'''
+* '''Time'''
+* '''Watermark'''
+
+====Plug-In Application Modules :: Detailed Information====
 * '''Archive'''
 This Plug-In Application Module automatically archives and stores archives of each Plug-In Application Module.
 
@@ -820,10 +1051,10 @@ Through this Application Module one can play Nintendo, Super Nintendo and other 
 
 ===Project Programming Code Size===
 Programming Code
-CerberusCMS as of Version Number: 4, Build Number: 0.8, Edit Number: 4,325, Manual Edit Number: 238 - Final has approximately ~250,000 lines of 100% Functional, Premium and Pure Pre-Hyper-Text-Post-Processor Programming Code.
+CerberusCMS as of Version Number: 4, Build Number: 0.8, Edit Number: 4,325, Manual Edit Number: 239 - Final has approximately ~250,000 lines of 100% Functional, Premium and Pure Pre-Hyper-Text-Post-Processor Programming Code.
 
 ===Quality Programming Code===
-CerberusCMS as of Version Number: 4, Build Number: 0.8, Edit Number: 4,325, Manual Edit Number: 238 - Final features 250,000 lines of quality and thoroughly documented Pre-Hyper-Text-Post-Processor Programming Code.
+CerberusCMS as of Version Number: 4, Build Number: 0.8, Edit Number: 4,325, Manual Edit Number: 239 - Final features 250,000 lines of quality and thoroughly documented Pre-Hyper-Text-Post-Processor Programming Code.
 
 ===Programming Code Documentation and Searchability===
 All of the programming code is extremely documented and manageable with approximately 7,000 panels of in-line programming code documentation. The documentation panels within the source code explain in detail what every line of programming code in the system does. All of the programming code documentation features searchable programming code keys such as:
@@ -863,7 +1094,7 @@ End-Users with limited programming knowledge can create their own Application Mo
 Application Modules can be written to do just about any computing task that P.H.P. is capable of from the web browser.
 
 ===Bundled Software and Packages===
-CerberusCMS as of Version Number: 4, Build Number: 0.8, Edit Number: 4,325, Manual Edit Number: 238 - Final comes with Charon alternately named Freyja which is a compilable C++ application that can be compiled with G.C.C. and other C++ compiling applications from a terminal.
+CerberusCMS as of Version Number: 4, Build Number: 0.8, Edit Number: 4,325, Manual Edit Number: 239 - Final comes with Charon alternately named Freyja which is a compilable C++ application that can be compiled with G.C.C. and other C++ compiling applications from a terminal.
 
 Charon alternately named Freyja was combined from other C++ programming code that generated the theme files necessary to have a custom graphical theme on CerberusCMS.
 
@@ -904,7 +1135,7 @@ CerberusCMS automatically detects the connection speed of the connection and opt
 Custom Application Modules can be written to control IoT Devices connected to the system such as Smart House Electricity Usage Monitoring, Smart House Lightning Systems to turn lights on and off, programmable logic controllers, SCADA and more. All of these things can be controlled from an Application Module with buttons and more.
 
 ==Programming Code Architecture==
-CerberusCMS - Version Number: 4, Build Number: 0.8, Edit Number: 4,325, Manual Edit Number: 238 - Final is written in a Linux Operating System Architectural Style where everything is completely modular with HASH checksums on
+CerberusCMS - Version Number: 4, Build Number: 0.8, Edit Number: 4,325, Manual Edit Number: 239 - Final is written in a Linux Operating System Architectural Style where everything is completely modular with HASH checksums on
 each file for integrity comparison. The Kernel file can be continually added to by using the consistent Programming Code Framework that has been written by the author.
 
 ===Programming Code Consistency and Uniqueness===
@@ -971,8 +1202,8 @@ G.C. Johnson
 * Everything Else
 
 ===Company Projects===
-Tinke Software was renamed from Rune Software and Rune Software, Inc. which was registered in 2001 through ICANN as RuneSoftware.org after an agreement was made over the name with Rune Software, GMBH in Germany. Tinke Software now maintains and periodically develops 23 unique and different software projects that use just about
-every programming language and scripting language.
+Tinke Software was renamed from Rune Software and Rune Software, Inc. in 2016. Rune Software, Inc. was registered in 2001 through ICANN as RuneSoftware.org after an agreement was made over the name with Rune Software, GMBH in Germany. Tinke Software now maintains and periodically develops 23 unique and different software projects that use just about
+every publicly available programming language and publicly available scripting language.
 
 Content Management Systems
 * Cerberus Content Management System :: Written In P.H.P.-S.Q.L.
@@ -1014,6 +1245,6 @@ Video Games
 Each software project combined totals around ~450,000 lines of original programming code across several different programming languages and scripting languages.
 
 ==Project Copyrights==
-Every line of programming code in CerberusCMS up to CerberusCMS, Version Number: 4, Build Number: 0.8, Edit Number: 4,325, Manual Edit Number: 238 is 100% original from and was written by the computer programmer Gary Christopher Johnson of SouthGate, California, West Los Angeles, California and Oildale, California in and around Long Beach, California, Oildale, California and other places in Southern California.
+Every line of programming code in CerberusCMS up to CerberusCMS, Version Number: 4, Build Number: 0.8, Edit Number: 4,325, Manual Edit Number: 239 is 100% original from and was written by the computer programmer Gary Christopher Johnson of SouthGate, California, West Los Angeles, California and Oildale, California in and around Long Beach, California, Oildale, California and other places in Southern California.
 
 This web application was developed and written in Southern California. This project was started in around the year ~2001 when I was about 13 or 14 years old... My girlfriend at the time... a nice laptop was given to me. I started learning computer programming back then. The updates for this specific project are slow because I don't have the time to work on it every day.
