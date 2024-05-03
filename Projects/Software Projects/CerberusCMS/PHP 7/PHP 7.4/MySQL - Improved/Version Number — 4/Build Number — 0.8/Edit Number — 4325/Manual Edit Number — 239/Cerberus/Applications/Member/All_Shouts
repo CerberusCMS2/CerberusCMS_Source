@@ -264,7 +264,7 @@ if ($_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("DELET
  ============================================================================================================
 */
 
-unlink("./Temporary/Shouts/$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_VIDEO");
+unlink("$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_VIDEO");
 
 /*
  ============================================================================================================
