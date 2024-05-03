@@ -346,21 +346,21 @@ copy("$_Application_Module_Member_All_Shouts_FILE_VIDEO","$_Application_Module_M
 
 	echo ("* Cerberus: Secure-Unlinking The Shout Message Entry Video File: $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO ... Wait.<BR>");
 
-unlink("./Temporary/Shouts/$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO");
+unlink("$_Application_Module_Member_All_Shouts_FILE_VIDEO");
 
 	echo ("* Cerberus: Filling Data Storage Medium Space With Zero Files... Wait.<BR>");
 
-copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_10MB","./Temporary/Shouts/$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO");
+copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_10MB","$_Application_Module_Member_All_Shouts_FILE_VIDEO");
+
+unlink("$_Application_Module_Member_All_Shouts_FILE_VIDEO");
+
+copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_10MB","$_Application_Module_Member_All_Shouts_FILE_VIDEO");
 
 unlink("./Temporary/Shouts/$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO");
 
-copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_10MB","./Temporary/Shouts/$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO");
+copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_10MB","$_Application_Module_Member_All_Shouts_FILE_VIDEO");
 
-unlink("./Temporary/Shouts/$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO");
-
-copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_10MB","./Temporary/Shouts/$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO");
-
-unlink("./Temporary/Shouts/$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO");
+unlink("$_Application_Module_Member_All_Shouts_FILE_VIDEO");
 
 	echo ("[ Done ]<BR><BR>");
 
