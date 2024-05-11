@@ -512,7 +512,7 @@ $_INTERNAL_FILE_MAINTENANCE_REPAIR					= "Soteria.php";
  ============================================================================================================
 */
 
-$_PROJECT_VERSION_SHORT							= "4.0.8.4325.239";
+$_PROJECT_VERSION_SHORT							= "4.43-33.4559.001";
 $_PROJECT_VERSION_EXTENDED						= "Cerberus Content Management System - Version Number: 4, Build Number: 43.33, Edit Number: 4,559 - Manual Edit Number: 001 ~ Nyx - Wednesday, May 11th of 2024";
 $_PROJECT_VERSION_EDIT_NUMBER_GENERATED					= "4559";
 $_PROJECT_VERSION_EDIT_NUMBER_MANUAL					= "001";
