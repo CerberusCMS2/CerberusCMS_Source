@@ -84,6 +84,8 @@ $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO_PRERECORDED			= 
 $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO_LIVE				= $_POST['AMM_All_Shouts_Shout_Message_Video_Live'];
 $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION			= $_POST['AMM_All_Shouts_Shout_Message_Password_Deletion'];
 $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION_HASH_SHA_256	= hash('sha256', '$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION');
+$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION_2			= $_POST['AMM_All_Shouts_Shout_Message_Password_Deletion_2'];
+$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION_2_HASH_SHA_256	= hash('sha256', '$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION_2');
 
 /*
  ============================================================================================================
@@ -184,6 +186,12 @@ $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_PASSWORD_DELETION			= 
  ============================================================================================================
 */
 
+/*
+ ============================================================================================================
+ + IF: Display :: Shout Message Entry :: Contains :: Video File :: Pre-Recorded Video File
+ ============================================================================================================
+*/
+
 if ($_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_VIDEO != null) {
 
 echo ("
@@ -212,7 +220,7 @@ echo ("
 
 /*
  ============================================================================================================
- + ELSE: Display :: Last 100 Shout Message Entries Without Video Files
+ + ELSE: Display :: Shout Message Entry :: DOES NOT Contain :: Video File :: Pre-Recorded Video File
  ============================================================================================================
 */
 
@@ -449,5 +457,5 @@ if ($_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT_MESSAGE_DATA) {
 	header("Location: $_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=All_Shouts");
 	exit;
 
-} // [ + ] if Input form
+} // [ + ] IF: Input Form :: Shout Message Entry :: HAS Executed Successfully
 ?>
