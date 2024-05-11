@@ -214,7 +214,12 @@ echo ("
 												</VIDEO><BR>
 
 											This Shout Message Video Was Shouted On: <I><A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_TIMESTAMP_UNIX_EPOCH\" TITLE=\":: Open & Display :: The Official Web Server :: For :: This System' Unix Timestamp Converter ::\" TARGET=\"_NEW\">$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_TIMESTAMP</I></A><BR><BR>
-											~ <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;All_Shouts&amp;DeleteID&#61;$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_ID&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Delete This Shout Message Entry ::\">Delete This Shout Message Entry</A>
+
+											<HR><FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;All_Shouts&amp;DeleteID&#61;$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_ID&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
+												~ Delete This Shout Message Entry<BR>
+												[ Maximum Shout Message Entry :: Password :: Deletion : 250 Characters ]<BR>
+													<INPUT TYPE=\"text\" NAME=\"AMM_All_Shouts_Shout_Message_Password_Deletion_2\" MAXLENGTH=\"250\"><BR>
+													<INPUT TYPE=\"submit\" VALUE=\"Delete Shout Message\">
 											<HR ALIGN=\"LEFT\" WIDTH=\"50%\"><BR><BR>
 ");
 
@@ -238,7 +243,12 @@ echo ("
 											<B><BIG>&#34;</BIG></B>&nbsp;&nbsp;&nbsp;<I>$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_TEXT</I>&nbsp;&nbsp;&nbsp;<B><BIG>&#34;</BIG></B><BR>
 
 											This Shout Message Text Was Shouted On: <I><A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_TIMESTAMP_UNIX_EPOCH\" TITLE=\":: Open & Display :: The Official Web Server :: For :: This System' Unix Timestamp Converter ::\" TARGET=\"_NEW\">$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_TIMESTAMP</I></A><BR><BR>
-											~ <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;All_Shouts&amp;DeleteID&#61;$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_ID&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Delete This Shout Message Entry ::\">Delete This Shout Message Entry</A>
+
+											<HR><FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;All_Shouts&amp;DeleteID&#61;$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_ID&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
+												~ Delete This Shout Message Entry<BR>
+												[ Maximum Shout Message Entry :: Password :: Deletion : 250 Characters ]<BR>
+													<INPUT TYPE=\"text\" NAME=\"AMM_All_Shouts_Shout_Message_Password_Deletion_2\" MAXLENGTH=\"250\"><BR>
+													<INPUT TYPE=\"submit\" VALUE=\"Delete Shout Message\">
 											<HR ALIGN=\"LEFT\" WIDTH=\"50%\"><BR><BR>
 ");
 
@@ -247,7 +257,7 @@ echo ("
 /*
  ============================================================================================================
  +
- + IF: Internal Application :: Delete Selected Shout Message Entry ID
+ + [ @ ] IF: Internal Application :: Delete Selected Shout Message Entry ID
  +
  ============================================================================================================
 */
@@ -256,11 +266,19 @@ if ($_GET["DeleteID"] == "$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESS
 
 /*
  ============================================================================================================
- + IF: Registered Member Account UserName IS NOT The Shout Message Entry Author
+ + IF: Shout Message Entry :: Password :: Deletion :: MATCHES :: Database Management System Server Database Entry
  ============================================================================================================
 */
 
-if ($_GLOBAL_COOKIE_MEMBER_USERNAME == $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR && $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION == $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_PASSWORD_DELETION) {
+if ($_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION == $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION_2_HASH_SHA_256) {
+
+/*
+ ============================================================================================================
+ + IF: Input Form :: Shout Message Entry :: Password :: Deletion :: HAS Executed
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION_2) {
 
 /*
  ============================================================================================================
@@ -328,17 +346,17 @@ echo ("
 												* Shout Message Entry :: Message :: Text<BR>
 												[ Maximum Shout Message Entry Text Length: 250 Characters ]<BR>
 													<INPUT TYPE=\"text\" NAME=\"AMM_All_Shouts_Shout_Message_Text\" MAXLENGTH=\"250\"><BR><BR>
-                                                    
-												* Shout Message Entry :: Password :: Deletion<BR>
-												[ Maximum Shout Message Entry Text Length: 250 Characters ]<BR>
-													<INPUT TYPE=\"text\" NAME=\"AMM_All_Shouts_Shout_Message_Password_Deletion\" MAXLENGTH=\"250\"><BR><BR>
 
 												* Shout Message Entry :: Message :: Video File :: Pre-Recorded Video File<BR>
 												[ Maximum Shout Message Entry Video File Name Length: 250 Characters ]<BR>
 													<INPUT TYPE=\"file\" NAME=\"AMM_All_Shouts_Shout_Message_Video_PreRecorded\" MAXLENGTH=\"250\"><BR><BR>
 
 												* Shout Message Entry :: Message :: Video File :: Live Video<BR>
-												<OBJECT DATA=\"./System/Plug-Ins/Camera/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA/Live/Shouts/Camera.php\" WIDTH=\"75%\" HEIGHT=\"265\></OBJECT><BR>
+												<OBJECT DATA=\"./System/Plug-Ins/Camera/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA/Live/Shouts/Camera.php\" WIDTH=\"75%\" HEIGHT=\"265\></OBJECT><BR><BR>
+                                                    
+												* Shout Message Entry :: Password :: Deletion<BR>
+												[ Maximum Shout Message Entry Text Length: 250 Characters ]<BR>
+													<INPUT TYPE=\"text\" NAME=\"AMM_All_Shouts_Shout_Message_Password_Deletion\" MAXLENGTH=\"250\"><BR>
 													<INPUT TYPE=\"submit\" VALUE=\"Post Shout Message\">
 											</FORM><HR>
 ");
@@ -347,13 +365,19 @@ echo ("
 
 /*
  ============================================================================================================
- + IF: Registered Member Account :: Is: Logged-In, Post Shout Message Entry Input Form Data
+ + IF: Registered Member Account :: Is: Logged-In, Shout Message Entry UserName Is: Registered Member Account UserName
  ============================================================================================================
 */
 
 if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) {
     
 $_Application_Module_Member_All_Shouts_DEFINE_SHOUT_MESSAGE_USERNAME				= "$_GLOBAL_COOKIE_MEMBER_USERNAME";
+
+/*
+ ============================================================================================================
+ + ELSE: Registered Member Account :: Is: Logged-In, Shout Message Entry UserName Is: Internet Protocol Address
+ ============================================================================================================
+*/
 
 } else {
     
