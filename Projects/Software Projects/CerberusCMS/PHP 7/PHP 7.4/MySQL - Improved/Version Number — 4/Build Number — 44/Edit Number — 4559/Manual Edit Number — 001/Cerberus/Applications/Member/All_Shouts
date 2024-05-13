@@ -1,0 +1,448 @@
+<?php
+/*
+ ============================================================================================================
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ + Cerberus Content Management System
+ + ----------------------------------------------------------------------------------------------------------
+ + - Author			 : Gary Christopher Johnson of Oildale and SouthGate In Southern California
+ + - Company			 : CerberusCMS, Free and Open Source Software
+ + - Company Address		 : Oildale In Southern California, United States of America
+ + - Electronic Mail Address	 : CerberusCMS2@Proton.me
+ + - Document Notes		 : View this file in a non-formatting text editor without word-wrap for the
+ +				 : correct display of this programming code and its indentation.
+ + ----------------------------------------------------------------------------------------------------------
+ +    ()  ()  ()
+ +  ()  ()  ()
+ +  ------------------------------
+ +  Application Module
+ + ----------------------------------------------------------------------------------------------------------
+ + - This File, Location	 : Root Directory => Applications => Member => All_Shouts
+ + - This File, Version		 : 0.7.3
+ + - This File, Programming Code : Pure Pre-Hyper-Text-Post-Processor
+ + - Programming Code Model	 : Procedural, Functional, Object Oriented :: Pre-Order Algebraic
+ + -				 :					   :: Pre-Order Logical
+ + - Compatibility		 : Extensible-Markup-Language		   :: Version Numbers: 1, 1.1
+ + - Compatibility		 : Hyper-Text-Markup-Language		   :: Version Numbers: 1, 2, 3, 4, 5
+ + - Compatibility		 : Pre-Hyper-Text-Post-Processor 	   :: Version Numbers: 5, 7, 8
+ + - Compatibility		 : Zend Engine				   :: Version Numbers: 3, 4
+ + - Official Release Date	 : Monday, May 13th of 2024
+ + ----------------------------------------------------------------------------------------------------------
+ + -------------------------------------------------------------------------------	 - Nyx -
+ + --[][]--[][][]--[][][]--[][][]---[][][]--[][][]--[]--[]------[][][]------------   []++++||=======>
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    |'-._/\_.-'|
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    |    []    |
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    |___-[]-___|
+ + -[]-----[][][]--[][][]--[][][]---[][][]--[][][]--[]--[]------[]----------------    |__((**))__|
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    \   -[]-   /
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]------------/-\-     \   []   /
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]---VERSION--|4|-	\  []  /
+ + --[][]--[][][]--[]--[]--[][][]---[][][]--[]--[]--[][][]--[][][]------------\-/-	 '.[].'
+ + -------------------------------------------------------------------------------
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Build Number: 44 - Final
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Edit Number : 4,559
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ ^ ] Application Module :: Member :: All Shouts
+ +
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Application Module Header
+ ============================================================================================================
+*/
+
+											echo ($_Application_Module_Member_Message_All_Shouts_Header);
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] Variables
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Variables :: POST Variables :: Shout Message Post Variables
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT					= $_POST['AMM_All_Shouts_Shout_Message_Text'];
+$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO_PRERECORDED			= $_POST['AMM_All_Shouts_Shout_Message_Video_PreRecorded'];
+$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO_LIVE				= $_POST['AMM_All_Shouts_Shout_Message_Video_Live'];
+$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION			= $_POST['AMM_All_Shouts_Shout_Message_Password_Deletion'];
+$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION_HASH_SHA_256	= hash('sha256', '$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION');
+
+/*
+ ============================================================================================================
+ + Digital Information Security :: Replace Harmful Hyper-Text-Markup-Language Characters
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT					= str_replace($_GLOBAL_PLUGIN_SAFEHTML_CODE, $_GLOBAL_PLUGIN_SAFEHTML_CODE_REPLACE, $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT);
+$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT					= str_replace($_GLOBAL_PLUGIN_SAFEHTML_SMILEYS, $_GLOBAL_PLUGIN_SAFEHTML_SMILEYS_REPLACE, $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT);
+
+/*
+ ============================================================================================================
+ + Shout Message :: Video File :: Upload File Size Limitations
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_All_Shouts_MAXIMUM_UPLOAD_LIMIT_FILE				= $_GLOBAL_SYSTEM_UPLOAD_SIZE_APPLICATION_MODULE_SHOUTS / 1024;
+
+/*
+ ============================================================================================================
+ +
+ + Database Management System Server :: Database Query :: Retrieve All Shout Message Entries
+ +
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages ORDER BY id DESC LIMIT 100");
+$_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_NUMBER_OF_ROWS	= $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES->num_rows;
+
+/*
+ ============================================================================================================
+ +
+ + Shout Message :: Video File :: Specifications
+ +
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_All_Shouts_DIRECTORY_UPLOAD_VIDEO					= "./Temporary/Shouts/";
+$_Application_Module_Member_All_Shouts_FILE_VIDEO						= $_Application_Module_Member_All_Shouts_DIRECTORY_UPLOAD_VIDEO . basename($_FILES["AMM_All_Shouts_Shout_Message_Video_PreRecorded"]["name"]);
+$_Application_Module_Member_All_Shouts_FILE_VIDEO_LOWERCASE					= strtolower(pathinfo(_Application_Module_Member_All_Shouts_FILE_VIDEO, PATHINFO_EXTENSION));
+$_Application_Module_Member_All_Shouts_FILE_EXTENSION_ALLOWED					= ['mp4', 'wmv', 'webm', 'wma'];
+
+$_Application_Module_Member_All_Shouts_FILE_VIDEO_PATHINFO	 				= pathinfo($_FILES['AMM_All_Shouts_Shout_Message_Video_PreRecorded']['name']);
+$_Application_Module_Member_All_Shouts_FILE_VIDEO_EXTENSION					= $_Application_Module_Member_All_Shouts_FILE_VIDEO_PATHINFO['extension'];
+$_Application_Module_Member_All_Shouts_FILE_VIDEO_BASENAME					= $_Application_Module_Member_All_Shouts_FILE_VIDEO_PATHINFO['basename'];
+$_Application_Module_Member_All_Shouts_FILE_VIDEO_FILE_EXTENSION_TYPE				= pathinfo($_Application_Module_Member_All_Shouts_FILE_VIDEO_BASENAME, PATHINFO_EXTENSION);
+
+/*
+ ============================================================================================================
+ + IF: Database Management System Server Database :: Shout Message Entries :: Are Less Than Or Equal To: Zero
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_NUMBER_OF_ROWS <= 0) {
+
+											echo ($_Application_Module_Member_Message_All_Shouts_NO_SHOUTS);
+
+} else {
+
+/*
+ ============================================================================================================
+ + WHILE: Retrieving All Shout Message Entries From The Database Management System Server Database
+ ============================================================================================================
+*/
+
+while ($_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_Fetch_Array = $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES->fetch_array(MYSQLI_BOTH)) {
+
+/*
+ ============================================================================================================
+ +
+ + List :: All Shout Message Entries From The Database Management System Server Database
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Shout Message Entries Database Entry Variables
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_ID					= $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_Fetch_Array['id'];
+$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR				= $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_Fetch_Array['message_author'];
+$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_TEXT					= $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_Fetch_Array['message_text'];
+$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_TIMESTAMP				= $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_Fetch_Array['message_timestamp'];
+$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_VIDEO					= $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_Fetch_Array['message_video'];
+$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_PASSWORD_DELETION			= $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_Fetch_Array['message_password_deletion'];
+
+/*
+ ============================================================================================================
+ + Display :: Last 100 Shout Message Entries With Video Files
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_VIDEO != null) {
+
+echo ("
+												* <B>Shout Message # $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_ID</B>
+											<HR ALIGN=\"LEFT\" WIDTH=\"50%\"><BR>
+
+											<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+												<B>Shout Message Text</B>
+											<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+
+											<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Registered Member Account Profile :: For :: $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR\">$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR</A> Shouted The Text Message:<BR>
+											<B><BIG>&#34;</BIG></B>&nbsp;&nbsp;&nbsp;<I>$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_TEXT</I>&nbsp;&nbsp;&nbsp;<B><BIG>&#34;</BIG></B><BR><BR>
+
+											<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+												<B>Shout Message Video</B>
+											<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+
+												<VIDEO WIDTH=\"40%\" HEIGHT=\"225\" CONTROLS>
+													<SOURCE SRC=\"$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_VIDEO\" TYPE=\"VIDEO/MP4\">
+												</VIDEO><BR>
+
+											This Shout Message Video Was Shouted On: <I><A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_TIMESTAMP_UNIX_EPOCH\" TITLE=\":: Open & Display :: The Official Web Server :: For :: This System' Unix Timestamp Converter ::\" TARGET=\"_NEW\">$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_TIMESTAMP</I></A><BR><BR>
+											~ <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;All_Shouts&amp;DeleteID&#61;$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_ID&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Delete This Shout Message Entry ::\">Delete This Shout Message Entry</A>
+											<HR ALIGN=\"LEFT\" WIDTH=\"50%\"><BR><BR>
+");
+
+/*
+ ============================================================================================================
+ + ELSE: Display :: Last 100 Shout Message Entries Without Video Files
+ ============================================================================================================
+*/
+
+} else {
+
+echo ("
+												* <B>Shout Message # $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_ID</B>
+											<HR ALIGN=\"LEFT\" WIDTH=\"50%\"><BR>
+
+											<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+												<B>Shout Message Text</B>
+											<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+
+											<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Registered Member Account Profile :: For :: $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR\">$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR</A> Shouted The Text Message:<BR>
+											<B><BIG>&#34;</BIG></B>&nbsp;&nbsp;&nbsp;<I>$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_TEXT</I>&nbsp;&nbsp;&nbsp;<B><BIG>&#34;</BIG></B><BR>
+
+											This Shout Message Text Was Shouted On: <I><A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_TIMESTAMP_UNIX_EPOCH\" TITLE=\":: Open & Display :: The Official Web Server :: For :: This System' Unix Timestamp Converter ::\" TARGET=\"_NEW\">$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_TIMESTAMP</I></A><BR><BR>
+											~ <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;All_Shouts&amp;DeleteID&#61;$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_ID&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Delete This Shout Message Entry ::\">Delete This Shout Message Entry</A>
+											<HR ALIGN=\"LEFT\" WIDTH=\"50%\"><BR><BR>
+");
+
+}
+
+/*
+ ============================================================================================================
+ +
+ + IF: Internal Application :: Delete Selected Shout Message Entry ID
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["DeleteID"] == "$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_ID") {
+
+/*
+ ============================================================================================================
+ + IF: Registered Member Account UserName IS NOT The Shout Message Entry Author
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_COOKIE_MEMBER_USERNAME == $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR && $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION == $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_PASSWORD_DELETION) {
+
+/*
+ ============================================================================================================
+ + IF: Database Management System Server Database :: Query: Delete Selected Shout Message Entry Database
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("DELETE FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages WHERE id='$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_ID'")) {
+
+											echo ($_Application_Module_Member_Message_All_Shouts_DELETE_SHOUT);
+
+/*
+ ============================================================================================================
+ + Unlink :: File :: Shout Message Entry Video File
+ ============================================================================================================
+*/
+
+unlink("$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_VIDEO");
+
+/*
+ ============================================================================================================
+ + Header: Redirect :: Application Module :: All_Shouts
+ ============================================================================================================
+*/
+
+	header("Location: $_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=All_Shouts");
+	exit;
+
+} else {
+
+											echo ($_Application_Module_Member_Message_All_Shouts_DELETE_SHOUT_ERROR);
+
+} // [ + ] IF: Database Query: Delete Shout Message ID
+
+} else {
+    
+											echo ($_Application_Module_Member_Message_All_Shouts_DELETE_SHOUT_NOT_USER);
+   
+} // [ + ] IF: Shout Message Author IS Global Cookie UserName
+
+} // [ + ] IF: Internal Application: Delete Shout Message ID
+
+} // [ + ] WHILE: Retrieving All Shout Messages and Data
+
+} // [ + ] IF: Shout Messages Database Entries Are < Zero ELSE: Display All Shout Messages To 100 Entries
+
+/*
+ ============================================================================================================
+ + Kill SQL Database Server Query: Select All Shout Entries
+ ============================================================================================================
+*/
+
+// [ C ] $_Application_Module_Member_All_Shouts_DB_Query_SELECT_SHOUTS->free_result();
+
+/*
+ ============================================================================================================
+ + IF: Shout Message Entry :: Input Form :: Has NOT Executed, Display Input Form
+ ============================================================================================================
+*/
+
+if (!$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT) {
+
+echo ("
+											<HR><FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;All_Shouts&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\" ENCTYPE=\"multipart/form-data\">
+												* Shout Message Entry :: Message :: Text<BR>
+												[ Maximum Shout Message Entry Text Length: 250 Characters ]<BR>
+													<INPUT TYPE=\"text\" NAME=\"AMM_All_Shouts_Shout_Message_Text\" MAXLENGTH=\"250\"><BR><BR>
+                                                    
+												* Shout Message Entry :: Password :: Deletion<BR>
+												[ Maximum Shout Message Entry Text Length: 250 Characters ]<BR>
+													<INPUT TYPE=\"text\" NAME=\"AMM_All_Shouts_Shout_Message_Password_Deletion\" MAXLENGTH=\"250\"><BR><BR>
+
+												* Shout Message Entry :: Message :: Video File :: Pre-Recorded Video File<BR>
+												[ Maximum Shout Message Entry Video File Name Length: 250 Characters ]<BR>
+													<INPUT TYPE=\"file\" NAME=\"AMM_All_Shouts_Shout_Message_Video_PreRecorded\" MAXLENGTH=\"250\"><BR><BR>
+
+												* Shout Message Entry :: Message :: Video File :: Live Video<BR>
+												[ Maximum Shout Message Entry Video File Name Length: 250 Characters ]<BR>
+													<INPUT TYPE=\"file\" NAME=\"AMM_All_Shouts_Shout_Message_Video_PreRecorded\" MAXLENGTH=\"250\"><BR>
+													<INPUT TYPE=\"submit\" VALUE=\"Post Shout Message\">
+											</FORM><HR>
+");
+
+} else {
+
+/*
+ ============================================================================================================
+ + IF: Registered Member Account :: Is: Logged-In, Post Shout Message Entry Input Form Data
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) {
+    
+$_Application_Module_Member_All_Shouts_DEFINE_SHOUT_MESSAGE_USERNAME				= "$_GLOBAL_COOKIE_MEMBER_USERNAME";
+
+} else {
+    
+$_Application_Module_Member_All_Shouts_DEFINE_SHOUT_MESSAGE_USERNAME				= "$_GLOBAL_REMOTE_SERVER_ADDRESS";
+
+} // [ + ] IF: Registered Member Account :: Credentials Exist AND ARE Valid, Else: Define UserName
+
+/*
+ ============================================================================================================
+ + IF: Upload :: Shout Message Entry :: Video File
+ ============================================================================================================
+*/
+
+if (move_uploaded_file($_FILES["AMM_All_Shouts_Shout_Message_Video_PreRecorded"]["tmp_name"], $_Application_Module_Member_All_Shouts_FILE_VIDEO)) {
+
+	echo ("* Cerberus: I have uploaded the Shout Message Entry Video File: $_Application_Module_Member_All_Shouts_FILE_VIDEO Successfully.<BR><BR>");
+
+	echo ("* Cerberus: Renaming The Shout Message Entry Video File: $_Application_Module_Member_All_Shouts_FILE_VIDEO To: $_Application_Module_Member_All_Shouts_FILE_VIDEO - $_GLOBAL_LOCAL_SERVER_TIME_UNIX.$_Application_Module_Member_All_Shouts_FILE_VIDEO_FILE_EXTENSION_TYPE ... Wait.<BR>");
+
+copy("$_Application_Module_Member_All_Shouts_FILE_VIDEO","$_Application_Module_Member_All_Shouts_FILE_VIDEO - $_GLOBAL_LOCAL_SERVER_TIME_UNIX.$_Application_Module_Member_All_Shouts_FILE_VIDEO_FILE_EXTENSION_TYPE");
+
+	echo ("[ Done ]<BR><BR>");
+
+	echo ("* Cerberus: Secure-Unlinking The Shout Message Entry Video File: $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO_PRERECORDED ... Wait.<BR>");
+
+unlink("$_Application_Module_Member_All_Shouts_FILE_VIDEO");
+
+	echo ("* Cerberus: Filling Data Storage Medium Space With Zero Files... Wait.<BR>");
+
+copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_10MB","$_Application_Module_Member_All_Shouts_FILE_VIDEO");
+
+unlink("$_Application_Module_Member_All_Shouts_FILE_VIDEO");
+
+copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_10MB","$_Application_Module_Member_All_Shouts_FILE_VIDEO");
+
+unlink("./Temporary/Shouts/$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO_PRERECORDED");
+
+copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_10MB","$_Application_Module_Member_All_Shouts_FILE_VIDEO");
+
+unlink("$_Application_Module_Member_All_Shouts_FILE_VIDEO");
+
+	echo ("[ Done ]<BR><BR>");
+
+	echo ("* Cerberus: Inserting Shout Message Entry Data Into The Database Management System Server Database... Wait.<BR>");
+
+} // [ + ] IF: Upload :: File :: Shout Message Entry :: Video File :: To :: Temporary :: Shout Message Entry Directory
+
+$_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT_MESSAGE_DATA				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages(message_author,message_password_deletion,message_text,message_timestamp,message_video)VALUES('$_Application_Module_Member_All_Shouts_DEFINE_SHOUT_MESSAGE_USERNAME','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION_HASH_SHA_256','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT','$_GLOBAL_LOCAL_SERVER_TIME_UNIX','$_Application_Module_Member_All_Shouts_FILE_VIDEO - $_GLOBAL_LOCAL_SERVER_TIME_UNIX.$_Application_Module_Member_All_Shouts_FILE_VIDEO_FILE_EXTENSION_TYPE')");
+
+/*
+ ============================================================================================================
+ + IF: String Length :: Shout Message Text :: Is: Greater Than 250 Characters, Deny Message Insertion
+ ============================================================================================================
+*/
+
+if (strlen($_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT) > "250") {
+
+											echo ($_Application_Module_Member_Message_All_Shouts_POST_LENGTH_ERROR);
+
+} else {
+
+/*
+ ============================================================================================================
+ + ELSE IF: Database Management System Server Database :: Query: Insert Shout Message Data
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT_MESSAGE_DATA) {
+
+											echo ($_Application_Module_Member_Message_All_Shouts_POST_SHOUT);
+
+} else {
+    
+/*
+ ============================================================================================================
+ + ELSE: Database Management System Server Database :: Query: Insert Shout Message Data :: Error
+ ============================================================================================================
+*/
+											echo ($_Application_Module_Member_Message_All_Shouts_POST_ERROR);
+
+} // [ + ] IF: Shout Message String Length Is Greater Than: 250 Characters
+
+} // [ + ] IF: Database Management System Server Database :: Query: Insert Shout Message Data
+
+/*
+ ============================================================================================================
+ + Kill: SQL Database Server Query: Insert Shout Message
+ ============================================================================================================
+*/
+
+// [ C ] $_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT_MESSAGE_DATA->free_result();
+
+/*
+ ============================================================================================================
+ + Header: Redirect :: Application Module :: All_Shouts
+ ============================================================================================================
+*/
+
+	echo ("* Cerberus: Automatically Directing Headers To: ?$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=All_Shouts In 5 Seconds... Wait.<BR>");
+
+	header("Location: $_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=All_Shouts");
+	exit;
+
+} // [ + ] if Input form
+?>
