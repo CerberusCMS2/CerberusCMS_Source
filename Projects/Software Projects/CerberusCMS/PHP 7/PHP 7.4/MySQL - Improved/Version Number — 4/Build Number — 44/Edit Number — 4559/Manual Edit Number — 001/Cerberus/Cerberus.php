@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*
  ============================================================================================================
  + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -436,6 +436,15 @@ $_DB_Query_Kernel_Select_System_Settings_Fetch_Array					= $_DB_Query_Kernel_Sel
 
 /*
  ============================================================================================================
+ + Global :: System :: S.Q.L. Settings: Plug-Ins :: Audio
+ ============================================================================================================
+*/
+
+$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_AUDIO							= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_audio'];
+$_GLOBAL_SYSTEM_PLUGIN_STATUS_AUDIO							= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_audio'];
+
+/*
+ ============================================================================================================
  + Global :: System :: S.Q.L. Settings: Plug-Ins :: Camera
  ============================================================================================================
 */
@@ -478,6 +487,15 @@ $_GLOBAL_SYSTEM_PLUGIN_STATUS_MICROPHONE						= $_DB_Query_Kernel_Select_System_
 
 $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_NOTIFICATIONS						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_notifications'];
 $_GLOBAL_SYSTEM_PLUGIN_STATUS_NOTIFICATIONS						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_notifications'];
+
+/*
+ ============================================================================================================
+ + Global :: System :: S.Q.L. Settings: Plug-Ins :: Video
+ ============================================================================================================
+*/
+
+$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_VIDEO							= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_video'];
+$_GLOBAL_SYSTEM_PLUGIN_STATUS_VIDEO							= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_video'];
 
 /*
  ============================================================================================================
