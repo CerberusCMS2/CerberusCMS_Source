@@ -315,7 +315,7 @@ unlink("$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_VIDEO_PRERECOR
  ============================================================================================================
 */
 
-	header("Location: $_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=All_Shouts");
+	header("Location: $_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=All_Shouts&Display=Video_PreRecorded");
 	exit;
 
 } else {
@@ -492,9 +492,9 @@ if ($_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT_MESSAGE_DATA) {
  ============================================================================================================
 */
 
-	echo ("* Cerberus: Automatically Directing Headers To: ?$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=All_Shouts In 5 Seconds... Wait.<BR>");
+	echo ("* Cerberus: Automatically Directing Headers To: ?$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=All_Shouts&Display=Video_PreRecorded In 5 Seconds... Wait.<BR>");
 
-	header("Location: $_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=All_Shouts");
+	header("Location: $_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=All_Shouts&Display=Video_PreRecorded");
 	exit;
 
 } // [ + ] IF:
