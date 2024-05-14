@@ -385,6 +385,8 @@ copy("$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED","$_Applicat
 
 unlink("$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED");
 
+	echo ("[ Done ]<BR><BR>");
+
 	echo ("* Cerberus: Filling Data Storage Medium Space With Zero Files... Wait.<BR>");
 
 copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_10MB","$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED");
@@ -405,7 +407,7 @@ unlink("$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED");
 
 } // [ + ] IF: Upload :: File :: Shout Message Entry :: Video File :: To :: Temporary :: Shout Message Entry Directory
 
-$_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT_MESSAGE_DATA				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages(message_author,message_author_network_internet_protocol_address,message_password_deletion,message_text,message_timestamp,message_video_prerecorded,message_video_live)VALUES('$_Application_Module_Member_All_Shouts_DEFINE_SHOUT_MESSAGE_USERNAME','$_GLOBAL_REMOTE_SERVER_ADDRESS','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION_HASH_SHA_256','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT','$_GLOBAL_LOCAL_SERVER_TIME_UNIX','$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED - $_GLOBAL_LOCAL_SERVER_TIME_UNIX.$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED_FILE_EXTENSION_TYPE')");
+$_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT_MESSAGE_DATA				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages(message_author,message_author_network_internet_protocol_address,message_password_deletion,message_text,message_timestamp,message_video_prerecorded)VALUES('$_Application_Module_Member_All_Shouts_DEFINE_SHOUT_MESSAGE_USERNAME','$_GLOBAL_REMOTE_SERVER_ADDRESS','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION_HASH_SHA_256','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT','$_GLOBAL_LOCAL_SERVER_TIME_UNIX','$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED - $_GLOBAL_LOCAL_SERVER_TIME_UNIX.$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED_FILE_EXTENSION_TYPE')");
 
 /*
  ============================================================================================================
