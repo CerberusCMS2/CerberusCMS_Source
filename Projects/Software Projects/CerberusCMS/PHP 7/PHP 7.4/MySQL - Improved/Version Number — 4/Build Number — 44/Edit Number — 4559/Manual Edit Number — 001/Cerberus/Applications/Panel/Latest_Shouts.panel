@@ -127,6 +127,6 @@ echo ("
 													<INPUT TYPE=\"submit\" VALUE=\"Shout\">
 											</FORM>
 											<HR>
-												<CENTER>[ <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;All_Shouts&amp;Display&#61;Options&amp;$_GLOBAL_SECURITY_RANDOM_STRING_GENERATION_CACHE_CIRCUMVENTION\" TITLE=\":: Open & Display The Application Module :: All Shout Messages ::\">All Shout Messages</A> ]</CENTER>
+												<CENTER>[ <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;All_Shouts&amp;Display&#61;Options&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Application Module :: All Shout Messages ::\">All Shout Messages</A> ]</CENTER>
 ");
 ?>
