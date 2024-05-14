@@ -123,15 +123,15 @@ $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_NUMBER
  ============================================================================================================
 */
 
-$_Application_Module_Member_All_Shouts_DIRECTORY_UPLOAD_VIDEO					= "./Temporary/Shouts/Video/Pre-Recorded/";
-$_Application_Module_Member_All_Shouts_FILE_VIDEO						= $_Application_Module_Member_All_Shouts_DIRECTORY_UPLOAD_VIDEO . basename($_FILES["AMM_All_Shouts_Shout_Message_Video_PreRecorded"]["name"]);
-$_Application_Module_Member_All_Shouts_FILE_VIDEO_LOWERCASE					= strtolower(pathinfo(_Application_Module_Member_All_Shouts_FILE_VIDEO, PATHINFO_EXTENSION));
-$_Application_Module_Member_All_Shouts_FILE_EXTENSION_ALLOWED					= ['mp4', 'wmv', 'webm', 'wma'];
+$_Application_Module_Member_All_Shouts_DIRECTORY_UPLOAD_VIDEO_PRERECORDED			= "./Temporary/Shouts/Video/Pre-Recorded/";
+$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED					= $_Application_Module_Member_All_Shouts_DIRECTORY_UPLOAD_VIDEO_PRERECORDED . basename($_FILES["AMM_All_Shouts_Shout_Message_Video_PreRecorded"]["name"]);
+$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED_LOWERCASE				= strtolower(pathinfo(_Application_Module_Member_All_Shouts_FILE_VIDEO, PATHINFO_EXTENSION));
+$_Application_Module_Member_All_Shouts_FILE_VIDEO_EXTENSION_ALLOWED				= ['mp4', 'wmv', 'webm', 'wma'];
 
-$_Application_Module_Member_All_Shouts_FILE_VIDEO_PATHINFO	 				= pathinfo($_FILES['AMM_All_Shouts_Shout_Message_Video_PreRecorded']['name']);
-$_Application_Module_Member_All_Shouts_FILE_VIDEO_EXTENSION					= $_Application_Module_Member_All_Shouts_FILE_VIDEO_PATHINFO['extension'];
-$_Application_Module_Member_All_Shouts_FILE_VIDEO_BASENAME					= $_Application_Module_Member_All_Shouts_FILE_VIDEO_PATHINFO['basename'];
-$_Application_Module_Member_All_Shouts_FILE_VIDEO_FILE_EXTENSION_TYPE				= pathinfo($_Application_Module_Member_All_Shouts_FILE_VIDEO_BASENAME, PATHINFO_EXTENSION);
+$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED_PATHINFO	 			= pathinfo($_FILES['AMM_All_Shouts_Shout_Message_Video_PreRecorded']['name']);
+$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED_EXTENSION				= $_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED_PATHINFO['extension'];
+$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED_BASENAME				= $_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED_PATHINFO['basename'];
+$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED_FILE_EXTENSION_TYPE		= pathinfo($_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED_BASENAME, PATHINFO_EXTENSION);
 
 /*
  ============================================================================================================
@@ -320,7 +320,8 @@ unlink("$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_VIDEO_PRERECOR
 if (!$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT) {
 
 echo ("
-											<HR><FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;All_Shouts&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\" ENCTYPE=\"multipart/form-data\">
+											<HR>
+												<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;All_Shouts&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\" ENCTYPE=\"multipart/form-data\">
 												* Shout Message Entry :: Password :: Deletion<BR>
 												[ Maximum Shout Message Entry Text Length: 250 Characters ]<BR>
 													<INPUT TYPE=\"password\" NAME=\"AMM_All_Shouts_Shout_Message_Password_Deletion\" MAXLENGTH=\"250\"><BR><BR>
@@ -331,12 +332,13 @@ echo ("
 
 												* Shout Message Entry :: Message :: Video File :: Pre-Recorded Video File<BR>
 												[ Maximum Shout Message Entry Video File Name Length: 250 Characters ]<BR>
-													<INPUT TYPE=\"file\" NAME=\"AMM_All_Shouts_Shout_Message_Video_PreRecorded\" MAXLENGTH=\"250\"><BR><BR>
+													<INPUT TYPE=\"file\" NAME=\"AMM_All_Shouts_Shout_Message_Video_PreRecorded\" MAXLENGTH=\"250\"><BR>
+													<INPUT TYPE=\"submit\" VALUE=\"Post Shout Message\">
+												</FORM><BR><BR>
 
 												* Shout Message Entry :: Message :: Video File :: Live Video File<BR>
 													<OBJECT DATA=\"./System/Plug-Ins/Camera/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA/Live/Shouts/Camera.php\" WIDTH=\"75%\" HEIGHT=\"225\></OBJECT>
-													<INPUT TYPE=\"submit\" VALUE=\"Post Shout Message\">
-											</FORM><HR>
+											<HR>
 ");
 
 } else {
@@ -369,33 +371,33 @@ $_Application_Module_Member_All_Shouts_DEFINE_SHOUT_MESSAGE_USERNAME				= "$_GLO
  ============================================================================================================
 */
 
-if (move_uploaded_file($_FILES["AMM_All_Shouts_Shout_Message_Video_PreRecorded"]["tmp_name"], $_Application_Module_Member_All_Shouts_FILE_VIDEO)) {
+if (move_uploaded_file($_FILES["AMM_All_Shouts_Shout_Message_Video_PreRecorded"]["tmp_name"], $_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED)) {
 
-	echo ("* Cerberus: I have uploaded the Shout Message Entry Video File: $_Application_Module_Member_All_Shouts_FILE_VIDEO Successfully.<BR><BR>");
+	echo ("* Cerberus: I have uploaded the Shout Message Entry Video File: $_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED Successfully.<BR><BR>");
 
-	echo ("* Cerberus: Renaming The Shout Message Entry Video File: $_Application_Module_Member_All_Shouts_FILE_VIDEO To: $_Application_Module_Member_All_Shouts_FILE_VIDEO - $_GLOBAL_LOCAL_SERVER_TIME_UNIX.$_Application_Module_Member_All_Shouts_FILE_VIDEO_FILE_EXTENSION_TYPE ... Wait.<BR>");
+	echo ("* Cerberus: Renaming The Shout Message Entry Video File: $_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED To: $_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED - $_GLOBAL_LOCAL_SERVER_TIME_UNIX.$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED_FILE_EXTENSION_TYPE ... Wait.<BR>");
 
-copy("$_Application_Module_Member_All_Shouts_FILE_VIDEO","$_Application_Module_Member_All_Shouts_FILE_VIDEO - $_GLOBAL_LOCAL_SERVER_TIME_UNIX.$_Application_Module_Member_All_Shouts_FILE_VIDEO_FILE_EXTENSION_TYPE");
+copy("$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED","$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED - $_GLOBAL_LOCAL_SERVER_TIME_UNIX.$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED_FILE_EXTENSION_TYPE");
 
 	echo ("[ Done ]<BR><BR>");
 
 	echo ("* Cerberus: Secure-Unlinking The Shout Message Entry Video File: $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO_PRERECORDED ... Wait.<BR>");
 
-unlink("$_Application_Module_Member_All_Shouts_FILE_VIDEO");
+unlink("$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED");
 
 	echo ("* Cerberus: Filling Data Storage Medium Space With Zero Files... Wait.<BR>");
 
-copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_10MB","$_Application_Module_Member_All_Shouts_FILE_VIDEO");
+copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_10MB","$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED");
 
-unlink("$_Application_Module_Member_All_Shouts_FILE_VIDEO");
+unlink("$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED");
 
-copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_10MB","$_Application_Module_Member_All_Shouts_FILE_VIDEO");
+copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_10MB","$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED");
 
 unlink("./Temporary/Shouts/$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO_PRERECORDED");
 
-copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_10MB","$_Application_Module_Member_All_Shouts_FILE_VIDEO");
+copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_10MB","$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED");
 
-unlink("$_Application_Module_Member_All_Shouts_FILE_VIDEO");
+unlink("$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED");
 
 	echo ("[ Done ]<BR><BR>");
 
@@ -403,7 +405,7 @@ unlink("$_Application_Module_Member_All_Shouts_FILE_VIDEO");
 
 } // [ + ] IF: Upload :: File :: Shout Message Entry :: Video File :: To :: Temporary :: Shout Message Entry Directory
 
-$_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT_MESSAGE_DATA				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages(message_author,message_password_deletion,message_text,message_timestamp,message_video_live,message_video_prerecorded)VALUES('$_Application_Module_Member_All_Shouts_DEFINE_SHOUT_MESSAGE_USERNAME','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION_HASH_SHA_256','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT','$_GLOBAL_LOCAL_SERVER_TIME_UNIX','$_Application_Module_Member_All_Shouts_FILE_VIDEO - $_GLOBAL_LOCAL_SERVER_TIME_UNIX.$_Application_Module_Member_All_Shouts_FILE_VIDEO_FILE_EXTENSION_TYPE')");
+$_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT_MESSAGE_DATA				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages(message_author,message_author_network_internet_protocol_address,message_password_deletion,message_text,message_timestamp,message_video_prerecorded,message_video_live)VALUES('$_Application_Module_Member_All_Shouts_DEFINE_SHOUT_MESSAGE_USERNAME','$_GLOBAL_REMOTE_SERVER_ADDRESS','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION_HASH_SHA_256','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT','$_GLOBAL_LOCAL_SERVER_TIME_UNIX','$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED - $_GLOBAL_LOCAL_SERVER_TIME_UNIX.$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED_FILE_EXTENSION_TYPE')");
 
 /*
  ============================================================================================================
