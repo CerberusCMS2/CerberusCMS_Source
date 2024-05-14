@@ -1222,7 +1222,7 @@ CREATE TABLE {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_shout_me
 id MEDIUMINT NOT NULL AUTO_INCREMENT,
 message_author VARCHAR(50),
 message_author_network_internet_protocol_address VARCHAR(250),
-message_password_deletion VARCHAR(250),
+message_password_deletion VARCHAR(300),
 message_text VARCHAR(250),
 message_timestamp VARCHAR(50),
 message_video_prerecorded VARCHAR(250),
