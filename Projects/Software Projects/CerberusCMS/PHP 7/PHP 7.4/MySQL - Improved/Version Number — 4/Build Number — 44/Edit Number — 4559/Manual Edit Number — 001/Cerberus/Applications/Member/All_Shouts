@@ -271,7 +271,7 @@ Shout Message Entry :: Password :: Deletion :: Posted By You: $_Application_Modu
 Shout Message Entry :: Password :: Deletion :: Stored In DBM: $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_PASSWORD_DELETION<BR><BR>
 ");
 
-if ($_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION_2_HASH == "$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_PASSWORD_DELETION_2") {
+if ($_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION_2_HASH == "$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_PASSWORD_DELETION") {
 
 /*
  ============================================================================================================
