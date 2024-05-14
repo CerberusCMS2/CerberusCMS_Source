@@ -350,7 +350,7 @@ echo ("
 
 												* Shout Message Entry :: Message :: Text<BR>
 												[ Maximum Shout Message Entry Text Length: 250 Characters ]<BR>
-													<INPUT TYPE=\"text\" NAME=\"AMM_All_Shouts_Shout_Message_Text\" MAXLENGTH=\"250\"><BR><BR>
+												<TEXTAREA NAME=\"AMM_All_Shouts_Shout_Message_Text\" MAXLENGTH=\"500\" ROWS=\"7\" COLS=\"50\"></TEXTAREA><BR><BR>
 
 												* Shout Message Entry :: Message :: Video File :: Pre-Recorded Video File<BR>
 												[ Maximum Shout Message Entry Video File Name Length: 250 Characters ]<BR>
