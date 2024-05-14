@@ -97,7 +97,7 @@ var_dump($_FILES);
  ============================================================================================================
 */
 
-move_uploaded_file($_FILES['blobFile']['tmp_name'], "../../../../../../Temporary/Shouts/$_GLOBAL_LOCAL_SERVER_DATE_STANDARD.mp4");
+move_uploaded_file($_FILES['blobFile']['tmp_name'], "../../../../../../Temporary/Shouts/Video/Live/$_GLOBAL_LOCAL_SERVER_DATE_STANDARD.mp4");
 
 /*
  ============================================================================================================
