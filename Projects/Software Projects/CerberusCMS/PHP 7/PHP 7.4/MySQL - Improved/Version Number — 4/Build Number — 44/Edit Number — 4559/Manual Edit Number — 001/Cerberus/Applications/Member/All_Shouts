@@ -371,7 +371,7 @@ echo ("
 												[ Maximum Shout Message Entry Video File Name Length: 250 Characters ]<BR>
 													<INPUT TYPE=\"file\" NAME=\"AMM_All_Shouts_Shout_Message_Video_PreRecorded\" MAXLENGTH=\"250\"><BR>
 													<INPUT TYPE=\"submit\" VALUE=\"Post Shout Message\">
-												</FORM><BR><BR>
+												</FORM>
 											<HR>
 ");
 
@@ -511,11 +511,6 @@ if ($_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT_MESSAGE_DATA) {
 
 if ($_GET["Display"] == "Video_Live") {
 
-echo ("
-												* Shout Message Entry :: Message :: Video File :: Live Video File<BR>
-													<OBJECT DATA=\"./System/Plug-Ins/Camera/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA/Live/Shouts/Camera.php\" WIDTH=\"75%\" HEIGHT=\"225\></OBJECT>
-");
-
 $_Application_Module_Member_All_Shouts_FIND_DIRECTORY_VIDEO_LIVE				= "./Temporary/Shouts/Video/Live/";
 $_Application_Module_Member_All_Shouts_OPEN_DIRECTORY_VIDEO_LIVE				= opendir($_Application_Module_Member_All_Shouts_FIND_DIRECTORY_VIDEO_LIVE);
 
@@ -542,7 +537,7 @@ if ($_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE == "." || $
 echo ("
 												<BR><BR><VIDEO WIDTH=\"40%\" HEIGHT=\"225\" CONTROLS>
 													<SOURCE SRC=\"./Temporary/Shouts/Video/Live/$_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE\" TYPE=\"VIDEO/MP4\">
-												</VIDEO>
+												</VIDEO><BR><BR>
 ");
 
 } // [ + ] IF: Stop :: Exploit :: Local-File-Inclusion and Remote-File-Inclusion
@@ -556,6 +551,11 @@ echo ("
 */
 
 closedir($_Application_Module_Member_All_Shouts_OPEN_DIRECTORY_VIDEO_LIVE);
+
+echo ("
+												* Shout Message Entry :: Message :: Video File :: Live Video File<BR>
+													<OBJECT DATA=\"./System/Plug-Ins/Camera/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA/Live/Shouts/Camera.php\" WIDTH=\"75%\" HEIGHT=\"225\></OBJECT>
+");
 
 } // [ + ] IF: Internal Application: Display :: Video :: Live :: Is: Activated
 ?>
