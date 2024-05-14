@@ -84,6 +84,8 @@ $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO_PRERECORDED			= 
 $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO_LIVE				= $_POST['AMM_All_Shouts_Shout_Message_Video_Live'];
 $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION			= $_POST['AMM_All_Shouts_Shout_Message_Password_Deletion'];
 $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION_HASH_SHA_256	= hash('sha256', '$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION');
+$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION_2			= $_POST['AMM_All_Shouts_Shout_Message_Password_Deletion'];
+$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION_2_HASH_SHA_256	= hash('sha256', '$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION_2');
 
 /*
  ============================================================================================================
@@ -167,10 +169,12 @@ while ($_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES
 
 $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_ID					= $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_Fetch_Array['id'];
 $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR				= $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_Fetch_Array['message_author'];
+$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR_NETWORK_IP_ADDRESS		= $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_Fetch_Array['message_author_network_internet_protocol_address'];
+$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_PASSWORD_DELETION			= $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_Fetch_Array['message_password_deletion'];
 $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_TEXT					= $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_Fetch_Array['message_text'];
 $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_TIMESTAMP				= $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_Fetch_Array['message_timestamp'];
-$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_VIDEO					= $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_Fetch_Array['message_video'];
-$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_PASSWORD_DELETION			= $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_Fetch_Array['message_password_deletion'];
+$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_VIDEO_PRERECORDED			= $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_Fetch_Array['message_video_prerecorded'];
+$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_VIDEO_LIVE				= $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_Fetch_Array['message_video_live'];
 
 /*
  ============================================================================================================
@@ -178,7 +182,7 @@ $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_PASSWORD_DELETION			= 
  ============================================================================================================
 */
 
-if ($_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_VIDEO != null) {
+if ($_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_VIDEO_PRERECORDED != null) {
 
 echo ("
 												* <B>Shout Message # $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_ID</B>
@@ -196,7 +200,7 @@ echo ("
 											<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 
 												<VIDEO WIDTH=\"40%\" HEIGHT=\"225\" CONTROLS>
-													<SOURCE SRC=\"$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_VIDEO\" TYPE=\"VIDEO/MP4\">
+													<SOURCE SRC=\"$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_VIDEO_PRERECORDED\" TYPE=\"VIDEO/MP4\">
 												</VIDEO><BR>
 
 											This Shout Message Video Was Shouted On: <I><A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_TIMESTAMP_UNIX_EPOCH\" TITLE=\":: Open & Display :: The Official Web Server :: For :: This System' Unix Timestamp Converter ::\" TARGET=\"_NEW\">$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_TIMESTAMP</I></A><BR><BR>
@@ -246,7 +250,7 @@ if ($_GET["DeleteID"] == "$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESS
  ============================================================================================================
 */
 
-if ($_GLOBAL_COOKIE_MEMBER_USERNAME == $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR && $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION == $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_PASSWORD_DELETION) {
+if ($_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION_2_HASH_SHA_256 == "$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_PASSWORD_DELETION") {
 
 /*
  ============================================================================================================
@@ -264,7 +268,7 @@ if ($_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("DELET
  ============================================================================================================
 */
 
-unlink("$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_VIDEO");
+unlink("$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_VIDEO_PRERECORDED");
 
 /*
  ============================================================================================================
@@ -279,7 +283,13 @@ unlink("$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_VIDEO");
 
 											echo ($_Application_Module_Member_Message_All_Shouts_DELETE_SHOUT_ERROR);
 
-} // [ + ] IF: Database Query: Delete Shout Message ID
+} // [ + ] IF: Database Management System Server Database :: Query: Delete Shout Message :: By ID Number
+
+/*
+ ============================================================================================================
+ + ELSE: 
+ ============================================================================================================
+*/
 
 } else {
     
@@ -311,21 +321,20 @@ if (!$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT) {
 
 echo ("
 											<HR><FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;All_Shouts&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\" ENCTYPE=\"multipart/form-data\">
-												* Shout Message Entry :: Message :: Text<BR>
-												[ Maximum Shout Message Entry Text Length: 250 Characters ]<BR>
-													<INPUT TYPE=\"text\" NAME=\"AMM_All_Shouts_Shout_Message_Text\" MAXLENGTH=\"250\"><BR><BR>
-                                                    
 												* Shout Message Entry :: Password :: Deletion<BR>
 												[ Maximum Shout Message Entry Text Length: 250 Characters ]<BR>
 													<INPUT TYPE=\"text\" NAME=\"AMM_All_Shouts_Shout_Message_Password_Deletion\" MAXLENGTH=\"250\"><BR><BR>
+
+												* Shout Message Entry :: Message :: Text<BR>
+												[ Maximum Shout Message Entry Text Length: 250 Characters ]<BR>
+													<INPUT TYPE=\"text\" NAME=\"AMM_All_Shouts_Shout_Message_Text\" MAXLENGTH=\"250\"><BR><BR>
 
 												* Shout Message Entry :: Message :: Video File :: Pre-Recorded Video File<BR>
 												[ Maximum Shout Message Entry Video File Name Length: 250 Characters ]<BR>
 													<INPUT TYPE=\"file\" NAME=\"AMM_All_Shouts_Shout_Message_Video_PreRecorded\" MAXLENGTH=\"250\"><BR><BR>
 
-												* Shout Message Entry :: Message :: Video File :: Live Video<BR>
-												[ Maximum Shout Message Entry Video File Name Length: 250 Characters ]<BR>
-													<INPUT TYPE=\"file\" NAME=\"AMM_All_Shouts_Shout_Message_Video_PreRecorded\" MAXLENGTH=\"250\"><BR>
+												* Shout Message Entry :: Message :: Video File :: Live Video File<BR>
+													<OBJECT DATA=\"./System/Plug-Ins/Camera/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA/Live/Shouts/Camera.php\" WIDTH=\"75%\" HEIGHT=\"225\></OBJECT>
 													<INPUT TYPE=\"submit\" VALUE=\"Post Shout Message\">
 											</FORM><HR>
 ");
@@ -334,7 +343,7 @@ echo ("
 
 /*
  ============================================================================================================
- + IF: Registered Member Account :: Is: Logged-In, Post Shout Message Entry Input Form Data
+ + IF: Registered Member Account :: Is: Logged-In, UserName Is: Cookie UserName
  ============================================================================================================
 */
 
@@ -342,11 +351,17 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) 
     
 $_Application_Module_Member_All_Shouts_DEFINE_SHOUT_MESSAGE_USERNAME				= "$_GLOBAL_COOKIE_MEMBER_USERNAME";
 
+/*
+ ============================================================================================================
+ + ELSE: Registered Member Account :: Is: Logged-In, UserName Is: Internet Protocol Address
+ ============================================================================================================
+*/
+
 } else {
     
 $_Application_Module_Member_All_Shouts_DEFINE_SHOUT_MESSAGE_USERNAME				= "$_GLOBAL_REMOTE_SERVER_ADDRESS";
 
-} // [ + ] IF: Registered Member Account :: Credentials Exist AND ARE Valid, Else: Define UserName
+} // [ + ] IF: Registered Member Account :: Credentials Exist AND ARE Valid, Else: Define UserName AS Internet Protocol Address
 
 /*
  ============================================================================================================
@@ -388,7 +403,7 @@ unlink("$_Application_Module_Member_All_Shouts_FILE_VIDEO");
 
 } // [ + ] IF: Upload :: File :: Shout Message Entry :: Video File :: To :: Temporary :: Shout Message Entry Directory
 
-$_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT_MESSAGE_DATA				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages(message_author,message_password_deletion,message_text,message_timestamp,message_video)VALUES('$_Application_Module_Member_All_Shouts_DEFINE_SHOUT_MESSAGE_USERNAME','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION_HASH_SHA_256','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT','$_GLOBAL_LOCAL_SERVER_TIME_UNIX','$_Application_Module_Member_All_Shouts_FILE_VIDEO - $_GLOBAL_LOCAL_SERVER_TIME_UNIX.$_Application_Module_Member_All_Shouts_FILE_VIDEO_FILE_EXTENSION_TYPE')");
+$_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT_MESSAGE_DATA				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages(message_author,message_password_deletion,message_text,message_timestamp,message_video_live,message_video_prerecorded)VALUES('$_Application_Module_Member_All_Shouts_DEFINE_SHOUT_MESSAGE_USERNAME','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION_HASH_SHA_256','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_TEXT','$_GLOBAL_LOCAL_SERVER_TIME_UNIX','$_Application_Module_Member_All_Shouts_FILE_VIDEO - $_GLOBAL_LOCAL_SERVER_TIME_UNIX.$_Application_Module_Member_All_Shouts_FILE_VIDEO_FILE_EXTENSION_TYPE')");
 
 /*
  ============================================================================================================
@@ -444,5 +459,5 @@ if ($_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT_MESSAGE_DATA) {
 	header("Location: $_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=All_Shouts");
 	exit;
 
-} // [ + ] if Input form
+} // [ + ] IF: 
 ?>
