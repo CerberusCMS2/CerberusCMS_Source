@@ -182,7 +182,7 @@ $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_VIDEO_LIVE				= $_Appl
  ============================================================================================================
 */
 
-if ($_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_VIDEO_PRERECORDED == "") {
+if (file_exists($_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_VIDEO_PRERECORDED)) {
 
 echo ("
 												* <B>Shout Message Entry # $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_ID</B>
@@ -195,6 +195,14 @@ echo ("
 											<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Registered Member Account Profile :: For :: $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR\">$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR</A> Shouted The Text Message:<BR>
 											<B><BIG>&#34;</BIG></B>&nbsp;&nbsp;&nbsp;<I>$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_TEXT</I>&nbsp;&nbsp;&nbsp;<B><BIG>&#34;</BIG></B><BR>
 											~ <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR_NETWORK_IP_ADDRESS\" TITLE=\":: Open & Display :: The Who-Is Information :: For :: Internet Protocol Address :: $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR_NETWORK_IP_ADDRESS ::\" TARGET=\"_NEW\">$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR_NETWORK_IP_ADDRESS</A><BR><BR>
+
+											<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+												<B>Shout Message Video Entry</B>
+											<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+
+												<VIDEO WIDTH=\"40%\" HEIGHT=\"225\" CONTROLS>
+													<SOURCE SRC=\"$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_VIDEO_PRERECORDED\" TYPE=\"VIDEO/MP4\">
+												</VIDEO><BR>
 
 											This Shout Message Video Was Shouted On: <I><A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_TIMESTAMP_UNIX_EPOCH\" TITLE=\":: Open & Display :: The Official Web Server :: For :: This System' Unix Timestamp Converter ::\" TARGET=\"_NEW\">$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_TIMESTAMP</I></A><BR><BR>
 
@@ -227,15 +235,7 @@ echo ("
 											<B><BIG>&#34;</BIG></B>&nbsp;&nbsp;&nbsp;<I>$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_TEXT</I>&nbsp;&nbsp;&nbsp;<B><BIG>&#34;</BIG></B><BR>
 											~ <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR_NETWORK_IP_ADDRESS\" TITLE=\":: Open & Display :: The Who-Is Information :: For :: Internet Protocol Address :: $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR_NETWORK_IP_ADDRESS ::\" TARGET=\"_NEW\">$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_AUTHOR_NETWORK_IP_ADDRESS</A><BR><BR>
 
-											<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-												<B>Shout Message Video Entry</B>
-											<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-
-												<VIDEO WIDTH=\"40%\" HEIGHT=\"225\" CONTROLS>
-													<SOURCE SRC=\"$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_VIDEO_PRERECORDED\" TYPE=\"VIDEO/MP4\">
-												</VIDEO><BR>
-
-											This Shout Message Video Was Shouted On: <I><A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_TIMESTAMP_UNIX_EPOCH\" TITLE=\":: Open & Display :: The Official Web Server :: For :: This System' Unix Timestamp Converter ::\" TARGET=\"_NEW\">$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_TIMESTAMP</I></A><BR><BR>
+											This Shout Message Text Was Shouted On: <I><A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_TIMESTAMP_UNIX_EPOCH\" TITLE=\":: Open & Display :: The Official Web Server :: For :: This System' Unix Timestamp Converter ::\" TARGET=\"_NEW\">$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_TIMESTAMP</I></A><BR><BR>
 
 												<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;All_Shouts&amp;DeleteID&#61;$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_ID&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
 												~ Shout Message Entry :: Password :: Deletion<BR>
@@ -378,18 +378,6 @@ $_Application_Module_Member_All_Shouts_DEFINE_SHOUT_MESSAGE_USERNAME				= "$_GLO
 $_Application_Module_Member_All_Shouts_DEFINE_SHOUT_MESSAGE_USERNAME				= "Non-Registered Visitor";
 
 } // [ + ] IF: Registered Member Account :: Credentials Exist AND ARE Valid, Else: Define UserName AS Non-Registered Visitor
-
-/*
- ============================================================================================================
- + IF: Registered Member Account :: Is: Logged-In, UserName Is: Cookie UserName
- ============================================================================================================
-*/
-
-if (!$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_VIDEO_PRERECORDED) {
-
-$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED					= "";
-
-} // [ + ] IF: Shout Message Entry :: Input Form :: Video :: File :: Pre-Recorded :: IS NOT Uploaded, Define As Empty
 
 /*
  ============================================================================================================
