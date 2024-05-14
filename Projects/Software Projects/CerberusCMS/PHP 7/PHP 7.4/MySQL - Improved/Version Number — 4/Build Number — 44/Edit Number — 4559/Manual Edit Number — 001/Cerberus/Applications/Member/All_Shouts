@@ -484,5 +484,48 @@ if ($_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT_MESSAGE_DATA) {
 	header("Location: $_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=All_Shouts");
 	exit;
 
+} // [ + ] IF:
+
+if ($_GET["Display"] == "Video_Live") {
+
+$_Application_Module_Member_All_Shouts_FIND_DIRECTORY_VIDEO_LIVE				= "./Temporary/Shouts/Video/Live";
+$_Application_Module_Member_All_Shouts_OPEN_DIRECTORY_VIDEO_LIVE				= opendir($_Application_Module_Member_All_Shouts_FIND_DIRECTORY_VIDEO_LIVE);
+
+/*
+ ============================================================================================================
+ + WHILE: Reading :: Directory :: Shouts :: Video :: Live
+ ============================================================================================================
+*/
+
+while (($_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE = readdir($_Application_Module_Member_All_Shouts_OPEN_DIRECTORY_VIDEO_LIVE))) {
+
+/*
+ ============================================================================================================
+ + IF: STOP :: Exploit :: Local-File-Inclusion and Remote-File-Inclusion
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE == "." || $_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE == ".." || $_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE == "index.php") {
+/**
+ * Do Nothing
+**/
+} else {
+
+												<VIDEO WIDTH=\"40%\" HEIGHT=\"225\" CONTROLS>
+													<SOURCE SRC=\"$_Application_Module_Member_All_Shouts_FIND_DIRECTORY_VIDEO_LIVE/$_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE\" TYPE=\"VIDEO/MP4\">
+												</VIDEO><BR><BR>
+
+} // [ + ] IF: Stop :: Exploit :: Local-File-Inclusion and Remote-File-Inclusion
+
+} // [ + ] WHILE: Reading :: Directory :: Shouts :: Video :: Live
+
+/*
+ ============================================================================================================
+ + Close Directory :: Shout Messages :: Video :: Live
+ ============================================================================================================
+*/
+
+closedir($_Application_Module_Member_All_Shouts_OPEN_DIRECTORY_VIDEO_LIVE);
+
 } // [ + ] IF: 
 ?>
