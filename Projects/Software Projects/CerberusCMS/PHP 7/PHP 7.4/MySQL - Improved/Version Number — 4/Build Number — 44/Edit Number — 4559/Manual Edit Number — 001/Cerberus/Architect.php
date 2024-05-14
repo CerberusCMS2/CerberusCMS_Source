@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*
  ============================================================================================================
  + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2290,6 +2290,7 @@ $_ARCHITECT_INSTALLATION_DATABASE_DATA_CONNECT_INITIALIZE->query("CREATE TABLE {
 id MEDIUMINT NOT NULL AUTO_INCREMENT,
 message_author VARCHAR(50),
 message_author_network_internet_protocol_address VARCHAR(250),
+message_password_deletion VARCHAR(250),
 message_text VARCHAR(250),
 message_timestamp VARCHAR(50),
 message_video_prerecorded VARCHAR(250),
