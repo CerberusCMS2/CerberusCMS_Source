@@ -123,7 +123,7 @@ $_Application_Module_Panel_Latest_Shouts_DB_Query_SELECT_SHOUTS->free_result();
 echo ("
 											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;All_Shouts&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
 												<I>Shout Message</I>:<BR>
-													<INPUT TYPE=\"text\" NAME=\"AMM_All_Shouts_Shout_Message\" MAXLENGTH=\"250\"><BR>
+													<INPUT TYPE=\"text\" NAME=\"AMM_All_Shouts_Shout_Message_Text\" MAXLENGTH=\"250\"><BR>
 													<INPUT TYPE=\"submit\" VALUE=\"Shout\">
 											</FORM>
 											<HR>
