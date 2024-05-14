@@ -134,6 +134,22 @@ if ($_GLOBAL_SYSTEM_STATUS_GZIP == "1") {
 
 /*
  ============================================================================================================
+ + IF: System :: Plug-In :: Status :: Audio :: Is: 0, Define AS OFF :: ELSE :: Is: 1, Define AS ON
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_AUDIO == "1") {
+
+	$_Application_Module_Member_System_PlugIn_Status_Audio						= "On";
+
+} else { // [ + ] IF: The Audio Plug-In System Setting Is: Off
+
+	$_Application_Module_Member_System_PlugIn_Status_Audio						= "Off";
+
+} // [ + ] IF: The System :: Plug-In :: Status :: Audio :: Is: On OR Off
+
+/*
+ ============================================================================================================
  + IF: System :: Plug-In :: Status :: Camera :: Is: 0, Define AS OFF :: ELSE :: Is: 1, Define AS ON
  ============================================================================================================
 */
@@ -195,6 +211,22 @@ if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_NOTIFICATIONS == "1") {
 	$_Application_Module_Member_System_PlugIn_Status_Notifications					= "Off";
 
 } // [ + ] IF: The System :: Plug-In :: Status :: Notifications :: Is: On OR Off
+
+/*
+ ============================================================================================================
+ + IF: System :: Plug-In :: Status :: Video :: Is: 0, Define AS OFF :: ELSE :: Is: 1, Define AS ON
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_VIDEO == "1") {
+
+	$_Application_Module_Member_System_PlugIn_Status_Video						= "On";
+
+} else { // [ + ] IF: The Video Plug-In System Setting Is: Off
+
+	$_Application_Module_Member_System_PlugIn_Status_Video						= "Off";
+
+} // [ + ] IF: The System :: Plug-In :: Status :: Video :: Is: On OR Off
 
 /*
  ============================================================================================================
@@ -620,6 +652,11 @@ echo ("
 											<B>Settings :: System :: Plug-Ins :: Hardware Devices
 											</B><HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 
+											<B>Settings :: System :: Plug-Ins ::</B> <A HREF=\"./System/Plug-Ins/Camera/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_AUDIO/Audio.$_INTERNAL_FILE_EXTENSION\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Plug-In Application Module :: Audio ::\" TARGET=\"_NEW\">Audio</A><BR>
+												*&nbsp;Plug-In :: Audio :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_AUDIO<BR>
+												*&nbsp;Plug-In :: Audio :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_AUDIO | $_Application_Module_Member_System_PlugIn_Status_Audio<BR>
+											<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Devices&amp;Display&#61;Options&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Application :: Devices ::\">Device :: Hardware :: Testing :: Audio</A><BR><BR>
+
 											<B>Settings :: System :: Plug-Ins ::</B> <A HREF=\"./System/Plug-Ins/Camera/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA/Camera.$_INTERNAL_FILE_EXTENSION\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Plug-In Application Module :: Camera ::\" TARGET=\"_NEW\">Camera</A><BR>
 												*&nbsp;Plug-In :: Camera :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA<BR>
 												*&nbsp;Plug-In :: Camera :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_CAMERA | $_Application_Module_Member_System_PlugIn_Status_Camera<BR>
@@ -637,6 +674,11 @@ echo ("
 											<B>Settings :: System :: Plug-Ins ::</B> <A HREF=\"./System/Plug-Ins/Notifications/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_NOTIFICATIONS/Notifications.$_INTERNAL_FILE_EXTENSION\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Plug-In Application Module :: Notifications ::\" TARGET=\"_NEW\">Notifications</A><BR>
 												*&nbsp;Plug-In :: Notifications :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_NOTIFICATIONS<BR>
 												*&nbsp;Plug-In :: Notifications :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_NOTIFICATIONS | $_Application_Module_Member_System_PlugIn_Status_Notifications<BR><BR>
+
+											<B>Settings :: System :: Plug-Ins ::</B> <A HREF=\"./System/Plug-Ins/Camera/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_VIDEO/Video.$_INTERNAL_FILE_EXTENSION\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Plug-In Application Module :: Video ::\" TARGET=\"_NEW\">Video</A><BR>
+												*&nbsp;Plug-In :: Video :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_VIDEO<BR>
+												*&nbsp;Plug-In :: Video :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_VIDEO | $_Application_Module_Member_System_PlugIn_Status_VIDEO<BR>
+											<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Devices&amp;Display&#61;Options&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Application :: Devices ::\">Device :: Hardware :: Testing :: Video</A><BR><BR>
 
 											<B>Settings :: System :: Plug-Ins :: Data Processing
 											</B><HR ALIGN=\"LEFT\" WIDTH=\"20%\">
