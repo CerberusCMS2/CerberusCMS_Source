@@ -123,7 +123,7 @@ $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_NUMBER
  ============================================================================================================
 */
 
-$_Application_Module_Member_All_Shouts_DIRECTORY_UPLOAD_VIDEO					= "./Temporary/Shouts/";
+$_Application_Module_Member_All_Shouts_DIRECTORY_UPLOAD_VIDEO					= "./Temporary/Shouts/Video/Pre-Recorded/";
 $_Application_Module_Member_All_Shouts_FILE_VIDEO						= $_Application_Module_Member_All_Shouts_DIRECTORY_UPLOAD_VIDEO . basename($_FILES["AMM_All_Shouts_Shout_Message_Video_PreRecorded"]["name"]);
 $_Application_Module_Member_All_Shouts_FILE_VIDEO_LOWERCASE					= strtolower(pathinfo(_Application_Module_Member_All_Shouts_FILE_VIDEO, PATHINFO_EXTENSION));
 $_Application_Module_Member_All_Shouts_FILE_EXTENSION_ALLOWED					= ['mp4', 'wmv', 'webm', 'wma'];
