@@ -264,6 +264,11 @@ if ($_GET["DeleteID"] == "$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESS
  ============================================================================================================
 */
 
+echo ("
+Shout Message Entry :: Password :: Deletion :: Posted By You: $_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_PASSWORD_DELETION<BR>
+Shout Message Entry :: Password :: Deletion :: Stored In DBM: $_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION_2_HASH_SHA_256<BR><BR>
+");
+
 if ($_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE_PASSWORD_DELETION_2_HASH_SHA_256 == "$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_PASSWORD_DELETION") {
 
 /*
