@@ -423,6 +423,12 @@ unlink("$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED");
 
 	echo ("* Cerberus: Filling Data Storage Medium Space With Zero Files... Wait.<BR>");
 
+/*
+ ============================================================================================================
+ + Secure-Delete: Shout Message Entry :: Video File :: Pre-Recoreded Video File
+ ============================================================================================================
+*/
+
 copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_10MB","$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED");
 
 unlink("$_Application_Module_Member_All_Shouts_FILE_VIDEO_PRERECORDED");
@@ -530,7 +536,7 @@ $_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE_FILE_DETAILS			
  ============================================================================================================
 */
 
-if ($_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE == "." || $_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE == ".." || $_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE == "index.php") {
+if ($_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE == "." || $_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE == ".." || $_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE == "Backup" || $_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE == "index.php") {
 /**
  * Do Nothing
 **/
@@ -558,11 +564,35 @@ if ($_GET["Delete"] == "$_Application_Module_Member_All_Shouts_READ_DIRECTORY_VI
 
 /*
  ============================================================================================================
- + // [ + ] IF: Registered Member Account Credentials Exist AND ARE Valid AND Registered Member Account Access Level Is: Greater Than 2, Moderator
+ + IF: Registered Member Account Credentials Exist AND ARE Valid AND Registered Member Account Access Level Is: Greater Than 2, Moderator
  ============================================================================================================
 */
 
 if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD !=null && $_GLOBAL_MEMBER_ACCESS_LEVEL >= "2") {
+
+/*
+ ============================================================================================================
+ + Unlink: Shout Message Entry :: Video File :: Live Video File
+ ============================================================================================================
+*/
+
+unlink("./Temporary/Shouts/Video/Live/$_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE");
+
+/*
+ ============================================================================================================
+ + Secure-Delete: Shout Message Entry :: Video File :: Live Video File
+ ============================================================================================================
+*/
+
+copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_10MB","./Temporary/Shouts/Video/Live/$_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE");
+
+unlink("./Temporary/Shouts/Video/Live/$_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE");
+
+copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_10MB","./Temporary/Shouts/Video/Live/$_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE");
+
+unlink("./Temporary/Shouts/Video/Live/$_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE");
+
+copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_10MB","./Temporary/Shouts/Video/Live/$_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE");
 
 unlink("./Temporary/Shouts/Video/Live/$_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE");
 
