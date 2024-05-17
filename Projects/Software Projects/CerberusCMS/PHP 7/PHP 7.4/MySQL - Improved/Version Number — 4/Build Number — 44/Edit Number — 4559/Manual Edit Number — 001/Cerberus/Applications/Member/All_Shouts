@@ -522,6 +522,8 @@ $_Application_Module_Member_All_Shouts_OPEN_DIRECTORY_VIDEO_LIVE				= opendir($_
 
 while (($_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE = readdir($_Application_Module_Member_All_Shouts_OPEN_DIRECTORY_VIDEO_LIVE))) {
 
+$_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE_FILE_DETAILS			= date("Y-m-d", fileatime("./Temporary/Shouts/Video/Live/$_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE"));
+
 /*
  ============================================================================================================
  + IF: STOP :: Exploit :: Local-File-Inclusion and Remote-File-Inclusion
@@ -535,10 +537,22 @@ if ($_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE == "." || $
 } else {
 
 echo ("
-												<BR><BR><VIDEO WIDTH=\"40%\" HEIGHT=\"225\" CONTROLS>
+												* Shout Message Entry :: Video :: Live Video File :: $_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE
+												<HR ALIGN=\"LEFT\" WIDTH=\"40%\">
+												<VIDEO WIDTH=\"40%\" HEIGHT=\"225\" CONTROLS>
 													<SOURCE SRC=\"./Temporary/Shouts/Video/Live/$_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE\" TYPE=\"VIDEO/MP4\">
-												</VIDEO><BR><BR>
+												</VIDEO>
+												<HR ALIGN=\"LEFT\" WIDTH=\"40%\">
+												Video File Details: $_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE_FILE_DETAILS
+												<HR ALIGN=\"LEFT\" WIDTH=\"40%\"><BR>
+												~ <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;All_Shouts&amp;Display&#61;Video_Live&amp;Delete&#61;$_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Delete This Live Video Shout Message Entry ::\">Delete This Shout Message Entry</A><BR><BR>
 ");
+
+if ($_GET["Delete"] == "$_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE") {
+
+unlink("./Temporary/Shouts/Video/Live/$_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE");
+
+} // [ + ] IF: Internal Application: Video :: Is: Live :: Delete :: Shout Message Entry Live Video File
 
 } // [ + ] IF: Stop :: Exploit :: Local-File-Inclusion and Remote-File-Inclusion
 
