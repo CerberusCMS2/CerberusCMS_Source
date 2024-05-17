@@ -544,13 +544,43 @@ echo ("
 												</VIDEO>
 												<HR ALIGN=\"LEFT\" WIDTH=\"40%\">
 												Video File Details: $_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE_FILE_DETAILS
-												<HR ALIGN=\"LEFT\" WIDTH=\"40%\"><BR>
+												<HR ALIGN=\"LEFT\" WIDTH=\"40%\">
 												~ <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;All_Shouts&amp;Display&#61;Video_Live&amp;Delete&#61;$_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Delete This Live Video Shout Message Entry ::\">Delete This Shout Message Entry</A><BR><BR>
 ");
 
+/*
+ ============================================================================================================
+ + IF: Internal Application: Video :: Is: Live :: Delete :: Shout Message Entry Live Video File
+ ============================================================================================================
+*/
+
 if ($_GET["Delete"] == "$_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE") {
 
+/*
+ ============================================================================================================
+ + // [ + ] IF: Registered Member Account Credentials Exist AND ARE Valid AND Registered Member Account Access Level Is: Greater Than 2, Moderator
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD !=null && $_GLOBAL_MEMBER_ACCESS_LEVEL >= "2") {
+
 unlink("./Temporary/Shouts/Video/Live/$_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE");
+
+	header("Location: $_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=All_Shouts&Display=Video_Live");
+	exit;
+
+/*
+ ============================================================================================================
+ + ELSE: Redirect: Shout Message Entries :: Video :: Live Video
+ ============================================================================================================
+*/
+
+} else {
+
+	header("Location: $_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=All_Shouts&Display=Video_Live");
+	exit;
+
+} // [ + ] IF: Registered Member Account Credentials Exist AND ARE Valid AND Registered Member Account Access Level Is: Greater Than 2, Moderator
 
 } // [ + ] IF: Internal Application: Video :: Is: Live :: Delete :: Shout Message Entry Live Video File
 
