@@ -543,7 +543,7 @@ echo ("
 													<SOURCE SRC=\"./Temporary/Shouts/Video/Live/$_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE\" TYPE=\"VIDEO/MP4\">
 												</VIDEO>
 												<HR ALIGN=\"LEFT\" WIDTH=\"40%\">
-												Video File Details: $_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE_FILE_DETAILS
+												Video File Details :: Timestamp :: Video File Created :: This Web Server :: $_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE_FILE_DETAILS
 												<HR ALIGN=\"LEFT\" WIDTH=\"40%\">
 												~ <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;All_Shouts&amp;Display&#61;Video_Live&amp;Delete&#61;$_Application_Module_Member_All_Shouts_READ_DIRECTORY_VIDEO_LIVE&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Delete This Live Video Shout Message Entry ::\">Delete This Shout Message Entry</A><BR><BR>
 ");
