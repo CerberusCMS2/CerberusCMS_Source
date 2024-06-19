@@ -412,7 +412,7 @@ if (file_exists("./Upload/Audio/Music/$_Application_Module_Member_Media_Player_B
  ============================================================================================================
 */
 
-if (filesize($_Application_Module_Member_Media_Player_SPECIFY_UPLOAD_FILE_AUDIO) > $_Application_Module_Member_Media_Player_MAXIMUM_UPLOAD_LIMIT_FILE_AUDIO)) {
+if (filesize($_Application_Module_Member_Media_Player_SPECIFY_UPLOAD_FILE_AUDIO > $_Application_Module_Member_Media_Player_MAXIMUM_UPLOAD_LIMIT_FILE_AUDIO)) {
 
 											unlink("./Temporary/$_Application_Module_Member_Media_Player_BASENAME_FILE_AUDIO");
 
@@ -430,11 +430,14 @@ if (filesize($_Application_Module_Member_Media_Player_SPECIFY_UPLOAD_FILE_AUDIO)
 											copy("./Temporary/$_Application_Module_Member_Media_Player_BASENAME_FILE_AUDIO","./Upload/Audio/Music/$_Application_Module_Member_Media_Player_BASENAME_FILE_AUDIO");
 
 											unlink("./Temporary/$_Application_Module_Member_Media_Player_BASENAME_FILE_AUDIO");
-}
 
-}
+} // [ + ] IF: Media :: File :: Audio :: File Already Exists Within Audio Directory :: Unlink Audio File
 
-}
+} // [ + ] IF: Media :: File :: Audio :: File Size :: Is: Greater Than: The Allowed Media Audio File File Size
 
-} // [ + ] IF: Internal Application: Upload :: Media :: Is: Activated
+} // [ + ] IF: Media :: File :: Audio :: Is: Prepared
+
+} // [ + ] IF: Internal Application: Upload :: Media :: File :: Audio :: Input Form :: Variable HAS Executed
+
+} // [ + ] IF: Internal Application: Upload :: Media :: File :: Is: Activated
 ?>
