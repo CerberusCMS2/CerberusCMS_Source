@@ -1136,7 +1136,7 @@ Hygiene Gear :: Gender :: Male :: Full Body :: Skin
 <HR ALIGN=\"LEFT\" WIDTH=\"20%\"><BR><BR>
 
 Hygiene Gear :: Gender :: Male :: Full Body :: Skin :: Lava Rock
-<HR ALIGN=\"LEFT\" WIDTH=\"15%\"><BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"15%\">
 <B>Crushed Lava Rock Pumice Stone</B><BR>
 <IMG SRC=\"./Theme/Global/Image/Travel/Gear/Male/Hygiene/General/Lightweight/Skin/HygieneGear_Skin_Scrubbing_PumiceStone.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
 The high pressure made pumice stone made from grinded up volcanic rock is the best tool for scrubbing the skin and the face. This scrubbing tool is light-weight, compact and it stays clean and portable. By scrubbing the body with medium pressure and the face with light pressure using this rock and by
@@ -1146,11 +1146,11 @@ with this rock results in microdermabrasion and all of the surface scars on the 
 Additionally this stone can be used as a scrubbing tool to thoroughly hand wash the each piece of clothing with the special bar of soap. If the clothing is left out in the direct sun-light at 70 degrees farenheight or greater the clothing will dry within ~60 minutes and will be very clean.<BR><BR>
 
 Hygiene Gear :: Gender :: Male :: Full Body :: Skin :: Special Custom Made Bar of Soap
-<HR ALIGN=\"LEFT\" WIDTH=\"15%\"><BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"15%\">
 <B>Special Bar of Soap</B><BR>
 <IMG SRC=\"./Theme/Global/Image/Travel/Gear/Male/Hygiene/General/Lightweight/Skin/HygieneGear_Skin_Soap_Special_Gold.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
-This special bar of soap that is custom made with benzalkonium chloride, triclosan and several other liquid anti-microbial, liquid anti-viral and liquid anti-bacterial solutions boiled and merged together with high grade natural animal fat will keep the body, head, hair, face, ears, nose and all other orifices on the body ultra clean and free from all bacteria, virus and microbes. This custom made special bar of
-soap is higher quality than anything that can be commercially bought.
+This special bar of soap that is custom made with benzalkonium chloride, triclosan and several other liquid anti-microbial, liquid anti-viral and liquid anti-bacterial solutions boiled and merged together with high grade natural animal fat will keep the body, head, hair, face, ears, nose and all other orifices on the body ultra clean and free from all bacteria, virus and microbes. It can also be used to hand wash the clothing brought with you on travels and backpacking adventures. This custom made special bar of
+soap is higher quality than anything that is commercially available as of the year 2024.
 ");
 
 } // [ + ] IF: Internal Application: Display :: Hygiene Gear
