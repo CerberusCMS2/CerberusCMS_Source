@@ -74,6 +74,7 @@ echo ("
 		 :: <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Media_Player&amp;DisplayVideo&#61;FileName&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Display :: Video Stream :: From :: Video File ::\">Display Video From Video File</A> 
 		 :: <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Media_Player&amp;PlayAudioStream&#61;FileName&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Play :: Audio Stream :: From File ::\">Play Audio From Audio File</A> 
 		 :: <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Media_Player&amp;PlayAudioStream&#61;URL&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Play :: Audio Stream :: From :: Uniform-Resource-Location ::\">Play Audio From URL</A> ::
+		 :: <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Media_Player&amp;Upload&#61;Media&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Upload :: Media ::\">Upload Media</A> ::
 </CENTER><HR><BR><BR>
 ");
 
@@ -117,6 +118,35 @@ $_Application_Module_Member_Media_Player_POST_AUDIO_URL							= $_POST['AMM_Medi
 
 $_Application_Module_Member_Media_Player_POST_AUDIO_FILE_NAME						= $_POST['AMM_Media_Player_Play_Audio_File_Name'];
 
+/*
+ ============================================================================================================
+ + Upload Size Limit
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Media_Player_MAXIMUM_UPLOAD_LIMIT_FILE_AUDIO				= $_GLOBAL_SYSTEM_UPLOAD_SIZE_PUBLIC_MEDIA_PLAYER_AUDIO / 1024;
+$_Application_Module_Member_Media_Player_MAXIMUM_UPLOAD_LIMIT_FILE_VIDEO				= $_GLOBAL_SYSTEM_UPLOAD_SIZE_PUBLIC_MEDIA_PLAYER_VIDEO / 1024;
+
+/*
+ ============================================================================================================
+ + File Upload Details
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Media_Player_SPECIFY_UPLOAD_FILE_DIRECTORY_AUDIO				= "./Upload/Audio/Music/";
+$_Application_Module_Member_Media_Player_SPECIFY_UPLOAD_FILE_AUDIO					= $_Application_Module_Member_Media_Player_SPECIFY_UPLOAD_FILE_DIRECTORY_AUDIO . basename($_FILES['AMM_Media_Player_Upload_File_Audio']['name']);
+
+/*
+ ============================================================================================================
+ + Allowed File Extensions
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Media_Player_ALLOWED_FILE_EXTENSIONS_AUDIO					= array();
+$_Application_Module_Member_Media_Player_ALLOWED_FILE_EXTENSIONS_AUDIO[0]				= "mp3";
+$_Application_Module_Member_Media_Player_ALLOWED_FILE_EXTENSIONS_AUDIO[1]				= "wma";
+$_Application_Module_Member_Media_Player_ALLOWED_FILE_EXTENSIONS_AUDIO[2]				= "flac";
+$_Application_Module_Member_Media_Player_ALLOWED_FILE_EXTENSIONS_AUDIO[3]				= "ogg";
 
 /*
  ============================================================================================================
@@ -271,4 +301,18 @@ echo ("
 } // [ + ] IF: Internal Application: Play :: Audio Stream :: From File :: Input Form :: Variables :: HAVE Executed
 
 } // [ + ] IF: Internal Application: Play :: Audio Stream :: From File :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + IF: Internal Application: Display :: Video Stream :: From Uniform-Resource-Location
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Upload"] == "Media") {
+
+
+
+} // [ + ] IF: Internal Application: Upload :: Media :: Is: Activated
 ?>
