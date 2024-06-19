@@ -153,3 +153,4 @@ unverified registered accounts. Write it through services.
 * fix the Applications app module for admin
 * fix the banned networking / ip addresses for netwrokig admin app
 * complete the embedding of QR codes to uploaded media app
+* add upload media options and code to the text media player
