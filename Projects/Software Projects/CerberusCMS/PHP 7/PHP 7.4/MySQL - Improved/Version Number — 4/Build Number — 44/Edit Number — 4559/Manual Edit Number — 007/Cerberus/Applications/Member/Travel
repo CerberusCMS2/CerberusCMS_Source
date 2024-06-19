@@ -2319,13 +2319,4 @@ the 3 different travel size lotions combined together.
 } // [ + ] IF: Internal Application: Display :: Hygiene Gear :: Gender :: Male
 
 } // [ + ] IF: Internal Application: Display :: Hygiene Gear :: Gender :: Male :: Type :: General
-?> while shaving one can shave the hair down closer than what a Straight Razor is capable of and without the risk of any razor burn due to the combination of the Custom-Made Special Bar of Soap lather combined with
-the 3 different travel size lotions combined together.
-");
-
-} // [ + ] IF: Internal Application: Display :: Hygiene Gear
-
-} // [ + ] IF: Internal Application: Display :: Hygiene Gear :: Gender :: Male
-
-} // [ + ] IF: Internal Application: Display :: Hygiene Gear :: Gender :: Male :: Type :: General
 ?>
