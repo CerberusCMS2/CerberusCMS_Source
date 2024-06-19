@@ -1166,6 +1166,27 @@ Hygiene Gear :: Gender :: Male :: Full Body :: Skin :: Razors
 <IMG SRC=\"./Theme/Global/Image/Travel/Gear/Male/Hygiene/General/Lightweight/Full_Body/Miscellanious/HygieneGear_Miscellanious_Razors_Gillete_3Blade.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
 The Gillete &reg; &trade; 3-Blade Travel Size Razors can be used to shave all hair down to the bare skin. By using the Custom-Made Special Bar of Soap while shaving one can shave the hair down closer than what a Straight Razor is capable of and without the risk of any razor burn due to the combination of the Custom-Made Special Bar of Soap lather combined with
 the 3 different travel size lotions combined together.
+
+<BR><BR>
+Hygiene Gear :: Gender :: Male :: Clothing
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Hygiene Gear :: Gender :: Male :: Clothing :: Pants
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+<B>Example: Hand Washing Clothing, Pants</B><BR>
+
+<IMG SRC=\"./Theme/Global/Image/Travel/Gear/Male/Hygiene/General/Lightweight/Clothing/Example/Hygiene_Example_HandWash_Pants - 0003.jpg?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+
+<CENTER>
+	<VIDEO WIDTH=\"35%\" HEIGHT=\"225\" CONTROLS>
+		<SOURCE SRC=\"./Theme/Global/Image/Travel/Gear/Male/Hygiene/General/Lightweight/Clothing/Example/Hygiene_Example_HandWash_Pants - 0001.mp4?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_VIDEO_RANDOM_STRING_GENERATION\" TYPE=\"VIDEO/MP4\">
+	</VIDEO>
+
+	<VIDEO WIDTH=\"35%\" HEIGHT=\"225\" CONTROLS>
+		<SOURCE SRC=\"./Theme/Global/Image/Travel/Gear/Male/Hygiene/General/Lightweight/Clothing/Example/Hygiene_Example_HandWash_Pants - 0002.mp4?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_VIDEO_RANDOM_STRING_GENERATION\" TYPE=\"VIDEO/MP4\">
+	</VIDEO>
+</CENTER>
 ");
 
 } // [ + ] IF: Internal Application: Display :: Hygiene Gear
