@@ -388,7 +388,7 @@ echo ("
 /*
  ============================================================================================================
  +
- + IF: Internal Application: Display :: Video Stream :: From Uniform-Resource-Location
+ + IF: Internal Application: Upload :: Media
  +
  ============================================================================================================
 */
@@ -397,9 +397,15 @@ if ($_GET["Upload"] == "Media") {
 
 /*
  ============================================================================================================
- +
- + IF: Upload :: Media :: Audio
- +
+ + IF: Registered Member Account Credentials Exist, ARE VALID AND Registered Member Account Access Level Is: Greater Than OR Equal To: Moderator
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null && $_GLOBAL_MEMBER_ACCESS_LEVEL >= 2) {
+
+/*
+ ============================================================================================================
+ + IF: Upload :: Media :: Audio :: Input Form :: Variable HAS NOT Executed, Display Input Form
  ============================================================================================================
 */
 
@@ -544,6 +550,16 @@ if (filesize($_Application_Module_Member_Media_Player_SPECIFY_UPLOAD_FILE_AUDIO 
 } // [ + ] IF: Media :: File :: Audio :: Is: Prepared
 
 } // [ + ] IF: Internal Application: Upload :: Media :: File :: Audio :: Input Form :: Variable HAS Executed
+
+} else {
+
+/*
+ ============================================================================================================
+ + ELSE: Registered Member Account Credentials DO NOT Exist AND OR ARE NOT VALID AND OR Registered Member Account Access Level Is: Less Than: Moderator
+ ============================================================================================================
+*/
+
+} // [ + ] IF: Registered Member Account Credentials Exist, ARE VALID AND Registered Member Account Access Level Is: Greater Than OR Equal To: Moderator
 
 } // [ + ] IF: Internal Application: Upload :: Media :: File :: Is: Activated
 ?>
