@@ -429,9 +429,11 @@ echo ("
  ============================================================================================================
 */
 
+											echo ("* Message: Attempting To Upload This Audio File... Wait.<BR>");
+
 if (move_uploaded_file($_FILES['AMM_Media_Player_Upload_File_Audio']['tmp_name'], $_Application_Module_Member_Media_Player_SPECIFY_UPLOAD_FILE_AUDIO)) {
 
-											echo ("* Message: Success !<BR>");
+											echo ("* Message: This Audio File Was Successfully Uploaded To The Temporary Upload Directory !<BR>");
 
 /*
  ============================================================================================================
@@ -441,9 +443,15 @@ if (move_uploaded_file($_FILES['AMM_Media_Player_Upload_File_Audio']['tmp_name']
 
 } else {
 
-											echo ("* Message: Error !<BR>");
+											echo ("* Message: Error: This Audio File *WAS NOT* Uploaded To The Temporary Upload Directory !<BR>");
 
 } // [ + ] IF: Move Uploaded File: Audio File
+
+											echo ("* Message: Checking The Audio File Properties... Wait.<BR>");
+
+											echo ("* Message: Checking The Audio File Extension Type... Wait.<BR>");
+
+											echo ("* Message: The Audio File Extension Type Detected Is: $_Application_Module_Member_Media_Player_SPECIFY_UPLOAD_FILE_EXTENSION_TYPE_AUDIO !<BR>");
 
 /*
  ============================================================================================================
@@ -457,8 +465,6 @@ $_Application_Module_Member_Media_Player_PREPARE_FILE_AUDIO				= "1";
 
 } // [ + ] IF: File Extension Is In Allowed File Extension Array
 
-											echo ("* Message: Checking The Audio File...<BR>");
-
 /*
  ============================================================================================================
  + IF: Media :: Audio :: Audio File :: File Extension :: Is: In Allowed File Extensions Array :: Prepare Audio File
@@ -466,6 +472,10 @@ $_Application_Module_Member_Media_Player_PREPARE_FILE_AUDIO				= "1";
 */
 
 if ($_Application_Module_Member_Media_Player_PREPARE_FILE_AUDIO == "1") {
+
+											echo ("* Message: This Audio File Is Acceptable... Wait.<BR>");
+
+											echo ("* Message: Checking For Existing Audio File Within The ./Upload/Audio/Music Directory... Wait.<BR>");
 
 /*
  ============================================================================================================
@@ -475,7 +485,7 @@ if ($_Application_Module_Member_Media_Player_PREPARE_FILE_AUDIO == "1") {
 
 if (file_exists("./Upload/Audio/Music/$_Application_Module_Member_Media_Player_BASENAME_FILE_AUDIO")) {
 
-											echo ("* Message: This Audio File Already Exists !");
+											echo ("* Message: This Audio File Already Exists Within The ./Upload/Audio/Music Directory... Deleting This Temporary Audio File Immediately !<BR>");
 
 											unlink("./Temporary/$_Application_Module_Member_Media_Player_BASENAME_FILE_AUDIO");
 
@@ -487,6 +497,9 @@ if (file_exists("./Upload/Audio/Music/$_Application_Module_Member_Media_Player_B
 
 } else {
 
+
+											echo ("* Message: This Audio File Does Not Currently Exist Within The ./Upload/Audio/Music Directory... Checking The Audio File Size... Wait.<BR>");
+
 /*
  ============================================================================================================
  + IF: Media :: Audio :: Audio File :: File Size :: Is: Greater Than: The Allowed Audio File Size Limitations
@@ -495,9 +508,11 @@ if (file_exists("./Upload/Audio/Music/$_Application_Module_Member_Media_Player_B
 
 if (filesize($_Application_Module_Member_Media_Player_SPECIFY_UPLOAD_FILE_AUDIO > $_Application_Module_Member_Media_Player_MAXIMUM_UPLOAD_LIMIT_FILE_AUDIO)) {
 
+											echo ("* Message: This Audio File Size Is Greater Than The Allowed Media Upload File Size, Deleting Now... Wait.<BR>");
+
 											unlink("./Temporary/$_Application_Module_Member_Media_Player_BASENAME_FILE_AUDIO");
 
-											echo ("* Message: This Audio File Exceeds The Allowed File Size.. Deleteing Now.<BR>");
+											echo ("* Message: This Audio File Was Deleted.<BR>");
 
 /*
  ============================================================================================================
@@ -514,9 +529,13 @@ if (filesize($_Application_Module_Member_Media_Player_SPECIFY_UPLOAD_FILE_AUDIO 
  ============================================================================================================
 */
 
+											echo ("* Message: This Audio File Size Is Acceptable, Permanently Moving This Audio File To The ./Upload/Audio/Music Directory Now... Wait.<BR>");
+
 											copy("./Temporary/$_Application_Module_Member_Media_Player_BASENAME_FILE_AUDIO","./Upload/Audio/Music/$_Application_Module_Member_Media_Player_BASENAME_FILE_AUDIO");
 
 											unlink("./Temporary/$_Application_Module_Member_Media_Player_BASENAME_FILE_AUDIO");
+
+											echo ("* Message: This Audio File Has Been Uploaded.<BR>");
 
 } // [ + ] IF: Media :: File :: Audio :: File Already Exists Within Audio Directory :: Unlink Audio File
 
