@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*
  ============================================================================================================
  + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -4805,7 +4805,7 @@ if (mail($_ACCESS_ELECTRONIC_MAIL_ADDRESS_SYSTEM_ADMINISTRATOR,"$_PROJECT_STRING
 -------This is a test to see if this specific Web Server Pre-Hyper-Text-Post-Processor mail() Function is working-------
 
 -------------------------------------------------------
-If you have receieved this Non-Encrypted Electronic Mail Message $_PROJECT_STRING_NAME_EXTENDED was installed successfully to your web server through $_INTERNAL_ARCHITECT_NAME
+If you have received this Non-Encrypted Electronic Mail Message $_PROJECT_STRING_NAME_EXTENDED was installed successfully to your web server through $_INTERNAL_ARCHITECT_NAME
 The only thing left for you to do now is for you to manually configure this installation of $_PROJECT_STRING_NAME_EXTENDED
 Read through the Portable Document Format Documentation File or watch the Educational Videos to see how to further secure this installation.
 -------------------------------------------------------
