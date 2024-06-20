@@ -125,10 +125,19 @@ $_Application_Module_Member_Media_Player_POST_AUDIO_FILE_NAME						= $_POST['AMM
 */
 
 $_Application_Module_Member_Media_Player_POST_UPLOAD_FILE_AUDIO						= $_POST['AMM_Media_Player_Upload_File_Audio'];
+$_Application_Module_Member_Media_Player_POST_UPLOAD_FILE_VIDEO						= $_POST['AMM_Media_Player_Upload_File_Video'];
 
 /*
  ============================================================================================================
- + Upload Size Limit
+ +
+ + Variables :: Upload :: File Size Limitations
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Upload Size Limitations :: Media Files
  ============================================================================================================
 */
 
@@ -137,7 +146,7 @@ $_Application_Module_Member_Media_Player_MAXIMUM_UPLOAD_LIMIT_FILE_VIDEO				= $_
 
 /*
  ============================================================================================================
- + File Upload Details
+ + File Upload Details :: Audio File
  ============================================================================================================
 */
 
@@ -146,7 +155,7 @@ $_Application_Module_Member_Media_Player_SPECIFY_UPLOAD_FILE_AUDIO					= $_Appli
 
 /*
  ============================================================================================================
- + Allowed File Extensions
+ + Allowed File Extensions :: Audio File
  ============================================================================================================
 */
 
@@ -158,7 +167,7 @@ $_Application_Module_Member_Media_Player_ALLOWED_FILE_EXTENSIONS_AUDIO[3]				= "
 
 /*
  ============================================================================================================
- + File Data Specifications
+ + File Data Specifications :: Audio File
  ============================================================================================================
 */
 
@@ -167,6 +176,36 @@ $_Application_Module_Member_Media_Player_EXTENSION_FILE_AUDIO 						= $_Applicat
 $_Application_Module_Member_Media_Player_BASENAME_FILE_AUDIO						= $_Application_Module_Member_Media_Player_FILE_PATHINFO_FILE_AUDIO['basename'];
 
 $_Application_Module_Member_Media_Player_SPECIFY_UPLOAD_FILE_EXTENSION_TYPE_AUDIO			= pathinfo($_Application_Module_Member_Media_Player_BASENAME_FILE_AUDIO, PATHINFO_EXTENSION);
+
+/*
+ ============================================================================================================
+ + File Upload Details :: Video File
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Media_Player_SPECIFY_UPLOAD_FILE_DIRECTORY_VIDEO				= "./Temporary/";
+$_Application_Module_Member_Media_Player_SPECIFY_UPLOAD_FILE_VIDEO					= $_Application_Module_Member_Media_Player_SPECIFY_UPLOAD_FILE_DIRECTORY_VIDEO . basename($_FILES['AMM_Media_Player_Upload_File_Video']['name']);
+
+/*
+ ============================================================================================================
+ + Allowed File Extensions :: Video File
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Media_Player_ALLOWED_FILE_EXTENSIONS_VIDEO					= array();
+$_Application_Module_Member_Media_Player_ALLOWED_FILE_EXTENSIONS_VIDEO[0]				= "mp4";
+
+/*
+ ============================================================================================================
+ + File Data Specifications :: Video File
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Media_Player_FILE_PATHINFO_FILE_VIDEO					= pathinfo($_FILES['AMM_Media_Player_Upload_File_Video']['name']);
+$_Application_Module_Member_Media_Player_EXTENSION_FILE_VIDEO 						= $_Application_Module_Member_Media_Player_FILE_PATHINFO_FILE_VIDEO['extension'];
+$_Application_Module_Member_Media_Player_BASENAME_FILE_VIDEO						= $_Application_Module_Member_Media_Player_FILE_PATHINFO_FILE_VIDEO['basename'];
+
+$_Application_Module_Member_Media_Player_SPECIFY_UPLOAD_FILE_EXTENSION_TYPE_VIDEO			= pathinfo($_Application_Module_Member_Media_Player_BASENAME_FILE_VIDEO, PATHINFO_EXTENSION);
 
 /*
  ============================================================================================================
@@ -193,6 +232,12 @@ echo ("
 												<INPUT TYPE=\"submit\" VALUE=\"Submit Video URL\"><BR>
 											</FORM>
 ");
+
+/*
+ ============================================================================================================
+ + ELSE: Display :: Video File :: From :: Uniform-Resource-Location
+ ============================================================================================================
+*/
 
 } else {
 
@@ -229,6 +274,12 @@ echo ("
 												<INPUT TYPE=\"submit\" VALUE=\"Submit Video File Name\"><BR>
 											</FORM>
 ");
+
+/*
+ ============================================================================================================
+ + ELSE: Display :: Video File :: From :: Local Video File
+ ============================================================================================================
+*/
 
 } else {
 
@@ -270,6 +321,12 @@ echo ("
 											</FORM>
 ");
 
+/*
+ ============================================================================================================
+ + ELSE: Play :: Audio File :: From :: Uniform-Resource-Location
+ ============================================================================================================
+*/
+
 } else {
 
 echo ("
@@ -308,6 +365,12 @@ echo ("
 												<INPUT TYPE=\"submit\" VALUE=\"Submit Audio File Stream\"><BR>
 											</FORM>
 ");
+
+/*
+ ============================================================================================================
+ + ELSE: Play :: Audio File :: From :: Local Audio File
+ ============================================================================================================
+*/
 
 } else {
 
@@ -352,17 +415,29 @@ echo ("
 											Maximum File Size :: Audio File :: In Kilo-BITS :: File: $_Application_Module_Member_Media_Player_MAXIMUM_UPLOAD_LIMIT_FILE_AUDIO<BR>
 ");
 
+/*
+ ============================================================================================================
+ + ELSE: Input Form: Media Upload :: Audio File :: Variable HAS Executed
+ ============================================================================================================
+*/
+
 } else {
 
 /*
  ============================================================================================================
- + Move Files To Temporary Directory
+ + IF: Attempt To Move The Audio Files To The Temporary Directory
  ============================================================================================================
 */
 
 if (move_uploaded_file($_FILES['AMM_Media_Player_Upload_File_Audio']['tmp_name'], $_Application_Module_Member_Media_Player_SPECIFY_UPLOAD_FILE_AUDIO)) {
 
 											echo ("* Message: Success !<BR>");
+
+/*
+ ============================================================================================================
+ + ELSE: Display Error Message
+ ============================================================================================================
+*/
 
 } else {
 
@@ -372,7 +447,7 @@ if (move_uploaded_file($_FILES['AMM_Media_Player_Upload_File_Audio']['tmp_name']
 
 /*
  ============================================================================================================
- + Check And Prepare Files
+ + IF: Media :: Audio :: Audio File :: File Extension :: Is: In Allowed File Extensions Array
  ============================================================================================================
 */
 
@@ -386,7 +461,7 @@ $_Application_Module_Member_Media_Player_PREPARE_FILE_AUDIO				= "1";
 
 /*
  ============================================================================================================
- + If Files Are Allowed
+ + IF: Media :: Audio :: Audio File :: File Extension :: Is: In Allowed File Extensions Array :: Prepare Audio File
  ============================================================================================================
 */
 
@@ -394,7 +469,7 @@ if ($_Application_Module_Member_Media_Player_PREPARE_FILE_AUDIO == "1") {
 
 /*
  ============================================================================================================
- + Check For Existing File Names
+ + IF: Media :: Audio :: Audio File :: Exists Within Audio Directory
  ============================================================================================================
 */
 
@@ -404,11 +479,17 @@ if (file_exists("./Upload/Audio/Music/$_Application_Module_Member_Media_Player_B
 
 											unlink("./Temporary/$_Application_Module_Member_Media_Player_BASENAME_FILE_AUDIO");
 
+/*
+ ============================================================================================================
+ + ELSE: Media :: Audio :: Audio File :: DOES NOT Exist Within Audio Directory
+ ============================================================================================================
+*/
+
 } else {
 
 /*
  ============================================================================================================
- + Check For File Sizes
+ + IF: Media :: Audio :: Audio File :: File Size :: Is: Greater Than: The Allowed Audio File Size Limitations
  ============================================================================================================
 */
 
@@ -418,12 +499,18 @@ if (filesize($_Application_Module_Member_Media_Player_SPECIFY_UPLOAD_FILE_AUDIO 
 
 											echo ("* Message: This Audio File Exceeds The Allowed File Size.. Deleteing Now.<BR>");
 
+/*
+ ============================================================================================================
+ + ELSE: Media :: Audio :: Audio File :: File Size :: Is NOT: Greater Than: The Allowed Audio File Size Limitations
+ ============================================================================================================
+*/
+
 } else {
 
 
 /*
  ============================================================================================================
- + Files Are Cleared, Move Permanently
+ + Media :: Audio :: Audio Files Are Cleared, Move The Audio Files Permanently To The Audio Directory
  ============================================================================================================
 */
 
