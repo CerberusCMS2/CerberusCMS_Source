@@ -376,7 +376,7 @@ echo ("
 
 echo ("
 											<CENTER>
-												<AUDIO CONTROLS>
+												<AUDIO CONTROLS AUTOPLAY>
 													<SOURCE SRC=\"$_Application_Module_Member_Media_Player_POST_AUDIO_FILE_NAME\" TYPE=\"AUDIO/MPEG\">
 											</CENTER>
 ");
