@@ -141,8 +141,8 @@ $_Application_Module_Member_Media_Player_POST_UPLOAD_FILE_VIDEO						= $_POST['A
  ============================================================================================================
 */
 
-$_Application_Module_Member_Media_Player_MAXIMUM_UPLOAD_LIMIT_FILE_AUDIO				= $_GLOBAL_SYSTEM_UPLOAD_SIZE_PUBLIC_MEDIA_PLAYER_AUDIO / 1024;
-$_Application_Module_Member_Media_Player_MAXIMUM_UPLOAD_LIMIT_FILE_VIDEO				= $_GLOBAL_SYSTEM_UPLOAD_SIZE_PUBLIC_MEDIA_PLAYER_VIDEO / 1024;
+$_Application_Module_Member_Media_Player_MAXIMUM_UPLOAD_LIMIT_FILE_AUDIO				= $_GLOBAL_SYSTEM_UPLOAD_SIZE_PUBLIC_FILE_MEDIA_PLAYER_AUDIO / 1024;
+$_Application_Module_Member_Media_Player_MAXIMUM_UPLOAD_LIMIT_FILE_VIDEO				= $_GLOBAL_SYSTEM_UPLOAD_SIZE_PUBLIC_FILE_MEDIA_PLAYER_VIDEO / 1024;
 
 /*
  ============================================================================================================
@@ -551,13 +551,15 @@ if (filesize($_Application_Module_Member_Media_Player_SPECIFY_UPLOAD_FILE_AUDIO 
 
 } // [ + ] IF: Internal Application: Upload :: Media :: File :: Audio :: Input Form :: Variable HAS Executed
 
-} else {
-
 /*
  ============================================================================================================
  + ELSE: Registered Member Account Credentials DO NOT Exist AND OR ARE NOT VALID AND OR Registered Member Account Access Level Is: Less Than: Moderator
  ============================================================================================================
 */
+
+} else {
+
+echo ("You must be logged in to upload media to the media player.");
 
 } // [ + ] IF: Registered Member Account Credentials Exist, ARE VALID AND Registered Member Account Access Level Is: Greater Than OR Equal To: Moderator
 
