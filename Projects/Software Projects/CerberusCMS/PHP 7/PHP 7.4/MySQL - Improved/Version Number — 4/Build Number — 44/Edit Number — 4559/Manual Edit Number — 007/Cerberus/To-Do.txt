@@ -1094,7 +1094,7 @@ Hygiene Gear :: Gender :: Male :: Head :: Face
 Hygiene Gear :: Gender :: Male :: Head :: Ears
 <HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 The Q-Tips &reg; &trade; Cotton Swabs are the only brand company that use 100% cotton in a cotton swab as of the year 2024. These cotton swabs with the correct technique can be used to thoroughly clean the inside and outer part of the ears. The Revlon &reg; &trade; High Pricison Tweezers can be used
-to manually pluck out all ear hairs from the outer part of the ears.
+to manually pluck out all of the ear hairs from the outer part of the ears.
 
 <BR><BR>
 Hygiene Gear :: Gender :: Male :: Head :: Nose
@@ -1103,6 +1103,11 @@ Hygiene Gear :: Gender :: Male :: Head :: Nose
 <BR><BR>
 Hygiene Gear :: Gender :: Male :: Head :: Mouth
 <HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Hygiene Gear :: Gender :: Male :: Head :: Mouth :: Tonsils
+<HR ALIGN=\"LEFT\" WIDTH=\"15%\">
+Every set of human tonsils are succeptable to bacteria accumulation and this accumlation usually hardens into something known as tonsiliths or <A HREF=\"https://www.YouTube.com/watch?v=5bQoWCR7my4\" TITLE=\":: Open & Display :: The :: YouTube Video :: For :: Tonsil Stones ::\">Tonsil Stones</A>. Because tonsiliths are accumlated and hardened bacteria they usually make the breath smell bad. All bad smells are created by bacteria. With the correct hygiene technique all tonsiliths can be removed with running water in the cusp of the hands or with cotton swabs.
 
 <BR><BR>
 Hygiene Gear :: Gender :: Male :: Head :: Mouth :: Teeth
