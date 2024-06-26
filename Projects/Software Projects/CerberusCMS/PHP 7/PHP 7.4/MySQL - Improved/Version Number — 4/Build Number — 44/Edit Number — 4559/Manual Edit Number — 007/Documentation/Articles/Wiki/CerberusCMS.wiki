@@ -937,6 +937,11 @@ $DB->Query is the same as mysql_query(); or mysqli_query(); -- This is superior 
 The Structured-Query-Language Statement and Database Management System Server Connection is instantly killed after its completion. This make it impossible to achieve an S.Q.L. Injection so long as the statement does not contain $_REQUEST[''];, $_POST['']; and $_GET[''];
 Data and none of the statements on the system do.
 
+* '''Privilege-Escalation Security'''
+CerberusCMS source programming code is written to block all types of privilege escalation techniques. If 1 byte changes in any of the installed Application Modules, Kernel or any other official files that individual file is automatically re-installed either from the official GIT Repository or from
+the local hard drive and in addition to this security technique if any file exists within any directory on the system that is not accounted for in the Database Management System Server Database that unaccounted for file is automatically deleted from the directory upon ever re-load of the document.
+Privilege escalation requires injecting programming code along with terminal commands to get a privilege terminal to run commands on the web server software itself or from the upper level operating system privileged accounts.
+
 '''Injections'''
 * Structured-Query-Language Code Injection
 * Cookie Injection
