@@ -682,12 +682,12 @@ echo ("
 if ($_GET["Display"] == "Plug-Ins") {
 
 echo ("
-										<HR ALIGN=\"CENTER\" WIDTH=\"40%\">
-											<CENTER><B>Settings :: System :: Plug-Ins :: Current</B></CENTER>
-										<HR ALIGN=\"CENTER\" WIDTH=\"40%\"><BR>
+										<HR ALIGN=\"LEFT\" WIDTH=\"40%\">
+											<B>System Plug-Ins</B>
+										<HR ALIGN=\"LEFT\" WIDTH=\"40%\"><BR>
 
 										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
-											<B>Settings :: System :: Plug-Ins :: Hardware Devices
+											<B>Settings :: System :: Plug-Ins :: Hardware Devices</B>
 										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
 											<B>Settings :: System :: Plug-Ins ::</B> <A HREF=\"./System/Plug-Ins/Audio/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_AUDIO/Audio.$_INTERNAL_FILE_EXTENSION\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Plug-In Application Module :: Audio ::\" TARGET=\"_NEW\">Audio</A><BR>
@@ -719,7 +719,7 @@ echo ("
 											<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Devices&amp;Display&#61;Options&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Application :: Devices ::\">Device :: Hardware :: Testing :: Video</A><BR><BR>
 
 										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
-											<B>Settings :: System :: Plug-Ins :: Data Processing
+											<B>Settings :: System :: Plug-Ins :: Data Processing</B>
 										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
 											<B>Settings :: System :: Plug-Ins ::</B> <A HREF=\"./System/Plug-Ins/Encryption/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_ENCRYPTION/Encryption.$_INTERNAL_FILE_EXTENSION\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Plug-In Application Module :: Encryption ::\" TARGET=\"_NEW\">Encryption</A><BR>
@@ -742,23 +742,24 @@ echo ("
 												*&nbsp;Plug-In :: Secure-Delete :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE<BR>
 												*&nbsp;Plug-In :: Secure-Delete :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_SECURE_DELETE | $_Application_Module_Member_System_PlugIn_Status_Secure_Delete<BR><BR>
 
-											<B>Settings :: System :: Plug-Ins :: Date and Time
-											</B><HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+											<B>Settings :: System :: Plug-Ins :: Date and Time</B>
+										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
 											<B>Settings :: System :: Plug-Ins ::</B> <A HREF=\"./System/Plug-Ins/Time/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_TIME/Time.$_INTERNAL_FILE_EXTENSION\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Plug-In Application Module :: Time ::\" TARGET=\"_NEW\">Time</A><BR>
 												*&nbsp;Plug-In :: Time :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_TIME<BR>
 												*&nbsp;Plug-In :: Time :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_TIME | $_Application_Module_Member_System_PlugIn_Status_Time<BR><BR>
 
 										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
-											<B>Settings :: System :: Plug-Ins :: Terminal and Console
+											<B>Settings :: System :: Plug-Ins :: Terminal and Console</B>
 										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
 											<B>System :: Settings :: Plug-Ins :: Graphical</B><BR>
 												*&nbsp;Plug-In :: Smileys and Emojis :: Directory: $_GLOBAL_SYSTEM_SMILEYS_DIRECTORY<BR><BR>
 
-										<HR ALIGN=\"CENTER>\" WIDTH=\"40%\">
-										<CENTER><B>Settings :: System :: Services :: Current</B></CENTER>
-										<HR ALIGN=\"CENTER>\" WIDTH=\"40%\">
+										<HR ALIGN=\"LEFT\" WIDTH=\"40%\">
+											<B>System Services</B>
+										<HR ALIGN=\"LEFT\" WIDTH=\"40%\">
 
 											System :: Settings :: Services :: <A HREF=\"./System/Services/Commander\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Application Module :: Commander ::\" TARGET=\"_NEW\">Commander</A><BR>
 												*&nbsp;System :: Services :: Status :: Commander: $_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_COMMANDER | $_Application_Module_Member_System_System_Services_Status_Commander<BR><BR>
@@ -775,9 +776,9 @@ echo ("
 											System :: Settings :: Services :: <A HREF=\"./System/Services/Tasks\" TITLE=\":: Open & Display :: The Source Programming Code :: For :: The System Application Module :: Tasks ::\" TARGET=\"_NEW\">Tasks</A><BR>
 												*&nbsp;System :: Services :: Status: Tasks: $_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_TASKS | $_Application_Module_Member_System_System_Services_Status_Tasks<BR><BR>
 
-										<HR ALIGN=\"CENTER>\" WIDTH=\"30%\">
-											<CENTER><B>System Security Settings</B></CENTER>
-										<HR ALIGN=\"CENTER>\" WIDTH=\"30%\"><BR>
+										<HR ALIGN=\"LEFT\" WIDTH=\"40%\">
+											<B>System Security</B>
+										<HR ALIGN=\"LEFT\" WIDTH=\"40%\"><BR>
 
 										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 											<B>Settings :: System :: Security :: Security Modules</B>
