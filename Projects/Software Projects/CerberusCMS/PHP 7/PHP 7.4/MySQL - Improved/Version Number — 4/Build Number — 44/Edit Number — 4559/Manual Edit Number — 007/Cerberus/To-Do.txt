@@ -1109,6 +1109,7 @@ to manually pluck out all of the ear hairs from the outer part of the ears.
 <BR><BR>
 Hygiene Gear :: Gender :: Male :: Head :: Nose
 <HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+The Revlon &reg; &trade; High Pricison Tweezers can be used to manually pluck out all of the hairs within the nostrils of the nose. This grooming technique will leave the nostrils extremely clean and extremely groomed.
 
 <BR><BR>
 Hygiene Gear :: Gender :: Male :: Head :: Mouth
