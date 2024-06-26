@@ -113,10 +113,10 @@ All programming code is organized in Pre-Ordered Logical and Pre-Oredered Mathem
 ===Project Update Cycles===
 System Updates consist of Programming Code Updates, Programming Code Security Updates, Graphics Updates and more.
 Officially released versions come with an embedded build number where the build itself takes several weeks or months of quality code implementation and updates to complete from the project developer.
-CerberusCMS - Version Number: 4, Build Number: 43.33, Edit Number: 4,559, Manual Edit Number: 001 - Final was manually updated by hand rewrite periodically from the years of ~ January of 2022 to November, 1st of 2023 and is now approximately ~250,000 lines of Pure Pre-Hyper-Text-Post-Processor Programming Code.
+CerberusCMS - Version Number: 4, Build Number: 44, Edit Number: 4,559, Manual Edit Number: 007 - Final was manually updated by hand rewrite periodically from the years of ~ January of 2022 to November, 1st of 2023 and is now approximately ~250,000 lines of Pure Pre-Hyper-Text-Post-Processor Programming Code.
 
 ===Project Compatibility and Life Cycle===
-CerberusCMS - Version Number: 4, Build Number: 43.33, Edit Number: 4,559, Manual Edit Number: 001 - Final was hand updated by manual Programming Code Rewrite periodically from the years of ~ January of 2022 to November of 2023. This specific Version Number, Build Number and Edit Number will work for ~ 10 years on Pre-Hyper-Text-Post-Processor Version Number: 8 and Pre-Hyper-Text-Post-Processor Version Number: 9.
+CerberusCMS - Version Number: 4, Build Number: 44, Edit Number: 4,559, Manual Edit Number: 007 - Final was hand updated by manual Programming Code Rewrite periodically from the years of ~ January of 2022 to November of 2023. This specific Version Number, Build Number and Edit Number will work for ~ 10 years on Pre-Hyper-Text-Post-Processor Version Number: 8 and Pre-Hyper-Text-Post-Processor Version Number: 9.
 Major programming code updates implemented heavy use of encryption and data sanitization. It was remade for heavy use of riced and crafted Structured-Query-Language queries and concurrent connections numbering in the 100s for shared hosting and 10s of thousands to 100s of thousands with the recommended Dedicated Server Rack Setup with Dedicated and Seperated Servers For Apache, MySQL/MariaDB/Microsoft Database, P.H.P./Zend, Operating System, Cloud/Data Server and other kinds of servers.
 With a Server Setup on a rack with 3 or more different dedicated, separated and security hardened S.Q.L. Server, P.H.P. / Apache Server and Data Storage Server the system can support up to ~ 5,000 unique active concurrent user-connections without any lag or latency in response time.
 
@@ -633,7 +633,7 @@ Options for generating the Structured-Query-Language Database Structure for inst
 
 ====Secret Application Modules :: Detailed Information====
 * '''Lightning_Calculate'''
-With Version Number: 4, Build Number: 43.33, Edit Number: 4,559, Manual Edit Number: 001 - Final CerberusCMS comes with a secret Application Module named 'Lightning Calculate !' this Application Module teaches the user how to mentally calculate at lightning speed through repetitive patterns. This Application Module also teaches the user how to master
+With Version Number: 4, Build Number: 44, Edit Number: 4,559, Manual Edit Number: 007 - Final, CerberusCMS comes with a secret Application Module named 'Lightning Calculate !' this Application Module teaches the user how to mentally calculate at lightning speed through repetitive patterns. This Application Module also teaches the user how to master
 the Methods of Loci as well as provides a 6 month intensive training course of expert nutrition and physical and mental training to obtain a Mastery of Mathematics.
 
 The author has mental calculating capabilities as a high-level Lightning Human Calculator capable of 4 Digit * 4 Digit mental multiplication as well as several other kinds of lightning mental calculating capabilities.
@@ -1057,10 +1057,10 @@ Through this Application Module one can play Nintendo, Super Nintendo and other 
 
 ===Project Programming Code Size===
 Programming Code
-CerberusCMS as of Version Number: 4, Build Number: 43.33, Edit Number: 4,559, Manual Edit Number: 001 - Final has approximately ~250,000 lines of 100% Functional, Premium and Pure Pre-Hyper-Text-Post-Processor Programming Code.
+CerberusCMS as of Version Number: 4, Build Number: 44, Edit Number: 4,559, Manual Edit Number: 007 - Final has approximately ~250,000 lines of 100% Functional, Premium and Pure Pre-Hyper-Text-Post-Processor Programming Code.
 
 ===Quality Programming Code===
-CerberusCMS as of Version Number: 4, Build Number: 43.33, Edit Number: 4,559, Manual Edit Number: 001 - Final features 250,000 lines of quality and thoroughly documented Pre-Hyper-Text-Post-Processor Programming Code.
+CerberusCMS as of Version Number: 4, Build Number: 44, Edit Number: 4,559, Manual Edit Number: 007 - Final features 250,000 lines of quality and thoroughly documented Pre-Hyper-Text-Post-Processor Programming Code.
 
 ===Programming Code Documentation and Searchability===
 All of the programming code is extremely documented and manageable with approximately 7,000 panels of in-line programming code documentation. The documentation panels within the source code explain in detail what every line of programming code in the system does. All of the programming code documentation features searchable programming code keys such as:
@@ -1100,7 +1100,7 @@ End-Users with limited programming knowledge can create their own Application Mo
 Application Modules can be written to do just about any computing task that P.H.P. is capable of from the web browser.
 
 ===Bundled Software and Packages===
-CerberusCMS as of Version Number: 4, Build Number: 43.33, Edit Number: 4,559, Manual Edit Number: 001 - Final comes with Charon alternately named Freyja which is a compilable C++ application that can be compiled with G.C.C. and other C++ compiling applications from a terminal.
+CerberusCMS as of Version Number: 4, Build Number: 44, Edit Number: 4,559, Manual Edit Number: 007 - Final comes with Charon alternately named Freyja which is a compilable C++ application that can be compiled with G.C.C. and other C++ compiling applications from a terminal.
 
 Charon alternately named Freyja was combined from other C++ programming code that generated the theme files necessary to have a custom graphical theme on CerberusCMS.
 
@@ -1141,7 +1141,7 @@ CerberusCMS automatically detects the connection speed of the connection and opt
 Custom Application Modules can be written to control IoT Devices connected to the system such as Smart House Electricity Usage Monitoring, Smart House Lightning Systems to turn lights on and off, programmable logic controllers, SCADA and more. All of these things can be controlled from an Application Module with buttons and more.
 
 ==Programming Code Architecture==
-CerberusCMS - Version Number: 4, Build Number: 43.33, Edit Number: 4,559, Manual Edit Number: 001 - Final is written in a Linux Operating System Architectural Style where everything is completely modular with HASH checksums on
+CerberusCMS - Version Number: 4, Build Number: 44, Edit Number: 4,559, Manual Edit Number: 007 - Final is written in a Linux Operating System Architectural Style where everything is completely modular with HASH checksums on
 each file for integrity comparison. The Kernel file can be continually added to by using the consistent Programming Code Framework that has been written by the author.
 
 ===Programming Code Consistency and Uniqueness===
@@ -1251,6 +1251,6 @@ Video Games
 Each software project combined totals around ~450,000 lines of original programming code across several different programming languages and scripting languages.
 
 ==Project Copyrights==
-Every line of programming code in CerberusCMS up to CerberusCMS Version Number: 4, Build Number: 43.33, Edit Number: 4,559, Manual Edit Number: 001 - Final is 100% original from and was written by the computer programmer Gary Christopher Johnson of SouthGate, California, West Los Angeles, California and Oildale, California in and around Long Beach, California, Oildale, California and other places in Southern California.
+Every line of programming code in CerberusCMS up to CerberusCMS - Version Number: 4, Build Number: 44, Edit Number: 4,559, Manual Edit Number: 007 - Final is 100% original from and was written by the computer programmer Gary Christopher Johnson of SouthGate, California, West Los Angeles, California and Oildale, California in and around Long Beach, California, Oildale, California and other places in Southern California.
 
 This web application was developed and written in Southern California. This project was started in around the year ~2001 when I was about 13 or 14 years old... My girlfriend at the time... a nice laptop was given to me. I started learning computer programming back then. The updates for this specific project are slow because I don't have the time to work on it every day.
