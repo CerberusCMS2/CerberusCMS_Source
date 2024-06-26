@@ -938,9 +938,10 @@ The Structured-Query-Language Statement and Database Management System Server Co
 Data and none of the statements on the system do.
 
 * '''Privilege-Escalation Security'''
-CerberusCMS source programming code is written to block all types of privilege escalation techniques. If 1 byte changes in any of the installed Application Modules, Kernel or any other official files that individual file is automatically re-installed either from the official GIT Repository or from
-the local hard drive and in addition to this security technique if any file exists within any directory on the system that is not accounted for in the Database Management System Server Database that unaccounted for file is automatically deleted from the directory upon ever re-load of the document.
-Privilege escalation requires injecting programming code along with terminal commands to get a privilege terminal to run commands on the web server software itself or from the upper level operating system privileged accounts.
+CerberusCMS source programming code is written to block all types of privilege escalation techniques. If 1 byte changes in any of the installed Application Modules, installed Kernel or any other official files that are released and used on the web server then that individual file is automatically re-installed either from the official GIT Repository or from
+the local hard drive integrity directory and in addition to this security technique if any file exists within any directory on the system that is not accounted for in the Database Management System Server Database that unaccounted for file is automatically deleted from the directory upon ever re-load of the document.
+Privilege escalation requires injecting programming code along with terminal commands to get a privilege terminal to run commands on the web server software itself or from the upper level operating system privileged accounts. This should not be possible if a modified malicious application module is uploaded where then it would be automatically deleted because
+it is not accounted for in the Database Management System Server Database.
 
 '''Injections'''
 * Structured-Query-Language Code Injection
@@ -1014,7 +1015,7 @@ Privilege escalation requires injecting programming code along with terminal com
 * Automatic Kernel and Application Module file size integrity checks on every execution of the web page document.
 * Automatic Re-Install of the compromised Kernel File, Application Module and or Component back to OEM. 
 
-If 1 byte changes in the official programming code of the Kernel and or the Application Modules included in the official version that specific component is automatically Re-Installed by Linux GIT Command, Microsoft Windows BITS Command, P.H.P. File_Put_Contents(); Function Command or P.H.P. Copy(); Function Command from the Cerberus Services Root-Administration account which remains active at all times. This makes it impossible to hack the CerberusCMS instance by different programming code injection attacks just incase sanitization of URL and input forms fails at any point in time.
+If 1 byte changes in the official programming code of the installed Kernel and or the installed Application Modules included in the official version released and used on the web server then that specific component is automatically Re-Installed by Linux GIT Command, Microsoft Windows BITS Command, P.H.P. File_Put_Contents(); Function Command or P.H.P. Copy(); Function Command from the Cerberus Services Root-Administration account which remains active at all times. This makes it impossible to hack the CerberusCMS instance by different programming code injection attacks just incase sanitization of URL and input forms fails at any point in time.
 
 There is a stand-alone integrity Application that checks the CerberusCMS instance integrity of each file and then compares the SHA-256 hashes of each file to
 the Master Database Server Database. If the SHA-256 HASHES of the Kernel, Applications Modules and or Components are different than OEM release at any point in time Integrity then provides options to Re-Install the Kernel File and Application Modules by GIT Command, Microsoft Windows BITS Command or P.H.P. File_Put_Contents(); Function Command.
