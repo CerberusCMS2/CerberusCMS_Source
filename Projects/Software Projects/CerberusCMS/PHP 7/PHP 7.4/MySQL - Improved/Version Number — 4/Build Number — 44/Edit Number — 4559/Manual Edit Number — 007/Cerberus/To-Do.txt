@@ -1081,6 +1081,10 @@ Hygiene Gear :: Gender :: Male :: Head
 <BR><BR>
 Hygiene Gear :: Gender :: Male :: Head :: Hair
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+
+<BR><BR>
+Hygiene Gear :: Gender :: Male :: Head :: Hair :: Conditioner
+<HR ALIGN=\"LEFT\" WIDTH=\"15%\">
 The Native &reg; &trade; Hair Conditioner, The Herbal Essence &reg; &trade; Hair Conditioner and the Tresemmé &reg; &trade; Hair Conditioner combined together with vitamin liquid make for one of the most highest quality hair conditioners that are commercially available. One
 must combine together all three of these travel size hair conditioners and then mix in the liquid multi-vitamin into this combination, shake and then allow to settle into the mix. Once correctly mixed together one would saturate all of the hair on the head with this combination of
 hair conditioner for up to 24 hours once every 2 weeks to completely restore the strength and the moisture to the hair. All split-ends on the hair will be healed within the 24 hours of this saturation. Eating x1 half bulb of fresh and raw garlic with purified drinking water every day for up to
@@ -1089,6 +1093,10 @@ hair conditioner for up to 24 hours once every 2 weeks to completely restore the
 <BR><BR>
 Hygiene Gear :: Gender :: Male :: Head :: Face
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+
+<BR><BR>
+Hygiene Gear :: Gender :: Male :: Head :: Face :: Blemish Removal ToolKit
+<HR ALIGN=\"LEFT\" WIDTH=\"15%\">
 The Walbest &reg; &trade; Blemish Removal ToolKit remains one of the best travel size blemish removal toolkits. This toolkit can be used to remove all blackheads, whiteheads and any other blemishes from the pores in the skin of the face. The toolkit is made of stainless steel material and the tools will not rust.
 See this <A HREF=\"https://www.YouTube.com/watch?v=tIksrSh2dHg\" TITLE=\":: Open & Display :: The :: YouTube Video :: For :: Blackhead Removal With Blemish Removal ToolKit ::\" TARGET=\"_TARGET\">YouTube Video</A> to see an example of how to use the Walbest &reg; &trade; Blemish Removal ToolKit.
 
@@ -1113,10 +1121,10 @@ Every set of human tonsils are succeptable to bacteria accumulation and this acc
 
 <BR><BR>
 Hygiene Gear :: Gender :: Male :: Head :: Mouth :: Teeth
-<HR ALIGN=\"LEFT\" WIDTH=\"15%\">
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 
 <BR><BR>
-Hygiene Gear :: Gender :: Male :: Head :: Mouth :: Teeth :: DenTek &trade; Tooth Cleaning Kit
+Hygiene Gear :: Gender :: Male :: Head :: Mouth :: Teeth :: Tooth Cleaning Kit
 <HR ALIGN=\"LEFT\" WIDTH=\"15%\">
 <IMG SRC=\"./Theme/Global/Image/Travel/Gear/Male/Hygiene/General/Lightweight/Head/Mouth/Teeth/HygieneGear_Head_Mouth_Teeth_DenTek_Tooth_Kit.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"75\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
 The DenTek &trade; Tooth Cleaning Kit gives the capability to manually scrape off all tartar, plaque and any other visible things off of each individual tooth. The DenTek &trade; Tooth Cleaning Kit should be used once every 3 weeks in a 5 hour tooth cleaning session. One would
@@ -1125,7 +1133,7 @@ individual tooth. Teeth will stay exceptionally white and exceptionally strong. 
 times in between brushing. This proceedure is the same as a professional tooth cleaning from a licensed dentist.
 
 <BR><BR>
-Hygiene Gear :: Gender :: Male :: Head :: Mouth :: Teeth :: Travel Size Tooth Paste
+Hygiene Gear :: Gender :: Male :: Head :: Mouth :: Teeth :: Tooth Paste
 <HR ALIGN=\"LEFT\" WIDTH=\"15%\">
 <IMG SRC=\"./Theme/Global/Image/Travel/Gear/Male/Hygiene/General/Lightweight/Head/Mouth/Teeth/HygieneGear_Head_Mouth_Teeth_ToothPaste_Travel_Crest_ProHealth.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"75\" HEIGHT=\"75\" CLASS=\"AMMTravel\"></IMG>&nbsp;
 <IMG SRC=\"./Theme/Global/Image/Travel/Gear/Male/Hygiene/General/Lightweight/Head/Mouth/Teeth/HygieneGear_Head_Mouth_Teeth_ToothPaste_Travel_Crest_Scope.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"75\" HEIGHT=\"75\" CLASS=\"AMMTravel\"></IMG>&nbsp;
@@ -1160,7 +1168,7 @@ Hygiene Gear :: Gender :: Male :: Full Body
 <HR ALIGN=\"LEFT\" WIDTH=\"30%\"><BR><BR>
 
 Hygiene Gear :: Gender :: Male :: Full Body :: Skin
-<HR ALIGN=\"LEFT\" WIDTH=\"20%\"><BR><BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\"><BR><BR>
 
 Hygiene Gear :: Gender :: Male :: Full Body :: Skin :: Lava Rock
 <HR ALIGN=\"LEFT\" WIDTH=\"15%\">
