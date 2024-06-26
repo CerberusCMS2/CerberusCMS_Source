@@ -1,4 +1,4 @@
-﻿﻿Cerberus Content Management System, Officially Registered Unix-Name: CerberusCMS and Cerberus-Content-Management-System in year 2000 - 2001 on FreshMeat which became SourceForge and then SlashDot Media.
+﻿Cerberus Content Management System, Officially Registered Unix-Name: CerberusCMS and Cerberus-Content-Management-System in year 2000 - 2001 on FreshMeat which became SourceForge and then SlashDot Media.
 
 ==Origins==
 
@@ -14,7 +14,7 @@ The direct Web Application project fork is named Fenrir Content Management Syste
 The Official Cerberus Content Managemet System Software Project follows the standard adoption of Greek culture in inherited Western-American Academia where Greek cultural ideas and symbols were adopted and are used today. Greek alphabet letters and Greek cultural things were reentered into Western-American Academia especially Mathematics around the year ~1800 and onward.
 
 ===Project Official Alternate Editions===
-Each release of CerberusCMS after CerberusCMS - Version Number: 4, Build Number: 43.33, Edit Number: 4,559, Manual Edit Number: 001 - Final comes with alternate editions named FenrirCMS, RuneCMS and RunicCMS for installation where the entire system is themed around Heathen / Germanic Pagan Gods and Goddesses where in these alternate editions there is no mention of Cerberus and instead of Cerberus it is themed with the names of Heathen / Germanic Gods and Goddesses complete with custom Heathen themed graphics and ascii art. Wodan / Odin, Freyja, Heimdallr and others.
+Each release of CerberusCMS after CerberusCMS - Version Number: 4, Build Number: 43.33, Edit Number: 4,559, Manual Edit Number: 007 - Final comes with alternate editions named FenrirCMS, RuneCMS, RunicCMS and NativeCMS for installation where the entire system is themed around Heathen / Germanic Pagan Gods and Goddesses as well as an alternate edition with Native American Gods and Goddesses where in these alternate editions there is no mention of Cerberus and instead of Cerberus it is themed with the names of Heathen / Germanic Gods and Goddesses and another alternate edition with Native American Gods and Goddesses complete with custom Heathen and Native American themed graphics and ascii art. Wodan / Odin, Freyja, Heimdallr, Thunderbird and others.
 
 ===Project Official Additional Applications===
 CerberusCMS comes with several additional applications:
