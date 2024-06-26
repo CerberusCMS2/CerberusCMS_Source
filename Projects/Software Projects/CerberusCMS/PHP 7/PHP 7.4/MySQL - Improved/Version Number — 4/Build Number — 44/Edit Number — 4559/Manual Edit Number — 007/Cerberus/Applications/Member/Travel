@@ -730,6 +730,12 @@ echo ("You must be logged in to upload media to the media player.");
 
 if ($_GET["Display"] == "Media") {
 
+echo ("
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Internal Media Selection
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+");
+
 /*
  ============================================================================================================
  + Retrieve and List :: All Media :: Audio :: Music :: Audio Files
@@ -784,6 +790,62 @@ echo ("
 */
 
 closedir($_Application_Module_Member_List_OPEN_DIRECTORY_MEDIA_AUDIO_MUSIC);
+
+/*
+ ============================================================================================================
+ + Retrieve and List :: All Media :: Video :: Movies :: Audio Files
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_List_FIND_DIRECTORY_MEDIA_VIDEO_MOVIES				= "./Upload/Video/Movies";
+$_Application_Module_Member_List_OPEN_DIRECTORY_MEDIA_VIDEO_MOVIES				= opendir($_Application_Module_Member_List_FIND_DIRECTORY_MEDIA_VIDEO_MOVIES);
+
+/*
+ ============================================================================================================
+ + WHILE: Reading :: Directory :: Media :: Video :: Movies
+ ============================================================================================================
+*/
+
+echo ("
+												<BR><BR>
+												<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Media_Player&amp;DisplayVideo&#61;FileName&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
+													Video :: Movies<BR>
+													<SELECT NAME=\"AMM_Media_Player_Video_File_Name\">
+");
+
+while (($_Application_Module_Member_List_READ_DIRECTORY_MEDIA_VIDEO_MOVIES = readdir($_Application_Module_Member_List_OPEN_DIRECTORY_MEDIA_VIDEO_MOVIES))) {
+
+/*
+ ============================================================================================================
+ + IF: STOP: Exploit :: Local-File-Inclusion AND Remote-File-Inclusion
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_List_READ_DIRECTORY_MEDIA_VIDEO_MOVIES == "." || $_Application_Module_Member_List_READ_DIRECTORY_MEDIA_VIDEO_MOVIES == ".." || $_Application_Module_Member_List_READ_DIRECTORY_MEDIA_VIDEO_MOVIES == "index.php") {
+/**
+ * Do Nothing
+**/
+} else {
+
+											echo ("<OPTION VALUE=\"./Upload/Video/Movies/$_Application_Module_Member_List_READ_DIRECTORY_MEDIA_VIDEO_MOVIES\">$_Application_Module_Member_List_READ_DIRECTORY_MEDIA_VIDEO_MOVIES</OPTION>");
+
+} // [ + ] IF: Directory Contents :: Media :: Video :: Movies :: Directory AND Files ARE NOT Audio Music Directory AND Files
+
+} // [ + ] WHILE: Reading :: Directory :: Media :: Video :: Movies
+
+echo ("
+													</SELECT><BR>
+													<INPUT TYPE=\"submit\" VALUE=\"Play Media\">
+												</FORM>
+");
+
+/*
+ ============================================================================================================
+ + Close :: Directory :: Media :: Video :: Movies
+ ============================================================================================================
+*/
+
+closedir($_Application_Module_Member_List_OPEN_DIRECTORY_MEDIA_VIDEO_MOVIES);
 
 } // [ + ] IF: Internal Application: Display :: Media :: Is: Activated
 ?>
