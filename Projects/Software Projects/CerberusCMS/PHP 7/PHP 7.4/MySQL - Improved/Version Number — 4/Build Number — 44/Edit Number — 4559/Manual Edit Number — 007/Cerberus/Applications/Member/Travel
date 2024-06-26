@@ -285,7 +285,7 @@ echo ("
 
 echo ("
 											<CENTER>
-												<VIDEO WIDTH=\"80%\" HEIGHT=\"350\" CONTROLS>
+												<VIDEO WIDTH=\"80%\" HEIGHT=\"350\" CONTROLS AUTOPLAY>
 													<SOURCE SRC=\"$_Application_Module_Media_Player_POST_VIDEO_FILE_NAME\" TYPE=\"VIDEO/MP4\">
 												</VIDEO>
 											</CENTER>
