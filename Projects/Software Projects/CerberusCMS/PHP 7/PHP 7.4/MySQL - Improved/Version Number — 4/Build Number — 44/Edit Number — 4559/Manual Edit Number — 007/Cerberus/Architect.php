@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /*
  ============================================================================================================
  + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2239,6 +2239,8 @@ settings_system_upload_size_private_member_streams_document CHAR(15),
 settings_system_upload_size_private_member_streams_image CHAR(15),
 settings_system_upload_size_private_member_streams_video CHAR(15),
 settings_system_upload_size_public_file_categories CHAR(15),
+settings_system_upload_size_public_media_player_audio CHAR(15),
+settings_system_upload_size_public_media_player_video CHAR(15),
 settings_system_upload_size_public_messenger_audio CHAR(15),
 settings_system_upload_size_public_messenger_document CHAR(15),
 settings_system_upload_size_public_messenger_image CHAR(15),
@@ -4233,6 +4235,8 @@ settings_system_upload_size_private_member_streams_document,
 settings_system_upload_size_private_member_streams_image,
 settings_system_upload_size_private_member_streams_video,
 settings_system_upload_size_public_file_categories,
+settings_system_upload_size_public_media_player_audio,
+settings_system_upload_size_public_media_player_video,
 settings_system_upload_size_public_messenger_audio,
 settings_system_upload_size_public_messenger_document,
 settings_system_upload_size_public_messenger_image,
@@ -4282,6 +4286,8 @@ settings_system_services_module_status_tasks
 'English',
 '$_INTERNAL_FILE_ARCHITECT_INSTALL_THEME_DIRECTORY_NAME',
 '$_PROJECT_STRING_NAME_EXTENDED',
+'25600000',
+'25600000',
 '25600000',
 '25600000',
 '25600000',
