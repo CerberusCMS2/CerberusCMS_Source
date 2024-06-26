@@ -90,6 +90,8 @@ $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_UPLOAD_SIZE_PRI
 $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_UPLOAD_SIZE_PRIVATE_MEMBER_STREAMS_IMAGE	= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_upload_size_private_member_streams_image'];
 $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_UPLOAD_SIZE_PRIVATE_MEMBER_STREAMS_VIDEO	= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_upload_size_private_member_streams_video'];
 $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_UPLOAD_SIZE_PUBLIC_FILE_CATEGORIES		= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_upload_size_public_file_categories'];
+$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_UPLOAD_SIZE_PUBLIC_MEDIA_PLAYER_AUDIO		= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_upload_size_public_media_player_audio'];
+$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_UPLOAD_SIZE_PUBLIC_MEDIA_PLAYER_VIDEO		= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_upload_size_public_media_player_video'];
 $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_UPLOAD_SIZE_PUBLIC_MESSENGER_AUDIO		= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_upload_size_public_messenger_audio'];
 $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_UPLOAD_SIZE_PUBLIC_MESSENGER_DOCUMENT		= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_upload_size_public_messenger_document'];
 $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_UPLOAD_SIZE_PUBLIC_MESSENGER_IMAGE		= $_Application_Module_Administration_Settings_DB_Query_SELECT_SETTINGS_Fetch_Array['settings_system_upload_size_public_messenger_image'];
@@ -154,10 +156,12 @@ $_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_PRIVATE_MEM
 $_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_PRIVATE_MEMBER_STREAMS_IMAGE		= $_POST['AMA_Settings_Update_Upload_Size_Private_Member_Streams_Image'];
 $_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_PRIVATE_MEMBER_STREAMS_VIDEO		= $_POST['AMA_Settings_Update_Upload_Size_Private_Member_Streams_Video'];
 $_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_PUBLIC_FILE_CATEGORIES			= $_POST['AMA_Settings_Update_Upload_Size_Public_File_Categories'];
-$_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_MESSENGER_AUDIO				= $_POST['AMA_Settings_Update_Upload_Size_Public_Messenger_Audio'];
-$_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_MESSENGER_DOCUMENT				= $_POST['AMA_Settings_Update_Upload_Size_Public_Messenger_Document'];
-$_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_MESSENGER_IMAGE				= $_POST['AMA_Settings_Update_Upload_Size_Public_Messenger_Image'];
-$_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_MESSENGER_VIDEO				= $_POST['AMA_Settings_Update_Upload_Size_Public_Messenger_Video'];
+$_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_PUBLIC_MEDIA_PLAYER_AUDIO			= $_POST['AMA_Settings_Update_Upload_Size_Public_Media_Player_Audio'];
+$_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_PUBLIC_MEDIA_PLAYER_VIDEO			= $_POST['AMA_Settings_Update_Upload_Size_Public_Media_Player_Video'];
+$_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_PUBLIC_MESSENGER_AUDIO			= $_POST['AMA_Settings_Update_Upload_Size_Public_Messenger_Audio'];
+$_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_PUBLIC_MESSENGER_DOCUMENT			= $_POST['AMA_Settings_Update_Upload_Size_Public_Messenger_Document'];
+$_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_PUBLIC_MESSENGER_IMAGE			= $_POST['AMA_Settings_Update_Upload_Size_Public_Messenger_Image'];
+$_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_PUBLIC_MESSENGER_VIDEO			= $_POST['AMA_Settings_Update_Upload_Size_Public_Messenger_Video'];
 $_Application_Module_Administration_Settings_POST_UPDATE_DIRECTORY_CAMERA					= $_POST['AMA_Settings_Update_Directory_Camera'];
 $_Application_Module_Administration_Settings_POST_UPDATE_STATUS_CAMERA						= $_POST['AMA_Settings_Update_Status_Camera'];
 $_Application_Module_Administration_Settings_POST_UPDATE_DIRECTORY_ENCRYPTION					= $_POST['AMA_Settings_Update_Directory_Encryption'];
@@ -561,10 +565,10 @@ echo ("
 																<INPUT TYPE=\"text\" NAME=\"AMA_Settings_Update_Upload_Size_Public_File_Categories\" VALUE=\"$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_UPLOAD_SIZE_PUBLIC_FILE_CATEGORIES\" MAXLENGTH=\"15\"><BR><BR>
 
 														<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
-														File Upload and Download System :: Instant Messenger
+														File Upload and Download System :: Application Module :: Instant Messenger
 														<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 
-															Upload Size Limitations :: Public :: Instant Messenger :: Audio<BR>
+															Upload Size Limitations :: Public :: Application Module :: Instant Messenger :: Audio<BR>
 																<INPUT TYPE=\"text\" NAME=\"AMA_Settings_Update_Upload_Size_Public_Messenger_Audio\" VALUE=\"$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_UPLOAD_SIZE_PUBLIC_MESSENGER_AUDIO\" MAXLENGTH=\"15\"><BR>
 															Upload Size Limitations :: Public :: Instant Messenger :: Document<BR>
 																<INPUT TYPE=\"text\" NAME=\"AMA_Settings_Update_Upload_Size_Public_Messenger_Document\" VALUE=\"$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_UPLOAD_SIZE_PUBLIC_MESSENGER_DOCUMENT\" MAXLENGTH=\"15\"><BR>
@@ -572,6 +576,15 @@ echo ("
 																<INPUT TYPE=\"text\" NAME=\"AMA_Settings_Update_Upload_Size_Public_Messenger_Image\" VALUE=\"$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_UPLOAD_SIZE_PUBLIC_MESSENGER_IMAGE\" MAXLENGTH=\"15\"><BR>
 															Upload Size Limitations :: Public :: Instant Messenger :: Video<BR>
 																<INPUT TYPE=\"text\" NAME=\"AMA_Settings_Update_Upload_Size_Public_Messenger_Video\" VALUE=\"$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_UPLOAD_SIZE_PUBLIC_MESSENGER_VIDEO\" MAXLENGTH=\"15\"><BR><BR>
+
+														<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+														File Upload and Download System :: Application Module :: Media Player
+														<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+															Upload Size Limitations :: Public :: Application Module :: Instant Messenger :: Audio<BR>
+																<INPUT TYPE=\"text\" NAME=\"AMA_Settings_Update_Upload_Size_Public_Media_Player_Audio\" VALUE=\"$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_UPLOAD_SIZE_PUBLIC_MEDIA_PLAYER_AUDIO\" MAXLENGTH=\"15\"><BR>
+															Upload Size Limitations :: Public :: Application Module :: Instant Messenger :: Video<BR>
+																<INPUT TYPE=\"text\" NAME=\"AMA_Settings_Update_Upload_Size_Public_Media_Player_Video\" VALUE=\"$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_UPLOAD_SIZE_PUBLIC_MEDIA_PLAYER_VIDEO\" MAXLENGTH=\"15\"><BR><BR>
 
 														<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 														File Upload and Download System :: Registered Member Account :: Media
@@ -630,10 +643,12 @@ settings_system_upload_size_private_member_streams_document='$_Application_Modul
 settings_system_upload_size_private_member_streams_image='$_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_PRIVATE_MEMBER_STREAMS_IMAGE',
 settings_system_upload_size_private_member_streams_video='$_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_PRIVATE_MEMBER_STREAMS_VIDEO',
 settings_system_upload_size_public_file_categories='$_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_PUBLIC_FILE_CATEGORIES',
-settings_system_upload_size_public_messenger_audio='$_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_MESSENGER_AUDIO',
-settings_system_upload_size_public_messenger_document='$_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_MESSENGER_DOCUMENT',
-settings_system_upload_size_public_messenger_image='$_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_MESSENGER_IMAGE',
-settings_system_upload_size_public_messenger_video='$_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_MESSENGER_VIDEO',
+settings_system_upload_size_public_media_player_audio='$_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_PUBLIC_MEDIA_PLAYER_AUDIO',
+settings_system_upload_size_public_media_player_video='$_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_PUBLIC_MEDIA_PLAYER_VIDEO',
+settings_system_upload_size_public_messenger_audio='$_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_PUBLIC_MESSENGER_AUDIO',
+settings_system_upload_size_public_messenger_document='$_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_PUBLIC_MESSENGER_DOCUMENT',
+settings_system_upload_size_public_messenger_image='$_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_PUBLIC_MESSENGER_IMAGE',
+settings_system_upload_size_public_messenger_video='$_Application_Module_Administration_Settings_POST_UPDATE_UPLOAD_SIZE_PUBLIC_MESSENGER_VIDEO',
 settings_system_plugin_directory_camera='$_Application_Module_Administration_Settings_POST_UPDATE_DIRECTORY_CAMERA',
 settings_system_plugin_directory_encryption='$_Application_Module_Administration_Settings_POST_UPDATE_DIRECTORY_ENCRYPTION',
 settings_system_plugin_directory_location='$_Application_Module_Administration_Settings_POST_UPDATE_DIRECTORY_LOCATION',
