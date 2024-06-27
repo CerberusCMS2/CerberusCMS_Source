@@ -847,29 +847,42 @@ echo ("
 if ($_GET["Display"] == "Time") {
 
 echo ("
-											<B>Current System Date and Time Settings</B><HR>
-												<B>Server :: This Web Server :: Date</B><BR>
+										<HR ALIGN=\"LEFT\" WIDTH=\"40%\">
+											<B>Current System Date and Time Settings</B>
+										<HR ALIGN=\"LEFT\" WIDTH=\"40%\"><BR>
+
+										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+												<B>Server :: This Web Server :: Date</B>
+										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 												*&nbsp;This Web Server :: Date :: Standard :: Timestamp :: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD<BR>
 												*&nbsp;This Web Server :: Date :: In Years :: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL<BR>
 												*&nbsp;This Web Server :: Date :: In Months :: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL<BR>
 												*&nbsp;This Web Server :: Date :: In Days :: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL<BR><BR>
 
-												<B>Server :: This Web Server :: Time</B><BR>
+										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+												<B>Server :: This Web Server :: Time</B>
+										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 												*&nbsp;This Web Server :: Time :: In Hours: $_GLOBAL_LOCAL_SERVER_TIME_HOURS<BR>
 												*&nbsp;This Web Server :: Time :: In Minutes: $_GLOBAL_LOCAL_SERVER_TIME_MINUTES<BR>
 												*&nbsp;This Web Server :: Time :: In Seconds: $_GLOBAL_LOCAL_SERVER_TIME_SECONDS<BR>
 												*&nbsp;This Web Server :: Time :: In Microseconds: $_GLOBAL_LOCAL_SERVER_TIME_MICROSECONDS<BR>
-												*&nbsp;This Web Server :: Time :: In Unix-Epoch: $_GLOBAL_LOCAL_SERVER_TIME_UNIX<BR><BR>
-												
-												<B>Server :: This Web Server :: Time :: Internet Time</B><BR>
+												*&nbsp;This Web Server :: Time :: In Unix-Epoch: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_TIMESTAMP_UNIX_EPOCH\" TITLE=\":: Open & Display :: The :: Unix-Epoch Time Reader ::\" TARGET=\"_NEW\">$_GLOBAL_LOCAL_SERVER_TIME_UNIX</A><BR><BR>
+
+										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+												<B>Server :: This Web Server :: Time :: Internet Time</B>
+										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 												*&nbsp;This Web Server :: TIme :: In <A HREF=\"https://en.wikipedia.org/wiki/Internet_Time\" TITLE=\":: Open & Display :: The Official Wikipedia Article Entry :: For :: Internet Time ::\" TARGET=\"_NEW\">Internet Time: $_GLOBAL_LOCAL_SERVER_TIME_INTERNET</A><BR><BR>
 
-												<B>Unix-Epoch :: Time :: Built-In</B><HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+												<B>Server :: This Web Server :: Time :: Unix-Epoch :: Built-In</B>
+										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 												*&nbsp;This Web Server :: Time :: In Microtime: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME<BR>
 												*&nbsp;This Web Server :: Time :: In Unix-Epoch Start Time: January, 1st of 1970<BR>
-												*&nbsp;This Web Server :: Time :: In Unix-Epoch: $_GLOBAL_LOCAL_SERVER_TIME_UNIX<BR><BR>
+												*&nbsp;This Web Server :: Time :: In Unix-Epoch: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_TIMESTAMP_UNIX_EPOCH\" TITLE=\":: Open & Display :: The :: Unix-Epoch Time Reader ::\" TARGET=\"_NEW\">$_GLOBAL_LOCAL_SERVER_TIME_UNIX</A><BR><BR>
 
-												<B>Unix-Epoch :: Time :: Built-In</B></BR>
+										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+												<B>Server :: This Web Server :: Time :: Unix-Epoch :: Converted</B>
+										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 												*&nbsp;This Web Server :: Time :: In Unix-Epoch :: Seconds: $_GLOBAL_LOCAL_SERVER_TIME_UNIX<BR>
 												*&nbsp;This Web Server :: Time :: In Unix-Epoch :: Minutes: $_GLOBAL_LOCAL_SERVER_TIME_UNIX_MINUTES<BR>
 												*&nbsp;This Web Server :: Time :: In Unix-Epoch :: Hours: $_GLOBAL_LOCAL_SERVER_TIME_UNIX_HOURS<BR>
@@ -877,7 +890,10 @@ echo ("
 												*&nbsp;This Web Server :: Time :: In Unix-Epoch :: Months: $_GLOBAL_LOCAL_SERVER_TIME_UNIX_MONTHS<BR>
 												*&nbsp;This Web Server :: Time :: In Unix-Epoch :: Years: ~ $_GLOBAL_LOCAL_SERVER_TIME_UNIX_YEARS<BR><BR>
 
-												<B>Unix-Epoch :: Date-Time :: Built-In</B><BR>
+
+										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+												<B>Server :: This Web Server :: Time :: Unix-Epoch :: Manually Programmed</B>
+										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 												*&nbsp;This Web Server :: Date-Time :: In Unix-Epoch :: Years: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_YEARS<BR>
 												*&nbsp;This Web Server :: Date-Time :: In Unix-Epoch :: Months: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_MONTHS<BR>
 												*&nbsp;This Web Server :: Date-Time :: In Unix-Epoch :: Days: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_DAYS<BR>
@@ -885,7 +901,9 @@ echo ("
 												*&nbsp;This Web Server :: Date-Time :: In Unix-Epoch :: Minutes: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_MINUTES<BR>
 												*&nbsp;This Web Server :: Date-Time :: In Unix-Epoch :: Seconds: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_SECONDS<BR><BR>
 
-												<B>Unix-Epoch :: Date-Time :: Manually Programmed :: Non-Leap Year</B><BR>
+										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+												<B>Server :: This Web Server :: Time :: Unix-Epoch :: Manually Programmed :: Non-Leap Year</B>
+										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 												*&nbsp;This Web Server :: Date-Time :: In Unix-Epoch :: Years: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_EPOCH_MANUAL_YEARS<BR>
 												*&nbsp;This Web Server :: Date-Time :: In Unix-Epoch :: Months: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_EPOCH_MANUAL_MONTHS<BR>
 												*&nbsp;This Web Server :: Date-Time :: In Unix-Epoch :: Days: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_EPOCH_MANUAL_DAYS<BR>
@@ -893,7 +911,10 @@ echo ("
 												*&nbsp;This Web Server :: Date-Time :: In Unix-Epoch :: Minutes: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_EPOCH_MANUAL_MINUTES<BR>
 												*&nbsp;This Web Server :: Date-Time :: In Unix-Epoch :: Seconds: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_EPOCH_MANUAL_SECONDS<BR><BR>
 
-												<B>Server :: Remote</B><BR><BR>
+
+										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+												<B>Server :: Connected Device</B>
+										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 
 												<B><A HREF=\"https://en.Wikipedia.org/wiki/Gregorian_calendar\" TITLE=\":: Open & Display :: The :: Official Wikipedia Article Entry :: For :: Gregorian Calendar ::\" TARGET=\"_NEW\">Gregorian Calendar</A> :: Non-Leap Year</B><BR>
 												*&nbsp;Number of Seconds In 365 Days With 24 Hours In Each Day: 60 Seconds * 60 Minutes * 24 Hours * 365 Days = 31,536,000 Seconds<BR>
