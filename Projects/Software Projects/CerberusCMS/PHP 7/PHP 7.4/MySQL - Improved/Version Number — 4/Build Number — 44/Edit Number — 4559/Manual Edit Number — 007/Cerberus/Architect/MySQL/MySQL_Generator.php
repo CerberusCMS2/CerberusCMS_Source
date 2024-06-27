@@ -786,7 +786,7 @@ id MEDIUMINT NOT NULL AUTO_INCREMENT,
 kernel_file_date_installation VARCHAR(100),
 kernel_file_integrity VARCHAR(512),
 kernel_file_name VARCHAR(100),
-kernel_file_version VARCHAR(10),
+kernel_file_version VARCHAR(20),
 PRIMARY KEY (id)
 );
 
