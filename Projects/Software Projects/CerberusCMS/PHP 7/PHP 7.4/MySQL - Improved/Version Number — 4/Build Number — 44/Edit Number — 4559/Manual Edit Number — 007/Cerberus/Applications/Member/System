@@ -623,9 +623,8 @@ echo ("
 												*&nbsp;File Size Upload Limitations :: In BITS :: Application Module :: Instant Messenger :: Image: $_GLOBAL_SYSTEM_UPLOAD_SIZE_PUBLIC_FILE_MESSENGER_IMAGE<BR>
 												*&nbsp;File Size Upload Limitations :: In BITS :: Application Module :: Instant Messenger :: Video: $_GLOBAL_SYSTEM_UPLOAD_SIZE_PUBLIC_FILE_MESSENGER_VIDEO
 												
-
 												<BR><BR>
-												Application Module Note: <I>These options set the File Size Upload Limitations Parameters that are used by this web application software. The Parameters limit and unlimit the file sizes of the files that could be uploaded into this web application data storage space.</I><BR><BR>
+												Application Module Note: <I>These options set the File Size Upload Limitations Parameters that are used by this web application software. These parameters limit and unlimit the file sizes of the files that could be uploaded into this web application data storage space.</I><BR><BR>
 
 										<HR ALIGN=\"LEFT\" WIDTH=\"40%\">
 											<B>Settings :: System :: Kernel Parameters & Information</B>
@@ -666,7 +665,7 @@ echo ("
 												*&nbsp;Configuration File Parameters :: Kernel File :: Integrity: $_INTERNAL_FILE_KERNEL_INTEGRITY
 
 												<BR><BR>
-												Application Module Note: <I>These options set the Kernel File Parameters that are used by this web application software. The Parameters secure, limit and control the Kernel File Versions that are used by this web application software.</I><BR><BR>
+												Application Module Note: <I>These options set the Kernel File Parameters that are used by this web application software. These parameters secure, limit and control the Kernel File Versions that are used by this web application software instance at any point-in-time.</I><BR><BR>
 
 										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 											<B>Settings :: System :: Uniform-Resource-Locations :: GIT</B>
@@ -692,7 +691,7 @@ echo ("
 												</FORM>
 
 												<BR><BR>
-												Application Module Note: <I>These options set the GIT Uniform-Resource-Location Parameters that are used by this web application software. The Parameters control where and when this web application software will download Updates, New Application Modules, New and Improved Kernel Files, Video Games, Graphical Theme Packs and more.</I>
+												Application Module Note: <I>These options set the GIT Uniform-Resource-Location Parameters that are used by this web application software. These parameters control where and when this web application software will download Updates, New Application Modules, New and Improved Kernel Files, Video Games, Graphical User Interface Theme Packs and more.</I>
 ");
 												
 } // [ + ] IF: Internal Application: Display :: Settings :: Is: Activated
