@@ -613,7 +613,7 @@ echo ("
 											<B>Application Module :: Media Player :: Data</B>
 										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 												*&nbsp;File Size Upload Limitations :: In BITS :: Application Module :: Media Player :: Audio: $_GLOBAL_SYSTEM_UPLOAD_SIZE_PUBLIC_FILE_MEDIA_PLAYER_AUDIO<BR>
-												*&nbsp;File Size Upload Limitations :: In BITS :: Application Module :: Media Player :: Audio: $_GLOBAL_SYSTEM_UPLOAD_SIZE_PUBLIC_FILE_MEDIA_PLAYER_VIDEO<BR><BR>
+												*&nbsp;File Size Upload Limitations :: In BITS :: Application Module :: Media Player :: Video: $_GLOBAL_SYSTEM_UPLOAD_SIZE_PUBLIC_FILE_MEDIA_PLAYER_VIDEO<BR><BR>
 
 										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 											<B>Application Module :: Instant Messenger :: Data</B>
