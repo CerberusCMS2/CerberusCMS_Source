@@ -530,7 +530,7 @@ echo ("
 												*&nbsp;System :: Theme :: Directory: $_GLOBAL_SYSTEM_THEME_DIRECTORY
 
 												<BR><BR>
-												Application Module Note: <I>These options set the parameters of the Graphical User Interface that is used by this web application software. The parameters could be Audio File Format, Image File Format, Theme Directory and more.</I><BR><BR>
+												Application Module Note: <I>These options set the parameters of the Graphical User Interface Theme Packs that are used by this web application software. The parameters could be: Audio File Format, Image File Format, Theme Directory and more.</I><BR><BR>
 
 										<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
 											<B>Settings :: System :: Language</B>
@@ -538,7 +538,7 @@ echo ("
 												*&nbsp;System :: Language: $_GLOBAL_SYSTEM_LANGUAGE_DIRECTORY
 
 												<BR><BR>
-												Application Module Note: <I>These options set the System Language parameters that are used by this web application software. The parameters could be Forced Language File, Registered Member Account Set Language and more.</I><BR><BR>
+												Application Module Note: <I>These options set the parameters of the Language Packs that are used by this web application software. The parameters could be Forced Language File, Registered Member Account Set Languages and more.</I><BR><BR>
 
 										<HR ALIGN=\"LEFT\" WIDTH=\"40%\">
 											<B>Settings :: System :: Security :: Web-Page Output :: Cache :: Cache-Circumvention</B>
